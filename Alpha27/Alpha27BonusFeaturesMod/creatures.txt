@@ -68,6 +68,136 @@
       }
       spells = { HEAL_SELF }
     }
+  "KEEPER_MAGE_EASY"
+    {
+      # Definitions in view_id.h
+      viewId = KEEPER1
+      # ViewId upgrades of Keepers are applied every 5 tech level increases
+      viewIdUpgrades = { KEEPER2 }
+      name = {
+        # The name gets changed appropriately to Keeper and Adventurer
+        name = "wizard"
+        # Definitions in name_generator.h
+        firstNameGen = FIRST_MALE
+        # Creature is always referred to as [FirstName] the [Creature name]
+        fullTitle = true
+      }
+      body = {
+        # One of Humanoid, HumanoidLike, Bird, FourLegged and NonHumanoid
+        # size is one of SMALL, MEDIUM, LARGE and HUGE, influences stuff like pushing boulders and being pushed
+        type = Humanoid LARGE
+      }
+      # attr_type.h
+      attr = {
+        DAMAGE 15
+        DEFENSE 15
+        SPELL_DAMAGE 25
+      }
+      # skill.h
+      skills = {
+        LABORATORY 0.2
+      }
+      # experience_type.h
+      maxLevelIncrease = {
+        MELEE 7
+        SPELL 12
+      }
+      # spell.h
+      spells = { HEAL_SELF }
+    }
+
+  "KEEPER_MAGE_F_EASY"
+    {
+      viewId = KEEPER_F1
+      attr = {
+        DAMAGE 15
+        DEFENSE 15
+        SPELL_DAMAGE 25
+      }
+      gender = FEMALE
+      body = {
+        type = Humanoid LARGE
+      }
+      name = {
+        name = "wizard"
+        firstNameGen = FIRST_FEMALE
+        fullTitle = true
+      }
+      viewIdUpgrades = {KEEPER_F2}
+      skills = {
+        LABORATORY 0.2
+      }
+      maxLevelIncrease = {
+        MELEE 7
+        SPELL 12
+      }
+      spells = { HEAL_SELF }
+    }
+  "KEEPER_MAGE_HARD"
+    {
+      # Definitions in view_id.h
+      viewId = KEEPER1
+      # ViewId upgrades of Keepers are applied every 5 tech level increases
+      viewIdUpgrades = { KEEPER2 KEEPER3}
+      name = {
+        # The name gets changed appropriately to Keeper and Adventurer
+        name = "wizard"
+        # Definitions in name_generator.h
+        firstNameGen = FIRST_MALE
+        # Creature is always referred to as [FirstName] the [Creature name]
+        fullTitle = true
+      }
+      body = {
+        # One of Humanoid, HumanoidLike, Bird, FourLegged and NonHumanoid
+        # size is one of SMALL, MEDIUM, LARGE and HUGE, influences stuff like pushing boulders and being pushed
+        type = Humanoid LARGE
+      }
+      # attr_type.h
+      attr = {
+        DAMAGE 10
+        DEFENSE 10
+        SPELL_DAMAGE 15
+      }
+      # skill.h
+      skills = {
+        LABORATORY 0.2
+      }
+      # experience_type.h
+      maxLevelIncrease = {
+        MELEE 7
+        SPELL 12
+      }
+      # spell.h
+      spells = { HEAL_SELF }
+    }
+
+  "KEEPER_MAGE_F_HARD"
+    {
+      viewId = KEEPER_F1
+      attr = {
+        DAMAGE 10
+        DEFENSE 10
+        SPELL_DAMAGE 15
+      }
+      gender = FEMALE
+      body = {
+        type = Humanoid LARGE
+      }
+      name = {
+        name = "wizard"
+        firstNameGen = FIRST_FEMALE
+        fullTitle = true
+      }
+      viewIdUpgrades = {KEEPER_F2 KEEPER_F3}
+      skills = {
+        LABORATORY 0.2
+      }
+      maxLevelIncrease = {
+        MELEE 7
+        SPELL 12
+      }
+      spells = { HEAL_SELF }
+    }
   "KEEPER_KNIGHT"
     {
       viewId = KEEPER_KNIGHT1
@@ -88,7 +218,7 @@
         FORGE 0.2
       }
       maxLevelIncrease = {
-        MELEE 12
+        MELEE 15
         SPELL 3
       }
       spells = { HEAL_SELF }
@@ -114,7 +244,7 @@
         FORGE 0.2
       }
       maxLevelIncrease = {
-        MELEE 12
+        MELEE 15
         SPELL 3
       }
       spells = { HEAL_SELF }
@@ -439,6 +569,37 @@
         pluralName = "succubi"
       }
     }
+  "COMBAT_SUCCUBUS"
+    {
+      attr = {
+        DAMAGE 16
+        DEFENSE 25
+        SPELL_DAMAGE 5 
+      }
+      viewId = SUCCUBUS
+      body = {
+        type = Humanoid LARGE
+        material = SPIRIT
+        intrinsicAttacks = {
+          TORSO { Intrinsic TOUCH_ATTACK "touch" 0 {
+              attackType = HIT
+              attackMsg = TOUCH
+              victimEffect = {Lasting PEACEFULNESS} } }
+        }
+        addBodyPart = {
+          WING 2
+        }
+      }
+      permanentEffects = {
+        COPULATION_SKILL 1
+      }
+      gender = FEMALE
+      courage = -1
+      name = {
+        name = "combat succubus"
+        pluralName = "combat succubi"
+      }
+    }
   "DOPPLEGANGER"
     {
       viewId = DOPPLEGANGER
@@ -548,6 +709,7 @@
       permanentEffects = {
         FLYING 1
         MAGIC_RESISTANCE 1
+		SPEED 1
       }
       courage = 100
       spells = { BLAST }
@@ -720,7 +882,7 @@
         RANGED_VULNERABILITY 1
       }
       name = {
-        name = "green dragon"
+        name = "ancient green dragon"
         stackName = "dragon"
         firstNameGen = DRAGON
       }
@@ -755,9 +917,45 @@
         RANGED_VULNERABILITY 1
       }
       name = {
-        name = "red dragon"
+        name = "ancient red dragon"
         firstNameGen = DRAGON
         stackName = "dragon"
+      }
+      spells = {
+        HEAL_SELF
+        CURE_POISON
+        DECEPTION
+        SPEED_SELF
+        FIREBALL_DRAGON
+      }
+    }
+  "YOUNG_RED_DRAGON"
+    {
+      viewId = RED_DRAGON
+      attr = {
+        DAMAGE 35
+        DEFENSE 35 
+      }
+      body = {
+        type = FourLegged HUGE
+        addBodyPart = {
+          WING 2
+        }
+        intrinsicAttacks = {
+          HEAD { Intrinsic BITE_ATTACK "fangs" 15 {
+              attackType = BITE
+              attackMsg = BITE
+              victimEffect = {Fire} } }
+        }
+      }
+      permanentEffects = {
+        FIRE_RESISTANT 1
+        RANGED_VULNERABILITY 1
+      }
+      name = {
+        name = "young red dragon"
+        firstNameGen = DRAGON
+        stackName = "young dragon"
       }
       spells = {
         HEAL_SELF
@@ -1424,6 +1622,9 @@
         DECEPTION
         TELEPORT
       }
+      skills = {
+        LABORATORY 0.7
+      }
       chatReactionFriendly = "\"There are times when you simply nnot refuse a drink!\""
       chatReactionHostile = "\"There are times when you simply nnot refuse a drink!\""
       hatedByEffect = HATE_UNDEAD
@@ -1724,6 +1925,160 @@
       chatReactionHostile = "\"Die!\""
       hatedByEffect = HATE_DWARVES
     }
+  "DWARF_MILITIA"
+    {
+      viewId = DWARF
+      attr = {
+        DAMAGE 15
+        DEFENSE 20 
+      }
+      body = {
+        type = Humanoid MEDIUM
+        weight = 90
+      }
+      name = {
+        name = "dwarf militia"
+        pluralName = "dwarves"
+        firstNameGen = DWARF
+      }
+      skills = {
+        FORGE 0.8
+        DIGGING 1.0
+      }
+      maxLevelIncrease = {
+        MELEE 3
+      }
+      permanentEffects = {
+        MAGIC_VULNERABILITY 1
+        NAVIGATION_DIGGING_SKILL 1
+      }
+      chatReactionFriendly = "curses all orcs"
+      chatReactionHostile = "\"Die!\""
+      hatedByEffect = HATE_DWARVES
+    }
+  "DWARF_FIGHTER"
+    {
+      viewId = DWARF
+      attr = {
+        DAMAGE 23
+        DEFENSE 23 
+      }
+      body = {
+        type = Humanoid MEDIUM
+        weight = 90
+      }
+      name = {
+        name = "dwarf fighter"
+        pluralName = "dwarves"
+        firstNameGen = DWARF
+      }
+      skills = {
+        FORGE 0.8
+        DIGGING 1.0
+      }
+      maxLevelIncrease = {
+        MELEE 5
+      }
+      permanentEffects = {
+        MAGIC_VULNERABILITY 1
+        NAVIGATION_DIGGING_SKILL 1
+      }
+      chatReactionFriendly = "curses all orcs"
+      chatReactionHostile = "\"Die!\""
+      hatedByEffect = HATE_DWARVES
+    }
+  "DWARF_WARRIOR"
+    {
+      viewId = DWARF
+      attr = {
+        DAMAGE 25
+        DEFENSE 25 
+      }
+      body = {
+        type = Humanoid MEDIUM
+        weight = 90
+      }
+      name = {
+        name = "dwarf warrior"
+        pluralName = "dwarves"
+        firstNameGen = DWARF
+      }
+      skills = {
+        FORGE 0.8
+        DIGGING 1.0
+      }
+      maxLevelIncrease = {
+        MELEE 6
+      }
+      permanentEffects = {
+        MAGIC_VULNERABILITY 1
+        NAVIGATION_DIGGING_SKILL 1
+      }
+      chatReactionFriendly = "curses all orcs"
+      chatReactionHostile = "\"Die!\""
+      hatedByEffect = HATE_DWARVES
+    }
+  "ELITE_DWARF_WARRIOR"
+    {
+      viewId = DWARF
+      attr = {
+        DAMAGE 27
+        DEFENSE 27 
+      }
+      body = {
+        type = Humanoid MEDIUM
+        weight = 90
+      }
+      name = {
+        name = "elite dwarf warrior"
+        pluralName = "dwarves"
+        firstNameGen = DWARF
+      }
+      skills = {
+        FORGE 0.8
+        DIGGING 1.0
+      }
+      maxLevelIncrease = {
+        MELEE 8
+      }
+      permanentEffects = {
+        MAGIC_VULNERABILITY 1
+        NAVIGATION_DIGGING_SKILL 1
+      }
+      chatReactionFriendly = "curses all orcs"
+      chatReactionHostile = "\"Die!\""
+      hatedByEffect = HATE_DWARVES
+    }
+  "DWARF_WORKER"
+    {
+      viewId = DWARF
+      attr = {
+        DAMAGE 11
+        DEFENSE 15 
+      }
+      body = {
+        type = Humanoid MEDIUM
+        weight = 90
+      }
+      name = {
+        name = "dwarf worker"
+        pluralName = "dwarves"
+        firstNameGen = DWARF
+      }
+      skills = {
+        FORGE 0.8
+        DIGGING 1.0
+        WORKSHOP 0.5
+      }
+      permanentEffects = {
+        MAGIC_VULNERABILITY 1
+        NAVIGATION_DIGGING_SKILL 1
+        NO_CARRY_LIMIT 1
+      }
+      chatReactionFriendly = "curses all orcs"
+      chatReactionHostile = "\"Die!\""
+      hatedByEffect = HATE_DWARVES
+    }
   "DWARF_FEMALE"
     {
       viewId = DWARF_FEMALE
@@ -1819,7 +2174,7 @@
       body = {
         type = Humanoid MEDIUM
         intrinsicAttacks = {
-          HEAD { Intrinsic BITE_ATTACK "fangs" 8 {
+          HEAD { Intrinsic BITE_ATTACK "fangs" 15 {
               attackType = BITE
               attackMsg = BITE
               victimEffect = {Lasting POISON} } }
@@ -2598,6 +2953,7 @@
       maxLevelIncrease = {
         SPELL 9
       }
+      spells = { SUMMON_ELEMENT FIREBALL FIRE_SPHERE_PET }
       gender = FEMALE
       permanentEffects = {
         FIRE_RESISTANT 1
@@ -2799,4 +3155,169 @@
         firstNameGen = FIRST_MALE
       }
     }
+  "WARRIOR_HERO"
+    {
+      viewId = WARRIOR
+      name = {
+        name = "Legendary Warrior"
+        firstNameGen = FIRST_MALE
+        fullTitle = true
+    }
+    body = {
+      type = Humanoid LARGE
+    }
+    attr = {
+      DAMAGE 25
+      DEFENSE 25
+    }
+    skills = {
+      WORKSHOP 0.5
+      FORGE 0.5
+    }
+    maxLevelIncrease = {
+      MELEE 13
+    }
+    spells = { DAM_BONUS }
+    permanentEffects = {
+      MELEE_RESISTANCE 1
+    }
+    chatReactionFriendly = "speaks of bringing justice to all evil"
+    chatReactionHostile  = "\"We are taking you down!\""
+    courage = 1
+    deathDescription = "killed, fighting to the last"
+    hatedByEffect = HATE_HUMANS
+  }
+  "THIEF_HERO"
+    {
+      viewId = BANDIT
+      name = {
+        name = "archer assassin"
+        firstNameGen = FIRST_FEMALE
+        fullTitle = true
+    }
+    body = {
+      type = Humanoid SMALL
+    }
+    attr = {
+	  DAMAGE 25
+      RANGED_DAMAGE 25
+      DEFENSE 25
+    }
+    skills = {
+      WORKSHOP 0.6
+    }
+    maxLevelIncrease = {
+      ARCHERY 20
+      MELEE 3
+    }
+    spells = {
+      DECEPTION
+      TELEPORT
+    }
+    permanentEffects = {
+      ELF_VISION 1
+      NIGHT_VISION 1
+      FAST_TRAINING 1
+      AMBUSH_SKILL 1
+      SWIMMING_SKILL 1
+      DISARM_TRAPS_SKILL 1
+    }
+    chatReactionFriendly = "chats about when she robbed a shop"
+    chatReactionHostile  = "\"A knife awaits your back my friend!\""
+    courage = 0
+    hatedByEffect = HATE_HUMANS
+}
+  "CLERIC_HERO"
+    {
+      viewId = SHAMAN
+      name = {
+        name = "Legendary Cleric"
+        firstNameGen = FIRST_MALE
+        fullTitle = true
+    }
+    body = {
+      type = Humanoid MEDIUM
+    }
+    skills = {
+      JEWELER 0.6
+    }
+    attr = {
+      DAMAGE 15
+      DEFENSE 40
+    }
+    spells = {
+      HEAL_SELF
+      HEAL_OTHER
+    }
+    permanentEffects = {
+      RANGED_RESISTANCE 1
+    }
+    maxLevelIncrease = {
+      SPELL 4
+	  MELEE 4
+    }
+    chatReactionFriendly = "talks at length about his goddess"
+    chatReactionHostile  = "\"Your afterlife will be horrible!\""
+    hatedByEffect = HATE_HUMANS
+}
+  "WIZARD_HERO"
+    {
+      viewId = KEEPER_F1
+      name = {
+        name = "Legendary Wizard"
+        firstNameGen = FIRST_FEMALE
+        fullTitle = true
+    }
+    body = {
+      type = Humanoid MEDIUM
+    }
+    gender = FEMALE
+    attr = {
+	  DAMAGE 10
+      DEFENSE 10
+      SPELL_DAMAGE 35
+    }
+    skills = {
+      LABORATORY 0.6
+    }
+    maxLevelIncrease = {
+      SPELL 12
+    }
+    permanentEffects = {
+      MAGIC_RESISTANCE 1
+    }
+    chatReactionFriendly = "rambles some philosophy about the price of magic"
+    chatReactionHostile  = "\"The war shall be won!\""
+    hatedByEffect = HATE_HUMANS
+}
+  "WIZARD_ADVENTURER"
+    {
+      viewId = KEEPER_F1
+      name = {
+        name = "Legendary Wizard"
+        firstNameGen = FIRST_FEMALE
+        fullTitle = true
+    }
+    body = {
+      type = Humanoid MEDIUM
+    }
+    gender = FEMALE
+    attr = {
+	  DAMAGE 10
+      DEFENSE 10
+      SPELL_DAMAGE 35
+    }
+    skills = {
+      LABORATORY 0.6
+    }
+    maxLevelIncrease = {
+      SPELL 20
+    }
+	permanentEffects = {
+      MAGIC_RESISTANCE 1
+    }
+    chatReactionFriendly = "rambles some philosophy about the price of magic"
+    chatReactionHostile  = "\"The war shall be won!\""
+    hatedByEffect = HATE_HUMANS
+}
 }

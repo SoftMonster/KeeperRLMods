@@ -89,16 +89,23 @@
         { Club }
         { type = LeatherBoots chance = 0.3 }
       }
-  {"WARRIOR"}
+  {"WARRIOR" "WARRIOR_HERO"}
       {
         { LeatherArmor }
-        { Club }
+        { HeavyClub }
+		{ WoodenShield }
+        { LeatherHelm }
+        { LeatherBoots }
+		{ LeatherGloves }
         { GoldPiece 2 5 }
       }
   {"SHAMAN"}
       {
         { LeatherArmor }
-        { Club }
+        { WoodenStaff }
+        { LeatherHelm }
+        { LeatherBoots }
+		{ LeatherGloves }
         { GoldPiece 80 120 }
         { type = Glyph ARMOR ItemAttrBonus SPELL_DAMAGE 5 chance = 0.3 }
         { type = Glyph ARMOR LastingEffect FLYING chance = 0.3 }
@@ -108,10 +115,19 @@
         { type = Glyph ARMOR ItemAttrBonus DEFENSE 3 chance = 0.3 }
         { type = Glyph WEAPON ItemAttrBonus DAMAGE 3 chance = 0.3 }
       }
+  {"CLERIC_HERO" "WIZARD_HERO" "WIZARD_ADVENTURER"}
+      {
+        { LeatherArmor }
+        { WoodenStaff }
+        { LeatherHelm }
+        { LeatherBoots }
+		{ LeatherGloves }
+      }	   
   {"LIZARDLORD"}
       {
         { LeatherArmor }
         { Potion RegrowBodyPart }
+		{ Scroll Summon "SNAKE" {4 6} }
         { GoldPiece 50 90 }
       }
   {"LIZARDMAN"}
@@ -194,6 +210,12 @@
         { type = Torch chance = 0.3 }
         { type = Bow chance = 0.05 }
       }
+  {"THIEF_HERO"}
+      {
+        { Bow }
+		{ type = Knife prefixChance = 1}
+      }
+  
   {"DWARF"}
       {
         { type = BattleAxe, alternative = WarHammer }
@@ -205,11 +227,11 @@
       }
   {"DWARF_BARON"}
       {
-        { type = BattleAxe, alternative = WarHammer prefixChance = 1 }
+        { type = AdaBattleAxe, alternative = WarHammer prefixChance = 1 }
         { Potion Heal 2 3 }
-        { type = ChainArmor prefixChance = 1 }
-        { IronBoots }
-        { IronHelm }
+        { type = AdaArmor prefixChance = 1 }
+        { AdaBoots }
+        { AdaHelm }
         { type = Torch chance = 0.3 }
         { GoldPiece 80 120 }
         { type = Glyph ARMOR ItemAttrBonus DEFENSE 4 chance = 0.3 }
