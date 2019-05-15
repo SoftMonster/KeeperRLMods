@@ -147,7 +147,7 @@
           invisible = true
           initialRecruitment = 4
           specialTraits = {
-             { 1.0 { LastingEffect NAVIGATION_DIGGING_SKILL LastingEffect NO_CARRY_LIMIT }}
+             { 1.0 { LastingEffect NO_CARRY_LIMIT }}
           }
         }
 		{

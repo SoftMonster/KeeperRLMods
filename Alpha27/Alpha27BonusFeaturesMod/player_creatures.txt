@@ -15,7 +15,7 @@
         "structure" "doors" "floors" "storage" "quarters" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
         "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
-    workshopGroups = { "basic" "scrolls" "traps" }
+    workshopGroups = { "basic" "scrolls" "traps" "techbooks"}
     description = "(Easy) Play in easy mode and get a big bonus on all immigrants."
   }
   {
@@ -33,7 +33,7 @@
         "structure" "doors" "floors" "storage" "quarters" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
         "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
-    workshopGroups = { "basic" "scrolls" "traps" }
+    workshopGroups = { "basic" "scrolls" "traps" "techbooks" }
     description = "(Challenge) Build and manage, defend against raids, and attack!"
   }
   {
@@ -51,7 +51,7 @@
         "structure" "doors" "floors" "storage" "quarters" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
         "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
-    workshopGroups = { "basic" "scrolls" "traps" }
+    workshopGroups = { "basic" "scrolls" "traps" "techbooks" }
     description = "(Hard) Play in hard mode and test your skills to the limit for experienced players."
   }
   {
@@ -64,7 +64,7 @@
         "advanced sorcery" "magical weapons" "master sorcery" "demonology"
 		"magic paper production" "advanced inscription" "master inscription"
     }
-    initialTech = { "iron working" }
+    initialTech = { "iron working" "techbooks" }
     buildingGroups = {
         "structure" "doors" "floors" "storage" "quarters" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
         "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"

@@ -160,7 +160,7 @@
 
 # Lab
 {
-    {{Potion RegrowBodyPart}  500       GOLD 1000  "regrow limbs"}
+    {{Potion RegrowBodyPart}  10       GOLD 1000  "regrow limbs"}
 }
 
 # Jeweller
@@ -465,6 +465,37 @@
     {{Amulet WARNING}                      1       GOLD 1}
     {{DefenseAmulet}                       1       GOLD 1}
     {{Amulet REGENERATION}                 1       GOLD 1}
+}
+
+"techBooks"
+{
+# Workshop
+{
+	{{TechBook "iron working"}             10    GOLD 1000}
+	{{TechBook "alchemy"}                  10    GOLD 1000}
+	{{TechBook "advanced alchemy"}         10    GOLD 1000}
+	{{TechBook "alchemical conversion"}    10    GOLD 1000}
+	{{TechBook "humanoid mutation"}        10    GOLD 1000}
+	{{TechBook "beast mutation"}           10    GOLD 1000}
+	{{TechBook "pig breeding"}             10    GOLD 1000}
+	{{TechBook "iron working"}             10    GOLD 1000}
+	{{TechBook "jewellery"}                10    GOLD 1000}
+	{{TechBook "two-handed weapons"}       10    GOLD 1000}
+	{{TechBook "traps"}                    10    GOLD 1000}
+	{{TechBook "archery"}                  10    GOLD 1000}
+	{{TechBook "sorcery"}                  10    GOLD 1000}
+	{{TechBook "advanced sorcery"}         10    GOLD 1000}
+	{{TechBook "magical weapons"}          10    GOLD 1000}
+	{{TechBook "master sorcery"}           10    GOLD 1000}
+	{{TechBook "demonology"}               10    GOLD 1000}
+}
+# Forge
+{
+}
+# Lab
+{
+}
+# Jewellery
 }
 
 }

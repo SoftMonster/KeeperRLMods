@@ -1950,7 +1950,6 @@
       }
       permanentEffects = {
         MAGIC_VULNERABILITY 1
-        NAVIGATION_DIGGING_SKILL 1
       }
       chatReactionFriendly = "curses all orcs"
       chatReactionHostile = "\"Die!\""
@@ -1981,7 +1980,6 @@
       }
       permanentEffects = {
         MAGIC_VULNERABILITY 1
-        NAVIGATION_DIGGING_SKILL 1
       }
       chatReactionFriendly = "curses all orcs"
       chatReactionHostile = "\"Die!\""
@@ -2012,7 +2010,6 @@
       }
       permanentEffects = {
         MAGIC_VULNERABILITY 1
-        NAVIGATION_DIGGING_SKILL 1
       }
       chatReactionFriendly = "curses all orcs"
       chatReactionHostile = "\"Die!\""
@@ -2043,7 +2040,6 @@
       }
       permanentEffects = {
         MAGIC_VULNERABILITY 1
-        NAVIGATION_DIGGING_SKILL 1
       }
       chatReactionFriendly = "curses all orcs"
       chatReactionHostile = "\"Die!\""
@@ -2072,7 +2068,6 @@
       }
       permanentEffects = {
         MAGIC_VULNERABILITY 1
-        NAVIGATION_DIGGING_SKILL 1
         NO_CARRY_LIMIT 1
       }
       chatReactionFriendly = "curses all orcs"
