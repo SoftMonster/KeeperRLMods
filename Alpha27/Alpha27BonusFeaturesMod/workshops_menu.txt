@@ -468,7 +468,7 @@
 }
 
 "techBooks"
-{
+
 # Workshop
 {
 	{{TechBook "iron working"}             10    GOLD 1000}
@@ -496,6 +496,7 @@
 {
 }
 # Jewellery
+{
 }
 
 }
