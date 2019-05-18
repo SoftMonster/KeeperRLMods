@@ -3314,5 +3314,46 @@
     chatReactionFriendly = "rambles some philosophy about the price of magic"
     chatReactionHostile  = "\"The war shall be won!\""
     hatedByEffect = HATE_HUMANS
-}
+  }
+ "MUMMY_LORD"
+    {
+      viewId = MUMMY
+      attr = {
+        DAMAGE 20
+        DEFENSE 20 
+        SPELL_DAMAGE 10  
+      }
+      body = {
+        type = Humanoid LARGE
+        material = UNDEAD_FLESH
+        weight = 100
+        intrinsicAttacks = {
+          TORSO { Intrinsic TOUCH_ATTACK "touch" 0 {
+              attackType = HIT
+              attackMsg = TOUCH
+              victimEffect = {Lasting POISON}
+              attackerEffect = {Lasting RAGE} } }
+        }
+      }
+	  hatedByEffect = HATE_UNDEAD
+      maxLevelIncrease = {
+        MELEE 25
+        SPELL 10
+      }
+      spells = {
+        MAGIC_MISSILE
+      }
+      permanentEffects = {
+        TELEPATHY 1
+        MAGIC_RESISTANCE 1
+        HATE_HUMANS 1
+      }
+      name = {
+        name = "mummy lord"
+        firstNameGen = FIRST_MALE
+      }
+      chatReactionFriendly = "\"Rrrrrr!\""
+      chatReactionHostile = "\"Pathetic!\""
+      courage = 1
+    }
 }
