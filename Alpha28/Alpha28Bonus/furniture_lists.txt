@@ -37,6 +37,18 @@
       "WELL" 1
     }
   }
+  "caveWells"
+  {
+    {
+      "WELL" 1
+    }
+  }
+  "prisonerHeads"
+  {
+    {
+      "IMPALED_HEAD" 1
+    }
+  }
   "vegetationLow"
   {
     {
@@ -70,6 +82,12 @@
   {
     {
       "GRAVE" 1
+    }
+  }
+  "chests"
+  {
+    {
+      "CHEST" 1
     }
   }
   "templeInside"

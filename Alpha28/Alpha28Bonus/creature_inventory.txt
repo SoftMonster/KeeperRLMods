@@ -24,6 +24,13 @@
         { type = Glyph ARMOR ItemAttrBonus DEFENSE 3 chance = 0.3 }
         { type = Glyph WEAPON ItemAttrBonus DAMAGE 3 chance = 0.3 }
       }
+  {"GIANT"}
+      {
+        { HeavyClub }
+        { GoldPiece 30 50 }
+        { type = Glyph ARMOR ItemAttrBonus DEFENSE 5 chance = 0.1 }
+      }
+  
   {"GREEN_DRAGON"}
       {
         { GoldPiece 60 100 }
@@ -32,6 +39,10 @@
         { type = Glyph ARMOR LastingEffect REGENERATION chance = 0.3 }
         { type = Glyph ARMOR ItemAttrBonus DEFENSE 3 chance = 0.3 }
         { type = Glyph WEAPON ItemAttrBonus DAMAGE 3 chance = 0.3 }
+      }
+  {"YOUNG_GREEN_DRAGON" "YOUNG_RED_DRAGON"}
+      {
+        { GoldPiece 40 70 }
       }
   {"DEMON_DWELLER"}
       {
@@ -89,7 +100,7 @@
       {
         { Scythe }
       }
-  {"KOBOLD"}
+  {"KOBOLD" "AMAZON" "HOBGOBLIN" }
       {
         { Spear }
       }
@@ -101,7 +112,11 @@
   {"WARRIOR"}
       {
         { LeatherArmor }
-        { Club }
+        { HeavyClub }
+		{ WoodenShield }
+        { LeatherHelm }
+        { LeatherBoots }
+		{ LeatherGloves }
         { GoldPiece 2 5 }
       }
   {"SHAMAN"}
@@ -117,10 +132,19 @@
         { type = Glyph ARMOR ItemAttrBonus DEFENSE 3 chance = 0.3 }
         { type = Glyph WEAPON ItemAttrBonus DAMAGE 3 chance = 0.3 }
       }
+  {"CLERIC_HERO" "WIZARD_HERO" "WIZARD_ADVENTURER"}
+      {
+        { LeatherArmor }
+        { WoodenStaff }
+        { LeatherHelm }
+        { LeatherBoots }
+		{ LeatherGloves }
+      }	   
   {"LIZARDLORD"}
       {
         { LeatherArmor }
         { Potion RegrowBodyPart }
+		{ Scroll Summon "SNAKE" {4 6} }
         { GoldPiece 50 90 }
       }
   {"LIZARDMAN"}
@@ -128,11 +152,11 @@
         { LeatherArmor }
         { GoldPiece 2 4 }
       }
-  {"HARPY"}
+  {"HARPY" "CENTAUR_HUNTER" "AMAZON_ARCHER"}
       {
         { Bow }
       }
-  {"ARCHER"}
+  {"ARCHER" "RAT_ARCHER" }
       {
         { Bow }
         { Knife }
@@ -157,7 +181,7 @@
         { LeatherBoots }
         { type = Robe prefixChance = 1 }
       }
-  {"KNIGHT"}
+  {"KNIGHT" "ARMORED_COW_DEMON" }
       {
         { Sword }
         { ChainArmor }
@@ -165,6 +189,27 @@
         { type = Torch chance = 0.3 }
         { type = Potion Heal FLESH chance = 0.7 }
         { GoldPiece 6 16 }
+      }
+  {"CENTAUR_KNIGHT"}
+      {
+        { Sword }
+        { ChainArmor }
+		{ LeatherGloves }
+      }
+  {"CENTAUR_KING"}
+      {
+        { type = AdaSword prefixChance = 1 }
+        { AdaArmor }
+		{ AdaGloves }
+        { Potion Heal FLESH}
+        { GoldPiece 16 26 }
+      }
+  {"ARACHNE"}
+      {
+        { AdaSword }
+		{ AdaGloves }
+        { Potion Heal FLESH}
+        { GoldPiece 10 15 }
       }
   {"MINOTAUR"}
       {
@@ -187,9 +232,23 @@
         { Club }
         { LeatherArmor }
       }
-  {"ORC_MAGE"}
+  {"ORC_MAGE" "RED_DRAGONNEWT"}
       {
         { WoodenStaff }
+        { LeatherArmor }
+      }
+  {"GREEN_DRAGONEWT"}
+      {
+        { LeatherArmor }
+        { GoldPiece 5 10 }
+      }
+  {"AIR_FAIRY" "DARK_FAIRY" "DEMON_FAIRY" "EARTH_FAIRY" "ELECTRIC_FAIRY" "FIRE_FAIRY" "MAGIC_FAIRY" "NATURE_FAIRY" "LIGHT_FAIRY" "WATER_FAIRY"}
+      {
+        { WoodenStaff }
+      }  
+  {"AMAZON_QUEEN"}
+      {
+        { type = GoldenStaff prefixChance = 1 }
         { LeatherArmor }
       }
   {"OGRE"}
@@ -203,7 +262,13 @@
         { type = Torch chance = 0.3 }
         { type = Bow chance = 0.05 }
       }
-  {"DWARF"}
+  {"THIEF_HERO"}
+      {
+        { Bow }
+		{ type = Knife prefixChance = 1}
+      }
+  
+  {"DWARF" "RAT_GENERAL"}
       {
         { type = BattleAxe, alternative = WarHammer }
         { ChainArmor }
@@ -212,13 +277,18 @@
         { type = Torch chance = 0.3 }
         { GoldPiece 2 6 }
       }
+  { "ABOMINATION" }	  
+      {
+        { WarHammer }
+        { ChainArmor }
+      }
   {"DWARF_BARON"}
       {
-        { type = BattleAxe, alternative = WarHammer prefixChance = 1 }
+        { type = AdaBattleAxe, alternative = WarHammer prefixChance = 1 }
         { Potion Heal FLESH 2 3 }
-        { type = ChainArmor prefixChance = 1 }
-        { IronBoots }
-        { IronHelm }
+        { type = AdaArmor prefixChance = 1 }
+        { AdaBoots }
+        { AdaHelm }
         { type = Torch chance = 0.3 }
         { GoldPiece 80 120 }
         { type = Glyph ARMOR ItemAttrBonus DEFENSE 4 chance = 0.3 }
@@ -234,6 +304,12 @@
         { IronStaff }
         { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
       }
+  {"AMAZON_ELDER" "GORGON"}
+      {
+        { type = Robe prefixChance = 1}
+        { IronStaff }
+        { type = Glyph ARMOR LastingEffect POISON_RESISTANT chance = 0.2 }
+      }	  
   {"DARK_ELF_LORD" "ELF_LORD"}
       {
         { type = ElvenSword prefixChance = 1 }
@@ -252,13 +328,13 @@
       {
         { Bow }
       }
-  {"DARK_ELF_WARRIOR"}
+  {"DARK_ELF_WARRIOR" "AMAZON_WAR_MAIDEN" "AMAZON_CHAMPION"}
       {
         { ElvenSword }
         { LeatherArmor }
         { GoldPiece 2 6 }
       }
-  {"ELF_ARCHER"}
+  {"ELF_ARCHER" "CENTAUR_ARCHER"}
       {
         { ElvenSword }
         { LeatherArmor }

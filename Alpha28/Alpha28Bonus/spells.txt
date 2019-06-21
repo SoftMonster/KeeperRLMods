@@ -102,6 +102,14 @@
     sound = SPELL_BLAST
   }
   {
+    id =  "rapid magic missile"
+    symbol = "⥇"
+    effect = Damage SPELL_DAMAGE SPELL
+    range = 4
+    cooldown = 2
+    sound = SPELL_BLAST
+  }
+  {
     id =  "deception"
     symbol = "🎭"
     effect = Deception
@@ -345,4 +353,261 @@
     effect = Area Lasting BLIND 30
     cooldown = 3
   }
+ {
+   id = "stone golem"
+   symbol = "👤"
+   effect = Summon "STONE_GOLEM" { 1 2}
+   cooldown = 100
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "snakes"
+   symbol = "🐍🐍"
+   effect = Summon "SNAKE" { 7 8 }
+   cooldown = 100
+   sound = SPELL_SUMMON_SPIRIT 
+ }
+ {
+   id = "spiders"
+   symbol = "🕷"
+   effect = Summon "SPIDER" { 2 3 }
+   cooldown = 100
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "fumes"
+   symbol = "☠"
+   range = 4
+   effect = EmitPoisonGas 4
+   cooldown = 50
+   sound = SPELL_AIR_BLAST
+ }
+ {
+   id = "poison spores"
+   symbol = "☠"
+   range = 5
+   effect = Lasting POISON
+   cooldown = 20
+   sound = SPELL_AIR_BLAST
+   castMessageType = ABILITY
+ }
+ {
+   id = "curse"
+   symbol = "☛"
+   range = 10
+   effect = Lasting BLEEDING
+   cooldown = 125
+   sound = SPELL_BLAST
+ }  
+ {
+   id = "spit shards"
+   symbol = "!"
+   range = 7
+   effect = Lasting BLEEDING
+   cooldown = 10
+   sound = SPELL_BLAST
+ }  
+ {
+   id = "stone to mud"
+   symbol = "🕳"
+   effect = DestroyWalls
+   cooldown = 1000
+   sound = SPELL_AIR_BLAST
+ } 
+ {
+   id = "entangling vines"
+   symbol = "🙙"
+   range = 10
+   effect = Lasting TIED_UP
+   cooldown = 70
+   sound = SPELL_STR_BONUS
+ }
+ {
+   id = "resist magic"
+   symbol = "O"
+   effect = Lasting MAGIC_RESISTANCE
+   cooldown = 80
+   sound = SPELL_DEX_BONUS
+ }
+ {
+   id = "light"
+   symbol = "🕯"
+   effect = Lasting LIGHT_SOURCE
+   cooldown = 80
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "darkness"
+   symbol = "☁"
+   effect = Lasting DARKNESS_SOURCE
+   cooldown = 14
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "wolves"
+   symbol = "🐺"
+   effect = Summon "WOLF" { 5 6 }
+   cooldown = 150
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "bear"
+   symbol = "🐻"
+   effect = Summon "CAVE_BEAR" { 3 4 }
+   cooldown = 80
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "boar"
+   symbol = "🐖"
+   effect = Summon "BOAR" { 3 4 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "raven"
+   symbol = "🐦"
+   effect = Summon "RAVEN" { 1 2 }
+   cooldown = 20
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "levitate"
+   symbol = "^"
+   effect = Lasting FLYING
+   cooldown = 175
+   sound = SPELL_SPEED_SELF
+ }
+ {
+   id = "fire shield"
+   symbol = "❂"
+   effect = Lasting FIRE_RESISTANT
+   cooldown = 100
+   sound = SPELL_INVISIBILITY
+ }
+ {
+   id = "telepathy"
+   symbol = "💭"
+   effect = Lasting TELEPATHY
+   cooldown = 175
+   sound = SPELL_INVISIBILITY
+ }
+ {
+   id = "elf vision"
+   symbol = "👁"
+   effect = Lasting ELF_VISION
+   cooldown = 90
+   sound = SPELL_SPEED_SELF
+ }
+ {
+   id = "weapon dodge"
+   symbol = "⇠⇢"
+   effect = Lasting MELEE_RESISTANCE
+   cooldown = 90
+   sound = SPELL_DEX_BONUS
+ }
+ {
+   id = "arrow shield"
+   symbol = "➵◌"
+   effect = Lasting RANGED_RESISTANCE
+   cooldown = 50
+   sound = SPELL_DEX_BONUS
+ }
+ {
+   id = "sleep"
+   symbol = "Z💤"
+   range = 1
+   effect = Lasting SLEEP
+   cooldown = 30
+   sound = SPELL_HEALING
+ }
+ {
+   id = "cause blindness"
+   symbol = "👀"
+   range = 5
+   effect = Lasting BLIND
+   cooldown = 100
+   sound = SPELL_DECEPTION
+ }
+ {
+   id = "cripple"
+   symbol = "X"
+   range = 5
+   effect = Lasting COLLAPSED
+   cooldown = 120
+   sound = SPELL_BLAST
+ }
+ {
+   id = "mind bolt"
+   symbol = "⇝"
+   range = 5
+   effect = Lasting INSANITY
+   cooldown = 180
+   sound = SPELL_BLAST
+ }
+ {
+   id = "arrow attraction"
+   symbol = "🚶↩"
+   range = 5
+   effect = Lasting RANGED_VULNERABILITY
+   cooldown = 60
+   sound = SPELL_BLAST
+ }
+ {
+   id = "mana curse"
+   symbol = "☞"
+   range = 5
+   effect = Lasting MAGIC_VULNERABILITY
+   cooldown = 60
+   sound = SPELL_BLAST
+ }
+ {
+   id = "regrow body parts"
+   symbol = "⨢"
+   effect = RegrowBodyPart
+   cooldown = 3000
+   sound = SPELL_BLAST
+ }
+ {
+   id =  "summon water elementals"
+   symbol = "🕵"
+   effect = Summon "WATER_ELEMENTAL" { 3 4 }
+   cooldown = 200
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id =  "summon air elementals"
+   symbol = "🕵"
+   effect = Summon "AIR_ELEMENTAL" { 3 4 }
+   cooldown = 200
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id =  "adoxie right hand"
+   symbol = "-."
+   effect = Summon "ADOXIE_HAND_RIGHT" { 1 2 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id =  "adoxie left hand"
+   symbol = ".-"
+   effect = Summon "ADOXIE_LEFT_HAND" { 1 2 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id =  "adoxie left foot"
+   symbol = "_|"
+   effect = Summon "ADOXIE_FOOT_LEFT" { 1 2 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id =  "adoxie right foot"
+   symbol = "|_"
+   effect = Summon "ADOXIE_FOOT_RIGHT" { 1 2 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
 }
