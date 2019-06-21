@@ -16,6 +16,10 @@ are not necessarily distributable outside specific conditions.
 
 Thanks for your understanding.
 
+The mod can be discussed on Discord here:
+
+https://discordapp.com/channels/467527431247495169/586673633812807680
+
 Enjoy the mod!
 
 Soft Monster
