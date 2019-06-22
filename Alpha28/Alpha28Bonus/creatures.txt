@@ -1721,16 +1721,11 @@
       chatReactionHostile = "\"Die!\""
       hatedByEffect = HATE_DWARVES
     }
-  "DWARF_MILITIA"
+  "DWARF_MILITIA" inherit "DWARF"
     {
-      viewId = { "dwarf" }
       attr = {
         DAMAGE 15
         DEFENSE 20 
-      }
-      body = {
-        type = Humanoid MEDIUM
-        weight = 90
       }
       name = {
         name = "dwarf militia"
@@ -1747,110 +1742,57 @@
       permanentEffects = {
         MAGIC_VULNERABILITY 1
       }
-      chatReactionFriendly = "curses all orcs"
-      chatReactionHostile = "\"Die!\""
-      hatedByEffect = HATE_DWARVES
     }
-  "DWARF_FIGHTER"
+  "DWARF_FIGHTER" inherit "DWARF_MILITIA"
     {
-      viewId = { "dwarf" }
       attr = {
         DAMAGE 23
         DEFENSE 23 
-      }
-      body = {
-        type = Humanoid MEDIUM
-        weight = 90
       }
       name = {
         name = "dwarf fighter"
         pluralName = "dwarves"
         firstNameGen = DWARF
       }
-      skills = {
-        FORGE 0.8
-        DIGGING 1.0
-      }
       maxLevelIncrease = {
         MELEE 5
       }
-      permanentEffects = {
-        MAGIC_VULNERABILITY 1
-      }
-      chatReactionFriendly = "curses all orcs"
-      chatReactionHostile = "\"Die!\""
-      hatedByEffect = HATE_DWARVES
     }
-  "DWARF_WARRIOR"
+  "DWARF_WARRIOR" inherit "DWARF_MILITIA"
     {
-      viewId = { "dwarf" }
       attr = {
         DAMAGE 25
         DEFENSE 25 
-      }
-      body = {
-        type = Humanoid MEDIUM
-        weight = 90
       }
       name = {
         name = "dwarf warrior"
         pluralName = "dwarves"
         firstNameGen = DWARF
       }
-      skills = {
-        FORGE 0.8
-        DIGGING 1.0
-      }
       maxLevelIncrease = {
         MELEE 6
       }
-      permanentEffects = {
-        MAGIC_VULNERABILITY 1
-      }
-      chatReactionFriendly = "curses all orcs"
-      chatReactionHostile = "\"Die!\""
-      hatedByEffect = HATE_DWARVES
     }
-  "ELITE_DWARF_WARRIOR"
+  "ELITE_DWARF_WARRIOR" inherit "DWARF_MILITIA"
     {
-      viewId = { "dwarf" }
       attr = {
         DAMAGE 27
         DEFENSE 27 
-      }
-      body = {
-        type = Humanoid MEDIUM
-        weight = 90
       }
       name = {
         name = "elite dwarf warrior"
         pluralName = "dwarves"
         firstNameGen = DWARF
       }
-      skills = {
-        FORGE 0.8
-        DIGGING 1.0
-      }
       maxLevelIncrease = {
         MELEE 8
       }
-      permanentEffects = {
-        MAGIC_VULNERABILITY 1
-      }
-      chatReactionFriendly = "curses all orcs"
-      chatReactionHostile = "\"Die!\""
-      hatedByEffect = HATE_DWARVES
     }
-  "DWARF_WORKER"
+  "DWARF_WORKER" inherit "DWARF"
     {
-      viewId = { "dwarf" }
       attr = {
         DAMAGE 11
         DEFENSE 15 
-      }
-      body = {
-        type = Humanoid MEDIUM
-        weight = 90
       }
       name = {
         name = "dwarf worker"
@@ -1862,13 +1804,11 @@
         DIGGING 1.0
         WORKSHOP 0.5
       }
+      maxLevelIncrease = { }
       permanentEffects = {
         MAGIC_VULNERABILITY 1
         NO_CARRY_LIMIT 1
       }
-      chatReactionFriendly = "curses all orcs"
-      chatReactionHostile = "\"Die!\""
-      hatedByEffect = HATE_DWARVES
     }
   "DWARF_FEMALE"
     {
