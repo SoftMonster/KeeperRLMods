@@ -1,5 +1,5 @@
 {
-  "mage" SPELL
+  "ancient magic" SPELL
   {
     "healing" 1
     "summon flies" 2
@@ -12,6 +12,21 @@
     "defense bonus" 8
     "summon element" 9
     "damage bonus" 10
+    "invisibility" 12
+  }
+  "mage" SPELL
+  {
+    "directed blast" 1
+    "escape" 2
+    "magic missile" 3
+    "healing" 4
+    "teleport" 5
+    "cure poison" 6
+    "advanced magic missile" 7
+    "haste" 8
+    "defense bonus" 9
+    "advanced teleport" 10
+    "expert magic missile" 11
     "invisibility" 12
   }
   "evocation" SPELL
@@ -40,10 +55,11 @@
   {
     "advanced healing" 1
     "expert healing" 2
-    "cure poison" 2
-    "advanced cure poison" 3
-    "cure blindness" 4
-    "poison resistance" 5
+    "cure poison" 3
+    "advanced cure poison" 4
+    "cure blindness" 5
+    "poison resistance" 6
+    "group healing" 7
   }
   "fire" SPELL
   {
