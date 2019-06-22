@@ -40,158 +40,58 @@
       spellSchools = { "mage" }
       spells = { "healing" }
     }
-
-  "KEEPER_MAGE_F"
+  "KEEPER_MAGE_F" inherit "KEEPER_MAGE"
     {
       viewId = { "keeper_f1" }
-      attr = {
-        DAMAGE 12
-        DEFENSE 12
-        SPELL_DAMAGE 20 
-      }
       gender = FEMALE
-      body = {
-        type = Humanoid LARGE
-      }
       name = {
         name = "wizard"
         firstNameGen = FIRST_FEMALE
         fullTitle = true
       }
-      viewIdUpgrades = { { "keeper2" } { "keeper3" } { "keeper4" } }
-      skills = {
-        LABORATORY 0.2
-      }
-      maxLevelIncrease = {
-        MELEE 7
-        SPELL 12
-      }
-      spellSchools = { "mage" }
-      spells = { "healing" }
+      viewIdUpgrades = { { "keeper_f2" } { "keeper_f3" } { "keeper_f4" } }
     }
-  "KEEPER_MAGE_EASY"
+  "KEEPER_MAGE_EASY" inherit "KEEPER_MAGE"
     {
       viewId = { "keeper1" }
       viewIdUpgrades = { { "keeper2" } }
-      name = {
-        name = "wizard"
-        firstNameGen = FIRST_MALE
-        fullTitle = true
-      }
-      body = {
-        # One of Humanoid, HumanoidLike, Bird, FourLegged and NonHumanoid
-        # size is one of SMALL, MEDIUM, LARGE and HUGE, influences stuff like pushing boulders and being pushed
-        type = Humanoid LARGE
-      }
-      # attr_type.h
       attr = {
         DAMAGE 15
         DEFENSE 15
         SPELL_DAMAGE 25
       }
-      # skill.h
-      skills = {
-        LABORATORY 0.2
-      }
-      # experience_type.h
-      maxLevelIncrease = {
-        MELEE 7
-        SPELL 12
-      }
-      # spell.h
-      spellSchools = { "mage" }
-      spells = { "healing" }
     }
-
-  "KEEPER_MAGE_F_EASY"
+  "KEEPER_MAGE_F_EASY" inherit "KEEPER_MAGE_EASY"
     {
       viewId = { "keeper_f1" }
-      attr = {
-        DAMAGE 15
-        DEFENSE 15
-        SPELL_DAMAGE 25
-      }
       gender = FEMALE
-      body = {
-        type = Humanoid LARGE
-      }
       name = {
         name = "wizard"
         firstNameGen = FIRST_FEMALE
         fullTitle = true
       }
       viewIdUpgrades = { { "keeper_f2" } }
-      skills = {
-        LABORATORY 0.2
-      }
-      maxLevelIncrease = {
-        MELEE 7
-        SPELL 12
-      }
-      spellSchools = { "mage" }
-      spells = { "healing" }
     }
-  "KEEPER_MAGE_HARD"
+  "KEEPER_MAGE_HARD" inherit "KEEPER_MAGE"
     {
       viewId = { "keeper1" }
       viewIdUpgrades = { { "keeper2" } { "keeper3" } }
-      name = {
-        name = "wizard"
-        firstNameGen = FIRST_MALE
-        fullTitle = true
-      }
-      body = {
-        # One of Humanoid, HumanoidLike, Bird, FourLegged and NonHumanoid
-        # size is one of SMALL, MEDIUM, LARGE and HUGE, influences stuff like pushing boulders and being pushed
-        type = Humanoid LARGE
-      }
-      # attr_type.h
       attr = {
         DAMAGE 10
         DEFENSE 10
         SPELL_DAMAGE 15
       }
-      # skill.h
-      skills = {
-        LABORATORY 0.2
-      }
-      # experience_type.h
-      maxLevelIncrease = {
-        MELEE 7
-        SPELL 12
-      }
-      # spell.h
-      spellSchools = { "mage" }
-      spells = { "healing" }
     }
-
-  "KEEPER_MAGE_F_HARD"
+  "KEEPER_MAGE_F_HARD" inherit "KEEPER_MAGE_HARD"
     {
       viewId = { "keeper_f1" }
-      attr = {
-        DAMAGE 10
-        DEFENSE 10
-        SPELL_DAMAGE 15
-      }
       gender = FEMALE
-      body = {
-        type = Humanoid LARGE
-      }
       name = {
         name = "wizard"
         firstNameGen = FIRST_FEMALE
         fullTitle = true
       }
       viewIdUpgrades = {{ "keeper_f2" } { "keeper_f3" }}
-      skills = {
-        LABORATORY 0.2
-      }
-      maxLevelIncrease = {
-        MELEE 7
-        SPELL 12
-      }
-      spellSchools = { "mage" }
-      spells = { "healing" }
     }
   "KEEPER_KNIGHT"
     {
@@ -219,32 +119,16 @@
       spellSchools = { "fighter" }
       spells = { "healing" }
     }
-  "KEEPER_KNIGHT_F"
+  "KEEPER_KNIGHT_F" inherit "KEEPER_KNIGHT"
     {
       viewId = { "keeper_knight_f1" }
-      attr = {
-        DAMAGE 20
-        DEFENSE 16
-      }
       gender = FEMALE
-      body = {
-        type = Humanoid LARGE
-      }
       name = {
         name = "knight"
         firstNameGen = FIRST_FEMALE
         fullTitle = true
       }
       viewIdUpgrades = { { "keeper_knight_f2" } { "keeper_knight_f3" } { "keeper_knight_f4" }}
-      skills = {
-        FORGE 0.2
-      }
-      maxLevelIncrease = {
-        MELEE 12
-        SPELL 3
-      }
-      spellSchools = { "fighter" }
-      spells = { "healing" }
     }
   "KEEPER_KNIGHT_WHITE"
     {
@@ -273,33 +157,16 @@
       spellSchools = { "fighter" }
       spells = { "healing" }
     }
-  "KEEPER_KNIGHT_WHITE_F"
+  "KEEPER_KNIGHT_WHITE_F" inherit "KEEPER_KNIGHT_WHITE"
     {
       viewId = { "duke_f1" }
-      attr = {
-        DAMAGE 20
-        DEFENSE 16
-      }
       gender = FEMALE
-      body = {
-        type = Humanoid LARGE
-      }
       name = {
         name = "knight"
         firstNameGen = FIRST_FEMALE
         fullTitle = true
        }
       viewIdUpgrades = { { "duke_f2" } { "duke_f3" } { "duke_f4" }}
-      skills = {
-        FORGE 0.2
-      }
-      maxLevelIncrease = {
-        MELEE 12
-        SPELL 1
-      }
-      spells = { "healing" }
-      spellSchools = { "fighter" }
-      hatedByEffect = HATE_HUMANS
     }
   "ADVENTURER"
     {
@@ -5422,33 +5289,10 @@
       chatReactionFriendly = "\"flesh, tasty\""
       chatReactionHostile = "\"MUSHRUUU!!!\""
     }
- "OGRE_FEMALE"
+ "OGRE_FEMALE" inherit "OGRE"
     {
       viewId = { "ogre_female" }
-      attr = {
-        DAMAGE 17
-        DEFENSE 17   
-      }
-      body = {
-        type = Humanoid LARGE
-        material = FLESH
-        weight = 125
-        
-      }
       gender = FEMALE
-	  hatedByEffect = HATE_GREENSKINS
-      maxLevelIncrease = {
-        MELEE 12
-      }
-	  spellSchools = { "fighter" }
-      skills = {
-        WORKSHOP 0.6
-        FORGE 0.6
-        FURNACE 1
-      }
-      permanentEffects = {
-        MAGIC_VULNERABILITY 1
-      }
       name = {
         name = "ogre female"
         firstNameGen = ORC
@@ -5456,31 +5300,9 @@
       chatReactionFriendly = "\"complains about ogre males\""
       chatReactionHostile = "\"Die!\""
     }
- "ORC_FEMALE"
+ "ORC_FEMALE" inherit "ORC"
     {
       viewId = { "orc_female" }
-      attr = {
-        DAMAGE 15
-        DEFENSE 13   
-      }
-      body = {
-        type = Humanoid LARGE
-        material = FLESH
-        weight = 200
-        
-      }
-      gender = FEMALE
-	  hatedByEffect = HATE_GREENSKINS
-      maxLevelIncrease = {
-        MELEE 7
-      }
-	  spellSchools = { "fighter" }
-      skills = {
-        WORKSHOP 0.4
-        FORGE 0.4
-      }
-      permanentEffects = {
-      }
       name = {
         name = "orc female"
         firstNameGen = ORC
