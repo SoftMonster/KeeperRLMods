@@ -5,14 +5,17 @@ The configuration settings for this mod are located at:
 
 https://github.com/SoftMonster/KeeperRLMods
 
-The rights you have regarding this software configuration is found in COPYING.txt
+The rights you have regarding this software configuration are found in COPYING.txt
 
-This mod is expected to be available in-game as a download.
-The in-game version will also contain any new graphic tiles that are required.
+Note that the configuration files in Git are branched from the vanilla configuration files and for that reason,
+they must remain under the GNU General Public License.
 
-Graphics tiles are not included on Github because some of the tiles have been modified
-from tiles that are already licensed elsewhere. The tiles must be downloaded in-game and
+I will not put any tiles or graphics into GitHub because in many cases the tiles have a complicated history with licensing
+(eg. modified stock graphics) and are therefore, not under GNU. The tiles must be downloaded in-game and
 are not necessarily distributable outside specific conditions.
+
+So, this mod is expected to be available in-game as a download.
+The in-game version will contain any new graphic tiles that are required.
 
 Thanks for your understanding.
 
