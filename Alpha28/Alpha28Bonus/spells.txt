@@ -522,7 +522,7 @@
    sound = SPELL_HEALING
  }
  {
-   id = "cause blindness"
+   id = "cause blindness" 
    symbol = "👀"
    range = 5
    effect = Lasting BLIND
@@ -538,7 +538,7 @@
    sound = SPELL_BLAST
  }
  {
-   id = "mind bolt"
+   id = "mind bolt" 
    symbol = "⇝"
    range = 5
    effect = Lasting INSANITY

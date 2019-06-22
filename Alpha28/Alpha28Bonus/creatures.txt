@@ -5610,11 +5610,9 @@
     maxLevelIncrease = {
       ARCHERY 20
       MELEE 3
+	  SPELL 7
     }
-    spells = {
-      "deception"
-      "teleport"
-    }
+    spellSchools = { "dark stealth" }
     permanentEffects = {
       ELF_VISION 1
       NIGHT_VISION 1
@@ -5643,20 +5641,20 @@
       JEWELER 0.6
     }
     attr = {
-      DAMAGE 15
+	  DAMAGE 5
+      SPELL_DAMAGE 15
       DEFENSE 40
     }
-    spellSchools = { "shaman" }
+    spellSchools = { "healer" "high priest" }
     spells = {
       "healing"
-      "advanced healing"
     }
     permanentEffects = {
       RANGED_RESISTANCE 1
     }
     maxLevelIncrease = {
-      SPELL 4
-	  MELEE 4
+      SPELL 15
+	  MELEE 3
     }
     chatReactionFriendly = "talks at length about his goddess"
     chatReactionHostile  = "\"Your afterlife will be horrible!\""
@@ -5679,12 +5677,12 @@
       DEFENSE 10
       SPELL_DAMAGE 35
     }
-    spellSchools = { "mage" }
+    spellSchools = { "ancient magic" }
     skills = {
       LABORATORY 0.6
     }
     maxLevelIncrease = {
-      SPELL 12
+      SPELL 16
     }
     permanentEffects = {
       MAGIC_RESISTANCE 1
@@ -5692,36 +5690,12 @@
     chatReactionFriendly = "rambles some philosophy about the price of magic"
     chatReactionHostile  = "\"The war shall be won!\""
     hatedByEffect = HATE_HUMANS
-}
-  "WIZARD_ADVENTURER"
+  }
+  "WIZARD_ADVENTURER" inherit "WIZARD_HERO"
     {
-      viewId = { "keeper_f1" }
-      name = {
-        name = "Legendary Wizard"
-        firstNameGen = FIRST_FEMALE
-        fullTitle = true
-    }
-    body = {
-      type = Humanoid MEDIUM
-    }
-    gender = FEMALE
-    attr = {
-	  DAMAGE 10
-      DEFENSE 10
-      SPELL_DAMAGE 35
-    }
-    skills = {
-      LABORATORY 0.6
-    }
     maxLevelIncrease = {
       SPELL 20
     }
-	permanentEffects = {
-      MAGIC_RESISTANCE 1
-    }
-    chatReactionFriendly = "rambles some philosophy about the price of magic"
-    chatReactionHostile  = "\"The war shall be won!\""
-    hatedByEffect = HATE_HUMANS
   }
  "MUMMY_LORD"
     {
@@ -5769,8 +5743,8 @@
     {
       viewId = { "keeper4" Rgb 58 106 156 255 }
       attr = {
-        DAMAGE 45
-        DEFENSE 25 
+        DAMAGE 10
+        DEFENSE 50 
       }
       body = {
         type = Humanoid LARGE
