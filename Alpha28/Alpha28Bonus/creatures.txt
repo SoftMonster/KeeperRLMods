@@ -3059,7 +3059,6 @@
       chatReactionHostile = "\"How dare you defy a GOD!\""
       deathDescription = "vanquished. May he never rise again."
     }
-
     "ADOXIE_FOOT_LEFT" inherit "ADOXIE_HEAD"
     {
       viewId = { "adoxie_foot_left" }
@@ -3418,7 +3417,6 @@
         "curse"
         "spiders"
         "darkness"
-		"sleep"
 		"mana curse"
       }
       name = {
@@ -5014,4 +5012,185 @@
         name = "dungeon master"
       }
    }
+  "EYE_SERVANT"
+   {
+    viewId = { "eye_scout" }
+    attr = {
+      DAMAGE 7
+      DEFENSE 20
+    }
+    body = {
+     type = NonHumanoid SMALL
+      bodyParts = {
+          BACK 1
+	  HEAD 1
+          TORSO 1
+		}		
+        material = FLESH
+        weight = 20    
+        }
+      spellSchools = { "mage" }
+      spells = {
+        "elf vision"
+        "telepathy"
+        "lesser eye servant"
+      }
+      permanentEffects = {
+        SPEED 1
+        MAGIC_RESISTANCE 1
+        RANGED_VULNERABILITY 1
+        MELEE_VULNERABILITY 1
+        SLEEP_RESISTANT 1
+        FLYING 1
+        NIGHT_VISION 1
+      }
+      cantEquip = true
+      name = {
+        name = "eye servant"
+        pluralName = "eyes"
+      }
+      chatReactionFriendly = "\"...\""
+      chatReactionHostile = "\"...\""
+      deathDescription = "Bodily remains of an eye..."
+   }
+   "LESSER_EYE_SERVANT"
+   {
+    viewId = { "lesser_eye_servant" }
+    attr = {
+      DAMAGE 3
+      DEFENSE 10
+    }
+    body = {
+     type = NonHumanoid SMALL
+      bodyParts = {
+          BACK 1
+	  HEAD 1
+          TORSO 1
+		}		
+        material = FLESH
+        weight = 10    
+        }
+      spellSchools = { "mage" }
+      permanentEffects = {
+        SPEED 1
+        RANGED_VULNERABILITY 1
+        MELEE_VULNERABILITY 1
+        SLEEP_RESISTANT 1
+        FLYING 1
+      }
+      cantEquip = true
+      name = {
+        name = "lesser eye servant"
+        pluralName = "eyes"
+      }
+      chatReactionFriendly = "\"...\""
+      chatReactionHostile = "\"...\""
+      deathDescription = "Bodily remains of an eye..."
+   }
+   "VULTURE_ABOMINATION"
+   {
+      viewId = { "vulturemutation" }
+        attr = {
+          DAMAGE 9
+          DEFENSE 18
+        }
+      body = {
+      type = NonHumanoid MEDIUM
+      bodyParts = {
+        BACK 2
+        HEAD 2
+	    TORSO 3
+        WING 3
+        LEG 3
+        ARM 1
+      }	
+      weight = 25
+      intrinsicAttacks = { HEAD { Intrinsic { "bite_attack" }  "Beak" 7 { attackType = BITE attackMsg = BITE } } } } permanentEffects = { POISON_RESISTANT 1 } name = { name = "vulture abomination" pluralName = "vulture abominations" groupName = "flock" }
+    }
+    "OCEAN_PORTAL"
+    {
+     viewId = { "ocean_portal" }
+     attr = {
+        DAMAGE 0
+        DEFENSE 30
+        SPELL_DAMAGE 60
+      }
+      body = {
+       type = NonHumanoid HUGE
+       material = ADA
+       weight = 1200
+       addBodyPart = {
+           BACK 6
+             } }
+      spellSchools = { "mage" }
+      spells = {
+        "bolt of water"
+        "summon water elementals"
+      }
+      permanentEffects = {
+        TIED_UP 1
+        SLOWED 1
+        DARKNESS_SOURCE 1
+        MAGIC_RESISTANCE 1
+        MELEE_VULNERABILITY 1
+        RANGED_RESISTANCE 1
+        POISON_RESISTANT 1
+        FIRE_RESISTANT 1
+        SLEEP_RESISTANT 1
+        REGENERATION 1
+      }
+      cantEquip = true
+      name = {
+        name = "ocean portal"
+      }
+      chatReactionFriendly = "\"Water is constantly being shot at an immense pressure from inside the portal. \""
+      chatReactionHostile = "\"Water is constantly being shot at an immense pressure from inside the portal.\""
+      deathDescription = "destroyed."
+    }
+    "ADOXIE_EYE" 
+    {
+      viewId = { "adoxie_eye" }
+      attr = {
+        DAMAGE 25
+        DEFENSE 40 
+        SPELL_DAMAGE 40  
+      }
+      body = {
+        type = NonHumanoid HUGE
+        bodyParts = {
+          BACK 1
+	      HEAD 1
+          TORSO 1
+		}		
+        material = UNDEAD_FLESH
+        weight = 850        
+      }
+	  hatedByEffect = HATE_UNDEAD
+	  spellSchools = { "mage" }
+      spells = {
+        "magic missile"
+        "fireball"
+      }
+      permanentEffects = {
+        RAGE 1
+        DARKNESS_SOURCE 1
+        TELEPATHY 1
+        MAGIC_RESISTANCE 1
+        MELEE_VULNERABILITY 1
+        POISON_RESISTANT 1
+        FIRE_RESISTANT 1
+        SLEEP_RESISTANT 1
+        FLYING 1
+        NIGHT_VISION 1
+      }
+      cantEquip = true
+      name = {
+        name = "Adoxie's eye"
+        pluralName = "eyes"
+      }
+      chatReactionFriendly = "\"nothing, why did you think an eye could talk?\""
+      chatReactionHostile = "\"nothing, why did you think an eye could talk?\""
+      deathDescription = "destroyed."
+      courage = 1
+    }
 }

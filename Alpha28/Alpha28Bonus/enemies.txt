@@ -186,6 +186,69 @@
       attackBehaviour = KillLeader
     }
   }
+  "VULTURE_ABOMINATIONS"
+  {
+    settlement = { 
+      type = CAVE
+      inhabitants = {
+        leader = { { "ADOXIE_EYE" } }
+        fighters = {
+          count = {5 9}
+          all = {
+		    3 "VULTURE_ABOMINATION"
+            1 "EYE_SERVANT"
+          }
+        }
+	  }
+      tribe = MONSTER
+      race = "abominations"
+      buildingId = DUNGEON
+    }
+    config = {
+      immigrantInterval = 500
+      maxPopulation = 35
+    }
+    immigrants = {
+      {
+        ids = {"VULTURE"}
+        frequency = 1
+      }
+      {
+        ids = {"VULTURE_ABOMINATION"}
+        traits = {FIGHTER}
+        frequency = 3
+      }
+    }
+  }
+  "OCEAN_PORTAL"
+  {
+    settlement = { 
+      type = CAVE
+      inhabitants = {
+        leader = { { "OCEAN_PORTAL" } }
+        fighters = {
+          count = {3 4}
+          all = {
+            1 "WATER_ELEMENTAL"
+          }
+        }
+	  }
+      tribe = MONSTER
+      race = "ocean spirits"
+      buildingId = MUD
+    }
+    config = {
+      immigrantInterval = 500
+      maxPopulation = 35
+    }
+    immigrants = {
+      {
+        ids = {"WATER_ELEMENTAL"}
+        traits = {FIGHTER}
+        frequency = 3
+      }
+    }
+  }
   "ANTS_CLOSED"
   {
     settlement = {
@@ -714,7 +777,7 @@
     }    
     immigrants = {
       {
-        ids = {"ADOXIE_FOOT_LEFT" "ADOXIE_FOOT_RIGHT" "ADOXIE_LEFT_HAND" "ADOXIE_HAND_RIGHT"}
+        ids = {"ADOXIE_FOOT_LEFT" "ADOXIE_FOOT_RIGHT" "ADOXIE_LEFT_HAND" "ADOXIE_HAND_RIGHT" "ADOXIE_EYE"}
         traits = {FIGHTER}
         frequency = 20
         spawnLocation = InsideTerritory

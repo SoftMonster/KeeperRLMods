@@ -29,7 +29,8 @@
     { "unicorn" } "UNICORN_HERD" "Unicorn herd" LESSER
     { "ant_queen" } "ANTS_OPEN" "Ants" LESSER
     { "zombie" } "CEMETERY" "Zombies" LESSER
-
+    { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER
+    { "ocean_portal" } "OCEAN_PORTAL" "Ocean Portal" LESSER
     { "unknown_monster" } "OGRE_CAVE" "Unknown" ALLY
     { "unknown_monster" } "HARPY_CAVE" "Unknown" ALLY
     { "unknown_monster" } "SOKOBAN" "Unknown" ALLY
@@ -61,6 +62,7 @@
     { "ogre" } "OGRE_CAVE" "Ogres" LESSER
     { "harpy" } "HARPY_CAVE" "Harpies" LESSER
     { "ant_queen" } "ANTS_OPEN" "Ants" LESSER
+    { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER
 
     { "dwarf_baron" } "DWARVES" "Dwarves" ALLY
 }
@@ -92,6 +94,9 @@
     { "unicorn" } "UNICORN_HERD" "Unicorn herd" LESSER
     { "ant_queen" } "ANTS_OPEN" "Ants" LESSER
     { "zombie" } "CEMETERY" "Zombies" LESSER
+    { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER
+    { "ocean_portal" } "OCEAN_PORTAL" "Ocean Portal" LESSER
+
     { "orc_captain" } "ORC_VILLAGE" "Greenskins village" ALLY
     { "dark_elf_lord" } "DARK_ELVES_ALLY" "Dark elves" ALLY
     { "gnome_boss" } "GNOMES" "Gnomes" ALLY
@@ -121,6 +126,7 @@
     { "ogre" } "OGRE_CAVE" "Ogres" LESSER
     { "harpy" } "HARPY_CAVE" "Harpies" LESSER
     { "ant_queen" } "ANTS_OPEN" "Ants" LESSER
+    { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER
 
     { "duke4" } "KNIGHTS" "Knights" ALLY
     { "elf_lord" } "ELVES" "Elves" ALLY

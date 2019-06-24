@@ -514,14 +514,6 @@
    sound = SPELL_DEX_BONUS
  }
  {
-   id = "sleep"
-   symbol = "Z💤"
-   range = 1
-   effect = Lasting SLEEP
-   cooldown = 30
-   sound = SPELL_HEALING
- }
- {
    id = "cause blindness" 
    symbol = "👀"
    range = 5
@@ -609,5 +601,41 @@
    effect = Summon "ADOXIE_FOOT_RIGHT" { 1 2 }
    cooldown = 50
    sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "lesser eye servant"
+   symbol = "👁️"
+   effect = Summon "LESSER_EYE_SERVANT" { 1 2 }
+   cooldown = 80
+   sound = SPELL_SUMMON_SPIRIT 
+ }
+ {
+   id = "summon ocean portal"
+   symbol = "@"
+   effect = Summon "OCEAN_PORTAL" { 1 2 }
+   cooldown = 200
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "adoxie eye"
+   symbol =  "👁️"
+   effect = Summon "ADOXIE_EYE" { 1 2 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "eye servant"
+   symbol = "👁️"
+   effect = Summon "EYE_SERVANT" { 1 2 }
+   cooldown = 80
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "bolt of water"
+   symbol = "->"
+   effect = Damage SPELL_DAMAGE SPELL
+   range = 7
+   cooldown = 16
+   sound = SPELL_BLAST
  }
 }
