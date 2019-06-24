@@ -318,7 +318,9 @@
   }  
   "sandbox"
   {
-    { Dig                                                      "Dig or cut tree"   "Structure"  
+    { ImmediateDig                                               "Immediate Dig"   "Structure"  
+      "" i {} true DIG_OR_CUT_TREES}
+    { Dig                                                        "Order dig or cut tree"   "Structure"  
       "" d {} true DIG_OR_CUT_TREES}
     { Furniture {{ "MOUNTAIN" }                   STONE 0 }      "Soft rock"         "Structure" }
     { Furniture {{ "MOUNTAIN2" }                  STONE 0 }     "Hard rock"         "Structure" }
@@ -335,6 +337,7 @@
     { Furniture {{ "DOWN_STAIRS" }                }              "Down stairs"       "Structure"
       "Build down z-levels." }
     { PlaceMinion "Place minion" "Structure" ""   } 
+    { PlaceItem   "Place item"   "Structure" ""   } 
     { Furniture {{ "WOOD_DOOR" }                  WOOD 0 }       "Wooden door"       "Doors"
       "Stops enemies. Your minions can pass freely unless you lock it."  o {} true BUILD_DOOR}
     { Furniture {{ "IRON_DOOR" }                  IRON 0 }       "Iron door"         "Doors"

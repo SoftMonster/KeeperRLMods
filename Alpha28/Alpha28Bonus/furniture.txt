@@ -726,7 +726,7 @@
   "CASTLE_C3" { name = "castle" viewId = { "castle_c3" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
   "CASTLE_C4" { name = "castle" viewId = { "castle_c4" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
   "CASTLE_D1" { name = "castle" viewId = { "castle_d1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_D2" { name = "dungeon entrance" viewId = { "castle_d2" } usageType = KEEPER_BOARD clickType = KEEPER_BOARD canBuildOutsideOfTerritory = true }
+  "CASTLE_D2" { name = "dungeon entrance" viewId = { "castle_d2" } canBuildOutsideOfTerritory = true }
   "CASTLE_D3" { name = "dungeon entrance" viewId = { "castle_d3" } onBuilt = DOWN_STAIRS usageType = STAIRS canBuildOutsideOfTerritory = true }
   "CASTLE_D4" { name = "castle" viewId = { "castle_d4" } blockMovement = true blockVision = { NORMAL ELF } wall = true canBuildOutsideOfTerritory = true }
   
