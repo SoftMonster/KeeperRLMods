@@ -6,8 +6,6 @@
 (Credits)
 The bonus feature mod team: Softmonster, RighteousSinner and Acre
 
-(Contributions)
-Amaze
 "}
 
 {
