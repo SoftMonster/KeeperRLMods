@@ -701,7 +701,7 @@
       spells = { "healing" "deception" "haste" "cure poison" }
       chatReactionFriendly = "\"Kos Haas\""
       chatReactionHostile = "\"Viidost Al Hi Joor\""
-      deathDescription = "slain."
+      deathDescription = "slain"
       courage = 1
     }
   "RED_DRAGON"
@@ -735,7 +735,7 @@
       spells = { "healing" "deception" "haste" "cure poison" "fire breath"}
       chatReactionFriendly = "\"Lingrah Laas Wah Hi\""
       chatReactionHostile = "\"Aal Yol Du Hi Joor!\""
-      deathDescription = "slain."
+      deathDescription = "slain"
       courage = 1 
     }
   "BLACK_DRAGON"
@@ -2975,7 +2975,7 @@
       }
       chatReactionFriendly = "\"curses all greenskin invaders\""
       chatReactionHostile = "\"Die!\""
-      deathDescription = "slain."
+      deathDescription = "slain"
       courage = 1
     }
  "CENTAUR_KNIGHT" inherit "CENTAUR_ARCHER"
@@ -3057,7 +3057,7 @@
       }
       chatReactionFriendly = "\"Gaze upon my magnificence and tremble, mortal!\""
       chatReactionHostile = "\"How dare you defy a GOD!\""
-      deathDescription = "vanquished. May he never rise again."
+      deathDescription = "vanquished. May he never rise again"
     }
     "ADOXIE_FOOT_LEFT" inherit "ADOXIE_HEAD"
     {
@@ -3092,7 +3092,7 @@
       }
       chatReactionFriendly = "\"nothing, why did you think a foot could talk?\""
       chatReactionHostile = "\"nothing, why did you think a foot could talk?\""
-      deathDescription = "destroyed."
+      deathDescription = "destroyed"
       courage = 1
     }
     "ADOXIE_FOOT_RIGHT" inherit "ADOXIE_FOOT_LEFT"
@@ -3138,7 +3138,7 @@
       }
       chatReactionFriendly = "\"nothing, why did you think a hand could talk?\""
       chatReactionHostile = "\"nothing, why did you think a hand could talk?\""
-      deathDescription = "destroyed."
+      deathDescription = "destroyed"
       courage = 1
     }
     "ADOXIE_HAND_RIGHT" inherit "ADOXIE_LEFT_HAND"
@@ -3727,7 +3727,7 @@
       }
       chatReactionFriendly = "\"Faaz Al Zu'u\""
       chatReactionHostile = "\"Mindok Dii Faaz Joor!\""
-      deathDescription = "slain."
+      deathDescription = "slain"
       courage = 1
     }
  "SPIRIT_DRAGON"
@@ -3773,7 +3773,7 @@
       }
       chatReactionFriendly = "\"Zii Aak Hi\""
       chatReactionHostile = "\"Dur Hi!\""
-      deathDescription = "banished."
+      deathDescription = "banished"
     }
  "RED_DRAGONNEWT"
     {
@@ -3891,7 +3891,7 @@
       }
       chatReactionFriendly = "\"!Dlrowrevo eht ot htaed\""
       chatReactionHostile = "\"!Eid\""
-      deathDescription = "vanquished."
+      deathDescription = "vanquished"
       courage = 1
       cantEquip = true
     }
@@ -4019,7 +4019,7 @@
       }
       chatReactionFriendly = "\"You can feel an evil aura coming from the portal.\""
       chatReactionHostile = "\"You can feel an evil aura coming from the portal.\""
-      deathDescription = "destroyed."
+      deathDescription = "destroyed"
     }
 
 #---------------------------------------------------------
@@ -4233,7 +4233,7 @@
       }
       chatReactionFriendly = "\"You look tasty, do you retain fluids?\""
       chatReactionHostile = "\"Prepare to be food!\""
-      deathDescription = "slain."
+      deathDescription = "slain"
     }
     "COW_DEMON"
     {
@@ -4345,7 +4345,7 @@
       }
       chatReactionFriendly = "\"....\""
       chatReactionHostile = "\"....\""
-      deathDescription = "destroyed."
+      deathDescription = "destroyed"
     }
     "GIANT"
     {
@@ -4545,7 +4545,7 @@
       }
       chatReactionFriendly = "\"floats around eerily\""
       chatReactionHostile = "\"Flips its pages angrily\""
-      deathDescription = "destroyed."
+      deathDescription = "destroyed"
     }
     "SCREE_BIRD"
     {
@@ -4579,7 +4579,7 @@
       }
       chatReactionFriendly = "\"SCREE!\""
       chatReactionHostile = "\"SCREE!\""
-      deathDescription = "murdered."
+      deathDescription = "murdered"
       courage = 1
     }
     "SHARD_SPITTER"
@@ -4650,7 +4650,7 @@
       }
       chatReactionFriendly = "\"talks too quietly for you to hear\""
       chatReactionHostile = "\"it flutters around agrily\""
-      deathDescription = "swatted."
+      deathDescription = "swatted"
       courage = -1
       noChase = true
     }
@@ -5051,7 +5051,7 @@
       }
       chatReactionFriendly = "\"...\""
       chatReactionHostile = "\"...\""
-      deathDescription = "Bodily remains of an eye..."
+      deathDescription = "reduced to bodily remains"
    }
    "LESSER_EYE_SERVANT"
    {
@@ -5085,7 +5085,7 @@
       }
       chatReactionFriendly = "\"...\""
       chatReactionHostile = "\"...\""
-      deathDescription = "Bodily remains of an eye..."
+      deathDescription = "reduced to bodily remains"
    }
    "VULTURE_ABOMINATION"
    {
@@ -5145,7 +5145,7 @@
       }
       chatReactionFriendly = "\"Water is constantly being shot at an immense pressure from inside the portal. \""
       chatReactionHostile = "\"Water is constantly being shot at an immense pressure from inside the portal.\""
-      deathDescription = "destroyed."
+      deathDescription = "destroyed"
     }
     "ADOXIE_EYE" 
     {
@@ -5190,7 +5190,7 @@
       }
       chatReactionFriendly = "\"nothing, why did you think an eye could talk?\""
       chatReactionHostile = "\"nothing, why did you think an eye could talk?\""
-      deathDescription = "destroyed."
+      deathDescription = "destroyed"
       courage = 1
     }
 }
