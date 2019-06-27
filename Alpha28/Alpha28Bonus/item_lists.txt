@@ -81,7 +81,6 @@
       {{Ring FLYING} 1}
       {{Ring SPEED} 1}
       {{Ring NO_CARRY_LIMIT} 1}
-      {{Ring INVISIBLE} 1}
 	}
   }
 
@@ -242,18 +241,18 @@
 	  {{ Ring MELEE_RESISTANCE } 3 }
       {{ Ring NO_CARRY_LIMIT } 3 }
       {{ Ring FLYING } 2 }
-      {{ Ring SPEED } 2 }
 	  {{ Glyph ARMOR ItemAttrBonus DEFENSE 2} 2 }
       {{ Glyph WEAPON ItemAttrBonus DAMAGE 2 } 2 }
 	  {{ Glyph WEAPON LastingEffect NIGHT_VISION } 2 }	  
-      {{ Ring INVISIBLE } 1 }
-      {{ ElvenBow } 1 }
 	  {{ Glyph ARMOR ItemAttrBonus DEFENSE 5} 1 }
       {{ Glyph ARMOR JoinPrefixes { LastingEffect REGENERATION ItemAttrBonus DEFENSE 2 } } 1 }
 	  {{ Glyph ARMOR LastingEffect DARKNESS_SOURCE } 1 }
       {{ Glyph WEAPON ItemAttrBonus DAMAGE 5 } 1 }
 	  {{ Glyph WEAPON VictimEffect Lasting INSANITY } 1 }
 	  {{ Glyph WEAPON LastingEffect ELF_VISION } 1 }
+      {{ Ring SPEED } 1 }
+      {{ Potion Permanent SPEED } 1 }
+      {{ ElvenBow } 1 }
 	  {{TechBook "iron working"}             1 }
 	  {{TechBook "alchemy"}                  1 }
 	  {{TechBook "advanced alchemy"}         1 }

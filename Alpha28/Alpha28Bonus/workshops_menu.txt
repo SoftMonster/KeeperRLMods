@@ -239,7 +239,6 @@
     {{IronGloves}            5        IRON  10}
     {{AutomatonItem}         100      IRON 200      "gnomish smithy"}
     {{IronStaff}             20       IRON  40      "gnomish smithy"}
-    {{Ring INVISIBLE}        20       ADA 1000      "gnomish smithy"}
     {{Ring SPEED}            20       ADA 1000      "gnomish smithy"}
 }
 
@@ -388,7 +387,6 @@
     {{Ring TELEPATHY}            40 GOLD   300 "royal jewellery"}
     {{Ring FLYING}               40 GOLD   400 "royal jewellery"}
     {{Ring NO_CARRY_LIMIT}       40 GOLD  1000 "royal jewellery"}
-    {{Ring INVISIBLE}            40 GOLD 10000 "royal jewellery"}	
 }
 "sandbox"
 
