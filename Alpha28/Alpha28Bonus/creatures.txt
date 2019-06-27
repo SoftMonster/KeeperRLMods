@@ -5018,12 +5018,13 @@
     attr = {
       DAMAGE 7
       DEFENSE 20
+	  SPELL_DAMAGE 20
     }
     body = {
      type = NonHumanoid SMALL
       bodyParts = {
           BACK 1
-	  HEAD 1
+          HEAD 1
           TORSO 1
 		}		
         material = FLESH
@@ -5031,9 +5032,8 @@
         }
       spellSchools = { "mage" }
       spells = {
-        "elf vision"
-        "telepathy"
         "lesser eye servant"
+        "rapid magic missile"		
       }
       permanentEffects = {
         SPEED 1
@@ -5059,18 +5059,21 @@
     attr = {
       DAMAGE 3
       DEFENSE 10
+	  SPELL_DAMAGE 20
     }
     body = {
      type = NonHumanoid SMALL
       bodyParts = {
           BACK 1
-	  HEAD 1
+	      HEAD 1
           TORSO 1
 		}		
         material = FLESH
         weight = 10    
         }
-      spellSchools = { "mage" }
+      spells = {
+        "rapid magic missile"		
+      }
       permanentEffects = {
         SPEED 1
         RANGED_VULNERABILITY 1
