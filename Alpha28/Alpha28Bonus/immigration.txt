@@ -14,7 +14,7 @@
           }
         }
 		{
-          ids = { "YOUNG_RED_DRAGON" }
+          ids = { "RED_DRAGON" }
           traits = { FIGHTER }
           consumeIds = true
           spawnLocation = FurnitureType "PORTAL"
@@ -57,7 +57,7 @@
           }
         }
 		{
-          ids = { "YOUNG_RED_DRAGON" }
+          ids = { "RED_DRAGON" }
           traits = { FIGHTER }
           consumeIds = true
           spawnLocation = FurnitureType "PORTAL"
@@ -106,7 +106,7 @@
           }
         }
 		{
-          ids = { "YOUNG_RED_DRAGON" }
+          ids = { "RED_DRAGON" }
           traits = { FIGHTER }
           consumeIds = true
           spawnLocation = FurnitureType "PORTAL"
