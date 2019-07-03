@@ -481,19 +481,12 @@
 #MODDED by Righteous June 2019
 
   { "abomination" "z" ColorId LIGHT_GRAY }
-  { "adamantine_pattern1" "#" ColorId LIGHT_GRAY }
-  { "adamantine_wall" "#" ColorId LIGHT_GRAY }
-  { "adamantite_shield" ")" ColorId LIGHT_GRAY }
-  { "adamantite_spear" "-" ColorId LIGHT_GRAY }
-  { "adamantite_spiked_mace" "%" ColorId LIGHT_GRAY }
-  { "adamantite_war_axe" "-" ColorId PURPLE }
   { "adoxie_foot_left" "u" ColorId PURPLE }
   { "adoxie_foot_right" "u" ColorId PURPLE }
   { "adoxie_hand_right" "u" ColorId PURPLE }
   { "adoxie_hand_left" "u" ColorId PURPLE }
   { "adoxie_head" "U" ColorId PURPLE }
   { "air_fairy" "h" ColorId WHITE }
-  { "alruane" "@" ColorId PURPLE }
   { "amazon" "p" ColorId RED }
   { "amazon_archer" "p" ColorId RED }
   { "amazon_champion" "p" ColorId RED }
@@ -505,27 +498,7 @@
   { "arachne" "S" ColorId BLACK }
   { "armored_cow_demon" "U" ColorId RED }
   { "banshee" "u" ColorId PURPLE }
-  { "beastmaster_keeper1" "@" ColorId BLUE }
-  { "beastmaster_keeper2" "@" ColorId BLUE }
-  { "beastmaster_keeper3" "@" ColorId BLUE }
-  { "beastmaster_keeper4" "@" ColorId BLUE }
-  { "beastmaster_keeper_female1" "@" ColorId BLUE }
-  { "beastmaster_keeper_female2" "@" ColorId BLUE }
-  { "beastmaster_keeper_female3" "@" ColorId BLUE }
-  { "beastmaster_keeper_female4" "@" ColorId BLUE }
   { "bengal_tiger" "f" ColorId ORANGE }
-  { "black_tentacles" "S" ColorId BLACK }
-  { "blade_trap1" "^" ColorId PURPLE }
-  { "bone_door" "#" ColorId WHITE }
-  { "bone_door2" "#" ColorId WHITE }
-  { "bow_2" "(" ColorId RED }
-  { "bow_3" "(" ColorId PURPLE }
-  { "carpet_pattern1" "." ColorId PURPLE }
-  { "carpet_pattern1_m2" "." ColorId PURPLE }
-  { "carpet_pattern2" "." ColorId PURPLE }
-  { "carpet_pattern2_m2" "." ColorId PURPLE }
-  { "carpet_pattern2_m3" "." ColorId PURPLE }
-  { "carpet_pattern3" "." ColorId PURPLE }
   { "castle_a1" "#" ColorId LIGHT_GRAY }
   { "castle_a2" "#" ColorId LIGHT_GRAY }
   { "castle_a3" "#" ColorId LIGHT_GRAY }
@@ -549,68 +522,25 @@
   { "centar_king" "p" ColorId YELLOW }
   { "centar_knight" "p" ColorId YELLOW }
   { "cow_demon" "u" ColorId RED }
-  { "Crossbow" "(" ColorId BROWN }
-  { "dark1" "." ColorId LIGHT_GRAY }
-  { "dark10" "." ColorId LIGHT_GRAY }
-  { "dark11" "." ColorId LIGHT_GRAY }
-  { "dark12" "." ColorId LIGHT_GRAY }
-  { "dark13" "." ColorId LIGHT_GRAY }
-  { "dark14" "." ColorId LIGHT_GRAY }
-  { "dark2" "." ColorId LIGHT_GRAY }
-  { "dark3" "." ColorId LIGHT_GRAY }
-  { "dark4" "." ColorId LIGHT_GRAY }
-  { "dark5" "." ColorId LIGHT_GRAY }
-  { "dark6" "." ColorId LIGHT_GRAY }
-  { "dark7" "." ColorId LIGHT_GRAY }
-  { "dark8" "." ColorId LIGHT_GRAY }
-  { "dark9" "." ColorId LIGHT_GRAY }
-  { "darkwood_wooden_table" "#" ColorId BROWN }
-  { "darkwood_wooden_table_lar" "#" ColorId BROWN }
   { "dark_fairy" "h" ColorId BLACK }
+  { "dark_goblin" "o" ColorId BLACK }
+  { "dark_hobgoblin" "o" ColorId BLACK }
   { "dark_orc" "o" ColorId BLACK }
+  { "dark_orc_female" "o" ColorId BLACK }
   { "dark_orc_captain" "o" ColorId BLACK }
-  { "dark_skull_shield" ")" ColorId BLACK }
-  { "dark_steel_battle_axe" "|" ColorId BLACK }
-  { "dark_steel_spear" "|" ColorId BLACK }
-  { "dark_steel_spiked_mace" "|" ColorId BLACK }
-  { "dark_steel_sword" "-" ColorId BLACK }
-  { "dark_steel_warhammer" "|" ColorId BLACK }
-  { "dark_steel_war_axe" "|" ColorId BLACK }
+  { "dark_troll_female" "O" ColorId BLACK }
   { "dark_troll" "T" ColorId BLACK }
   { "demon_fairy" "h" ColorId RED }
   { "earth_fairy" "h" ColorId BROWN }
   { "electric_fairy" "h" ColorId YELLOW }
   { "elephant" "Z" ColorId PURPLE }
-  { "empty_heart_pedestal" "#" ColorId RED }
   { "female_lion" "f" ColorId ORANGE }
-  { "female_lion_original" "f" ColorId ORANGE }
   { "fire_fairy" "f" ColorId RED }
-  { "flame24" "*" ColorId RED }
-  { "flame30" "*" ColorId RED }
   { "gargoyle" "u" ColorId LIGHT_GRAY }
   { "giant" "P" ColorId PURPLE }
-  { "giant_bat" "b" ColorId PURPLE }
-  { "gold_bow" "(" ColorId YELLOW }
   { "gorgon" "h" ColorId PURPLE }
   { "greendragon" "d" ColorId GREEN }
-  { "greendrop" "." ColorId GREEN }
   { "green_dragonewt" "p" ColorId GREEN }
-  { "green_dragon_armor" ")" ColorId GREEN }
-  { "green_dragon_battle_axe" "|" ColorId GREEN }
-  { "green_dragon_boots (2)" "[" ColorId GREEN }
-  { "green_dragon_boots" "[" ColorId GREEN }
-  { "green_dragon_gloves" "]" ColorId GREEN }
-  { "green_dragon_helm" "[" ColorId GREEN }
-  { "green_dragon_shield" ")" ColorId GREEN }
-  { "green_dragon_spear" "|" ColorId GREEN }
-  { "green_dragon_spiked_mace" "|" ColorId GREEN }
-  { "green_dragon_sword" "-" ColorId GREEN }
-  { "green_dragon_warhammer" "|" ColorId GREEN }
-  { "green_dragon_war_axe" "|" ColorId GREEN }
-  { "gremlin_female" "h" ColorId GREEN }
-  { "grey24" "." ColorId LIGHT_GRAY }
-  { "grey30" "." ColorId LIGHT_GRAY }
-  { "heart_box" "#" ColorId RED }
   { "hell_knight" "p" ColorId RED }
   { "hell_knight_brute" "p" ColorId RED }
   { "hell_knight_lord" "p" ColorId RED }
@@ -623,123 +553,30 @@
   { "hell_steel_warhammer" "|" ColorId RED }
   { "hell_steel_war_axe" "|" ColorId RED }
   { "hobgoblin" "o" ColorId RED }
-  { "jungle_tree1" "|" ColorId BROWN }
-  { "jungle_tree1_mark" "@" ColorId PURPLE }
-  { "jungle_tree2" "|" ColorId BROWN }
-  { "jungle_tree2_mark" "@" ColorId PURPLE }
-  { "knight_lady" "@" ColorId PURPLE }
-  { "leafling" "#" ColorId GREEN }
-  { "lich_heart" "#" ColorId PURPLE }
-  { "lich_keeper1" "@" ColorId PURPLE }
-  { "lich_keeper2" "@" ColorId PURPLE }
-  { "lich_keeper3" "@" ColorId PURPLE }
-  { "lich_keeper4" "@" ColorId PURPLE }
   { "light_fairy" "h" ColorId WHITE }
-  { "mage_adventurer" "@" ColorId PURPLE }
-  { "mage_adventurer_female" "@" ColorId PURPLE }
-  { "magical_floor_prototype1" "." ColorId PURPLE }
-  { "magic_fairy" "h" ColorId PURPLE }
   { "male_lion" "f" ColorId ORANGE }
-  { "male_lion_original" "f" ColorId ORANGE }
-  { "man_eater_plant" "#" ColorId GREEN }
   { "mushroom_man" "#" ColorId WHITE }
   { "nature_fairy" "h" ColorId GREEN }
   { "ogre_female" "o" ColorId GREEN }
   { "orc_brute_lady" "0" ColorId BLUE }
   { "orc_female" "o" ColorId GREEN }
   { "orc_lady" "o" ColorId GREEN }
-  { "petrified_orc" "@" ColorId BLACK }
-  { "plain_knight" "@" ColorId PURPLE }
   { "possessed_book" "#" ColorId RED }
   { "rain_fairy" "h" ColorId BLUE }
-  { "ranger_adventurer1" "@" ColorId PURPLE }
-  { "ranger_adventurer2" "@" ColorId PURPLE }
-  { "ranger_adventurer3" "@" ColorId PURPLE }
-  { "ranger_adventurer4" "@" ColorId PURPLE }
-  { "ranger_adventurer_female1" "@" ColorId PURPLE }
-  { "ranger_adventurer_female2" "@" ColorId PURPLE }
-  { "ranger_adventurer_female3" "@" ColorId PURPLE }
-  { "ranger_adventurer_female4" "@" ColorId PURPLE }
   { "rat_bowman" "h" ColorId PURPLE }
   { "rat_general" "h" ColorId ORANGE }
   { "rat_lady2" "h" ColorId PURPLE }
   { "rat_man" "h" ColorId PURPLE }
   { "rat_man2" "h" ColorId PURPLE }
   { "reddragon" "d" ColorId RED }
-  { "reddrop" "." ColorId RED }
   { "red_dragonewt" "p" ColorId RED }
-  { "red_dragon_armor" ")" ColorId RED }
-  { "red_dragon_battle_axe" "|" ColorId RED }
-  { "red_dragon_boots (2)" ")" ColorId RED }
-  { "red_dragon_boots" ")" ColorId RED }
-  { "red_dragon_gloves" "(" ColorId RED }
-  { "red_dragon_helm" "[" ColorId RED }
-  { "red_dragon_mace" "|" ColorId RED }
-  { "red_dragon_shield" ")" ColorId RED }
-  { "red_dragon_spear" "|" ColorId RED }
-  { "red_dragon_sword" "|" ColorId RED }
-  { "red_dragon_warhammer" "|" ColorId RED }
-  { "red_dragon_war_axe" "|" ColorId RED }
-  { "rock_statue" "#" ColorId BLACK }
   { "scree_bird" "b" ColorId GREEN }
-  { "scree_monster(original)" "U" ColorId PURPLE }
   { "shard_spitter" "u" ColorId PURPLE }
-  { "skeleton_warrior" "s" ColorId PURPLE }
-  { "skull_shield" ")" ColorId BLACK }
-  { "smite1" "." ColorId WHITE }
-  { "smite2" "." ColorId WHITE }
-  { "smite3" "." ColorId WHITE }
-  { "smite4" "." ColorId WHITE }
-  { "smite5" "." ColorId WHITE }
-  { "smite6" "." ColorId WHITE }
-  { "smite7" "." ColorId WHITE }
-  { "smite8" "." ColorId WHITE }
-  { "smite9" "." ColorId WHITE }
-  { "spike_trap_hidden" "^" ColorId PURPLE }
-  { "spike_trap_revealed" "^" ColorId RED }
   { "spirit_dragon" "^" ColorId BLUE }
   { "sprite" "h" ColorId WHITE }
   { "squidholder" "S" ColorId PURPLE }
-  { "steel_shield" ")" ColorId YELLOW }
-  { "steel_spear" "|" ColorId YELLOW true }
-  { "steel_spiked_mace" "|" ColorId YELLOW }
-  { "steel_war_axe" "|" ColorId YELLOW }
-  { "stone_adventurer" "p" ColorId BROWN }
-  { "stone_pattern1" "." ColorId PURPLE }
-  { "stone_pattern2" "." ColorId PURPLE }
-  { "succubussmall" "h" ColorId PURPLE }
-  { "sword_knight" "p" ColorId PURPLE }
-  { "tainted_floor1" "." ColorId PURPLE }
-  { "tainted_wall" "#" ColorId PURPLE }
-  { "tainted_wall_e" "#" ColorId PURPLE }
-  { "tainted_wall_es" "#" ColorId PURPLE }
-  { "tainted_wall_esw" "#" ColorId PURPLE }
-  { "tainted_wall_ew" "#" ColorId PURPLE }
-  { "tainted_wall_n" "#" ColorId PURPLE }
-  { "tainted_wall_ne" "#" ColorId PURPLE }
-  { "tainted_wall_nes" "#" ColorId PURPLE }
-  { "tainted_wall_nesw" "#" ColorId PURPLE }
-  { "tainted_wall_new" "#" ColorId PURPLE }
-  { "tainted_wall_ns" "#" ColorId PURPLE }
-  { "tainted_wall_nsw" "#" ColorId PURPLE }
-  { "tainted_wall_nw" "#" ColorId PURPLE }
-  { "tainted_wall_s" "#" ColorId PURPLE }
-  { "tainted_wall_sw" "#" ColorId PURPLE }
-  { "tainted_wall_w" "#" ColorId PURPLE }
-  { "tomarose" "#" ColorId PURPLE }
   { "troll_female" "T" ColorId PURPLE }
-  { "warrior_adventurer" "p" ColorId PURPLE }
-  { "warrior_adventurer_female" "p" ColorId PURPLE }
-  { "wastes_ground1" "." ColorId PURPLE }
-  { "wastes_ground2" "." ColorId PURPLE }
-  { "wastes_snake" "." ColorId PURPLE }
-  { "wastes_wateranim" "." ColorId PURPLE }
   { "water_fairy" "h" ColorId PURPLE }
-  { "wooden_chair_n" "#" ColorId PURPLE }
-  { "wooden_chair_s" "#" ColorId PURPLE }
-  { "wooden_table" "#" ColorId PURPLE }
-  { "wooden_table_lar" "#" ColorId PURPLE }
-  { "wood_spear" "|" ColorId BROWN }
   { "young_greendragon" "d" ColorId GREEN }
   { "young_reddragon" "d" ColorId RED }
   { "zombiedragon" "z" ColorId GRAY }
