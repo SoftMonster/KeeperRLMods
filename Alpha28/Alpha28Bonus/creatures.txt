@@ -3869,7 +3869,7 @@
         material = FLESH
         weight = 280
         intrinsicAttacks = {
-          ARM { Intrinsic { "claws_attack" } "arm sword" 10 { attackType = HIT attackMsg = THRUST } }
+          ARM { Intrinsic { "sword" } "arm sword" 10 { attackType = HIT attackMsg = THRUST } }
         }        
       }
 	  spellSchools = { "fighter" }
@@ -4490,20 +4490,13 @@
     {
       viewId = { "ogre_female" }
       gender = FEMALE
-      name = {
-        name = "ogre female"
-        firstNameGen = ORC
-      }
       chatReactionFriendly = "\"complains about ogre males\""
       chatReactionHostile = "\"Die!\""
     }
     "ORC_FEMALE" inherit "ORC"
     {
       viewId = { "orc_female" }
-      name = {
-        name = "orc female"
-        firstNameGen = ORC
-      }
+      gender = FEMALE
       chatReactionFriendly = "\"complains about orc males\""
       chatReactionHostile = "\"Die!\""
     }
@@ -5196,4 +5189,54 @@
       deathDescription = "destroyed"
       courage = 1
     }
+  #Dark greenskins
+ "DARK_ORC" inherit "ORC"
+    {
+      viewId = { "dark_orc" }
+      permanentEffects = {
+        FAST_TRAINING 1
+		SUNLIGHT_VULNERABLE 1
+		REGENERATION 1
+      }
+    }
+ "DARK_ORC_FEMALE" inherit "DARK_ORC"
+    {
+      viewId = { "dark_orc_female" }
+      gender = FEMALE
+    }
+ "DARK_OGRE" inherit "OGRE"
+    {
+      viewId = { "dark_troll" }
+      permanentEffects = {
+        FAST_TRAINING 1
+        MAGIC_VULNERABILITY 1
+		SUNLIGHT_VULNERABLE 1
+		REGENERATION 1
+      }
+    }
+ "DARK_OGRE_FEMALE" inherit "DARK_OGRE"
+    {
+      viewId = { "dark_troll_female" }
+      gender = FEMALE
+    }
+ "DARK_GOBLIN" inherit "GOBLIN"
+    {
+      viewId = { "dark_goblin" }
+      permanentEffects = {
+        FAST_TRAINING 1
+        DISARM_TRAPS_SKILL 1
+		SUNLIGHT_VULNERABLE 1
+		REGENERATION 1
+      }
+    }
+ "DARK_HOBGOBLIN" inherit "HOBGOBLIN"
+    {
+      viewId = { "dark_hobgoblin" }
+      permanentEffects = {
+        FAST_TRAINING 1
+        DISARM_TRAPS_SKILL 1
+		SUNLIGHT_VULNERABLE 1
+		REGENERATION 1
+      }
+    }	
 }
