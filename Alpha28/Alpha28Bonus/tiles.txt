@@ -556,6 +556,7 @@
   { "hobgoblin" "o" ColorId RED }
   { "light_fairy" "h" ColorId WHITE }
   { "male_lion" "f" ColorId ORANGE }
+  { "magic_fairy" "h" ColorId PURPLE }
   { "mushroom_man" "#" ColorId WHITE }
   { "nature_fairy" "h" ColorId GREEN }
   { "ogre_female" "o" ColorId GREEN }
