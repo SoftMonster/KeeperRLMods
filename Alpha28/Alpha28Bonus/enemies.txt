@@ -1478,7 +1478,7 @@
         }
       }
       race = "hydra"
-      tribe = HOSTILE
+      tribe = MONSTER
       buildingId = DUNGEON
     }
     config = {
