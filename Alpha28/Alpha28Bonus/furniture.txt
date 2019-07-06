@@ -1082,6 +1082,14 @@
     constructMessage = SET_UP
     viewLayer = CREATURE
   }
+    "FLOOR_SPIKES_TRAP"
+  {
+    name = "floor_spikes trap"
+    viewId = { "floor_spikes_trap" }
+    entryType = Trap { Lasting BLEEDING}
+    warning = true
+    constructMessage = SET_UP
+  }
   "PORTAL"
   {
     name = "portal"

@@ -305,8 +305,12 @@
 
     { Trap "SURPRISE_TRAP" { "surprise_trap" }                             "Surprise trap"     "Traps"
         "Teleports nearby minions to deal with the trespasser." 0 { TechId "traps" }}
+
     { Trap "FIRE_TRAP" { "fire_trap" }                                     "Fire trap"        "Traps"
         "Causes a tower of flame to errupt under the trespasser." 0 { TechId "traps" }}
+
+    { Trap "FLOOR_SPIKES_TRAP" { "floor_spikes_trap" }                     "Floor Spikes trap" "Traps"
+        "Causes a group of spikes to spring up from the floor under the trespasser." 0 { TechId "traps" }}
   }
   "dwarven"
   {
@@ -525,7 +529,10 @@
 
     { Trap "FIRE_TRAP" { "fire_trap" }                                     "Fire trap"        "Traps"
         "Causes a tower of flame to errupt under the trespasser." 0 { TechId "traps" }}
-		
+
+    { Trap "FLOOR_SPIKES_TRAP" { "floor_spikes_trap" }                     "Floor Spikes trap" "Traps"
+        "Causes a group of spikes to spring up from the floor under the trespasser." 0 { TechId "traps" }}
+
     { Furniture {{ "CASTLE_A1" }  WOOD   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
     { Furniture {{ "CASTLE_A2" }  WOOD   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
     { Furniture {{ "CASTLE_A3" }  WOOD   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}

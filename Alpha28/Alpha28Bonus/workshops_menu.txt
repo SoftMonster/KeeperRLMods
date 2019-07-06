@@ -122,6 +122,7 @@
     {{TrapItem "SURPRISE_TRAP" "surprise"}    8        WOOD 20      "traps"}
     {{TrapItem "TERROR_TRAP" "terror"}        8        WOOD 20      "traps"}
     {{TrapItem "FIRE_TRAP" "fire"}            8        WOOD 20      "traps"}
+    {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   10       IRON 20      "traps"}
 }
 
 # Forge
@@ -228,6 +229,7 @@
     {{TrapItem "SURPRISE_TRAP" "surprise"}    8        WOOD 20      "traps"}
     {{TrapItem "TERROR_TRAP" "terror"}        8        WOOD 20      "traps"}
     {{TrapItem "FIRE_TRAP" "fire"}            8        WOOD 20      "traps"}
+    {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   10       IRON 20      "traps"}
 }
 
 # Forge
@@ -302,6 +304,7 @@
     {{TrapItem "SURPRISE_TRAP" "surprise"}    8        WOOD 20      "traps"}
     {{TrapItem "TERROR_TRAP" "terror"}        8        WOOD 20      "traps"}
     {{TrapItem "FIRE_TRAP" "fire"}            8        WOOD 20      "traps"}
+    {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   10       IRON 20      "traps"}
 }
 
 # Forge
@@ -408,6 +411,7 @@
     {{TrapItem "SURPRISE_TRAP" "surprise"}    1        WOOD  1      "traps"}
     {{TrapItem "TERROR_TRAP" "terror"}        1        WOOD  1      "traps"}
     {{TrapItem "FIRE_TRAP" "fire"}            1        WOOD  1      "traps"}
+    {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   10       IRON  1      "traps"}
 }
 
 # Forge
