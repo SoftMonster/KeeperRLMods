@@ -1110,6 +1110,79 @@
       }
       hatedByEffect = HATE_HUMANS
     }
+   
+  "HEALING_TOTEM"
+   {
+    viewId = { "totem_creature" }
+    attr = {
+     DAMAGE 0
+     DEFENSE 25
+     }
+     body = {
+       type = NonHumanoid LARGE
+       material = WOOD
+       weight = 550
+       addBodyPart = {
+           BACK 2
+           HEAD 1
+             } }
+      spells = {
+        "group healing"
+        "expert healing"
+      }
+      permanentEffects = {
+        TIED_UP 1
+        SLOWED 1
+        RANGED_RESISTANCE 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
+      }
+      cantEquip = true
+      name = {
+        name = "healing totem"
+      }
+      chatReactionFriendly = "\"A wooden healing totem. \""
+      chatReactionHostile = "\"A wooden healing totem.\""
+      deathDescription = "destroyed"
+    }
+
+   "BUFF_TOTEM"
+   {
+    viewId = { "bufftotem_creature" }
+    attr = {
+     DAMAGE 0
+     DEFENSE 20
+     }
+     body = {
+       type = NonHumanoid LARGE
+       material = WOOD
+       weight = 550
+       addBodyPart = {
+           BACK 2
+           HEAD 1
+             } }
+      spells = {
+        "haste other"
+        "defend other"
+        "friendly damage bonus"
+      }
+      permanentEffects = {
+        TIED_UP 1
+        SLOWED 1
+        RANGED_RESISTANCE 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
+      }
+      cantEquip = true
+      name = {
+        name = "buff totem"
+      }
+      chatReactionFriendly = "\"A wooden buff totem. \""
+      chatReactionHostile = "\"A wooden buff totem.\""
+      deathDescription = "destroyed"
+    }
+
+
   "CHILD"
     {
       viewId = { "child" }
@@ -3991,7 +4064,13 @@
       viewId = { "hell_portal" }
       attr = {
         DAMAGE 0
-        DEFENSE 30   
+        DEFENSE 35
+        SPELL_DAMAGE 20   
+      }
+      spells = {
+        "magma bolt"
+        "fire shield"
+        "advanced fire elemental"
       }
       body = {
         type = NonHumanoid HUGE

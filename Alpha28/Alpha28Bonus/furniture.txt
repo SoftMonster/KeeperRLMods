@@ -1070,6 +1070,14 @@
     warning = true
     constructMessage = SET_UP
   }
+  "TAR_PIT"
+  {
+   name = "tar pit"
+   viewId = { "tar_pit" }
+   entryType = Trap { Lasting SLOWED }
+   warning = true
+   constructMessage = SET_UP
+  }
   "BOULDER_TRAP"
   {
     name = "boulder trap"

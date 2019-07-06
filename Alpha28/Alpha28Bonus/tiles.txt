@@ -582,12 +582,14 @@
   { "young_reddragon" "d" ColorId RED }
   { "zombiedragon" "z" ColorId GRAY }
 
-#Added by Acre June 2019
+#Added by your boi; Acre June 2019
 
   { "adoxie_eye" "u" ColorId PURPLE }
   { "ocean_portal" "+" ColorId BLUE }
   { "lesser_eye_servant" "e" ColorId RED }
   { "eye_scout" "e" ColorId RED }
   { "vulturemutation" "b" ColorId RED }
-
+  { "totem_creature" "T" ColorId GREEN }
+  { "bufftotem_creature" "T" ColorId RED }
+  { "tar_pit" "@" ColorId PURPLE }
 }

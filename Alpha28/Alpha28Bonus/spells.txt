@@ -139,6 +139,13 @@
     sound = SPELL_TELEPORT
   }
   {
+    id = "battle cry"
+    symbol = "💪"
+    effect = Lasting RAGE
+    cooldown = 90
+    sound = SPELL_STR_BONUS
+  }
+  {
     id =  "teleport"
     symbol = "🌀"
     effect = Teleport
@@ -162,7 +169,7 @@
     symbol = "😱"
     effect = Lasting PANIC
     range = 5
-    cooldown = 50
+    cooldown = 70
     sound = SPELL_STR_BONUS
   }
   {
@@ -189,6 +196,15 @@
     targetSelf = true
     range = 1
     cooldown = 120
+    sound = SPELL_SPEED_SELF
+  }
+  {
+    id =  "haste other"
+    symbol = "🏃"
+    effect = Lasting SPEED
+    targetSelf = false
+    range = 3
+    cooldown = 110
     sound = SPELL_SPEED_SELF
   }
   {
@@ -251,6 +267,15 @@
     sound = SPELL_DEX_BONUS
   }
   {
+    id = "defend other"
+    symbol = "🛡"
+    effect = Lasting DEF_BONUS
+    targetSelf = false
+    range = 3
+    cooldown = 70
+    sound = SPELL_DEX_BONUS
+  }
+  {
     id =  "damage bonus"
     symbol = "💪"
     effect = Lasting DAM_BONUS
@@ -265,6 +290,15 @@
     targetSelf = true
     range = 1
     cooldown = 80
+    sound = SPELL_STR_BONUS
+  }
+  {
+    id = "friendly damage bonus"
+    symbol = "💪"
+    effect = Lasting DAM_BONUS
+    targetSelf = false
+    range = 3
+    cooldown = 70
     sound = SPELL_STR_BONUS
   }
   {
@@ -304,6 +338,20 @@
     sound = SPELL_FIRE_SPHERE_PET
   }
   {
+    id = "healing totem"
+    symbol = "/+\\"
+    effect = Summon "HEALING_TOTEM" { 1 2 }
+    cooldown = 250
+    sound = SPELL_SUMMON_SPIRIT
+  }
+  {
+    id = "buff totem"
+    symbol = "/💪\\"
+    effect = Summon "BUFF_TOTEM" { 1 2 }
+    cooldown = 250
+    sound = SPELL_SUMMON_SPIRIT
+  }
+  {
     id =  "fire breath"
     symbol = "🐲"
     effect = Fire
@@ -330,6 +378,15 @@
     range = 4
     cooldown = 30
     sound = SPELL_FIRE_SPHERE_PET
+  }
+  {
+   id = "magma bolt"
+   symbol = "{🔥}"
+   effect = Fire
+   fx = FIREBALL
+   range = 6
+   cooldown = 35
+   sound = SPELL_FIRE_SPHERE_PET
   }
   {
     id =  "shove"

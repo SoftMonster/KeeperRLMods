@@ -32,6 +32,8 @@
     "defense bonus" 8
     "summon element" 9
     "damage bonus" 10
+    "panic" 11
+    "curse" 11
     "invisibility" 12
   }
   "mage" SPELL
@@ -66,14 +68,17 @@
     "slow" 3
     "defense bonus" 4
     "damage bonus" 5
+    "buff totem" 5
     "advanced haste" 6
     "advanced defense bonus" 7
     "advanced damage bonus" 8
+    "healing totem" 9
     "magic cancellation" 9
   }
   "healer" SPELL
   {
     "advanced healing" 1
+    "healing totem" 1
     "expert healing" 2
     "cure poison" 3
     "advanced cure poison" 4
@@ -94,11 +99,13 @@
     "invisibility" 2
     "escape" 3
     "panic" 5
-    "pacify" 7
+    "pacify" 6
+    "mind bolt" 7
   }
   "fighter" MELEE
   {
     "shove" 4
+    "battle cry" 6
     "swap positions" 7
   }
 }
