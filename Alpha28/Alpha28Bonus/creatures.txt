@@ -5271,6 +5271,10 @@
   #Dark greenskins
  "DARK_ORC" inherit "ORC"
     {
+      attr = {
+        DAMAGE 21
+        DEFENSE 14 
+      }
       viewId = { "dark_orc" }
       permanentEffects = {
         FAST_TRAINING 1
@@ -5285,6 +5289,10 @@
     }
  "DARK_OGRE" inherit "OGRE"
     {
+      attr = {
+        DAMAGE 23
+        DEFENSE 18 
+      }
       viewId = { "dark_troll" }
       permanentEffects = {
         FAST_TRAINING 1
