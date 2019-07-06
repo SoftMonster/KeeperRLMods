@@ -1777,7 +1777,7 @@
   {
     settlement = {
       type = FORREST_COTTAGE
-      tribe = HUMAN
+      tribe = MONSTER
       inhabitants = {
 	    leader = {{ "GORGON" }}
         fighters = {
