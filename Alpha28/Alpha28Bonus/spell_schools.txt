@@ -104,8 +104,9 @@
   }
   "fighter" MELEE
   {
-    "shove" 4
-    "battle cry" 6
-    "swap positions" 7
+    "shove" 3
+    "battle cry" 4
+    "swap positions" 6
+    "weapon dodge" 7
   }
 }
