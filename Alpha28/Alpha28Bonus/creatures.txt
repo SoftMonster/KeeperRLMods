@@ -253,6 +253,33 @@
       }
       hatedByEffect = HATE_HUMANS
     }
+
+"BANDIT_LEADER"
+    {
+      viewId = { "bandit_leader" }
+      attr = {
+        DAMAGE 22
+        DEFENSE 20
+        RANGED_DAMAGE 3
+      }
+      body = {
+        type = Humanoid LARGE
+      }
+      permanentEffects = {
+        AMBUSH_SKILL 1
+      }
+      spells = { "battle cry" }
+      chatReactionFriendly = "curses all law enforcement"
+      chatReactionHostile = "\"Die!\""
+      maxLevelIncrease = {
+        MELEE 5
+      }
+      name = {
+        name = "bandit leader"
+      }
+      hatedByEffect = HATE_HUMANS
+    }
+
   "GHOST"
     {
       viewId = { "ghost" }

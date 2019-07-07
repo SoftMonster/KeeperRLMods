@@ -357,6 +357,16 @@
             LastingEffect RANGED_VULNERABILITY
             LastingEffect INVISIBLE } chance = 0.3 }
       }
+  {"BANDIT_LEADER"}
+      {
+       { Sword }
+       { LeatherArmor }
+       { type = LeatherBoots chance = 0.5 }
+       { type = LeatherGloves chance = 0.5 }
+       { type = Potion Heal FLESH chance = 0.9 }
+       { type = Bow chance = 0.9 }
+       { type = Ring DISARM_TRAPS_SKILL chance = 0.2 }
+      }
   {"HALLOWEEN_KID"}
       {
         { BagOfCandies }

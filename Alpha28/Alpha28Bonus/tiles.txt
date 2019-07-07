@@ -593,4 +593,5 @@
   { "totem_creature" "T" ColorId GREEN }
   { "bufftotem_creature" "T" ColorId RED }
   { "tar_pit" "@" ColorId PURPLE }
+  { "bandit_leader" "B" ColorId RED }
 }
