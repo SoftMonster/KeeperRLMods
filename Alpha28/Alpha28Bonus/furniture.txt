@@ -1033,13 +1033,12 @@
     viewId = { "map_mountain2" }
     constructMessage = none	
     blockMovement = true
-	strength = 100
-    entryType = Trap { InjureBodyPart LEG }
+	strength = 200
     strength2 = {
-      100 BOULDER
-      100 DIG
-      100 HOSTILE_DIG
-      100 HOSTILE_DIG_NO_SKILL
+      200 BOULDER
+      200 DIG
+      200 HOSTILE_DIG
+      200 HOSTILE_DIG_NO_SKILL
     }
   }
   "INVISIBLE_ALARM"

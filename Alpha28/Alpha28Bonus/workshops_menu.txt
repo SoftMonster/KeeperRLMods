@@ -124,7 +124,7 @@
     {{TrapItem "FIRE_TRAP" "fire"}            8        WOOD 20      "traps"}
     {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   10       IRON 20      "traps"}
     {{TrapItem "TAR_PIT"  "tar bucket"}                     10      STONE  5     "traps"}
-    {{TrapItem "FALLING_RUBBLE_TRAP"  "falling rubble"}     10     STONE 80     "traps"}
+    {{TrapItem "FALLING_RUBBLE_TRAP"  "falling rubble"}     10      STONE  5     "traps"}
 }
 
 # Forge
@@ -233,7 +233,7 @@
     {{TrapItem "FIRE_TRAP" "fire"}            8        WOOD 20      "traps"}
     {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   10       IRON 20      "traps"}
     {{TrapItem "TAR_PIT"  "tar bucket"}                    10       STONE 5     "traps"}
-    {{TrapItem "FALLING_RUBBLE_TRAP"  "falling rubble"}     10     STONE 80     "traps"}
+    {{TrapItem "FALLING_RUBBLE_TRAP"  "falling rubble"}    10       STONE 5     "traps"}
 }
 
 # Forge
@@ -310,7 +310,7 @@
     {{TrapItem "FIRE_TRAP" "fire"}            8        WOOD 20      "traps"}
     {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   10       IRON 20      "traps"}
     {{TrapItem "TAR_PIT"  "tar bucket"}       10                     STONE 5     "traps"}
-    {{TrapItem "FALLING_RUBBLE_TRAP"  "falling rubble"}     10     STONE 80     "traps"}
+    {{TrapItem "FALLING_RUBBLE_TRAP"  "falling rubble"}     10       STONE 5     "traps"}
 }
 
 # Forge
