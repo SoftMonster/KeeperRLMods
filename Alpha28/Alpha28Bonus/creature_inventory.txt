@@ -30,7 +30,20 @@
         { GoldPiece 30 50 }
         { type = Glyph ARMOR ItemAttrBonus DEFENSE 5 chance = 0.1 }
       }
-  
+  {"NECROMANCER"}
+      {
+        { IronStaff }
+        { Robe }
+        { type = Glyph ARMOR ItemAttrBonus DEFENSE 3 chance = 0.01 }
+        { type = Glyph WEAPON ItemAttrBonus DAMAGE 3 chance = 0.01 }
+      }
+
+{"SKELETON_MAGE"}
+      {
+        { WoodenStaff }
+        { Robe }
+      }
+
   {"GREEN_DRAGON"}
       {
         { GoldPiece 60 100 }
@@ -360,6 +373,7 @@
   {"BANDIT_LEADER"}
       {
        { Sword }
+       { WoodenShield }
        { LeatherArmor }
        { type = LeatherBoots chance = 0.5 }
        { type = LeatherGloves chance = 0.5 }

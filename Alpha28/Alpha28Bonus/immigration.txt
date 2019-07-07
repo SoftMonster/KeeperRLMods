@@ -327,6 +327,7 @@
              { 0.05 { LastingEffect BAD_BREATH }}
           }
         }
+
         {
           ids = { "DARK_OGRE" "DARK_OGRE_FEMALE" }
           traits = { FIGHTER }
@@ -350,6 +351,24 @@
              { 0.05 { LastingEffect BAD_BREATH }}
           }
         }
+ {
+ids = { "NECROMANCER" }
+          traits = { FIGHTER }
+          frequency = 0.1
+          spawnLocation = FurnitureType "GRAVE"
+          requirements = {
+            { 0.0 MinTurnRequirement 4000 }
+            { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
+            { 0.0 CostInfo CORPSE 1}
+          }
+          specialTraits = {
+             { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
+             { 0.03 { AttrBonus DEFENSE 5 }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
+          }
+        }
+
         {
           ids = { "HARPY" }
           traits = { FIGHTER }
@@ -982,6 +1001,27 @@
              {1.0 { SkillId DIGGING }}
           }
         }
+
+
+ {
+ids = { "NECROMANCER" }
+          traits = { FIGHTER }
+          frequency = 0.1
+          spawnLocation = FurnitureType "GRAVE"
+          requirements = {
+            { 0.0 MinTurnRequirement 4000 }
+            { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
+            { 0.0 CostInfo CORPSE 1}
+          }
+          specialTraits = {
+             { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
+             { 0.03 { AttrBonus DEFENSE 5 }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
+          }
+        }
+
+
         {
           ids = { "ZOMBIE" }
           traits = { WORKER NO_LIMIT NO_EQUIPMENT }
@@ -1446,6 +1486,27 @@
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
+ 
+ {
+ids = { "NECROMANCER" }
+          traits = { FIGHTER }
+          frequency = 0.1
+          spawnLocation = FurnitureType "GRAVE"
+          requirements = {
+            { 0.0 MinTurnRequirement 4000 }
+            { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
+            { 0.0 CostInfo CORPSE 1}
+          }
+          specialTraits = {
+             { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
+             { 0.03 { AttrBonus DEFENSE 5 }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+
+
         {
           ids = { "ZOMBIE" }
           traits = { FIGHTER }
@@ -1735,6 +1796,27 @@
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
+ 
+ {
+ids = { "NECROMANCER" }
+          traits = { FIGHTER }
+          frequency = 0.1
+          spawnLocation = FurnitureType "GRAVE"
+          requirements = {
+            { 0.0 MinTurnRequirement 4000 }
+            { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
+            { 0.0 CostInfo CORPSE 1}
+          }
+          specialTraits = {
+             { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
+             { 0.03 { AttrBonus DEFENSE 5 }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
+
+
         {
           ids = { "DARK_ORC" "DARK_ORC_FEMALE"}
           traits = { FIGHTER }
@@ -2126,7 +2208,7 @@
         { ids = { "GNOME" "GNOME_CHIEF" "DWARF" "DWARF_FEMALE" "DWARF_BARON" "KOBOLD" "BANDIT" "LIZARDMAN" "LIZARDLORD" "BANDIT_LEADER" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
         { ids = { "SPECIAL_BLBN" "SPECIAL_BLBW" "SPECIAL_BLGN" "SPECIAL_BLGW" "SPECIAL_BMBN" "SPECIAL_BMBW" "SPECIAL_BMGN" "SPECIAL_BMGW" "SPECIAL_HLBN" "SPECIAL_HLBW" "SPECIAL_HLGN" "SPECIAL_HLGW" "SPECIAL_HMBN" "SPECIAL_HMBW" "SPECIAL_HMGN" "SPECIAL_HMGW"  } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
         { ids = { "HYDRA" "MINOTAUR" "UNICORN" "CYCLOPS" "DEMON_DWELLER" "DEMON_LORD" "WITCH" "ADOXIE_HEAD" "ABOMINATION" "ARACHNE" "COW_DEMON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
-        { ids = { "ZOMBIE" "SKELETON" "MUMMY" "VAMPIRE" "VAMPIRE_LORD" "SUCCUBUS" "DOPPLEGANGER" "LOST_SOUL" "SPIRIT" "GOBLIN" "ORC" "ORC_MAGE" "OGRE" "HARPY"}  traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
+        { ids = { "ZOMBIE" "SKELETON" "NECROMANCER" "MUMMY" "VAMPIRE" "VAMPIRE_LORD" "SUCCUBUS" "DOPPLEGANGER" "LOST_SOUL" "SPIRIT" "GOBLIN" "ORC" "ORC_MAGE" "OGRE" "HARPY"}  traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
         { ids = { "FIRE_ELEMENTAL" "WATER_ELEMENTAL" "ENT" "AIR_ELEMENTAL" "FIRE_SPHERE" "EARTH_ELEMENTAL" "IRON_GOLEM" "LAVA_GOLEM" "ADA_GOLEM" "AUTOMATON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
         { ids = { "ELF" "ELF_ARCHER" "ELF_CHILD" "ELF_LORD" "DARK_ELF" "DARK_ELF_WARRIOR" "DARK_ELF_CHILD" "DARK_ELF_LORD" "DRIAD" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
         { ids = { "HORSE" "COW" "PIG" "GOAT" "DONKEY" "JACKAL" "DEER" "BOAR" "FOX" "SNAKE" "SPIDER" "FLY" "RAT" "RAVEN" "BAT" "WOLF" "CAVE_BEAR" "WEREWOLF" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}

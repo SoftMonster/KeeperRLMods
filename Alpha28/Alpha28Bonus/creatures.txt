@@ -1450,6 +1450,37 @@
       hatedByEffect = HATE_UNDEAD
       courage = 1
     }
+
+"SKELETON_MAGE"
+    {
+      viewId = { "lich_keeper3" }
+      attr = {
+        DAMAGE 10
+        DEFENSE 29
+        SPELL_DAMAGE 27
+      }
+      body = {
+        type = Humanoid LARGE
+        material = BONE
+      }
+      permanentEffects = {
+        RANGED_RESISTANCE 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
+      }
+      maxLevelIncrease = {
+        MELEE 2
+        SPELL 7
+      }
+     spellSchools = { "mage" }
+     spells = { "fireball" }
+      name = {
+        name = "skeleton mage"
+      }
+      hatedByEffect = HATE_UNDEAD
+      courage = -1
+    }
+
   "VAMPIRE"
     {
       viewId = { "vampire" }
@@ -1512,6 +1543,39 @@
       chatReactionHostile = "\"There are times when you simply nnot refuse a drink!\""
       hatedByEffect = HATE_UNDEAD
     }
+
+"NECROMANCER"
+    {
+      viewId = { "necromancer" }
+      attr = {
+        DAMAGE 16
+        DEFENSE 35
+        SPELL_DAMAGE 30 
+      }
+      body = {
+        type = Humanoid LARGE
+        material = UNDEAD_FLESH
+      }
+      name = {
+        name = "necromancer"
+      }
+      maxLevelIncrease = {
+        MELEE 3
+        SPELL 12
+      }
+      permanentEffects = {
+        RANGED_RESISTANCE 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
+        DARKNESS_SOURCE 1
+      }
+      spellSchools = { "necromancy" }
+      spells = { "deception" "summon skeletons" }
+      chatReactionFriendly = "\"At your service, master!\""
+      chatReactionHostile = "\"Soon you will join my undead ranks. DIE!\""
+      hatedByEffect = HATE_UNDEAD
+    }
+
   "MUMMY"
     {
       viewId = { "mummy" }

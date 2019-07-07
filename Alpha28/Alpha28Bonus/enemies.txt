@@ -407,6 +407,53 @@
       }
     }
   }
+  "UNDEAD_SETTLEMENT"
+  {
+    settlement = {
+      type = VILLAGE
+      tribe = MONSTER
+      inhabitants = {
+        leader = {
+        id = { "NECROMANCER" }
+          baseLevelIncrease = {
+            MELEE 3
+            SPELL 7
+          } }
+        fighters = {
+          count = {12 16}
+          all = {
+            1 "SKELETON"
+            1 "SKELETON_MAGE"
+            1 "MUMMY"
+            1 "ZOMBIE"
+          }
+        }
+      }
+      locationName = "Necromancer abode"
+      race = "undead"
+      buildingId = BRICK
+      furniture = "cryptCoffins"
+      outsideFeatures = "villageOutside"
+    }
+    config = {
+      immigrantInterval = 100
+      maxPopulation = 20
+    }
+    createOnBones = 0.1 { "CEMETERY" }
+    immigrants = {
+      {
+        ids = {"SKELETON"}
+        traits = {FIGHTER}
+        frequency = 3
+      }
+      {
+        ids = {"ZOMBIE"}
+        traits = {FIGHTER}
+        frequency = 1
+      }
+    }
+  }
+
   "DEMON_DEN_ABOVE"
   {
     settlement = {
@@ -1509,9 +1556,15 @@
     settlement = {
       type = CEMETERY
       inhabitants = {
+        leader = {
+        id = { "NECROMANCER" }
+          baseLevelIncrease = {
+            MELEE 3
+            SPELL 7
+          } }
         fighters = {
           count = {8 12}
-          all = { 1 "ZOMBIE" }
+          all = { 1 "ZOMBIE" 1 "SKELETON" }
         }
       }
       locationName = "cemetery"
@@ -1533,7 +1586,7 @@
         fighters = {
           count = {1 2}
           all = {
-            1 "ZOMBIE"
+            1 "SKELETON_MAGE"
           }
         }
       }

@@ -594,4 +594,6 @@
   { "bufftotem_creature" "T" ColorId RED }
   { "tar_pit" "@" ColorId PURPLE }
   { "bandit_leader" "B" ColorId RED }
+  { "necromancer" "N" ColorId PURPLE }
+  { "lich_keeper3" "M" ColorId PURPLE }
 }

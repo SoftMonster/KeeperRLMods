@@ -15,6 +15,7 @@
     { "dwarf_baron" } "DWARVES" "Dwarves" MAIN
     { "elementalist" } "ELEMENTALIST" "Elementalist" MAIN
     { "lizardlord" } "LIZARDMEN" "Lizardmen" MAIN
+    { "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN
     { "shaman" } "WARRIORS" "Warriors" MAIN
     { "demon_lord" } "DEMON_DEN" "Demon den" MAIN
 
@@ -52,6 +53,7 @@
     { "orc_captain" } "ORC_VILLAGE" "Greenskin village" MAIN
     { "demon_lord" } "DEMON_DEN" "Demon den" MAIN
     { "lizardlord" } "LIZARDMEN" "Lizardmen" MAIN
+    { "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN
 
     { "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER
     { "male_lion" } "LION_PRIDE" "Pride of Lions" LESSER
@@ -82,10 +84,11 @@
     { "lizardlord" } "LIZARDMEN" "Lizardmen" MAIN
     { "shaman" } "WARRIORS" "Warriors" MAIN
     { "demon_lord" } "DEMON_DEN" "Demon den" MAIN
+    { "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN
 
     { "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER
     { "male_lion" } "LION_PRIDE" "Pride of Lions" LESSER
-    { "bandit_leader" } "BANDITS" "Bandits" LESSER
+    { "bandit" } "BANDITS" "Bandits" LESSER
     { "rat_king" } "RATMEN" "Rat men" LESSER
     { "ent" } "ENTS" "Tree spirits" LESSER
     { "driad" } "DRIADS" "Driads" LESSER
@@ -101,6 +104,7 @@
     { "orc_captain" } "ORC_VILLAGE" "Greenskins village" ALLY
     { "dark_elf_lord" } "DARK_ELVES_ALLY" "Dark elves" ALLY
     { "gnome_boss" } "GNOMES" "Gnomes" ALLY
+
 }
 
 # Villains for lawful adventurers
@@ -116,11 +120,12 @@
     { "orc_captain" } "ORC_VILLAGE" "Greenskin village" MAIN
     { "demon_lord" } "DEMON_DEN" "Demon den" MAIN
     { "lizardlord" } "LIZARDMEN" "Lizardmen" MAIN
+    { "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN
 
     { "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER
     { "male_lion" } "LION_PRIDE" "Pride of Lions" LESSER
     { "rat_king" } "RATMEN" "Rat men" LESSER
-    { "bandit_leader" } "BANDITS" "Bandits" LESSER
+    { "bandit" } "BANDITS" "Bandits" LESSER
     { "cyclops" } "CYCLOPS" "Cyclops" LESSER
     { "hydra" } "HYDRA" "Hydra" LESSER
     { "zombie" } "CEMETERY" "Zombies" LESSER
