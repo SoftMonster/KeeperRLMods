@@ -123,7 +123,8 @@
     {{TrapItem "TERROR_TRAP" "terror"}        8        WOOD 20      "traps"}
     {{TrapItem "FIRE_TRAP" "fire"}            8        WOOD 20      "traps"}
     {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   10       IRON 20      "traps"}
-    {{TrapItem "TAR_PIT"  "tar bucket"}        10       STONE 5     "traps"}
+    {{TrapItem "TAR_PIT"  "tar bucket"}                     10      STONE  5     "traps"}
+    {{TrapItem "FALLING_RUBBLE_TRAP"  "falling rubble"}     10     STONE 80     "traps"}
 }
 
 # Forge
@@ -231,7 +232,8 @@
     {{TrapItem "TERROR_TRAP" "terror"}        8        WOOD 20      "traps"}
     {{TrapItem "FIRE_TRAP" "fire"}            8        WOOD 20      "traps"}
     {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   10       IRON 20      "traps"}
-    {{TrapItem "TAR_PIT"  "tar bucket"}        10       STONE 5     "traps"}
+    {{TrapItem "TAR_PIT"  "tar bucket"}                    10       STONE 5     "traps"}
+    {{TrapItem "FALLING_RUBBLE_TRAP"  "falling rubble"}     10     STONE 80     "traps"}
 }
 
 # Forge
@@ -307,7 +309,8 @@
     {{TrapItem "TERROR_TRAP" "terror"}        8        WOOD 20      "traps"}
     {{TrapItem "FIRE_TRAP" "fire"}            8        WOOD 20      "traps"}
     {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   10       IRON 20      "traps"}
-    {{TrapItem "TAR_PIT"  "tar bucket"}       10       STONE 5     "traps"}
+    {{TrapItem "TAR_PIT"  "tar bucket"}       10                     STONE 5     "traps"}
+    {{TrapItem "FALLING_RUBBLE_TRAP"  "falling rubble"}     10     STONE 80     "traps"}
 }
 
 # Forge
@@ -414,8 +417,9 @@
     {{TrapItem "SURPRISE_TRAP" "surprise"}    1        WOOD  1      "traps"}
     {{TrapItem "TERROR_TRAP" "terror"}        1        WOOD  1      "traps"}
     {{TrapItem "FIRE_TRAP" "fire"}            1        WOOD  1      "traps"}
-    {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   10       IRON  1      "traps"}
+    {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   11       IRON  1      "traps"}
     {{TrapItem "TAR_PIT"  "tar bucket"}       1        STONE 1      "traps"}
+    {{TrapItem "FALLING_RUBBLE_TRAP"  "falling rubble"}  1 STONE 1  "traps"}
 }
 
 # Forge

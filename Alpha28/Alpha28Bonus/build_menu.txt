@@ -306,6 +306,9 @@
     { Trap "TAR_PIT" { "tar_pit" }                                          "Tar pit"          "Traps"
         "Slows down interlopers." 0                           { TechId "traps" }}
 
+    { Trap "FALLING_RUBBLE_TRAP" { "map_mountain2" }                        "Falling rubble trap" "Traps"
+        "Rubble will fall down around them." 0                { TechId "traps" }}
+
     { Trap "SURPRISE_TRAP" { "surprise_trap" }                             "Surprise trap"     "Traps"
         "Teleports nearby minions to deal with the trespasser." 0 { TechId "traps" }}
 
@@ -527,8 +530,11 @@
     { Trap "BOULDER_TRAP" { "boulder" }                                    "Boulder trap"      "Traps"
         "Causes a huge boulder to roll towards the enemy." 0  { TechId "traps" }}
 
-    { Trap "TAR_PIT"     { "tar_pit" }                                     "Tar pit"           "Traps"  
+    { Trap "TAR_PIT" { "tar_pit" }                                          "Tar pit"          "Traps"
         "Slows down interlopers." 0                           { TechId "traps" }}
+
+    { Trap "FALLING_RUBBLE_TRAP" { "map_mountain2" }                         "Falling rubble trap" "Traps"
+        "Rubble will fall down around them." 0                { TechId "traps" }}
 
     { Trap "SURPRISE_TRAP" { "surprise_trap" }                             "Surprise trap"     "Traps"
         "Teleports nearby minions to deal with the trespasser." 0 { TechId "traps" }}

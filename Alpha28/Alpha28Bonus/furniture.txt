@@ -1018,6 +1018,30 @@
     warning = true
     constructMessage = SET_UP
   }
+  "FALLING_RUBBLE_TRAP"
+  {
+    name = "falling rubble trap"
+    viewId = { "ruin_wall" }
+    layer = CEILING
+    entryType = Trap { Area PlaceFurniture "RUBBLE" 1 }
+    warning = true
+    constructMessage = SET_UP
+  }
+  "RUBBLE"
+  {
+    name = "rubble"
+    viewId = { "map_mountain2" }
+    constructMessage = none	
+    blockMovement = true
+	strength = 100
+    entryType = Trap { InjureBodyPart LEG }
+    strength2 = {
+      100 BOULDER
+      100 DIG
+      100 HOSTILE_DIG
+      100 HOSTILE_DIG_NO_SKILL
+    }
+  }
   "INVISIBLE_ALARM"
   {
     name = ""
