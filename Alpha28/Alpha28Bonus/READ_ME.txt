@@ -16,6 +16,7 @@ are not necessarily distributable outside specific conditions.
 
 So, this mod is expected to be available in-game as a download.
 The in-game version will contain any new graphic tiles that are required.
+The mod will have occurring updates, which will require it to be re-downloaded once a new thing comes out.
 
 Thanks for your understanding.
 

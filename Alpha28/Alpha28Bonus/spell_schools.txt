@@ -94,6 +94,7 @@
    "summon skeletons" 3
    "mana curse" 4
    "summon skeleton mages" 5
+   "summon skeleton warriors" 5
    "curse" 6
    "fire shield" 6
    "regrow body parts" 7
@@ -116,8 +117,9 @@
   }
   "fighter" MELEE
   {
-    "shove" 3
+    "shove" 2
     "battle cry" 4
+    "block" 5
     "swap positions" 6
     "weapon dodge" 7
   }

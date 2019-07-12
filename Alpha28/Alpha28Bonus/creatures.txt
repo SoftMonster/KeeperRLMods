@@ -258,8 +258,8 @@
     {
       viewId = { "bandit_leader" }
       attr = {
-        DAMAGE 22
-        DEFENSE 20
+        DAMAGE 18
+        DEFENSE 19
         RANGED_DAMAGE 3
       }
       body = {
@@ -1430,7 +1430,7 @@
       viewId = { "skeleton" }
       attr = {
         DAMAGE 17
-        DEFENSE 13
+        DEFENSE 14
         RANGED_DAMAGE 5
       }
       body = {
@@ -1439,6 +1439,8 @@
       }
       permanentEffects = {
         RANGED_RESISTANCE 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
       }
       maxLevelIncrease = {
         MELEE 3
@@ -1451,13 +1453,44 @@
       courage = 1
     }
 
+"SKELETON_WARRIOR"
+    {
+      viewId = { "skeleton_warrior" }
+      attr = {
+        DAMAGE 23
+        DEFENSE 30
+        RANGED_DAMAGE 8
+      }
+      body = {
+        type = Humanoid LARGE
+        material = BONE
+      }
+      permanentEffects = {
+        RANGED_RESISTANCE 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
+      }
+      spellSchools = { "fighter" }
+      maxLevelIncrease = {
+        MELEE 8
+        ARCHERY 5
+      }
+      name = {
+        name = "skeleton warrior"
+      }
+      hatedByEffect = HATE_UNDEAD
+      courage = 1
+    }
+
+
+
 "SKELETON_MAGE"
     {
       viewId = { "lich_keeper3" }
       attr = {
         DAMAGE 10
-        DEFENSE 29
-        SPELL_DAMAGE 27
+        DEFENSE 25
+        SPELL_DAMAGE 25
       }
       body = {
         type = Humanoid LARGE
@@ -5257,7 +5290,7 @@
    {
       viewId = { "vulturemutation" }
         attr = {
-          DAMAGE 9
+          DAMAGE 14
           DEFENSE 18
         }
       body = {

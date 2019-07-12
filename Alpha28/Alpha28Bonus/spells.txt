@@ -276,6 +276,13 @@
     sound = SPELL_DEX_BONUS
   }
   {
+    id = "block"
+    symbol = "🛡"
+    effect = Lasting DEF_BONUS
+    cooldown = 70
+    sound = SPELL_DEX_BONUS
+  }
+  {
     id =  "damage bonus"
     symbol = "💪"
     effect = Lasting DAM_BONUS
@@ -691,6 +698,14 @@
    id = "summon skeletons"
    symbol = "☠"
    effect = Summon "SKELETON" { 1 5 }
+   cooldown = 70
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon skeleton warriors"
+   upgrade = "summon skeletons"
+   symbol = "☠"
+   effect = Summon "SKELETON_WARRIOR" { 1 5 }
    cooldown = 70
    sound = SPELL_SUMMON_SPIRIT
  }

@@ -44,6 +44,29 @@
         { Robe }
       }
 
+  {"SKELETON"}
+      {
+        { Knife }
+        { type = WoodenShield chance = 0.01 }
+      }
+
+  {"MUMMY"}
+      {
+        { type = Club chance = 0.03 }
+        { type = WoodenShield chance = 0.02 }
+      }
+
+  {"SKELETON_WARRIOR"}
+      {
+        { Sword }
+        { ChainArmor }
+        { WoodenShield }
+        { type = Bow chance = 0.01 }
+        { type = LeatherGloves chance = 0.3 }
+        { type = LeatherBoots chance = 0.3 }
+        { type = LeatherHelm chance = 0.3 }
+      }
+
   {"GREEN_DRAGON"}
       {
         { GoldPiece 60 100 }

@@ -596,4 +596,5 @@
   { "bandit_leader" "B" ColorId RED }
   { "necromancer" "N" ColorId PURPLE }
   { "lich_keeper3" "M" ColorId PURPLE }
+  { "skeleton_warrior" "S" ColorId PURPLE }
 }
