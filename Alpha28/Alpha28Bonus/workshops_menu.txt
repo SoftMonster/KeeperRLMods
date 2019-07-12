@@ -142,31 +142,35 @@
 "necromancer"
 # Workshop
 {
+    {{WoodenShield}          2        WOOD 10}
+    {{Bow}                   13       WOOD 15}
+    {{WoodenStaff}           13       WOOD 15}      
+    {{Torch}                 2        WOOD 4}
 }
 
 # Forge
 {
-    {{Sword}                 10       IRON 20}
-    {{ChainArmor}            30       IRON 40}
-    {{IronHelm}              8        IRON 16}
-    {{IronBoots}             12       IRON 24}
+    {{Sword}                 10       IRON 15}
+    {{ChainArmor}            30       IRON 30}
+    {{IronHelm}              8        IRON 8}
+    {{IronBoots}             12       IRON 16}
     {{IronGloves}            3        IRON 2}
-    {{WarHammer}             16       IRON 40      "two-handed weapons"}
-    {{BattleAxe}             22       IRON 50      "two-handed weapons"}
-    {{IronStaff}             20       IRON 40      "magical weapons"}
-    {{GoldenStaff}           20       GOLD 200     "magical weapons"}
-    {{AdaSword}              20       ADA 20}
-    {{AdaArmor}              30       ADA 40}
-    {{AdaHelm}               15       ADA 16}
-    {{AdaBoots}              15       ADA 24}
+    {{WarHammer}             16       IRON 25      "two-handed weapons"}
+    {{BattleAxe}             22       IRON 35      "two-handed weapons"}
+    {{IronStaff}             20       IRON 20      "magical weapons"}
+    {{GoldenStaff}           20       GOLD 120     "magical weapons"}
+    {{AdaSword}              20       ADA 15}
+    {{AdaArmor}              30       ADA 30}
+    {{AdaHelm}               15       ADA 8}
+    {{AdaBoots}              15       ADA 16}
     {{AdaGloves}             6        ADA 2}
-    {{AdaWarHammer}          20       ADA 40       "two-handed weapons"}
-    {{AdaBattleAxe}          22       ADA 50       "two-handed weapons"}
+    {{AdaWarHammer}          20       ADA 25       "two-handed weapons"}
+    {{AdaBattleAxe}          22       ADA 35       "two-handed weapons"}
 }
 
 # Lab
 {
-    {{Potion RegrowBodyPart}  10       GOLD 1000  "regrow limbs"}
+    {{Potion RegrowBodyPart}  10       GOLD 100  "regrow limbs"}
 }
 
 # Jeweller

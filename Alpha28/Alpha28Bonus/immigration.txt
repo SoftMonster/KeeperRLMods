@@ -327,7 +327,6 @@
              { 0.05 { LastingEffect BAD_BREATH }}
           }
         }
-
         {
           ids = { "DARK_OGRE" "DARK_OGRE_FEMALE" }
           traits = { FIGHTER }
@@ -351,8 +350,8 @@
              { 0.05 { LastingEffect BAD_BREATH }}
           }
         }
-        {
-          ids = { "NECROMANCER" }
+		{
+		  ids = { "NECROMANCER" }
           traits = { FIGHTER }
           frequency = 0.09
           spawnLocation = FurnitureType "GRAVE"
@@ -368,8 +367,8 @@
              { 0.02 { LastingEffect HATE_HUMANS }}
           }
         }
-        {
-          ids = { "SKELETON_MAGE" }
+		{
+		  ids = { "SKELETON_MAGE" }
           traits = { FIGHTER }
           frequency = 0.1
           spawnLocation = FurnitureType "GRAVE"
@@ -385,8 +384,8 @@
              { 0.02 { LastingEffect HATE_HUMANS }}
           }
         }
-        {
-          ids = { "SKELETON_WARRIOR" }
+		{
+		  ids = { "SKELETON_WARRIOR" }
           traits = { FIGHTER }
           frequency = 0.08
           spawnLocation = FurnitureType "GRAVE"
@@ -484,7 +483,7 @@
              { 1.0 { LastingEffect BAD_BREATH }}
           }
          }
-        {
+         {
           ids = { "LOST_SOUL" }
           traits = { FIGHTER }
           frequency = 0.3
@@ -1034,10 +1033,8 @@
              {1.0 { SkillId DIGGING }}
           }
         }
-
-
- {
-ids = { "NECROMANCER" }
+		{
+		  ids = { "NECROMANCER" }
           traits = { FIGHTER }
           frequency = 0.1
           spawnLocation = FurnitureType "GRAVE"
@@ -1053,8 +1050,8 @@ ids = { "NECROMANCER" }
              { 0.02 { LastingEffect HATE_HUMANS }}
           }
         }
-        {
-          ids = { "SKELETON_MAGE" }
+	    {
+		  ids = { "SKELETON_MAGE" }
           traits = { FIGHTER }
           frequency = 0.1
           spawnLocation = FurnitureType "GRAVE"
@@ -1070,8 +1067,8 @@ ids = { "NECROMANCER" }
              { 0.02 { LastingEffect HATE_HUMANS }}
           }
         }
-        {
-          ids = { "SKELETON_WARRIOR" }
+		{
+		  ids = { "SKELETON_WARRIOR" }
           traits = { FIGHTER }
           frequency = 0.08
           spawnLocation = FurnitureType "GRAVE"
@@ -1089,7 +1086,7 @@ ids = { "NECROMANCER" }
         }
         {
           ids = { "ZOMBIE" }
-          traits = { WORKER NO_LIMIT NO_EQUIPMENT }
+          traits = { WORKER FIGHTER NO_LIMIT NO_EQUIPMENT }
           spawnLocation = NearLeader
           keybinding = CREATE_IMP
           noAuto = true
@@ -1099,23 +1096,29 @@ ids = { "NECROMANCER" }
           specialTraits = {
              {1.0 { LastingEffect DARKNESS_SOURCE }}
              {1.0 { SkillId DIGGING }}
+			 {1.0 { SkillId WORKSHOP }}
           }
         }
         {
           ids = { "ZOMBIE" }
-          traits = { FIGHTER }
+          traits = { WORKER FIGHTER NO_EQUIPMENT }
           frequency = 0.2
-          groupSize = {3 9}
+          groupSize = {5 13}
           autoTeam = true
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
-            { 1.0 CostInfo CORPSE 1}
+            { 0.6 CostInfo CORPSE 1}
             { 0.0 TechId "zombie hoards" }
           }
+		  specialTraits = {
+             {1.0 { LastingEffect DARKNESS_SOURCE }}
+             {1.0 { SkillId DIGGING }}
+			 {1.0 { SkillId WORKSHOP }}
+		  }
         }
         {
-          ids = { "ZOMBIE_DRAGON" }
+          ids = { "ZOMBIE_DRAGON" "ZOMBIE_DRAGON" "ZOMBIE_DRAGON" "ZOMBIE_DRAGON" }
           traits = { WORKER FIGHTER }
           frequency = 0.2
           spawnLocation = FurnitureType "GRAVE"
@@ -1131,9 +1134,6 @@ ids = { "NECROMANCER" }
           traits = { WORKER FIGHTER }
           frequency = 0.2
           spawnLocation = FurnitureType "GRAVE"
-          requirements = {
-            { 1.0 CostInfo CORPSE 1}
-          }
           specialTraits = {
             { 1.0 { SkillId FORGE }}
             { 1.0 { SkillId DIGGING }}
@@ -1145,11 +1145,11 @@ ids = { "NECROMANCER" }
           ids = { "SKELETON" }
           traits = { WORKER FIGHTER }
           frequency = 0.75
-          groupSize = {3 9}
+          groupSize = {4 9}
           autoTeam = true
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
-            { 1.0 CostInfo CORPSE 1}
+            { 0.8 CostInfo CORPSE 1}
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
             { 0.0 TechId "skeleton hoards" }
           }
@@ -1161,14 +1161,13 @@ ids = { "NECROMANCER" }
           }
         }
         {
-          ids = { "SPIRIT_DRAGON" }
+          ids = { "SPIRIT_DRAGON" "SPIRIT_DRAGON" }
           traits = { WORKER FIGHTER }
           frequency = 0.2
           spawnLocation = FurnitureType "GRAVE"
 		  consumeIds = true
           initialRecruitment = 1
           requirements = {
-            { 1.0 CostInfo CORPSE 1}
             { 0.0 TechId "skeleton hoards" }
           }
         }
@@ -1179,7 +1178,6 @@ ids = { "NECROMANCER" }
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 1.0 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
-            { 1.0 CostInfo CORPSE 1}
           }
           specialTraits = {
              { 0.3 { LastingEffect TELEPATHY }}
@@ -1212,7 +1210,7 @@ ids = { "NECROMANCER" }
           }
         }
         {
-          ids = { "ABOMINATION" }
+          ids = { "ABOMINATION" "ABOMINATION" "ABOMINATION" "ABOMINATION" }
           traits = { FIGHTER }
           frequency = 0.2
           spawnLocation = FurnitureType "GRAVE"
@@ -1239,7 +1237,6 @@ ids = { "NECROMANCER" }
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 1.0 AttractionInfo 1 {FurnitureType "TRAINING_WOOD"}}
-            { 1.0 CostInfo CORPSE 1}
 		  }
           specialTraits = {
              { 0.3 { ExtraTraining MELEE 3}}
@@ -1254,7 +1251,7 @@ ids = { "NECROMANCER" }
           autoTeam = true
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
-            { 1.0 CostInfo CORPSE 1}
+            { 0.8 CostInfo CORPSE 1}
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
             { 0.0 TechId "mummy hoards" }
           }
