@@ -527,6 +527,7 @@
           all = {
             1 "KNIGHT"
             1 "ARCHER"
+            1 "MILITIA"
           }
         }
         civilians = {
@@ -654,9 +655,10 @@
         fighters = {
           count = {12 17}
           all = {
-            1 "PRIEST"
-            3 "KNIGHT"
-            1 "ARCHER"
+            4 "PRIEST"
+            5 "KNIGHT"
+            4 "ARCHER"
+            1 "MILITIA"
           }
         }
         civilians = {
@@ -733,6 +735,7 @@
             1 "PRIEST"
             3 "KNIGHT"
             1 "ARCHER"
+            2 "MILITIA"
           }
         }
       }
@@ -1782,7 +1785,7 @@
       furniture = "roomFurniture"
     }
     config = {
-      guardianInfo = "WITCHMAN" 0.003 1 2
+      guardianInfo = "MILITIA" 0.2 1 3
     }
   }
   "ELVEN_COTTAGE"

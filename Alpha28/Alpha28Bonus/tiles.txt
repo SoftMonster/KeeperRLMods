@@ -597,4 +597,29 @@
   { "necromancer" "N" ColorId PURPLE }
   { "lich_keeper3" "M" ColorId PURPLE }
   { "skeleton_warrior" "S" ColorId PURPLE }
+  { "militia" "m" ColorId PURPLE }
+
+#Future use (Acre July 2019)
+  { "adamantite_knife" ")" ColorId PURPLE }
+  { "bone_knife" ")" ColorId LIGHT_GRAY }
+  { "bone_wand" "p" ColorId LIGHT_GRAY }
+  { "crystal1" "y" ColorId PINK }
+  { "eye_item" "o" ColorId RED }
+  { "fire_rune" "#" ColorId RED }
+  { "fire_sword" ")" ColorId RED }
+  { "ice_axe" ")" ColorId BLUE }
+  { "ice_rune" "#" ColorId BLUE }
+  { "needle" "i" ColorId PURPLE }
+  { "poison_bow" ")" ColorId GREEN }
+  { "poison_rune" "#" ColorId GREEN }
+  { "poison_sword" ")" ColorId GREEN }
+  { "ring1" "=" ColorId PURPLE }
+  { "scroll1" "?" ColorId PURPLE }
+  { "scroll2" "?" ColorId PURPLE }
+  { "shuriken" "%" ColorId PURPLE }
+  { "buff_tome" "+" ColorId BLUE }
+  { "undead_tome" "+" ColorId LIGHT_GRAY }
+  { "wooden_shield2" "]" ColorId BROWN }
+  { "wooden_boomerang" ")" ColorId BROWN }
+  
 }

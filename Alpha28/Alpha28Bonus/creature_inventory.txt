@@ -50,6 +50,12 @@
         { type = WoodenShield chance = 0.01 }
       }
 
+  {"MILITIA" "MILITIA_PLAYER" }
+      {
+        { Sword }
+        { WoodenShield }
+      }
+
   {"MUMMY"}
       {
         { type = Club chance = 0.03 }

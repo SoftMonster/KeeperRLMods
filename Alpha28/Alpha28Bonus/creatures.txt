@@ -996,6 +996,50 @@
       }
       hatedByEffect = HATE_HUMANS
     }
+
+"MILITIA_PLAYER"
+    {
+      viewId = { "militia" }
+      attr = {
+        DAMAGE 10
+        DEFENSE 10
+      }
+      body = {
+        type = Humanoid LARGE
+      }
+      maxLevelIncrease = {
+        MELEE 7
+      }
+      chatReactionFriendly = "talks about gold."
+      chatReactionHostile = "\"Die!\""
+      name = {
+        name = "militia"
+        firstNameGen = FIRST_MALE
+      }
+      hatedByEffect = HATE_HUMANS
+    }
+
+"MILITIA"
+    {
+      viewId = { "militia" }
+      attr = {
+        DAMAGE 27
+        DEFENSE 25
+      }
+      body = {
+        type = Humanoid LARGE
+      }
+      maxLevelIncrease = {
+        MELEE 4
+      }
+      chatReactionFriendly = "talks about money."
+      chatReactionHostile = "\"Die!\""
+      name = {
+        name = "militia"
+      }
+      hatedByEffect = HATE_HUMANS
+    }
+
   "JESTER"
     {
       viewId = { "jester" }
