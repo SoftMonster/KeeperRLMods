@@ -997,7 +997,7 @@
       hatedByEffect = HATE_HUMANS
     }
 
-"MILITIA_PLAYER"
+    "MILITIA_PLAYER"
     {
       viewId = { "militia" }
       attr = {
@@ -4989,7 +4989,7 @@
       }
       permanentEffects = {
         MELEE_RESISTANCE 1
-        PEACEFULNESS 1
+        SLOWED 1
         SWIMMING_SKILL 1
       }
       cantEquip = true
