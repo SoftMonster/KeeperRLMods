@@ -941,7 +941,7 @@
       shopItems = "dwarfShop"
       outsideFeatures = "dungeonOutside"
       surroundWithResources = 5
-      furniture = "roomFurniture"
+      furniture = "dwarvenRoomFurniture"
     }
     config = {
       immigrantInterval = 500
@@ -1912,7 +1912,7 @@
       buildingId = DUNGEON
       stockpiles = {{ "minerals" 60}}
       outsideFeatures = "dungeonOutside"
-      furniture = "roomFurniture"
+      furniture = "dwarvenRoomFurniture"
       surroundWithResources = 6     
     }
     behaviour = {

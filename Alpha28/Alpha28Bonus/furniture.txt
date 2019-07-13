@@ -996,7 +996,7 @@
   }
   "FLOOR_REGENER"
   {
-    name = "floor of regeneration"
+    name = "dwarven regenerator"
     viewId = { "floor_regen" }
     luxury = 0.7
     layer = FLOOR
