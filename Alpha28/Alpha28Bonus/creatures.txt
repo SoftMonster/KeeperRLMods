@@ -53,7 +53,7 @@
     }
   "KEEPER_MAGE_EASY" inherit "KEEPER_MAGE"
     {
-      viewId = { "keeper1" Rgb 58 106 255 106 }
+      viewId = { "keeper1" Rgb 58 255 106 106 }
       viewIdUpgrades = { { "keeper2" Rgb 58 255 106 106 } { "keeper3" Rgb 58 255 106 106 } { "keeper4" Rgb 58 255 106 106 } }
       attr = {
         DAMAGE 15
