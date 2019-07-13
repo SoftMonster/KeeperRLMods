@@ -940,7 +940,7 @@
       locationNameGen = TOWN
       race = "dwarves"
       buildingId = DUNGEON
-      stockpiles = {{ "gold" 200 "FLOOR_SPIKES"} {"minerals" 120 }}
+      stockpiles = {{ "gold" 200 "FLOOR_SPIKES_TRAP"} {"minerals" 120 }}
       shopItems = "dwarfShop"
       outsideFeatures = "dungeonOutside"
       surroundWithResources = 5

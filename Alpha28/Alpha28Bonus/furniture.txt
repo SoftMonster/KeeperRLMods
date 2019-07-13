@@ -970,14 +970,6 @@
   {
     viewId = { "carpet_floor4" }
   }
-  "FLOOR_SPIKES"
-  {
-    #Not the same as the trap, just unhidden spikes, to make you think twice.
-    name = "deterrant spikes"
-    viewId = { "floor_spikes_trap" }
-    layer = FLOOR
-    lastingEffect = BLEEDING
-  }  
   "ELVEN_RUG"
   {
     name = "elven rug of concealment"
