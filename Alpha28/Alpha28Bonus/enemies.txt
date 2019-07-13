@@ -674,7 +674,7 @@
       }
       locationNameGen = TOWN
       race = "humans"
-      stockpiles = {{ "gold" 140 "TREASURE_CHEST" }}
+      stockpiles = {{ "gold" 140 "FLOOR_SPIKES_TRAP" } }
       buildingId = BRICK
       shopItems = "villageShop"
       furniture = "castleFurniture"
@@ -937,7 +937,7 @@
       locationNameGen = TOWN
       race = "dwarves"
       buildingId = DUNGEON
-      stockpiles = {{ "gold" 200 "TREASURE_CHEST"} {"minerals" 120 }}
+      stockpiles = {{ "gold" 200 "FLOOR_SPIKES"} {"minerals" 120 }}
       shopItems = "dwarfShop"
       outsideFeatures = "dungeonOutside"
       surroundWithResources = 5
@@ -997,7 +997,7 @@
       stockpiles = {{ "gold" 100 "TREASURE_CHEST"}}
       buildingId = WOOD
       lootItem = {TechBook "master sorcery"}
-      furniture = "roomFurniture"
+      furniture = "elvenRoomFurniture"
     }
     config = {
       immigrantInterval = 500
@@ -1808,7 +1808,7 @@
       }
       race = "elves"
       buildingId = WOOD
-      furniture = "roomFurniture"
+      furniture = "elvenRoomFurniture"
     }
   }
   "LIZARDMEN_COTTAGE"

@@ -84,7 +84,7 @@
     }
     initialTech = { "archery" }
     buildingGroups = {
-        "structure" "doors" "floors" "storage" "quarters" "library" "throne" "beds" "beast_cage"
+        "structure" "doors" "white knight floors" "storage" "quarters" "library" "throne" "beds" "beast_cage"
         "pigsty" "training" "crafting" "prison" "orders" "installations"
     }
     workshopGroups = { "basic" "white knights workshop" }

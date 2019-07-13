@@ -12,8 +12,19 @@
     {
       "BED1" 20
       "GROUND_TORCH" 10
-      "FLOOR_REGENER" 5
+      "DWARVEN_REGENERATOR" 5
       "CHEST" 20
+    }
+  }
+  "elvenRoomFurniture"
+  {
+    {
+      "BED1" 20
+      "GROUND_TORCH" 10
+      "CHEST" 20
+    }
+    {
+      "ELVEN_RUG"
     }
   }
   "castleFurniture"
