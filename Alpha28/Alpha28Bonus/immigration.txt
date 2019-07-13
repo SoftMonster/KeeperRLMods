@@ -678,9 +678,10 @@
         {
           ids = { "MILITIA_PLAYER" }
           traits = { FIGHTER NO_LIMIT }
-          frequency = 0.9
+          frequency = 0.2
+          groupSize = {5 6}
           requirements = {
-            { 1.0 CostInfo GOLD 40 } 
+            { 1.0 CostInfo GOLD 6 } 
           }
           specialTraits = {
              { 0.05 { ExtraTraining MELEE 2}}
@@ -764,8 +765,10 @@
           }
         }
         {
-          ids = { "UNICORN" }
+		  #Small herd
+          ids = { "UNICORN" "UNICORN" "UNICORN" "UNICORN" "UNICORN" "UNICORN" "UNICORN" "UNICORN" "UNICORN" "UNICORN" "UNICORN" "UNICORN" }
           traits = { FIGHTER }
+		  consumeIds = true
           requirements = {
             { 0.0 TechId "unicorn taming" }
           }
@@ -780,7 +783,7 @@
 		  consumeIds = true
           initialRecruitment = 1
           requirements = {
-            { 0.0 TechId "jewellery" }
+            { 0.0 TechId "advanced sorcery" }
           }
         }
         {
@@ -790,7 +793,7 @@
 		  consumeIds = true
           initialRecruitment = 1
           requirements = {
-            { 0.0 TechId "pig breeding" }
+            { 0.0 AttractionInfo 1 { FurnitureType "PIGSTY" } } 
           }
         }
         {
