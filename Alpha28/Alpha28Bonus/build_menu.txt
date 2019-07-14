@@ -71,10 +71,10 @@
     { Furniture {{ "FLOOR_STONE2" }               STONE 2 }      "Stone"             "Floors" }
     { Furniture {{ "FLOOR_CARPET1" }              GOLD 2 }       "Carpet"            "Floors" }
     { Furniture {{ "FLOOR_CARPET2" }              GOLD 2 }       "Carpet"            "Floors" }
-    { Furniture { types = { "ELVEN_RUG" } cost = GOLD 500 limit = 1 }                "Elven rug of concealment" "Floors"
-	              "Standing on the rug will make you invisible. You only have one of these items and it costs 500 gold."}
-    { Furniture { types = { "DWARVEN_REGENERATOR" } cost = GOLD 500 limit = 2}     "Dwarven regenerator" "Floors"
-	              "Standing on the regenerator will heal you. You only have two of these items and they cost 500 gold each."}	
+    { Furniture { types = { "ELVEN_RUG" } cost = GOLD 50 limit = 1 }                "Elven rug of concealment" "Floors"
+	              "Standing on the rug will make you invisible. You only have one of these items and it costs 50 gold."}
+    { Furniture { types = { "DWARVEN_REGENERATOR" } cost = GOLD 50 limit = 2}     "Dwarven regenerator" "Floors"
+	              "Standing on the regenerator will heal you. You only have two of these items and they cost 50 gold each."}	
     { DestroyLayers {FLOOR}                                      "Remove floor"      "Floors" }
   }
 
