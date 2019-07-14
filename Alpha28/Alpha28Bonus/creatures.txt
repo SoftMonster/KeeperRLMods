@@ -925,11 +925,13 @@
       viewId = { "gnome" }
       attr = {
         DAMAGE 10
-        DEFENSE 10 
+        DEFENSE 10
+        SPELL_DAMAGE 5
       }
       body = {
         type = Humanoid MEDIUM
       }
+      spellSchools = { "ancient magic" }
       chatReactionFriendly = "talks about crafting"
       chatReactionHostile = "\"Die!\""
       skills = {
