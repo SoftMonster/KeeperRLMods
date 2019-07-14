@@ -5054,9 +5054,9 @@
     }
     "WARRIOR_HERO"
     {
-      viewId = { "warrior" }
+      viewId = { "paladin" }
       name = {
-        name = "Legendary Warrior"
+        name = "Legendary Paladin"
         firstNameGen = FIRST_MALE
         fullTitle = true
     }
@@ -5067,7 +5067,13 @@
       DAMAGE 25
       DEFENSE 25
     }
+	
     spellSchools = { "fighter" }
+	spells = {
+      "healing"
+	  "damage bonus"
+    }
+
     skills = {
       WORKSHOP 0.5
       FORGE 0.5
@@ -5075,7 +5081,6 @@
     maxLevelIncrease = {
       MELEE 13
     }
-    spells = { "damage bonus" }
     permanentEffects = {
       MELEE_RESISTANCE 1
     }
@@ -5089,7 +5094,7 @@
     {
       viewId = { "bandit" }
       name = {
-        name = "archer assassin"
+        name = "Archer Assassin"
         firstNameGen = FIRST_FEMALE
         fullTitle = true
       }
@@ -5120,14 +5125,13 @@
       }
     chatReactionFriendly = "chats about when she robbed a shop"
     chatReactionHostile  = "\"A knife awaits your back my friend!\""
-    courage = 0
     hatedByEffect = HATE_HUMANS
   }
   "CLERIC_HERO"
     {
-      viewId = { "shaman" }
+      viewId = { "high_priest" }
       name = {
-        name = "Legendary Cleric"
+        name = "Legendary High Priest"
         firstNameGen = FIRST_MALE
         fullTitle = true
     }
@@ -5159,7 +5163,7 @@
   }
   "WIZARD_HERO"
     {
-      viewId = { "keeper_f1" }
+      viewId = { "keeper_f1" Rgb 120 0 255 255 }
       name = {
         name = "Legendary Wizard"
         firstNameGen = FIRST_FEMALE
@@ -5493,5 +5497,31 @@
 		SUNLIGHT_VULNERABLE 1
 		REGENERATION 1
       }
-    }	
+    }
+  "LION_QUEEN"
+    {
+      viewId = { "lion_queen" }
+      attr = {
+        DAMAGE 23
+        DEFENSE 25   
+      }
+      body = {
+        type = Humanoid MEDIUM
+        intrinsicAttacks = {
+          ARM { Intrinsic { "claws_attack" } "claws" 10 { attackType = HIT attackMsg = CLAW } }
+        }
+      }
+      gender = FEMALE
+      permanentEffects = {
+        AMBUSH_SKILL 1
+		SPEED 1
+      }
+      maxLevelIncrease = {
+        MELEE 8
+      }
+      name = {
+        name = "lion queen"
+        pluralName = "lion queens"
+      }
+    }
 }

@@ -553,8 +553,10 @@
   { "hell_steel_sword" "-" ColorId RED }
   { "hell_steel_warhammer" "|" ColorId RED }
   { "hell_steel_war_axe" "|" ColorId RED }
+  { "high_priest" "p" ColorId WHITE }
   { "hobgoblin" "o" ColorId RED }
   { "light_fairy" "h" ColorId WHITE }
+  { "lion_queen" "p" ColorId ORANGE }
   { "male_lion" "f" ColorId ORANGE }
   { "magic_fairy" "h" ColorId PURPLE }
   { "mushroom_man" "#" ColorId WHITE }
@@ -563,6 +565,7 @@
   { "orc_brute_lady" "0" ColorId BLUE }
   { "orc_female" "o" ColorId GREEN }
   { "orc_lady" "o" ColorId GREEN }
+  { "paladin" "p" ColorId YELLOW }
   { "possessed_book" "#" ColorId RED }
   { "rain_fairy" "h" ColorId BLUE }
   { "rat_bowman" "h" ColorId PURPLE }

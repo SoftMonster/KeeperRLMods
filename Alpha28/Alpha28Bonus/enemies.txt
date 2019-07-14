@@ -1124,6 +1124,7 @@
     settlement = {
       type = CAVE
       inhabitants = {
+        leader = { { "LION_QUEEN" } }
         fighters = {
           count = {4 9}
           all = { 1 "LION" 1 "LIONESS" }

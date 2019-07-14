@@ -189,12 +189,12 @@
 {
     # CreatureId                     TribeAlignment 
     { "ADOXIE_HEAD" }                  EVIL               "(Easy)      Wipe the floor with mortals as Adoxie the Dark One."
-    { "ADVENTURER" "ADVENTURER_F" }    LAWFUL             "(Challenge) Train a mixture of skills in magic, combat and archery!"
+    { "NECROMANCER" }                  EVIL               "(Challenge) Oppose the world and rid it of all life."
     { "DWARF_BARON" }                  LAWFUL             "(Challenge) March solo against the foes of the dwarves."
     { "CYCLOPS" }                      EVIL               "(Challenge) Slaughter the world as a lone cyclops."
     { "MINOTAUR" }                     EVIL               "(Challenge) Crush your enemies as a single minotaur warrior."
+    { "ADVENTURER" "ADVENTURER_F" }    LAWFUL             "(Challenge) Train a mixture of skills in magic, combat and archery!"
     { "WARRIOR_HERO" }                 LAWFUL             "(Challenge) Play as a warrior hero."
-    { "NECROMANCER" }                       EVIL             "(Challenge) Oppose the world and rid it of all life."
 	{ "THIEF_HERO" "THIEF_HERO" }      LAWFUL             "(Challenge) Play as an archer assassin. Travel light, rely on stealth and arrows."
 	{ "CLERIC_HERO" "CLERIC_HERO" }    LAWFUL             "(Challenge) Be a cleric hero."
 	{ "WIZARD_ADVENTURER" }            LAWFUL             "(Challenge) Wizard hero class. Train magic powers."
