@@ -36,6 +36,24 @@
     "curse" 11
     "invisibility" 12
   }
+  "gnomeish" SPELL
+  {
+    "healing" 1
+    "summon flies" 2
+    "advanced healing" 3
+    "magic missile" 4
+    "escape" 5
+    "haste" 5
+    "cure poison" 6
+    "fireball" 7
+    "advanced magic missile" 8
+    "summon contraption" 9
+    "expert magic missile" 10
+    "mana curse" 11
+    "slow" 11
+    "invisibility" 12
+    "directed blast" 12
+  }
   "mage" SPELL
   {
     "directed blast" 1
