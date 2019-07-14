@@ -1360,7 +1360,7 @@
         name = "stone golem"
       }
     }
-  "IRON_GOLEM"
+    "IRON_GOLEM"
     {
       viewId = { "iron_golem" }
       attr = {
@@ -1374,12 +1374,104 @@
       permanentEffects = {
         MELEE_RESISTANCE 1
         SLOWED 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
       }
       name = {
         name = "iron golem"
       }
     }
-  "LAVA_GOLEM"
+    #Note: It is magic not sci-fi.
+    "GIANT_ROBOT"
+    {
+      viewId = { "giant_robot" }
+      attr = {
+        DAMAGE 45
+        DEFENSE 45
+      }
+      body = {
+      type = HumanoidLike HUGE
+      material = IRON
+      intrinsicAttacks = {
+        ARM { Intrinsic { "fist_attack" } "fists" 10 {
+          attackType = HIT
+          attackMsg = SWING }}
+      }}
+      chatReactionFriendly = "\"Zip Zip!\""
+      chatReactionHostile = "\"Prepare to be crushed.\""
+      cantEquip = true
+      permanentEffects = {
+        MELEE_RESISTANCE 1
+        RANGED_RESISTANCE 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
+        SLOWED 1
+      }
+      name = {
+        name = "giant contraption"
+      }
+    }
+    "POSSESSED_SWORD"
+    {
+      viewId = { "sword" }
+      attr = {
+        DAMAGE 30
+        DEFENSE 30 
+      }
+      body = {
+        type = NonHumanoid HUGE
+        bodyParts = {
+          BACK 2
+		  ARM 1
+		  TORSO 1
+		}				
+        material = IRON
+        weight = 10
+        intrinsicAttacks = {
+          ARM { Intrinsic { "sword" } "blade" 10 { attackType = HIT attackMsg = THRUST } }
+        }        
+      }
+      permanentEffects = {
+        FLYING 1
+      }
+      name = {
+        name = "possessed sword"
+      }
+      deathDescription = "vanquished"
+      courage = 1
+      cantEquip = true
+    }
+    "GHOST_ARMOUR"
+    {
+      viewId = { "chain_armor" }
+      attr = {
+        DAMAGE 20
+        DEFENSE 40 
+      }
+      body = {
+        type = NonHumanoid HUGE
+        bodyParts = {
+          BACK 2
+		  ARM 1
+		  TORSO 1
+		}				
+        material = IRON
+        weight = 10
+        intrinsicAttacks = {
+          ARM { Intrinsic { "chain_armor" } "metal" 10 { attackType = HIT attackMsg = SWING } }
+        }        
+      }
+      permanentEffects = {
+        FLYING 1
+      }
+      name = {
+        name = "ghost armour"
+      }
+      deathDescription = "vanquished"
+      courage = 1
+      cantEquip = true
+    }
+    "LAVA_GOLEM"
     {
       viewId = { "lava_golem" }
       attr = {
@@ -1400,6 +1492,8 @@
         MELEE_RESISTANCE 1
         SLOWED 1
         FIRE_RESISTANT 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
       }
       name = {
         name = "lava golem"
@@ -1422,6 +1516,8 @@
         NAVIGATION_DIGGING_SKILL 1
         MAGIC_VULNERABILITY 1
         FIRE_RESISTANT 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
       }
       name = {
         name = "adamantine golem"

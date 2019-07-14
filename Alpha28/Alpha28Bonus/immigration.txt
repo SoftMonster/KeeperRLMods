@@ -150,6 +150,23 @@
              { 1.0 { LastingEffect NO_CARRY_LIMIT }}
           }
         }
+        {
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
+		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+        }
+        {
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
+        }
 		{
           ids = { "CYCLOPS" }
           traits = { FIGHTER }
@@ -223,6 +240,23 @@
              { 0.03 { LastingEffect BAD_BREATH }}
              { 0.01 { LastingEffect ENTERTAINER }}
           }
+        }
+        {
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
+		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+        }
+        {
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
         }
         {
           ids = { "ORC" "ORC_FEMALE" }
@@ -659,6 +693,23 @@
           }
         }
         {
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
+		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+        }
+        {
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
+        }
+        {
           ids = { "KNIGHT_PLAYER" }
           traits = { FIGHTER }
           frequency = 0.7
@@ -908,6 +959,9 @@
         { ids = { "STONE_GOLEM" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo STONE 150} { 0.0 TechId "master earth magic"   }}}
         { ids = { "EARTH_ELEMENTAL" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo STONE 200} { 0.0 TechId "elite earth magic"    }}}
         { ids = { "IRON_GOLEM" }      traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 120}  { 0.0 TechId "basic metalic magic"  }}}
+        { ids = { "POSSESSED_SWORD" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"}}}
+        { ids = { "GHOST_ARMOUR" }    traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"}}}
+        { ids = { "GIANT_ROBOT" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"   }}}
         { ids = { "ADA_GOLEM" }       traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo ADA 120}   { 0.0 TechId "master metalic magic" }}}
         { ids = { "AUTOMATON" }       traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 200}  { 0.0 TechId "elite metalic magic"  }}}
         { ids = { "FIRE_SPHERE" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo GOLD 5}    { 0.0 TechId "basic fire magic"     }}}
@@ -930,6 +984,23 @@
           requirements = {
             { 1 ExponentialCost GOLD 30 5 4 }
           }
+        }  
+        {
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
+		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+        }
+        {
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
         }
         {
           ids = { "GNOME_PLAYER" }
@@ -974,6 +1045,23 @@
           requirements = {
             { 1 ExponentialCost GOLD 30 5 4 }
           }
+        }
+        {
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
+		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+        }
+        {
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
         }
         {
           ids = { "DWARF_MILITIA" }
@@ -1051,6 +1139,23 @@
           specialTraits = {
              {1.0 { SkillId DIGGING }}
           }
+        }
+        {
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
+		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+        }
+        {
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
         }
 		{
 		  ids = { "NECROMANCER" }
@@ -1462,6 +1567,29 @@
           }
         }
         {
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
+		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+        {
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+        {
           ids = { "ORC_MAGE" }
           traits = { FIGHTER }
           frequency = 0.6
@@ -1566,10 +1694,9 @@
              { 0.05 { LastingEffect BAD_BREATH }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
-        }
- 
- {
-ids = { "NECROMANCER" }
+        } 
+        {
+          ids = { "NECROMANCER" }
           traits = { FIGHTER }
           frequency = 0.1
           spawnLocation = FurnitureType "GRAVE"
@@ -1884,6 +2011,29 @@ ids = { "NECROMANCER" }
              { 0.03 { SkillId FORGE LastingEffect INSANITY }}
              { 0.03 { LastingEffect BAD_BREATH }}
              { 0.01 { LastingEffect ENTERTAINER }}
+    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
+        {
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
+		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
+        {
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
+          specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
@@ -2359,7 +2509,7 @@ ids = { "NECROMANCER" }
         { ids = { "SPECIAL_BLBN" "SPECIAL_BLBW" "SPECIAL_BLGN" "SPECIAL_BLGW" "SPECIAL_BMBN" "SPECIAL_BMBW" "SPECIAL_BMGN" "SPECIAL_BMGW" "SPECIAL_HLBN" "SPECIAL_HLBW" "SPECIAL_HLGN" "SPECIAL_HLGW" "SPECIAL_HMBN" "SPECIAL_HMBW" "SPECIAL_HMGN" "SPECIAL_HMGW"  } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
         { ids = { "HYDRA" "MINOTAUR" "UNICORN" "CYCLOPS" "DEMON_DWELLER" "DEMON_LORD" "WITCH" "ADOXIE_HEAD" "ABOMINATION" "ARACHNE" "COW_DEMON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
         { ids = { "ZOMBIE" "SKELETON" "NECROMANCER" "SKELETON_MAGE" "SKELETON_WARRIOR" "MUMMY" "VAMPIRE" "VAMPIRE_LORD" "SUCCUBUS" "DOPPLEGANGER" "LOST_SOUL" "SPIRIT" "GOBLIN" "ORC" "ORC_MAGE" "OGRE" "HARPY"}  traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
-        { ids = { "FIRE_ELEMENTAL" "WATER_ELEMENTAL" "ENT" "AIR_ELEMENTAL" "FIRE_SPHERE" "EARTH_ELEMENTAL" "IRON_GOLEM" "LAVA_GOLEM" "ADA_GOLEM" "AUTOMATON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
+        { ids = { "FIRE_ELEMENTAL" "WATER_ELEMENTAL" "ENT" "AIR_ELEMENTAL" "FIRE_SPHERE" "EARTH_ELEMENTAL" "IRON_GOLEM" "LAVA_GOLEM" "ADA_GOLEM" "GIANT_ROBOT" "AUTOMATON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
         { ids = { "ELF" "ELF_ARCHER" "ELF_CHILD" "ELF_LORD" "DARK_ELF" "DARK_ELF_WARRIOR" "DARK_ELF_CHILD" "DARK_ELF_LORD" "DRIAD" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
         { ids = { "HORSE" "COW" "PIG" "GOAT" "DONKEY" "JACKAL" "DEER" "BOAR" "FOX" "SNAKE" "SPIDER" "FLY" "RAT" "RAVEN" "BAT" "WOLF" "CAVE_BEAR" "WEREWOLF" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
     }	

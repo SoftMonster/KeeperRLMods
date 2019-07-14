@@ -5,8 +5,9 @@
     tribeAlignment = EVIL
     immigrantGroups = {"imps_easy_mode" "dark_keeper_easy_mode"}
     technology = {
-        "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
-        "pig breeding" "iron working" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
+         "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
+        "pig breeding" "iron working" "simplistic animations"
+		"magic contraptions" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
         "advanced sorcery" "magical weapons" "master sorcery" "demonology" "dragon taming" "demonic alliance"
 		"magic paper production" "advanced inscription" "master inscription"
     }
@@ -24,7 +25,8 @@
     immigrantGroups = {"imps" "dark_keeper"}
     technology = {
         "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
-        "pig breeding" "iron working" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
+        "pig breeding" "iron working" "simplistic animations"
+		"magic contraptions" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
         "advanced sorcery" "magical weapons" "master sorcery" "demonology" "dragon taming" "demonic alliance"
 		"magic paper production" "advanced inscription" "master inscription"
     }
@@ -42,7 +44,8 @@
     immigrantGroups = {"imps_hard_mode" "dark_keeper_hard_mode"}
     technology = {
         "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
-        "pig breeding" "iron working" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
+        "pig breeding" "iron working" "simplistic animations" "magic contraptions" "jewellery"
+		"two-handed weapons" "traps" "archery" "sorcery"
         "advanced sorcery" "magical weapons" "master sorcery" "demonology" "dragon taming" "demonic alliance" "absorbtion"
         "magic paper production" "advanced inscription" "master inscription"
     }
@@ -60,7 +63,8 @@
     immigrantGroups = {"peseant_prisoners" "dark_keeper"}
     technology = {
         "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
-        "pig breeding" "iron working" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
+        "pig breeding" "iron working" "simplistic animations"
+		"magic contraptions" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
         "advanced sorcery" "magical weapons" "master sorcery" "demonology"
 		"magic paper production" "advanced inscription" "master inscription"
     }
@@ -77,8 +81,8 @@
     tribeAlignment = LAWFUL
     immigrantGroups = {"peseants" "white_keeper"}
     technology = {
-        "alchemy" "advanced alchemy" "alchemical conversion"
-        "pig breeding" "iron working" "jewellery" "two-handed weapons" "archery" "sorcery"
+        "alchemy" "advanced alchemy" "alchemical conversion" "pig breeding" "iron working"
+		"simplistic animations" "magic contraptions" "jewellery" "two-handed weapons" "archery" "sorcery"
         "advanced sorcery" "magical weapons" "master sorcery" "legendary heroes" "royal jewellery" "unicorn taming"
         "magic paper production" "advanced inscription" "master inscription"
     }
@@ -96,7 +100,8 @@
     immigrantGroups = {"gnomish"}
     technology = {
         "alchemy" "advanced alchemy" "alchemical conversion" "traps"
-        "pig breeding" "iron working" "jewellery" "gnomish jewellery" "gnomish smithy" "gnomish alchemy"
+        "pig breeding" "iron working" "simplistic animations"
+		"magic contraptions" "jewellery" "gnomish jewellery" "gnomish smithy" "gnomish alchemy"
 		"sorcery" "advanced sorcery" "master sorcery"
         "magic paper production" "advanced inscription" "master inscription"
     }
@@ -113,14 +118,15 @@
     tribeAlignment = LAWFUL
     immigrantGroups = {"elementals"}
     technology = {
-        "alchemy" "advanced alchemy" "elite alchemy" "alchemical conversion"
+        "alchemy" "iron working" "advanced alchemy" "elite alchemy" "alchemical conversion"
 		"sorcery" "advanced sorcery" "master sorcery"
 		"basic earth magic" "master earth magic" "elite earth magic"
 		"basic forest magic" "master forest magic" "elite forest magic"
 		"basic fire magic" "master fire magic" "elite fire magic"
-		"basic metalic magic" "master metalic magic" "elite metalic magic"
+		"basic metalic magic" "simplistic animations"
+		"magic contraptions" "master metalic magic" "elite metalic magic"
     }
-    initialTech = { "alchemy" "advanced alchemy" "sorcery" "advanced sorcery" "master sorcery"}
+    initialTech = { "iron working" "alchemy" "advanced alchemy" "sorcery" "advanced sorcery" "master sorcery"}
     buildingGroups = {
         "structure" "doors" "floors" "storage" "elemental" "throne" "orders" "installations"
 		"magical_installations"
@@ -133,7 +139,8 @@
     tribeAlignment = EVIL
     immigrantGroups = {"necromancer"}
     technology = {
-        "regrow limbs" "pig breeding" "iron working" "two-handed weapons" "sorcery"
+        "regrow limbs" "pig breeding" "iron working" "simplistic animations"
+		"magic contraptions" "two-handed weapons" "sorcery"
         "advanced sorcery" "magical weapons" "master sorcery" "archery"
 		"zombie hoards"  "mummy hoards" "skeleton hoards"  "vampire hoards"
 		"lord of war" "lord of magic" "lord of speed" "lord of resistance" }
@@ -150,8 +157,8 @@
     tribeAlignment = LAWFUL
     immigrantGroups = {"dwarven"}
     technology = {
-        "alchemy" "advanced alchemy" "alchemical conversion"
-        "pig breeding" "iron working" "jewellery" "two-handed weapons" "traps" "archery"
+        "alchemy" "advanced alchemy" "alchemical conversion" "pig breeding" "iron working" "simplistic animations"
+        "magic contraptions" "jewellery" "two-handed weapons" "traps" "archery"
 		"redemption" "basic nobility" "advanced nobility" "elite nobility"  "master jewellery"
 		"dwarven alchemy" "marriage of convenience"
     }
@@ -168,14 +175,16 @@
     tribeAlignment = EVIL
     immigrantGroups = {"sandbox"}
     technology = {
-        "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
-        "pig breeding" "iron working" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
-        "advanced sorcery" "magical weapons" "master sorcery" "demonology" "dragon taming" "demonic alliance"
+        "alchemy" "simplistic animations" "magic contraptions" "advanced alchemy" "alchemical conversion"
+		"humanoid mutation" "beast mutation" "pig breeding" "iron working" "jewellery" "two-handed weapons"
+		"traps" "archery" "sorcery" "advanced sorcery" "magical weapons" "master sorcery" "demonology" "dragon taming"
+		"demonic alliance"
     }
     initialTech = {
-        "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
-        "pig breeding" "iron working" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
-        "advanced sorcery" "magical weapons" "master sorcery" "demonology" "dragon taming" "demonic alliance"
+        "alchemy" "simplistic animations" "magic contraptions" "advanced alchemy" "alchemical conversion"
+		"humanoid mutation" "beast mutation" "pig breeding" "iron working" "jewellery" "two-handed weapons"
+		"traps" "archery" "sorcery" "advanced sorcery" "magical weapons" "master sorcery" "demonology"
+		"dragon taming" "demonic alliance"
 	}
     buildingGroups = {
         "sandbox"
@@ -189,12 +198,12 @@
 {
     # CreatureId                     TribeAlignment 
     { "ADOXIE_HEAD" }                  EVIL               "(Easy)      Wipe the floor with mortals as Adoxie the Dark One."
-    { "NECROMANCER" }                  EVIL               "(Challenge) Oppose the world and rid it of all life."
+    { "ADVENTURER" "ADVENTURER_F" }    LAWFUL             "(Challenge) Train a mixture of skills in magic, combat and archery!"
     { "DWARF_BARON" }                  LAWFUL             "(Challenge) March solo against the foes of the dwarves."
     { "CYCLOPS" }                      EVIL               "(Challenge) Slaughter the world as a lone cyclops."
     { "MINOTAUR" }                     EVIL               "(Challenge) Crush your enemies as a single minotaur warrior."
-    { "ADVENTURER" "ADVENTURER_F" }    LAWFUL             "(Challenge) Train a mixture of skills in magic, combat and archery!"
     { "WARRIOR_HERO" }                 LAWFUL             "(Challenge) Play as a warrior hero."
+    { "NECROMANCER" }                       EVIL             "(Challenge) Oppose the world and rid it of all life."
 	{ "THIEF_HERO" "THIEF_HERO" }      LAWFUL             "(Challenge) Play as an archer assassin. Travel light, rely on stealth and arrows."
 	{ "CLERIC_HERO" "CLERIC_HERO" }    LAWFUL             "(Challenge) Be a cleric hero."
 	{ "WIZARD_ADVENTURER" }            LAWFUL             "(Challenge) Wizard hero class. Train magic powers."

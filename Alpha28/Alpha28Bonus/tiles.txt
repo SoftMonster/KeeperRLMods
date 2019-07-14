@@ -601,6 +601,7 @@
   { "lich_keeper3" "M" ColorId PURPLE }
   { "skeleton_warrior" "S" ColorId PURPLE }
   { "militia" "m" ColorId PURPLE }
+  { "giant_robot" "T" ColorId PURPLE }
 
 #Future use (Acre July 2019)
   { "adamantite_knife" ")" ColorId PURPLE }
@@ -624,5 +625,4 @@
   { "undead_tome" "+" ColorId LIGHT_GRAY }
   { "wooden_shield2" "]" ColorId BROWN }
   { "wooden_boomerang" ")" ColorId BROWN }
-  
 }
