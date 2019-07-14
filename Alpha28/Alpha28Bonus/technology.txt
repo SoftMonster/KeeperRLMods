@@ -25,7 +25,7 @@
   "minotaur mutation"        { "Give birth to a minotaur."                                    {"beast mutation"}}
   "cyclops mutation"         { "Give birth to a cyclops."                                     {"humanoid mutation"}}
   "combat succubus"          { "Enable the newly recruited sucubbi to do combat."             {"demonology"}}
-  "magic paper production"   { "Create magic paper from wood, unlocking basic scrolls"        {"sorcery"}}
+  "magic paper production"   { "Create magic paper from wood, unlocking basic scrolls"        {"sorcery" "alchemy"}}
   "advanced inscription"     { "Inscribe magic paper with advanced spells"                    {"advanced sorcery" "magic paper production"}}
   "master inscription"       { "Inscribe scrolls with master spells"                          {"master sorcery" "advanced inscription"}}
 #Hard mode
