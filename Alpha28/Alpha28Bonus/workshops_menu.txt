@@ -305,6 +305,8 @@
 "dwarven"
 # Workshop
 {
+    {{WoodenShield}						      2        WOOD 10}     
+    {{Torch}							      2        WOOD 4}
     {{TrapItem "BOULDER_TRAP" "boulder"}      20       STONE 120    "traps"}
     {{TrapItem "POISON_GAS_TRAP" "poison"}    10       WOOD 20      "traps"}
     {{TrapItem "ALARM_TRAP" "alarm"}          8        WOOD 20      "traps"}
@@ -352,8 +354,10 @@
     {{Potion Lasting MELEE_VULNERABILITY}  6        GOLD 40      "advanced alchemy"}
     {{Potion Lasting MAGIC_VULNERABILITY}  6        GOLD 40      "advanced alchemy"}
     {{Potion Lasting INVISIBLE}            6        GOLD 20      "advanced alchemy"}
-    {{Potion Permanent SPEED}            100        GOLD 3000    "dwarven alchemy"}
-    {{Potion Permanent DEF_BONUS}        100        GOLD 1000    "dwarven alchemy"}
+    {{Potion Permanent SPEED}            100        GOLD 800     "dwarven alchemy"}
+	{{Potion Permanent MELEE_RESISTANCE} 100        GOLD 800     "dwarven alchemy"}
+    {{Potion Permanent DEF_BONUS}        100        GOLD 300     "dwarven alchemy"}
+	{{Potion IncreaseAttr DAMAGE 1}      100        GOLD 1200    "dwarven alchemy"}
     {{GoldPiece}                           5        IRON 30      "alchemical conversion"       10}
     {{WoodPlank}                           5        GOLD 10      "alchemical conversion"       10}
     {{IronOre}                             5        GOLD 10      "alchemical conversion"       10}

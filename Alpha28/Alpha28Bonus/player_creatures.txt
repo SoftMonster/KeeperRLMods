@@ -158,14 +158,13 @@
     immigrantGroups = {"dwarven"}
     technology = {
         "alchemy" "advanced alchemy" "alchemical conversion" "pig breeding" "iron working" "simplistic animations"
-        "magic contraptions" "jewellery" "two-handed weapons" "traps" "archery"
-		"redemption" "basic nobility" "advanced nobility" "elite nobility"  "master jewellery"
-		"dwarven alchemy" "marriage of convenience"
+        "magic contraptions" "jewellery" "two-handed weapons" "traps" "redemption" "basic nobility" 
+		"advanced nobility" "elite nobility"  "master jewellery" "dwarven alchemy" "marriage of convenience"
     }
     initialTech = { "iron working" "traps" }
     buildingGroups = {
         "structure" "doors" "floors" "storage" "quarters" "throne" "beds" "crafting" "pigsty" "dwarven"
-        "training" "orders" "installations" "magical_installations" "traps"
+        "dwarven training" "orders" "installations" "magical_installations" "traps"
     }
     workshopGroups = {"dwarven"}
     description = "(Challenge) Play a tribe of dwarves and maximise melee combat."

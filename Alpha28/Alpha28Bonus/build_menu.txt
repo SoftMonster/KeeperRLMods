@@ -336,6 +336,7 @@
     { Trap "FLOOR_SPIKES_TRAP" { "floor_spikes_trap" }                     "Floor Spikes trap" "Traps"
         "Causes a group of spikes to spring up from the floor under the trespasser." 0 { TechId "traps" }}
   }
+
   "dwarven"
   {
     { Furniture {{ "PRISON" }        IRON 15 }                   "Prison"            "Prison"
@@ -344,6 +345,19 @@
     { Furniture {{ "TORTURE_TABLE" } IRON 15 }                   "Torture table"     "Prison"
         "Can be used to torture prisoners. Free population slot required for torturing."  0 { TechId "redemption" }}
   }  
+
+    "dwarven training"
+  {
+    { Furniture {{ "TRAINING_WOOD" } WOOD 12 }                   "Wooden dummy"      "Training room"
+        "Train your minions' melee skills here." r {} true  TRAINING_ROOM}
+
+    { Furniture {{ "TRAINING_IRON" } IRON 12 }                   "Iron dummy"        "Training room"
+        "Train your minions' melee skills here."   0 { TechId "iron working" } }
+
+    { Furniture {{ "TRAINING_ADA" }  ADA  12 }                   "Adamantine dummy"  "Training room"
+        "Train your minions' melee skills here."   0 { TechId "iron working" }}
+  }
+
   "sandbox"
   {
     { ImmediateDig                                               "Immediate Dig"   "Structure"  
