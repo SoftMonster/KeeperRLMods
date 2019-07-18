@@ -61,6 +61,9 @@ New units:
 - Rat Soldier (Re-sprite)
 - Rat Lady
 - Rat Man (Re-sprite)
+- Giant contraption
+- Magic armor
+- Militia
 - Hell Knight
 - Hell Knight Swordmaster
 - Hell Knight Lord
@@ -100,6 +103,8 @@ New units:
 - Centaur Knight
 
 New Technologies (Dark keepers):
+- Simplistic animations - Use magic to make simple objects fight for you.
+- Magic contraptions - Use magic to invent devices that fight for you.
 - Dragon taming - Summon a pet dragon through your dungeon portal (Dark mage keepers only). 
 - Demonic alliance - Summon a demon lord through your dungeon portal (Mage keepers only). 
 - Minotaur mutation - Give birth to a minotaur (Dark knight keepers only). 
