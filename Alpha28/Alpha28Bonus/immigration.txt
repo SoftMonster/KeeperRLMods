@@ -151,21 +151,20 @@
           }
         }
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
-		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
         }
         {
-          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
         }
 		{
           ids = { "CYCLOPS" }
@@ -242,21 +241,20 @@
           }
         }
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
-		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
         }
         {
-          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
         }
         {
           ids = { "ORC" "ORC_FEMALE" }
@@ -693,21 +691,20 @@
           }
         }
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
-		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
         }
         {
-          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
         }
         {
           ids = { "KNIGHT_PLAYER" }
@@ -959,9 +956,9 @@
         { ids = { "STONE_GOLEM" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo STONE 150} { 0.0 TechId "master earth magic"   }}}
         { ids = { "EARTH_ELEMENTAL" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo STONE 200} { 0.0 TechId "elite earth magic"    }}}
         { ids = { "IRON_GOLEM" }      traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 120}  { 0.0 TechId "basic metalic magic"  }}}
-        { ids = { "POSSESSED_SWORD" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"}}}
-        { ids = { "GHOST_ARMOUR" }    traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"}}}
-        { ids = { "GIANT_ROBOT" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"   }}}
+        { ids = { "POSSESSED_SWORD" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"}}}
+        { ids = { "GHOST_ARMOUR" }    traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"}}}
+        { ids = { "GIANT_ROBOT" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"   }}}
         { ids = { "ADA_GOLEM" }       traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo ADA 120}   { 0.0 TechId "master metalic magic" }}}
         { ids = { "AUTOMATON" }       traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 200}  { 0.0 TechId "elite metalic magic"  }}}
         { ids = { "FIRE_SPHERE" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo GOLD 5}    { 0.0 TechId "basic fire magic"     }}}
@@ -986,21 +983,20 @@
           }
         }  
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
-		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
         }
         {
-          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
         }
         {
           ids = { "GNOME_PLAYER" }
@@ -1047,21 +1043,20 @@
           }
         }
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
-		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
         }
         {
-          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
         }
         {
           ids = { "DWARF_MILITIA" }
@@ -1141,21 +1136,20 @@
           }
         }
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
-		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
         }
         {
-          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
         }
 		{
 		  ids = { "NECROMANCER" }
@@ -1567,24 +1561,23 @@
           }
         }
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
-		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
         {
-          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
@@ -2015,24 +2008,23 @@
           }
         }
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD"
-		          "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
         {
-          ids = { "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" "GIANT_ROBOT" }
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 150}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
