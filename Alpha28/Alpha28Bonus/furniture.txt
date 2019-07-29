@@ -932,8 +932,12 @@
     blockVision = { NORMAL ELF }
     wall = true
     canBuildOutsideOfTerritory = true
+	strength = 200
     strength2 = {
-      100 BOULDER
+      200 BOULDER
+      200 DIG
+      200 HOSTILE_DIG
+      200 HOSTILE_DIG_NO_SKILL
     }
   }
   "FLOOR_WOOD1"
