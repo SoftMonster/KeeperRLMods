@@ -2987,7 +2987,7 @@
       maxLevelIncrease = {
         SPELL 9
       }
-      spells = { "summon element" "fireball" }
+      spells = { "healing" "summon element" "fireball" }
       gender = FEMALE
       permanentEffects = {
         FIRE_RESISTANT 1
