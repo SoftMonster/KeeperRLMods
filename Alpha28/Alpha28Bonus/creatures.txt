@@ -5623,4 +5623,412 @@
         pluralName = "lion queens"
       }
     }
+#---------------------------------------------------------
+#New Creatures for goblin Tribe - Righteous August 2019
+#---------------------------------------------------------
+
+	"GIANT_CHICKEN"
+    {
+      viewId = { "giant_chicken" }
+      attr = {
+        DAMAGE 42
+        DEFENSE 42 
+      }
+      body = {
+        type = Bird LARGE
+        weight = 80
+      }
+      permanentEffects = {
+        RANGED_RESISTANCE 1
+      }
+      name = {
+        name = "giant chicken"
+      }
+	}
+	"BATTLE_CHICKEN"
+    {
+      viewId = { "chicken" }
+      attr = {
+        DAMAGE 22
+        DEFENSE 12 
+      }
+      body = {
+        type = Bird SMALL
+        weight = 3
+      }
+      permanentEffects = {
+		SPEED 1
+      }
+      name = {
+        name = "chicken"
+      }
+	      }
+    "GOLD_GOLEM"
+    {
+      viewId = { "gold_golem" }
+      attr = {
+        DAMAGE 34
+        DEFENSE 30 
+      }
+      body = {
+        type = HumanoidLike LARGE
+        material = ADA
+      }
+      permanentEffects = {
+        MELEE_RESISTANCE 1
+        SLOWED 1
+      }
+      name = {
+        name = "gold golem"
+      }
+	}
+
+#---------------------------------------------------------
+#Goblin faction
+#---------------------------------------------------------
+
+    "GOBLIN_ARCHER"
+    {
+      viewId = { "goblin_archer" }
+      attr = {
+        DAMAGE 22
+        DEFENSE 23 
+		RANGED_DAMAGE 20 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "talks about archery"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+      }
+	        maxLevelIncrease = {
+        MELEE 3
+        ARCHERY 5
+	  }
+      name = {
+        name = "goblin archer"
+        firstNameGen = ORC
+      }
+      hatedByEffect = HATE_GREENSKINS
+	}
+    "GOBLIN_BRUTE"
+      {
+      viewId = { "goblin_brute" }
+      attr = {
+        DAMAGE 52
+        DEFENSE 33  
+      }
+      body = {
+        type = Humanoid LARGE
+		material = FLESH
+        weight = 140
+      }
+      chatReactionFriendly = "talks about clubbing things"
+      chatReactionHostile = "\"Die!\""
+	  spellSchools = { "fighter" }
+      permanentEffects = {
+	    MELEE_RESISTANCE 1
+        RANGED_RESISTANCE 1
+		MAGIC_VULNERABILITY 1
+        REGENERATION 1
+      }
+	        maxLevelIncrease = {
+        MELEE 3
+	  }
+      name = {
+        name = "goblin brute"
+        firstNameGen = ORC
+      }
+      hatedByEffect = HATE_GREENSKINS
+    }
+    "GOBLIN_CHICKENMANCER"
+    {
+      viewId = { "goblin_chickenmancer" }
+      attr = {
+        DAMAGE 28
+        DEFENSE 28 
+		SPELL_DAMAGE 28
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+	        spellSchools = { "chickenmancer" }
+      spells = {
+		 "summon chickens" 
+		 "advanced healing" 
+		 "summon giant chickens" 
+		 "escape" 
+		 "advanced magic missile"
+	  }
+      chatReactionFriendly = "talks about chickens"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+      }
+	        maxLevelIncrease = {
+        MELEE 3
+        SPELL 5
+	  }
+      name = {
+        name = "goblin chickenmancer"
+        firstNameGen = ORC
+      }
+      hatedByEffect = HATE_GREENSKINS
+	}
+	"GOBLIN_HIGH_PRIEST"
+    {
+      viewId = { "goblin_high_priest" }
+      attr = {
+        DAMAGE 22
+        DEFENSE 38 
+		SPELL_DAMAGE 44 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+	  spellSchools = { "goblin high priest" }
+      spells = {
+		 "expert healing"
+		 "summon goblin priests"
+		 "invisibility"
+		 "expert magic missile"
+		 "escape"
+		 "summon spirit"
+		 "regrow body parts"
+	  }
+      chatReactionFriendly = "talks about establishing a goblin theocracy"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+		MAGIC_RESISTANCE 1
+      }
+	        maxLevelIncrease = {
+        MELEE 2
+        SPELL 7
+	  }
+      name = {
+        name = "goblin high priest"
+        firstNameGen = ORC
+      }
+      hatedByEffect = HATE_GREENSKINS
+	}
+    "GOBLIN_KABOOMER"
+    {
+      body = {
+        type = HumanoidLike MEDIUM
+        material = FLESH
+		deathSound = SPELL_AIR_BLAST
+        intrinsicAttacks = {
+          TORSO { Intrinsic { "touch_attack" } "self destruct" 120 {
+              attackType = HIT
+			  meleeAttackAttr = SPELL_DAMAGE
+              attackMsg = TOUCH
+              victimEffect = {Fire}
+              attackerEffect = {Suicide} } }
+        }
+      }
+      viewId = { "goblin_kaboomer" }
+      attr = {
+		DAMAGE 18
+        DEFENSE 25
+      }
+      courage = 100
+      permanentEffects = {
+        LIGHT_SOURCE 1
+		RANGED_VULNERABILITY 1
+      }
+	  cantEquip = true
+      chatReactionFriendly = "talks about the great goblin snack bar in the sky"
+      chatReactionHostile = "\"Aloha Snackbar!\""
+      name = {
+        name = "goblin kaboomer"
+        firstNameGen = ORC
+      }
+      hatedByEffect = HATE_GREENSKINS
+    }
+	"GOBLIN_KING"
+    {
+      viewId = { "goblin_king" }
+      attr = {
+        DAMAGE 52
+        DEFENSE 48 
+		SPELL_DAMAGE 46 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      spells = {
+		 "advanced healing"
+		 "summon goblin horde"
+		 "summon goblin warrior horde"
+		 "summon goblin archers"
+		 "summon goblin priests"
+		 "summon goblin kaboomers"
+		 "summon goblin wizards"
+		 "expert magic missile"
+		 "goblin damage buff"
+		 "goblin defense buff"
+		 "invisibility"
+		 "escape"
+	  }
+      chatReactionFriendly = "talks about goblin politics"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+		MAGIC_RESISTANCE 1
+		RANGED_VULNERABILITY 1
+      }
+	  maxLevelIncrease = {
+        MELEE 7
+        SPELL 7
+	  }
+      name = {
+        name = "goblin king"
+        firstNameGen = ORC
+      }
+      hatedByEffect = HATE_GREENSKINS
+	}
+	"GOBLIN_LEPRECHAUN"
+    {
+      viewId = { "goblin_leprechaun" }
+      attr = {
+        DAMAGE 22
+        DEFENSE 38 
+		SPELL_DAMAGE 28 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      spells = {
+		 "expert healing"
+		 "rapid magic missile"
+		 "escape"
+		 "summon gold golems"
+	  }
+      chatReactionFriendly = "talks about Gold"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+      }
+	        maxLevelIncrease = {
+        MELEE 2
+        SPELL 7
+	  }
+      name = {
+        name = "goblin leprechaun"
+        firstNameGen = ORC
+      }
+      hatedByEffect = HATE_GREENSKINS
+	}
+	"GOBLIN_PRIEST"
+    {
+      viewId = { "goblin_priest" }
+      attr = {
+        DAMAGE 22
+        DEFENSE 32 
+		SPELL_DAMAGE 34 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+	  spellSchools = { "goblin priest" }
+      spells = {
+		 "expert healing"
+		 "healing totem"
+		 "buff totem"
+		 "advanced magic missile"
+		 "advanced cure poison" 
+	     "cure blindness"  
+		 "group healing"
+	  }
+      chatReactionFriendly = "talks about goblin religion"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+      }
+	  maxLevelIncrease = {
+        SPELL 4
+	  }
+      name = {
+        name = "goblin priest"
+        firstNameGen = ORC
+      }
+      hatedByEffect = HATE_GREENSKINS
+	}
+    "GOBLIN_WARRIOR"
+    {
+      viewId = { "goblin_warrior" }
+      attr = {
+        DAMAGE 36
+        DEFENSE 38 
+      }
+      body = {
+        type = Humanoid LARGE
+      }
+      chatReactionFriendly = "takes about the importance of proper headgear"
+      chatReactionHostile = "\"Die!\""
+	  permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+		MELEE_RESISTANCE 1
+	  }
+      skills = {
+        FORGE 0.8
+      }
+      maxLevelIncrease = {
+        MELEE 3
+      }
+      spellSchools = { "fighter" }
+      spells = { 
+	    "shove"
+        "battle cry"
+        "block"
+      }
+      name = {
+        name = "goblin warrior"
+        firstNameGen = ORC
+      }
+      hatedByEffect = HATE_GREENSKINS
+    }
+	"GOBLIN_WIZARD"
+    {
+      viewId = { "goblin_wizard" }
+      attr = {
+        DAMAGE 22
+        DEFENSE 28 
+		SPELL_DAMAGE 42
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+	  spellSchools = { "goblin wizard" }
+      spells = {
+		 "expert magic missile" 
+		 "escape" 
+		 "healing" 
+		 "snakes" 
+		 "deception" 
+		 "teleport" 
+		 "advanced cure poison"   
+		 "entangling vines"
+	  }
+      skills = {
+        LABORATORY 0.8
+        JEWELER 0.8
+	  }
+      chatReactionFriendly = "talks about goblin magic"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+      }
+	  maxLevelIncrease = {
+        SPELL 4
+	  }
+      name = {
+        name = "goblin wizard"
+        firstNameGen = ORC
+      }
+      hatedByEffect = HATE_GREENSKINS
+	}
 }

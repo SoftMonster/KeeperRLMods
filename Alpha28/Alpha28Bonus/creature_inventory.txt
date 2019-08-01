@@ -423,4 +423,88 @@
         { LeatherBoots }
         { Potion Heal FLESH 2 3 }
       }
+#-----------------------------------------------------------
+# creature_inventory.txt - Righteous Aug 2019 - Goblin Tribe
+#-----------------------------------------------------------
+
+  {"GOBLIN_ARCHER"}
+	  {
+		{ Bow }
+		{ Knife }
+		{ LeatherArmor }
+	    { type = LeatherBoots chance = 0.3 }
+        { type = LeatherGloves chance = 0.6 }
+        { countMin = 1 countMax = 3 type = Potion Heal FLESH chance = 0.9 }
+	  }
+  {"GOBLIN_BRUTE"}
+	  {
+        { HeavyClub }
+        { GoldPiece 10 30 }
+	    { type = LeatherArmor chance = 0.8 }
+		{ countMin = 1 countMax = 3 type = Potion Heal FLESH chance = 0.3 }
+	  }
+  {"GOBLIN_CHICKENMANCER"}
+      {
+		{ type = IronStaff, alternative = Sword }
+        { LeatherBoots }
+        { type = LeatherArmor prefixChance = 0.4 }
+		{ type = LeatherGloves chance = 0.4 }
+	  }
+  {"GOBLIN_HIGH_PRIEST"}
+	  {
+	    { type = GoldenStaff prefixChance = 1 }
+        { type = LeatherArmor prefixChance = 1 }
+		{ type = LeatherBoots chance = 0.8 prefixChance = 0.2 }
+        { type = LeatherGloves chance = 0.3 prefixChance = 0.1 }
+	  }
+  {"GOBLIN_KING"}
+  	  {
+	    { type = GoldenStaff, alternative = AdaSword prefixChance = 1 }
+        { type = AdaArmor prefixChance = 0.8 }
+		{ type = AdaBoots chance = 0.95 prefixChance = 0.1 }
+        { type = AdaGloves chance = 0.6 prefixChance = 0.1 }
+		{ countMin = 1 countMax = 3 type = Scroll Summon "GOBLIN_WARRIOR" {6 9} }
+        { type = Glyph ARMOR LastingEffect MAGIC_RESISTANCE chance = 0.5 }
+		{ type = Glyph ARMOR LastingEffect MELEE_RESISTANCE chance = 0.5 }
+        { type = Glyph ARMOR LastingEffect SPEED chance = 0.5 }
+        { type = Glyph ARMOR LastingEffect NO_CARRY_LIMIT chance = 0.3 }
+        { type = Glyph WEAPON JoinPrefixes { ItemAttrBonus DAMAGE 20 AttackerEffect Suicide} chance = 0.3 }
+	  }
+  {"GOBLIN_LEPRECHAUN"}
+  	  {
+	    { GoldenStaff }
+        { type = Robe prefixChance = 1 }
+		{ type = LeatherBoots prefixChance = 0.4 }
+        { type = LeatherGloves chance = 0.6 prefixChance = 0.4 }
+		{ GoldPiece 320 440 }
+	  }
+  {"GOBLIN_PRIEST"}
+      {
+        { IronStaff }
+        { LeatherBoots }
+        { type = Robe prefixChance = 1 }
+      }
+  {"GOBLIN_WARRIOR"}
+      {
+		{ type = Sword, alternative = WarHammer prefixChance = 0.05 }
+		{ WoodenShield }
+        { ChainArmor }
+        { IronBoots }
+		{ IronHelm }
+        { type = Torch chance = 0.3 }
+        { countMin = 2 countMax = 4 type = Potion Heal FLESH chance = 0.8 }
+      }
+  {"GOBLIN_WIZARD"}
+	  {
+        { IronStaff }
+		{ type = Robe prefixChance = 1 }
+		{ type = LeatherBoots prefixChance = 0.2 }
+        { countMin = 2 countMax = 4 type = Potion Heal FLESH chance = 0.8 }
+        { countMin = 1 countMax = 3 type = Potion Lasting SLEEP chance = 0.5 }
+        { countMin = 2 countMax = 4 type = Potion Lasting SLOWED chance = 0.6 }
+        { countMin = 1 countMax = 3 type = Potion Lasting BLIND chance = 0.2 }
+        { type = Potion Lasting INVISIBLE chance = 0.2 }
+        { countMin = 1 countMax = 3 type = Potion Lasting POISON chance = 0.6 }
+        { countMin = 1 countMax = 2 type = Potion Lasting SPEED chance = 0.4 }
+	  }
 }

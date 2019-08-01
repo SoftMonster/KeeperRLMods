@@ -596,11 +596,11 @@
   { "totem_creature" "T" ColorId GREEN }
   { "bufftotem_creature" "T" ColorId RED }
   { "tar_pit" "@" ColorId PURPLE }
-  { "bandit_leader" "B" ColorId RED }
+  { "bandit_leader" "p" ColorId RED }
   { "necromancer" "N" ColorId PURPLE }
-  { "lich_keeper3" "M" ColorId PURPLE }
-  { "skeleton_warrior" "S" ColorId PURPLE }
-  { "militia" "m" ColorId PURPLE }
+  { "lich_keeper3" "L" ColorId PURPLE }
+  { "skeleton_warrior" "s" ColorId PURPLE }
+  { "militia" "p" ColorId PURPLE }
   { "giant_robot" "T" ColorId PURPLE }
 
 #Future use (Acre July 2019)
@@ -625,4 +625,20 @@
   { "undead_tome" "+" ColorId LIGHT_GRAY }
   { "wooden_shield2" "]" ColorId BROWN }
   { "wooden_boomerang" ")" ColorId BROWN }
+  
+ #MODDED by Righteous August 2019 (Goblin update)
+
+  { "goblin_archer" "o" ColorId GREEN }
+  { "goblin_brute" "O" ColorId GREEN }
+  { "goblin_chickenmancer" "o" ColorId GREEN }
+  { "goblin_high_priest" "o" ColorId RED }
+  { "goblin_kaboomer" "!" ColorId GREEN }
+  { "goblin_king" "o" ColorId YELLOW }
+  { "goblin_leprechaun" "o" ColorId GREEN }
+  { "goblin_priest" "o" ColorId LIGHT_GRAY }
+  { "goblin_warrior" "o" ColorId GREEN }
+  { "goblin_wizard" "o" ColorId PURPLE }
+  { "giant_chicken" "b" ColorId YELLOW }
+  { "gold_golem" "g" ColorId YELLOW }
+
 }

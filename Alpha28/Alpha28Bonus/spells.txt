@@ -731,4 +731,85 @@
    cooldown = 16
    sound = SPELL_BLAST
  }
+#--------------------------------------------------------
+# spells.txt modding by Righteous August 2019 for Goblins
+#--------------------------------------------------------
+
+ {
+   id = "summon giant chickens"
+   symbol = "🐔"
+   effect = Summon "GIANT_CHICKEN" { 4 7 }
+   cooldown = 30
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon chickens"
+   symbol = "🐔"
+   effect = Summon "BATTLE_CHICKEN" { 4 7 }
+   cooldown = 10
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon goblin kaboomers"
+   symbol = "👺"
+   effect = Summon "GOBLIN_KABOOMER" { 3 5 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon goblin priests"
+   symbol = "✝"
+   effect = Summon "GOBLIN_PRIEST" { 4 6 }
+   cooldown = 90
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon goblin warrior horde"
+   symbol = "⚔"
+   effect = Summon "GOBLIN_WARRIOR" { 8 12 }
+   cooldown = 120
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ { 
+   id = "summon goblin horde"
+   symbol = "👺"
+   effect = Summon "GOBLIN" { 12 16 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon goblin archers"
+   symbol = "🏹"
+   effect = Summon "GOBLIN_ARCHER" { 5 7 }
+   cooldown = 90
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon goblin wizards"
+   symbol = "🧙"
+   effect = Summon "GOBLIN_WIZARD" { 4 5 }
+   cooldown = 120
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+    id =  "goblin damage buff"
+    symbol = "💪"
+    effect = Area Lasting DAM_BONUS 2
+    cooldown = 10
+    sound = SPELL_STR_BONUS
+ }
+ {
+    id =  "goblin defense buff"
+    symbol = "🛡"
+    effect = Area Lasting DEF_BONUS 2
+    cooldown = 10
+    sound = SPELL_DEX_BONUS
+ }
+ {
+   id = "summon gold golems"
+   symbol = "💰"
+   effect = Summon "GOLD_GOLEM" { 2 4 }
+   cooldown = 120
+   sound = SPELL_SUMMON_SPIRIT
+ }
 }
