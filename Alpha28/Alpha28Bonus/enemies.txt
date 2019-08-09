@@ -2076,4 +2076,69 @@
       attackBehaviour = KillLeader
     }
   }
+  "GOBLIN_KING"
+  {
+    settlement = {
+      type = CASTLE
+      tribe = BANDIT
+      inhabitants = {
+        leader = { { "GOBLIN_KING" } }
+        fighters = {
+          count = {12 17}
+          all = {
+			2 "GOBLIN_CHICKENMANCER"
+			2 "GOBLIN_BRUTE"
+			3 "GOBLIN_ARCHER"
+			1 "GOBLIN_HIGH_PRIEST"
+			2 "GOBLIN_KABOOMER"
+			2 "GOBLIN_PRIEST"
+			2 "GOBLIN_WIZARD"
+          }
+        }
+        civilians = {
+          count = {6 9}
+          all = {
+            1 "GOBLIN"
+          }
+        }
+      }
+      locationNameGen = TOWN
+      race = "goblins"
+      stockpiles = {{ "magicShrooms" 20 "CHEST" }}
+      buildingId = MUD
+      shopItems = "magicShrooms"
+      furniture = "barricades"
+      outsideFeatures = "barricades"
+    }
+    config = {
+      immigrantInterval = 300
+      maxPopulation = 26
+      ghostProb = 0.1
+      spawnGhosts = 6
+    }
+    behaviour = {
+      minPopulation = 12
+      minTeamSize = 10
+      triggers = {
+        RoomTrigger "THRONE" 0.0003
+        SelfVictims
+      }
+      attackBehaviour = StealGold
+      ransom = 0.9 100
+    }
+    immigrants = {
+      {
+        ids = {
+			"GOBLIN_CHICKENMANCER"
+			"GOBLIN_BRUTE"
+			"GOBLIN_ARCHER"
+			"GOBLIN_KABOOMER"
+			"GOBLIN_PRIEST"
+			"GOBLIN_WIZARD"
+        }
+        traits = {FIGHTER}
+        frequency = 1
+      }
+    }
+  }
 }

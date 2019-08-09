@@ -1,4 +1,11 @@
 {
+  "magicShrooms"
+  {
+    items = {
+      {{Mushroom Lasting HALLU} 1}
+    }
+  }
+  
   "villageShop"
   {
     items = {
