@@ -2063,6 +2063,7 @@
     }
   "DWARF_MILITIA" inherit "DWARF"
     {
+      viewId = { "dwarf_militia" }
       attr = {
         DAMAGE 15
         DEFENSE 20 
@@ -2085,6 +2086,7 @@
     }
   "DWARF_FIGHTER" inherit "DWARF_MILITIA"
     {
+      viewId = { "dwarf_fighter" }
       attr = {
         DAMAGE 23
         DEFENSE 23 
@@ -2100,6 +2102,7 @@
     }
   "DWARF_WARRIOR" inherit "DWARF_MILITIA"
     {
+      viewId = { "dwarf" }
       attr = {
         DAMAGE 25
         DEFENSE 25 
@@ -2115,6 +2118,7 @@
     }
   "ELITE_DWARF_WARRIOR" inherit "DWARF_MILITIA"
     {
+      viewId = { "elite_dwarf_warrior" }
       attr = {
         DAMAGE 27
         DEFENSE 27 
@@ -2130,6 +2134,7 @@
     }
   "DWARF_WORKER" inherit "DWARF"
     {
+      viewId = { "dwarf_worker" }
       attr = {
         DAMAGE 11
         DEFENSE 15 

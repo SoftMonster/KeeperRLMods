@@ -167,7 +167,7 @@
         "dwarven training" "orders" "installations" "magical_installations" "traps"
     }
     workshopGroups = {"dwarven"}
-    description = "(Challenge) Play a tribe of dwarves and maximise melee combat."
+    description = "(Hard) Play a tribe of dwarves and maximise melee combat."
   }
   {
     creatureId = { "DUNGEON_MASTER" }

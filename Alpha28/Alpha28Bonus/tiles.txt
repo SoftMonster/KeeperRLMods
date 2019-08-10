@@ -642,4 +642,9 @@
   { "giant_chicken" "b" ColorId YELLOW }
   { "gold_golem" "g" ColorId YELLOW }
 
+  { "dwarf_militia" "h" ColorId BLUE }
+  { "dwarf_fighter" "h" ColorId BLUE }
+  { "dwarf_warrior" "h" ColorId BLUE }
+  { "elite_dwarf_warrior" "h" ColorId BLUE }
+  { "dwarf_worker" "h" ColorId BLUE }
 }
