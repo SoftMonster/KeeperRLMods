@@ -628,6 +628,7 @@
   
  #MODDED by Righteous August 2019 (Goblin update)
 
+  { "elite_goblin_guard" "o" ColorId PURPLE }
   { "goblin_archer" "o" ColorId GREEN }
   { "goblin_brute" "O" ColorId GREEN }
   { "goblin_chickenmancer" "o" ColorId GREEN }

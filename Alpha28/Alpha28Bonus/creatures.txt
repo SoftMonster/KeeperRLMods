@@ -5631,8 +5631,8 @@
     {
       viewId = { "giant_chicken" }
       attr = {
-        DAMAGE 42
-        DEFENSE 42 
+        DAMAGE 36
+        DEFENSE 18 
       }
       body = {
         type = Bird LARGE
@@ -5650,7 +5650,7 @@
       viewId = { "chicken" }
       attr = {
         DAMAGE 22
-        DEFENSE 12 
+        DEFENSE 6 
       }
       body = {
         type = Bird SMALL
@@ -5687,13 +5687,47 @@
 #Goblin faction
 #---------------------------------------------------------
 
+    "ELITE_GOBLIN_GUARD"
+    {
+      viewId = { "elite_goblin_guard" }
+      attr = {
+        DAMAGE 30
+        DEFENSE 42 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "talks about serving the king"
+      chatReactionHostile = "\"Die!\""
+	  permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+		MELEE_RESISTANCE 1
+	  }
+      skills = {
+        FORGE 0.8
+      }
+      maxLevelIncrease = {
+        MELEE 3
+      }
+      spellSchools = { "fighter" }
+      spells = { 
+	    "shove"
+        "battle cry"
+        "block"
+      }
+      name = {
+        name = "elite goblin guard"
+        firstNameGen = ORC
+      }
+      hatedByEffect = HATE_GREENSKINS
+    }
     "GOBLIN_ARCHER"
     {
       viewId = { "goblin_archer" }
       attr = {
         DAMAGE 22
         DEFENSE 23 
-		RANGED_DAMAGE 20 
+		RANGED_DAMAGE 15 
       }
       body = {
         type = Humanoid MEDIUM
@@ -5717,8 +5751,8 @@
       {
       viewId = { "goblin_brute" }
       attr = {
-        DAMAGE 52
-        DEFENSE 33  
+        DAMAGE 44
+        DEFENSE 35  
       }
       body = {
         type = Humanoid LARGE
@@ -5747,9 +5781,9 @@
     {
       viewId = { "goblin_chickenmancer" }
       attr = {
-        DAMAGE 28
-        DEFENSE 28 
-		SPELL_DAMAGE 28
+        DAMAGE 18
+        DEFENSE 18 
+		SPELL_DAMAGE 24
       }
       body = {
         type = Humanoid MEDIUM
@@ -5783,7 +5817,7 @@
       attr = {
         DAMAGE 22
         DEFENSE 38 
-		SPELL_DAMAGE 44 
+		SPELL_DAMAGE 34 
       }
       body = {
         type = Humanoid MEDIUM
@@ -5832,7 +5866,7 @@
       viewId = { "goblin_kaboomer" }
       attr = {
 		DAMAGE 18
-        DEFENSE 25
+        DEFENSE 15
       }
       courage = 100
       permanentEffects = {
@@ -5852,21 +5886,16 @@
     {
       viewId = { "goblin_king" }
       attr = {
-        DAMAGE 52
-        DEFENSE 48 
-		SPELL_DAMAGE 46 
+        DAMAGE 42
+        DEFENSE 32 
+		SPELL_DAMAGE 36 
       }
       body = {
         type = Humanoid MEDIUM
       }
       spells = {
 		 "advanced healing"
-		 "summon goblin horde"
-		 "summon goblin warrior horde"
-		 "summon goblin archers"
-		 "summon goblin priests"
-		 "summon goblin kaboomers"
-		 "summon goblin wizards"
+		 "summon goblin guards"
 		 "expert magic missile"
 		 "goblin damage buff"
 		 "goblin defense buff"
@@ -5895,8 +5924,8 @@
       viewId = { "goblin_leprechaun" }
       attr = {
         DAMAGE 22
-        DEFENSE 38 
-		SPELL_DAMAGE 28 
+        DEFENSE 28 
+		SPELL_DAMAGE 18 
       }
       body = {
         type = Humanoid MEDIUM
@@ -5927,7 +5956,7 @@
       viewId = { "goblin_priest" }
       attr = {
         DAMAGE 22
-        DEFENSE 32 
+        DEFENSE 22 
 		SPELL_DAMAGE 34 
       }
       body = {
@@ -5961,13 +5990,13 @@
     {
       viewId = { "goblin_warrior" }
       attr = {
-        DAMAGE 36
-        DEFENSE 38 
+        DAMAGE 26
+        DEFENSE 22 
       }
       body = {
-        type = Humanoid LARGE
+        type = Humanoid MEDIUM
       }
-      chatReactionFriendly = "takes about the importance of proper headgear"
+      chatReactionFriendly = "talks about the importance of proper headgear"
       chatReactionHostile = "\"Die!\""
 	  permanentEffects = {
         DISARM_TRAPS_SKILL 1
@@ -5996,8 +6025,8 @@
       viewId = { "goblin_wizard" }
       attr = {
         DAMAGE 22
-        DEFENSE 28 
-		SPELL_DAMAGE 42
+        DEFENSE 18 
+		SPELL_DAMAGE 24
       }
       body = {
         type = Humanoid MEDIUM

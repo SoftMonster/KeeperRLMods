@@ -42,10 +42,13 @@
       "GROUND_TORCH" 1
     }
   }
-  "barricades"
+  "goblinProps"
   {
     {
-      "BARRICADE" 1
+      "GALLOWS" 1
+      "BEAST_CAGE" 1
+      "WHIPPING_POST" 1
+      "TORTURE_TABLE" 1
     }
   }
   "castleOutside"

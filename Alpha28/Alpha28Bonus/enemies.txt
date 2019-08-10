@@ -2107,8 +2107,8 @@
       stockpiles = {{ "magicShrooms" 20 "CHEST" }}
       buildingId = MUD
       shopItems = "magicShrooms"
-      furniture = "barricades"
-      outsideFeatures = "barricades"
+      furniture = "goblinProps"
+      outsideFeatures = "goblinProps"
     }
     config = {
       immigrantInterval = 300

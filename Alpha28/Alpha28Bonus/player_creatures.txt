@@ -202,7 +202,7 @@
     { "CYCLOPS" }                      EVIL               "(Challenge) Slaughter the world as a lone cyclops."
     { "MINOTAUR" }                     EVIL               "(Challenge) Crush your enemies as a single minotaur warrior."
     { "WARRIOR_HERO" }                 LAWFUL             "(Challenge) Play as a warrior hero."
-    { "NECROMANCER" }                       EVIL             "(Challenge) Oppose the world and rid it of all life."
+    { "NECROMANCER" }                  EVIL               "(Challenge) Oppose the world and rid it of all life."
 	{ "THIEF_HERO" "THIEF_HERO" }      LAWFUL             "(Challenge) Play as an archer assassin. Travel light, rely on stealth and arrows."
 	{ "CLERIC_HERO" "CLERIC_HERO" }    LAWFUL             "(Challenge) Be a cleric hero."
 	{ "WIZARD_ADVENTURER" }            LAWFUL             "(Challenge) Wizard hero class. Train magic powers."

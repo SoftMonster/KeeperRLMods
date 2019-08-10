@@ -426,7 +426,11 @@
 #-----------------------------------------------------------
 # creature_inventory.txt - Righteous Aug 2019 - Goblin Tribe
 #-----------------------------------------------------------
-
+  {"ELITE_GOBLIN_GUARD"}
+      {
+		{ type = AdaSword, alternative = AdaWarHammer prefixChance = 0.1 }
+        { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.4 }
+      }
   {"GOBLIN_ARCHER"}
 	  {
 		{ Bow }

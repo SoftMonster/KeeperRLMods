@@ -812,4 +812,11 @@
    cooldown = 120
    sound = SPELL_SUMMON_SPIRIT
  }
+ {
+   id = "summon goblin guards"
+   symbol = "⚔"
+   effect = Summon "ELITE_GOBLIN_GUARD" { 5 7 }
+   cooldown = 120
+   sound = SPELL_SUMMON_SPIRIT
+ }
 }
