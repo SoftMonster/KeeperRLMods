@@ -397,6 +397,18 @@
     itemDrop = {{{{Simple "WoodPlank"} 1 { 2 4 }}}}
     tryDestroyFX = { WOOD_SPLINTERS }
   }
+  "CAVE_BUSHES"
+  {
+    name = "cave bushes"
+    viewId = { "bush" }
+    strength2 = {
+      10 CUT
+    }
+    blockMovement = true
+    fire = 30
+    itemDrop = {{{{Simple "WoodPlank"} 1 { 10 15 }}}}
+    tryDestroyFX = { WOOD_SPLINTERS }
+  }
   "STONES"
   {
     name = "rocks"
@@ -741,6 +753,24 @@
     name = "road"
     viewId = { "road" }
   }
+
+  "CASTLE_A1" { name = "castle" viewId = { "castle_a1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_A2" { name = "castle" viewId = { "castle_a2" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_A3" { name = "castle" viewId = { "castle_a3" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_A4" { name = "castle" viewId = { "castle_a4" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_B1" { name = "castle" viewId = { "castle_b1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_B2" { name = "castle" viewId = { "castle_b2" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_B3" { name = "castle" viewId = { "castle_b3" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_B4" { name = "castle" viewId = { "castle_b4" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_C1" { name = "castle" viewId = { "castle_c1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_C2" { name = "castle" viewId = { "castle_c2" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_C3" { name = "castle" viewId = { "castle_c3" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_C4" { name = "castle" viewId = { "castle_c4" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_D1" { name = "castle" viewId = { "castle_d1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_D2" { name = "dungeon entrance" viewId = { "castle_d2" } canBuildOutsideOfTerritory = true }
+  "CASTLE_D3" { name = "dungeon entrance" viewId = { "castle_d3" } onBuilt = DOWN_STAIRS usageType = STAIRS canBuildOutsideOfTerritory = true }
+  "CASTLE_D4" { name = "castle" viewId = { "castle_d4" } blockMovement = true blockVision = { NORMAL ELF } wall = true canBuildOutsideOfTerritory = true }
+  
   "MOUNTAIN"
   {
     name = "soft rock"
@@ -964,6 +994,7 @@
     blockVision = { NORMAL ELF }
     wall = true
     canBuildOutsideOfTerritory = true
+	strength = 200
     strength2 = {
       100 BOULDER
       100 DIG
@@ -1066,6 +1097,22 @@
     viewId = { "totem" Rgb 68 58 156 255 }
     lastingEffect = ALLY DEF_BONUS 3
   }
+
+  "ELVEN_RUG"
+  {
+    name = "elven rug of concealment"
+    viewId = { "floor_invi" }
+    layer = FLOOR
+    lastingEffect = ENEMY INVISIBLE 0
+    lightEmission = 20
+   }
+  "DWARVEN_REGENERATOR"
+  {
+    name = "dwarven regenerator"
+    viewId = { "floor_regen" }
+    layer = FLOOR
+    lastingEffect = ENEMY REGENERATION 0
+  }
   "ALARM_TRAP"
   {
     name = "alarm trap"
@@ -1073,6 +1120,29 @@
     entryType = Trap { Alarm false }
     warning = true
     constructMessage = SET_UP
+  }
+  "FALLING_RUBBLE_TRAP"
+  {
+    name = "falling rubble trap"
+    viewId = { "ruin_wall" }
+    layer = CEILING
+    entryType = Trap { Area 1 PlaceFurniture "RUBBLE" }
+    warning = true
+    constructMessage = SET_UP
+  }
+  "RUBBLE"
+  {
+    name = "rubble"
+    viewId = { "map_mountain2" }
+    constructMessage = none	
+    blockMovement = true
+	strength = 200
+    strength2 = {
+      200 BOULDER
+      200 DIG
+      200 HOSTILE_DIG
+      200 HOSTILE_DIG_NO_SKILL
+    }
   }
   "INVISIBLE_ALARM"
   {
@@ -1126,6 +1196,14 @@
     warning = true
     constructMessage = SET_UP
   }
+  "TAR_PIT"
+  {
+   name = "tar pit"
+   viewId = { "tar_pit" }
+   entryType = Trap { Lasting SLOWED }
+   warning = true
+   constructMessage = SET_UP
+  }
   "BOULDER_TRAP"
   {
     name = "boulder trap"
@@ -1137,6 +1215,14 @@
     warning = true
     constructMessage = SET_UP
     viewLayer = CREATURE
+  }
+  "FLOOR_SPIKES_TRAP"
+  {
+    name = "floor_spikes trap"
+    viewId = { "floor_spikes_trap" }
+    entryType = Trap { Lasting BLEEDING}
+    warning = true
+    constructMessage = SET_UP
   }
   "PORTAL"
   {
@@ -1261,6 +1347,18 @@
     name = "floor"
     viewId = { "empty" }
     layer = GROUND
+  }
+  "SEA_OF_BONES"
+  {
+    name = "The Sea of Bones"
+    viewId = { "bone" }
+    layer = GROUND
+  }
+  "MASS_GRAVE"
+  {
+    name = "mass grave"
+    viewId = { "impaled_head" }
+    wall = true
   }
   "TUTORIAL_ENTRANCE"
   {

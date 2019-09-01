@@ -1,10 +1,19 @@
 # Here come levels for all keeper types
 # At every depth the game chooses a random level that's available
+# They are generated on the fly when stairs are built so you can edit this file while the game is running.
 {
   # This is a filled level that can appear at all depths
   {
     type = FullZLevel {
+      enemy = "GARGOYLE_ENTRANCE"
     }
+	minDepth = 0
+	maxDepth = 1
+  }
+  {
+    type = FullZLevel {
+    }
+	minDepth = 11
   }
   {
     type = FullZLevel {
@@ -42,8 +51,17 @@
     type = FullZLevel {
       enemy = "ADA_GOLEMS"
     }
-    minDepth = 10
+    minDepth = 11
   }
+  { type = FullZLevel { enemy = "KOBOLD_CAVE" } minDepth = 3 maxDepth = 3}
+  { type = FullZLevel { enemy = "BANDITS" } minDepth = 3 maxDepth = 3}
+  { type = FullZLevel { enemy = "DARK_ELVES_ENTRY" } minDepth = 5 maxDepth = 5}
+  { type = FullZLevel { enemy = "GNOMES_ENTRY" } minDepth = 5 maxDepth = 5}
+  { type = FullZLevel { enemy = "CYCLOPS" } minDepth = 8 maxDepth = 8}
+  { type = FullZLevel { enemy = "GREEN_DRAGON" } minDepth = 9 maxDepth = 9}
+  { type = FullZLevel { enemy = "RED_DRAGON" } minDepth = 9 maxDepth = 9}
+  { type = FullZLevel { enemy = "MINOTAUR" } minDepth = 11 maxDepth = 11}
+  { type = FullZLevel { enemy = "SHELOB" } minDepth = 11 maxDepth = 11}
   {
     # A level full of water with some islands
     type = WaterZLevel {
@@ -69,7 +87,42 @@
         count = {10 11}
         all = {
           10 "FIRE_ELEMENTAL"
-          1 "RED_DRAGON"
+          1 "YOUNG_RED_DRAGON"
+        }
+      }
+    }
+    minDepth = 11
+  }
+  {
+    type = WaterZLevel {
+      waterType = "MAGMA"
+      creatures = {
+        count = {10 11}
+        all = {
+          5 "RED_DRAGON"
+          5 "YOUNG_RED_DRAGON"
+        }
+      }
+    }
+    minDepth = 15
+  }
+  {
+    type = WaterZLevel {
+      waterType = "SEA_OF_BONES"
+      creatures = {
+        count = {50 51}
+        all = {
+          2 "MUMMY"
+          2 "SKELETON"
+          2 "VAMPIRE"
+          2 "BAT"
+          2 "ZOMBIE"
+		  2 "ABOMINATION"
+		  2 "BANSHEE"
+		  2 "LOST_SOUL"
+          2 "MUMMY_LORD"
+		  2 "SPIRIT_DRAGON"
+		  2 "ZOMBIE_DRAGON"
         }
       }
     }
@@ -85,8 +138,19 @@
       enemy = "DARK_ELF_CAVE"
       attackChance = 0.6
     }
-    minDepth = 5
+    minDepth = 6
+	maxDepth = 9
   }
+  { type = FullZLevel { enemy = "OGRE_CAVE" } minDepth = 7 maxDepth = 7}
+  { type = FullZLevel { enemy = "HARPY_CAVE" } minDepth = 7 maxDepth = 7}
+  {
+    type = FullZLevel {
+      enemy = "DARK_ELF_CAVE"
+    }
+    minDepth = 11
+  }
+  { type = FullZLevel { enemy = "OGRE_CAVE" } minDepth = 7 maxDepth = 7}
+  { type = FullZLevel { enemy = "HARPY_CAVE" } minDepth = 7 maxDepth = 7}
 }
 
 # Here come levels specific to dark keepers
@@ -94,8 +158,17 @@
   {
     type = FullZLevel {
       enemy = "DWARF_CAVE"
+    }
+    minDepth = 6
+	maxDepth = 9
+  }
+  {
+    type = FullZLevel {
+      enemy = "DWARF_CAVE"
       attackChance = 0.6
     }
-    minDepth = 5
+    minDepth = 11
   }
+  { type = FullZLevel { enemy = "ANTS_OPEN" } minDepth = 7 maxDepth = 7}
+  { type = FullZLevel { enemy = "TEMPLE" } minDepth = 7 maxDepth = 7}
 }

@@ -102,6 +102,14 @@
     sound = SPELL_BLAST
   }
   {
+    id =  "rapid magic missile"
+    symbol = "⥇"
+    effect = Damage SPELL_DAMAGE SPELL
+    range = 4
+    cooldown = 2
+    sound = SPELL_BLAST
+  }
+  {
     id =  "deception"
     symbol = "🎭"
     effect = Deception
@@ -131,6 +139,13 @@
     sound = SPELL_TELEPORT
   }
   {
+    id = "battle cry"
+    symbol = "💪"
+    effect = Lasting RAGE
+    cooldown = 90
+    sound = SPELL_STR_BONUS
+  }
+  {
     id =  "teleport"
     symbol = "🌀"
     effect = Teleport
@@ -138,6 +153,13 @@
     cooldown = 200
     endOnly = true
     sound = SPELL_TELEPORT
+  }
+  {
+   id = "summon contraption"
+   symbol = "👾"
+   effect = Summon "GIANT_ROBOT" { 1 2 }
+   cooldown = 90
+   sound = SPELL_SUMMON_SPIRIT
   }
   {
     id =  "advanced teleport"
@@ -181,6 +203,15 @@
     targetSelf = true
     range = 1
     cooldown = 120
+    sound = SPELL_SPEED_SELF
+  }
+  {
+    id =  "haste other"
+    symbol = "🏃"
+    effect = Lasting SPEED
+    targetSelf = false
+    range = 3
+    cooldown = 110
     sound = SPELL_SPEED_SELF
   }
   {
@@ -243,6 +274,22 @@
     sound = SPELL_DEX_BONUS
   }
   {
+    id = "defend other"
+    symbol = "🛡"
+    effect = Lasting DEF_BONUS
+    targetSelf = false
+    range = 3
+    cooldown = 70
+    sound = SPELL_DEX_BONUS
+  }
+  {
+    id = "block"
+    symbol = "🛡"
+    effect = Lasting DEF_BONUS
+    cooldown = 70
+    sound = SPELL_DEX_BONUS
+  }
+  {
     id =  "damage bonus"
     symbol = "💪"
     effect = Lasting DAM_BONUS
@@ -257,6 +304,15 @@
     targetSelf = true
     range = 1
     cooldown = 80
+    sound = SPELL_STR_BONUS
+  }
+  {
+    id = "friendly damage bonus"
+    symbol = "💪"
+    effect = Lasting DAM_BONUS
+    targetSelf = false
+    range = 3
+    cooldown = 70
     sound = SPELL_STR_BONUS
   }
   {
@@ -296,6 +352,20 @@
     sound = SPELL_FIRE_SPHERE_PET
   }
   {
+    id = "healing totem"
+    symbol = "/+\\"
+    effect = Summon "HEALING_TOTEM" { 1 2 }
+    cooldown = 250
+    sound = SPELL_SUMMON_SPIRIT
+  }
+  {
+    id = "buff totem"
+    symbol = "/💪\\"
+    effect = Summon "BUFF_TOTEM" { 1 2 }
+    cooldown = 250
+    sound = SPELL_SUMMON_SPIRIT
+  }
+  {
     id =  "fire breath"
     symbol = "🐲"
     effect = Fire
@@ -333,6 +403,15 @@
     #sound = SPELL_FIRE_SPHERE_PET
   }
   {
+   id = "magma bolt"
+   symbol = "{🔥}"
+   effect = Fire
+   fx = FIREBALL
+   range = 6
+   cooldown = 35
+   sound = SPELL_FIRE_SPHERE_PET
+  }
+  {
     id =  "shove"
     symbol = "👉"
     effect = Shove
@@ -351,7 +430,7 @@
   {
     id =  "black dragon blindness"
     symbol = "🙈"
-    effect = Area 30 Filter ENEMY Lasting BLIND
+    effect = Area 30 Lasting BLIND
     cooldown = 3
   }
   {
@@ -362,4 +441,399 @@
     targetSelf = false
     cooldown = 150
   }
+ {
+   id = "stone golem"
+   symbol = "👤"
+   effect = Summon "STONE_GOLEM" { 1 2}
+   cooldown = 100
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "snakes"
+   symbol = "🐍🐍"
+   effect = Summon "SNAKE" { 7 8 }
+   cooldown = 100
+   sound = SPELL_SUMMON_SPIRIT 
+ }
+ {
+   id = "spiders"
+   symbol = "🕷"
+   effect = Summon "SPIDER" { 2 3 }
+   cooldown = 100
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "fumes"
+   symbol = "☠"
+   range = 4
+   effect = EmitPoisonGas 4
+   cooldown = 50
+   sound = SPELL_AIR_BLAST
+ }
+ {
+   id = "poison spores"
+   symbol = "☠"
+   range = 5
+   effect = Lasting POISON
+   cooldown = 20
+   sound = SPELL_AIR_BLAST
+   castMessageType = ABILITY
+ }
+ {
+   id = "curse"
+   symbol = "☛"
+   range = 10
+   effect = Lasting BLEEDING
+   cooldown = 125
+   sound = SPELL_BLAST
+ }  
+ {
+   id = "spit shards"
+   symbol = "!"
+   range = 7
+   effect = Lasting BLEEDING
+   cooldown = 10
+   sound = SPELL_BLAST
+ }  
+ {
+   id = "stone to mud"
+   symbol = "🕳"
+   effect = DestroyWalls
+   cooldown = 1000
+   sound = SPELL_AIR_BLAST
+ } 
+ {
+   id = "entangling vines"
+   symbol = "🙙"
+   range = 10
+   effect = Lasting TIED_UP
+   cooldown = 70
+   sound = SPELL_STR_BONUS
+ }
+ {
+   id = "resist magic"
+   symbol = "O"
+   effect = Lasting MAGIC_RESISTANCE
+   cooldown = 80
+   sound = SPELL_DEX_BONUS
+ }
+ {
+   id = "light"
+   symbol = "🕯"
+   effect = Lasting LIGHT_SOURCE
+   cooldown = 80
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "darkness"
+   symbol = "☁"
+   effect = Lasting DARKNESS_SOURCE
+   cooldown = 14
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "wolves"
+   symbol = "🐺"
+   effect = Summon "WOLF" { 5 6 }
+   cooldown = 150
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "bear"
+   symbol = "🐻"
+   effect = Summon "CAVE_BEAR" { 3 4 }
+   cooldown = 80
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "boar"
+   symbol = "🐖"
+   effect = Summon "BOAR" { 3 4 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "raven"
+   symbol = "🐦"
+   effect = Summon "RAVEN" { 1 2 }
+   cooldown = 20
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "levitate"
+   symbol = "^"
+   effect = Lasting FLYING
+   cooldown = 175
+   sound = SPELL_SPEED_SELF
+ }
+ {
+   id = "fire shield"
+   symbol = "❂"
+   effect = Lasting FIRE_RESISTANT
+   cooldown = 100
+   sound = SPELL_INVISIBILITY
+ }
+ {
+   id = "telepathy"
+   symbol = "💭"
+   effect = Lasting TELEPATHY
+   cooldown = 175
+   sound = SPELL_INVISIBILITY
+ }
+ {
+   id = "elf vision"
+   symbol = "👁"
+   effect = Lasting ELF_VISION
+   cooldown = 90
+   sound = SPELL_SPEED_SELF
+ }
+ {
+   id = "weapon dodge"
+   symbol = "⇠⇢"
+   effect = Lasting MELEE_RESISTANCE
+   cooldown = 90
+   sound = SPELL_DEX_BONUS
+ }
+ {
+   id = "arrow shield"
+   symbol = "➵◌"
+   effect = Lasting RANGED_RESISTANCE
+   cooldown = 50
+   sound = SPELL_DEX_BONUS
+ }
+ {
+   id = "cause blindness" 
+   symbol = "👀"
+   range = 5
+   effect = Lasting BLIND
+   cooldown = 100
+   sound = SPELL_DECEPTION
+ }
+ {
+   id = "cripple"
+   symbol = "X"
+   range = 5
+   effect = Lasting COLLAPSED
+   cooldown = 120
+   sound = SPELL_BLAST
+ }
+ {
+   id = "mind bolt" 
+   symbol = "⇝"
+   range = 1
+   effect = Lasting INSANITY
+   cooldown = 180
+   sound = SPELL_BLAST
+ }
+ {
+   id = "arrow attraction"
+   symbol = "🚶↩"
+   range = 5
+   effect = Lasting RANGED_VULNERABILITY
+   cooldown = 60
+   sound = SPELL_BLAST
+ }
+ {
+   id = "mana curse"
+   symbol = "☞"
+   range = 5
+   effect = Lasting MAGIC_VULNERABILITY
+   cooldown = 60
+   sound = SPELL_BLAST
+ }
+ {
+   id = "regrow body parts"
+   symbol = "⨢"
+   effect = RegrowBodyPart
+   cooldown = 3000
+   sound = SPELL_BLAST
+ }
+ {
+   id =  "summon water elementals"
+   symbol = "🕵"
+   effect = Summon "WATER_ELEMENTAL" { 3 4 }
+   cooldown = 200
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id =  "summon air elementals"
+   symbol = "🕵"
+   effect = Summon "AIR_ELEMENTAL" { 3 4 }
+   cooldown = 200
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id =  "adoxie right hand"
+   symbol = "-."
+   effect = Summon "ADOXIE_HAND_RIGHT" { 1 2 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id =  "adoxie left hand"
+   symbol = ".-"
+   effect = Summon "ADOXIE_LEFT_HAND" { 1 2 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id =  "adoxie left foot"
+   symbol = "_|"
+   effect = Summon "ADOXIE_FOOT_LEFT" { 1 2 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id =  "adoxie right foot"
+   symbol = "|_"
+   effect = Summon "ADOXIE_FOOT_RIGHT" { 1 2 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "lesser eye servant"
+   symbol = "👁️"
+   effect = Summon "LESSER_EYE_SERVANT" { 1 2 }
+   cooldown = 80
+   sound = SPELL_SUMMON_SPIRIT 
+ }
+ {
+   id = "summon ocean portal"
+   symbol = "@"
+   effect = Summon "OCEAN_PORTAL" { 1 2 }
+   cooldown = 200
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "adoxie eye"
+   symbol =  "👁️"
+   effect = Summon "ADOXIE_EYE" { 1 2 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "eye servant"
+   symbol = "👁️"
+   effect = Summon "EYE_SERVANT" { 1 2 }
+   cooldown = 80
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon skeletons"
+   symbol = "☠"
+   effect = Summon "SKELETON" { 1 5 }
+   cooldown = 70
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon skeleton warriors"
+   upgrade = "summon skeletons"
+   symbol = "☠"
+   effect = Summon "SKELETON_WARRIOR" { 1 5 }
+   cooldown = 70
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon skeleton mages"
+   symbol = "☠"
+   effect = Summon "SKELETON_MAGE" { 1 3 }
+   cooldown = 70
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "bolt of water"
+   symbol = "->"
+   effect = Damage SPELL_DAMAGE SPELL
+   range = 7
+   cooldown = 16
+   sound = SPELL_BLAST
+ }
+#--------------------------------------------------------
+# spells.txt modding by Righteous August 2019 for Goblins
+#--------------------------------------------------------
+
+ {
+   id = "summon giant chickens"
+   symbol = "🐔"
+   effect = Summon "GIANT_CHICKEN" { 4 7 }
+   cooldown = 30
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon chickens"
+   symbol = "🐔"
+   effect = Summon "BATTLE_CHICKEN" { 4 7 }
+   cooldown = 10
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon goblin kaboomers"
+   symbol = "👺"
+   effect = Summon "GOBLIN_KABOOMER" { 3 5 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon goblin priests"
+   symbol = "✝"
+   effect = Summon "GOBLIN_PRIEST" { 4 6 }
+   cooldown = 90
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon goblin warrior horde"
+   symbol = "⚔"
+   effect = Summon "GOBLIN_WARRIOR" { 8 12 }
+   cooldown = 120
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ { 
+   id = "summon goblin horde"
+   symbol = "👺"
+   effect = Summon "GOBLIN" { 12 16 }
+   cooldown = 50
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon goblin archers"
+   symbol = "🏹"
+   effect = Summon "GOBLIN_ARCHER" { 5 7 }
+   cooldown = 90
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon goblin wizards"
+   symbol = "🧙"
+   effect = Summon "GOBLIN_WIZARD" { 4 5 }
+   cooldown = 120
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+    id =  "goblin damage buff"
+    symbol = "💪"
+    effect = Area 2 Lasting DAM_BONUS
+    cooldown = 10
+    sound = SPELL_STR_BONUS
+ }
+ {
+    id =  "goblin defense buff"
+    symbol = "🛡"
+    effect = Area 2 Lasting DEF_BONUS
+    cooldown = 10
+    sound = SPELL_DEX_BONUS
+ }
+ {
+   id = "summon gold golems"
+   symbol = "💰"
+   effect = Summon "GOLD_GOLEM" { 2 4 }
+   cooldown = 120
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "summon goblin guards"
+   symbol = "⚔"
+   effect = Summon "ELITE_GOBLIN_GUARD" { 5 7 }
+   cooldown = 120
+   sound = SPELL_SUMMON_SPIRIT
+ }
 }

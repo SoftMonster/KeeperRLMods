@@ -13,6 +13,27 @@
       "SNOWMAN" 1
     }
   }
+
+  "dwarvenRoomFurniture"
+  {
+    {
+      "BED1" 20
+      "GROUND_TORCH" 10
+      "DWARVEN_REGENERATOR" 5
+      "CHEST" 20
+    }
+  }
+  "elvenRoomFurniture"
+  {
+    {
+      "BED1" 20
+      "GROUND_TORCH" 10
+      "CHEST" 20
+    }
+    {
+      "ELVEN_RUG"
+    }
+  }
   "castleFurniture"
   {
     {
@@ -36,6 +57,15 @@
       "BLEEDING_TOTEM"
     }
   }
+  "goblinProps"
+  {
+    {
+      "GALLOWS" 1
+      "BEAST_CAGE" 1
+      "WHIPPING_POST" 1
+      "TORTURE_TABLE" 1
+    }
+  }
   "castleOutside"
   {
     {
@@ -49,6 +79,18 @@
     {
       "GROUND_TORCH" 1
       "WELL" 1
+    }
+  }
+  "caveWells"
+  {
+    {
+      "WELL" 1
+    }
+  }
+  "prisonerHeads"
+  {
+    {
+      "IMPALED_HEAD" 1
     }
   }
   "vegetationLow"
@@ -96,6 +138,12 @@
   {
     {
       "GRAVE" 1
+    }
+  }
+  "chests"
+  {
+    {
+      "CHEST" 1
     }
   }
   "templeInside"

@@ -257,6 +257,7 @@
   { "surprise_trap" "^" ColorId BLUE true }
   { "terror_trap" "^" ColorId WHITE true }
   { "fire_trap" "^" ColorId RED true }
+  { "floor_spikes_trap" "^" ColorId GRAY true }
   { "rock" "✱" ColorId LIGHT_GRAY true "stonepile" }
   { "iron_rock" "✱" ColorId ORANGE true "ironpile" }
   { "ada_ore" "✱" ColorId LIGHT_BLUE true "steelpile" }
@@ -526,5 +527,173 @@
   { viewId = "adamantium_ore" symbol = "⁂" color = ColorId LIGHT_BLUE
     isSymbolFont = true wallShadow = true mountainSides = "mountain"
     background = "mountain2" }
-}
+	
+#MODDED by Righteous June 2019
 
+  { "abomination" "z" ColorId LIGHT_GRAY }
+  { "adoxie_foot_left" "u" ColorId PURPLE }
+  { "adoxie_foot_right" "u" ColorId PURPLE }
+  { "adoxie_hand_right" "u" ColorId PURPLE }
+  { "adoxie_hand_left" "u" ColorId PURPLE }
+  { "adoxie_head" "U" ColorId PURPLE }
+  { "air_fairy" "h" ColorId WHITE }
+  { "amazon" "p" ColorId RED }
+  { "amazon_archer" "p" ColorId RED }
+  { "amazon_champion" "p" ColorId RED }
+  { "amazon_elder" "p" ColorId RED }
+  { "amazon_queen" "P" ColorId YELLOW }
+  { "amazon_war_maiden" "p" ColorId RED }
+  { "ancient_greendragon" "D" ColorId GREEN }
+  { "ancient_reddragon" "D" ColorId RED }
+  { "arachne" "S" ColorId BLACK }
+  { "armored_cow_demon" "U" ColorId RED }
+  { "banshee" "u" ColorId PURPLE }
+  { "bengal_tiger" "f" ColorId ORANGE }
+  { "castle_a1" "#" ColorId LIGHT_GRAY }
+  { "castle_a2" "#" ColorId LIGHT_GRAY }
+  { "castle_a3" "#" ColorId LIGHT_GRAY }
+  { "castle_a4" "#" ColorId LIGHT_GRAY }
+  { "castle_b1" "#" ColorId LIGHT_GRAY }
+  { "castle_b2" "#" ColorId LIGHT_GRAY }
+  { "castle_b3" "#" ColorId LIGHT_GRAY }
+  { "castle_b4" "#" ColorId LIGHT_GRAY }
+  { "castle_c1" "#" ColorId LIGHT_GRAY }
+  { "castle_c2" "#" ColorId LIGHT_GRAY }
+  { "castle_c3" "#" ColorId LIGHT_GRAY }
+  { "castle_c4" "#" ColorId LIGHT_GRAY }
+  { "castle_d1" "#" ColorId LIGHT_GRAY }
+  { "castle_d2" "." ColorId LIGHT_GRAY }
+  { "castle_d3" ">" ColorId LIGHT_GRAY }
+  { "castle_d4" "#" ColorId LIGHT_GRAY }
+  { "centar_archer" "p" ColorId BROWN }
+  { "centar_child" "p" ColorId BROWN }
+  { "centar_farmer" "t" ColorId BROWN }
+  { "centar_hunter" "p" ColorId BROWN }
+  { "centar_king" "p" ColorId YELLOW }
+  { "centar_knight" "p" ColorId YELLOW }
+  { "cow_demon" "u" ColorId RED }
+  { "dark_fairy" "h" ColorId BLACK }
+  { "dark_goblin" "o" ColorId BLACK }
+  { "dark_hobgoblin" "o" ColorId BLACK }
+  { "dark_orc" "o" ColorId BLACK }
+  { "dark_orc_female" "o" ColorId BLACK }
+  { "dark_orc_captain" "o" ColorId BLACK }
+  { "dark_troll_female" "O" ColorId BLACK }
+  { "dark_troll" "T" ColorId BLACK }
+  { "demon_fairy" "h" ColorId RED }
+  { "earth_fairy" "h" ColorId BROWN }
+  { "electric_fairy" "h" ColorId YELLOW }
+  { "elephant" "Z" ColorId PURPLE }
+  { "female_lion" "f" ColorId ORANGE }
+  { "fire_fairy" "f" ColorId RED }
+  { "gargoyle" "u" ColorId LIGHT_GRAY }
+  { "giant" "P" ColorId PURPLE }
+  { "gorgon" "h" ColorId PURPLE }
+  { "greendragon" "d" ColorId GREEN }
+  { "green_dragonewt" "p" ColorId GREEN }
+  { "hell_knight" "p" ColorId RED }
+  { "hell_knight_brute" "p" ColorId RED }
+  { "hell_knight_lord" "p" ColorId RED }
+  { "hell_knight_swordmaster" "p" ColorId RED }
+  { "hell_portal" "0" ColorId RED }
+  { "hell_steel_battle_axe" "|" ColorId RED }
+  { "hell_steel_spear" "|" ColorId RED }
+  { "hell_steel_spiked_mace" "-" ColorId RED }
+  { "hell_steel_sword" "-" ColorId RED }
+  { "hell_steel_warhammer" "|" ColorId RED }
+  { "hell_steel_war_axe" "|" ColorId RED }
+  { "high_priest" "p" ColorId WHITE }
+  { "hobgoblin" "o" ColorId RED }
+  { "light_fairy" "h" ColorId WHITE }
+  { "lion_queen" "p" ColorId ORANGE }
+  { "male_lion" "f" ColorId ORANGE }
+  { "magic_fairy" "h" ColorId PURPLE }
+  { "mushroom_man" "#" ColorId WHITE }
+  { "nature_fairy" "h" ColorId GREEN }
+  { "ogre_female" "o" ColorId GREEN }
+  { "orc_brute_lady" "0" ColorId BLUE }
+  { "orc_female" "o" ColorId GREEN }
+  { "orc_lady" "o" ColorId GREEN }
+  { "paladin" "p" ColorId YELLOW }
+  { "possessed_book" "#" ColorId RED }
+  { "rain_fairy" "h" ColorId BLUE }
+  { "rat_bowman" "h" ColorId PURPLE }
+  { "rat_general" "h" ColorId ORANGE }
+  { "rat_lady2" "h" ColorId PURPLE }
+  { "rat_man" "h" ColorId PURPLE }
+  { "rat_man2" "h" ColorId PURPLE }
+  { "reddragon" "d" ColorId RED }
+  { "red_dragonewt" "p" ColorId RED }
+  { "scree_bird" "b" ColorId GREEN }
+  { "shard_spitter" "u" ColorId PURPLE }
+  { "spirit_dragon" "^" ColorId BLUE }
+  { "sprite" "h" ColorId WHITE }
+  { "squidholder" "S" ColorId PURPLE }
+  { "troll_female" "T" ColorId PURPLE }
+  { "water_fairy" "h" ColorId PURPLE }
+  { "young_greendragon" "d" ColorId GREEN }
+  { "young_reddragon" "d" ColorId RED }
+  { "zombiedragon" "z" ColorId GRAY }
+
+#Added by your boi; Acre June 2019
+
+  { "adoxie_eye" "u" ColorId PURPLE }
+  { "ocean_portal" "+" ColorId BLUE }
+  { "lesser_eye_servant" "e" ColorId RED }
+  { "eye_scout" "e" ColorId RED }
+  { "vulturemutation" "b" ColorId RED }
+  { "totem_creature" "T" ColorId GREEN }
+  { "bufftotem_creature" "T" ColorId RED }
+  { "tar_pit" "@" ColorId PURPLE }
+  { "bandit_leader" "p" ColorId RED }
+  { "necromancer" "N" ColorId PURPLE }
+  { "lich_keeper3" "L" ColorId PURPLE }
+  { "skeleton_warrior" "s" ColorId PURPLE }
+  { "militia" "p" ColorId PURPLE }
+  { "giant_robot" "T" ColorId PURPLE }
+
+#Future use (Acre July 2019)
+  { "adamantite_knife" ")" ColorId PURPLE }
+  { "bone_knife" ")" ColorId LIGHT_GRAY }
+  { "bone_wand" "p" ColorId LIGHT_GRAY }
+  { "crystal1" "y" ColorId PINK }
+  { "eye_item" "o" ColorId RED }
+  { "fire_rune" "#" ColorId RED }
+  { "fire_sword" ")" ColorId RED }
+  { "ice_axe" ")" ColorId BLUE }
+  { "ice_rune" "#" ColorId BLUE }
+  { "needle" "i" ColorId PURPLE }
+  { "poison_bow" ")" ColorId GREEN }
+  { "poison_rune" "#" ColorId GREEN }
+  { "poison_sword" ")" ColorId GREEN }
+  { "ring1" "=" ColorId PURPLE }
+  { "scroll1" "?" ColorId PURPLE }
+  { "scroll2" "?" ColorId PURPLE }
+  { "shuriken" "%" ColorId PURPLE }
+  { "buff_tome" "+" ColorId BLUE }
+  { "undead_tome" "+" ColorId LIGHT_GRAY }
+  { "wooden_shield2" "]" ColorId BROWN }
+  { "wooden_boomerang" ")" ColorId BROWN }
+  
+ #MODDED by Righteous August 2019 (Goblin update)
+
+  { "elite_goblin_guard" "o" ColorId PURPLE }
+  { "goblin_archer" "o" ColorId GREEN }
+  { "goblin_brute" "O" ColorId GREEN }
+  { "goblin_chickenmancer" "o" ColorId GREEN }
+  { "goblin_high_priest" "o" ColorId RED }
+  { "goblin_kaboomer" "!" ColorId GREEN }
+  { "goblin_king" "o" ColorId YELLOW }
+  { "goblin_leprechaun" "o" ColorId GREEN }
+  { "goblin_priest" "o" ColorId LIGHT_GRAY }
+  { "goblin_warrior" "o" ColorId GREEN }
+  { "goblin_wizard" "o" ColorId PURPLE }
+  { "giant_chicken" "b" ColorId YELLOW }
+  { "gold_golem" "g" ColorId YELLOW }
+
+  { "dwarf_militia" "h" ColorId BLUE }
+  { "dwarf_fighter" "h" ColorId BLUE }
+  { "dwarf_warrior" "h" ColorId BLUE }
+  { "elite_dwarf_warrior" "h" ColorId BLUE }
+  { "dwarf_worker" "h" ColorId BLUE }
+}
