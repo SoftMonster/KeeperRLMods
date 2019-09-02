@@ -130,7 +130,6 @@
       {{Scroll Summon "FLY" {3 6}} 1 }
     }
   }
-
   "amulets"
   {
     items = { 
@@ -299,6 +298,27 @@
       {{Mushroom Lasting PANIC} 1000}
       {{Mushroom Lasting REGENERATION} 1000}
       {{Mushroom Lasting RAGE} 1000}
+    }
+  }
+
+  "wildernessItems" inherit "goodMushrooms"
+  {
+    items = append {
+      {{Mushroom Lasting HALLU} 10}
+    }
+  }
+
+  "desertItems"
+  {
+    items = {
+      {{Simple "Skeleton"} 1}
+    }
+  }
+  
+  "snowItems"
+  {
+    items = {
+      {{Simple "FrozenRemains"} 1}
     }
   }
 
