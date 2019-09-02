@@ -1,4 +1,16 @@
 {
+  "emptyChests"
+  {
+    {
+	  "TREASURE_CHEST" 1
+    }
+  }
+  "demonic"
+  {
+    {
+	  "TORTURE_TABLE" 1
+    }
+  }
   "roomFurniture"
   {
     {

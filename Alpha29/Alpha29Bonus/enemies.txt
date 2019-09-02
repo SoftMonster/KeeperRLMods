@@ -549,6 +549,7 @@
       }
       locationName = "Adoxie"
       race = "demons"
+      furniture = { "demonic" }
     }
   }
   "VILLAGE"
@@ -867,7 +868,7 @@
       maxPopulation = 5
     }
     levelConnection = {
-      topLevel = ExtraEnemy {"MAIN_DUNGEON_ENTRY"}
+      topLevel = ExtraEnemy {"ADOXIE_SURFACE_BANDITS"}
       levels = {
         { ExtraEnemy { "ADOXIE_BANDITS" { 1 } } 30 30 DUNGEON }
         { ExtraEnemy { "ADOXIE_LIZARDMEN" { 1 } } 70 70 DUNGEON }
@@ -1030,11 +1031,11 @@
   {
     settlement = {
       type = MINETOWN
-      tribe = HOSTILE
+      tribe = MONSTER
       inhabitants = {
         leader = { { "DWARF_BARON" } }
         fighters = {
-          count = {15 20}
+          count = {20 25}
           all = {
             1 "DWARF"
           }
@@ -1052,7 +1053,8 @@
       }
       locationName = "Adoxie"
       race = "dark dwarves"
-      buildingId = "SANDSTONE_WALL"
+      buildingId = "SANDSTONE_WALL_DWARVEN"
+      furniture = { "emptyChests" }
     }
   }
   "ELVES"
@@ -1078,7 +1080,7 @@
       tribe = ELF
       race = "elves"
       stockpiles = {{ "gold" 100 "TREASURE_CHEST"}}
-      buildingId = "WOOD"
+      buildingId = "BARRICADES"
       lootItem = {TechBook "master sorcery"}
       furniture = { "elvenRoomFurniture" }
     }
@@ -1252,6 +1254,10 @@
       ransom = 0.5 80
     }
   }
+  "ADOXIE_SURFACE_BANDITS" inherit "NO_AGGRO_BANDITS"
+  {
+    discoverable = false
+  }
   "ADOXIE_BANDITS" inherit "NO_AGGRO_BANDITS"
   {
     settlement = {
@@ -1270,6 +1276,7 @@
       race = "bandits"
       buildingId = "BRICK"
       locationName = "Adoxie"
+      furniture = { "roomFurniture" }
     }
   }
   "COTTAGE_BANDITS" inherit "NO_AGGRO_BANDITS"
@@ -1833,6 +1840,7 @@
       tribe = HOSTILE
       locationName = "Adoxie"
       buildingId = "WOOD_CASTLE"
+      furniture = { "roomFurniture" }
     }
   }
   "HYDRA"

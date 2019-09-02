@@ -6,6 +6,12 @@
       door = { "WOOD_DOOR" 1.0 }
       gate = { "WOOD_GATE" 1.0 }
     }
+  "BARRICADES"
+    {
+      wall = "BARRICADE"
+      floorInside = "GRASS"
+      door = { "WOOD_DOOR" 1.0 }
+    }
   "WOOD_CASTLE"
     {
       wall = "WOOD_WALL"
@@ -60,6 +66,11 @@
       downStairs = "DOWN_STAIRS_ROCK"
       upStairs = "UP_STAIRS_ROCK"
     }
+  "SANDSTONE_WALL_DWARVEN"
+    {
+      wall = "SANDSTONE"
+      door = { "CHEST" 1.0 }
+	}
   "RUINS"
     {
       wall = "RUIN_WALL"
