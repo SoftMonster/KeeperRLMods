@@ -534,6 +534,23 @@
       }
     }
   }
+  "ADOXIE_DEMONS"
+  {
+    settlement = {
+      type = VILLAGE
+      buildingId = "RUINS"
+      tribe = MONSTER
+      inhabitants = {
+        leader = { { "DEMON_LORD" } }
+        fighters = {
+          count = {5 10}
+          all = { 1 "DEMON_DWELLER" }
+        }
+      }
+      locationName = "Adoxie"
+      race = "demons"
+    }
+  }
   "VILLAGE"
   {
     settlement = {
@@ -848,7 +865,18 @@
     config = {
       immigrantInterval = 15
       maxPopulation = 5
-    }    
+    }
+    levelConnection = {
+      topLevel = ExtraEnemy {"MAIN_DUNGEON_ENTRY"}
+      levels = {
+        { ExtraEnemy { "ADOXIE_BANDITS" { 1 } } 30 30 DUNGEON }
+        { ExtraEnemy { "ADOXIE_LIZARDMEN" { 1 } } 70 70 DUNGEON }
+        { ExtraEnemy { "ADOXIE_CYCLOPS" { 1 } } 20 20 DUNGEON }
+        { ExtraEnemy { "ADOXIE_DWARVES" { 1 } } 300 90 MAZE }
+        { ExtraEnemy { "ADOXIE_DEMONS" { 1 } } 50 50 MAZE }
+        { MainEnemy 30 30 MINETOWN }
+      }
+    }
     immigrants = {
       {
         ids = {"ADOXIE_FOOT_LEFT" "ADOXIE_FOOT_RIGHT" "ADOXIE_LEFT_HAND" "ADOXIE_HAND_RIGHT" "ADOXIE_EYE"}
@@ -996,6 +1024,35 @@
         traits = {FIGHTER}
         frequency = 1
       }
+    }
+  }
+  "ADOXIE_DWARVES" inherit "DWARVES"
+  {
+    settlement = {
+      type = MINETOWN
+      tribe = HOSTILE
+      inhabitants = {
+        leader = { { "DWARF_BARON" } }
+        fighters = {
+          count = {15 20}
+          all = {
+            1 "DWARF"
+          }
+          baseLevelIncrease = {
+            MELEE 10
+          }
+        }
+        civilians = {
+          count = {3 5}
+          all = {
+            2 "DWARF_FEMALE"
+            1 "RAT"
+          }
+        }
+      }
+      locationName = "Adoxie"
+      race = "dark dwarves"
+      buildingId = "SANDSTONE_WALL"
     }
   }
   "ELVES"
@@ -1195,6 +1252,26 @@
       ransom = 0.5 80
     }
   }
+  "ADOXIE_BANDITS" inherit "NO_AGGRO_BANDITS"
+  {
+    settlement = {
+      type = CAVE
+      inhabitants = {
+       leader = { { "BANDIT_LEADER" } }
+        fighters = {
+          count = {10 11}
+          all = { 1 "BANDIT" }
+          baseLevelIncrease = {
+            MELEE 10
+          }
+        }
+      }
+      tribe = BANDIT
+      race = "bandits"
+      buildingId = "BRICK"
+      locationName = "Adoxie"
+    }
+  }
   "COTTAGE_BANDITS" inherit "NO_AGGRO_BANDITS"
   {
     createOnBones = 1.0 { "HUMAN_COTTAGE" }
@@ -1334,6 +1411,24 @@
         traits = { FIGHTER }
         frequency = 1
       }
+    }
+  }
+  "ADOXIE_LIZARDMEN" inherit "LIZARDMEN"
+  {
+    settlement = {
+      type = VILLAGE
+      tribe = LIZARD
+      inhabitants = {
+        leader = { { "LIZARDLORD" } }
+        fighters = {
+          count = {7 10}
+          all = { 1 "LIZARDMAN" }
+        }
+      }
+      locationName = "Adoxie"
+      race = "lizardmen"
+      buildingId = "MUD"
+      furniture = { "roomFurniture" }
     }
   }
   "RATMEN"
@@ -1725,6 +1820,19 @@
       minTeamSize = 1
       triggers = {EnemyPopulation 13}
       attackBehaviour = KillMembers 4
+    }
+  }
+  "ADOXIE_CYCLOPS" inherit "CYCLOPS"
+  {
+    settlement = {
+      type = CAVE
+      inhabitants = {
+        leader = { { "CYCLOPS" } }
+      }
+      race = "cyclops"
+      tribe = HOSTILE
+      locationName = "Adoxie"
+      buildingId = "WOOD_CASTLE"
     }
   }
   "HYDRA"
