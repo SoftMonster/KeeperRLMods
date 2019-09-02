@@ -1,2 +1,5 @@
 ""
-"Official game content for KeeperRL."
+"New keeper classes and adventurers.
+About double the number of creatures.
+About double the number of factions.
+New spells, spell schools, technologies and map features."
