@@ -10,8 +10,8 @@
   {
     items = {
       {{Scroll Escape} 5 }
-      {{Scroll EnhanceArmor} 5 }
-      {{Scroll EnhanceWeapon} 5 }
+      {{Scroll Enhance ARMOR 1} 5 }
+      {{Scroll Enhance WEAPON 1} 5 }
       {{FireScroll 5 }}
       {{Simple "Torch" 10 }}
       {{Scroll Summon "FIRE_ELEMENTAL" {1 2}} 5 }
@@ -121,8 +121,8 @@
   {
     items = {
       {{Scroll Escape} 1 }
-      {{Scroll EnhanceArmor} 1 }
-      {{Scroll EnhanceWeapon} 1 }
+      {{Scroll Enhance ARMOR 1} 1 }
+      {{Scroll Enhance WEAPON 1} 1 }
       {{FireScroll} 1 }
       {{Scroll Summon "FIRE_ELEMENTAL" {1 2}} 1 }
       {{Scroll CircularBlast} 1 }
@@ -221,8 +221,8 @@
       {{ Simple "Rock" } 10 {4 9} }
       {{ Scroll CircularBlast } 10 }
       {{ Scroll Deception } 10 }
-      {{ Scroll EnhanceArmor } 10 }
-      {{ Scroll EnhanceWeapon } 10 }
+      {{ Scroll Enhance ARMOR 1 } 10 }
+      {{ Scroll Enhance WEAPON 1 } 10 }
       {{ Scroll Escape } 10 }
       {{ Scroll Lasting FIRE_RESISTANT  } 10 }
       {{ Scroll Summon "FIRE_ELEMENTAL" {1 2}} 10 }
