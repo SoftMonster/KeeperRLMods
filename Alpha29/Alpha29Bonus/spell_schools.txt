@@ -206,4 +206,57 @@
     "advanced haste" 11
     "invisibility" 12
   }
+
+#--------------------------------------------------------------
+# spells_schools.txt - August 2019 by Righteous for adventurers
+#--------------------------------------------------------------
+  "war magic" SPELL
+  {
+    "healing" 1
+    "escape" 3
+    "defense bonus" 5
+    "damage bonus" 5
+    "stone to mud" 7
+    "resist magic" 9
+    "entangling vines" 9
+    "advanced mind bolt"  11
+    "invisibility" 12
+  }
+  "battle mage" SPELL
+  {
+	"healing" 1
+	"advanced magic missile" 1
+	"escape" 1
+	"deception" 1
+    "snakes" 2
+	"summon element" 3
+	"area defense bonus" 4
+	"area damage bonus" 4
+    "healing totem" 5
+	"advanced healing" 5
+	"buff totem" 6
+	"wolves" 7
+	"bear" 7
+	"boar" 7
+	"expert magic missile" 7
+    "resist magic" 8
+	"arrow shield" 8
+	"magic cancellation" 9
+    "entangling vines" 9
+	"stone to mud" 10
+	"stone golem" 10
+    "advanced mind bolt"  11
+	"iron golem" 11
+	"stone golems" 11
+    "invisibility" 12
+	"adamantine golem" 12
+	"iron golems" 12
+	"telepathy" 13
+	"elf vision" 13
+	"summon spirit" 14
+	"adamantine golems" 14
+	"rapid magic missile" 15
+	"pacify" 15
+	"advanced invisibility" 16
+  }
 }

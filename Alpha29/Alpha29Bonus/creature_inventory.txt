@@ -14,6 +14,36 @@
         { Simple "LeatherHelm"}
         { Simple "Sword"}
       }
+  {"WARRIOR_ADVENTURER_FEMALE" "WARRIOR_ADVENTURER"}
+      {
+        { Simple "FirstAidKit" 2 4 }
+        { Simple "Sword"}
+		{ Simple "WoodenShield"}
+        { Simple "LeatherGloves"}
+        { Simple "ChainArmor"}
+        { Simple "LeatherHelm"}
+        { Simple "GoldPiece" 16 26 }
+      }
+  {"MAGE_ADVENTURER_FEMALE" "MAGE_ADVENTURER"}
+      {
+        { Simple "FirstAidKit" 2 4 }
+		{ Simple "IronStaff"}
+        { Simple "LeatherGloves"}
+        { type = Simple "Robe" prefixChance = 1 }
+        { Simple "LeatherHelm"}
+		{ Simple "LeatherBoots"}
+        { Simple "GoldPiece" 16 26 }
+	  }
+  {"RANGER_ADVENTURER_FEMALE" "RANGER_ADVENTURER"}
+      {
+        { Simple "FirstAidKit" 2 4 }
+        { Simple "Sword"}
+		{ Simple "Bow"}
+        { Simple "LeatherBoots"}
+        { Simple "LeatherArmor"}
+        { Simple "LeatherHelm"}
+        { Simple "GoldPiece" 16 26 }
+	  }
   {"CYCLOPS"}
       {
         { Simple "HeavyClub"}

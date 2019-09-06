@@ -527,7 +527,7 @@
   { viewId = "adamantium_ore" symbol = "⁂" color = ColorId LIGHT_BLUE
     isSymbolFont = true wallShadow = true mountainSides = "mountain"
     background = "mountain2" }
-	
+
 #MODDED by Righteous June 2019
 
   { "abomination" "z" ColorId LIGHT_GRAY }
@@ -634,6 +634,7 @@
   { "young_greendragon" "d" ColorId GREEN }
   { "young_reddragon" "d" ColorId RED }
   { "zombiedragon" "z" ColorId GRAY }
+  { "troll_champion_female" "O" ColorId LIGHT_GRAY }
 
 #Added by your boi; Acre June 2019
 
@@ -696,4 +697,13 @@
   { "dwarf_warrior" "h" ColorId BLUE }
   { "elite_dwarf_warrior" "h" ColorId BLUE }
   { "dwarf_worker" "h" ColorId BLUE }
+
+ #MODDED by Righteous August 2019 (Adventurer update)
+
+  { "warrior_adventurer" "@" ColorId RED }
+  { "warrior_adventurer_female" "@" ColorId RED }
+  { "mage_adventurer" "@" ColorId BLUE }
+  { "mage_adventurer_female" "@" ColorId BLUE }
+  { "ranger_adventurer" "@" ColorId ORANGE }
+  { "ranger_adventurer_female" "@" ColorId ORANGE }
 }

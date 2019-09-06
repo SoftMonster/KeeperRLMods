@@ -170,7 +170,7 @@
     description = "(Hard) Play a tribe of dwarves and maximise melee combat."
   }
   {
-    creatureId = { "DUNGEON_MASTER" }
+    creatureId = { "MAGIC_FAIRY" }
     tribeAlignment = EVIL
     immigrantGroups = {"sandbox"}
     technology = {
@@ -195,15 +195,19 @@
 
 # Adventurers
 {
-    # CreatureId                     TribeAlignment 
-    { "ADOXIE_HEAD" }                  EVIL               "(Easy)      Wipe the floor with mortals as Adoxie the Dark One."
-    { "ADVENTURER" "ADVENTURER_F" }    LAWFUL             "(Challenge) Train a mixture of skills in magic, combat and archery!"
-    { "DWARF_BARON" }                  LAWFUL             "(Challenge) March solo against the foes of the dwarves."
-    { "CYCLOPS" }                      EVIL               "(Challenge) Slaughter the world as a lone cyclops."
-    { "MINOTAUR" }                     EVIL               "(Challenge) Crush your enemies as a single minotaur warrior."
-    { "WARRIOR_HERO" }                 LAWFUL             "(Challenge) Play as a warrior hero."
-    { "NECROMANCER" }                  EVIL               "(Challenge) Oppose the world and rid it of all life."
+    # CreatureId										TribeAlignment 
+    { "ADOXIE_HEAD" }										EVIL               "(Easy)      Wipe the floor with mortals as Adoxie the Dark One."
+    { "ADVENTURER" "ADVENTURER_F" }							LAWFUL             "(Challenge) The Classic. Train a mixture of skills in magic, combat and archery!"
+	{ "WARRIOR_ADVENTURER" "WARRIOR_ADVENTURER_FEMALE" }    LAWFUL             "(Challenge) Focus on melee and support magic to crush your foes!"
+	{ "MAGE_ADVENTURER" "MAGE_ADVENTURER_FEMALE" }			LAWFUL             "(Challenge) Train in the way of a true wizard and conquer the land with spells!"
+	{ "RANGER_ADVENTURER" "RANGER_ADVENTURER_FEMALE" }		LAWFUL             "(Challenge) Play as an archer. Use archery and some melee skill to kill your enemies!"
+    { "DWARF_BARON" }										LAWFUL             "(Challenge) March solo against the foes of the dwarves."
+    { "MINOTAUR" }											EVIL               "(Challenge) Crush your enemies as a single minotaur warrior."
+    { "WARRIOR_HERO" }										LAWFUL             "(Challenge) Play as a warrior hero."
+    { "NECROMANCER" }										EVIL               "(Challenge) Oppose the world and rid it of all life."
+	{ "CLERIC_HERO" "CLERIC_HERO" }							LAWFUL             "(Challenge) Be a cleric hero."
+    { "CYCLOPS" }                                           EVIL               "(Challenge) Slaughter the world as a lone cyclops."
 	{ "THIEF_HERO" "THIEF_HERO" }      LAWFUL             "(Challenge) Play as an archer assassin. Travel light, rely on stealth and arrows."
-	{ "CLERIC_HERO" "CLERIC_HERO" }    LAWFUL             "(Challenge) Be a cleric hero."
 	{ "WIZARD_ADVENTURER" }            LAWFUL             "(Challenge) Wizard hero class. Train magic powers."
+
 }

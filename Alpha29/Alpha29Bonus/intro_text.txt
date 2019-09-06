@@ -1,10 +1,10 @@
 {"Welcome to KeeperRL Alpha 29 bonus features mod.
   
- A lot of modding support has arrived with this update. Enjoy!
+ Even more modding support has arrived with this update than Alpha 28. Enjoy!
 
  (Credits)
 
- The bonus feature mod team: SoftMonster and RighteousSinner, Acre, 8bit, and Logodum
+ The bonus feature mod team: SoftMonster, RighteousSinner, Acre, 8bit, and Logodum
 
  Thanks for playing the Mod, have fun!
 

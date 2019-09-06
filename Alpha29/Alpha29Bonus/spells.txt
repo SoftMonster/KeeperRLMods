@@ -215,6 +215,14 @@
     sound = SPELL_SPEED_SELF
   }
   {
+    id =  "area haste"
+	upgrade = "haste other"
+    symbol = "🏃"
+    effect = Area 2 Filter ALLY Lasting SPEED
+    cooldown = 110
+    sound = SPELL_SPEED_SELF
+  }
+  {
     id =  "slow"
     symbol = "🐢"
     effect = Lasting SLOWED
@@ -283,6 +291,14 @@
     sound = SPELL_DEX_BONUS
   }
   {
+    id =  "area defense bonus"
+	upgrade = "defend other"
+    symbol = "🛡"
+    effect = Area 2 Filter ALLY Lasting DEF_BONUS
+    cooldown = 70
+    sound = SPELL_DEX_BONUS
+  }
+  {
     id = "block"
     symbol = "🛡"
     effect = Lasting DEF_BONUS
@@ -312,6 +328,14 @@
     effect = Lasting DAM_BONUS
     targetSelf = false
     range = 3
+    cooldown = 70
+    sound = SPELL_STR_BONUS
+  }
+  {
+    id =  "area damage bonus"
+	upgrade = "friendly damage bonus"
+    symbol = "💪"
+    effect = Area 2 Filter ALLY Lasting DAM_BONUS
     cooldown = 70
     sound = SPELL_STR_BONUS
   }
@@ -394,15 +418,6 @@
     sound = SPELL_FIRE_SPHERE_PET
   }
   {
-    id =  "ice cone"
-    symbol = "❄"
-    effect = Ice
-    fx = ICE
-    range = 4
-    cooldown = 30
-    #sound = SPELL_FIRE_SPHERE_PET
-  }
-  {
    id = "magma bolt"
    symbol = "{🔥}"
    effect = Fire
@@ -410,6 +425,15 @@
    range = 6
    cooldown = 35
    sound = SPELL_FIRE_SPHERE_PET
+  }
+  {
+    id =  "ice cone"
+    symbol = "❄"
+    effect = Ice
+    fx = ICE
+    range = 4
+    cooldown = 30
+    #sound = SPELL_FIRE_SPHERE_PET
   }
   {
     id =  "shove"
@@ -430,7 +454,7 @@
   {
     id =  "black dragon blindness"
     symbol = "🙈"
-    effect = Area 30 Lasting BLIND
+    effect = Area 30 Filter ENEMY Lasting BLIND
     cooldown = 3
   }
   {
@@ -441,10 +465,48 @@
     targetSelf = false
     cooldown = 150
   }
- {
+  {
    id = "stone golem"
    symbol = "👤"
    effect = Summon "STONE_GOLEM" { 1 2}
+   cooldown = 100
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "stone golems"
+   upgrade = "stone golem"
+   symbol = "👤"
+   effect = Summon "STONE_GOLEM" { 4 7}
+   cooldown = 100
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "iron golem"
+   symbol = "👤"
+   effect = Summon "IRON_GOLEM" { 1 2}
+   cooldown = 100
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "iron golems"
+   upgrade = "iron golem"
+   symbol = "👤"
+   effect = Summon "IRON_GOLEM" { 4 7}
+   cooldown = 100
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "adamantine golem"
+   symbol = "👤"
+   effect = Summon "ADA_GOLEM" { 1 2}
+   cooldown = 100
+   sound = SPELL_SUMMON_SPIRIT
+ }
+ {
+   id = "adamantine golems"
+   upgrade = "adamantine golem"
+   symbol = "👤"
+   effect = Summon "ADA_GOLEM" { 4 7}
    cooldown = 100
    sound = SPELL_SUMMON_SPIRIT
  }
@@ -623,6 +685,15 @@
    range = 1
    effect = Lasting INSANITY
    cooldown = 180
+   sound = SPELL_BLAST
+ }
+ {
+   id = "advanced mind bolt"
+   upgrade = "mind bolt"
+   symbol = "⇝"
+   range = 6
+   effect = Lasting INSANITY
+   cooldown = 120
    sound = SPELL_BLAST
  }
  {
@@ -811,14 +882,14 @@
  {
     id =  "goblin damage buff"
     symbol = "💪"
-    effect = Area 2 Lasting DAM_BONUS
+    effect = Area 2 Filter ALLY Lasting DAM_BONUS
     cooldown = 10
     sound = SPELL_STR_BONUS
  }
  {
     id =  "goblin defense buff"
     symbol = "🛡"
-    effect = Area 2 Lasting DEF_BONUS
+    effect = Area 2 Filter ALLY Lasting DEF_BONUS
     cooldown = 10
     sound = SPELL_DEX_BONUS
  }
