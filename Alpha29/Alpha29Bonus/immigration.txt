@@ -156,7 +156,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
         }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
@@ -164,7 +164,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
         }
 		{
           ids = { "CYCLOPS" }
@@ -246,7 +246,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
         }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
@@ -254,7 +254,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
         }
         {
           ids = { "ORC" "ORC_FEMALE" }
@@ -696,7 +696,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
         }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
@@ -704,7 +704,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
         }
         {
           ids = { "KNIGHT_PLAYER" }
@@ -988,15 +988,15 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
-        }
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+       }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
         }
         {
           ids = { "GNOME_PLAYER" }
@@ -1048,7 +1048,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
         }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
@@ -1056,7 +1056,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
         }
         {
           ids = { "DWARF_MILITIA" }
@@ -1141,7 +1141,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
         }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
@@ -1149,7 +1149,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
         }
 		{
 		  ids = { "NECROMANCER" }
@@ -1566,7 +1566,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
@@ -1577,7 +1577,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
@@ -2013,7 +2013,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  }}
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
@@ -2024,7 +2024,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  }}
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
