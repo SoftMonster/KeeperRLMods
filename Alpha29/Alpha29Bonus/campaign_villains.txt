@@ -23,6 +23,7 @@
     { "thief_leader" } "THIEVES" "Thieves" MAIN
     { "demon_lord" } "DEMON_DEN" "Demon den" MAIN
     { "dungeon_entrance" } "MAIN_DUNGEON" "Unremarkable dungeon" MAIN
+    { "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN
 
     { "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER
     { "male_lion" } "LION_PRIDE" "Pride of Lions" LESSER
@@ -37,7 +38,6 @@
     { "zombie" } "CEMETERY" "Zombies" LESSER
     { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER
     { "ocean_portal" } "OCEAN_PORTAL" "Ocean Portal" LESSER
-    { "goblin_king" } "GOBLIN_KING" "Goblin King" LESSER
 
     { "unknown_monster" } "OGRE_CAVE" "Unknown" ALLY
     { "unknown_monster" } "HARPY_CAVE" "Unknown" ALLY
@@ -62,6 +62,7 @@
     { "demon_lord" } "DEMON_DEN" "Demon den" MAIN
     { "lizardlord" } "LIZARDMEN" "Lizardmen" MAIN
     { "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN
+    { "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN
 
     { "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER
     { "male_lion" } "LION_PRIDE" "Pride of Lions" LESSER
@@ -73,7 +74,6 @@
     { "harpy" } "HARPY_CAVE" "Harpies" LESSER
     { "ant_queen" } "ANTS_OPEN" "Ants" LESSER
     { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER
-    { "goblin_king" } "GOBLIN_KING" "Goblin King" LESSER
 
     { "dwarf_baron" } "DWARVES" "Dwarves" ALLY
 }
