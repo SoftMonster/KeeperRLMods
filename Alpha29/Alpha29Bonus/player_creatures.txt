@@ -170,7 +170,7 @@
     description = "(Hard) Play a tribe of dwarves and maximise melee combat."
   }
   {
-    creatureId = { "MAGIC_FAIRY" }
+    creatureId = { "DUNGEON_MASTER" }
     tribeAlignment = EVIL
     immigrantGroups = {"sandbox"}
     technology = {
