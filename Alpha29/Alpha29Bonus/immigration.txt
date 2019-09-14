@@ -238,8 +238,8 @@
           frequency = 0.3
           spawnLocation = FurnitureType "DEMON_SHRINE"
           requirements = {
-            { 0.3 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
-            { 0.0 FurnitureType "DEMON_SHRINE" }
+            { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
+            { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
             { 0.0 CostInfo DEMON_PIETY 1000 }            
             { 0.0 NegateRequirement TechId "combat succubus" }		  
           }
@@ -298,8 +298,8 @@
           frequency = 0.1
           requirements = {
             { 0.0 MinTurnRequirement 2000 }
-            { 0.0 FurnitureType "BEAST_CAGE" }
             { 0.3 AttractionInfo 2 {FurnitureType "TRAINING_IRON"}}
+            { 0.0 AttractionInfo 1 {FurnitureType "BEAST_CAGE"}}
           }
           specialTraits = {
              { 0.1 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
@@ -996,7 +996,7 @@
 		  consumeIds = true
           initialRecruitment = 1
           requirements = {
-            { 1.0 AttractionInfo 1 {FurnitureType "TRAINING_WOOD"}}
+            { 1.0 AttractionInfo 1 {FurnitureType "COFFIN3"}}
             { 1.0 CostInfo CORPSE 1}
             { 0.0 TechId "mummy hoards" }
 		  }
@@ -1483,8 +1483,8 @@
           frequency = 0.3
           spawnLocation = FurnitureType "DEMON_SHRINE"
           requirements = {
-            { 0.3 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
-            { 0.0 FurnitureType "DEMON_SHRINE" }
+            { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
+            { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
             { 0.0 CostInfo DEMON_PIETY 1000 }            
             { 0.0 NegateRequirement TechId "combat succubus" }		  
           }
@@ -1498,8 +1498,8 @@
           frequency = 0.3
           spawnLocation = FurnitureType "DEMON_SHRINE"
           requirements = {
-            { 0.3 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
-            { 0.0 FurnitureType "DEMON_SHRINE" }
+            { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
+            { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
             { 0.0 CostInfo DEMON_PIETY 1000 }
             { 0.0 TechId "combat succubus" }
           }
@@ -1576,8 +1576,8 @@
           frequency = 0.1
           requirements = {
             { 0.0 MinTurnRequirement 2000 }
-            { 0.0 FurnitureType "BEAST_CAGE" }
             { 0.3 AttractionInfo 2 {FurnitureType "TRAINING_IRON"}}
+            { 0.0 AttractionInfo 1 {FurnitureType "BEAST_CAGE"}}
           }
           specialTraits = {
              { 0.1 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
@@ -2027,8 +2027,8 @@
           frequency = 0.3
           spawnLocation = FurnitureType "DEMON_SHRINE"
           requirements = {
-            { 0.3 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
-            { 0.0 FurnitureType "DEMON_SHRINE" }
+            { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
+            { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
             { 0.0 CostInfo DEMON_PIETY 1000 }            
             { 0.0 NegateRequirement TechId "combat succubus" }		  
           }
@@ -2042,8 +2042,8 @@
           frequency = 0.3
           spawnLocation = FurnitureType "DEMON_SHRINE"
           requirements = {
-            { 0.3 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
-            { 0.0 FurnitureType "DEMON_SHRINE" }
+            { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
+            { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
             { 0.0 CostInfo DEMON_PIETY 1000 }
             { 0.0 TechId "combat succubus" }
           }
@@ -2121,8 +2121,8 @@
           frequency = 0.1
           requirements = {
             { 0.0 MinTurnRequirement 2000 }
-            { 0.0 FurnitureType "BEAST_CAGE" }
             { 0.3 AttractionInfo 2 {FurnitureType "TRAINING_IRON"}}
+            { 0.0 AttractionInfo 1 {FurnitureType "BEAST_CAGE"}}
           }
           specialTraits = {
              { 0.1 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
@@ -2239,8 +2239,8 @@
           frequency = 0.3
           spawnLocation = FurnitureType "DEMON_SHRINE"
           requirements = {
-            { 0.3 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
-            { 0.0 FurnitureType "DEMON_SHRINE" }
+            { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
+            { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
             { 0.0 CostInfo DEMON_PIETY 1000 }
             { 0.0 TechId "combat succubus" }
           }
