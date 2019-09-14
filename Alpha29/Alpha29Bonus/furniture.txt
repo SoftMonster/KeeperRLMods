@@ -1385,4 +1385,20 @@
     viewId = { "impaled_head" }
     wall = true
   }
+  "LITTLE_SPIDER_WEB"
+  {
+    name = "spider web"
+    viewId = { "web_trap" }
+    strength = 1
+    blockMovement = true
+    destroyedEffect =  Chain { SummonEnemy "SPIDER" {1} Area 0 Permanent SUMMONED }
+  }
+  "BIG_SPIDER_WEB"
+  {
+    name = "spider web"
+    viewId = { "web_trap" }
+    strength = 1
+    blockMovement = true
+    destroyedEffect =  Chain { SummonEnemy "SHELOB" {1} PlaceFurniture "CHEST" Area 0 Permanent SUMMONED }
+  }
 }

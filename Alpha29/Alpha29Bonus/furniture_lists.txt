@@ -74,8 +74,17 @@
   "randomTerrain"
   {
     {
-      "STONES" 1
-    }
+      "STONES" 25 #Modded
+#Modded additional items
+	  "RUBBLE" 5	  
+	  "GRAVE" 5
+      "PIT" 5
+      "HILL" 5	  
+      "SAND" 5
+      "SHALLOW_WATER2" 5
+      "LITTLE_SPIDER_WEB" 2
+      "BIG_SPIDER_WEB" 1
+	}
   }
   "cryptCoffins"
   {
