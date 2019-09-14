@@ -81,6 +81,7 @@
       "PIT" 5
       "HILL" 5	  
       "SAND" 5
+      "GRASS" 5
       "PUDDLE" 5
       "LITTLE_SPIDER_WEB" 2
       "BIG_SPIDER_WEB" 1
