@@ -831,11 +831,6 @@
             { 0.6 CostInfo CORPSE 1}
             { 0.0 TechId "zombie hoards" }
           }
-		  specialTraits = {
-             {1.0 { LastingEffect DARKNESS_SOURCE }}
-             {1.0 { SkillId DIGGING }}
-			 {1.0 { SkillId WORKSHOP }}
-		  }
         }
         {
           ids = { "ZOMBIE_DRAGON" "ZOMBIE_DRAGON" "ZOMBIE_DRAGON" }
@@ -872,12 +867,6 @@
             { 0.8 CostInfo CORPSE 1}
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
             { 0.0 TechId "skeleton hoards" }
-          }
-          specialTraits = {
-            { 1.0 { SkillId FORGE }}
-            { 1.0 { SkillId DIGGING }}
-            { 0.3 { ExtraTraining MELEE 3}}
-            { 0.3 { AttrBonus DAMAGE 3}}
           }
         }
         {
@@ -919,14 +908,6 @@
             { 1.0 CostInfo CORPSE 1}
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
             { 0.0 TechId "vampire hoards" }
-          }
-          specialTraits = {
-             { 0.3 { LastingEffect TELEPATHY }}
-             { 0.3 { LastingEffect FIRE_RESISTANT }}
-             { 0.3 { LastingEffect FLYING }}
-             { 0.3 { LastingEffect DARKNESS_SOURCE }}
-             { 0.3 { AttrBonus SPELL_DAMAGE 4}}
-             { 0.3 { ExtraTraining SPELL 4}}
           }
         }
         {
@@ -974,10 +955,6 @@
             { 0.8 CostInfo CORPSE 1}
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
             { 0.0 TechId "mummy hoards" }
-          }
-          specialTraits = {
-            { 0.3 { ExtraTraining MELEE 3}}
-            { 0.3 { AttrBonus DAMAGE 3}}
           }
         }
         {
