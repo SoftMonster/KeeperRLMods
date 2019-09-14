@@ -753,14 +753,6 @@
           consumeIds = true    
           requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
         }
-        {
-          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true
-          consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
-        }
 		{
 		  ids = { "NECROMANCER" }
           traits = { FIGHTER }

@@ -155,7 +155,7 @@
     immigrantGroups = {"necromancer"}
     technology = {
         "regrow limbs" "pig breeding" "iron working" "simplistic animations"
-		"magic contraptions" "two-handed weapons" "sorcery"
+		"two-handed weapons" "sorcery"
         "advanced sorcery" "magical weapons" "master sorcery" "archery"
 		"zombie hoards"  "mummy hoards" "skeleton hoards"  "vampire hoards"
 		"lord of war" "lord of magic" "lord of speed" "lord of resistance" }
