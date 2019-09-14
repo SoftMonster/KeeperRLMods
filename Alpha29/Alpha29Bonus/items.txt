@@ -984,4 +984,22 @@
       weight = 0.01
       wishedCount = { 500 1000 }
     }
+    
+########
+#Modded
+########
+
+  "GamblingRod"
+    {
+      viewId = { "wooden_staff" }
+      name = "armour gambling"
+      weight = 0.5
+      itemClass = TOOL
+      description = "Randomly channels defensive ability of worn armours into each other."
+      applyTime = 5
+      uses = 2
+      usedUpMsg = true
+      displayUses = true
+      effect = Chain { Enhance ARMOR 3 Enhance ARMOR -3 Enhance ARMOR 2 Enhance ARMOR -2 Enhance ARMOR -1 Enhance ARMOR 1 }
+    }
 }
