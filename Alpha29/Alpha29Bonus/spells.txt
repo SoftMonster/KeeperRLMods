@@ -907,4 +907,10 @@
    cooldown = 120
    sound = SPELL_SUMMON_SPIRIT
  }
+  {
+    id = "double trouble"
+    symbol = "👤👤"
+    effect = DoubleTrouble
+    cooldown = 1000
+  }
 }

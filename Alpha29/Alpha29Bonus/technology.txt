@@ -1,6 +1,5 @@
 {
 {
-#Vanilla
   "alchemy"                  { "Build a laboratory and produce basic potions." }
   "advanced alchemy"         { "Produce more powerful potions."                               {"alchemy"} }
   "alchemical conversion"    { "Convert resources to and from gold."                          {"alchemy"} }

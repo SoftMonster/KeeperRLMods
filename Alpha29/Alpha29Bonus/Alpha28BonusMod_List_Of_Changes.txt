@@ -3,7 +3,6 @@
 Campaign Enemies: 
 - Pride of Lions
 - Necromancer Abode
-- Adoxie
 - Hell portal
 - Ocean portal
 - Centaurs
@@ -22,12 +21,6 @@ New units:
 - Eye Servant
 - Lesser Eye Servant
 - Vulture Abomination
-- Adoxie’s Head
-- Adoxie’s Eye
-- Adoxie’s Left Hand
-- Adoxie’s Right Hand
-- Adoxie’s Left Foot
-- Adoxie’s Right Foot
 - Ocean Portal
 - Hell Portal
 - Dark Orc
@@ -56,7 +49,6 @@ New units:
 - Cow Demon
 - Armored Cow Demon
 - Arachne
-- Abomination
 - Rat General
 - Rat Archer
 - Rat Soldier (Re-sprite)
@@ -221,10 +213,6 @@ New Spells:
 - Regrow Body Parts
 - Summon Water Elementals
 - Summon Air Elementals
-- Summon Adoxie’s Right Hand
-- Summon Adoxie’s Left Hand
-- Summon Adoxie’s Right Foot
-- Summon Aodixe’s Left Foot
 - Summon Eye Servant
 - Summon Lesser Eye Servant
 - Summon Ocean Portal ( Unused)

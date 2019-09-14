@@ -38,6 +38,8 @@
     { "zombie" } "CEMETERY" "Zombies" LESSER
     { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER
     { "ocean_portal" } "OCEAN_PORTAL" "Ocean Portal" LESSER
+    { "dungeon_entrance" } "MAIN_DUNGEON" "Unremarkable dungeon" LESSER
+#    ZOMBIE CEMETERY "Zombies" LESSER
 
     { "unknown_monster" } "OGRE_CAVE" "Unknown" ALLY
     { "unknown_monster" } "HARPY_CAVE" "Unknown" ALLY
@@ -73,7 +75,8 @@
     { "ogre" } "OGRE_CAVE" "Ogres" LESSER
     { "harpy" } "HARPY_CAVE" "Harpies" LESSER
     { "ant_queen" } "ANTS_OPEN" "Ants" LESSER
-    { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER
+    { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER    
+    { "dungeon_entrance" } "MAIN_DUNGEON" "Unremarkable dungeon" LESSER
 
     { "dwarf_baron" } "DWARVES" "Dwarves" ALLY
 }
@@ -144,6 +147,7 @@
     { "harpy" } "HARPY_CAVE" "Harpies" LESSER
     { "ant_queen" } "ANTS_OPEN" "Ants" LESSER
     { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER
+    { "dungeon_entrance" } "MAIN_DUNGEON" "Unremarkable dungeon" LESSER
 
     { "duke4" } "KNIGHTS" "Knights" ALLY
     { "elf_lord" } "ELVES" "Elves" ALLY

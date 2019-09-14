@@ -56,6 +56,8 @@
     }
     workshopGroups = { "basic" "scrolls" "traps" "techBooks" }
     description = "(Hard) Play in hard mode and test your skills to the limit for experienced players. You get to wear a cool purple robe."
+# Special traits example, all traits are added
+#   specialTraits = { LastingEffect SPEED ExtraTraining MELEE 5 }
   }
   {
     creatureId = { "KEEPER_KNIGHT" "KEEPER_KNIGHT_F" }
@@ -207,7 +209,7 @@
     { "NECROMANCER" }										EVIL               "(Challenge) Oppose the world and rid it of all life."
 	{ "CLERIC_HERO" "CLERIC_HERO" }							LAWFUL             "(Challenge) Be a cleric hero."
     { "CYCLOPS" }                                           EVIL               "(Challenge) Slaughter the world as a lone cyclops."
-	{ "THIEF_HERO" "THIEF_HERO" }      LAWFUL             "(Challenge) Play as an archer assassin. Travel light, rely on stealth and arrows."
-	{ "WIZARD_ADVENTURER" }            LAWFUL             "(Challenge) Wizard hero class. Train magic powers."
+	{ "THIEF_HERO" "THIEF_HERO" }                           LAWFUL             "(Challenge) Play as an archer assassin. Travel light, rely on stealth and arrows."
+	{ "WIZARD_ADVENTURER" }                                 LAWFUL             "(Challenge) Wizard hero class. Train magic powers."
 
 }

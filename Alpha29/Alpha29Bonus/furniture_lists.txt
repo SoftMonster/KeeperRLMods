@@ -173,4 +173,8 @@
       "LABORATORY" 1
     }
   }
+  "adoxie" inherit "roomFurniture"
+  {
+    unique = { "ADOXIE_STATUE" }
+  }
 }

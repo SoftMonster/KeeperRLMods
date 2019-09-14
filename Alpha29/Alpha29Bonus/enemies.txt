@@ -1186,13 +1186,22 @@
   "MAIN_DUNGEON"
   {
     settlement = {
-      type = MINETOWN
-      tribe = DARK_ELF
-      locationNameGen = "TOWN"
-      race = "dark elves"
-      buildingId = "DUNGEON"
+      type = ISLAND_VAULT_DOOR
+      tribe = MONSTER
+      inhabitants = {
+        leader = { { "ADOXIE_PRIEST" } }
+        fighters = {
+          count = {4 5}
+          all = { 1 "ABOMINATION" }
+        }
+        civilians = {
+          count = { 4 5 }
+          all = { 1 "SPIDER_FOOD" }
+        }
+      }
+      buildingId = "BRICK"
       outsideFeatures = "dungeonOutside"
-      furniture = { "roomFurniture" }
+      furniture = { "adoxie" }
     }
     config = {
       immigrantInterval = 500
@@ -1201,10 +1210,10 @@
     levelConnection = {
       topLevel = ExtraEnemy {"MAIN_DUNGEON_ENTRY"}
       levels = {
-        { ExtraEnemy { "DUNGEON1" { 1 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON2" { 1 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON3" { 1 } } 60 40 DUNGEON }
-        { MainEnemy 60 40 MINETOWN }
+#        { ExtraEnemy { "DUNGEON1" { 1 } } 60 40 DUNGEON }
+#        { ExtraEnemy { "DUNGEON2" { 1 } } 60 40 DUNGEON }
+#        { ExtraEnemy { "DUNGEON3" { 1 } } 60 40 DUNGEON }
+        { MainEnemy 60 40 ADOXIE_TEMPLE }
       }
     }
   }
@@ -1214,6 +1223,12 @@
       type = CAVE
       tribe = BANDIT
       buildingId = "DUNGEON"
+      inhabitants = {
+        fighters = {
+          count = {2 4}
+          all = { 1 "RAT" }
+        }
+      }
     }
   }
   "NO_AGGRO_BANDITS"

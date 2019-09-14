@@ -27,7 +27,9 @@
 
     { Furniture {{ "DOWN_STAIRS" }                }              "Down stairs"       "Structure"
       "Build to pass over water of lava." }
-#    { PlaceMinion "Place minion" "Structure" "" }  use for cheating or creative mode
+#    { PlaceMinion "Place minion" "Structure" "" }  #use for cheating or creative mode
+#    { PlaceItem "Place item" "Structure" "" }  #use for cheating or creative mode
+#    { ImmediateDig "Dig immediately" "Structure" } #use for cheating or creative mode
   }
 
   "doors"
@@ -58,7 +60,12 @@
     { Furniture {{ "FLOOR_STONE2" }               STONE 2 }      "Stone"             "Floors" }
     { Furniture {{ "FLOOR_CARPET1" }              GOLD 2 }       "Carpet"            "Floors" }
     { Furniture {{ "FLOOR_CARPET2" }              GOLD 2 }       "Carpet"            "Floors" }
-    { DestroyLayers {FLOOR}                                      "Remove floor"      "Floors" }
+#    { Furniture {{ "FLOOR_SPEED" }                GOLD 2 }       "Floor of speed"    "Floors" }
+#    { Furniture {{ "FLOOR_BLIND" }                GOLD 2 }       "Floor of blindness""Floors" }
+#    { Furniture {{ "FLOOR_INVI" }                GOLD 2 }       "Floor of invisibility""Floors" }
+#    { Furniture {{ "FLOOR_REGENER" }                GOLD 2 }       "Floor of regeneration""Floors" }
+#    { Furniture {{ "FLOOR_PEACE" }                GOLD 2 }       "Floor of peace""Floors" }
+    { DestroyLayers {FLOOR}                                    "Remove floor"      "Floors" }
   }
   
   "white knight floors"
@@ -254,7 +261,7 @@
     { DestroyLayers {CEILING MIDDLE}                           "Remove construction" "Orders"
         "" e {} false REMOVE_CONSTRUCTION }
  
-    { ForbidZone                                               "Forbind zone"      "Orders"
+    { ForbidZone                                               "Forbid zone"      "Orders"
         "Mark tiles to keep minions from entering."}
   }
 
