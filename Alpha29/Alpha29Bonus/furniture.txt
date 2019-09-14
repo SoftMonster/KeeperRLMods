@@ -1427,4 +1427,9 @@
     name = "broken web"
     viewId = { "web_trap" }
   }
+  "DUNGEON_ENTRY" inherit "DOWN_STAIRS"
+  {
+    name = "dungeon entrance"
+    viewId = { "dungeon_entrance" }
+  }
 }

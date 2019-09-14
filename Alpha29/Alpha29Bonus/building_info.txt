@@ -85,4 +85,13 @@
       wall = "SANDSTONE"
       door = { "CHEST" 1.0 }
 	}
+  "DUNGEON_ENTRY"
+    {
+      wall = "MOUNTAIN"
+      floorInside = "FLOOR"
+      floorOutside = "FLOOR"
+      door = { "WOOD_DOOR" 1.0 }
+      gate = { "WOOD_GATE" 1.0 }
+      downStairs = "DUNGEON_ENTRY"
+    }
 }

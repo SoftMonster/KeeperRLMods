@@ -783,7 +783,7 @@
     settlement = {
       type = CAVE
       tribe = BANDIT
-      buildingId = "DUNGEON"
+      buildingId = "DUNGEON_ENTRY" #Modded
       inhabitants = {
         fighters = {
           count = {2 4}
@@ -2430,6 +2430,19 @@
   }
   "ADOXIE_SURFACE_BANDITS" inherit "NO_AGGRO_BANDITS"
   {
+    settlement = {
+      type = CAVE
+      inhabitants = {
+       leader = { { "BANDIT_LEADER" } }
+        fighters = {
+          count = {4 9}
+          all = { 1 "BANDIT" }
+        }
+      }
+      tribe = BANDIT
+      race = "bandits"
+      buildingId = "DUNGEON_ENTRY"
+    }
     discoverable = false
   }
   "ADOXIE_BANDITS" inherit "NO_AGGRO_BANDITS"
