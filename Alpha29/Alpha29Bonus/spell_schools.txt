@@ -30,6 +30,7 @@
     "fire elemental" 1
     "advanced fire elemental" 2
     "fireball" 3
+    "fire shield" 4 #Modded
     "firewall" 5
   }
   "illusion" SPELL

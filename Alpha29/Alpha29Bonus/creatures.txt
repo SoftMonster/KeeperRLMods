@@ -2702,10 +2702,12 @@
       maxLevelIncrease = {
         SPELL 9
       }
-      spells = { "healing" "summon element" "fireball" } #Modded
+      spellSchools = { "fire" }               #Modded
+      spells = { "healing" "summon element" } #Modded
       gender = FEMALE
       permanentEffects = {
         FIRE_RESISTANT 1
+		COLD_RESISTANT 1                      #Modded
         MAGIC_RESISTANCE 1
       }
       chatReactionFriendly = "curses all dungeons"

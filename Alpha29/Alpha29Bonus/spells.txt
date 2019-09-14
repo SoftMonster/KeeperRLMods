@@ -673,6 +673,8 @@
    id = "fire shield"
    symbol = "❂"
    effect = Lasting FIRE_RESISTANT
+   range = 1
+   targetSelf = true
    cooldown = 100
    sound = SPELL_INVISIBILITY
  }
@@ -920,5 +922,4 @@
    cooldown = 120
    sound = SPELL_SUMMON_SPIRIT
  }
-
 }
