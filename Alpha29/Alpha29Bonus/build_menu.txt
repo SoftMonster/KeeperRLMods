@@ -68,23 +68,6 @@
     { DestroyLayers {FLOOR}                                    "Remove floor"      "Floors" }
   }
   
-  "white knight floors"
-  {
-    { Furniture {{ "FLOOR_WOOD1" }                WOOD 2 }       "Wooden"            "Floors"
-        "" f {} true BUILD_FLOOR}
-    { Furniture {{ "FLOOR_WOOD2" }                WOOD 2 }       "Wooden"            "Floors"
-        "" 0 {} true BUILD_FLOOR}
-    { Furniture {{ "FLOOR_STONE1" }               STONE 2 }      "Stone"             "Floors" }
-    { Furniture {{ "FLOOR_STONE2" }               STONE 2 }      "Stone"             "Floors" }
-    { Furniture {{ "FLOOR_CARPET1" }              GOLD 2 }       "Carpet"            "Floors" }
-    { Furniture {{ "FLOOR_CARPET2" }              GOLD 2 }       "Carpet"            "Floors" }
-    { Furniture { types = { "ELVEN_RUG" } cost = GOLD 50 limit = 1 }                "Elven rug of concealment" "Floors"
-	              "Standing on the rug will make you invisible. You only have one of these items and it costs 50 gold."}
-    { Furniture { types = { "DWARVEN_REGENERATOR" } cost = GOLD 50 limit = 2}     "Dwarven regenerator" "Floors"
-	              "Standing on the regenerator will heal you. You only have two of these items and they cost 50 gold each."}	
-    { DestroyLayers {FLOOR}                                      "Remove floor"      "Floors" }
-  }
-
   "storage"
   {
     { Zone STORAGE_RESOURCES                                   "Resources"         "Storage" 
@@ -126,17 +109,7 @@
     { Furniture {{ "BOOKCASE_GOLD" }   GOLD 15 }                 "Golden bookcase"   "Library"
         "Train your minions' magical powers here."0           {TechId "master sorcery"}}
   }
-
-  "elemental"
-  {
-  
-    { Furniture {{ "BOOKCASE_GOLD" }   GOLD 15 }                 "Golden bookcase"   "Sorcery"
-        "Train your minions' magical powers here."             0 {TechId "master sorcery"}}
-
-    { Furniture {{ "LABORATORY" } STONE 10 }                     "Cauldron"          "Sorcery"
-        "Produces magical potions."                            0 {TechId "alchemy" }}
-  }
-
+ 
   "throne"
   {
     { Furniture { types = { "THRONE" } cost = GOLD 500 limit = 1} "Throne" "" ""  0   {DungeonLevel 10} }
@@ -207,25 +180,6 @@
 
     { Furniture {{ "JEWELLER" }   WOOD 12 }                      "Jeweller"          "Crafting"
         "Produces magical rings and amulets."  0 { TechId "jewellery" }}
-  }
-
-  "necromancer"
-  {
-    { Furniture {{ "TRAINING_WOOD" } WOOD 12 }                   "Wooden dummy"      "Combat"
-        "Train your minions' melee skills here." r {} true  TRAINING_ROOM}
-    { Furniture {{ "TRAINING_IRON" } IRON 12 }                   "Iron dummy"        "Combat"
-        "Train your minions' melee skills here."   0 { TechId "iron working" } }
-	{ Furniture {{ "TRAINING_ADA" }  ADA  12 }                   "Adamantine dummy"  "Combat"
-        "Train your minions' melee skills here."   0 { TechId "iron working" }}
-    { Furniture {{ "ARCHERY_RANGE" } WOOD 12 }                   "Archery target"    "Combat"
-        "Train your minions' archery skills here." 0 {} true  TRAINING_ROOM}
-	{ Furniture {{ "WORKSHOP" }   WOOD 15 }                      "Workshop"          "Crafting"
-        "Produces Wooden equipment and torches." m {} true  BUILD_WORKSHOP}
-    { Furniture {{ "LABORATORY" } STONE 10 }                     "Cauldron"          "Crafting"
-        "Allows you to make potions to regrow lost limbs." 0 {TechId "regrow limbs" }}
-    { Furniture {{ "FORGE" } IRON 20 } "Forge"                                       "Crafting"
-        "Produces metal weapons and armor."    0 { TechId "iron working" }}
-    { Furniture { types = { "THRONE" } cost = GOLD 500 limit = 4} "Throne" "" ""  0   {DungeonLevel 10} }
   }
 
   "demon_shrine"
@@ -332,22 +286,43 @@
     { Trap "BOULDER_TRAP" { "boulder" }                                    "Boulder trap"      "Traps"
         "Causes a huge boulder to roll towards the enemy." 0  { TechId "traps" }}
 
+    { Trap "SURPRISE_TRAP" { "surprise_trap" }                             "Surprise trap"     "Traps"
+        "Teleports nearby minions to deal with the trespasser." 0 { TechId "traps" }}
+    { Trap "FIRE_TRAP" { "fire_trap" }                                     "Fire trap"        "Traps"
+        "Causes a tower of flame to errupt under the trespasser." 0 { TechId "traps" }}
+
+    #Modded Traps        
+    { Trap "FLOOR_SPIKES_TRAP" { "floor_spikes_trap" }                     "Floor Spikes trap" "Traps"
+        "Causes a group of spikes to spring up from the floor under the trespasser." 0 { TechId "traps" }}
+
     { Trap "TAR_PIT" { "tar_pit" }                                          "Tar pit"          "Traps"
         "Slows down interlopers." 0                           { TechId "traps" }}
 
     { Trap "FALLING_RUBBLE_TRAP" { "map_mountain2" }                        "Falling rubble trap" "Traps"
         "Rubble will fall down around them." 0                { TechId "traps" }}
 
-    { Trap "SURPRISE_TRAP" { "surprise_trap" }                             "Surprise trap"     "Traps"
-        "Teleports nearby minions to deal with the trespasser." 0 { TechId "traps" }}
 
-    { Trap "FIRE_TRAP" { "fire_trap" }                                     "Fire trap"        "Traps"
-        "Causes a tower of flame to errupt under the trespasser." 0 { TechId "traps" }}
-
-    { Trap "FLOOR_SPIKES_TRAP" { "floor_spikes_trap" }                     "Floor Spikes trap" "Traps"
-        "Causes a group of spikes to spring up from the floor under the trespasser." 0 { TechId "traps" }}
   }
 
+  #Extra floors for white knights
+  "white knight floors"
+  {
+    { Furniture {{ "FLOOR_WOOD1" }                WOOD 2 }       "Wooden"            "Floors"
+        "" f {} true BUILD_FLOOR}
+    { Furniture {{ "FLOOR_WOOD2" }                WOOD 2 }       "Wooden"            "Floors"
+        "" 0 {} true BUILD_FLOOR}
+    { Furniture {{ "FLOOR_STONE1" }               STONE 2 }      "Stone"             "Floors" }
+    { Furniture {{ "FLOOR_STONE2" }               STONE 2 }      "Stone"             "Floors" }
+    { Furniture {{ "FLOOR_CARPET1" }              GOLD 2 }       "Carpet"            "Floors" }
+    { Furniture {{ "FLOOR_CARPET2" }              GOLD 2 }       "Carpet"            "Floors" }
+    { Furniture { types = { "ELVEN_RUG" } cost = GOLD 50 limit = 1 }                "Elven rug of concealment" "Floors"
+	              "Standing on the rug will make you invisible. You only have one of these items and it costs 50 gold."}
+    { Furniture { types = { "DWARVEN_REGENERATOR" } cost = GOLD 50 limit = 2}     "Dwarven regenerator" "Floors"
+	              "Standing on the regenerator will heal you. You only have two of these items and they cost 50 gold each."}	
+    { DestroyLayers {FLOOR}                                      "Remove floor"      "Floors" }
+  }
+
+  #Dwarven strongholds
   "dwarven"
   {
     { Furniture {{ "PRISON" }        IRON 15 }                   "Prison"            "Prison"
@@ -369,6 +344,7 @@
         "Train your minions' melee skills here."   0 { TechId "iron working" }}
   }
 
+  #Sandbox
   "sandbox"
   {
     { ImmediateDig                                               "Immediate Dig"   "Structure"  
@@ -587,5 +563,37 @@
     { Furniture {{ "CASTLE_D4" }  WOOD   0 } "Castle" "Castle Jigsaw" "Castle Jigsaw piece"}
   }
 
+  #Elementalist keeper
+  "elemental"
+  {
+  
+    { Furniture {{ "BOOKCASE_GOLD" }   GOLD 15 }                 "Golden bookcase"   "Sorcery"
+        "Train your minions' magical powers here."             0 {TechId "master sorcery"}}
 
-}   
+    { Furniture {{ "LABORATORY" } STONE 10 }                     "Cauldron"          "Sorcery"
+        "Produces magical potions."                            0 {TechId "alchemy" }}
+  }
+
+  #Necromancer keeper
+  "necromancer"
+  {
+    { Furniture {{ "TRAINING_WOOD" } WOOD 12 }                   "Wooden dummy"      "Combat"
+        "Train your minions' melee skills here." r {} true  TRAINING_ROOM}
+    { Furniture {{ "TRAINING_IRON" } IRON 12 }                   "Iron dummy"        "Combat"
+        "Train your minions' melee skills here."   0 { TechId "iron working" } }
+	{ Furniture {{ "TRAINING_ADA" }  ADA  12 }                   "Adamantine dummy"  "Combat"
+        "Train your minions' melee skills here."   0 { TechId "iron working" }}
+    { Furniture {{ "ARCHERY_RANGE" } WOOD 12 }                   "Archery target"    "Combat"
+        "Train your minions' archery skills here." 0 {} true  TRAINING_ROOM}
+	{ Furniture {{ "WORKSHOP" }   WOOD 15 }                      "Workshop"          "Crafting"
+        "Produces Wooden equipment and torches." m {} true  BUILD_WORKSHOP}
+    { Furniture {{ "LABORATORY" } STONE 10 }                     "Cauldron"          "Crafting"
+        "Allows you to make potions to regrow lost limbs." 0 {TechId "regrow limbs" }}
+    { Furniture {{ "FORGE" } IRON 20 } "Forge"                                       "Crafting"
+        "Produces metal weapons and armor."    0 { TechId "iron working" }}
+    { Furniture { types = { "THRONE" } cost = GOLD 500 limit = 4} "Throne" "" ""  0   {DungeonLevel 10} }
+  }
+
+
+}
+   

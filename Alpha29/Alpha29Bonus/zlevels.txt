@@ -1,7 +1,8 @@
 # Here come levels for all keeper types
 # At every depth the game chooses a random level that's available
 {
-  # This is a filled level that can appear at all depths
+
+  #Modded depth 1
   {
     type = FullZLevel {
       enemy = "GARGOYLE_ENTRANCE"
@@ -9,10 +10,13 @@
 	minDepth = 0
 	maxDepth = 1
   }
+
+
+  # This is a filled level that can appear at all depths (after depth 10)
   {
     type = FullZLevel {
     }
-	minDepth = 11
+	minDepth = 11 # Modded
   }
   {
     type = FullZLevel {
@@ -50,8 +54,10 @@
     type = FullZLevel {
       enemy = "ADA_GOLEMS"
     }
-    minDepth = 11
+    minDepth = 11 #Modded
   }
+
+#Modded fixed levels
   { type = FullZLevel { enemy = "KOBOLD_CAVE" } minDepth = 3 maxDepth = 3}
   { type = FullZLevel { enemy = "BANDITS" } minDepth = 3 maxDepth = 3}
   { type = FullZLevel { enemy = "DARK_ELVES_ENTRY" } minDepth = 5 maxDepth = 5}
@@ -79,6 +85,8 @@
     maxDepth = 10
     width = 60
   }
+
+#Modded Magma level
   {
     type = WaterZLevel {
       waterType = "MAGMA"
@@ -91,7 +99,10 @@
       }
     }
     minDepth = 11
+    width = 60
   }
+
+#Modded deep Magma level
   {
     type = WaterZLevel {
       waterType = "MAGMA"
@@ -104,7 +115,10 @@
       }
     }
     minDepth = 15
+    width = 60
   }
+
+#Modded sea of bones
   {
     type = WaterZLevel {
       waterType = "SEA_OF_BONES"
@@ -130,6 +144,7 @@
   }
 }
 
+# White and dark keepers (modded)
 # Here come levels specific to white keepers
 {
   {

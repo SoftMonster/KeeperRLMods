@@ -1,4 +1,58 @@
 {
+  "mage" SPELL
+  {
+    "directed blast" 1
+    "escape" 2
+    "magic missile" 3
+    "healing" 4
+    "teleport" 5
+    "cure poison" 6
+    "advanced magic missile" 7
+    "haste" 8
+    "defense bonus" 9
+    "advanced teleport" 10
+    "expert magic missile" 11
+    "invisibility" 12
+  }
+  "healer" SPELL
+  {
+    "advanced healing" 1
+    "healing totem" 1 #Modded
+    "expert healing" 2
+    "cure poison" 3
+    "advanced cure poison" 4
+    "cure blindness" 5
+    "poison resistance" 6
+    "group healing" 7
+  }
+  "fire" SPELL
+  {
+    "fire elemental" 1
+    "advanced fire elemental" 2
+    "fireball" 3
+    "firewall" 5
+  }
+  "illusion" SPELL
+  {
+    "deception" 1
+    "invisibility" 2
+    "escape" 3
+    "panic" 5
+    "pacify" 6 #Modded
+    "mind bolt" 7 #Modded
+  }
+  "fighter" MELEE #Modded multiple entries
+  {
+    "shove" 2
+    "battle cry" 4
+    "block" 5
+    "swap positions" 6
+    "weapon dodge" 7
+  }
+
+################
+#Modded schools
+################
   "dark stealth" SPELL
   {
     "deception" 1
@@ -54,21 +108,6 @@
     "invisibility" 12
     "directed blast" 12
   }
-  "mage" SPELL
-  {
-    "directed blast" 1
-    "escape" 2
-    "magic missile" 3
-    "healing" 4
-    "teleport" 5
-    "cure poison" 6
-    "advanced magic missile" 7
-    "haste" 8
-    "defense bonus" 9
-    "advanced teleport" 10
-    "expert magic missile" 11
-    "invisibility" 12
-  }
   "evocation" SPELL
   {
     "magic missile" 1
@@ -93,17 +132,6 @@
     "healing totem" 9
     "magic cancellation" 9
   }
-  "healer" SPELL
-  {
-    "advanced healing" 1
-    "healing totem" 1
-    "expert healing" 2
-    "cure poison" 3
-    "advanced cure poison" 4
-    "cure blindness" 5
-    "poison resistance" 6
-    "group healing" 7
-  }
   "necromancy" SPELL
   {
    "fireball" 1
@@ -117,31 +145,6 @@
    "fire shield" 6
    "regrow body parts" 7
   }
-  "fire" SPELL
-  {
-    "fire elemental" 1
-    "advanced fire elemental" 2
-    "fireball" 3
-    "firewall" 5
-  }
-  "illusion" SPELL
-  {
-    "deception" 1
-    "invisibility" 2
-    "escape" 3
-    "panic" 5
-    "pacify" 6
-    "mind bolt" 7
-  }
-  "fighter" MELEE
-  {
-    "shove" 2
-    "battle cry" 4
-    "block" 5
-    "swap positions" 6
-    "weapon dodge" 7
-  }
-
 #----------------------------------------------------------
 # spells_schools.txt - August 2019 by Righteous for goblins
 #----------------------------------------------------------

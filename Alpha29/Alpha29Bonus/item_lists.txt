@@ -1,11 +1,4 @@
 {
-  "magicShrooms"
-  {
-    items = {
-      {{Mushroom Lasting HALLU} 1}
-    }
-  }
-  
   "villageShop"
   {
     items = {
@@ -76,24 +69,6 @@
     prefixChance = 1
   }
 
-  "jewellery"
-  {
-    items = {
-      {{Ring POISON_RESISTANT} 1}
-      {{Ring FIRE_RESISTANT} 1}
-      {{Simple "DefenseAmulet" } 1}
-      {{Amulet REGENERATION} 1}
-      {{Ring MELEE_RESISTANCE} 1}
-      {{Ring FLYING} 1}
-      {{Simple "GoldenStaff" } 1}
-      {{Amulet DISARM_TRAPS_SKILL} 1}
-      {{Amulet AMBUSH_SKILL} 1}
-      {{Ring FLYING} 1}
-      {{Ring SPEED} 1}
-      {{Ring NO_CARRY_LIMIT} 1}
-	}
-  }
-
   "minerals"
   {
     items = {
@@ -130,6 +105,23 @@
       {{Scroll Summon "FLY" {3 6}} 1 }
     }
   }
+ 
+  #Modding note: "goodMushrooms" and "wildernessItems" moved to further down.
+
+  "desertItems"
+  {
+    items = {
+      {{Simple "Skeleton"} 1}
+    }
+  }
+  
+  "snowItems"
+  {
+    items = {
+      {{Simple "FrozenRemains"} 1}
+    }
+  }
+
   "amulets"
   {
     items = { 
@@ -289,7 +281,7 @@
     }
   }
 
-  "goodMushrooms" inherit "randomPrize"
+  "goodMushrooms" inherit "randomPrize" #Modded
   {
     items = append {
       {{Mushroom Lasting DAM_BONUS} 1000}
@@ -301,35 +293,14 @@
     }
   }
 
-  "wildernessItems" inherit "goodMushrooms"
-  {
-    items = append {
-      {{Mushroom Lasting HALLU} 10}
-    }
-  }
-
-  "desertItems"
-  {
-    items = {
-      {{Simple "Skeleton"} 1}
-    }
-  }
-  
-  "snowItems"
-  {
-    items = {
-      {{Simple "FrozenRemains"} 1}
-    }
-  }
-
-  "wildMushrooms" inherit "goodMushrooms"
+  "wildernessItems" inherit "goodMushrooms" #Modded
   {
     items = append {
       {{Mushroom Lasting HALLU} 10000}
     }
   }
 
-  "chest" inherit "randomPrize"
+  "chest" inherit "randomPrize" #Modded
   {
     items = append {
       {{Simple "GoldPiece" } 200 {4 9}}
@@ -349,4 +320,35 @@
       {Simple "MagicLamp"} {1}
     }
   }
+  
+##########
+# Modded
+##########
+
+  "magicShrooms"
+  {
+    items = {
+      {{Mushroom Lasting HALLU} 1}
+    }
+  }
+  
+  "jewellery"
+  {
+    items = {
+      {{Ring POISON_RESISTANT} 1}
+      {{Ring FIRE_RESISTANT} 1}
+      {{Simple "DefenseAmulet" } 1}
+      {{Amulet REGENERATION} 1}
+      {{Ring MELEE_RESISTANCE} 1}
+      {{Ring FLYING} 1}
+      {{Simple "GoldenStaff" } 1}
+      {{Amulet DISARM_TRAPS_SKILL} 1}
+      {{Amulet AMBUSH_SKILL} 1}
+      {{Ring FLYING} 1}
+      {{Ring SPEED} 1}
+      {{Ring NO_CARRY_LIMIT} 1}
+	}
+  }
+
+  
 }

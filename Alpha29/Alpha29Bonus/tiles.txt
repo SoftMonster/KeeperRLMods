@@ -267,7 +267,6 @@
   { "surprise_trap" "^" ColorId BLUE true }
   { "terror_trap" "^" ColorId WHITE true }
   { "fire_trap" "^" ColorId RED true }
-  { "floor_spikes_trap" "^" ColorId GRAY true }
   { "rock" "✱" ColorId LIGHT_GRAY true "stonepile" }
   { "iron_rock" "✱" ColorId ORANGE true "ironpile" }
   { "ada_ore" "✱" ColorId LIGHT_BLUE true "steelpile" }
@@ -700,6 +699,8 @@
   { "dwarf_warrior" "h" ColorId BLUE }
   { "elite_dwarf_warrior" "h" ColorId BLUE }
   { "dwarf_worker" "h" ColorId BLUE }
+
+  { "floor_spikes_trap" "^" ColorId GRAY true }
 
  #MODDED by Righteous August 2019 (Adventurer update)
 

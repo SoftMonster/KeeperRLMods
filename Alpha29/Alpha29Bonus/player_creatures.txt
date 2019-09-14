@@ -1,9 +1,10 @@
 # Keepers
 {
   {
+    #Modded
     creatureId = { "KEEPER_MAGE_EASY" "KEEPER_MAGE_F_EASY" }
     tribeAlignment = EVIL
-    immigrantGroups = {"imps_easy_mode" "dark_keeper_easy_mode"}
+    immigrantGroups = {"dark_keeper_easy_mode"}
     technology = {
          "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
         "pig breeding" "iron working" "simplistic animations"
@@ -22,7 +23,8 @@
   {
     creatureId = { "KEEPER_MAGE" "KEEPER_MAGE_F" }
     tribeAlignment = EVIL
-    immigrantGroups = {"imps" "dark_keeper"}
+    immigrantGroups = {"imps" "dark_keeper" "dark_keeper_modded" } #Modded#
+#Modded#
     technology = {
         "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
         "pig breeding" "iron working" "simplistic animations"
@@ -31,17 +33,21 @@
 		"magic paper production" "advanced inscription" "master inscription"
     }
     initialTech = { "sorcery" }
+#Modded#
     buildingGroups = {
         "structure" "doors" "floors" "storage" "quarters" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
         "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
-    workshopGroups = { "basic" "scrolls" "traps" "techBooks" }
-    description = "(Challenge) Build and manage, defend against raids, and attack!"
+    workshopGroups = { "basic" "scrolls" "traps" "techBooks" } #Modded
+    description = "(Challenge) Build and manage, defend against raids, and attack!" #Modded
+# Special traits example, all traits are added
+#   specialTraits = { LastingEffect SPEED ExtraTraining MELEE 5 }
   }
+#Modded
   {
     creatureId = { "KEEPER_MAGE_HARD" "KEEPER_MAGE_F_HARD" }
     tribeAlignment = EVIL
-    immigrantGroups = {"imps_hard_mode" "dark_keeper_hard_mode"}
+    immigrantGroups = {"dark_keeper_hard_mode"}
     technology = {
         "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
         "pig breeding" "iron working" "simplistic animations" "magic contraptions" "jewellery"
@@ -56,13 +62,12 @@
     }
     workshopGroups = { "basic" "scrolls" "traps" "techBooks" }
     description = "(Hard) Play in hard mode and test your skills to the limit for experienced players. You get to wear a cool purple robe."
-# Special traits example, all traits are added
-#   specialTraits = { LastingEffect SPEED ExtraTraining MELEE 5 }
   }
   {
     creatureId = { "KEEPER_KNIGHT" "KEEPER_KNIGHT_F" }
     tribeAlignment = EVIL
-    immigrantGroups = {"peseant_prisoners" "dark_keeper"}
+    immigrantGroups = {"peseant_prisoners" "dark_keeper" "dark_knight_modded"}
+#Modded
     technology = {
         "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
         "pig breeding" "iron working" "simplistic animations"
@@ -75,13 +80,15 @@
         "structure" "doors" "floors" "storage" "quarters" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
         "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
+#Modded
     workshopGroups = { "basic" "scrolls" "traps" "techBooks" }
     description = "(Challenge) The dark knight keeper is better at melee combat but worse at spell casting."
   }
   {
     creatureId = { "KEEPER_KNIGHT_WHITE" "KEEPER_KNIGHT_WHITE_F" }
     tribeAlignment = LAWFUL
-    immigrantGroups = {"peseants" "white_keeper"}
+    immigrantGroups = {"peseants" "white_keeper" "white_keeper_modded"}
+#Modded
     technology = {
         "alchemy" "advanced alchemy" "alchemical conversion" "pig breeding" "iron working"
 		"simplistic animations" "magic contraptions" "jewellery" "two-handed weapons" "archery" "sorcery"
@@ -89,13 +96,19 @@
         "magic paper production" "advanced inscription" "master inscription"
     }
     initialTech = { "archery" }
+#Modded
     buildingGroups = {
-        "structure" "doors" "white knight floors" "storage" "quarters" "library" "throne" "beds" "beast_cage"
+        "structure" "doors" "floors" "storage" "quarters" "library" "throne" "beds" "beast_cage"
         "pigsty" "training" "crafting" "prison" "orders" "installations"
     }
     workshopGroups = { "basic" "white knights workshop" }
+#Modded
     description = "(Hard) Be on the side of the good!"
   }
+
+#####################
+#Extra modded Keepers
+#####################
   {
     creatureId = { "GNOME_CHIEF" }
     tribeAlignment = EVIL
@@ -195,7 +208,7 @@
   }
 }
 
-# Adventurers
+# Adventurers - Modded
 {
     # CreatureId										TribeAlignment 
     { "ADOXIE_HEAD" }										EVIL               "(Easy)      Wipe the floor with mortals as Adoxie the Dark One."

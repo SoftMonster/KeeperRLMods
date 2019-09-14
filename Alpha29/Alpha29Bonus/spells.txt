@@ -102,14 +102,6 @@
     sound = SPELL_BLAST
   }
   {
-    id =  "rapid magic missile"
-    symbol = "⥇"
-    effect = Damage SPELL_DAMAGE SPELL
-    range = 4
-    cooldown = 2
-    sound = SPELL_BLAST
-  }
-  {
     id =  "deception"
     symbol = "🎭"
     effect = Deception
@@ -139,13 +131,6 @@
     sound = SPELL_TELEPORT
   }
   {
-    id = "battle cry"
-    symbol = "💪"
-    effect = Lasting RAGE
-    cooldown = 90
-    sound = SPELL_STR_BONUS
-  }
-  {
     id =  "teleport"
     symbol = "🌀"
     effect = Teleport
@@ -153,13 +138,6 @@
     cooldown = 200
     endOnly = true
     sound = SPELL_TELEPORT
-  }
-  {
-   id = "summon contraption"
-   symbol = "👾"
-   effect = Summon "GIANT_ROBOT" { 1 2 }
-   cooldown = 90
-   sound = SPELL_SUMMON_SPIRIT
   }
   {
     id =  "advanced teleport"
@@ -203,23 +181,6 @@
     targetSelf = true
     range = 1
     cooldown = 120
-    sound = SPELL_SPEED_SELF
-  }
-  {
-    id =  "haste other"
-    symbol = "🏃"
-    effect = Lasting SPEED
-    targetSelf = false
-    range = 3
-    cooldown = 110
-    sound = SPELL_SPEED_SELF
-  }
-  {
-    id =  "area haste"
-	upgrade = "haste other"
-    symbol = "🏃"
-    effect = Area 2 Filter ALLY Lasting SPEED
-    cooldown = 110
     sound = SPELL_SPEED_SELF
   }
   {
@@ -282,30 +243,6 @@
     sound = SPELL_DEX_BONUS
   }
   {
-    id = "defend other"
-    symbol = "🛡"
-    effect = Lasting DEF_BONUS
-    targetSelf = false
-    range = 3
-    cooldown = 70
-    sound = SPELL_DEX_BONUS
-  }
-  {
-    id =  "area defense bonus"
-	upgrade = "defend other"
-    symbol = "🛡"
-    effect = Area 2 Filter ALLY Lasting DEF_BONUS
-    cooldown = 70
-    sound = SPELL_DEX_BONUS
-  }
-  {
-    id = "block"
-    symbol = "🛡"
-    effect = Lasting DEF_BONUS
-    cooldown = 70
-    sound = SPELL_DEX_BONUS
-  }
-  {
     id =  "damage bonus"
     symbol = "💪"
     effect = Lasting DAM_BONUS
@@ -320,23 +257,6 @@
     targetSelf = true
     range = 1
     cooldown = 80
-    sound = SPELL_STR_BONUS
-  }
-  {
-    id = "friendly damage bonus"
-    symbol = "💪"
-    effect = Lasting DAM_BONUS
-    targetSelf = false
-    range = 3
-    cooldown = 70
-    sound = SPELL_STR_BONUS
-  }
-  {
-    id =  "area damage bonus"
-	upgrade = "friendly damage bonus"
-    symbol = "💪"
-    effect = Area 2 Filter ALLY Lasting DAM_BONUS
-    cooldown = 70
     sound = SPELL_STR_BONUS
   }
   {
@@ -376,20 +296,6 @@
     sound = SPELL_FIRE_SPHERE_PET
   }
   {
-    id = "healing totem"
-    symbol = "/+\\"
-    effect = Summon "HEALING_TOTEM" { 1 2 }
-    cooldown = 250
-    sound = SPELL_SUMMON_SPIRIT
-  }
-  {
-    id = "buff totem"
-    symbol = "/💪\\"
-    effect = Summon "BUFF_TOTEM" { 1 2 }
-    cooldown = 250
-    sound = SPELL_SUMMON_SPIRIT
-  }
-  {
     id =  "fire breath"
     symbol = "🐲"
     effect = Fire
@@ -416,15 +322,6 @@
     range = 4
     cooldown = 30
     sound = SPELL_FIRE_SPHERE_PET
-  }
-  {
-   id = "magma bolt"
-   symbol = "{🔥}"
-   effect = Fire
-   fx = FIREBALL
-   range = 6
-   cooldown = 35
-   sound = SPELL_FIRE_SPHERE_PET
   }
   {
     id =  "ice cone"
@@ -465,6 +362,150 @@
     targetSelf = false
     cooldown = 150
   }
+  {
+    id = "double trouble"
+    symbol = "👤👤"
+    effect = DoubleTrouble
+    cooldown = 1000
+  }
+
+  {
+    id =  "adoxie right hand"
+    symbol = "-."
+    effect = Summon "ADOXIE_HAND_RIGHT" { 1 }
+    cooldown = 50
+    sound = SPELL_SUMMON_SPIRIT
+  }
+  {
+    id =  "adoxie left hand"
+    symbol = ".-"
+    effect = Summon "ADOXIE_LEFT_HAND" { 1 }
+    cooldown = 50
+    sound = SPELL_SUMMON_SPIRIT
+  }
+  {
+    id =  "adoxie left foot"
+    symbol = "_|"
+    effect = Summon "ADOXIE_FOOT_LEFT" { 1 }
+    cooldown = 50
+    sound = SPELL_SUMMON_SPIRIT
+  }
+  {
+    id =  "adoxie right foot"
+    symbol = "|_"
+    effect = Summon "ADOXIE_FOOT_RIGHT" { 1 }
+    cooldown = 50
+    sound = SPELL_SUMMON_SPIRIT
+  }
+
+#################
+# Modded
+#################
+
+  {
+    id =  "rapid magic missile"
+    symbol = "⥇"
+    effect = Damage SPELL_DAMAGE SPELL
+    range = 4
+    cooldown = 2
+    sound = SPELL_BLAST
+  }
+  {
+    id = "battle cry"
+    symbol = "💪"
+    effect = Lasting RAGE
+    cooldown = 90
+    sound = SPELL_STR_BONUS
+  }
+  {
+   id = "summon contraption"
+   symbol = "👾"
+   effect = Summon "GIANT_ROBOT" { 1 2 }
+   cooldown = 90
+   sound = SPELL_SUMMON_SPIRIT
+  }
+  {
+    id =  "haste other"
+    symbol = "🏃"
+    effect = Lasting SPEED
+    targetSelf = false
+    range = 3
+    cooldown = 110
+    sound = SPELL_SPEED_SELF
+  }
+  {
+    id =  "area haste"
+	upgrade = "haste other"
+    symbol = "🏃"
+    effect = Area 2 Filter ALLY Lasting SPEED
+    cooldown = 110
+    sound = SPELL_SPEED_SELF
+  }
+  {
+    id = "defend other"
+    symbol = "🛡"
+    effect = Lasting DEF_BONUS
+    targetSelf = false
+    range = 3
+    cooldown = 70
+    sound = SPELL_DEX_BONUS
+  }
+  {
+    id =  "area defense bonus"
+	upgrade = "defend other"
+    symbol = "🛡"
+    effect = Area 2 Filter ALLY Lasting DEF_BONUS
+    cooldown = 70
+    sound = SPELL_DEX_BONUS
+  }
+  {
+    id = "block"
+    symbol = "🛡"
+    effect = Lasting DEF_BONUS
+    cooldown = 70
+    sound = SPELL_DEX_BONUS
+  }
+  {
+    id = "friendly damage bonus"
+    symbol = "💪"
+    effect = Lasting DAM_BONUS
+    targetSelf = false
+    range = 3
+    cooldown = 70
+    sound = SPELL_STR_BONUS
+  }
+  {
+    id =  "area damage bonus"
+	upgrade = "friendly damage bonus"
+    symbol = "💪"
+    effect = Area 2 Filter ALLY Lasting DAM_BONUS
+    cooldown = 70
+    sound = SPELL_STR_BONUS
+  }
+  {
+    id = "healing totem"
+    symbol = "/+\\"
+    effect = Summon "HEALING_TOTEM" { 1 2 }
+    cooldown = 250
+    sound = SPELL_SUMMON_SPIRIT
+  }
+  {
+    id = "buff totem"
+    symbol = "/💪\\"
+    effect = Summon "BUFF_TOTEM" { 1 2 }
+    cooldown = 250
+    sound = SPELL_SUMMON_SPIRIT
+  }
+  {
+   id = "magma bolt"
+   symbol = "{🔥}"
+   effect = Fire
+   fx = FIREBALL
+   range = 6
+   cooldown = 35
+   sound = SPELL_FIRE_SPHERE_PET
+  }
+
   {
    id = "stone golem"
    symbol = "👤"
@@ -734,34 +775,6 @@
    sound = SPELL_SUMMON_SPIRIT
  }
  {
-   id =  "adoxie right hand"
-   symbol = "-."
-   effect = Summon "ADOXIE_HAND_RIGHT" { 1 2 }
-   cooldown = 50
-   sound = SPELL_SUMMON_SPIRIT
- }
- {
-   id =  "adoxie left hand"
-   symbol = ".-"
-   effect = Summon "ADOXIE_LEFT_HAND" { 1 2 }
-   cooldown = 50
-   sound = SPELL_SUMMON_SPIRIT
- }
- {
-   id =  "adoxie left foot"
-   symbol = "_|"
-   effect = Summon "ADOXIE_FOOT_LEFT" { 1 2 }
-   cooldown = 50
-   sound = SPELL_SUMMON_SPIRIT
- }
- {
-   id =  "adoxie right foot"
-   symbol = "|_"
-   effect = Summon "ADOXIE_FOOT_RIGHT" { 1 2 }
-   cooldown = 50
-   sound = SPELL_SUMMON_SPIRIT
- }
- {
    id = "lesser eye servant"
    symbol = "👁️"
    effect = Summon "LESSER_EYE_SERVANT" { 1 2 }
@@ -907,10 +920,5 @@
    cooldown = 120
    sound = SPELL_SUMMON_SPIRIT
  }
-  {
-    id = "double trouble"
-    symbol = "👤👤"
-    effect = DoubleTrouble
-    cooldown = 1000
-  }
+
 }

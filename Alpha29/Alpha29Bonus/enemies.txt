@@ -60,195 +60,6 @@
       }
     }
   }
-  "FAIRIES"
-  {
-    settlement = {
-      type = FOREST
-      inhabitants = {
-        fighters = {
-          count = {5 10}
-          all = {
-            1 "AIR_FAIRY"
-            1 "DARK_FAIRY"
-            1 "EARTH_FAIRY"
-            1 "ELECTRIC_FAIRY"
-            1 "MAGIC_FAIRY"
-            1 "NATURE_FAIRY"
-            1 "LIGHT_FAIRY"
-            1 "DEMON_FAIRY"
-            1 "WATER_FAIRY"
-          }
-        }
-      }
-      tribe = ELF
-      race = "fairies"
-      buildingId = "WOOD"
-    }
-    config = {
-      immigrantInterval = 200
-      maxPopulation = 10
-    }
-    immigrants = {
-      {
-        ids = {"AIR_FAIRY" "DARK_FAIRY" "EARTH_FAIRY" "ELECTRIC_FAIRY" "MAGIC_FAIRY" "NATURE_FAIRY" "LIGHT_FAIRY" "DEMON_FAIRY" "WATER_FAIRY"}
-        traits = {FIGHTER}
-        frequency = 1
-      }
-    }	
-    behaviour = {
-      minPopulation = 5
-      minTeamSize = 4
-      triggers = {
-        SelfVictims
-      }
-      attackBehaviour = KillMembers 5
-	}
-  }
-  "CENTAURS"
-  {
-    settlement = {
-      type = FOREST
-      inhabitants = {
-	    leader = {{ "CENTAUR_KING" }}
-        fighters = {
-          count = {10 15}
-          all = {
-            1 "CENTAUR_ARCHER"
-            1 "CENTAUR_FARMER"
-            1 "CENTAUR_HUNTER"
-            1 "CENTAUR_CHILD"
-            1 "CENTAUR_KNIGHT"
-          }
-        }
-      }
-      tribe = HUMAN
-      race = "centaurs"
-      buildingId = "WOOD"
-    }
-    config = {
-      immigrantInterval = 200
-      maxPopulation = 20
-    }
-    immigrants = {
-      {
-        ids = {  "CENTAUR_ARCHER" "CENTAUR_FARMER" "CENTAUR_HUNTER" "CENTAUR_CHILD" "CENTAUR_KING" "CENTAUR_KNIGHT" }
-        traits = {FIGHTER}
-        frequency = 1
-      }
-    }
-    behaviour = {
-      minPopulation = 1
-      minTeamSize = 5
-      triggers = {
-        SelfVictims
-      }
-      attackBehaviour = KillMembers 15
-	}
-  }
-  "AMAZONS"
-  {
-    settlement = {
-      type = VILLAGE
-      inhabitants = {
-	    leader = {{  "AMAZON_QUEEN" }}
-        fighters = {
-          count = {10 15}
-          all = {
-            2 "AMAZON"
-            1 "AMAZON_ARCHER"
-            1 "AMAZON_CHAMPION"
-            1 "AMAZON_ELDER"
-            1 "AMAZON_WAR_MAIDEN"
-          }
-        }
-      }
-      tribe = HUMAN
-      race = "amazons"
-      buildingId = "WOOD"
-    }
-    config = {
-      immigrantInterval = 200
-      maxPopulation = 20
-    }
-    immigrants = {
-      {
-        ids = { "AMAZON" "AMAZON_ARCHER" "AMAZON_CHAMPION" "AMAZON_ELDER" "AMAZON_WAR_MAIDEN" }
-        traits = {FIGHTER}
-        frequency = 1
-      }
-    }
-    behaviour = {
-      minPopulation = 5
-      minTeamSize = 4
-      triggers = {
-        EnemyPopulation 25
-      }
-      attackBehaviour = KillLeader
-    }
-  }
-  "VULTURE_ABOMINATIONS"
-  {
-    settlement = { 
-      type = CAVE
-      inhabitants = {
-        leader = { { "ADOXIE_EYE" } }
-        fighters = {
-          count = {5 9}
-          all = {
-		    3 "VULTURE_ABOMINATION"
-            1 "EYE_SERVANT"
-          }
-        }
-	  }
-      tribe = MONSTER
-      race = "abominations"
-      buildingId = "DUNGEON"
-    }
-    config = {
-      immigrantInterval = 500
-      maxPopulation = 35
-    }
-    immigrants = {
-      {
-        ids = {"VULTURE"}
-        frequency = 1
-      }
-      {
-        ids = {"VULTURE_ABOMINATION"}
-        traits = {FIGHTER}
-        frequency = 3
-      }
-    }
-  }
-  "OCEAN_PORTAL"
-  {
-    settlement = { 
-      type = CAVE
-      inhabitants = {
-        leader = { { "OCEAN_PORTAL" } }
-        fighters = {
-          count = {3 4}
-          all = {
-            1 "WATER_ELEMENTAL"
-          }
-        }
-	  }
-      tribe = MONSTER
-      race = "ocean spirits"
-      buildingId = "MUD"
-    }
-    config = {
-      immigrantInterval = 500
-      maxPopulation = 35
-    }
-    immigrants = {
-      {
-        ids = {"WATER_ELEMENTAL"}
-        traits = {FIGHTER}
-        frequency = 3
-      }
-    }
-  }
   "ANTS_CLOSED"
   {
     settlement = {
@@ -393,10 +204,10 @@
           count = {12 16}
           all = {
             1 "ORC"
-            1 "ORC_FEMALE"
+            1 "ORC_FEMALE" #Modded
             1 "OGRE"
-            1 "OGRE_FEMALE"
-            1 "HOBGOBLIN"
+            1 "OGRE_FEMALE" #Modded
+            1 "HOBGOBLIN" #Modded
           }
         }
       }
@@ -424,54 +235,6 @@
       }
     }
   }
-  "UNDEAD_SETTLEMENT"
-  {
-    settlement = {
-      type = VILLAGE
-      tribe = MONSTER
-      inhabitants = {
-        leader = {
-        id = { "NECROMANCER" }
-          baseLevelIncrease = {
-            MELEE 3
-            SPELL 7
-          } }
-        fighters = {
-          count = {12 16}
-          all = {
-            1 "SKELETON"
-            1 "SKELETON_MAGE"
-            1 "MUMMY"
-            1 "ZOMBIE"
-            1 "SKELETON_WARRIOR"
-          }
-        }
-      }
-      locationName = "Necromancer abode"
-      race = "undead"
-      buildingId = "BRICK"
-      furniture = { "cryptCoffins" }
-      outsideFeatures = "villageOutside"
-    }
-    config = {
-      immigrantInterval = 100
-      maxPopulation = 20
-    }
-    createOnBones = 0.1 { "CEMETERY" }
-    immigrants = {
-      {
-        ids = {"SKELETON"}
-        traits = {FIGHTER}
-        frequency = 3
-      }
-      {
-        ids = {"ZOMBIE"}
-        traits = {FIGHTER}
-        frequency = 1
-      }
-    }
-  }
-
   "DEMON_DEN_ABOVE"
   {
     settlement = {
@@ -534,24 +297,6 @@
       }
     }
   }
-  "ADOXIE_DEMONS"
-  {
-    settlement = {
-      type = VILLAGE
-      buildingId = "RUINS"
-      tribe = MONSTER
-      inhabitants = {
-        leader = { { "DEMON_LORD" } }
-        fighters = {
-          count = {5 10}
-          all = { 1 "DEMON_DWELLER" }
-        }
-      }
-      locationName = "Adoxie"
-      race = "demons"
-      furniture = { "demonic" }
-    }
-  }
   "VILLAGE"
   {
     settlement = {
@@ -564,7 +309,7 @@
           all = {
             1 "KNIGHT"
             1 "ARCHER"
-            1 "MILITIA"
+            1 "MILITIA" #Modded
           }
         }
         civilians = {
@@ -589,48 +334,6 @@
     config = {
       spawnGhosts = 4
       ghostProb = 0.1
-    }
-  }
-  "DRAGONS"
-  {
-    settlement = {
-      type = SMALL_MINETOWN
-      tribe = MONSTER
-	  race = "dragons"
-      buildingId = "DUNGEON"
-      inhabitants = {
-        fighters = {
-          count = {10 15}
-          all = {
-		    1 "GREEN_DRAGON"
-		    1 "RED_DRAGON"
-		    2 "YOUNG_GREEN_DRAGON"
-		    2 "YOUNG_RED_DRAGON"
-		    6 "GREEN_DRAGONEWT"
-		    6 "RED_DRAGONNEWT"
-		  }
-        }
-      }
-    }
-    config = {
-      immigrantInterval = 300
-      maxPopulation = 20
-    }
-    immigrants = {
-      {
-        ids = {"GREEN_DRAGONEWT" "RED_DRAGONNEWT"}
-        traits = {FIGHTER}
-        frequency = 1
-      }
-    }
-    createOnBones = 1.0 { "KNIGHTS_RUINS" }
-    behaviour = {
-      minPopulation = 5
-      minTeamSize = 4
-      triggers = {
-		Gold 2000
-      }
-      attackBehaviour = StealGold
     }
   }
   "WARRIORS"
@@ -692,10 +395,10 @@
         fighters = {
           count = {12 17}
           all = {
-            4 "PRIEST"
-            5 "KNIGHT"
-            4 "ARCHER"
-            1 "MILITIA"
+            4 "PRIEST" #Modded
+            5 "KNIGHT" #Modded
+            4 "ARCHER" #Modded
+            1 "MILITIA" #Modded
           }
         }
         civilians = {
@@ -713,7 +416,7 @@
       }
       locationNameGen = "TOWN"
       race = "humans"
-      stockpiles = {{ "gold" 140 "FLOOR_SPIKES_TRAP" } }
+      stockpiles = {{ "gold" 140 "FLOOR_SPIKES_TRAP" } }  #Modded
       buildingId = "BRICK"
       shopItems = "villageShop"
       furniture = { "castleFurniture" }
@@ -740,12 +443,6 @@
       attackBehaviour = KillLeader
       ransom = 0.9 400
     }
-    levelConnection = {
-      topLevel = MainEnemy
-      levels = {
-        { ExtraEnemy { "MINOTAUR" { 1 2 } } 40 40 MAZE }
-      }
-    }
     immigrants = {
       {
         ids = {"ARCHER"}
@@ -758,27 +455,6 @@
         frequency = 1
       }
     }
-  }
-  "KNIGHTS_RUINS" inherit "KNIGHTS"
-  {
-    settlement = {
-      type = CASTLE
-      tribe = HUMAN
-	  buildingId = "RUINS"
-      shopItems = "jewellery"
-      inhabitants = {
-        leader = { { "DUKE" } }
-        fighters = {
-          count = {12 17}
-          all = {
-            1 "PRIEST"
-            3 "KNIGHT"
-            1 "ARCHER"
-            2 "MILITIA"
-          }
-        }
-      }
-	}
     levelConnection = {
       topLevel = MainEnemy
       levels = {
@@ -786,21 +462,6 @@
       }
     }
   }
-  "MAZE_RUINS"
-  {
-    settlement = {
-      type = CAVE
-      tribe = MONSTER
-      inhabitants = {
-        leader = { { "ANCIENT_RED_DRAGON" "ANCIENT_GREEN_DRAGON" } }
-      }
-      locationName = "maze"
-      race = "monsters"
-      furniture = { "roomFurniture" }
-      buildingId = "BRICK"
-    }
-    createOnBones = 1.0 { "MINOTAUR" }
-  }  
   "MINOTAUR"
   {
     settlement = {
@@ -813,66 +474,6 @@
       race = "monsters"
       furniture = { "roomFurniture" }
       buildingId = "BRICK"
-    }
-  }
-  "HELL_PORTAL"
-  {
-    settlement = {
-      type = CAVE
-      tribe = MONSTER
-      inhabitants = {
-        leader = { { "HELL_PORTAL" } }
-      }
-      locationName = "hell portal"
-      race = "hell knights"
-      furniture = { "roomFurniture" }
-      buildingId = "BRICK"
-    }
-    config = {
-      immigrantInterval = 20
-      maxPopulation = 2
-    }    
-    immigrants = {
-      {
-        ids = {"HELL_KNIGHT_SWORDMASTER" "HELL_KNIGHT_LORD" "HELL_KNIGHT_BRUTE" "HELL_KNIGHT"}
-        traits = {FIGHTER}
-        frequency = 20
-        spawnLocation = InsideTerritory
-      }
-    }
-  }
-  "ADOXIE_DUNGEON"
-  {
-    settlement = {
-      type = CAVE
-      tribe = MONSTER
-      inhabitants = {
-        leader = { { "ADOXIE_PRIEST" } }
-        fighters = {
-          count = {4 5}
-          all = { 1 "ABOMINATION" }
-        }
-        civilians = {
-          count = { 4 5 }
-          all = { 1 "SPIDER_FOOD" }
-        }
-      }
-      locationName = "abode of Adoxie"
-      race = "adoxie"
-      furniture = { "adoxie" }
-      buildingId = "BRICK"
-    }
-    createOnBones = 0.5 { "MAIN_DUNGEON" }
-    levelConnection = {
-      topLevel = ExtraEnemy {"ADOXIE_SURFACE_BANDITS"}
-      levels = {
-        { ExtraEnemy { "ADOXIE_BANDITS" { 1 } } 30 30 DUNGEON }
-        { ExtraEnemy { "ADOXIE_LIZARDMEN" { 1 } } 70 70 DUNGEON }
-        { ExtraEnemy { "ADOXIE_CYCLOPS" { 1 } } 20 20 DUNGEON }
-        { ExtraEnemy { "ADOXIE_DWARVES" { 1 } } 300 90 MAZE }
-        { ExtraEnemy { "ADOXIE_DEMONS" { 1 } } 50 50 MAZE }
-        { MainEnemy 30 30 MINETOWN }
-      }
     }
   }
   "RED_DRAGON"
@@ -980,11 +581,11 @@
       locationNameGen = "TOWN"
       race = "dwarves"
       buildingId = "DUNGEON"
-      stockpiles = {{ "gold" 200 "FLOOR_SPIKES_TRAP"} {"minerals" 120 }}
+      stockpiles = {{ "gold" 200 "FLOOR_SPIKES_TRAP"} {"minerals" 120 }} #Modded
       shopItems = "dwarfShop"
       outsideFeatures = "dungeonOutside"
       surroundWithResources = 5
-      furniture = { "dwarvenRoomFurniture" }
+      furniture = { "dwarvenRoomFurniture" } #Modded
     }
     config = {
       immigrantInterval = 500
@@ -1015,36 +616,6 @@
       }
     }
   }
-  "ADOXIE_DWARVES" inherit "DWARVES"
-  {
-    settlement = {
-      type = MINETOWN
-      tribe = MONSTER
-      inhabitants = {
-        leader = { { "DWARF_BARON" } }
-        fighters = {
-          count = {20 25}
-          all = {
-            1 "DWARF"
-          }
-          baseLevelIncrease = {
-            MELEE 10
-          }
-        }
-        civilians = {
-          count = {3 5}
-          all = {
-            2 "DWARF_FEMALE"
-            1 "RAT"
-          }
-        }
-      }
-      locationName = "Adoxie"
-      race = "dark dwarves"
-      buildingId = "SANDSTONE_WALL_DWARVEN"
-      furniture = { "emptyChests" }
-    }
-  }
   "ELVES"
   {
     settlement = {
@@ -1068,9 +639,9 @@
       tribe = ELF
       race = "elves"
       stockpiles = {{ "gold" 100 "TREASURE_CHEST"}}
-      buildingId = "BARRICADES"
+      buildingId = "BARRICADES" #Modded
       lootItem = {TechBook "master sorcery"}
-      furniture = { "elvenRoomFurniture" }
+      furniture = { "elvenRoomFurniture" } #Modded
     }
     config = {
       immigrantInterval = 500
@@ -1098,6 +669,7 @@
       type = TOWER
       tribe = HUMAN
       buildingId = "BRICK"
+#Mod Begin
       inhabitants = {
         fighters = {
           count = {1 2}
@@ -1105,6 +677,7 @@
         }
       }
     }
+#Mod End
     discoverable = false
   }
   "ELEMENTALIST_FLOOR"
@@ -1224,7 +797,7 @@
     settlement = {
       type = CAVE
       inhabitants = {
-       leader = { { "BANDIT_LEADER" } }
+       leader = { { "BANDIT_LEADER" } } #Modded
         fighters = {
           count = {4 9}
           all = { 1 "BANDIT" }
@@ -1252,75 +825,14 @@
     behaviour = {
       minPopulation = 0
       minTeamSize = 3
-      triggers = {Gold 300}
+      triggers = {Gold 300} #Modded
       attackBehaviour = StealGold
       ransom = 0.5 80
-    }
-  }
-  "ADOXIE_SURFACE_BANDITS" inherit "NO_AGGRO_BANDITS"
-  {
-    discoverable = false
-  }
-  "ADOXIE_BANDITS" inherit "NO_AGGRO_BANDITS"
-  {
-    settlement = {
-      type = CAVE
-      inhabitants = {
-       leader = { { "BANDIT_LEADER" } }
-        fighters = {
-          count = {10 11}
-          all = { 1 "BANDIT" }
-          baseLevelIncrease = {
-            MELEE 10
-          }
-        }
-      }
-      tribe = BANDIT
-      race = "bandits"
-      buildingId = "BRICK"
-      locationName = "Adoxie"
-      furniture = { "roomFurniture" }
     }
   }
   "COTTAGE_BANDITS" inherit "NO_AGGRO_BANDITS"
   {
     createOnBones = 1.0 { "HUMAN_COTTAGE" }
-  }
-  "LION_PRIDE"
-  {
-    settlement = {
-      type = CAVE
-      inhabitants = {
-        leader = { { "LION_QUEEN" } }
-        fighters = {
-          count = {4 9}
-          all = { 1 "LION" 1 "LIONESS" }
-        }
-      }
-      tribe = MONSTER
-      race = "lions"
-      buildingId = "DUNGEON"
-    }
-    config = {
-      immigrantInterval = 1000
-      maxPopulation = 12
-    }
-    createOnBones = 0.5 { "NO_AGGRO_BANDITS" }
-    immigrants = { 
-      {
-        ids = { "LION" "LIONESS" }
-        traits = { FIGHTER }
-        frequency = 1
-      }
-    }
-    behaviour = {
-      minPopulation = 1
-      minTeamSize = 5
-      triggers = {
-        FinishOff
-      }
-      attackBehaviour = KillMembers 10
-    }
   }
   "ORC_CAVE"
   {
@@ -1418,59 +930,6 @@
     immigrants = { 
       {
         ids = { "LIZARDMAN" }
-        traits = { FIGHTER }
-        frequency = 1
-      }
-    }
-  }
-  "ADOXIE_LIZARDMEN" inherit "LIZARDMEN"
-  {
-    settlement = {
-      type = VILLAGE
-      tribe = LIZARD
-      inhabitants = {
-        leader = { { "LIZARDLORD" } }
-        fighters = {
-          count = {7 10}
-          all = { 1 "LIZARDMAN" }
-        }
-      }
-      locationName = "Adoxie"
-      race = "lizardmen"
-      buildingId = "MUD"
-      furniture = { "roomFurniture" }
-    }
-  }
-  "RATMEN"
-  {
-    settlement = {
-      type = VILLAGE
-      tribe = HUMAN
-      inhabitants = {
-        leader = { { "RAT_KING" } }
-        fighters = {
-          count = {7 10}
-          all = {
-		    1 "RAT_SOLDIER"
-		    1 "RAT_LADY"
-		    1 "RAT_MAN"
-		    1 "RAT_GENERAL"
-		    1 "RAT_ARCHER"
-		  }
-        }
-      }
-      locationNameGen = "TOWN"
-      race = "ratmen"
-      buildingId = "MUD"
-      outsideFeatures = "villageOutside"
-    }
-    config = {
-      immigrantInterval = 140
-      maxPopulation = 11
-    }
-    immigrants = { 
-      {
-        ids = { "RAT_SOLDIER" "RAT_LADY" "RAT_KING" "RAT_GENERAL" "RAT_MAN" "RAT_ARCHER" }
         traits = { FIGHTER }
         frequency = 1
       }
@@ -1778,7 +1237,7 @@
       }
     }
   }
-  "SHELOB"
+  "SHELOB" #Modded
   {
     settlement = {
       type = VILLAGE
@@ -1806,7 +1265,7 @@
     config = {
      leaderAsFighter = true
     }
-    createOnBones = 0.6 { "DWARF_CAVE" "KOBOLD_CAVE" "OGRE_CAVE" "HARPY_CAVE" "OGRE_CAVE" "HARPY_CAVE"}
+    createOnBones = 0.6 { "DWARF_CAVE" "KOBOLD_CAVE" "OGRE_CAVE" "HARPY_CAVE" "OGRE_CAVE" "HARPY_CAVE"} #Modded
   }
   "CYCLOPS"
   {
@@ -1832,21 +1291,7 @@
       attackBehaviour = KillMembers 4
     }
   }
-  "ADOXIE_CYCLOPS" inherit "CYCLOPS"
-  {
-    settlement = {
-      type = CAVE
-      inhabitants = {
-        leader = { { "CYCLOPS" } }
-      }
-      race = "cyclops"
-      tribe = HOSTILE
-      locationName = "Adoxie"
-      buildingId = "WOOD_CASTLE"
-      furniture = { "roomFurniture" }
-    }
-  }
-  "HYDRA"
+  "HYDRA" #Modded
   {
     settlement = {
       type = SWAMP
@@ -1885,7 +1330,7 @@
     }
     discoverable = false
   }
-  "CEMETERY"
+  "CEMETERY" #Modded
   {
     settlement = {
       type = CEMETERY
@@ -1922,7 +1367,7 @@
         fighters = {
           count = {1 2}
           all = {
-            1 "SKELETON_MAGE"
+            1 "SKELETON_MAGE" #Modded
           }
         }
       }
@@ -2120,7 +1565,7 @@
       furniture = { "roomFurniture" }
     }
     config = {
-      guardianInfo = "MILITIA" 0.2 1 3
+      guardianInfo = "MILITIA" 0.2 1 3 #Modded
     }
   }
   "ESKIMO_COTTAGE" inherit "HUMAN_COTTAGE"
@@ -2287,40 +1732,6 @@
     }
     createOnBones = 1.0 { "ELVEN_COTTAGE" }
   }
-  "GORGON_CULT"
-  {
-    settlement = {
-      type = FORREST_COTTAGE
-      tribe = MONSTER
-      inhabitants = {
-	    leader = {{ "GORGON" }}
-        fighters = {
-          count = {10 15}
-          all = {
-            1 "WITCH"
-            1 "WITCHMAN"
-          }
-        }
-      }
-      race = "witchmen"
-      buildingId = "WOOD"
-      furniture = { "roomFurniture" }
-    }
-    createOnBones = 1.0 { "ELVEN_COTTAGE" }
-    behaviour = {
-      minPopulation = 5
-      minTeamSize = 5
-      triggers = {
-        EnemyPopulation 30
-      }
-      attackBehaviour = CampAndSpawn {
-        count = {1 2}
-        all = {
-          1 "GORGON"
-        }
-      }
-    }
-  }
   "KOBOLD_CAVE"
   {
     settlement = {
@@ -2335,21 +1746,6 @@
       race = "kobolds"
       buildingId = "DUNGEON"
       stockpiles = {{ "minerals" 60 }}
-    }
-  }
-  "GARGOYLE_ENTRANCE"
-  {
-    settlement = {
-      type = CAVE
-      buildingId = "DUNGEON"
-      tribe = GNOME
-      race = "demon"
-      inhabitants = {
-        fighters = {
-          count = {3 4}
-          all = { 1 "GARGOYLE" }
-        }
-      }
     }
   }
   "DWARF_CAVE"
@@ -2423,7 +1819,7 @@
       }
       closeToPlayer = true
       dontConnectCave = true
-      outsideFeatures = "caveWells"
+      outsideFeatures = "caveWells" #Modded
     }
     discoverable = false
     behaviour = {
@@ -2602,6 +1998,609 @@
         }
         traits = {FIGHTER}
         frequency = 1
+      }
+    }
+  }
+  
+########
+# Modded
+########
+  "FAIRIES"
+  {
+    settlement = {
+      type = FOREST
+      inhabitants = {
+        fighters = {
+          count = {5 10}
+          all = {
+            1 "AIR_FAIRY"
+            1 "DARK_FAIRY"
+            1 "EARTH_FAIRY"
+            1 "ELECTRIC_FAIRY"
+            1 "MAGIC_FAIRY"
+            1 "NATURE_FAIRY"
+            1 "LIGHT_FAIRY"
+            1 "DEMON_FAIRY"
+            1 "WATER_FAIRY"
+          }
+        }
+      }
+      tribe = ELF
+      race = "fairies"
+      buildingId = "WOOD"
+    }
+    config = {
+      immigrantInterval = 200
+      maxPopulation = 10
+    }
+    immigrants = {
+      {
+        ids = {"AIR_FAIRY" "DARK_FAIRY" "EARTH_FAIRY" "ELECTRIC_FAIRY" "MAGIC_FAIRY" "NATURE_FAIRY" "LIGHT_FAIRY" "DEMON_FAIRY" "WATER_FAIRY"}
+        traits = {FIGHTER}
+        frequency = 1
+      }
+    }	
+    behaviour = {
+      minPopulation = 5
+      minTeamSize = 4
+      triggers = {
+        SelfVictims
+      }
+      attackBehaviour = KillMembers 5
+	}
+  }
+  "CENTAURS"
+  {
+    settlement = {
+      type = FOREST
+      inhabitants = {
+	    leader = {{ "CENTAUR_KING" }}
+        fighters = {
+          count = {10 15}
+          all = {
+            1 "CENTAUR_ARCHER"
+            1 "CENTAUR_FARMER"
+            1 "CENTAUR_HUNTER"
+            1 "CENTAUR_CHILD"
+            1 "CENTAUR_KNIGHT"
+          }
+        }
+      }
+      tribe = HUMAN
+      race = "centaurs"
+      buildingId = "WOOD"
+    }
+    config = {
+      immigrantInterval = 200
+      maxPopulation = 20
+    }
+    immigrants = {
+      {
+        ids = {  "CENTAUR_ARCHER" "CENTAUR_FARMER" "CENTAUR_HUNTER" "CENTAUR_CHILD" "CENTAUR_KING" "CENTAUR_KNIGHT" }
+        traits = {FIGHTER}
+        frequency = 1
+      }
+    }
+    behaviour = {
+      minPopulation = 1
+      minTeamSize = 5
+      triggers = {
+        SelfVictims
+      }
+      attackBehaviour = KillMembers 15
+	}
+  }
+  "AMAZONS"
+  {
+    settlement = {
+      type = VILLAGE
+      inhabitants = {
+	    leader = {{  "AMAZON_QUEEN" }}
+        fighters = {
+          count = {10 15}
+          all = {
+            2 "AMAZON"
+            1 "AMAZON_ARCHER"
+            1 "AMAZON_CHAMPION"
+            1 "AMAZON_ELDER"
+            1 "AMAZON_WAR_MAIDEN"
+          }
+        }
+      }
+      tribe = HUMAN
+      race = "amazons"
+      buildingId = "WOOD"
+    }
+    config = {
+      immigrantInterval = 200
+      maxPopulation = 20
+    }
+    immigrants = {
+      {
+        ids = { "AMAZON" "AMAZON_ARCHER" "AMAZON_CHAMPION" "AMAZON_ELDER" "AMAZON_WAR_MAIDEN" }
+        traits = {FIGHTER}
+        frequency = 1
+      }
+    }
+    behaviour = {
+      minPopulation = 5
+      minTeamSize = 4
+      triggers = {
+        EnemyPopulation 25
+      }
+      attackBehaviour = KillLeader
+    }
+  }
+  "VULTURE_ABOMINATIONS"
+  {
+    settlement = { 
+      type = CAVE
+      inhabitants = {
+        leader = { { "ADOXIE_EYE" } }
+        fighters = {
+          count = {5 9}
+          all = {
+		    3 "VULTURE_ABOMINATION"
+            1 "EYE_SERVANT"
+          }
+        }
+	  }
+      tribe = MONSTER
+      race = "abominations"
+      buildingId = "DUNGEON"
+    }
+    config = {
+      immigrantInterval = 500
+      maxPopulation = 35
+    }
+    immigrants = {
+      {
+        ids = {"VULTURE"}
+        frequency = 1
+      }
+      {
+        ids = {"VULTURE_ABOMINATION"}
+        traits = {FIGHTER}
+        frequency = 3
+      }
+    }
+  }
+  "OCEAN_PORTAL"
+  {
+    settlement = { 
+      type = CAVE
+      inhabitants = {
+        leader = { { "OCEAN_PORTAL" } }
+        fighters = {
+          count = {3 4}
+          all = {
+            1 "WATER_ELEMENTAL"
+          }
+        }
+	  }
+      tribe = MONSTER
+      race = "ocean spirits"
+      buildingId = "MUD"
+    }
+    config = {
+      immigrantInterval = 500
+      maxPopulation = 35
+    }
+    immigrants = {
+      {
+        ids = {"WATER_ELEMENTAL"}
+        traits = {FIGHTER}
+        frequency = 3
+      }
+    }
+  }
+  "UNDEAD_SETTLEMENT"
+  {
+    settlement = {
+      type = VILLAGE
+      tribe = MONSTER
+      inhabitants = {
+        leader = {
+        id = { "NECROMANCER" }
+          baseLevelIncrease = {
+            MELEE 3
+            SPELL 7
+          } }
+        fighters = {
+          count = {12 16}
+          all = {
+            1 "SKELETON"
+            1 "SKELETON_MAGE"
+            1 "MUMMY"
+            1 "ZOMBIE"
+            1 "SKELETON_WARRIOR"
+          }
+        }
+      }
+      locationName = "Necromancer abode"
+      race = "undead"
+      buildingId = "BRICK"
+      furniture = { "cryptCoffins" }
+      outsideFeatures = "villageOutside"
+    }
+    config = {
+      immigrantInterval = 100
+      maxPopulation = 20
+    }
+    createOnBones = 0.1 { "CEMETERY" }
+    immigrants = {
+      {
+        ids = {"SKELETON"}
+        traits = {FIGHTER}
+        frequency = 3
+      }
+      {
+        ids = {"ZOMBIE"}
+        traits = {FIGHTER}
+        frequency = 1
+      }
+    }
+  }
+  "ADOXIE_DEMONS"
+  {
+    settlement = {
+      type = VILLAGE
+      buildingId = "RUINS"
+      tribe = MONSTER
+      inhabitants = {
+        leader = { { "DEMON_LORD" } }
+        fighters = {
+          count = {5 10}
+          all = { 1 "DEMON_DWELLER" }
+        }
+      }
+      locationName = "Adoxie"
+      race = "demons"
+      furniture = { "demonic" }
+    }
+  }
+  "DRAGONS"
+  {
+    settlement = {
+      type = SMALL_MINETOWN
+      tribe = MONSTER
+	  race = "dragons"
+      buildingId = "DUNGEON"
+      inhabitants = {
+        fighters = {
+          count = {10 15}
+          all = {
+		    1 "GREEN_DRAGON"
+		    1 "RED_DRAGON"
+		    2 "YOUNG_GREEN_DRAGON"
+		    2 "YOUNG_RED_DRAGON"
+		    6 "GREEN_DRAGONEWT"
+		    6 "RED_DRAGONNEWT"
+		  }
+        }
+      }
+    }
+    config = {
+      immigrantInterval = 300
+      maxPopulation = 20
+    }
+    immigrants = {
+      {
+        ids = {"GREEN_DRAGONEWT" "RED_DRAGONNEWT"}
+        traits = {FIGHTER}
+        frequency = 1
+      }
+    }
+    createOnBones = 1.0 { "KNIGHTS_RUINS" }
+    behaviour = {
+      minPopulation = 5
+      minTeamSize = 4
+      triggers = {
+		Gold 2000
+      }
+      attackBehaviour = StealGold
+    }
+  }
+  "KNIGHTS_RUINS" inherit "KNIGHTS"
+  {
+    settlement = {
+      type = CASTLE
+      tribe = HUMAN
+	  buildingId = "RUINS"
+      shopItems = "jewellery"
+      inhabitants = {
+        leader = { { "DUKE" } }
+        fighters = {
+          count = {12 17}
+          all = {
+            1 "PRIEST"
+            3 "KNIGHT"
+            1 "ARCHER"
+            2 "MILITIA"
+          }
+        }
+      }
+	}
+  }
+  "MAZE_RUINS"
+  {
+    settlement = {
+      type = CAVE
+      tribe = MONSTER
+      inhabitants = {
+        leader = { { "ANCIENT_RED_DRAGON" "ANCIENT_GREEN_DRAGON" } }
+      }
+      locationName = "maze"
+      race = "monsters"
+      furniture = { "roomFurniture" }
+      buildingId = "BRICK"
+    }
+    createOnBones = 1.0 { "MINOTAUR" }
+  }  
+  "HELL_PORTAL"
+  {
+    settlement = {
+      type = CAVE
+      tribe = MONSTER
+      inhabitants = {
+        leader = { { "HELL_PORTAL" } }
+      }
+      locationName = "hell portal"
+      race = "hell knights"
+      furniture = { "roomFurniture" }
+      buildingId = "BRICK"
+    }
+    config = {
+      immigrantInterval = 20
+      maxPopulation = 2
+    }    
+    immigrants = {
+      {
+        ids = {"HELL_KNIGHT_SWORDMASTER" "HELL_KNIGHT_LORD" "HELL_KNIGHT_BRUTE" "HELL_KNIGHT"}
+        traits = {FIGHTER}
+        frequency = 20
+        spawnLocation = InsideTerritory
+      }
+    }
+  }
+  "ADOXIE_DUNGEON"
+  {
+    settlement = {
+      type = CAVE
+      tribe = MONSTER
+      inhabitants = {
+        leader = { { "ADOXIE_PRIEST" } }
+        fighters = {
+          count = {4 5}
+          all = { 1 "ABOMINATION" }
+        }
+        civilians = {
+          count = { 4 5 }
+          all = { 1 "SPIDER_FOOD" }
+        }
+      }
+      locationName = "abode of Adoxie"
+      race = "adoxie"
+      furniture = { "adoxie" }
+      buildingId = "BRICK"
+    }
+    createOnBones = 0.5 { "MAIN_DUNGEON" }
+    levelConnection = {
+      topLevel = ExtraEnemy {"ADOXIE_SURFACE_BANDITS"}
+      levels = {
+        { ExtraEnemy { "ADOXIE_BANDITS" { 1 } } 30 30 DUNGEON }
+        { ExtraEnemy { "ADOXIE_LIZARDMEN" { 1 } } 70 70 DUNGEON }
+        { ExtraEnemy { "ADOXIE_CYCLOPS" { 1 } } 20 20 DUNGEON }
+        { ExtraEnemy { "ADOXIE_DWARVES" { 1 } } 300 90 MAZE }
+        { ExtraEnemy { "ADOXIE_DEMONS" { 1 } } 50 50 MAZE }
+        { MainEnemy 30 30 MINETOWN }
+      }
+    }
+  }
+  "ADOXIE_DWARVES" inherit "DWARVES"
+  {
+    settlement = {
+      type = MINETOWN
+      tribe = MONSTER
+      inhabitants = {
+        leader = { { "DWARF_BARON" } }
+        fighters = {
+          count = {20 25}
+          all = {
+            1 "DWARF"
+          }
+          baseLevelIncrease = {
+            MELEE 10
+          }
+        }
+        civilians = {
+          count = {3 5}
+          all = {
+            2 "DWARF_FEMALE"
+            1 "RAT"
+          }
+        }
+      }
+      locationName = "Adoxie"
+      race = "dark dwarves"
+      buildingId = "SANDSTONE_WALL_DWARVEN"
+      furniture = { "emptyChests" }
+    }
+  }
+  "ADOXIE_SURFACE_BANDITS" inherit "NO_AGGRO_BANDITS"
+  {
+    discoverable = false
+  }
+  "ADOXIE_BANDITS" inherit "NO_AGGRO_BANDITS"
+  {
+    settlement = {
+      type = CAVE
+      inhabitants = {
+       leader = { { "BANDIT_LEADER" } }
+        fighters = {
+          count = {10 11}
+          all = { 1 "BANDIT" }
+          baseLevelIncrease = {
+            MELEE 10
+          }
+        }
+      }
+      tribe = BANDIT
+      race = "bandits"
+      buildingId = "BRICK"
+      locationName = "Adoxie"
+      furniture = { "roomFurniture" }
+    }
+  }
+  "LION_PRIDE"
+  {
+    settlement = {
+      type = CAVE
+      inhabitants = {
+        leader = { { "LION_QUEEN" } }
+        fighters = {
+          count = {4 9}
+          all = { 1 "LION" 1 "LIONESS" }
+        }
+      }
+      tribe = MONSTER
+      race = "lions"
+      buildingId = "DUNGEON"
+    }
+    config = {
+      immigrantInterval = 1000
+      maxPopulation = 12
+    }
+    createOnBones = 0.5 { "NO_AGGRO_BANDITS" }
+    immigrants = { 
+      {
+        ids = { "LION" "LIONESS" }
+        traits = { FIGHTER }
+        frequency = 1
+      }
+    }
+    behaviour = {
+      minPopulation = 1
+      minTeamSize = 5
+      triggers = {
+        FinishOff
+      }
+      attackBehaviour = KillMembers 10
+    }
+  }
+  "ADOXIE_LIZARDMEN" inherit "LIZARDMEN"
+  {
+    settlement = {
+      type = VILLAGE
+      tribe = LIZARD
+      inhabitants = {
+        leader = { { "LIZARDLORD" } }
+        fighters = {
+          count = {7 10}
+          all = { 1 "LIZARDMAN" }
+        }
+      }
+      locationName = "Adoxie"
+      race = "lizardmen"
+      buildingId = "MUD"
+      furniture = { "roomFurniture" }
+    }
+  }
+  "RATMEN"
+  {
+    settlement = {
+      type = VILLAGE
+      tribe = HUMAN
+      inhabitants = {
+        leader = { { "RAT_KING" } }
+        fighters = {
+          count = {7 10}
+          all = {
+		    1 "RAT_SOLDIER"
+		    1 "RAT_LADY"
+		    1 "RAT_MAN"
+		    1 "RAT_GENERAL"
+		    1 "RAT_ARCHER"
+		  }
+        }
+      }
+      locationNameGen = "TOWN"
+      race = "ratmen"
+      buildingId = "MUD"
+      outsideFeatures = "villageOutside"
+    }
+    config = {
+      immigrantInterval = 140
+      maxPopulation = 11
+    }
+    immigrants = { 
+      {
+        ids = { "RAT_SOLDIER" "RAT_LADY" "RAT_KING" "RAT_GENERAL" "RAT_MAN" "RAT_ARCHER" }
+        traits = { FIGHTER }
+        frequency = 1
+      }
+    }
+  }
+  "ADOXIE_CYCLOPS" inherit "CYCLOPS"
+  {
+    settlement = {
+      type = CAVE
+      inhabitants = {
+        leader = { { "CYCLOPS" } }
+      }
+      race = "cyclops"
+      tribe = HOSTILE
+      locationName = "Adoxie"
+      buildingId = "WOOD_CASTLE"
+      furniture = { "roomFurniture" }
+    }
+  }
+  "GORGON_CULT"
+  {
+    settlement = {
+      type = FORREST_COTTAGE
+      tribe = MONSTER
+      inhabitants = {
+	    leader = {{ "GORGON" }}
+        fighters = {
+          count = {10 15}
+          all = {
+            1 "WITCH"
+            1 "WITCHMAN"
+          }
+        }
+      }
+      race = "witchmen"
+      buildingId = "WOOD"
+      furniture = { "roomFurniture" }
+    }
+    createOnBones = 1.0 { "ELVEN_COTTAGE" }
+    behaviour = {
+      minPopulation = 5
+      minTeamSize = 5
+      triggers = {
+        EnemyPopulation 30
+      }
+      attackBehaviour = CampAndSpawn {
+        count = {1 2}
+        all = {
+          1 "GORGON"
+        }
+      }
+    }
+  }
+  "GARGOYLE_ENTRANCE"
+  {
+    settlement = {
+      type = CAVE
+      buildingId = "DUNGEON"
+      tribe = GNOME
+      race = "demon"
+      inhabitants = {
+        fighters = {
+          count = {3 4}
+          all = { 1 "GARGOYLE" }
+        }
       }
     }
   }

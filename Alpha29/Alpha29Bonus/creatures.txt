@@ -50,49 +50,7 @@
         firstNameGen = "FIRST_FEMALE"
         fullTitle = true
       }
-      viewIdUpgrades = { { "keeper_f2" } { "keeper_f3" } { "keeper_f4" } }
-    }
-  "KEEPER_MAGE_EASY" inherit "KEEPER_MAGE"
-    {
-      viewId = { "keeper1" Rgb 58 255 106 106 }
-      viewIdUpgrades = { { "keeper2" Rgb 58 255 106 106 } { "keeper3" Rgb 58 255 106 106 } { "keeper4" Rgb 58 255 106 106 } }
-      attr = {
-        DAMAGE 15
-        DEFENSE 15
-        SPELL_DAMAGE 25
-      }
-    }
-  "KEEPER_MAGE_F_EASY" inherit "KEEPER_MAGE_EASY"
-    {
-      viewId = { "keeper_f1" Rgb 58 255 106 106 }
-      viewIdUpgrades = { { "keeper_f2" Rgb 58 255 106 106 } { "keeper_f3" Rgb 58 255 106 106 } { "keeper_f4" Rgb 58 255 106 106 } }
-      gender = FEMALE
-      name = {
-        name = "wizard"
-        firstNameGen = "FIRST_FEMALE"
-        fullTitle = true
-      }
-    }
-  "KEEPER_MAGE_HARD" inherit "KEEPER_MAGE"
-    {
-      viewId = { "keeper1" Rgb 106 106 255 106 }
-      viewIdUpgrades = { { "keeper2" Rgb 106 106 255 106 } { "keeper3" Rgb 106 106 255 106 } { "keeper4" Rgb 106 106 255 106 } }
-      attr = {
-        DAMAGE 10
-        DEFENSE 10
-        SPELL_DAMAGE 15
-      }
-    }
-  "KEEPER_MAGE_F_HARD" inherit "KEEPER_MAGE_HARD"
-    {
-      viewId = { "keeper_f1" Rgb 106 106 255 106 }
-      gender = FEMALE
-      name = {
-        name = "wizard"
-        firstNameGen = "FIRST_FEMALE"
-        fullTitle = true
-      }
-      viewIdUpgrades = {{ "keeper_f2"  Rgb 106 106 255 106 } { "keeper_f3"  Rgb 106 106 255 106 } { "keeper_f4"  Rgb 106 106 255 106 }}
+      viewIdUpgrades = { { "keeper_f2" } { "keeper_f3" } { "keeper_f4" }}
     }
   "KEEPER_KNIGHT"
     {
@@ -254,33 +212,64 @@
       }
       hatedByEffect = HATE_HUMANS
     }
-
-"BANDIT_LEADER"
+  "RAT_SOLDIER"
     {
-      viewId = { "bandit_leader" }
+      viewId = { "rat_soldier" }
       attr = {
-        DAMAGE 18
-        DEFENSE 19
-        RANGED_DAMAGE 3
+        DAMAGE 12
+        DEFENSE 10
       }
       body = {
-        type = Humanoid LARGE
+        type = Humanoid MEDIUM
       }
-      permanentEffects = {
-        AMBUSH_SKILL 1
-      }
-      spells = { "battle cry" }
-      chatReactionFriendly = "curses all law enforcement"
-      chatReactionHostile = "\"Die!\""
+      chatReactionFriendly = "talks about sewers"
+      chatReactionHostile = "talks about sewers"
       maxLevelIncrease = {
-        MELEE 5
+        MELEE 2
       }
       name = {
-        name = "bandit leader"
+        name = "rat soldier"
       }
-      hatedByEffect = HATE_HUMANS
     }
-
+  "RAT_LADY"
+    {
+      viewId = { "rat_lady" }
+      gender = FEMALE
+      attr = {
+        DAMAGE 7
+        DEFENSE 7
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "talks about sewers"
+      chatReactionHostile = "talks about sewers"
+      maxLevelIncrease = {
+        MELEE 1
+      }
+      name = {
+        name = "rat woman"
+      }
+    }
+  "RAT_KING"
+    {
+      viewId = { "rat_king" }
+      attr = {
+        DAMAGE 15
+        DEFENSE 13
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "talks about sewers"
+      chatReactionHostile = "talks about sewers"
+      maxLevelIncrease = {
+        MELEE 3
+      }
+      name = {
+        name = "rat king"
+      }
+    }
   "GHOST"
     {
       viewId = { "ghost" }
@@ -362,7 +351,7 @@
           TORSO { Intrinsic { "touch_attack" } "touch" 0 {
               attackType = HIT
               attackMsg = TOUCH
-              victimEffect = { 1.0 Lasting INSANITY}
+              victimEffect = { 0.2 Lasting INSANITY}
               attackerEffect = {Suicide DIE} } }
         }
       }
@@ -379,27 +368,6 @@
       chatReactionHostile = "\"Wouuuouuu!!!\""
       name = {
         name = "ghost"
-      }
-    }
-  "FIRE_SPHERE"
-    {
-      viewId = { "fireball" }
-      attr = {
-        DAMAGE 5
-        DEFENSE 15 
-      }
-      body = {
-        type = NonHumanoid SMALL
-        material = FIRE
-        deathSound = none
-      }
-      permanentEffects = {
-        FIRE_RESISTANT 1
-        FLYING 1
-        LIGHT_SOURCE 1
-      }
-      name = {
-        name = "fire sphere"
       }
     }
   "SUCCUBUS"
@@ -430,37 +398,6 @@
       name = {
         name = "succubus"
         pluralName = "succubi"
-      }
-    }
-  "COMBAT_SUCCUBUS"
-    {
-      attr = {
-        DAMAGE 16
-        DEFENSE 25
-        SPELL_DAMAGE 5 
-      }
-      viewId = { "succubus" }
-      body = {
-        type = Humanoid LARGE
-        material = SPIRIT
-        intrinsicAttacks = {
-          TORSO { Intrinsic { "touch_attack" } "touch" 0 {
-              attackType = HIT
-              attackMsg = TOUCH
-              victimEffect = {1.0 Lasting PEACEFULNESS} } }
-        }
-        addBodyPart = {
-          WING 2
-        }
-      }
-      permanentEffects = {
-        COPULATION_SKILL 1
-      }
-      gender = FEMALE
-      courage = -1
-      name = {
-        name = "combat succubus"
-        pluralName = "combat succubi"
       }
     }
   "DOPPLEGANGER"
@@ -577,7 +514,7 @@
         FLYING 1
         MAGIC_RESISTANCE 1
         SPELL_DAMAGE 1
-        SPEED 1
+        SPEED 1 #Modded
       }
       courage = 100
       spells = { "directed blast" }
@@ -760,9 +697,13 @@
         firstNameGen = "DRAGON"
       }
       spells = { "healing" "deception" "haste" "cure poison" }
+
+      # Modded
       chatReactionFriendly = "\"Kos Haas\""
       chatReactionHostile = "\"Viidost Al Hi Joor\""
       deathDescription = "slain"
+      #
+      
       courage = 1
     }
   "RED_DRAGON"
@@ -795,9 +736,13 @@
         stackName = "dragon"
       }
       spells = { "healing" "deception" "haste" "cure poison" "fire breath"}
+
+      #Modding
       chatReactionFriendly = "\"Lingrah Laas Wah Hi\""
       chatReactionHostile = "\"Aal Yol Du Hi Joor!\""
       deathDescription = "slain"
+      #
+      
       courage = 1 
     }
   "BLACK_DRAGON"
@@ -992,7 +937,7 @@
       body = {
         type = Humanoid MEDIUM
       }
-      spellSchools = { "gnomeish" }
+      spellSchools = { "gnomeish" } #Modded
       chatReactionFriendly = "talks about crafting"
       chatReactionHostile = "\"Die!\""
       skills = {
@@ -1081,49 +1026,6 @@
       }
       hatedByEffect = HATE_HUMANS
     }
-
-    "MILITIA_PLAYER"
-    {
-      viewId = { "militia" }
-      attr = {
-        DAMAGE 10
-        DEFENSE 10
-      }
-      body = {
-        type = Humanoid LARGE
-      }
-      maxLevelIncrease = {
-        MELEE 7
-      }
-      chatReactionFriendly = "talks about gold."
-      chatReactionHostile = "\"Die!\""
-      name = {
-        name = "militia"
-        firstNameGen = "FIRST_MALE"
-      }
-      hatedByEffect = HATE_HUMANS
-    }
-    "MILITIA"
-    {
-      viewId = { "militia" }
-      attr = {
-        DAMAGE 27
-        DEFENSE 25
-      }
-      body = {
-        type = Humanoid LARGE
-      }
-      maxLevelIncrease = {
-        MELEE 4
-      }
-      chatReactionFriendly = "talks about money."
-      chatReactionHostile = "\"Die!\""
-      name = {
-        name = "militia"
-      }
-      hatedByEffect = HATE_HUMANS
-    }
-
   "JESTER"
     {
       viewId = { "jester" }
@@ -1421,7 +1323,7 @@
         name = "stone golem"
       }
     }
-    "IRON_GOLEM"
+  "IRON_GOLEM"
     {
       viewId = { "iron_golem" }
       attr = {
@@ -1435,104 +1337,12 @@
       permanentEffects = {
         MELEE_RESISTANCE 1
         SLOWED 1
-        POISON_RESISTANT 1
-        SLEEP_RESISTANT 1
       }
       name = {
         name = "iron golem"
       }
     }
-    #Note: It is magic not sci-fi.
-    "GIANT_ROBOT"
-    {
-      viewId = { "giant_robot" }
-      attr = {
-        DAMAGE 45
-        DEFENSE 45
-      }
-      body = {
-      type = HumanoidLike HUGE
-      material = IRON
-      intrinsicAttacks = {
-        ARM { Intrinsic { "fist_attack" } "fists" 10 {
-          attackType = HIT
-          attackMsg = SWING }}
-      }}
-      chatReactionFriendly = "\"Zip Zip!\""
-      chatReactionHostile = "\"Prepare to be crushed.\""
-      cantEquip = true
-      permanentEffects = {
-        MELEE_RESISTANCE 1
-        RANGED_RESISTANCE 1
-        POISON_RESISTANT 1
-        SLEEP_RESISTANT 1
-        SLOWED 1
-      }
-      name = {
-        name = "giant contraption"
-      }
-    }
-    "POSSESSED_SWORD"
-    {
-      viewId = { "sword" }
-      attr = {
-        DAMAGE 30
-        DEFENSE 30 
-      }
-      body = {
-        type = NonHumanoid HUGE
-        bodyParts = {
-          BACK 2
-		  ARM 1
-		  TORSO 1
-		}				
-        material = IRON
-        weight = 10
-        intrinsicAttacks = {
-          ARM { Intrinsic { "sword" } "blade" 10 { attackType = HIT attackMsg = THRUST } }
-        }        
-      }
-      permanentEffects = {
-        FLYING 1
-      }
-      name = {
-        name = "possessed sword"
-      }
-      deathDescription = "vanquished"
-      courage = 1
-      cantEquip = true
-    }
-    "GHOST_ARMOUR"
-    {
-      viewId = { "chain_armor" }
-      attr = {
-        DAMAGE 20
-        DEFENSE 40 
-      }
-      body = {
-        type = NonHumanoid HUGE
-        bodyParts = {
-          BACK 2
-		  ARM 1
-		  TORSO 1
-		}				
-        material = IRON
-        weight = 10
-        intrinsicAttacks = {
-          ARM { Intrinsic { "chain_armor" } "metal" 10 { attackType = HIT attackMsg = SWING } }
-        }        
-      }
-      permanentEffects = {
-        FLYING 1
-      }
-      name = {
-        name = "ghost armour"
-      }
-      deathDescription = "vanquished"
-      courage = 1
-      cantEquip = true
-    }
-    "LAVA_GOLEM"
+  "LAVA_GOLEM"
     {
       viewId = { "lava_golem" }
       attr = {
@@ -1553,8 +1363,6 @@
         MELEE_RESISTANCE 1
         SLOWED 1
         FIRE_RESISTANT 1
-        POISON_RESISTANT 1
-        SLEEP_RESISTANT 1
       }
       name = {
         name = "lava golem"
@@ -1577,8 +1385,6 @@
         NAVIGATION_DIGGING_SKILL 1
         MAGIC_VULNERABILITY 1
         FIRE_RESISTANT 1
-        POISON_RESISTANT 1
-        SLEEP_RESISTANT 1
       }
       name = {
         name = "adamantine golem"
@@ -1628,7 +1434,6 @@
         name = "zombie"
       }
       hatedByEffect = HATE_UNDEAD
-      courage = 1
     }
   "SKELETON"
     {
@@ -1644,8 +1449,6 @@
       }
       permanentEffects = {
         RANGED_RESISTANCE 1
-        POISON_RESISTANT 1
-        SLEEP_RESISTANT 1
       }
       maxLevelIncrease = {
         MELEE 3
@@ -1655,66 +1458,7 @@
         name = "skeleton"
       }
       hatedByEffect = HATE_UNDEAD
-      courage = 1
     }
-    "SKELETON_WARRIOR"
-    {
-      viewId = { "skeleton_warrior" }
-      attr = {
-        DAMAGE 23
-        DEFENSE 30
-        RANGED_DAMAGE 8
-      }
-      body = {
-        type = Humanoid LARGE
-        material = BONE
-      }
-      permanentEffects = {
-        RANGED_RESISTANCE 1
-        POISON_RESISTANT 1
-        SLEEP_RESISTANT 1
-      }
-      spellSchools = { "fighter" }
-      maxLevelIncrease = {
-        MELEE 8
-        ARCHERY 5
-      }
-      name = {
-        name = "skeleton warrior"
-      }
-      hatedByEffect = HATE_UNDEAD
-      courage = 1
-    }
-    "SKELETON_MAGE"
-    {
-      viewId = { "lich_keeper3" }
-      attr = {
-        DAMAGE 10
-        DEFENSE 25
-        SPELL_DAMAGE 25
-      }
-      body = {
-        type = Humanoid LARGE
-        material = BONE
-      }
-      permanentEffects = {
-        RANGED_RESISTANCE 1
-        POISON_RESISTANT 1
-        SLEEP_RESISTANT 1
-      }
-      maxLevelIncrease = {
-        MELEE 2
-        SPELL 7
-      }
-     spellSchools = { "mage" }
-     spells = { "fireball" }
-      name = {
-        name = "skeleton mage"
-      }
-      hatedByEffect = HATE_UNDEAD
-      courage = -1
-    }
-
   "VAMPIRE"
     {
       viewId = { "vampire" }
@@ -1777,38 +1521,7 @@
       chatReactionHostile = "\"There are times when you simply nnot refuse a drink!\""
       hatedByEffect = HATE_UNDEAD
     }
-    "NECROMANCER"
-    {
-      viewId = { "necromancer" }
-      attr = {
-        DAMAGE 16
-        DEFENSE 35
-        SPELL_DAMAGE 30 
-      }
-      body = {
-        type = Humanoid LARGE
-        material = UNDEAD_FLESH
-      }
-      name = {
-        name = "necromancer"
-      }
-      maxLevelIncrease = {
-        MELEE 3
-        SPELL 12
-      }
-      permanentEffects = {
-        RANGED_RESISTANCE 1
-        POISON_RESISTANT 1
-        SLEEP_RESISTANT 1
-        DARKNESS_SOURCE 1
-      }
-      spellSchools = { "necromancy" }
-      spells = { "deception" "summon skeletons" }
-      chatReactionFriendly = "\"At your service, master!\""
-      chatReactionHostile = "\"Soon you will join my undead ranks. DIE!\""
-      hatedByEffect = HATE_UNDEAD
-    }
-    "MUMMY"
+  "MUMMY"
     {
       viewId = { "mummy" }
       attr = {
@@ -1969,13 +1682,13 @@
     {
       viewId = { "gnome_boss" }
       attr = {
-        DAMAGE 20
-        DEFENSE 20
+        DAMAGE 20 #Modded
+        DEFENSE 20 #Modded
       }
       body = {
         type = Humanoid MEDIUM
       }
-      spellSchools = { "fighter" }
+      spellSchools = { "fighter" } #Modded
       skills = {
         JEWELER 1
       }
@@ -2117,100 +1830,6 @@
       chatReactionFriendly = "curses all orcs"
       chatReactionHostile = "\"Die!\""
       hatedByEffect = HATE_DWARVES
-    }
-  "DWARF_MILITIA" inherit "DWARF"
-    {
-      viewId = { "dwarf_militia" }
-      attr = {
-        DAMAGE 15
-        DEFENSE 20 
-      }
-      name = {
-        name = "dwarf militia"
-        pluralName = "dwarves"
-        firstNameGen = "DWARF"
-      }
-      skills = {
-        FORGE 0.8
-        DIGGING 1.0
-      }
-      maxLevelIncrease = {
-        MELEE 3
-      }
-      permanentEffects = {
-        MAGIC_VULNERABILITY 1
-      }
-    }
-  "DWARF_FIGHTER" inherit "DWARF_MILITIA"
-    {
-      viewId = { "dwarf_fighter" }
-      attr = {
-        DAMAGE 23
-        DEFENSE 23 
-      }
-      name = {
-        name = "dwarf fighter"
-        pluralName = "dwarves"
-        firstNameGen = "DWARF"
-      }
-      maxLevelIncrease = {
-        MELEE 5
-      }
-    }
-  "DWARF_WARRIOR" inherit "DWARF_MILITIA"
-    {
-      viewId = { "dwarf" }
-      attr = {
-        DAMAGE 25
-        DEFENSE 25 
-      }
-      name = {
-        name = "dwarf warrior"
-        pluralName = "dwarves"
-        firstNameGen = "DWARF"
-      }
-      maxLevelIncrease = {
-        MELEE 6
-      }
-    }
-  "ELITE_DWARF_WARRIOR" inherit "DWARF_MILITIA"
-    {
-      viewId = { "elite_dwarf_warrior" }
-      attr = {
-        DAMAGE 27
-        DEFENSE 27 
-      }
-      name = {
-        name = "elite dwarf warrior"
-        pluralName = "dwarves"
-        firstNameGen = "DWARF"
-      }
-      maxLevelIncrease = {
-        MELEE 8
-      }
-    }
-  "DWARF_WORKER" inherit "DWARF"
-    {
-      viewId = { "dwarf_worker" }
-      attr = {
-        DAMAGE 11
-        DEFENSE 15 
-      }
-      name = {
-        name = "dwarf worker"
-        pluralName = "dwarves"
-        firstNameGen = "DWARF"
-      }
-      skills = {
-        FORGE 0.8
-        DIGGING 1.0
-        WORKSHOP 0.5
-      }
-      maxLevelIncrease = { }
-      permanentEffects = {
-        MAGIC_VULNERABILITY 1
-        NO_CARRY_LIMIT 1
-      }
     }
   "DWARF_FEMALE"
     {
@@ -3083,7 +2702,7 @@
       maxLevelIncrease = {
         SPELL 9
       }
-      spells = { "healing" "summon element" "fireball" }
+      spells = { "healing" "summon element" "fireball" } #Modded
       gender = FEMALE
       permanentEffects = {
         FIRE_RESISTANT 1
@@ -3464,7 +3083,56 @@
         name = "abomination"
       }
     }
-    
+
+###########
+##Modding##
+###########
+
+#Difficulty mods
+
+  "KEEPER_MAGE_EASY" inherit "KEEPER_MAGE"
+    {
+      viewId = { "keeper1" Rgb 58 255 106 106 }
+      viewIdUpgrades = { { "keeper2" Rgb 58 255 106 106 } { "keeper3" Rgb 58 255 106 106 } { "keeper4" Rgb 58 255 106 106 } }
+      attr = {
+        DAMAGE 15
+        DEFENSE 15
+        SPELL_DAMAGE 25
+      }
+    }
+  "KEEPER_MAGE_F_EASY" inherit "KEEPER_MAGE_EASY"
+    {
+      viewId = { "keeper_f1" Rgb 58 255 106 106 }
+      viewIdUpgrades = { { "keeper_f2" Rgb 58 255 106 106 } { "keeper_f3" Rgb 58 255 106 106 } { "keeper_f4" Rgb 58 255 106 106 } }
+      gender = FEMALE
+      name = {
+        name = "wizard"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+    }
+  "KEEPER_MAGE_HARD" inherit "KEEPER_MAGE"
+    {
+      viewId = { "keeper1" Rgb 106 106 255 106 }
+      viewIdUpgrades = { { "keeper2" Rgb 106 106 255 106 } { "keeper3" Rgb 106 106 255 106 } { "keeper4" Rgb 106 106 255 106 } }
+      attr = {
+        DAMAGE 10
+        DEFENSE 10
+        SPELL_DAMAGE 15
+      }
+    }
+  "KEEPER_MAGE_F_HARD" inherit "KEEPER_MAGE_HARD"
+    {
+      viewId = { "keeper_f1" Rgb 106 106 255 106 }
+      gender = FEMALE
+      name = {
+        name = "wizard"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+      viewIdUpgrades = {{ "keeper_f2"  Rgb 106 106 255 106 } { "keeper_f3"  Rgb 106 106 255 106 } { "keeper_f4"  Rgb 106 106 255 106 }}
+    }
+
 #---------------------------------------------------------
 #Centaur faction
 #---------------------------------------------------------
@@ -4520,57 +4188,6 @@
       chatReactionFriendly = "talks about cheese"
       chatReactionHostile = "makes angry rat noises"
     }
-    "RAT_SOLDIER" inherit "RAT_MAN"
-    {
-      viewId = { "rat_soldier" }
-      attr = {
-        DAMAGE 17
-        DEFENSE 16
-      }
-      maxLevelIncrease = {
-        MELEE 3
-      }
-	  spellSchools = { "fighter" }
-      permanentEffects = {
-        NIGHT_VISION 1
-        HATE_HUMANS 1
-	  }
-      name = {
-        name = "rat soldier"
-      }
-      chatReactionFriendly = "complains about cheese rations"
-      chatReactionHostile = "makes angry rat noises"
-    }
-    "RAT_LADY" inherit "RAT_MAN"
-    {
-      viewId = { "rat_lady" }
-      gender = FEMALE
-      name = {
-        name = "rat woman"
-      }
-      chatReactionFriendly = "talks about sewers"
-      chatReactionHostile = "makes angry rat noises"
-    }
-    "RAT_KING" inherit "RAT_MAN"
-    {
-      viewId = { "rat_king" }
-      attr = {
-        DAMAGE 20
-        DEFENSE 18
-      }
-      maxLevelIncrease = {
-        MELEE 6
-      }
-	  spellSchools = { "fighter" }
-      spells = {
-        "healing"
-      }
-      name = {
-        name = "rat king"
-      }
-      chatReactionFriendly = "talks about rat laws"
-      chatReactionHostile = "makes angry rat noises"
-      }
     "RAT_GENERAL" inherit "RAT_MAN"
     {
       viewId = { "rat_general" }
@@ -6332,4 +5949,395 @@
         fullTitle = true
        }
 	}
+"BANDIT_LEADER"
+    {
+      viewId = { "bandit_leader" }
+      attr = {
+        DAMAGE 18
+        DEFENSE 19
+        RANGED_DAMAGE 3
+      }
+      body = {
+        type = Humanoid LARGE
+      }
+      permanentEffects = {
+        AMBUSH_SKILL 1
+      }
+      spells = { "battle cry" }
+      chatReactionFriendly = "curses all law enforcement"
+      chatReactionHostile = "\"Die!\""
+      maxLevelIncrease = {
+        MELEE 5
+      }
+      name = {
+        name = "bandit leader"
+      }
+      hatedByEffect = HATE_HUMANS
+    }
+
+  "FIRE_SPHERE"
+    {
+      viewId = { "fireball" }
+      attr = {
+        DAMAGE 5
+        DEFENSE 15 
+      }
+      body = {
+        type = NonHumanoid SMALL
+        material = FIRE
+        deathSound = none
+      }
+      permanentEffects = {
+        FIRE_RESISTANT 1
+        FLYING 1
+        LIGHT_SOURCE 1
+      }
+      name = {
+        name = "fire sphere"
+      }
+    }
+  "COMBAT_SUCCUBUS"
+    {
+      attr = {
+        DAMAGE 16
+        DEFENSE 25
+        SPELL_DAMAGE 5 
+      }
+      viewId = { "succubus" }
+      body = {
+        type = Humanoid LARGE
+        material = SPIRIT
+        intrinsicAttacks = {
+          TORSO { Intrinsic { "touch_attack" } "touch" 0 {
+              attackType = HIT
+              attackMsg = TOUCH
+              victimEffect = {1.0 Lasting PEACEFULNESS} } }
+        }
+        addBodyPart = {
+          WING 2
+        }
+      }
+      permanentEffects = {
+        COPULATION_SKILL 1
+      }
+      gender = FEMALE
+      courage = -1
+      name = {
+        name = "combat succubus"
+        pluralName = "combat succubi"
+      }
+    }
+    "MILITIA_PLAYER"
+    {
+      viewId = { "militia" }
+      attr = {
+        DAMAGE 10
+        DEFENSE 10
+      }
+      body = {
+        type = Humanoid LARGE
+      }
+      maxLevelIncrease = {
+        MELEE 7
+      }
+      chatReactionFriendly = "talks about gold."
+      chatReactionHostile = "\"Die!\""
+      name = {
+        name = "militia"
+        firstNameGen = "FIRST_MALE"
+      }
+      hatedByEffect = HATE_HUMANS
+    }
+    "MILITIA"
+    {
+      viewId = { "militia" }
+      attr = {
+        DAMAGE 27
+        DEFENSE 25
+      }
+      body = {
+        type = Humanoid LARGE
+      }
+      maxLevelIncrease = {
+        MELEE 4
+      }
+      chatReactionFriendly = "talks about money."
+      chatReactionHostile = "\"Die!\""
+      name = {
+        name = "militia"
+      }
+      hatedByEffect = HATE_HUMANS
+    }
+    "SKELETON_WARRIOR"
+    {
+      viewId = { "skeleton_warrior" }
+      attr = {
+        DAMAGE 23
+        DEFENSE 30
+        RANGED_DAMAGE 8
+      }
+      body = {
+        type = Humanoid LARGE
+        material = BONE
+      }
+      permanentEffects = {
+        RANGED_RESISTANCE 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
+      }
+      spellSchools = { "fighter" }
+      maxLevelIncrease = {
+        MELEE 8
+        ARCHERY 5
+      }
+      name = {
+        name = "skeleton warrior"
+      }
+      hatedByEffect = HATE_UNDEAD
+      courage = 1
+    }
+    "SKELETON_MAGE"
+    {
+      viewId = { "lich_keeper3" }
+      attr = {
+        DAMAGE 10
+        DEFENSE 25
+        SPELL_DAMAGE 25
+      }
+      body = {
+        type = Humanoid LARGE
+        material = BONE
+      }
+      permanentEffects = {
+        RANGED_RESISTANCE 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
+      }
+      maxLevelIncrease = {
+        MELEE 2
+        SPELL 7
+      }
+     spellSchools = { "mage" }
+     spells = { "fireball" }
+      name = {
+        name = "skeleton mage"
+      }
+      hatedByEffect = HATE_UNDEAD
+      courage = -1
+    }
+  "DWARF_MILITIA" inherit "DWARF"
+    {
+      viewId = { "dwarf_militia" }
+      attr = {
+        DAMAGE 15
+        DEFENSE 20 
+      }
+      name = {
+        name = "dwarf militia"
+        pluralName = "dwarves"
+        firstNameGen = "DWARF"
+      }
+      skills = {
+        FORGE 0.8
+        DIGGING 1.0
+      }
+      maxLevelIncrease = {
+        MELEE 3
+      }
+      permanentEffects = {
+        MAGIC_VULNERABILITY 1
+      }
+    }
+  "DWARF_FIGHTER" inherit "DWARF_MILITIA"
+    {
+      viewId = { "dwarf_fighter" }
+      attr = {
+        DAMAGE 23
+        DEFENSE 23 
+      }
+      name = {
+        name = "dwarf fighter"
+        pluralName = "dwarves"
+        firstNameGen = "DWARF"
+      }
+      maxLevelIncrease = {
+        MELEE 5
+      }
+    }
+  "DWARF_WARRIOR" inherit "DWARF_MILITIA"
+    {
+      viewId = { "dwarf" }
+      attr = {
+        DAMAGE 25
+        DEFENSE 25 
+      }
+      name = {
+        name = "dwarf warrior"
+        pluralName = "dwarves"
+        firstNameGen = "DWARF"
+      }
+      maxLevelIncrease = {
+        MELEE 6
+      }
+    }
+  "ELITE_DWARF_WARRIOR" inherit "DWARF_MILITIA"
+    {
+      viewId = { "elite_dwarf_warrior" }
+      attr = {
+        DAMAGE 27
+        DEFENSE 27 
+      }
+      name = {
+        name = "elite dwarf warrior"
+        pluralName = "dwarves"
+        firstNameGen = "DWARF"
+      }
+      maxLevelIncrease = {
+        MELEE 8
+      }
+    }
+  "DWARF_WORKER" inherit "DWARF"
+    {
+      viewId = { "dwarf_worker" }
+      attr = {
+        DAMAGE 11
+        DEFENSE 15 
+      }
+      name = {
+        name = "dwarf worker"
+        pluralName = "dwarves"
+        firstNameGen = "DWARF"
+      }
+      skills = {
+        FORGE 0.8
+        DIGGING 1.0
+        WORKSHOP 0.5
+      }
+      maxLevelIncrease = { }
+      permanentEffects = {
+        MAGIC_VULNERABILITY 1
+        NO_CARRY_LIMIT 1
+      }
+    }
+    #Note: It is magic not sci-fi.
+    "GIANT_ROBOT"
+    {
+      viewId = { "giant_robot" }
+      attr = {
+        DAMAGE 45
+        DEFENSE 45
+      }
+      body = {
+      type = HumanoidLike HUGE
+      material = IRON
+      intrinsicAttacks = {
+        ARM { Intrinsic { "fist_attack" } "fists" 10 {
+          attackType = HIT
+          attackMsg = SWING }}
+      }}
+      chatReactionFriendly = "\"Zip Zip!\""
+      chatReactionHostile = "\"Prepare to be crushed.\""
+      cantEquip = true
+      permanentEffects = {
+        MELEE_RESISTANCE 1
+        RANGED_RESISTANCE 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
+        SLOWED 1
+      }
+      name = {
+        name = "giant contraption"
+      }
+    }
+    "POSSESSED_SWORD"
+    {
+      viewId = { "sword" }
+      attr = {
+        DAMAGE 30
+        DEFENSE 30 
+      }
+      body = {
+        type = NonHumanoid HUGE
+        bodyParts = {
+          BACK 2
+		  ARM 1
+		  TORSO 1
+		}				
+        material = IRON
+        weight = 10
+        intrinsicAttacks = {
+          ARM { Intrinsic { "sword" } "blade" 10 { attackType = HIT attackMsg = THRUST } }
+        }        
+      }
+      permanentEffects = {
+        FLYING 1
+      }
+      name = {
+        name = "possessed sword"
+      }
+      deathDescription = "vanquished"
+      courage = 1
+      cantEquip = true
+    }
+    "GHOST_ARMOUR"
+    {
+      viewId = { "chain_armor" }
+      attr = {
+        DAMAGE 20
+        DEFENSE 40 
+      }
+      body = {
+        type = NonHumanoid HUGE
+        bodyParts = {
+          BACK 2
+		  ARM 1
+		  TORSO 1
+		}				
+        material = IRON
+        weight = 10
+        intrinsicAttacks = {
+          ARM { Intrinsic { "chain_armor" } "metal" 10 { attackType = HIT attackMsg = SWING } }
+        }        
+      }
+      permanentEffects = {
+        FLYING 1
+      }
+      name = {
+        name = "ghost armour"
+      }
+      deathDescription = "vanquished"
+      courage = 1
+      cantEquip = true
+    }
+    "NECROMANCER"
+    {
+      viewId = { "necromancer" }
+      attr = {
+        DAMAGE 16
+        DEFENSE 35
+        SPELL_DAMAGE 30 
+      }
+      body = {
+        type = Humanoid LARGE
+        material = UNDEAD_FLESH
+      }
+      name = {
+        name = "necromancer"
+      }
+      maxLevelIncrease = {
+        MELEE 3
+        SPELL 12
+      }
+      permanentEffects = {
+        RANGED_RESISTANCE 1
+        POISON_RESISTANT 1
+        SLEEP_RESISTANT 1
+        DARKNESS_SOURCE 1
+      }
+      spellSchools = { "necromancy" }
+      spells = { "deception" "summon skeletons" }
+      chatReactionFriendly = "\"At your service, master!\""
+      chatReactionHostile = "\"Soon you will join my undead ranks. DIE!\""
+      hatedByEffect = HATE_UNDEAD
+    }
 }
