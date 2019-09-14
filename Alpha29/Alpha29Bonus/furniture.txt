@@ -1401,4 +1401,14 @@
     blockMovement = true
     destroyedEffect =  Chain { SummonEnemy "SHELOB" {1} PlaceFurniture "CHEST" Area 0 Permanent SUMMONED }
   }
+  "PUDDLE"
+  {
+    name = "puddle"
+    viewId = { "water" }
+    bloodCountdown = 30
+    layer = GROUND
+    summonedElement = "WATER_ELEMENTAL"
+    freezeTo = "ICE"
+    walkIntoFX = { WATER_SPLASH Rgb 82 148 255 255 }
+  }
 }
