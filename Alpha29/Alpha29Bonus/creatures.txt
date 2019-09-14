@@ -4136,7 +4136,7 @@
 		}
       }
       permanentEffects = {
-	    TIED_UP 1
+	    IMMOBILE 1
         SLOWED 1
         LIGHT_SOURCE 1
         MAGIC_RESISTANCE 1
@@ -5174,7 +5174,7 @@
         "summon water elementals"
       }
       permanentEffects = {
-        TIED_UP 1
+        IMMOBILE 1
         SLOWED 1
         DARKNESS_SOURCE 1
         MAGIC_RESISTANCE 1
@@ -5782,7 +5782,7 @@
         "expert healing"
       }
       permanentEffects = {
-        TIED_UP 1
+        IMMOBILE 1
         SLOWED 1
         RANGED_RESISTANCE 1
         POISON_RESISTANT 1
@@ -5817,7 +5817,7 @@
         "friendly damage bonus"
       }
       permanentEffects = {
-        TIED_UP 1
+        IMMOBILE 1
         SLOWED 1
         RANGED_RESISTANCE 1
         POISON_RESISTANT 1
