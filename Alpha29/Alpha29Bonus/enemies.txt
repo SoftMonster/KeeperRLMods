@@ -841,32 +841,28 @@
       }
     }
   }
-  "ADOXIE_HEAD"
+  "ADOXIE_DUNGEON"
   {
     settlement = {
       type = CAVE
       tribe = MONSTER
       inhabitants = {
-        leader = { { "ADOXIE_HEAD" } }
+        leader = { { "ADOXIE_PRIEST" } }
         fighters = {
           count = {4 5}
-          all = {
-            1 "ADOXIE_FOOT_LEFT"
-            1 "ADOXIE_FOOT_RIGHT"
-            1 "ADOXIE_LEFT_HAND"
-            1 "ADOXIE_HAND_RIGHT"
-          }
+          all = { 1 "ABOMINATION" }
+        }
+        civilians = {
+          count = { 4 5 }
+          all = { 1 "SPIDER_FOOD" }
         }
       }
       locationName = "abode of Adoxie"
       race = "adoxie"
-      furniture = { "roomFurniture" }
+      furniture = { "adoxie" }
       buildingId = "BRICK"
     }
-    config = {
-      immigrantInterval = 15
-      maxPopulation = 5
-    }
+    createOnBones = 0.5 { "MAIN_DUNGEON" }
     levelConnection = {
       topLevel = ExtraEnemy {"ADOXIE_SURFACE_BANDITS"}
       levels = {
@@ -876,14 +872,6 @@
         { ExtraEnemy { "ADOXIE_DWARVES" { 1 } } 300 90 MAZE }
         { ExtraEnemy { "ADOXIE_DEMONS" { 1 } } 50 50 MAZE }
         { MainEnemy 30 30 MINETOWN }
-      }
-    }
-    immigrants = {
-      {
-        ids = {"ADOXIE_FOOT_LEFT" "ADOXIE_FOOT_RIGHT" "ADOXIE_LEFT_HAND" "ADOXIE_HAND_RIGHT" "ADOXIE_EYE"}
-        traits = {FIGHTER}
-        frequency = 20
-        spawnLocation = InsideTerritory
       }
     }
   }

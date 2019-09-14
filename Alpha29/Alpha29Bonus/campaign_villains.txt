@@ -6,7 +6,6 @@
     { "amazon_queen" } "AMAZONS" "Amazons" MAIN
     { "centar_king" } "CENTAURS" "Centaurs" MAIN
     { "armored_cow_demon" } "COW_DEMONS" "cow demons" MAIN
-    { "adoxie_head" } "ADOXIE_HEAD" "Adoxie, Dark one" MAIN
     { "hell_portal" } "HELL_PORTAL" "Hell portal" MAIN
     { "magic_fairy" } "FAIRIES" "Fairies" MAIN
     { "duke4" } "KNIGHTS" "Knights" MAIN
@@ -22,7 +21,7 @@
     { "shaman" } "WARRIORS" "Warriors" MAIN
     { "thief_leader" } "THIEVES" "Thieves" MAIN
     { "demon_lord" } "DEMON_DEN" "Demon den" MAIN
-    { "dungeon_entrance" } "MAIN_DUNGEON" "Unremarkable dungeon" MAIN
+    { "dungeon_entrance" } "ADOXIE_DUNGEON" "Unremarkable dungeon" MAIN
     { "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN
 
     { "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER
@@ -38,7 +37,6 @@
     { "zombie" } "CEMETERY" "Zombies" LESSER
     { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER
     { "ocean_portal" } "OCEAN_PORTAL" "Ocean Portal" LESSER
-    { "dungeon_entrance" } "MAIN_DUNGEON" "Unremarkable dungeon" LESSER
 #    ZOMBIE CEMETERY "Zombies" LESSER
 
     { "unknown_monster" } "OGRE_CAVE" "Unknown" ALLY
@@ -51,7 +49,6 @@
 
 # Villains for lawful keepers
 {
-    { "adoxie_head" } "ADOXIE_HEAD" "Adoxie, Dark one" MAIN
     { "hell_portal" } "HELL_PORTAL" "Hell portal" MAIN
     { "armored_cow_demon" } "COW_DEMONS" "cow demons" MAIN
     { "red_dragon" } "RED_DRAGON" "Red dragon" MAIN
@@ -76,7 +73,7 @@
     { "harpy" } "HARPY_CAVE" "Harpies" LESSER
     { "ant_queen" } "ANTS_OPEN" "Ants" LESSER
     { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER    
-    { "dungeon_entrance" } "MAIN_DUNGEON" "Unremarkable dungeon" LESSER
+    { "dungeon_entrance" } "ADOXIE_DUNGEON" "Unremarkable dungeon" LESSER
 
     { "dwarf_baron" } "DWARVES" "Dwarves" ALLY
 }
@@ -121,7 +118,6 @@
 
 # Villains for lawful adventurers
 {
-    { "adoxie_head" } "ADOXIE_HEAD" "Adoxie, Dark one" MAIN
     { "armored_cow_demon" } "COW_DEMONS" "cow demons" MAIN
     { "red_dragon" } "RED_DRAGON" "Red dragon" MAIN
     { "red_dragon" Rgb 80 80 80 255 } "BLACK_DRAGON" "Black dragon" MAIN
@@ -147,7 +143,7 @@
     { "harpy" } "HARPY_CAVE" "Harpies" LESSER
     { "ant_queen" } "ANTS_OPEN" "Ants" LESSER
     { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER
-    { "dungeon_entrance" } "MAIN_DUNGEON" "Unremarkable dungeon" LESSER
+    { "dungeon_entrance" } "ADOXIE_DUNGEON" "Unremarkable dungeon" LESSER
 
     { "duke4" } "KNIGHTS" "Knights" ALLY
     { "elf_lord" } "ELVES" "Elves" ALLY
