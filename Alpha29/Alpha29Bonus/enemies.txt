@@ -1786,7 +1786,8 @@
         fighters = {
           count = {10 11} 
           all = {
-            1 "RAT"
+            25 "RAT"       #Modded
+			1  "BLACK_RAT" #Modded
           }
         }
       }
