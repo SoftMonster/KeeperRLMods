@@ -170,9 +170,9 @@
           }
           specialTraits = {
              { 0.1 { ExtraBodyPart HEAD 1}}
-             { 0.3 { LastingEffect BLIND LastingEffect TELEPATHY}}   #Modded
-             { 0.2 { LastingEffect COLLAPSED}}                       #Modded
-             { 0.1 { LastingEffect COLLAPSED LastingEffect PLAGUE }} #Modded
+             { 0.3 { LastingEffect BLIND LastingEffect TELEPATHY}}                       #Modded
+             { 0.2 { LastingEffect COLLAPSED}}                                           #Modded
+             { 0.1 { LastingEffect COLLAPSED LastingEffect PLAGUE LastingEffect BLIND }} #Modded
 	      }
         }
         {
@@ -1410,7 +1410,7 @@
              { 0.1 { ExtraBodyPart HEAD 1}}
              { 0.3 { LastingEffect BLIND LastingEffect TELEPATHY}}
              { 0.2 { LastingEffect COLLAPSED}}               
-             { 0.1 { LastingEffect COLLAPSED LastingEffect PLAGUE }}
+             { 0.1 { LastingEffect COLLAPSED LastingEffect PLAGUE LastingEffect BLIND }}
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1954,7 +1954,7 @@
              { 0.1 { ExtraBodyPart HEAD 1}}
              { 0.3 { LastingEffect BLIND LastingEffect TELEPATHY}}
              { 0.2 { LastingEffect COLLAPSED}} 
-             { 0.1 { LastingEffect COLLAPSED LastingEffect PLAGUE }}
+             { 0.1 { LastingEffect COLLAPSED LastingEffect PLAGUE LastingEffect BLIND }}
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
