@@ -827,9 +827,9 @@
           autoTeam = true
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
+            { 0.0 TechId "zombie hoards" }
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
             { 0.6 CostInfo CORPSE 1}
-            { 0.0 TechId "zombie hoards" }
           }
         }
         {
@@ -840,8 +840,8 @@
 		  consumeIds = true
           initialRecruitment = 1
           requirements = {
-            { 1.0 CostInfo CORPSE 1}
             { 0.0 TechId "zombie hoards" }
+            { 1.0 CostInfo CORPSE 1}
           }
         }
         {
@@ -864,9 +864,9 @@
           autoTeam = true
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
+            { 0.0 TechId "skeleton hoards" }
             { 0.8 CostInfo CORPSE 1}
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
-            { 0.0 TechId "skeleton hoards" }
           }
         }
         {
@@ -905,9 +905,9 @@
           autoTeam = true
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
+            { 0.0 TechId "vampire hoards" }
             { 1.0 CostInfo CORPSE 1}
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
-            { 0.0 TechId "vampire hoards" }
           }
         }
         {
@@ -918,9 +918,9 @@
 		  consumeIds = true
           initialRecruitment = 1
           requirements = {
+            { 0.0 TechId "vampire hoards" }
             { 1.0 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
             { 1.0 CostInfo CORPSE 1}
-            { 0.0 TechId "vampire hoards" }
           }
           specialTraits = {
              { 0.3 { LastingEffect TELEPATHY }}
@@ -952,9 +952,9 @@
           autoTeam = true
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
+            { 0.0 TechId "mummy hoards" }
             { 0.8 CostInfo CORPSE 1}
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
-            { 0.0 TechId "mummy hoards" }
           }
         }
         {
@@ -965,9 +965,9 @@
 		  consumeIds = true
           initialRecruitment = 1
           requirements = {
+            { 0.0 TechId "mummy hoards" }
             { 1.0 AttractionInfo 1 {FurnitureType "COFFIN3"}}
             { 1.0 CostInfo CORPSE 1}
-            { 0.0 TechId "mummy hoards" }
 		  }
           specialTraits = {
              { 0.3 { ExtraTraining MELEE 3}}
