@@ -1350,7 +1350,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 MinTurnRequirement 4000 }
-            { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
+            { 0.1 AttractionInfo 5 {FurnitureType "GRAVE"}}
             { 0.0 CostInfo CORPSE 5 }
           }
           specialTraits = {
@@ -1368,7 +1368,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 MinTurnRequirement 3000 }
-            { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
+            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
             { 0.0 CostInfo CORPSE 3}
           }
           specialTraits = {
@@ -1386,7 +1386,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 MinTurnRequirement 4000 }
-            { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
+            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
             { 0.0 CostInfo CORPSE 3}
           }
           specialTraits = {
@@ -1761,7 +1761,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 MinTurnRequirement 4000 }
-            { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
+            { 0.1 AttractionInfo 5 {FurnitureType "GRAVE"}}
             { 0.0 CostInfo CORPSE 5 }
           }
           specialTraits = {
@@ -1779,7 +1779,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 MinTurnRequirement 3000 }
-            { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
+            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
             { 0.0 CostInfo CORPSE 3}
           }
           specialTraits = {
@@ -1798,7 +1798,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 MinTurnRequirement 4000 }
-            { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
+            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
             { 0.0 CostInfo CORPSE 3}
           }
           specialTraits = {
@@ -2271,11 +2271,11 @@
 		{
 		  ids = { "NECROMANCER" }
           traits = { FIGHTER }
-          frequency = 0.09
+          frequency = 0.1
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 MinTurnRequirement 4000 }
-            { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
+            { 0.1 AttractionInfo 5 {FurnitureType "GRAVE"}}
             { 0.0 CostInfo CORPSE 5}
           }
           specialTraits = {
@@ -2292,7 +2292,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 MinTurnRequirement 3000 }
-            { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
+            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
             { 0.0 CostInfo CORPSE 3}
           }
           specialTraits = {
@@ -2309,7 +2309,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 MinTurnRequirement 4000 }
-            { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
+            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
             { 0.0 CostInfo CORPSE 3}
           }
           specialTraits = {
