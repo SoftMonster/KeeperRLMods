@@ -78,13 +78,12 @@
 #Modded additional items
 	  "RUBBLE" 5	  
 	  "GRAVE" 5
-      "PIT" 5
-      "HILL" 5	  
-      "SAND" 5
-      "GRASS" 5
-      "PUDDLE" 5
+      "BONE" 5	  
+      "BOULDER" 5
+      "HOLE" 5
       "LITTLE_SPIDER_WEB" 2
       "BIG_SPIDER_WEB" 1
+      "DISGUISED_BOULDER_TRAP" 1
 	}
   }
   "cryptCoffins"
