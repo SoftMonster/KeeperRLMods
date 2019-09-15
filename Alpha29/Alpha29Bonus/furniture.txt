@@ -1407,20 +1407,30 @@
     name = "bone fragments"
     viewId = { "bone" }
   }
-  "BOULDER" inherit "MOUNTAIN"
+  "BACKGROUND_RUBBLE"
+  {
+    name = "rubble"
+    viewId = { "map_mountain2" }
+    canHideHere = true
+  }
+  "BACKGROUND_BOULDER"
   {
     name = "boulder"
     viewId = { "boulder" }
-	strength = 200
-    destroyedEffect = PlaceFurniture "STONES"
+    canHideHere = true
   }
-  "DISGUISED_BOULDER_TRAP" inherit "BOULDER_TRAP"
+  "DISGUISED_BOULDER_TRAP"
   {
     name = "boulder"
+    viewId = { "boulder" }
+    canHideHere = true
+    tickType = BOULDER_TRAP
+    warning = true
   }
-  "HOLE" inherit "PIT"
+  "HOLE"
   {
     name = "hole"
+    viewId = { "pit" }
   }
   "BROKEN_WEB"
   {

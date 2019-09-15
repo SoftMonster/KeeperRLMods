@@ -76,10 +76,10 @@
     {
       "STONES" 25 #Modded
 #Modded additional items
-	  "RUBBLE" 5	  
+	  "BACKGROUND_RUBBLE" 5	  
 	  "GRAVE" 5
       "BONE" 5	  
-      "BOULDER" 5
+      "BACKGROUND_BOULDER" 5
       "HOLE" 5
       "LITTLE_SPIDER_WEB" 2
       "BIG_SPIDER_WEB" 1
