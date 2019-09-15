@@ -1021,12 +1021,11 @@
 		victimEffect = { 1.0 Fire }
 		attackerEffect = { Chain {
           Lasting FIRE_RESISTANT
-          Lasting ON_FIRE
-          Lasting RAGE
           Lasting DAM_BONUS
           Lasting LIGHT_SOURCE }
 		}
       }
+      equipedEffect = { RAGE }
 	  equipedAbility = "fire shield"
     }
 }
