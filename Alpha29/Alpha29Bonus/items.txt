@@ -1032,7 +1032,7 @@
   "InvisibilityRobe"
     {
       viewId = { "robe" }
-      name = "invisibility robe"
+      name = "robe of vanishing"
       itemClass = ARMOR
       equipmentSlot = BODY_ARMOR
       weight = 2
