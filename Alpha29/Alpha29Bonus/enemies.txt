@@ -1154,10 +1154,18 @@
     }
     discoverable = false
   }
-  "WHITE_DRAGON_ENTRY" inherit "MAIN_DUNGEON_ENTRY"
+  "WHITE_DRAGON_ENTRY" inherit "MAIN_DUNGEON_ENTRY" #Modded
   {
-    settlement = append {
+    settlement = {
+      type = CAVE
+      tribe = BANDIT
       buildingId = "GLACIER"
+      inhabitants = {
+        fighters = {
+          count = {2 4}
+          all = { 1 "RAT" }
+        }
+      }
     }
   }
   "WHITE_DRAGON_FLOOR" inherit "DUNGEON1"
