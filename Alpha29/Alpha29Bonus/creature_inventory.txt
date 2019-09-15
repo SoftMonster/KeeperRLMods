@@ -552,7 +552,7 @@
 	  }
   {"GOBLIN_KING"}
   	  {
-	    { type = Simple "GoldenStaff", alternative = Simple "AdaSword" prefixChance = 1 }
+	    { type = Simple "Fireblade" }
         { type = Simple "AdaArmor" prefixChance = 0.8 }
 		{ type = Simple "AdaBoots" chance = 0.95 prefixChance = 0.1 }
         { type = Simple "AdaGloves" chance = 0.6 prefixChance = 0.1 }

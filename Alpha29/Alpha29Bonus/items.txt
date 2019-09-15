@@ -1002,4 +1002,30 @@
       displayUses = true
       effect = Chain { Enhance ARMOR 3 Enhance ARMOR -3 Enhance ARMOR 2 Enhance ARMOR -2 Enhance ARMOR -1 Enhance ARMOR 1 }
     }
+
+  "Fireblade"
+    {
+      viewId = { "knife" }
+      name = "Fireblade"
+      plural = "Fireblades"
+      itemClass = WEAPON
+      equipmentSlot = WEAPON
+      weight = 0.3
+      modifiers = {
+        DAMAGE 8
+      }
+      price = 1
+      weaponInfo = {
+        attackType = STAB
+        attackMsg = THRUST
+		victimEffect = { 1.0 Fire }
+		attackerEffect = { Chain {
+          Lasting ON_FIRE
+          Lasting RAGE
+          Lasting DAM_BONUS
+          Lasting FIRE_RESISTANT
+          Lasting LIGHT_SOURCE }
+		}
+      }
+    }
 }
