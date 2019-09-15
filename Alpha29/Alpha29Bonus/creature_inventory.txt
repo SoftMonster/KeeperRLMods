@@ -481,11 +481,17 @@
         { Simple "WarHammer" }
         { Simple "ChainArmor" }
       }
-  {"AMAZON_ELDER" "GORGON"}
+  {"AMAZON_ELDER"}
       {
         { type = Simple "Robe" prefixChance = 1}
         { Simple "IronStaff" }
         { type = Glyph ARMOR LastingEffect POISON_RESISTANT chance = 0.2 }
+      }	  
+  {"GORGON"}
+      {
+        { type = Simple "InvisibilityRobe"}
+        { Simple "IronStaff" }
+        { type = Glyph ARMOR LastingEffect COLD_RESISTANT chance = 0.2 }
       }	  
   {"AMAZON_WAR_MAIDEN" "AMAZON_CHAMPION"}
       {

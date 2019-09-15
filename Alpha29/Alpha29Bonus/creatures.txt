@@ -4454,7 +4454,6 @@
 	  spellSchools = { "shaman" }
       spells = {
         "healing"
-        "invisibility"
         "panic"
         "snakes"
       }

@@ -1028,4 +1028,18 @@
       equipedEffect = { RAGE }
 	  equipedAbility = "fire shield"
     }
+
+  "InvisibilityRobe"
+    {
+      viewId = { "robe" }
+      name = "invisibility robe"
+      itemClass = ARMOR
+      equipmentSlot = BODY_ARMOR
+      weight = 2
+      price = 10
+      modifiers = {
+        DEFENSE 1
+      }
+	  equipedAbility = "invisibility"
+    }
 }
