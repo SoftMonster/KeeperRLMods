@@ -484,7 +484,7 @@
   {"AMAZON_ELDER" "GORGON"}
       {
         { type = Simple "Robe" prefixChance = 1}
-        {  Simple "IronStaff" }
+        { Simple "IronStaff" }
         { type = Glyph ARMOR LastingEffect POISON_RESISTANT chance = 0.2 }
       }	  
   {"AMAZON_WAR_MAIDEN" "AMAZON_CHAMPION"}
