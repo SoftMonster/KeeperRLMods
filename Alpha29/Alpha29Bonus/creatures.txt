@@ -4675,7 +4675,7 @@
         SPELL 2
       }
       spells = {
-        "shove"
+        "invisibility"
       }
       permanentEffects = {
         SPEED 1
@@ -4683,7 +4683,7 @@
         LIGHT_SOURCE 1
         RANGED_RESISTANCE 1
         FLYING 1
-        INVISIBLE 1
+		SPYING 1
       }
       cantEquip = true
       name = {
