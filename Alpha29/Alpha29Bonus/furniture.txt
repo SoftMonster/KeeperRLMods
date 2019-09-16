@@ -690,8 +690,11 @@
     name = "snowman"
     viewId = { "snowman" }
     canHideHere = true
-    blockMovement = true
-    strength = 10
+	
+	#Possible for blockMovement = true to crash it if it blocks an entrance. blockingEnemies seems to work better.
+    blockingEnemies = true #Modded.
+    
+	strength = 10
     meltInfo = { none }
   }
   "KEEPER_BOARD"
@@ -1391,7 +1394,7 @@
     name = "spider web"
     viewId = { "web_trap" }
     strength = 1
-    blockMovement = true
+    blockingEnemies = true
     destroyedEffect =  Chain { SummonEnemy "SPIDER" {1} PlaceFurniture "BROKEN_WEB" Area 0 Permanent SUMMONED }
   }
   "BIG_SPIDER_WEB"
@@ -1399,25 +1402,28 @@
     name = "spider web"
     viewId = { "web_trap" }
     strength = 1
-    blockMovement = true
+    blockingEnemies = true
     destroyedEffect =  Chain { SummonEnemy "SHELOB" {1} PlaceFurniture "CHEST" Area 0 Permanent SUMMONED }
-  }
-  "BONE"
-  {
-    name = "bone fragments"
-    viewId = { "bone" }
   }
   "BACKGROUND_RUBBLE"
   {
     name = "rubble"
     viewId = { "map_mountain2" }
     canHideHere = true
+    blockingEnemies = true
+	strength = 200
+    destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
+    destroyedEffect = PlaceFurniture "STONES"
   }
   "BACKGROUND_BOULDER"
   {
     name = "boulder"
     viewId = { "boulder" }
     canHideHere = true
+    blockingEnemies = true
+	strength = 200
+    tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
+    destroyedEffect = PlaceFurniture "STONES"
   }
   "DISGUISED_BOULDER_TRAP"
   {
@@ -1426,11 +1432,15 @@
     canHideHere = true
     tickType = BOULDER_TRAP
     warning = true
+    blockingEnemies = true
   }
   "HOLE"
   {
     name = "hole"
     viewId = { "pit" }
+	strength = 50
+	blockingEnemies = true
+    destroyedEffect = PlaceFurniture "BRIDGE"	
   }
   "BROKEN_WEB"
   {
