@@ -2271,14 +2271,19 @@
   "DRAGONS"
   {
     settlement = {
-      type = SMALL_MINETOWN
-      tribe = MONSTER
+      type = CASTLE
+      tribe = HUMAN
 	  race = "dragons"
-      buildingId = "DUNGEON"
+	  buildingId = "RUINS"
+	  furniture = { "randomTerrain" }
+      stockpiles = { { "minerals" 1 "BACKGROUND_RUBBLE" } }
+      shopItems = "jewellery"
       inhabitants = {
+        leader = { { "ANCIENT_RED_DRAGON" } }
         fighters = {
           count = {10 15}
           all = {
+            1 "ANCIENT_GREEN_DRAGON"
 		    1 "GREEN_DRAGON"
 		    1 "RED_DRAGON"
 		    2 "YOUNG_GREEN_DRAGON"
@@ -2289,6 +2294,7 @@
         }
       }
     }
+    createOnBones = 1.0 { "KNIGHTS" }
     config = {
       immigrantInterval = 300
       maxPopulation = 20
@@ -2300,7 +2306,6 @@
         frequency = 1
       }
     }
-    createOnBones = 1.0 { "KNIGHTS_RUINS" }
     behaviour = {
       minPopulation = 5
       minTeamSize = 4
@@ -2310,42 +2315,6 @@
       attackBehaviour = StealGold
     }
   }
-  "KNIGHTS_RUINS" inherit "KNIGHTS"
-  {
-    settlement = {
-      type = CASTLE
-      tribe = HUMAN
-	  buildingId = "RUINS"
-      shopItems = "jewellery"
-      inhabitants = {
-        leader = { { "DUKE" } }
-        fighters = {
-          count = {12 17}
-          all = {
-            1 "PRIEST"
-            3 "KNIGHT"
-            1 "ARCHER"
-            2 "MILITIA"
-          }
-        }
-      }
-	}
-  }
-  "MAZE_RUINS"
-  {
-    settlement = {
-      type = CAVE
-      tribe = MONSTER
-      inhabitants = {
-        leader = { { "ANCIENT_RED_DRAGON" "ANCIENT_GREEN_DRAGON" } }
-      }
-      locationName = "maze"
-      race = "monsters"
-      furniture = { "roomFurniture" }
-      buildingId = "BRICK"
-    }
-    createOnBones = 1.0 { "MINOTAUR" }
-  }  
   "HELL_PORTAL"
   {
     settlement = {
