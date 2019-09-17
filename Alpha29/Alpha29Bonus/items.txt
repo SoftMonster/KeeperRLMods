@@ -1005,7 +1005,7 @@
 
   "Fireblade"
     {
-      viewId = { "knife" }
+      viewId = { "fire_sword" }
       name = "Fireblade"
       plural = "Fireblades"
       itemClass = WEAPON
@@ -1019,10 +1019,12 @@
         attackType = STAB
         attackMsg = THRUST
 		victimEffect = { 1.0 Fire }
-		attackerEffect = { Chain {
-          Lasting FIRE_RESISTANT
-          Lasting DAM_BONUS
-          Lasting LIGHT_SOURCE }
+		attackerEffect = {
+		  Chain {
+            Lasting FIRE_RESISTANT
+            Lasting DAM_BONUS
+            Lasting LIGHT_SOURCE
+		  }
 		}
       }
       equipedEffect = { RAGE }
