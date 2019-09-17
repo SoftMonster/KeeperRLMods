@@ -606,10 +606,10 @@
    sound = SPELL_AIR_BLAST
  } 
  {
-   id = "entangling vines"
+   id = "freezing vines"
    symbol = "🙙"
    range = 10
-   effect = Lasting TIED_UP
+   effect = Lasting FROZEN
    cooldown = 70
    sound = SPELL_STR_BONUS
  }

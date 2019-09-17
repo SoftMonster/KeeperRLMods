@@ -204,7 +204,7 @@
     "advanced cure poison" 6
     "advanced magic missile" 7
     "expert magic missile" 8
-    "entangling vines" 8
+    "freezing vines" 8
     "defense bonus" 9
     "advanced teleport" 10
     "advanced haste" 11
@@ -222,7 +222,7 @@
     "damage bonus" 5
     "stone to mud" 7
     "resist magic" 9
-    "entangling vines" 9
+    "freezing vines" 9
     "advanced mind bolt"  11
     "invisibility" 12
   }
@@ -246,7 +246,7 @@
     "resist magic" 8
 	"arrow shield" 8
 	"magic cancellation" 9
-    "entangling vines" 9
+    "freezing vines" 9
 	"stone to mud" 10
 	"stone golem" 10
     "advanced mind bolt"  11

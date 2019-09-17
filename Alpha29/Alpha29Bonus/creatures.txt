@@ -5742,7 +5742,7 @@
 		 "deception" 
 		 "teleport" 
 		 "advanced cure poison"   
-		 "entangling vines"
+		 "freezing vines"
 	  }
       skills = {
         LABORATORY 0.8
