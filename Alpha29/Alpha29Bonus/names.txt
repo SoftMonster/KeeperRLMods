@@ -13896,4 +13896,32 @@
     "WitchBandir"
     "WitchBang"
   }
+
+########
+#Modded#
+########
+
+  "PIXIE"
+  {
+    "Ixi"
+	"Twixi"
+	"Flixi"
+	"Gixi"
+	"Hicksi"
+	"Tixi"
+	"Grixi"
+	"Wixie"
+	"Micksi"
+	"Licksy"
+	"Stricksy"
+	"Yixi"
+	"Dixi"
+	"Vicksi-cricksy"
+	"Yixo-kicksea"
+	"Bricksea"
+	"Jixi"
+	"Krickery-nicksi"
+	"Flicksery-floxi"
+  }
+
 }

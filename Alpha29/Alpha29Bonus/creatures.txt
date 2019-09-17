@@ -3534,7 +3534,7 @@
       name = {
         name = "air fairy"
         pluralName = "fairies"
-        firstNameGen = "FIRST_FEMALE"
+        firstNameGen = "PIXIE"
       }
       chatReactionFriendly = "\"talks about flying through clouds\""
       chatReactionHostile = "\"Don't mess with Air Fairies!\""
@@ -3553,7 +3553,7 @@
       name = {
         name = "dark fairy"
         pluralName = "fairies"
-        firstNameGen = "FIRST_FEMALE"
+        firstNameGen = "PIXIE"
       }
       chatReactionFriendly = "\"talks about the all-consuming void of darkness\""
       chatReactionHostile = "\"The shadows will consume you!\""
@@ -3580,7 +3580,7 @@
       name = {
         name = "demon fairy"
         pluralName = "fairies"
-        firstNameGen = "FIRST_FEMALE"
+        firstNameGen = "PIXIE"
       }
       chatReactionFriendly = "\"talks about not wanting to become a succubus\""
       chatReactionHostile = "\"Die, Whelp!\""
@@ -3602,7 +3602,7 @@
       name = {
         name = "earth fairy"
         pluralName = "fairies"
-        firstNameGen = "FIRST_FEMALE"
+        firstNameGen = "PIXIE"
       }
       chatReactionFriendly = "\"talks about different kinds of metals\""
       chatReactionHostile = "\"Don't mess with Earth Fairies!\""
@@ -3619,7 +3619,7 @@
       name = {
         name = "electric fairy"
         pluralName = "fairies"
-        firstNameGen = "FIRST_FEMALE"
+        firstNameGen = "PIXIE"
       }
       chatReactionFriendly = "\"talks about shocking people\""
       chatReactionHostile = "\"Get Zapped!\""
@@ -3656,7 +3656,7 @@
       name = {
         name = "fire fairy"
         pluralName = "fairies"
-        firstNameGen = "FIRST_FEMALE"
+        firstNameGen = "PIXIE"
       }
       chatReactionFriendly = "\"talks about burning things\""
       chatReactionHostile = "\"BURN!\""
@@ -3673,7 +3673,7 @@
       name = {
         name = "light fairy"
         pluralName = "fairies"
-        firstNameGen = "FIRST_FEMALE"
+        firstNameGen = "PIXIE"
       }
       chatReactionFriendly = "\"talks about helping people\""
       chatReactionHostile = "\"I will smite you!\""
@@ -3694,7 +3694,7 @@
       name = {
         name = "magic fairy"
         pluralName = "fairies"
-        firstNameGen = "FIRST_FEMALE"
+        firstNameGen = "PIXIE"
       }
       chatReactionFriendly = "\"talks about good tricks to play on people\""
       chatReactionHostile = "\"Don't mess with Magic Fairies!\""
@@ -3714,7 +3714,7 @@
       name = {
         name = "nature fairy"
         pluralName = "fairies"
-        firstNameGen = "FIRST_FEMALE"
+        firstNameGen = "PIXIE"
       }
       chatReactionFriendly = "\"talks about growing plants\""
       chatReactionHostile = "\"Don't mess with Nature Fairies!\""
@@ -3742,7 +3742,7 @@
       name = {
         name = "water fairy"
         pluralName = "fairies"
-        firstNameGen = "FIRST_FEMALE"
+        firstNameGen = "PIXIE"
       }
       chatReactionFriendly = "\"talks about fish and other water animals\""
       chatReactionHostile = "\"Drown, fairy hater!\""
