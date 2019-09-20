@@ -135,38 +135,6 @@
 # Modded
 #############
 
-"scrolls"
-# Workshop
-{
-    {{Scroll Summon "DOG" {1 2}}                                                 1 GOLD     2   "magic paper production"}
-    {{Scroll Summon "BOAR" {1 2}}                                                2 GOLD     3   "magic paper production"}
-    {{Scroll Summon "PESEANT" {3 4}}                                             3 GOLD     5   "magic paper production"}
-    {{Scroll Lasting FIRE_RESISTANT }                                            4 GOLD    10   "magic paper production"}
-    {{Scroll Deception }                                                         5 GOLD    12   "magic paper production"}
-    {{Scroll Summon "CLAY_GOLEM" {1 2}}                                         70 GOLD    15   "advanced inscription"}
-    {{Scroll Summon "LOST_SOUL" {1 5}}                                          10 GOLD    20   "advanced inscription"}
-    {{Scroll Summon "SNAKE" {1 4}}                                              12 GOLD    40   "advanced inscription"}
-    {{Scroll CircularBlast }                                                    15 GOLD    45   "advanced inscription"}
-    {{Scroll Teleport }                                                         17 GOLD    50   "advanced inscription"}
-    {{Scroll Summon "UNICORN" {3 4}}                                            20 GOLD    55   "master inscription"}
-    {{Scroll DestroyEquipment }                                                 30 GOLD    60   "master inscription"}
-    {{Scroll Summon "SHELOB" {1 2}}                                             40 GOLD    70   "master inscription"}
-    {{Scroll Permanent DARKNESS_SOURCE }                                        50 GOLD    80   "master inscription"}
-    {{Scroll Summon "HYDRA" {1 2}}                                              60 GOLD   100   "master inscription"}
-}
-
-# Forge
-{
-}
-
-# Lab
-{
-}
-
-# Jewellery
-{
-}
-
 "necromancer"
 # Workshop
 {
@@ -548,6 +516,38 @@
 # Lab
 {
 }
+# Jewellery
+{
+}
+
+"scrolls"
+# Workshop
+{
+    {{Scroll Summon "DOG" {1 2}}                                                 1 GOLD     2   "magic paper production"}
+    {{Scroll Summon "BOAR" {1 2}}                                                2 GOLD     3   "magic paper production"}
+    {{Scroll Summon "PESEANT" {3 4}}                                             3 GOLD     5   "magic paper production"}
+    {{Scroll Lasting FIRE_RESISTANT }                                            4 GOLD    10   "magic paper production"}
+    {{Scroll Deception }                                                         5 GOLD    12   "magic paper production"}
+    {{Scroll Summon "CLAY_GOLEM" {1 2}}                                         70 GOLD    15   "advanced inscription"}
+    {{Scroll Summon "LOST_SOUL" {1 5}}                                          10 GOLD    20   "advanced inscription"}
+    {{Scroll Summon "SNAKE" {1 4}}                                              12 GOLD    40   "advanced inscription"}
+    {{Scroll CircularBlast }                                                    15 GOLD    45   "advanced inscription"}
+    {{Scroll Teleport }                                                         17 GOLD    50   "advanced inscription"}
+    {{Scroll Summon "UNICORN" {3 4}}                                            20 GOLD    55   "master inscription"}
+    {{Scroll DestroyEquipment }                                                 30 GOLD    60   "master inscription"}
+    {{Scroll Summon "SHELOB" {1 2}}                                             40 GOLD    70   "master inscription"}
+    {{Scroll Permanent DARKNESS_SOURCE }                                        50 GOLD    80   "master inscription"}
+    {{Scroll Summon "HYDRA" {1 2}}                                              60 GOLD   100   "master inscription"}
+}
+
+# Forge
+{
+}
+
+# Lab
+{
+}
+
 # Jewellery
 {
 }
