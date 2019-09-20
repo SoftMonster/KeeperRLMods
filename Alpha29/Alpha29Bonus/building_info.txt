@@ -80,6 +80,12 @@
       floorInside = "GRASS"
       door = { "GRASS" 1.0 }
     }
+  "TAINTED"
+    {
+      wall = "TAINTED_WALL"
+      floorInside = "FLOOR"
+      door = { "IRON_DOOR" 1.0 }
+    }
   "SANDSTONE_WALL_DWARVEN"
     {
       wall = "SANDSTONE"

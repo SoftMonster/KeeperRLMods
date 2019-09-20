@@ -715,8 +715,9 @@
   { "ranger_adventurer" "@" ColorId ORANGE }
   { "ranger_adventurer_female" "@" ColorId ORANGE }
  
- #Tree wall
+ #Modded walls
 
   { viewId = "tree_wall" symbol = "#" color = ColorId GREEN wallShadow = true wallConnections = true }
+  { viewId = "tainted_wall" symbol = "#" color = ColorId PURPLE wallShadow = true wallConnections = true }
   
 }

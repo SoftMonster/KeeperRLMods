@@ -1465,5 +1465,13 @@
     fire = 100
     destroyFX = { DESTROY_FURNITURE Rgb 120 87 46 255 }
   }
-
+  "TAINTED_WALL"
+  {
+    name = "tainted wall"
+    viewId = { "tainted_wall" }
+    blockMovement = true
+    blockVision = { NORMAL ELF }
+    wall = true
+    buildingSupport = true
+  }
 }
