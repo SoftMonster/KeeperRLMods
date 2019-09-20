@@ -1452,4 +1452,18 @@
     name = "dungeon entrance"
     viewId = { "dungeon_entrance" }
   }
+  "TREE_WALL"
+  {
+    name = "tree wall"
+    viewId = { "tree_wall" }
+    blockMovement = true
+    blockVision = { NORMAL }
+    wall = true
+    buildingSupport = true
+	strength = 100
+    summonedElement = "ENT"
+    fire = 100
+    destroyFX = { DESTROY_FURNITURE Rgb 120 87 46 255 }
+  }
+
 }

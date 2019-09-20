@@ -76,9 +76,9 @@
 #Modded
   "BARRICADES"
     {
-      wall = "BARRICADE"
+      wall = "TREE_WALL"
       floorInside = "GRASS"
-      door = { "WOOD_DOOR" 1.0 }
+      door = { "GRASS" 1.0 }
     }
   "SANDSTONE_WALL_DWARVEN"
     {

@@ -714,4 +714,9 @@
   { "mage_adventurer_female" "@" ColorId BLUE }
   { "ranger_adventurer" "@" ColorId ORANGE }
   { "ranger_adventurer_female" "@" ColorId ORANGE }
+ 
+ #Tree wall
+
+  { viewId = "tree_wall" symbol = "#" color = ColorId GREEN wallShadow = true wallConnections = true }
+  
 }
