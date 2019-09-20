@@ -146,6 +146,18 @@
    "fire shield" 6
    "regrow body parts" 7
   }
+  "dwarf monk" SPELL
+  {
+   "advanced healing" 1
+   "fire breath" 2
+   "stone to mud" 3
+   "advanced cure poison" 4
+   "pull" 5
+   "area damage bonus" 6
+   "area defense bonus" 6
+   "double trouble" 7
+   }
+
 #----------------------------------------------------------
 # spells_schools.txt - August 2019 by Righteous for goblins
 #----------------------------------------------------------
@@ -217,14 +229,12 @@
   "war magic" SPELL
   {
     "healing" 1
-    "escape" 3
-    "defense bonus" 5
-    "damage bonus" 5
-    "stone to mud" 7
-    "resist magic" 9
-    "freezing vines" 9
-    "advanced mind bolt"  11
-    "invisibility" 12
+    "escape" 2
+    "defense bonus" 3
+    "damage bonus" 3
+    "stone to mud" 4
+    "resist magic" 5
+    "advanced mind bolt"  6
   }
   "battle mage" SPELL
   {

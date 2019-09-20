@@ -168,12 +168,12 @@
     description = "(Challenge) Fight using an undead army!"
   }
   {
-    creatureId = { "DWARF_FEMALE" }
+    creatureId = { "DWARF_QUEEN" }
     tribeAlignment = LAWFUL
     immigrantGroups = {"dwarven"}
     technology = {
         "alchemy" "advanced alchemy" "alchemical conversion" "pig breeding" "iron working" "simplistic animations"
-        "magic contraptions" "jewellery" "two-handed weapons" "traps" "redemption" "basic nobility" 
+        "magic contraptions" "jewellery" "two-handed weapons" "traps" "redemption" "basic nobility" "dwarven monks"
 		"advanced nobility" "elite nobility"  "master jewellery" "dwarven alchemy" "marriage of convenience"
     }
     initialTech = { "iron working" "traps" }

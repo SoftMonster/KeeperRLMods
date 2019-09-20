@@ -1,4 +1,4 @@
-""
+"SoftMonster"
 "New keeper classes and adventurers.
 About double the number of creatures.
 About double the number of factions.

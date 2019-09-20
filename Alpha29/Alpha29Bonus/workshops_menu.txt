@@ -30,11 +30,7 @@
     {item = {Simple "GreenDragonArmor"} work = 30 cost = IRON 40 requireIngredient = true }
     {{Simple "IronHelm"}              8        IRON 16}
     {{Simple "IronBoots"}             12       IRON 24}
-    {item = {Simple "CyclopsHelm"}
-     work = 30 
-     cost = IRON 40
-     requireIngredient = true
-    }
+    {item = {Simple "CyclopsHelm"}      work = 30 cost = IRON 40 requireIngredient = true }
     {{Simple "IronGloves"}            3        IRON 2}
     {{Simple "IronShield"}            12       IRON 24}
     {{Simple "WarHammer"}             16       IRON 40      "two-handed weapons"}
@@ -319,7 +315,12 @@
 {
     {{Simple "Sword"}                 10       IRON 20}
     {{Simple "ChainArmor"}            30       IRON 40}
+    {item = {Simple "RedDragonArmor"}   work = 30 cost = IRON 40 requireIngredient = true }
+    {item = {Simple "BlackDragonArmor"} work = 30 cost = IRON 40 requireIngredient = true }
+    {item = {Simple "WhiteDragonArmor"} work = 30 cost = IRON 40 requireIngredient = true }
+    {item = {Simple "GreenDragonArmor"} work = 30 cost = IRON 40 requireIngredient = true }
     {{Simple "IronHelm"}              8        IRON 16}
+    {item = {Simple "CyclopsHelm"}      work = 30 cost = IRON 40 requireIngredient = true }
     {{Simple "IronBoots"}             12       IRON 24}
     {{Simple "IronGloves"}            3        IRON 2}
     {{Simple "WarHammer"}             16       IRON 40      "two-handed weapons"}
@@ -354,10 +355,10 @@
 	{{Potion Permanent MELEE_RESISTANCE} 100        GOLD 800     "dwarven alchemy"}
     {{Potion Permanent DEF_BONUS}        100        GOLD 300     "dwarven alchemy"}
 	{{Potion IncreaseAttr DAMAGE 1}      100        GOLD 1200    "dwarven alchemy"}
-    {{Simple "GoldPiece"}                           5        IRON 30      "alchemical conversion"       10}
-    {{Simple "WoodPlank"}                           5        GOLD 10      "alchemical conversion"       10}
-    {{Simple "IronOre"}                             5        GOLD 10      "alchemical conversion"       10}
-    {{Simple "AdaOre"}                              5        GOLD 40      "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                  5        IRON 30      "alchemical conversion"       10}
+    {{Simple "WoodPlank"}                  5        GOLD 10      "alchemical conversion"       10}
+    {{Simple "IronOre"}                    5        GOLD 10      "alchemical conversion"       10}
+    {{Simple "AdaOre"}                     5        GOLD 40      "alchemical conversion"       10}
     {{Simple "Rock"}                                5        GOLD 10      "alchemical conversion"       10}
 }
 
@@ -375,9 +376,9 @@
     {{Amulet WARNING}                      10       GOLD 30}
     {{Simple "DefenseAmulet"}                       10       GOLD 40}
     {{Amulet REGENERATION}                 10       GOLD 60}
-    {{Ring RAGE} 100 GOLD 10 "master jewellery"}
-    {{Ring DAM_BONUS} 10 GOLD 100 "master jewellery"}
-    {{Ring MELEE_RESISTANCE} 10 GOLD 500 "master jewellery"}
+    {{Ring RAGE}						   100      GOLD 10		"master jewellery"}
+    {{Ring DAM_BONUS}					   10		GOLD 100	"master jewellery"}
+    {{Ring MELEE_RESISTANCE}			   10		GOLD 500	"master jewellery"}
 }
 
 "white knights workshop"

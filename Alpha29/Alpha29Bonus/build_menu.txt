@@ -342,6 +342,9 @@
 
     { Furniture {{ "TRAINING_ADA" }  ADA  12 }                   "Adamantine dummy"  "Training room"
         "Train your minions' melee skills here."   0 { TechId "iron working" }}
+
+	{ Furniture {{ "BOOKCASE_IRON" }   IRON 10 }                 "Iron bookcase"     "Training room"
+        "Required to recruit and train dwarf monks in spellcraft." 0 {TechId "dwarven monks"} }
   }
 
   #Sandbox

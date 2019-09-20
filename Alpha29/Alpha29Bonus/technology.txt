@@ -61,6 +61,7 @@
   "redemption"               { "Convert the wicked by building torture tables."}
   "basic nobility"           { "Recruit better dwarven warriors."}
   "advanced nobility"        { "Recruit much better dwarven warriors."                        {"basic nobility"}}
+  "dwarven monks"			 { "Recruit dwarven monks that can cast spells as well as fight"  {"advanced nobility"}}
   "elite nobility"           { "Recruit the best dwarven warriors."                           {"advanced nobility"}}
   "marriage of convenience"  { "Recruit a dwarf baron."                                       {"elite nobility"}}
   "master jewellery"         { "Build the best jewellery."                                    {"jewellery" }}

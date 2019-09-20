@@ -697,8 +697,12 @@
   { "dwarf_militia" "h" ColorId BLUE }
   { "dwarf_fighter" "h" ColorId BLUE }
   { "dwarf_warrior" "h" ColorId BLUE }
+  { "dwarf_monk" "h" ColorId BLUE}
+  { "dwarf_queen" "Q" ColorId WHITE}
   { "elite_dwarf_warrior" "h" ColorId BLUE }
   { "dwarf_worker" "h" ColorId BLUE }
+  { "dwarf_female2" "h" ColorId LIGHT_BLUE }
+  { "dwarf_female3" "h" ColorId LIGHT_BLUE }
 
   { "floor_spikes_trap" "^" ColorId GRAY true }
 

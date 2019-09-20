@@ -517,6 +517,12 @@
        { type = Simple "Bow" chance = 0.9 }
        { type = Ring DISARM_TRAPS_SKILL chance = 0.2 }
       }
+  {"DWARF_QUEEN"}
+      {
+	   { type = Simple "WarHammer" prefixChance = 1 }
+	   { Simple "ChainArmor" }
+	   { Potion Heal FLESH}
+	  }
 
 #-----------------------------------------------------------
 # creature_inventory.txt - Righteous Aug 2019 - Goblin Tribe

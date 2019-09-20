@@ -6127,13 +6127,17 @@
       hatedByEffect = HATE_UNDEAD
       courage = -1
     }
-  "DWARF_MILITIA" inherit "DWARF"
+  "DWARF_MILITIA"
     {
       viewId = { "dwarf_militia" }
       attr = {
         DAMAGE 15
         DEFENSE 20 
       }
+	  body = {
+        type = Humanoid MEDIUM
+        weight = 90
+	  }
       name = {
         name = "dwarf militia"
         pluralName = "dwarves"
@@ -6149,6 +6153,9 @@
       permanentEffects = {
         MAGIC_VULNERABILITY 1
       }
+	  chatReactionFriendly = "curses all orcs"
+      chatReactionHostile = "\"Die!\""
+      hatedByEffect = HATE_DWARVES
     }
   "DWARF_FIGHTER" inherit "DWARF_MILITIA"
     {
@@ -6220,6 +6227,158 @@
         MAGIC_VULNERABILITY 1
         NO_CARRY_LIMIT 1
       }
+	  }
+   "DWARF_MONK"
+    {
+      viewId = { "dwarf_monk" }
+      attr = {
+        DAMAGE 22
+        DEFENSE 24
+		SPELL_DAMAGE 24
+      }
+      body = {
+        type = Humanoid MEDIUM
+        weight = 90
+      }
+      name = {
+        name = "dwarf monk"
+        pluralName = "dwarves"
+        firstNameGen = "DWARF"
+      }
+	  skills = {
+		LABORATORY 0.8
+        DIGGING 0.6
+	  }
+      maxLevelIncrease = {
+        MELEE 20
+		SPELL 7
+      }
+      permanentEffects = {
+        POISON_RESISTANT 1
+		FAST_TRAINING 1
+      }
+	  spellSchools = { "dwarf monk" "fighter" }
+      chatReactionFriendly = "talks about drunken martial arts"
+      chatReactionHostile = "\"Die!\""
+      hatedByEffect = HATE_DWARVES
+      }
+  "PLAYER_DWARF_FEMALE"
+    {
+      viewId = { "dwarf_female" }
+      attr = {
+        DAMAGE 21
+        DEFENSE 25 
+      }
+      body = {
+        type = Humanoid MEDIUM
+        weight = 90
+      }
+      name = {
+        name = "dwarf woman"
+        pluralName = "dwarves"
+        firstNameGen = "DWARF"
+      }
+      skills = {
+        WORKSHOP 0.8
+		FORGE 0.8
+      }
+      permanentEffects = {
+        MAGIC_VULNERABILITY 1
+      }
+      chatReactionFriendly = "curses all orcs"
+      chatReactionHostile = "\"Die!\""
+      gender = FEMALE
+      hatedByEffect = HATE_DWARVES
+    }
+  "PLAYER_DWARF_FEMALE2"
+    {
+      viewId = { "dwarf_female2" }
+      attr = {
+        DAMAGE 21
+        DEFENSE 25 
+      }
+      body = {
+        type = Humanoid MEDIUM
+        weight = 90
+      }
+      name = {
+        name = "dwarf woman"
+        pluralName = "dwarves"
+        firstNameGen = "DWARF"
+      }
+      skills = {
+        WORKSHOP 0.8
+		FORGE 0.8
+      }
+      permanentEffects = {
+        MAGIC_VULNERABILITY 1
+      }
+      chatReactionFriendly = "curses all orcs"
+      chatReactionHostile = "\"Die!\""
+      gender = FEMALE
+      hatedByEffect = HATE_DWARVES
+    }
+  "PLAYER_DWARF_FEMALE3"
+    {
+      viewId = { "dwarf_female3" }
+      attr = {
+        DAMAGE 21
+        DEFENSE 25 
+      }
+      body = {
+        type = Humanoid MEDIUM
+        weight = 90
+      }
+      name = {
+        name = "dwarf woman"
+        pluralName = "dwarves"
+        firstNameGen = "DWARF"
+      }
+      skills = {
+        WORKSHOP 0.8
+		FORGE 0.8
+      }
+      permanentEffects = {
+        MAGIC_VULNERABILITY 1
+      }
+      chatReactionFriendly = "curses all orcs"
+      chatReactionHostile = "\"Die!\""
+      gender = FEMALE
+      hatedByEffect = HATE_DWARVES
+    }
+  "DWARF_QUEEN"
+    {
+      viewId = { "dwarf_queen" }
+      attr = {
+        DAMAGE 30
+        DEFENSE 24 
+      }
+      body = {
+        type = Humanoid MEDIUM
+        weight = 90
+      }
+      name = {
+        name = "dwarf queen"
+        pluralName = "dwarves"
+        firstNameGen = "DWARF"
+      }
+      skills = {
+        WORKSHOP 1.0
+		FORGE 1.0
+		FURNACE 1.0
+        DIGGING 0.6
+      }
+	  maxLevelIncrease = {
+        MELEE 7
+	  }
+      permanentEffects = {
+        MAGIC_VULNERABILITY 1
+      }
+	  spells = { "healing" "area defense bonus" }
+      chatReactionFriendly = "complains about the dwarven nobility"
+      chatReactionHostile = "\"Die!\""
+      gender = FEMALE
+      hatedByEffect = HATE_DWARVES
     }
     #Note: It is magic not sci-fi.
     "GIANT_ROBOT"

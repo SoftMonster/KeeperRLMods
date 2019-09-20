@@ -476,7 +476,6 @@
   }
   {
     id =  "area damage bonus"
-	upgrade = "friendly damage bonus"
     symbol = "💪"
     effect = Area 2 Filter ALLY Lasting DAM_BONUS
     cooldown = 70

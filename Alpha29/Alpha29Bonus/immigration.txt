@@ -702,6 +702,25 @@
             { 0.3 { SkillId JEWELER }}
 		  }
         }
+        {
+          ids = { "DWARF_MONK" }
+          frequency = 0.45
+          traits = { FIGHTER NO_EQUIPMENT }
+          requirements = {
+		  { 0.0 TechId "dwarven monks"} 
+		  { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
+		  { 0.1 AttractionInfo 1 {FurnitureType "BOOKCASE_WOOD"}}
+		  }
+          specialTraits = {
+            { 0.3 { LastingEffect TELEPATHY }}
+            { 0.2 { LastingEffect DISARM_TRAPS_SKILL }}
+            { 0.1 { AttrBonus SPELL_DAMAGE 5 }}
+			{ 0.1 { AttrBonus DAMAGE 5 }}
+            { 0.2 { AttrBonus DEFENSE 5 }}
+			{ 0.08 { AttrBonus DEFENSE 15 AttrBonus DAMAGE 15 LastingEffect INSANITY }}
+            { 0.3 { LastingEffect NIGHT_VISION }}
+		  }
+        }
 		{
           ids = { "ELITE_DWARF_WARRIOR" }
           frequency = 0.5
@@ -719,6 +738,16 @@
             { 0.2 { LastingEffect NIGHT_VISION }}
 		  }
         }
+		{
+          ids = { "PLAYER_DWARF_FEMALE" "PLAYER_DWARF_FEMALE2" "PLAYER_DWARF_FEMALE3" }
+          traits = { NO_LIMIT INCREASE_POPULATION NO_EQUIPMENT }
+          requirements = {
+            { 1.0 CostInfo GOLD 40 }
+		  }
+          specialTraits = {
+            { 0.4 { LastingEffect COPULATION_SKILL }}
+          }
+        }
     	{
           ids = { "DWARF_BARON" }
           traits = { FIGHTER }
@@ -728,6 +757,25 @@
             { 1.0 FurnitureType "THRONE" }
             { 1.0 CostInfo GOLD 500 }
             { 0.0 TechId "marriage of convenience" }
+          }
+        }
+        {
+          ids = { "ELITE_DWARF_WARRIOR" "DWARF_WARRIOR" "DWARF_FIGHTER" "DWARF_MILITIA" }
+          traits = { FIGHTER WORKER }
+          spawnLocation = Pregnancy
+          requirements = {
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+            { 0.1 { SkillId FORGE }}
+            { 0.1 { SkillId WORKSHOP }}
+            { 0.1 { SkillId JEWELER }}
+            { 0.1 { LastingEffect DISARM_TRAPS_SKILL }}
+            { 0.1 { SkillId LABORATORY }}
+            { 0.05 { LastingEffect REGENERATION }}
+            { 0.1 { LastingEffect TELEPATHY }}
+            { 0.1 { LastingEffect SLEEP_RESISTANT }}
+            { 0.1 { LastingEffect NIGHT_VISION }}
           }
         }
     }
