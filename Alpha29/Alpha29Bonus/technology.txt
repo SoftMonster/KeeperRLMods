@@ -69,6 +69,15 @@
 #White Knight Upgrades
   "legendary heroes"         { "Recruit new and very powerful heroes."                        {"advanced sorcery" "two-handed weapons"}}
   "royal jewellery"          { "Create powerful but expensive jewellery fit for nobility."    {"jewellery"}}
-  "unicorn taming"           { "Recruit unicorns."                                            {"master sorcery"}}  
+  "unicorn taming"           { "Recruit unicorns."                                            {"master sorcery"}}
+#Goblin Upgrades
+  "matron womb mutation"     { "Increase the maximum number of goblins a matron will give birth to from 1 to 2."}
+  "advanced womb mutation"   { "Further increase the maximum number of goblins a matron will give birth to. (2 to 3)" {"matron womb mutation"}}
+  "elite womb mutation"      { "Further increase the maximum number of goblins a matron will give birth to. (3 to 4)" {"advanced womb mutation"}}
+  "master womb mutation"     { "Further increase the maximum number of goblins a matron will give birth to. (4 to 5)" {"elite womb mutation"}}
+  "litter womb mutation"	 { "Further increase the maximum number of goblins a matron will give birth to. (5 to 6)" {"master womb mutation"}}
+  "horde womb mutation"		 { "Increase the maximum number of goblins a matron will give birth to to it's maximum capacity. (6 to 8)" {"litter womb mutation"}}
+  "legendary goblin priests" { "Allows the Recruitment of 4 goblin high priests."			  {"master sorcery"}}
+  "goblin glyph crafting"	 { "Turn all that shiny adamantite ore into something more useful than other resources." {"alchemical conversion" "jewellery"}}	
 }
 }

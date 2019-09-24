@@ -553,4 +553,91 @@
 {
 }
 
+"goblin"
+# Workshop
+{
+    {{Simple "Club"}				  3		   WOOD 5}
+    {{Simple "LeatherArmor"}          6        WOOD 10}
+    {{Simple "LeatherHelm"}           1        WOOD 3}
+    {{Simple "LeatherBoots"}          2        WOOD 5}
+    {{Simple "WoodenShield"}          2        WOOD 5}
+    {{Simple "LeatherGloves"}         1        WOOD 1}
+    {{Simple "HeavyClub"}             5        WOOD 10      "two-handed weapons"}
+    {{Simple "Cornuthaum1"}           5        GOLD 5       "sorcery"}
+    {{Simple "Cornuthaum2"}           8        GOLD 10      "advanced sorcery"}
+    {{Simple "Cornuthaum3"}           12       GOLD 20      "master sorcery"}
+    {{Simple "Bow"}                   13       WOOD 10      "archery"}
+    {{Simple "WoodenStaff"}           13       WOOD 10      "magical weapons"}
+    {{Simple "Torch"}                 2        WOOD 2}
+}
+
+# Forge
+{
+    {{Simple "Sword"}                 10       IRON 15}
+    {{Simple "ChainArmor"}            30       IRON 30}
+    {item = {Simple "RedDragonArmor"}   work = 30 cost = IRON 40 requireIngredient = true }
+    {item = {Simple "BlackDragonArmor"} work = 30 cost = IRON 40 requireIngredient = true }
+    {item = {Simple "WhiteDragonArmor"} work = 30 cost = IRON 40 requireIngredient = true }
+    {item = {Simple "GreenDragonArmor"} work = 30 cost = IRON 40 requireIngredient = true }
+    {{Simple "IronHelm"}              8        IRON 12}
+    {{Simple "IronBoots"}             12       IRON 18}
+    {item = {Simple "CyclopsHelm"}      work = 30 cost = IRON 40 requireIngredient = true }
+    {{Simple "IronGloves"}            3        IRON 2}
+    {{Simple "IronShield"}            12       IRON 18}
+    {{Simple "WarHammer"}             16       IRON 30      "two-handed weapons"}
+    {{Simple "BattleAxe"}             22       IRON 38      "two-handed weapons"}
+    {{Simple "IronStaff"}             20       IRON 30      "magical weapons"}
+    {{Simple "GoldenStaff"}           20       GOLD 160     "magical weapons"}
+}
+
+# Lab
+{
+    {{Potion Lasting SLOWED}               2        GOLD 2}
+    {{Potion Lasting SLEEP}                2        GOLD 2}
+    {{Potion Lasting POISON_RESISTANT}     4        GOLD 6}
+    {{Potion Lasting SPEED}                4        GOLD 6}
+    {{Potion Lasting TELEPATHY}            4        GOLD 6}
+    {{Potion Lasting REGENERATION}         4        GOLD 8}
+    {{Potion Lasting POISON}               4        GOLD 8}
+    {{Potion Lasting FLYING}               4        GOLD 8}
+    {{Potion Heal FLESH}                   4        GOLD 4}      
+    {item = {Potion IncreaseAttr DEFENSE 5} work = 20 cost = GOLD 100 requireIngredient = true }
+    {item = {Potion Lasting PLAGUE} work = 5 cost = GOLD 10 requireIngredient = true }
+    {item = {Potion Permanent POISON_RESISTANT} work = 20 cost = GOLD 80 requireIngredient = true }
+    {{Simple "GoldPiece"}                           5        IRON 20      "alchemical conversion"       10}
+    {{Simple "WoodPlank"}                           5        GOLD 10      "alchemical conversion"       20}
+    {{Simple "IronOre"}                             5        GOLD 10      "alchemical conversion"       10}
+    {{Simple "Rock"}                                5        GOLD 10      "alchemical conversion"       20}
+}
+
+# Jeweller
+
+{
+    {{Ring RESTED}											10			GOLD 20}
+    {{Ring SATIATED}										10			GOLD 20}
+    {{Ring FAST_CRAFTING}									10			GOLD 30}
+    {{Ring FAST_TRAINING}									10			GOLD 30}
+    {{Ring SPELL_DAMAGE}									10			GOLD 30}
+    {{Ring SPYING}											10			GOLD 40}
+    {{Amulet NIGHT_VISION}									10			GOLD 10}
+    {{Amulet ELF_VISION}									10			GOLD 10}
+    {{Amulet WARNING}										10	        GOLD 20}
+    {{Simple "DefenseAmulet"}							    10			GOLD 30}
+    {{Amulet REGENERATION}							        10			GOLD 40}
+	{{Glyph WEAPON ItemAttrBonus DAMAGE 3}					10			ADA 20		"goblin glyph crafting"}
+	{{Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 3}			10			ADA 20		"goblin glyph crafting"}
+	{{Glyph WEAPON VictimEffect 0.3 Lasting POISON}			10			ADA 20		"goblin glyph crafting"}
+	{{Glyph WEAPON VictimEffect 0.3 Lasting BLEEDING}		10			ADA 20		"goblin glyph crafting"}
+	{{Glyph WEAPON VictimEffect 0.2 DestroyEquipment}		10			ADA 30		"goblin glyph crafting"}
+	{{Glyph ARMOR ItemAttrBonus DEFENSE 3}					10			ADA 20		"goblin glyph crafting"}
+	{{Glyph ARMOR LastingEffect NIGHT_VISION}				10			ADA 10		"goblin glyph crafting"}
+	{{Glyph ARMOR LastingEffect ELF_VISION}					10			ADA 10		"goblin glyph crafting"}
+	{{Glyph ARMOR LastingEffect REGENERATION}				10			ADA 40		"goblin glyph crafting"}
+	{{Glyph ARMOR LastingEffect MAGIC_RESISTANCE}			10			ADA 20		"goblin glyph crafting"}
+	{{Glyph ARMOR LastingEffect MELEE_RESISTANCE}			10			ADA 20		"goblin glyph crafting"}
+	{{Glyph ARMOR LastingEffect RANGED_RESISTANCE}			10			ADA 20		"goblin glyph crafting"}
+	{{Glyph ARMOR LastingEffect POISON_RESISTANT}			10			ADA 10		"goblin glyph crafting"}
+	{{Glyph ARMOR LastingEffect COLD_RESISTANT}				10			ADA 10		"goblin glyph crafting"}
+	{{Glyph ARMOR LastingEffect FIRE_RESISTANT}				10			ADA 10		"goblin glyph crafting"}
+}
 }

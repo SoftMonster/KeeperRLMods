@@ -688,6 +688,7 @@
   { "goblin_kaboomer" "!" ColorId GREEN }
   { "goblin_king" "o" ColorId YELLOW }
   { "goblin_leprechaun" "o" ColorId GREEN }
+  { "goblin_matron" "o" ColorId GREEN }
   { "goblin_priest" "o" ColorId LIGHT_GRAY }
   { "goblin_warrior" "o" ColorId GREEN }
   { "goblin_wizard" "o" ColorId PURPLE }

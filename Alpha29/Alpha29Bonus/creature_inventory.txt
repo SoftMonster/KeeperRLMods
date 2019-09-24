@@ -186,7 +186,7 @@
         { type = Simple "Torch" chance = 0.3 }
         { Simple "GoldPiece" 140 200 }
       }
-  {"ORC"}
+  {"ORC" "GOBLIN_MATRON"} #Modded
       {
         { Simple "Club"}
         { Simple "LeatherArmor"}

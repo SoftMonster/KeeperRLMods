@@ -5560,8 +5560,8 @@
           TORSO { Intrinsic { "touch_attack" } "self destruct" 120 {
               attackType = HIT
 			  meleeAttackAttr = SPELL_DAMAGE
-              attackMsg = TOUCH
-              victimEffect = {1.0 Fire}
+              attackMsg = SPELL
+              victimEffect = {1.0 Fire 1.0 Blast}
               attackerEffect = {Suicide DIE} } }
         }
       }
@@ -5610,6 +5610,10 @@
         DISARM_TRAPS_SKILL 1
 		MAGIC_RESISTANCE 1
 		RANGED_VULNERABILITY 1
+	  }
+	  skills = {
+        FORGE 1.0
+		WORKSHOP 1.0
       }
 	  maxLevelIncrease = {
         MELEE 7
@@ -5653,6 +5657,38 @@
       }
       hatedByEffect = HATE_GREENSKINS
 	}
+  "GOBLIN_MATRON"
+    {
+      viewId = { "goblin_matron" }
+      attr = {
+        DAMAGE 28
+        DEFENSE 28 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "complains about goblin children"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+		COPULATION_SKILL 1
+		REGENERATION 1
+      }
+      skills = {
+        LABORATORY 0.8
+        WORKSHOP 0.8
+        FORGE 0.8
+        JEWELER 0.8
+        FURNACE 0.8
+		DIGGING 0.8
+      }
+	  gender = FEMALE
+      name = {
+        name = "goblin matron"
+        firstNameGen = "ORC"
+      }
+      hatedByEffect = HATE_GREENSKINS
+    }
 	"GOBLIN_PRIEST"
     {
       viewId = { "goblin_priest" }
@@ -5762,8 +5798,375 @@
       }
       hatedByEffect = HATE_GREENSKINS
 	}
-	
+
+#---------------------------------------------------------
+#Player Goblin faction
+#---------------------------------------------------------
+  
+  "GOBLIN_PLAYER"
+    {
+      viewId = { "goblin" }
+      attr = {
+        DAMAGE 13
+        DEFENSE 15 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "talks about working"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+      }
+      skills = {
+        LABORATORY 0.6
+        WORKSHOP 0.6
+        FORGE 0.6
+        JEWELER 0.6
+        FURNACE 0.6
+		DIGGING 1.0
+      }
+      name = {
+        name = "goblin"
+        firstNameGen = "ORC"
+      }
+      hatedByEffect = HATE_GREENSKINS
+    }
+    "ELITE_GOBLIN_GUARD_PLAYER"
+    {
+      viewId = { "elite_goblin_guard" }
+      attr = {
+        DAMAGE 24
+        DEFENSE 24 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "talks about serving the king"
+      chatReactionHostile = "\"Die!\""
+	  permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+		MELEE_RESISTANCE 1
+	  }
+      skills = {
+        FORGE 0.8
+      }
+      maxLevelIncrease = {
+        MELEE 7
+      }
+      spellSchools = { "fighter" }
+      name = {
+        name = "elite goblin guard"
+        firstNameGen = "ORC"
+      }
+      hatedByEffect = HATE_GREENSKINS
+    }
+    "GOBLIN_ARCHER_PLAYER"
+    {
+      viewId = { "goblin_archer" }
+      attr = {
+        DAMAGE 22
+        DEFENSE 23 
+		RANGED_DAMAGE 10 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "talks about archery"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+      }
+	        maxLevelIncrease = {
+        MELEE 3
+        ARCHERY 10
+	  }
+      name = {
+        name = "goblin archer"
+        firstNameGen = "ORC"
+      }
+      hatedByEffect = HATE_GREENSKINS
+	}
+    "GOBLIN_BRUTE_PLAYER"
+      {
+      viewId = { "goblin_brute" }
+      attr = {
+        DAMAGE 26
+        DEFENSE 18  
+      }
+      body = {
+        type = Humanoid LARGE
+		material = FLESH
+        weight = 140
+      }
+      chatReactionFriendly = "talks about clubbing things"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+	    MELEE_RESISTANCE 1
+        RANGED_RESISTANCE 1
+		MAGIC_VULNERABILITY 1
+        REGENERATION 1
+      }
+	        maxLevelIncrease = {
+        MELEE 12
+	  }
+      name = {
+        name = "goblin brute"
+        firstNameGen = "ORC"
+      }
+      hatedByEffect = HATE_GREENSKINS
+    }
+    "GOBLIN_CHICKENMANCER_PLAYER"
+    {
+      viewId = { "goblin_chickenmancer" }
+      attr = {
+        DAMAGE 18
+        DEFENSE 18 
+		SPELL_DAMAGE 18
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+	  spellSchools = { "chickenmancer" }
+	  name = {
+        name = "goblin chickenmancer"
+        firstNameGen = "ORC"
+	  }
+      chatReactionFriendly = "talks about chickens"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+      }
+	        maxLevelIncrease = {
+        MELEE 3
+        SPELL 5
+      }
+      hatedByEffect = HATE_GREENSKINS
+	}
+	"GOBLIN_HIGH_PRIEST_PLAYER"
+    {
+      viewId = { "goblin_high_priest" }
+      attr = {
+        DAMAGE 22
+        DEFENSE 30 
+		SPELL_DAMAGE 34 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+	  spellSchools = { "goblin high priest" }
+      name = {
+        name = "goblin high priest"
+        firstNameGen = "ORC"
+	  }
+      chatReactionFriendly = "talks about establishing a goblin theocracy"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+		MAGIC_RESISTANCE 1
+      }
+	        maxLevelIncrease = {
+        MELEE 7
+        SPELL 12
+      }
+      hatedByEffect = HATE_GREENSKINS
+	}
+    "GOBLIN_KABOOMER_PLAYER"
+    {
+      body = {
+        type = Humanoid MEDIUM
+        material = FLESH
+		deathSound = SPELL_AIR_BLAST
+        intrinsicAttacks = {
+          TORSO { Intrinsic { "touch_attack" } "self destruct" 120 {
+              attackType = HIT
+			  meleeAttackAttr = SPELL_DAMAGE
+              attackMsg = SPELL
+              victimEffect = {1.0 Fire 1.0 Blast}
+              attackerEffect = {Suicide DIE} } }
+        }
+      }
+      viewId = { "goblin_kaboomer" }
+      attr = {
+		DAMAGE 18
+        DEFENSE 15
+      }
+      courage = 100
+      permanentEffects = {
+        LIGHT_SOURCE 1
+		RANGED_VULNERABILITY 1
+      }
+	  cantEquip = true
+      chatReactionFriendly = "talks about the great goblin snack bar in the sky"
+      chatReactionHostile = "\"Aloha Snackbar!\""
+      name = {
+        name = "goblin kaboomer"
+        firstNameGen = "ORC"
+      }
+      hatedByEffect = HATE_GREENSKINS
+    }
+	"GOBLIN_KING_PLAYER"
+    {
+      viewId = { "goblin_king" }
+      attr = {
+        DAMAGE 22
+        DEFENSE 22 
+		SPELL_DAMAGE 26 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      spells = {
+		 "advanced healing"
+		 "expert magic missile"
+		 "goblin damage buff"
+		 "goblin defense buff"
+		 "invisibility"
+		 "escape"
+	  }
+      chatReactionFriendly = "talks about goblin politics"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+		MAGIC_RESISTANCE 1
+		RANGED_VULNERABILITY 1
+      }
+	  skills = {
+        FORGE 1.0
+		WORKSHOP 1.0
+	  }
+	  maxLevelIncrease = {
+        MELEE 12
+        SPELL 12
+	  }
+      name = {
+        name = "goblin king"
+        firstNameGen = "ORC"
+      }
+      hatedByEffect = HATE_GREENSKINS
+	}
+  "GOBLIN_MATRON_PLAYER"
+    {
+      viewId = { "goblin_matron" }
+      attr = {
+        DAMAGE 28
+        DEFENSE 28 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "complains about goblin children"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+        COPULATION_SKILL 1
+		REGENERATION 1
+      }
+      skills = {
+        LABORATORY 0.8
+        WORKSHOP 0.8
+        FORGE 0.8
+        JEWELER 0.8
+        FURNACE 0.8
+		DIGGING 0.8
+      }
+	  gender = FEMALE
+      name = {
+        name = "goblin matron"
+        firstNameGen = "ORC"
+      }
+      hatedByEffect = HATE_GREENSKINS
+    }
+	"GOBLIN_PRIEST_PLAYER"
+    {
+      viewId = { "goblin_priest" }
+      attr = {
+        DAMAGE 18
+        DEFENSE 18 
+		SPELL_DAMAGE 14 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+	  spellSchools = { "goblin priest" }
+      name = {
+        name = "goblin priest"
+        firstNameGen = "ORC"
+	  }
+      chatReactionFriendly = "talks about goblin religion"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+      }
+	  maxLevelIncrease = {
+        SPELL 12
+      }
+      hatedByEffect = HATE_GREENSKINS
+	}
+    "GOBLIN_WARRIOR_PLAYER"
+    {
+      viewId = { "goblin_warrior" }
+      attr = {
+        DAMAGE 20
+        DEFENSE 20 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "talks about the importance of proper headgear"
+      chatReactionHostile = "\"Die!\""
+	  permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+		MELEE_RESISTANCE 1
+	  }
+      skills = {
+        FORGE 0.8
+      }
+      maxLevelIncrease = {
+        MELEE 7
+      }
+      spellSchools = { "fighter" }
+      name = {
+        name = "goblin warrior"
+        firstNameGen = "ORC"
+      }
+      hatedByEffect = HATE_GREENSKINS
+    }
+	"GOBLIN_WIZARD_PLAYER"
+    {
+      viewId = { "goblin_wizard" }
+      attr = {
+        DAMAGE 22
+        DEFENSE 18 
+		SPELL_DAMAGE 24
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+	  spellSchools = { "goblin wizard" }
+      name = {
+        name = "goblin wizard"
+        firstNameGen = "ORC"
+	  }
+      skills = {
+        LABORATORY 0.8
+        JEWELER 0.8
+	  }
+      chatReactionFriendly = "talks about goblin magic"
+      chatReactionHostile = "\"Die!\""
+      permanentEffects = {
+        DISARM_TRAPS_SKILL 1
+      }
+	  maxLevelIncrease = {
+        SPELL 12
+      }
+      hatedByEffect = HATE_GREENSKINS
+	}
+
+#---------------------------------------------------------	
 #Totem monsters
+#---------------------------------------------------------
+
   "HEALING_TOTEM"
    {
     viewId = { "totem_creature" }

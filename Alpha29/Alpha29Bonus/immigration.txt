@@ -2424,7 +2424,229 @@
           }
         }
     }
-	
+
+	"goblin"
+    {
+        {
+          ids = { "GOBLIN_PLAYER" }
+          traits = { WORKER FIGHTER }
+          keybinding = CREATE_IMP
+		  groupSize = {2 5}
+          autoTeam = false
+          noAuto = true
+          initialRecruitment = 1
+        }
+		{
+          ids = { "GOBLIN_MATRON_PLAYER" }
+          traits = { NO_LIMIT FIGHTER INCREASE_POPULATION NO_EQUIPMENT }
+		  noAuto = true
+		  initialRecruitment = 2
+          requirements = {
+            { 1 ExponentialCost GOLD 40 40 4 }
+          }
+        }
+        {
+          ids = { "GOBLIN_HIGH_PRIEST_PLAYER" "GOBLIN_HIGH_PRIEST_PLAYER" "GOBLIN_HIGH_PRIEST_PLAYER" "GOBLIN_HIGH_PRIEST_PLAYER" }
+          traits = { FIGHTER }
+		  consumeIds = true
+          requirements = {
+            { 0.0 TechId "legendary goblin priests" }
+          }
+        }
+	    {
+          ids = { "GOBLIN_KABOOMER_PLAYER" }
+          traits = { NO_EQUIPMENT }
+		  noAuto = true
+          requirements = {
+            { 1.0 CostInfo GOLD 16 }
+          }
+        }
+        {
+          ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
+          traits = { FIGHTER }
+          spawnLocation = Pregnancy
+          requirements = {
+		    { 0.0 NegateRequirement TechId "matron womb mutation" }
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+             { 0.05 { LastingEffect FIRE_RESISTANT }}
+             { 0.05 { LastingEffect ENTERTAINER }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { ExtraTraining SPELL 2}}
+             { 0.05 { ExtraTraining MELEE 2}}
+             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { AttrBonus DAMAGE 5 }}
+             { 0.05 { AttrBonus DEFENSE 5 }}
+             { 0.05 { LastingEffect REGENERATION }}
+             { 0.05 { LastingEffect TELEPATHY }}
+             { 0.05 { LastingEffect SLEEP_RESISTANT }}
+             { 0.05 { LastingEffect NIGHT_VISION }}
+          }
+        }
+	    {
+          ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
+          traits = { FIGHTER }
+		  groupSize = {1 2}
+          autoTeam = false
+          spawnLocation = Pregnancy
+          requirements = {
+		    { 0.0 TechId "matron womb mutation" } 
+			{ 0.0 NegateRequirement TechId "advanced womb mutation" }
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+             { 0.05 { LastingEffect FIRE_RESISTANT }}
+             { 0.05 { LastingEffect ENTERTAINER }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { ExtraTraining SPELL 2}}
+             { 0.05 { ExtraTraining MELEE 2}}
+             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { AttrBonus DAMAGE 5 }}
+             { 0.05 { AttrBonus DEFENSE 5 }}
+             { 0.05 { LastingEffect REGENERATION }}
+             { 0.05 { LastingEffect TELEPATHY }}
+             { 0.05 { LastingEffect SLEEP_RESISTANT }}
+             { 0.05 { LastingEffect NIGHT_VISION }}
+          }
+        }
+		{
+          ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
+          traits = { FIGHTER }
+		  groupSize = {1 3}
+          autoTeam = false
+          spawnLocation = Pregnancy
+          requirements = {
+		    { 0.0 TechId "advanced womb mutation" } 
+			{ 0.0 NegateRequirement TechId "elite womb mutation" }
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+             { 0.05 { LastingEffect FIRE_RESISTANT }}
+             { 0.05 { LastingEffect ENTERTAINER }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { ExtraTraining SPELL 2}}
+             { 0.05 { ExtraTraining MELEE 2}}
+             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { AttrBonus DAMAGE 5 }}
+             { 0.05 { AttrBonus DEFENSE 5 }}
+             { 0.05 { LastingEffect REGENERATION }}
+             { 0.05 { LastingEffect TELEPATHY }}
+             { 0.05 { LastingEffect SLEEP_RESISTANT }}
+             { 0.05 { LastingEffect NIGHT_VISION }}
+          }
+        }
+        {
+          ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
+          traits = { FIGHTER }
+		  groupSize = {2 4}
+          autoTeam = false
+          spawnLocation = Pregnancy
+          requirements = {
+		    { 0.0 TechId "elite womb mutation" } 
+			{ 0.0 NegateRequirement TechId "master womb mutation" }
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+             { 0.05 { LastingEffect FIRE_RESISTANT }}
+             { 0.05 { LastingEffect ENTERTAINER }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { ExtraTraining SPELL 2}}
+             { 0.05 { ExtraTraining MELEE 2}}
+             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { AttrBonus DAMAGE 5 }}
+             { 0.05 { AttrBonus DEFENSE 5 }}
+             { 0.05 { LastingEffect REGENERATION }}
+             { 0.05 { LastingEffect TELEPATHY }}
+             { 0.05 { LastingEffect SLEEP_RESISTANT }}
+             { 0.05 { LastingEffect NIGHT_VISION }}
+          }
+        }
+        {
+          ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
+          traits = { FIGHTER }
+		  groupSize = {3 5}
+          autoTeam = false
+          spawnLocation = Pregnancy
+          requirements = {
+		    { 0.0 TechId "master womb mutation" } 
+			{ 0.0 NegateRequirement TechId "litter womb mutation" }
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+             { 0.05 { LastingEffect FIRE_RESISTANT }}
+             { 0.05 { LastingEffect ENTERTAINER }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { ExtraTraining SPELL 2}}
+             { 0.05 { ExtraTraining MELEE 2}}
+             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { AttrBonus DAMAGE 5 }}
+             { 0.05 { AttrBonus DEFENSE 5 }}
+             { 0.05 { LastingEffect REGENERATION }}
+             { 0.05 { LastingEffect TELEPATHY }}
+             { 0.05 { LastingEffect SLEEP_RESISTANT }}
+             { 0.05 { LastingEffect NIGHT_VISION }}
+          }
+        }
+        {
+          ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
+          traits = { FIGHTER }
+		  groupSize = {5 6}
+          autoTeam = false
+          spawnLocation = Pregnancy
+          requirements = {
+		    { 0.0 TechId "litter womb mutation" } 
+			{ 0.0 NegateRequirement TechId "horde womb mutation" }
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+             { 0.05 { LastingEffect FIRE_RESISTANT }}
+             { 0.05 { LastingEffect ENTERTAINER }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { ExtraTraining SPELL 2}}
+             { 0.05 { ExtraTraining MELEE 2}}
+             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { AttrBonus DAMAGE 5 }}
+             { 0.05 { AttrBonus DEFENSE 5 }}
+             { 0.05 { LastingEffect REGENERATION }}
+             { 0.05 { LastingEffect TELEPATHY }}
+             { 0.05 { LastingEffect SLEEP_RESISTANT }}
+             { 0.05 { LastingEffect NIGHT_VISION }}
+          }
+        }
+        {
+          ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
+          traits = { FIGHTER }
+		  groupSize = {6 8}
+          autoTeam = false
+          spawnLocation = Pregnancy
+          requirements = {
+		    { 0.0 TechId "horde womb mutation" } 
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+             { 0.05 { LastingEffect FIRE_RESISTANT }}
+             { 0.05 { LastingEffect ENTERTAINER }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { ExtraTraining SPELL 2}}
+             { 0.05 { ExtraTraining MELEE 2}}
+             { 0.05 { OneOfTraits { LastingEffect FAST_TRAINING LastingEffect SLOW_TRAINING } }}
+             { 0.05 { AttrBonus DAMAGE 5 }}
+             { 0.05 { AttrBonus DEFENSE 5 }}
+             { 0.05 { LastingEffect REGENERATION }}
+             { 0.05 { LastingEffect TELEPATHY }}
+             { 0.05 { LastingEffect SLEEP_RESISTANT }}
+             { 0.05 { LastingEffect NIGHT_VISION }}
+          }
+        }
+    }
     "white_keeper_modded"	
     {
         {

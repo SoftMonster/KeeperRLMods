@@ -185,6 +185,24 @@
     description = "(Hard) Play a tribe of dwarves and maximise melee combat."
   }
   {
+    creatureId = { "GOBLIN_KING_PLAYER" }
+    tribeAlignment = EVIL
+    immigrantGroups = {"goblin"}
+    technology = {
+        "alchemy" "alchemical conversion" "pig breeding" "iron working" "jewellery" 
+		"two-handed weapons" "traps" "archery" "sorcery" "advanced sorcery" "magical weapons" 
+		"master sorcery" "matron womb mutation" "advanced womb mutation" "elite womb mutation" "master womb mutation"     
+		"litter womb mutation" "horde womb mutation" "goblin glyph crafting" "legendary goblin priests"
+    }
+    initialTech = { "iron working" "alchemy" "sorcery" "traps" }
+    buildingGroups = {
+        "structure" "doors" "floors" "storage" "quarters" "library" "throne" "beds" "pigsty"
+        "training" "crafting" "prison" "orders" "installations" "magical_installations" "traps"
+    }
+    workshopGroups = { "goblin" "traps" }
+    description = "(Challenge) Breed an army of goblins and overrun the land with numbers!" #Modded
+  }
+  {
     creatureId = { "DUNGEON_MASTER" }
     tribeAlignment = EVIL
     immigrantGroups = {"sandbox"}
