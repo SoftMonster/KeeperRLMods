@@ -1161,36 +1161,6 @@
             { 1 ExponentialCost GOLD 20 5 7 }
           }
         }
-		{
-          ids = { "RED_DRAGON" }
-          traits = { FIGHTER }
-          consumeIds = true
-          spawnLocation = FurnitureType "PORTAL"
-          requirements = {
-            { 1.0 FurnitureType "THRONE" }
-            { 1.0 FurnitureType "PORTAL" }
-            { 1.0 CostInfo GOLD 500 }
-            { 0.0 TechId "dragon taming" }
-          }
-          specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
-          }
-        }
-		{
-          ids = { "DEMON_LORD" }
-          traits = { FIGHTER }
-          consumeIds = true
-          spawnLocation = FurnitureType "PORTAL"
-          requirements = {
-            { 1.0 FurnitureType "THRONE" }
-            { 1.0 FurnitureType "PORTAL" }
-            { 1.0 CostInfo GOLD 500 }
-            { 0.0 TechId "demonic alliance" }
-          }
-          specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
-          }
-        }
         {
           ids = { "GOBLIN" }
           traits = { FIGHTER NO_AUTO_EQUIPMENT }
@@ -1227,65 +1197,6 @@
              { 0.02 { LastingEffect HATE_HUMANS }}
              { 0.03 { LastingEffect BAD_BREATH }}
              { 0.01 { LastingEffect ENTERTAINER }}
-    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
-          }
-        }
-        {
-          ids = { "DARK_ORC" "DARK_ORC_FEMALE" }
-          traits = { FIGHTER }
-          spawnLocation = Pregnancy
-          frequency = 0.7
-          requirements = {
-            { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_WOOD"}}
-            { 0.0 Pregnancy }
-          }
-          specialTraits = {
-             { 0.01 { ExtraBodyPart HEAD 1}}
-             { 0.01 { ExtraBodyPart WING 2}}
-             { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { ExtraTraining MELEE 2}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.05 { LastingEffect NIGHT_VISION }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.05 { LastingEffect MAGIC_VULNERABILITY }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.03 { LastingEffect BAD_BREATH }}
-             { 0.01 { LastingEffect ENTERTAINER }}
-    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
-          }
-        }
-        {
-          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true
-          consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
-          specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
-          }
-        }
-        {
-          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true
-          consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
-          specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
-          }
-        }
-        {
-          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true
-          consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
-          specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
@@ -1350,30 +1261,6 @@
           }
         }
         {
-          ids = { "DARK_OGRE" "DARK_OGRE_FEMALE" }
-          traits = { FIGHTER }
-          spawnLocation = Pregnancy
-          frequency = 0.3
-          requirements = {
-            { 0.0 MinTurnRequirement 2000 }
-            { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
-            { 0.0 Pregnancy }
-          }
-          specialTraits = {
-             { 0.02 { ExtraBodyPart HEAD 1}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { LastingEffect BAD_BREATH }}
-    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
-          }
-        }
-        {
           ids = { "HARPY" }
           traits = { FIGHTER }
           frequency = 0.3
@@ -1395,60 +1282,6 @@
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         } 
-        {
-          ids = { "NECROMANCER" }
-          traits = { FIGHTER }
-          frequency = 0.1
-          spawnLocation = FurnitureType "GRAVE"
-          requirements = {
-            { 0.0 MinTurnRequirement 4000 }
-            { 0.1 AttractionInfo 5 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 5 }
-          }
-          specialTraits = {
-             { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
-             { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
-          }
-        }
-        {
-          ids = { "SKELETON_MAGE" }
-          traits = { FIGHTER }
-          frequency = 0.1
-          spawnLocation = FurnitureType "GRAVE"
-          requirements = {
-            { 0.0 MinTurnRequirement 3000 }
-            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 3}
-          }
-          specialTraits = {
-             { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
-             { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
-          }
-        }
-        {
-          ids = { "SKELETON_WARRIOR" }
-          traits = { FIGHTER }
-          frequency = 0.08
-          spawnLocation = FurnitureType "GRAVE"
-          requirements = {
-            { 0.0 MinTurnRequirement 4000 }
-            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 3}
-          }
-          specialTraits = {
-             { 0.03 { AttrBonus DAMAGE 5 }}
-             { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
-          }
-        }
         {
           ids = { "ZOMBIE" }
           traits = { FIGHTER }
@@ -1544,22 +1377,7 @@
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
-        {
-          ids = { "COMBAT_SUCCUBUS" }
-          traits = { FIGHTER }
-          frequency = 0.3
-          spawnLocation = FurnitureType "DEMON_SHRINE"
-          requirements = {
-            { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
-            { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
-            { 0.0 CostInfo DEMON_PIETY 1000 }
-            { 0.0 TechId "combat succubus" }
-          }
-          specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
-          }
-        }
-        {
+       {
           ids = { "DOPPLEGANGER" }
           traits = { FIGHTER }
           frequency = 0.3
@@ -1697,7 +1515,171 @@
             { 1.0 CostInfo GOLD 100 }
           }
         }
-    }
+		{
+          ids = { "RED_DRAGON" }
+          traits = { FIGHTER }
+          consumeIds = true
+          spawnLocation = FurnitureType "PORTAL"
+          requirements = {
+            { 1.0 FurnitureType "THRONE" }
+            { 1.0 FurnitureType "PORTAL" }
+            { 1.0 CostInfo GOLD 500 }
+            { 0.0 TechId "dragon taming" }
+          }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+		{
+          ids = { "DEMON_LORD" }
+          traits = { FIGHTER }
+          consumeIds = true
+          spawnLocation = FurnitureType "PORTAL"
+          requirements = {
+            { 1.0 FurnitureType "THRONE" }
+            { 1.0 FurnitureType "PORTAL" }
+            { 1.0 CostInfo GOLD 500 }
+            { 0.0 TechId "demonic alliance" }
+          }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+        {
+          ids = { "DARK_OGRE" "DARK_OGRE_FEMALE" }
+          traits = { FIGHTER }
+          spawnLocation = Pregnancy
+          frequency = 0.3
+          requirements = {
+            { 0.0 MinTurnRequirement 2000 }
+            { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+             { 0.02 { ExtraBodyPart HEAD 1}}
+             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
+             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
+             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
+             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { LastingEffect BAD_BREATH }}
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+        {
+          ids = { "DARK_ORC" "DARK_ORC_FEMALE" }
+          traits = { FIGHTER }
+          spawnLocation = Pregnancy
+          frequency = 0.7
+          requirements = {
+            { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_WOOD"}}
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+             { 0.01 { ExtraBodyPart HEAD 1}}
+             { 0.01 { ExtraBodyPart WING 2}}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { ExtraTraining MELEE 2}}
+             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
+             { 0.05 { LastingEffect NIGHT_VISION }}
+             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { LastingEffect MAGIC_VULNERABILITY }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { LastingEffect BAD_BREATH }}
+             { 0.01 { LastingEffect ENTERTAINER }}
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+        {
+          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+        {
+          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+        {
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+        {
+          ids = { "NECROMANCER" }
+          traits = { FIGHTER }
+          frequency = 0.1
+          spawnLocation = FurnitureType "GRAVE"
+          requirements = {
+            { 0.0 MinTurnRequirement 4000 }
+            { 0.1 AttractionInfo 5 {FurnitureType "GRAVE"}}
+            { 0.0 CostInfo CORPSE 5 }
+          }
+          specialTraits = {
+             { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
+             { 0.03 { AttrBonus DEFENSE 5 }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+        {
+          ids = { "SKELETON_MAGE" }
+          traits = { FIGHTER }
+          frequency = 0.1
+          spawnLocation = FurnitureType "GRAVE"
+          requirements = {
+            { 0.0 MinTurnRequirement 3000 }
+            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
+            { 0.0 CostInfo CORPSE 3}
+          }
+          specialTraits = {
+             { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
+             { 0.03 { AttrBonus DEFENSE 5 }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+        {
+          ids = { "COMBAT_SUCCUBUS" }
+          traits = { FIGHTER }
+          frequency = 0.3
+          spawnLocation = FurnitureType "DEMON_SHRINE"
+          requirements = {
+            { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
+            { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
+            { 0.0 CostInfo DEMON_PIETY 1000 }
+            { 0.0 TechId "combat succubus" }
+          }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+     }
     "dark_keeper_hard_mode"
     {
         {
@@ -1713,36 +1695,6 @@
           }
           requirements = {
             { 1 ExponentialCost GOLD 30 5 4 }
-          }
-        }
-		{
-          ids = { "RED_DRAGON" }
-          traits = { FIGHTER }
-          consumeIds = true
-          spawnLocation = FurnitureType "PORTAL"
-          requirements = {
-            { 1.0 FurnitureType "THRONE" }
-            { 1.0 FurnitureType "PORTAL" }
-            { 1.0 CostInfo GOLD 500 }
-            { 0.0 TechId "dragon taming" }
-          }
-          specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
-          }
-        }
-		{
-          ids = { "DEMON_LORD" }
-          traits = { FIGHTER }
-          consumeIds = true
-          spawnLocation = FurnitureType "PORTAL"
-          requirements = {
-            { 1.0 FurnitureType "THRONE" }
-            { 1.0 FurnitureType "PORTAL" }
-            { 1.0 CostInfo GOLD 500 }
-            { 0.0 TechId "demonic alliance" }
-          }
-          specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
         {
@@ -1761,125 +1713,11 @@
           }
         }
         {
-          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true
-          consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
-          specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
-          }
-        }
-        {
-          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true
-          consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
-          specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
-          }
-        }
-        {
-          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true
-          consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
-          specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
-          }
-        }
-        {
           ids = { "ORC" "ORC_FEMALE" }
           traits = { FIGHTER }
           frequency = 0.7
           requirements = {
             { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_WOOD"}}
-          }
-          specialTraits = {
-             { 0.01 { ExtraBodyPart HEAD 1}}
-             { 0.01 { ExtraBodyPart WING 2}}
-             { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { ExtraTraining MELEE 2}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.05 { LastingEffect NIGHT_VISION }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.05 { LastingEffect MAGIC_VULNERABILITY }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.03 { LastingEffect BAD_BREATH }}
-             { 0.01 { LastingEffect ENTERTAINER }}
-    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
-          }
-        }
-        {
-          ids = { "NECROMANCER" }
-          traits = { FIGHTER }
-          frequency = 0.1
-          spawnLocation = FurnitureType "GRAVE"
-          requirements = {
-            { 0.0 MinTurnRequirement 4000 }
-            { 0.1 AttractionInfo 5 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 5 }
-          }
-          specialTraits = {
-             { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
-             { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
-          }
-        }
-        {
-          ids = { "SKELETON_MAGE" }
-          traits = { FIGHTER }
-          frequency = 0.1
-          spawnLocation = FurnitureType "GRAVE"
-          requirements = {
-            { 0.0 MinTurnRequirement 3000 }
-            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 3}
-          }
-          specialTraits = {
-             { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
-             { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.10 { LastingEffect MAGIC_RESISTANCE }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }} 
-             { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
-          }
-        }
-        {
-          ids = { "SKELETON_WARRIOR" }
-          traits = { FIGHTER }
-          frequency = 0.08
-          spawnLocation = FurnitureType "GRAVE"
-          requirements = {
-            { 0.0 MinTurnRequirement 4000 }
-            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 3}
-          }
-          specialTraits = {
-             { 0.03 { AttrBonus DAMAGE 5 }}
-             { 0.03 { AttrBonus DEFENSE 5 }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
-          }
-        }
-        {
-          ids = { "DARK_ORC" "DARK_ORC_FEMALE"}
-          traits = { FIGHTER }
-          spawnLocation = Pregnancy
-          frequency = 0.7
-          requirements = {
-            { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_WOOD"}}
-            { 0.0 Pregnancy }
           }
           specialTraits = {
              { 0.01 { ExtraBodyPart HEAD 1}}
@@ -1943,30 +1781,6 @@
           requirements = {
             { 0.0 MinTurnRequirement 2000 }
             { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
-          }
-          specialTraits = {
-             { 0.02 { ExtraBodyPart HEAD 1}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { LastingEffect BAD_BREATH }}
-    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
-          }
-        }
-        {
-          ids = { "DARK_OGRE" "DARK_OGRE_FEMALE" }
-          traits = { FIGHTER }
-          spawnLocation = Pregnancy
-          frequency = 0.3
-          requirements = {
-            { 0.0 MinTurnRequirement 2000 }
-            { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
-            { 0.0 Pregnancy }
           }
           specialTraits = {
              { 0.02 { ExtraBodyPart HEAD 1}}
@@ -2094,21 +1908,6 @@
             { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
             { 0.0 CostInfo DEMON_PIETY 1000 }            
             { 0.0 NegateRequirement TechId "combat succubus" }		  
-          }
-          specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
-          }
-        }
-        {
-          ids = { "COMBAT_SUCCUBUS" }
-          traits = { FIGHTER }
-          frequency = 0.3
-          spawnLocation = FurnitureType "DEMON_SHRINE"
-          requirements = {
-            { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
-            { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
-            { 0.0 CostInfo DEMON_PIETY 1000 }
-            { 0.0 TechId "combat succubus" }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
@@ -2253,6 +2052,171 @@
             { 1.0 CostInfo GOLD 100 }
           }
         }
+ 		{
+          ids = { "RED_DRAGON" }
+          traits = { FIGHTER }
+          consumeIds = true
+          spawnLocation = FurnitureType "PORTAL"
+          requirements = {
+            { 1.0 FurnitureType "THRONE" }
+            { 1.0 FurnitureType "PORTAL" }
+            { 1.0 CostInfo GOLD 500 }
+            { 0.0 TechId "dragon taming" }
+          }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
+		{
+          ids = { "DEMON_LORD" }
+          traits = { FIGHTER }
+          consumeIds = true
+          spawnLocation = FurnitureType "PORTAL"
+          requirements = {
+            { 1.0 FurnitureType "THRONE" }
+            { 1.0 FurnitureType "PORTAL" }
+            { 1.0 CostInfo GOLD 500 }
+            { 0.0 TechId "demonic alliance" }
+          }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
+        {
+          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
+        {
+          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
+        {
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
+        {
+          ids = { "NECROMANCER" }
+          traits = { FIGHTER }
+          frequency = 0.1
+          spawnLocation = FurnitureType "GRAVE"
+          requirements = {
+            { 0.0 MinTurnRequirement 4000 }
+            { 0.1 AttractionInfo 5 {FurnitureType "GRAVE"}}
+            { 0.0 CostInfo CORPSE 5 }
+          }
+          specialTraits = {
+             { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
+             { 0.03 { AttrBonus DEFENSE 5 }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
+        {
+          ids = { "SKELETON_MAGE" }
+          traits = { FIGHTER }
+          frequency = 0.1
+          spawnLocation = FurnitureType "GRAVE"
+          requirements = {
+            { 0.0 MinTurnRequirement 3000 }
+            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
+            { 0.0 CostInfo CORPSE 3}
+          }
+          specialTraits = {
+             { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
+             { 0.03 { AttrBonus DEFENSE 5 }}
+             { 0.10 { LastingEffect MAGIC_RESISTANCE }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }} 
+             { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
+        {
+          ids = { "DARK_ORC" "DARK_ORC_FEMALE"}
+          traits = { FIGHTER }
+          spawnLocation = Pregnancy
+          frequency = 0.7
+          requirements = {
+            { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_WOOD"}}
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+             { 0.01 { ExtraBodyPart HEAD 1}}
+             { 0.01 { ExtraBodyPart WING 2}}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { ExtraTraining MELEE 2}}
+             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
+             { 0.05 { LastingEffect NIGHT_VISION }}
+             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { LastingEffect MAGIC_VULNERABILITY }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { LastingEffect BAD_BREATH }}
+             { 0.01 { LastingEffect ENTERTAINER }}
+    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
+        {
+          ids = { "DARK_OGRE" "DARK_OGRE_FEMALE" }
+          traits = { FIGHTER }
+          spawnLocation = Pregnancy
+          frequency = 0.3
+          requirements = {
+            { 0.0 MinTurnRequirement 2000 }
+            { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+             { 0.02 { ExtraBodyPart HEAD 1}}
+             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
+             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
+             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
+             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { LastingEffect BAD_BREATH }}
+    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
+        {
+          ids = { "COMBAT_SUCCUBUS" }
+          traits = { FIGHTER }
+          frequency = 0.3
+          spawnLocation = FurnitureType "DEMON_SHRINE"
+          requirements = {
+            { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
+            { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
+            { 0.0 CostInfo DEMON_PIETY 1000 }
+            { 0.0 TechId "combat succubus" }
+          }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
     }
     "sandbox"
     {
@@ -2272,6 +2236,54 @@
 
     "dark_keeper_modded"
     {
+        {
+          ids = { "DARK_OGRE" "DARK_OGRE_FEMALE" }
+          traits = { FIGHTER }
+          spawnLocation = Pregnancy
+          frequency = 0.3
+          requirements = {
+            { 0.0 MinTurnRequirement 2000 }
+            { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+             { 0.02 { ExtraBodyPart HEAD 1}}
+             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
+             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
+             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
+             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { LastingEffect BAD_BREATH }}
+          }
+        }
+        {
+          ids = { "DARK_ORC" "DARK_ORC_FEMALE" }
+          traits = { FIGHTER }
+          spawnLocation = Pregnancy
+          frequency = 0.7
+          requirements = {
+            { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_WOOD"}}
+            { 0.0 Pregnancy }
+          }
+          specialTraits = {
+             { 0.01 { ExtraBodyPart HEAD 1}}
+             { 0.01 { ExtraBodyPart WING 2}}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { ExtraTraining MELEE 2}}
+             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
+             { 0.05 { LastingEffect NIGHT_VISION }}
+             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
+             { 0.05 { LastingEffect MAGIC_VULNERABILITY }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.03 { LastingEffect BAD_BREATH }}
+             { 0.01 { LastingEffect ENTERTAINER }}
+          }
+        }
 		{
           ids = { "RED_DRAGON" }
           traits = { FIGHTER }
@@ -2297,6 +2309,30 @@
           }
         }
         {
+          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+        }
+        {
+          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+        }
+        {
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
+        }
+        {
           ids = { "COMBAT_SUCCUBUS" }
           traits = { FIGHTER }
           frequency = 0.3
@@ -2306,29 +2342,6 @@
             { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
             { 0.0 CostInfo DEMON_PIETY 1000 }
             { 0.0 TechId "combat succubus" }
-          }
-        }
-        {
-          ids = { "DARK_OGRE" "DARK_OGRE_FEMALE" }
-          traits = { FIGHTER }
-          spawnLocation = Pregnancy
-          frequency = 0.3
-          requirements = {
-            { 0.0 MinTurnRequirement 2000 }
-            { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
-            { 0.0 Pregnancy }
-          }
-          specialTraits = {
-             { 0.02 { ExtraBodyPart HEAD 1}}
-             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
-             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
-             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
-             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
-             { 0.05 { LastingEffect SWIMMING_SKILL }}
-             { 0.02 { LastingEffect HATE_ELVES }}
-             { 0.02 { LastingEffect HATE_HUMANS }}
-             { 0.05 { ExtraTraining ARCHERY 2}}
-             { 0.05 { LastingEffect BAD_BREATH }}
           }
         }
 		{
@@ -2365,21 +2378,31 @@
              { 0.02 { LastingEffect HATE_HUMANS }}
           }
         }
-		{
-		  ids = { "SKELETON_WARRIOR" }
+    }
+
+    "dark_knight_modded"
+    {
+        {
+          ids = { "DARK_OGRE" "DARK_OGRE_FEMALE" }
           traits = { FIGHTER }
-          frequency = 0.08
-          spawnLocation = FurnitureType "GRAVE"
+          spawnLocation = Pregnancy
+          frequency = 0.3
           requirements = {
-            { 0.0 MinTurnRequirement 4000 }
-            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 3}
+            { 0.0 MinTurnRequirement 2000 }
+            { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
+            { 0.0 Pregnancy }
           }
           specialTraits = {
-             { 0.03 { AttrBonus DAMAGE 5 }}
-             { 0.03 { AttrBonus DEFENSE 5 }}
+             { 0.02 { ExtraBodyPart HEAD 1}}
+             { 0.03 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
+             { 0.03 { AttrBonus DEFENSE 5 LastingEffect SLOWED}}
+             { 0.05 { LastingEffect RANGED_VULNERABILITY }}
+             { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
+             { 0.05 { LastingEffect SWIMMING_SKILL }}
              { 0.02 { LastingEffect HATE_ELVES }}
              { 0.02 { LastingEffect HATE_HUMANS }}
+             { 0.05 { ExtraTraining ARCHERY 2}}
+             { 0.05 { LastingEffect BAD_BREATH }}
           }
         }
         {
@@ -2407,10 +2430,6 @@
              { 0.01 { LastingEffect ENTERTAINER }}
           }
         }
-    }
-
-    "dark_knight_modded"
-    {
         {
           ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
           traits = { FIGHTER }
@@ -2475,6 +2494,23 @@
           initialRecruitment = 1
           requirements = {
             { 0.0 TechId "pig breeding" }
+          }
+        }
+		{
+		  ids = { "SKELETON_WARRIOR" }
+          traits = { FIGHTER }
+          frequency = 0.08
+          spawnLocation = FurnitureType "GRAVE"
+          requirements = {
+            { 0.0 MinTurnRequirement 4000 }
+            { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
+            { 0.0 CostInfo CORPSE 3}
+          }
+          specialTraits = {
+             { 0.03 { AttrBonus DAMAGE 5 }}
+             { 0.03 { AttrBonus DEFENSE 5 }}
+             { 0.02 { LastingEffect HATE_ELVES }}
+             { 0.02 { LastingEffect HATE_HUMANS }}
           }
         }
     }
