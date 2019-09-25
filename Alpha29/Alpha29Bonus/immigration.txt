@@ -1464,7 +1464,9 @@
           requirements = {
             { 0.0 RecruitmentInfo {"DARK_ELVES_ALLY"} 3 FIGHTER }
             { 1.0 CostInfo GOLD 20 }
-    		{ 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
         {
@@ -1473,7 +1475,9 @@
           requirements = {
             { 0.0 RecruitmentInfo {"ORC_VILLAGE"} 3 FIGHTER }
             { 1.0 CostInfo GOLD 5 }
-    		{ 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
         {
@@ -1482,7 +1486,9 @@
           requirements = {
             { 0.0 RecruitmentInfo {"HARPY_CAVE"} 3 FIGHTER }
             { 1.0 CostInfo GOLD 12 }
-    		{ 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
         {
@@ -1491,7 +1497,9 @@
           requirements = {
             { 0.0 RecruitmentInfo {"OGRE_CAVE" "ORC_VILLAGE"} 3 FIGHTER }
             { 1.0 CostInfo GOLD 12 }
-    		{ 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
         {
@@ -1856,7 +1864,6 @@
           specialTraits = {
              { 0.3 { LastingEffect SLOWED }}
  		     { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
-          }
           }
         }
         {
