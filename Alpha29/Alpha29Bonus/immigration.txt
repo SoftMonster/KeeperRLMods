@@ -591,7 +591,15 @@
           }
         }  
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+       }
+        {
+          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
@@ -652,13 +660,21 @@
           }
         }
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
-        }
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+       }
+        {
+          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+       }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
           traits = { FIGHTER }
@@ -794,12 +810,20 @@
           }
         }
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+        }
+        {
+          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
         }
 		{
 		  ids = { "NECROMANCER" }
@@ -1233,7 +1257,18 @@
           }
         }
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
+        }
+        {
+          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
@@ -1726,7 +1761,18 @@
           }
         }
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          specialTraits = {
+    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+          }
+        }
+        {
+          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
@@ -2366,12 +2412,20 @@
     "dark_knight_modded"
     {
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+        }
+        {
+          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
         }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
@@ -2650,12 +2704,20 @@
     "white_keeper_modded"	
     {
         {
-          ids = { "GHOST_ARMOUR" "POSSESSED_SWORD" "GHOST_ARMOUR" "POSSESSED_SWORD" }
+          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+        }
+        {
+          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
         }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
