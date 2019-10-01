@@ -166,6 +166,13 @@
     }
     workshopGroups = { "necromancer" }
     description = "(Challenge) Fight using an undead army!"
+    #Better than a standard vampire lord. He was losing limbs too much.
+    specialTraits = {
+             { 1.0 { LastingEffect TELEPATHY }}
+             { 1.0 { LastingEffect FIRE_RESISTANT }}
+             { 0.3 { LastingEffect FLYING }}
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+          }
   }
   {
     creatureId = { "DWARF_QUEEN" }
