@@ -113,4 +113,14 @@
       gate = { "WOOD_GATE" 1.0 }
       downStairs = "DUNGEON_ENTRY"
     }
+  "MINOTAUR"
+    {
+      wall = "CASTLE_WALL"
+      floorInside = "FLOOR"
+      floorOutside = "MUD"
+      prettyFloor = "FLOOR_CARPET1"
+      door = { "FIRE_TRAP" 1.0 }
+      gate = { "FIRE_TRAP" 1.0 }
+	  upStairs = "TAINTED_STAIRS_UP"
+    }
 }

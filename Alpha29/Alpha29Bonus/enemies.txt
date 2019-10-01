@@ -473,7 +473,7 @@
       locationName = "maze"
       race = "monsters"
       furniture = { "roomFurniture" }
-      buildingId = "BRICK"
+      buildingId = "MINOTAUR"
     }
   }
   "RED_DRAGON"
