@@ -873,7 +873,7 @@
     }
   "PRIEST_PLAYER"
     {
-      viewId = { "priest" }
+      viewId = { "priest" Rgb 255 0 0 255 } #Modded
       attr = {
         DAMAGE 12
         DEFENSE 8
