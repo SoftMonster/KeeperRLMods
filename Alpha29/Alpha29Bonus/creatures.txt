@@ -804,7 +804,7 @@
     }
   "KNIGHT_PLAYER"
     {
-      viewId = { "knight" }
+      viewId = { "knight" Rgb 58 255 106 106 } #Modded
       attr = {
         DAMAGE 16
         DEFENSE 14 
@@ -829,7 +829,7 @@
     }
   "JESTER_PLAYER"
     {
-      viewId = { "jester" }
+      viewId = { "jester" Rgb 58 255 106 106 } #Modded
       attr = {
         DAMAGE 8
         DEFENSE 8 
@@ -850,7 +850,7 @@
     }
   "ARCHER_PLAYER"
     {
-      viewId = { "archer" }
+      viewId = { "archer" Rgb 58 255 106 106 } #Modded
       attr = {
         DAMAGE 10
         DEFENSE 10
@@ -929,7 +929,7 @@
     }
   "GNOME_PLAYER"
     {
-      viewId = { "gnome" }
+      viewId = { "gnome" Rgb 150 90 10 255 }
       attr = {
         DAMAGE 10
         DEFENSE 10 
