@@ -2252,7 +2252,9 @@
     }
     "sandbox"
     {
-        { ids = { "IMP" } traits = { WORKER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
+        { ids = { "WINGED_IMP" } traits = { WORKER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100
+         specialTraits = {{ 1.00 { ExtraBodyPart WING 2 AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}}
+		 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
         { ids = { "BENGAL_TIGER" "ELEPHANT" "LION" "SCREE_BIRD" "LIONESS" "MUSHROOM_MAN" "SQUIDHOLDER" "SPRITE" "GARGOYLE" "COW_DEMON" "RAT_SOLDIER" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
         { ids = { "AIR_FAIRY" "DARK_FAIRY" "DEMON_FAIRY" "EARTH_FAIRY" "ELECTRIC_FAIRY" "FIRE_FAIRY" "MAGIC_FAIRY" "NATURE_FAIRY" "LIGHT_FAIRY" "WATER_FAIRY" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
         { ids = { "ANCIENT_GREEN_DRAGON" "ANCIENT_RED_DRAGON" "ZOMBIE_DRAGON" "SPIRIT_DRAGON" "RED_DRAGONNEWT" "GREEN_DRAGONEWT" "RED_DRAGON" "GREEN_DRAGON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
