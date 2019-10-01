@@ -14,7 +14,7 @@
     { "shaman" } "WARRIORS" "Warriors" MAIN
     { "thief_leader" } "THIEVES" "Thieves" MAIN
     { "demon_lord" } "DEMON_DEN" "Demon den" MAIN
-    { "dungeon_entrance" } "ADOXIE_DUNGEON" "Unremarkable dungeon" MAIN
+    { "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN
 
 #Modded main villains
     { "ancient_reddragon" } "DRAGONS" "Greater dragon nest" MAIN
@@ -78,7 +78,7 @@
     { "ogre" } "OGRE_CAVE" "Ogres" LESSER
     { "harpy" } "HARPY_CAVE" "Harpies" LESSER
     { "ant_queen" } "ANTS_OPEN" "Ants" LESSER
-    { "dungeon_entrance" } "MAIN_DUNGEON" "Unremarkable dungeon" LESSER
+    { "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN
 
 #Modded lesser villains
     { "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER
@@ -155,7 +155,7 @@
     { "ogre" } "OGRE_CAVE" "Ogres" LESSER
     { "harpy" } "HARPY_CAVE" "Harpies" LESSER
     { "ant_queen" } "ANTS_OPEN" "Ants" LESSER
-    { "dungeon_entrance" } "MAIN_DUNGEON" "Unremarkable dungeon" LESSER
+    { "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN
 
 #Modded
     { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER

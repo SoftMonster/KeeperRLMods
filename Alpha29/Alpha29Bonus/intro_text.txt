@@ -1,14 +1,8 @@
-{"Welcome to KeeperRL Alpha 29 bonus features mod.
-  
- Even more modding support has arrived with this update than Alpha 28. Enjoy!
+{"Welcome to KeeperRL Alpha 29 testing! This patch was released on September 30th, 2019.
 
- (Credits)
+This unofficial build is intended for testing purposes, and is released for experienced players who want to get an early glimpse of Alpha 29, and are ready to help with fixing the remaining issues.
 
- The bonus feature mod team: SoftMonster, RighteousSinner, Acre, 8bit, and Logodum
-
- Thanks for playing the Mod, have fun!
-
+If you are a new player, it is strongly recommended that you go back to Alpha 28, until Alpha 29 is officially released.
 "}
-
 {
 }

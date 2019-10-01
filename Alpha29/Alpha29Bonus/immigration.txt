@@ -239,7 +239,7 @@
           spawnLocation = FurnitureType "DEMON_SHRINE"
           requirements = {
             { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
-            { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
+            { 0.3 AttractionInfo 1 {FurnitureType "BED3"}} #Modded
             { 0.0 CostInfo DEMON_PIETY 1000 }            
             { 0.0 NegateRequirement TechId "combat succubus" }		  
           }
@@ -299,7 +299,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 2000 }
             { 0.3 AttractionInfo 2 {FurnitureType "TRAINING_IRON"}}
-            { 0.0 AttractionInfo 1 {FurnitureType "BEAST_CAGE"}}
+            { 0.0 AttractionInfo 1 {FurnitureType "BEAST_CAGE"}} #Modded
           }
           specialTraits = {
              { 0.1 { AttrBonus DAMAGE 13 LastingEffect INSANITY}}
