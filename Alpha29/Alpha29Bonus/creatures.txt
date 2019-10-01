@@ -6905,4 +6905,11 @@
       chatReactionHostile = "\"Soon you will join my undead ranks. DIE!\""
       hatedByEffect = HATE_UNDEAD
     }
+
+#Immigrant variants
+  "WINGED_IMP" inherit "IMP"
+    {
+      viewId = { "winged_imp" }
+    }
+
 }

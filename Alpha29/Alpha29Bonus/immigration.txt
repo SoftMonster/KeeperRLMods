@@ -1147,7 +1147,7 @@
     "dark_keeper_easy_mode"
     {
         {
-          ids = { "IMP" }
+          ids = { "WINGED_IMP" }
           traits = { WORKER NO_LIMIT NO_EQUIPMENT }
           spawnLocation = NearLeader
           keybinding = CREATE_IMP

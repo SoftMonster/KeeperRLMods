@@ -722,5 +722,8 @@
 
   { viewId = "tree_wall" symbol = "#" color = ColorId GREEN wallShadow = true wallConnections = true }
   { viewId = "tainted_wall" symbol = "#" color = ColorId PURPLE wallShadow = true wallConnections = true }
-  
+
+ #Immigrant variants
+  { "winged_imp" "i" ColorId LIGHT_BROWN }
+
 }
