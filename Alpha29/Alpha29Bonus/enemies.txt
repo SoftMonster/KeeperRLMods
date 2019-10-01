@@ -258,7 +258,7 @@
   {
     settlement = {
       type = VILLAGE
-      buildingId = "DUNGEON"
+      buildingId = "TAINTED" #Modded
       tribe = MONSTER
       inhabitants = {
         leader = { { "DEMON_LORD" } }
@@ -668,7 +668,7 @@
     settlement = {
       type = TOWER
       tribe = HUMAN
-      buildingId = "BRICK"
+      buildingId  = "ELEMENTALIST" #Modded
 #Mod Begin
       inhabitants = {
         fighters = {
@@ -696,7 +696,7 @@
       }
       type = TOWER
       tribe = HUMAN
-      buildingId = "BRICK"
+      buildingId = "ELEMENTALIST" #Modded
     }
     discoverable = false
   }
@@ -708,7 +708,7 @@
         leader = { { "ELEMENTALIST" } }
       }
       tribe = HUMAN
-      buildingId = "BRICK"
+      buildingId = "ELEMENTALIST" #Modded
       furniture = { "roomFurniture" }
     }
     config = {

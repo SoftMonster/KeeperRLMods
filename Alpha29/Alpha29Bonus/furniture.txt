@@ -1460,6 +1460,26 @@
     name = "dungeon entrance"
     viewId = { "dungeon_entrance" }
   }
+  "ELEMENTALIST_STAIRS_DOWN" inherit "DOWN_STAIRS"
+  {
+    name = "spiraling stairs"
+    viewId = { "down_staircase" Rgb 58 255 106 106 }
+  }
+  "ELEMENTALIST_STAIRS_UP" inherit "UP_STAIRS"
+  {
+    name = "spiraling stairs"
+    viewId = { "up_staircase" Rgb 58 255 106 106  }
+  }
+  "TAINTED_STAIRS_DOWN" inherit "DOWN_STAIRS"
+  {
+    name = "blood-red stairs"
+    viewId = { "down_staircase" Rgb 255 0 0 255 }
+  }
+  "TAINTED_STAIRS_UP" inherit "UP_STAIRS"
+  {
+    name = "blood-red stairs"
+    viewId = { "up_staircase" Rgb 255 0 0 255  }
+  }
   "TREE_WALL"
   {
     name = "tree wall"
