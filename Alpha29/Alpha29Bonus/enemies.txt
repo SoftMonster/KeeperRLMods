@@ -2143,18 +2143,18 @@
   "VULTURE_ABOMINATIONS"
   {
     settlement = { 
-      type = CAVE
+      type = VILLAGE
+      tribe = MONSTER
       inhabitants = {
         leader = { { "ADOXIE_EYE" } }
         fighters = {
-          count = {5 9}
+          count = {25 30}
           all = {
-		    3 "VULTURE_ABOMINATION"
+		    6 "VULTURE_ABOMINATION"
             1 "EYE_SERVANT"
           }
         }
 	  }
-      tribe = MONSTER
       race = "abominations"
       buildingId = "DUNGEON"
     }
@@ -2173,6 +2173,25 @@
         frequency = 3
       }
     }
+    levelConnection = {
+      direction = UP
+      topLevel = MainEnemy
+      levels = {
+        { ExtraEnemy { "IMPRISONED_FAIRY" { 1 } } 28 16 MINETOWN }
+      }
+    }
+  }
+  "IMPRISONED_FAIRY"
+  {
+    settlement = {
+      type = CAVE
+      inhabitants = {
+        leader = {{ "DEMON_FAIRY" }}
+      }
+      tribe = DARK_KEEPER
+      buildingId = "DUNGEON"
+    }
+    discoverable = false
   }
   "OCEAN_PORTAL"
   {
