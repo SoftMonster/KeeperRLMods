@@ -127,7 +127,7 @@
     items = { 
       {{Amulet REGENERATION} 1}
       {{Amulet WARNING} 1}
-      {{Simple "DefenseAmulet" } 1}
+      {{Simple "DefenseAmulet"} 1}
     }
   }
 

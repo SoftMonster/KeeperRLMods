@@ -741,9 +741,9 @@
       chatReactionFriendly = "\"Lingrah Laas Wah Hi\""
       chatReactionHostile = "\"Aal Yol Du Hi Joor!\""
       deathDescription = "slain"
+      courage = 1 
       #
       
-      courage = 1 
     }
   "BLACK_DRAGON"
     {
@@ -929,7 +929,7 @@
     }
   "GNOME_PLAYER"
     {
-      viewId = { "gnome" Rgb 150 90 10 255 }
+      viewId = { "gnome" Rgb 150 90 10 255 } #Modded
       attr = {
         DAMAGE 10
         DEFENSE 10 
