@@ -2605,7 +2605,7 @@
       type = CAVE
       buildingId = "DUNGEON"
       tribe = GNOME
-      race = "demon"
+      race = "gargoyle"
       inhabitants = {
         fighters = {
           count = {3 4}
