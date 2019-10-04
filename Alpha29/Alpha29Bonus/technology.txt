@@ -19,10 +19,10 @@
 #New for standard classes
   "simplistic animations"    { "Use magic to make simple objects fight for you. [maximum of 4] " {"iron working" "advanced sorcery"}}
   "magic contraptions"       { "Use magic to invent devices that fight for you. [maximum of 2] " {"simplistic animations"}}
-  "dragon taming"            { "Summon a pet dragon through your dungeon portal."             {"master sorcery"}}
-  "demonic alliance"         { "Summon a demon lord through your dungeon portal."             {"demonology"}}
-  "minotaur mutation"        { "Give birth to a minotaur."                                    {"beast mutation"}}
-  "cyclops mutation"         { "Give birth to a cyclops."                                     {"humanoid mutation"}}
+  "dragon taming"            { "Summon a pet dragon through your dungeon portal. [Also requires throne]"       {"master sorcery"}}
+  "demonic alliance"         { "Summon a demon lord through your dungeon portal. [Also requires throne]"     {"demonology"}}
+  "minotaur mutation"        { "Give birth to a minotaur. [Also requires pregnancy]"            {"beast mutation"}}
+  "cyclops mutation"         { "Give birth to a cyclops. [Also requires pregnancy]"               {"humanoid mutation"}}
   "combat succubus"          { "Enable the newly recruited sucubbi to do combat."             {"demonology"}}
   "magic paper production"   { "Create magic paper from wood, unlocking basic scrolls"        {"sorcery" "alchemy"}}
   "advanced inscription"     { "Inscribe magic paper with advanced spells"                    {"advanced sorcery" "magic paper production"}}
