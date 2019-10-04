@@ -1,4 +1,4 @@
-﻿KeeperrlAlpha28BonusMod change list:
+﻿KeeperrlAlpha29BonusMod change list:
 
 Campaign Enemies: 
 - Pride of Lions
@@ -7,9 +7,9 @@ Campaign Enemies:
 - Ocean portal
 - Centaurs
 - Amazons
-- ancient dragons
-- cow demons
-- gorgon
+- Ancient dragons
+- Cow demons
+- Gorgon 
 
 New units:
 - Lion
@@ -55,7 +55,8 @@ New units:
 - Rat Lady
 - Rat Man (Re-sprite)
 - Giant contraption
-- Magic armor
+- Ghost armor
+- Possessed Sword
 - Militia
 - Hell Knight
 - Hell Knight Swordmaster
@@ -94,6 +95,20 @@ New units:
 - Centaur Child
 - Centaur King
 - Centaur Knight
+- Dwarf Queen
+- Dwarf Monk
+- Goblin Wizard
+- Goblin Warrior
+- Goblin Priest
+- Goblin Matron
+- Goblin Lepracuan
+- Goblin King
+- Goblin Kaboomer
+- Goblin High Priest
+- Goblin Chickenmsncer
+- Goblin Brute
+- Goblin Archer
+- Elite Goblin Guard
 
 New Technologies (Dark keepers):
 - Simplistic animations - Use magic to make simple objects fight for you.
@@ -238,6 +253,7 @@ New Keepers:
 - Gnome Chief (Play as a tribe of gnomes who rely on magic)
 - Dwarf Baron (Play as a tribe of dwarves focussed on melee)
 - Elementalist (Play as an elementalist and summon an elemental army with raw resources)
+- Goblin King
 
 New Adventurers:
 
