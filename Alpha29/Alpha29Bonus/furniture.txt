@@ -1433,15 +1433,6 @@
     tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
     destroyedEffect = PlaceFurniture "STONES"
   }
-  "DISGUISED_BOULDER_TRAP"
-  {
-    name = "boulder"
-    viewId = { "boulder" }
-    canHideHere = true
-    tickType = BOULDER_TRAP
-    warning = true
-    blockingEnemies = true
-  }
   "HOLE"
   {
     name = "hole"

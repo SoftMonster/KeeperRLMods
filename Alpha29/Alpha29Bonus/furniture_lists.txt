@@ -82,7 +82,6 @@
       "HOLE" 5
       "LITTLE_SPIDER_WEB" 2
       "BIG_SPIDER_WEB" 1
-      "DISGUISED_BOULDER_TRAP" 1
 	}
   }
   "cryptCoffins"
