@@ -351,7 +351,7 @@
   {
     id =  "black dragon blindness"
     symbol = "🙈"
-    effect = Area 30 Filter ENEMY Lasting BLIND
+    effect = Chain { Message "A terrible blackness strikes." Area 30 Filter ENEMY Lasting BLIND } #Modded
     cooldown = 3
   }
   {
@@ -436,7 +436,7 @@
     id =  "area haste"
 	upgrade = "haste other"
     symbol = "🏃"
-    effect = Area 2 Filter ALLY Lasting SPEED
+    effect = Chain { Message "Time is altered." Area 2 Filter ALLY Lasting SPEED }
     cooldown = 110
     sound = SPELL_SPEED_SELF
   }
@@ -453,7 +453,7 @@
     id =  "area defense bonus"
 	upgrade = "defend other"
     symbol = "🛡"
-    effect = Area 2 Filter ALLY Lasting DEF_BONUS
+    effect = Chain { Message "Spirit of Endurance invoked." Area 2 Filter ALLY Lasting DEF_BONUS }
     cooldown = 70
     sound = SPELL_DEX_BONUS
   }
@@ -476,7 +476,7 @@
   {
     id =  "area damage bonus"
     symbol = "💪"
-    effect = Area 2 Filter ALLY Lasting DAM_BONUS
+    effect = Chain { Message "Powers of violence called." Area 2 Filter ALLY Lasting DAM_BONUS }
     cooldown = 70
     sound = SPELL_STR_BONUS
   }
@@ -607,7 +607,7 @@
    id = "freezing vines"
    symbol = "🙙"
    range = 10
-   effect = Lasting FROZEN
+   effect = Chain { Message "Freezing vines burst from the ground."  Lasting FROZEN }
    cooldown = 70
    sound = SPELL_STR_BONUS
  }
@@ -893,14 +893,14 @@
  {
     id =  "goblin damage buff"
     symbol = "💪"
-    effect = Area 2 Filter ALLY Lasting DAM_BONUS
+    effect = Chain { Message "Goblin violence cast." Area 2 Filter ALLY Lasting DAM_BONUS }
     cooldown = 10
     sound = SPELL_STR_BONUS
  }
  {
     id =  "goblin defense buff"
     symbol = "🛡"
-    effect = Area 2 Filter ALLY Lasting DEF_BONUS
+    effect = Chain { Message "Goblin skin charm." Area 2 Filter ALLY Lasting DEF_BONUS }
     cooldown = 10
     sound = SPELL_DEX_BONUS
  }
