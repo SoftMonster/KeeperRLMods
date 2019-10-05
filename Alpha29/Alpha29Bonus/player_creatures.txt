@@ -127,6 +127,9 @@
     }
     workshopGroups = { "gnomish" "scrolls" }
     description = "(Challenge) Manage a tribe of gnomes."
+    specialTraits = {
+      ExtraTraining ARCHERY 8
+	}
    }
    {
     creatureId = { "ELEMENTALIST" }
