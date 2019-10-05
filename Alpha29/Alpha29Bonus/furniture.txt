@@ -368,24 +368,22 @@
     summonedElement = "ENT"
     tryDestroyFX = { WOOD_SPLINTERS }
     destroyedEffect = Chain {
-      Chance 0.001 Chain { Message "You have disrupted a bird!" SummonEnemy "SNAKE" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a bird!" SummonEnemy "RAVEN" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a bird!" SummonEnemy "SCREE_BIRD" {1} }
+      Chance 0.001 Chain { Message "You have scared a snake!" SummonEnemy "SNAKE" {1} }
+      Chance 0.001 Chain { Message "You have destroyed a birds nest!" SummonEnemy "RAVEN" {1} }
       Chance 0.001 Chain { Message "You have attacked a tree spirit!" SummonEnemy "ENT" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a nature wolf!" SummonEnemy "WOLF" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a nature fox!" SummonEnemy "FOX" {1} }
+      Chance 0.001 Chain { Message "You have disrupted a wolf!" SummonEnemy "WOLF" {1} }
+      Chance 0.001 Chain { Message "You have uncovered a fox!" SummonEnemy "FOX" {1} }
     } 
   }
   "DECID_TREE" inherit "CANIF_TREE"
   {
     viewId = { "decid_tree" }
     destroyedEffect = Chain {
-      Chance 0.001 Chain { Message "You have disrupted a bird!" SummonEnemy "SNAKE" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a bird!" SummonEnemy "RAVEN" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a bird!" SummonEnemy "SCREE_BIRD" {1} }
+      Chance 0.001 Chain { Message "You have scared a snake!" SummonEnemy "SNAKE" {1} }
+      Chance 0.001 Chain { Message "You have destroyed a birds nest!" SummonEnemy "RAVEN" {1} }
       Chance 0.001 Chain { Message "You have attacked a tree spirit!" SummonEnemy "ENT" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a nature wolf!" SummonEnemy "WOLF" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a nature fox!" SummonEnemy "FOX" {1} }
+      Chance 0.001 Chain { Message "You have disrupted a wolf!" SummonEnemy "WOLF" {1} }
+      Chance 0.001 Chain { Message "You have uncovered a fox!" SummonEnemy "FOX" {1} }
     } 
   }
   "CACTUS1" inherit "CANIF_TREE"
