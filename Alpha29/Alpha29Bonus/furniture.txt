@@ -367,22 +367,26 @@
     itemDrop = {{{{Simple "WoodPlank"} 1 { 8 14 }}}}
     summonedElement = "ENT"
     tryDestroyFX = { WOOD_SPLINTERS }
+    #Modded - destroyed effect added
     destroyedEffect = Chain {
       Chance 0.001 Chain { Message "You have scared a snake!" SummonEnemy "SNAKE" {1} }
-      Chance 0.001 Chain { Message "You have destroyed a birds nest!" SummonEnemy "RAVEN" {1} }
+      Chance 0.001 Chain { Message "You have destroyed a birds nest!" SummonEnemy "RAVEN" {1} Area 0 Permanent SUMMONED }
       Chance 0.001 Chain { Message "You have attacked a tree spirit!" SummonEnemy "ENT" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a wolf!" SummonEnemy "WOLF" {1} }
-      Chance 0.001 Chain { Message "You have uncovered a fox!" SummonEnemy "FOX" {1} }
+      Chance 0.001 Chain { Message "An angry driad falls from a tree!" SummonEnemy "DRIAD" {1} }
+      Chance 0.001 Chain { Message "You have disturbed a wolf!" SummonEnemy "WOLF" {1} }
+      Chance 0.001 Chain { Message "You have uncovered a fox!" SummonEnemy "FOX" {1} Area 0 Permanent SUMMONED }
     } 
   }
   "DECID_TREE" inherit "CANIF_TREE"
   {
     viewId = { "decid_tree" }
+    #Modded - destroyed effect added
     destroyedEffect = Chain {
       Chance 0.001 Chain { Message "You have scared a snake!" SummonEnemy "SNAKE" {1} }
       Chance 0.001 Chain { Message "You have destroyed a birds nest!" SummonEnemy "RAVEN" {1} }
       Chance 0.001 Chain { Message "You have attacked a tree spirit!" SummonEnemy "ENT" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a wolf!" SummonEnemy "WOLF" {1} }
+      Chance 0.001 Chain { Message "An angry driad falls from a tree!" SummonEnemy "DRIAD" {1} }
+      Chance 0.001 Chain { Message "You have disturbed a wolf!" SummonEnemy "WOLF" {1} }
       Chance 0.001 Chain { Message "You have uncovered a fox!" SummonEnemy "FOX" {1} }
     } 
   }
@@ -429,6 +433,12 @@
     fire = 30
     itemDrop = {{{{Simple "WoodPlank"} 1 { 2 4 }}}}
     tryDestroyFX = { WOOD_SPLINTERS }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+      Chance 0.001 Chain { Message "A chicken walks out of a bush!" SummonEnemy "CHICKEN" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "A boar emerges fromt he bushes!" SummonEnemy "BOAR" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "Swarm of flies encountered." SummonEnemy "FLY" {4 5} Area 0 Permanent SUMMONED }
+    } 
   }
   "STONES"
   {
@@ -842,11 +852,13 @@
     }
     destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
     tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
+    #Modded - destroyed effect added
     destroyedEffect = Chain {
 	  Chance 0.001 Chain { Message "You have attacked a golem!" SummonEnemy "ADA_GOLEM" {1} }
-      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a rat!" SummonEnemy "RAT" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a spider!" SummonEnemy "SPIDER" {1} }
+      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} Area 0 Permanent SUMMONED }
+	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
     } 
   }
   "IRON_ORE"
@@ -865,11 +877,13 @@
       2000 HOSTILE_DIG_NO_SKILL
     }
     destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
+    #Modded - destroyed effect added
     destroyedEffect = Chain {
 	  Chance 0.001 Chain { Message "You have attacked a iron golem!" SummonEnemy "IRON_GOLEM" {1} }
-      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a rat!" SummonEnemy "RAT" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a spider!" SummonEnemy "SPIDER" {1} }
+      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} Area 0 Permanent SUMMONED }
+	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
     } 
     tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
   }
@@ -890,11 +904,13 @@
     }
     destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
     tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
+    #Modded - destroyed effect added
     destroyedEffect = Chain {
 	  Chance 0.001 Chain { Message "You have attacked a stone golem!" SummonEnemy "STONE_GOLEM" {1} }
-      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a rat!" SummonEnemy "RAT" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a spider!" SummonEnemy "SPIDER" {1} }
+      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} Area 0 Permanent SUMMONED }
+	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
     } 
  }
   "GOLD_ORE"
@@ -914,11 +930,13 @@
     }
     destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
     tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
+    #Modded - destroyed effect added
     destroyedEffect = Chain {
 	  Chance 0.001 Chain { Message "You have attacked a gold golem!" SummonEnemy "GOLD_GOLEM" {1} }
-      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a rat!" SummonEnemy "RAT" {1} }
-      Chance 0.001 Chain { Message "You have disrupted a spider!" SummonEnemy "SPIDER" {1} }
+      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} Area 0 Permanent SUMMONED }
+	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
     } 
   }
   "DUNGEON_WALL"
