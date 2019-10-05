@@ -1887,27 +1887,6 @@
     }
     discoverable = false
   }
-  "COW_DEMON_BONES"
-  {
-    settlement = {
-      type = MINETOWN
-      tribe = MONSTER
-      locationNameGen = "TOWN"
-      race = "cow demons"
-      buildingId = "DUNGEON"
-      furniture = { "chests" }
-      shopItems = "jewellery"
-    }
-    levelConnection = {
-      topLevel = ExtraEnemy {"COW_DEMONS_ENTRY"}
-      levels = {
-        { ExtraEnemy { "DUNGEON1" { 2 4 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON2" { 1 2 } } 60 40 DUNGEON }
-        { MainEnemy 60 40 MINETOWN }
-      }
-    }
-    discoverable = false
-  }
   "COW_DEMONS"
   {
     settlement = {
@@ -1937,12 +1916,19 @@
         frequency = 1
       }
     }
-    createOnBones = 1.0 { "COW_DEMON_BONES" }
     behaviour = {
       minPopulation = 4
       minTeamSize = 4
       triggers = { NumConquered 5 }
       attackBehaviour = KillLeader
+    }
+    levelConnection = {
+      topLevel = ExtraEnemy {"COW_DEMONS_ENTRY"}
+      levels = {
+        { ExtraEnemy { "DUNGEON1" { 2 4 } } 60 40 DUNGEON }
+        { ExtraEnemy { "DUNGEON2" { 1 2 } } 60 40 DUNGEON }
+        { MainEnemy 60 40 MINETOWN }
+      }
     }
   }
   "GOBLIN_KING"
