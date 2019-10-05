@@ -1688,6 +1688,7 @@
       body = {
         type = Humanoid MEDIUM
       }
+      spells = { "healing" } #Modded
       spellSchools = { "fighter" } #Modded
       skills = {
         JEWELER 1
