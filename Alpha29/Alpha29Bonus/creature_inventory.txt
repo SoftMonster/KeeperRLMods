@@ -620,4 +620,8 @@
         { type = Simple "Torch" chance = 0.3 }
         { type = Simple "Bow" chance = 0.05 }
       }
+  {"GOLD_GOLEM"}
+      {
+        { countMin = 30 countMax = 50 type = Simple "GoldPiece" chance = 1.0}
+      }
 }
