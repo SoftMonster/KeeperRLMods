@@ -599,6 +599,13 @@
     { Furniture { types = { "THRONE" } cost = GOLD 500 limit = 4} "Throne" "" ""  0   {DungeonLevel 10} }
   }
 
+  #Just archery
+  "archery"
+  {
+    { Furniture {{ "ARCHERY_RANGE" } WOOD 12 }                   "Archery target"    "Training room"
+        "Train your minions' archery skills here." 0 { TechId "archery" }}
+  }
+
 
 }
    

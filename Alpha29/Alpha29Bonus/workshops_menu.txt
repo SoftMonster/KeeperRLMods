@@ -221,7 +221,7 @@
     {{Simple "LeatherBoots"}          2        WOOD 10}
     {{Simple "LeatherGloves"}         1        WOOD 2}
     {{Simple "Torch"}                 2        WOOD 4}
-    {{Simple "Bow"}                   13       WOOD 20}
+    {{Simple "Crossbow"}              13       WOOD 30}
     {{Simple "WoodenStaff"}           13       WOOD 20}
     {{Simple "FirstAidKit"}           20       GOLD  1}
     {{TrapItem "BOULDER_TRAP" "boulder"}      20       STONE 120    "traps"}
@@ -238,14 +238,15 @@
 
 # Forge
 {
-    {{Simple "Sword"}                 10       IRON  10}
-    {{Simple "ChainArmor"}            10       IRON  30}
-    {{Simple "IronHelm"}              5        IRON  10}
-    {{Simple "IronBoots"}             5        IRON  20}
-    {{Simple "IronGloves"}            5        IRON  10}
-    {{Simple "AutomatonItem"}         100      IRON 200      "gnomish smithy"}
-    {{Simple "IronStaff"}             20       IRON  40      "gnomish smithy"}
-    {{Ring SPEED}            20       ADA 1000      "gnomish smithy"}
+    {{Simple "Sword"}                 10       IRON 10}
+    {{Simple "ChainArmor"}            10       IRON 30}
+    {{Simple "IronHelm"}              5        IRON 10}
+    {{Simple "IronBoots"}             5        IRON 20}
+    {{Simple "IronGloves"}            5        IRON 10}
+    {{Simple "AutomatonItem"}         100      IRON 200     "gnomish smithy"}
+    {{Simple "IronShield"}            12       IRON 24}
+    {{Simple "IronStaff"}             20       IRON 40      "gnomish smithy"}
+    {{Ring SPEED}                     20       ADA  300     "gnomish smithy"}
 }
 
 # Lab
@@ -317,25 +318,27 @@
 
 # Forge
 {
-    {{Simple "Sword"}                 10       IRON 20}
-    {{Simple "ChainArmor"}            30       IRON 40}
+    {{Simple "Sword"}                 10       IRON 15}
+    {{Simple "ChainArmor"}            30       IRON 30}
     {item = {Simple "RedDragonArmor"}   work = 30 cost = IRON 40 requireIngredient = true }
     {item = {Simple "BlackDragonArmor"} work = 30 cost = IRON 40 requireIngredient = true }
     {item = {Simple "WhiteDragonArmor"} work = 30 cost = IRON 40 requireIngredient = true }
     {item = {Simple "GreenDragonArmor"} work = 30 cost = IRON 40 requireIngredient = true }
-    {{Simple "IronHelm"}              8        IRON 16}
+    {{Simple "IronHelm"}              8        IRON 12}
     {item = {Simple "CyclopsHelm"}      work = 30 cost = IRON 40 requireIngredient = true }
-    {{Simple "IronBoots"}             12       IRON 24}
+    {{Simple "IronBoots"}             12       IRON 18}
     {{Simple "IronGloves"}            3        IRON 2}
-    {{Simple "WarHammer"}             16       IRON 40      "two-handed weapons"}
-    {{Simple "BattleAxe"}             22       IRON 50      "two-handed weapons"}
-    {{Simple "AdaSword"}              20       ADA 20}
-    {{Simple "AdaArmor"}              30       ADA 40}
-    {{Simple "AdaHelm"}               15       ADA 16}
-    {{Simple "AdaBoots"}              15       ADA 24}
+    {{Simple "IronShield"}            12       IRON 18}
+    {{Simple "WarHammer"}             16       IRON 30      "two-handed weapons"}
+    {{Simple "BattleAxe"}             22       IRON 40      "two-handed weapons"}
+    {{Simple "AdaSword"}              20       ADA 15}
+    {{Simple "AdaArmor"}              30       ADA 30}
+    {{Simple "AdaHelm"}               15       ADA 12}
+    {{Simple "AdaBoots"}              15       ADA 18}
     {{Simple "AdaGloves"}             6        ADA 2}
-    {{Simple "AdaWarHammer"}          20       ADA 40       "two-handed weapons"}
-    {{Simple "AdaBattleAxe"}          22       ADA 50       "two-handed weapons"}
+    {{Simple "AdaShield"}             12       ADA 18}
+    {{Simple "AdaWarHammer"}          20       ADA 30       "two-handed weapons"}
+    {{Simple "AdaBattleAxe"}          22       ADA 40       "two-handed weapons"}
 }
 
 # Lab
@@ -438,9 +441,10 @@
     {{Simple "Sword"}                 1       IRON 1}
     {{Simple "ChainArmor"}            1       IRON 1}
     {{Simple "IronHelm"}              1       IRON 1}
-    {{Simple "IronBoots"}            1       IRON 1}
-    {{Simple "IronGloves"}           1       IRON 1}
-    {{Simple "WarHammer"}            1       IRON 1      "two-handed weapons"}
+    {{Simple "IronBoots"}             1       IRON 1}
+    {{Simple "IronGloves"}            1       IRON 1}
+    {{Simple "IronShield"}            1       IRON 1}
+    {{Simple "WarHammer"}             1       IRON 1      "two-handed weapons"}
     {{Simple "BattleAxe"}             1       IRON 1      "two-handed weapons"}
     {{Simple "IronStaff"}             1       IRON 1      "magical weapons"}
     {{Simple "GoldenStaff"}           1       GOLD 1     "magical weapons"}
@@ -449,6 +453,7 @@
     {{Simple "AdaHelm"}               1       ADA 1}
     {{Simple "AdaBoots"}              1       ADA 1}
     {{Simple "AdaGloves"}             1       ADA 1}
+    {{Simple "AdaShield"}             1       ADA 1}
     {{Simple "AdaWarHammer"}          1       ADA 1       "two-handed weapons"}
     {{Simple "AdaBattleAxe"}          1       ADA 1       "two-handed weapons"}
 }

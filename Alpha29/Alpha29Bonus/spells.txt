@@ -402,11 +402,59 @@
 #################
 
   {
-    id =  "rapid magic missile"
+    id = "rapid magic missile"
     symbol = "⥇"
     effect = Damage SPELL_DAMAGE SPELL
     range = 4
     cooldown = 2
+    sound = SPELL_BLAST
+  }
+  {
+    id =  "advanced rapid magic missile"
+	upgrade = "rapid magic missile"
+    symbol = "⥇"
+    effect = Damage SPELL_DAMAGE SPELL
+    range = 6
+    cooldown = 2
+    sound = SPELL_BLAST
+  }
+  {
+    id =  "expert rapid magic missile"
+	upgrade = "advanced rapid magic missile"
+    symbol = "⥇"
+    effect = Damage SPELL_DAMAGE SPELL
+    range = 8
+    cooldown = 1
+    sound = SPELL_BLAST
+  }
+  {
+    id =  "magic blast"
+	upgrade = "directed blast"
+    symbol = "💨"
+    effect = Chain { Damage SPELL_DAMAGE SPELL Blast }
+    range = 6
+    endOnly = true
+    cooldown = 20
+    sound = SPELL_BLAST
+  }
+  {
+    id =  "advanced magic blast"
+	upgrade = "magic blast"
+    symbol = "💨"
+    effect = Chain { Damage SPELL_DAMAGE SPELL Blast }
+    range = 8
+    endOnly = true
+    cooldown = 16
+    sound = SPELL_BLAST
+  }
+  {
+    id =  "expert magic blast"
+	upgrade = "advanced magic blast"
+    symbol = "💨"
+    effect = Chain { Damage SPELL_DAMAGE SPELL Blast }
+    range = 10
+    endOnly = true
+    cooldown = 12
     sound = SPELL_BLAST
   }
   {
@@ -422,6 +470,29 @@
    effect = Summon "GIANT_ROBOT" { 1 2 }
    cooldown = 90
    sound = SPELL_SUMMON_SPIRIT
+  }
+  {
+   id = "summon automaton"
+   symbol = "👾"
+   effect = Summon "AUTOMATON" { 1 2 }
+   cooldown = 90
+   sound = SPELL_SUMMON_SPIRIT
+  }
+  {
+   id = "summon automaton army"
+   symbol = "👾!"
+   effect = Summon "AUTOMATON" { 14 18 }
+   cooldown = 3000
+   sound = SPELL_SUMMON_SPIRIT
+  }
+  {
+    id = "repair"
+    symbol = "🔧"
+    effect = Chain { RegrowBodyPart Lasting SPEED }
+    range = 1
+    targetSelf = true
+    cooldown = 30
+    sound = SPELL_STR_BONUS
   }
   {
     id =  "haste other"
@@ -497,13 +568,92 @@
   {
    id = "magma bolt"
    symbol = "{🔥}"
-   effect = Fire
+   effect = Chain { Fire Blast }
    fx = FIREBALL
    range = 6
-   cooldown = 35
+   cooldown = 8
    sound = SPELL_FIRE_SPHERE_PET
   }
-
+  {
+    id = "advanced firewall"
+	upgrade = "firewall"
+    symbol = "𝍔"
+    effect =  CustomArea PlaceFurniture "FIRE_WALL" { 0 -3 0 -2 0 -1 0 0 0 1 0 2 0 3 1 -2 1 -1 1 0 1 1 1 2 -1 -2 -1 -1 -1 0 -1 1 -1 2 }
+    endOnly = true
+    range = 4
+    cooldown = 30
+    sound = SPELL_BLAST
+  }
+  {
+    id = "expert firewall"
+	upgrade = "advanced firewall"
+    symbol = "𝍔"
+    effect =  CustomArea PlaceFurniture "FIRE_WALL" { 0 -4 0 -3 0 -2 0 -1 0 0 0 1 0 2 0 3 0 4 1 -3 1 -2 1 -1 1 0 1 1 1 2 1 3 -1 -3 -1 -2 -1 -1 -1 0 -1 1 -1 2 -1 3 }
+    endOnly = true
+    range = 6
+    cooldown = 30
+    sound = SPELL_BLAST
+  }
+  {
+    id = "advanced fireball"
+	upgrade = "fireball"
+    symbol = "🔥"
+    effect = Fire
+    fx = FIREBALL
+    range = 8
+    cooldown = 20
+    sound = SPELL_FIRE_SPHERE_PET
+  }
+  {
+    id = "expert fireball"
+	upgrade = "advanced fireball"
+    symbol = "🔥"
+    effect = Fire
+    fx = FIREBALL
+    range = 12
+    cooldown = 10
+    sound = SPELL_FIRE_SPHERE_PET
+  }
+  {
+    id = "fireblast"
+    symbol = "🔥💥"
+    effect = Chain { Fire CircularBlast Blast }
+    fx = FIREBALL
+    range = 8
+    cooldown = 30
+    sound = SPELL_BLAST
+  }
+  {
+    id = "advanced fireblast"
+	upgrade = "fireblast"
+    symbol = "🔥💥"
+    effect = Chain { Fire CircularBlast Blast }
+    fx = FIREBALL
+    range = 10
+    cooldown = 25
+    sound = SPELL_BLAST
+  }
+  {
+    id = "expert fireblast"
+	upgrade = "advanced fireblast"
+    symbol = "🔥💥"
+    effect = Chain { Fire CircularBlast Blast }
+    fx = FIREBALL
+    range = 12
+    cooldown = 20
+    sound = SPELL_BLAST
+  }
+  {
+    id = "explosion"
+    symbol = "🔥💣"
+    effect = Chain { Area 12 Filter ENEMY Fire Area 12 Filter ENEMY Blast Area 12 Filter ENEMY Damage SPELL_DAMAGE SPELL 
+    CustomArea PlaceFurniture "FIRE_WALL" { 0 -12 0 -10 0 -8 0 -6 0 -4 0 -2 0 2 0 4 0 6 0 8 0 10 0 12 2 -10 2 -8 2 -6 2 -4 2 -2 2 0 2 2 2 4 2 6 2 8 2 10 4 8 4 6 4 4 4 2 4 0 4 -2 4 -4 4 -6 4 -8 
+    6 6 6 4 6 2 6 0 6 -2 6 -4 6 -6 8 4 8 2 8 0 8 -2 8 -4 10 2 10 0 10 -2 12 0 -2 -10 -2 -8 -2 -6 -2 -4 -2 -2 -2 0 -2 2 -2 4 -2 6 -2 8 -2 10 -4 -8 -4 -6 -4 -4 -4 -2 -4 0 -4 2 -4 2 -4 4 -4 6 -4 8
+    -6 6 -6 4 -6 2 -6 0 -6 -2 -6 -4 -6 -6 -8 4 -8 2 -8 0 -8 2 -8 4 -10 2 -10 0 -10 -2 -12 0} }
+    fx = FIREBALL
+    cooldown = 1500
+    sound = SPELL_BLAST
+  }
   {
    id = "stone golem"
    symbol = "👤"
@@ -672,6 +822,14 @@
    symbol = "❂"
    effect = Lasting FIRE_RESISTANT
    cooldown = 100
+   sound = SPELL_INVISIBILITY
+ }
+ {
+   id = "area fire shield"
+   upgrade = "fire shield"
+   symbol = "❂"
+   effect = Chain { Message "Fire charm summoned." Area 3 Filter ALLY Lasting FIRE_RESISTANT }
+   cooldown = 80
    sound = SPELL_INVISIBILITY
  }
  {

@@ -117,13 +117,13 @@
         "alchemy" "advanced alchemy" "alchemical conversion" "traps"
         "pig breeding" "iron working" "simplistic animations"
 		"magic contraptions" "jewellery" "gnomish jewellery" "gnomish smithy" "gnomish alchemy"
-		"sorcery" "advanced sorcery" "master sorcery"
+		"sorcery" "advanced sorcery" "master sorcery" "archery" "gnome wizards"
         "magic paper production" "advanced inscription" "master inscription"
     }
-    initialTech = { "sorcery" }
+    initialTech = { "sorcery" "archery" }
     buildingGroups = {
         "structure" "doors" "floors" "storage" "quarters" "library" "throne" "beds" "pigsty"
-        "crafting" "prison" "orders" "installations" "magical_installations" "traps"
+        "archery" "crafting" "prison" "orders" "installations" "magical_installations" "traps"
     }
     workshopGroups = { "gnomish" "scrolls" }
     description = "(Challenge) Manage a tribe of gnomes."

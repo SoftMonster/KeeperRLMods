@@ -717,7 +717,19 @@
   { "mage_adventurer_female" "@" ColorId BLUE }
   { "ranger_adventurer" "@" ColorId ORANGE }
   { "ranger_adventurer_female" "@" ColorId ORANGE }
+
+  #MODDED by Righteous October 2019 (Gnome update)
+
+  { "gnome_alchemist" "g" ColorId WHITE }
+  { "gnome_crossbowman" "g" ColorId GREEN }
+  { "gnome_fire_mage" "g" ColorId RED }
+  { "gnome_fire_wizard" "g" ColorId RED }
+  { "gnome_mage" "g" ColorId BLUE }
+  { "gnome_priest" "p" ColorId GREEN }
+  { "gnome_wizard" "g" ColorId BLUE }
  
+   { "crossbow" ")" ColorId BROWN }
+
  #Modded walls
 
   { viewId = "tree_wall" symbol = "#" color = ColorId GREEN wallShadow = true wallConnections = true }

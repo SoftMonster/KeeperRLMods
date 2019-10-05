@@ -32,6 +32,13 @@
     "fireball" 3
     "fire shield" 4 #Modded
     "firewall" 5
+	"advanced fireball" 6 #Modded
+	"fireblast" 7 #Modded
+	"magma bolt" 8 #Modded
+	"advanced firewall" 9 #Modded
+	"expert fireball" 10 #Modded
+	"advanced fireblast" 11 #Modded
+	"expert firewall" 12 #Modded
   }
   "illusion" SPELL
   {
@@ -156,7 +163,34 @@
    "area damage bonus" 6
    "area defense bonus" 6
    "double trouble" 7
-   }
+  }
+  "fire wizard" SPELL
+  {
+    "advanced fire elemental" 1
+    "advanced fireball" 2
+    "area fire shield" 3
+    "advanced firewall" 3
+	"advanced fireblast" 4
+	"expert fireball" 4
+	"magma bolt" 5
+	"expert firewall" 6
+	"expert fireblast" 6
+	"explosion" 7
+  }
+  "gnome wizard" SPELL
+  {
+	"advanced healing" 1
+	"advanced rapid magic missile" 2
+	"advanced magic missile" 2
+	"summon automaton" 3
+	"area haste" 4
+	"area defense bonus" 4
+	"stone golems" 5
+	"iron golems" 5
+	"expert rapid magic missile" 6
+	"expert magic missile" 6
+	"summon automaton army" 7
+  }
 
 #----------------------------------------------------------
 # spells_schools.txt - August 2019 by Righteous for goblins

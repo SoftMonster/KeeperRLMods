@@ -1044,4 +1044,20 @@
       }
 	  equipedAbility = "invisibility"
     }
+  "Crossbow"
+    {
+      viewId = { "crossbow" }
+      name = "crossbow"
+      itemClass = RANGED_WEAPON
+      equipmentSlot = RANGED_WEAPON
+      rangedWeapon = RANGED_DAMAGE "arrow" {"arrow"} 8
+      weaponInfo = {
+        twoHanded = true
+      }
+      weight = 1
+      modifiers = {
+        RANGED_DAMAGE 20
+      }
+      price = 60
+    }
 }

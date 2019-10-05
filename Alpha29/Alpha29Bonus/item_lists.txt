@@ -51,6 +51,7 @@
   {
     unique = {
       {Simple "AutomatonItem"} { 1 2 }
+	  {Simple "Crossbow"} { 2 3 }
     }
   }
 

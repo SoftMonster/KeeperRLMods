@@ -6237,7 +6237,9 @@
       chatReactionHostile = "\"A wooden buff totem.\""
       deathDescription = "destroyed"
     }
+#-------------------------------------
 #New adventurer calsses September 2019
+#-------------------------------------
   "WARRIOR_ADVENTURER"
     {
       viewId = { "warrior_adventurer" }
@@ -6355,6 +6357,9 @@
         fullTitle = true
        }
 	}
+#------------------------
+#Ungrouped Misc Units
+#------------------------
 "BANDIT_LEADER"
     {
       viewId = { "bandit_leader" }
@@ -6531,6 +6536,9 @@
       hatedByEffect = HATE_UNDEAD
       courage = -1
     }
+#---------------------
+#Player Dwarf Faction
+#---------------------
   "DWARF_MILITIA"
     {
       viewId = { "dwarf_militia" }
@@ -6784,6 +6792,211 @@
       gender = FEMALE
       hatedByEffect = HATE_DWARVES
     }
+#---------------------
+#Player Gnome Faction
+#---------------------
+  "GNOME_ALCHEMIST_PLAYER"
+    {
+      viewId = { "gnome_alchemist" }
+      attr = {
+        DAMAGE 14
+        DEFENSE 18
+        SPELL_DAMAGE 20 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      permanentEffects = {
+        POISON_RESISTANT 1
+	  }
+      name = {
+        name = "gnome_alchemist"
+        pluralName = "gnomes"
+        firstName = "DWARF"
+      }
+      gender = FEMALE
+      chatReactionFriendly = "talks about alchemical formulae"
+      chatReactionHostile = "\"Die!\""
+      skills = {
+        LABORATORY 1.0
+		WORKSHOP 0.8
+		JEWELER 1.0
+      }
+      maxLevelIncrease = {
+        SPELL 7
+      }
+    }
+  "GNOME_CROSSBOWMAN_PLAYER"
+    {
+      viewId = { "gnome_crossbowman" }
+      attr = {
+        DAMAGE 12
+        DEFENSE 12 
+		RANGED_DAMAGE 18
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      spellSchools = { "gnomeish" } #Modded
+      chatReactionFriendly = "talks about crafting"
+      chatReactionHostile = "\"Die!\""
+      skills = {
+        LABORATORY 0.3
+        WORKSHOP 0.6
+        FORGE 0.6
+        JEWELER 0.6
+      }
+      name = {
+        name = "gnome crossbowman"
+		pluralName = "gnomes"
+        firstNameGen = "DWARF"
+	  }
+	}
+  "GNOME_FIRE_MAGE_PLAYER"
+    {
+      viewId = { "gnome_fire_mage" }
+      attr = {
+        DAMAGE 14
+        DEFENSE 14
+        SPELL_DAMAGE 20
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "talks about fire spells"
+      chatReactionHostile = "\"Burn!\""
+	  skills = {
+        LABORATORY 0.6
+		JEWELER 0.6
+	  }
+      maxLevelIncrease = {
+        SPELL 9
+	  }
+	  gender = FEMALE
+      name = {
+        name = "gnome fire mage"
+		pluralName = "gnomes"
+        firstNameGen = "DWARF"
+      }
+      spellSchools = { "fire" }
+		spells = { "healing" }
+	}
+  "GNOME_FIRE_WIZARD_PLAYER"
+    {
+      viewId = { "gnome_fire_wizard" }
+      attr = {
+        DAMAGE 24
+        DEFENSE 24
+        SPELL_DAMAGE 32
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "talks about the essence of fire magic"
+      chatReactionHostile = "\"May fire consume you!\""
+	  permanentEffects = {
+        FIRE_RESISTANT 1
+	  }
+	  skills = {
+        LABORATORY 1.0
+		JEWELER 1.0
+	  }
+      maxLevelIncrease = {
+        SPELL 7
+      }
+      name = {
+        name = "gnome fire wizard"
+		pluralName = "gnomes"
+        firstNameGen = "DWARF"
+      }
+      spellSchools = { "fire wizard" }
+		spells = { "healing" "fireball" "firewall" "fireblast" "fire shield" "fire elemental" }
+    }
+  "GNOME_MAGE_PLAYER"
+    {
+      viewId = { "gnome_mage" }
+      attr = {
+        DAMAGE 14
+        DEFENSE 14
+        SPELL_DAMAGE 24
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "talks about fire spells"
+      chatReactionHostile = "\"Die!\""
+	  skills = {
+        LABORATORY 0.6
+		JEWELER 0.6
+	  }
+      maxLevelIncrease = {
+        SPELL 12
+      }
+      gender = FEMALE
+      name = {
+        name = "gnome mage"
+		pluralName = "gnomes"
+        firstNameGen = "DWARF"
+      }
+      spellSchools = { "mage" }
+    }
+  "GNOME_PRIEST_PLAYER"
+    {
+      viewId = { "gnome_priest" }
+      attr = {
+        DAMAGE 14
+        DEFENSE 12
+        SPELL_DAMAGE 20 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "talks about gnome religious teachings"
+      chatReactionHostile = "\"Die!\""
+      maxLevelIncrease = {
+        SPELL 7
+      }
+      name = {
+        name = "gnome priest"
+        firstNameGen = "DWARF"
+      }
+      spellSchools = { "healer" }
+		spells = { "healing" "magic missile" }
+    }
+  "GNOME_WIZARD_PLAYER"
+    {
+      viewId = { "gnome_wizard" }
+      attr = {
+        DAMAGE 20
+        DEFENSE 26
+        SPELL_DAMAGE 36
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      chatReactionFriendly = "talks about the essence of 'pure' magic"
+      chatReactionHostile = "\"May fire consume you!\""
+	  permanentEffects = {
+        MAGIC_RESISTANCE 1
+	  }
+	  skills = {
+        LABORATORY 1.0
+		JEWELER 1.0
+	  }
+      maxLevelIncrease = {
+        SPELL 7
+      }
+      name = {
+        name = "gnome wizard"
+		pluralName = "gnomes"
+        firstNameGen = "DWARF"
+      }
+      spellSchools = { "gnome wizard" }
+		spells = { "healing" "magic missile" "rapid magic missile" "summon flies" }
+    }
+#---------------------
+#Ungrouped Misc Units
+#---------------------
     #Note: It is magic not sci-fi.
     "GIANT_ROBOT"
     {
@@ -6905,8 +7118,9 @@
       chatReactionHostile = "\"Soon you will join my undead ranks. DIE!\""
       hatedByEffect = HATE_UNDEAD
     }
-
+#------------------
 #Immigrant variants
+#------------------
   "WINGED_IMP" inherit "IMP"
     {
       viewId = { "winged_imp" }

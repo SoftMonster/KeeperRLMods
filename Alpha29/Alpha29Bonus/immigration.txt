@@ -597,7 +597,7 @@
           noAuto = true
           consumeIds = true    
           requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
-       }
+        }
         {
           ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
           traits = { FIGHTER }
@@ -605,7 +605,7 @@
           noAuto = true
           consumeIds = true    
           requirements = { {  1.0 CostInfo IRON 450}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
-       }
+        }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
           traits = { FIGHTER }
@@ -615,9 +615,16 @@
           requirements = { {  1.0 CostInfo IRON 900}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
         }
         {
+          ids = { "AUTOMATON" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true    
+          requirements = { {  1.0 CostInfo IRON 200}  { 0.0 TechId "gnomish smithy" } }
+        }
+        {
           ids = { "GNOME_PLAYER" }
           traits = { FIGHTER }
-          frequency = 1.0
+          frequency = 0.45
           specialTraits = {
             { 0.2 { SkillId WORKSHOP }}
             { 0.2 { SkillId FORGE }}
@@ -634,6 +641,92 @@
             { 0.2 { LastingEffect HATE_HUMANS }}
             { 1.0 { AttrBonus SPELL_DAMAGE 10 ExtraTraining SPELL 12 }}
 		  }
+		}
+		{
+          ids = { "GNOME_CROSSBOWMAN_PLAYER" }
+          traits = { FIGHTER }
+          frequency = 0.5
+          requirements = {
+            { 0.0 MinTurnRequirement 1000 }
+            { 0.2 AttractionInfo 1 {FurnitureType "ARCHERY_RANGE"}}
+            { 0.0 TechId "archery" }}
+          specialTraits = {
+            { 0.2 { LastingEffect DISARM_TRAPS_SKILL }}
+            { 0.2 { LastingEffect SWIMMING_SKILL }}
+            { 0.2 { SkillId LABORATORY }}
+            { 0.1 { LastingEffect MAGIC_RESISTANCE }}
+            { 0.2 { LastingEffect RANGED_RESISTANCE }}
+            { 0.1 { LastingEffect REGENERATION }}
+            { 0.1 { LastingEffect TELEPATHY }}
+            { 0.1 { LastingEffect SLEEP_RESISTANT }}
+            { 0.4 { LastingEffect NIGHT_VISION }}
+            { 0.2 { LastingEffect HATE_ELVES }}
+            { 0.2 { LastingEffect HATE_HUMANS }}
+		  }
+        }
+		{
+          ids = { "GNOME_FIRE_MAGE_PLAYER" "GNOME_MAGE_PLAYER" }
+          traits = { FIGHTER }
+          frequency = 0.45
+          requirements = {
+            { 0.2 AttractionInfo 1 {FurnitureType "BOOKCASE_IRON"}}
+            { 0.0 TechId "advanced sorcery" }}
+          specialTraits = {
+            { 0.1 { SkillId JEWELER }}
+            { 0.2 { LastingEffect DISARM_TRAPS_SKILL }}
+            { 0.2 { LastingEffect SWIMMING_SKILL }}
+            { 0.1 { SkillId LABORATORY }}
+            { 0.2 { LastingEffect MAGIC_RESISTANCE }}
+			{ 0.2 { LastingEffect FIRE_RESISTANT }}
+			{ 0.05 { LastingEffect POISON_RESISTANT }}
+            { 0.4 { LastingEffect TELEPATHY }}
+            { 0.4 { LastingEffect NIGHT_VISION }}
+            { 0.08 { LastingEffect HATE_ELVES }}
+            { 0.08 { LastingEffect HATE_HUMANS }}
+            { 0.2 { AttrBonus SPELL_DAMAGE 5 }}
+			{ 0.1 { ExtraTraining SPELL 2 }}
+		  }
+        }
+		{
+          ids = { "GNOME_MAGE_PLAYER" }
+          traits = { FIGHTER }
+          frequency = 0.35
+          requirements = {
+            { 0.2 AttractionInfo 1 {FurnitureType "BOOKCASE_WOOD"}}
+            { 0.0 TechId "sorcery" }}
+          specialTraits = {
+            { 0.1 { SkillId JEWELER }}
+            { 0.2 { LastingEffect DISARM_TRAPS_SKILL }}
+            { 0.2 { LastingEffect SWIMMING_SKILL }}
+            { 0.1 { SkillId LABORATORY }}
+            { 0.2 { LastingEffect MAGIC_RESISTANCE }}
+			{ 0.2 { LastingEffect FIRE_RESISTANT }}
+			{ 0.05 { LastingEffect POISON_RESISTANT }}
+            { 0.4 { LastingEffect TELEPATHY }}
+            { 0.4 { LastingEffect NIGHT_VISION }}
+            { 0.08 { LastingEffect HATE_ELVES }}
+            { 0.08 { LastingEffect HATE_HUMANS }}
+            { 0.2 { AttrBonus SPELL_DAMAGE 5 }}
+			{ 0.1 { ExtraTraining SPELL 2 }}
+		  }
+        }
+        {
+          ids = { "GNOME_FIRE_WIZARD_PLAYER" "GNOME_FIRE_WIZARD_PLAYER" }
+          traits = { FIGHTER }
+          frequency = 0.65
+		  consumeIds = true
+          requirements = {
+            { 0.0 TechId "gnome wizards" }
+          }
+        }
+        {
+          ids = { "GNOME_WIZARD_PLAYER" "GNOME_WIZARD_PLAYER" }
+          traits = { FIGHTER }
+          frequency = 0.65
+		  consumeIds = true
+          requirements = {
+            { 0.0 TechId "gnome wizards" }
+          }
         }
         {
           ids = { "MUSHROOM_MAN" }
