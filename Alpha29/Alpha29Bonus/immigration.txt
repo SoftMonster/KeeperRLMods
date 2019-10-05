@@ -2682,6 +2682,7 @@
           ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
           spawnLocation = Pregnancy
+          noAuto = true
           requirements = {
 		    { 0.0 NegateRequirement TechId "matron womb mutation" }
             { 0.0 Pregnancy }
@@ -2703,10 +2704,11 @@
           }
         }
 	    {
-          ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
+          ids = { "GOBLIN_ARCHER_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
-		  groupSize = {1 2}
+		  groupSize = {2 3}
           autoTeam = false
+          noAuto = true
           spawnLocation = Pregnancy
           requirements = {
 		    { 0.0 TechId "matron womb mutation" } 
@@ -2730,10 +2732,11 @@
           }
         }
 		{
-          ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
+          ids = { "GOBLIN_BRUTE_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
-		  groupSize = {1 3}
+		  groupSize = {2 4}
           autoTeam = false
+          noAuto = true
           spawnLocation = Pregnancy
           requirements = {
 		    { 0.0 TechId "advanced womb mutation" } 
@@ -2757,10 +2760,11 @@
           }
         }
         {
-          ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
+          ids = { "GOBLIN_CHICKENMANCER_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
-		  groupSize = {2 4}
+		  groupSize = {2 5}
           autoTeam = false
+          noAuto = true
           spawnLocation = Pregnancy
           requirements = {
 		    { 0.0 TechId "elite womb mutation" } 
@@ -2784,10 +2788,11 @@
           }
         }
         {
-          ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
+          ids = { "GOBLIN_PRIEST_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
-		  groupSize = {3 5}
+		  groupSize = {3 6}
           autoTeam = false
+          noAuto = true
           spawnLocation = Pregnancy
           requirements = {
 		    { 0.0 TechId "master womb mutation" } 
@@ -2811,10 +2816,11 @@
           }
         }
         {
-          ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
+          ids = { "GOBLIN_WARRIOR_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {5 6}
           autoTeam = false
+          noAuto = true
           spawnLocation = Pregnancy
           requirements = {
 		    { 0.0 TechId "litter womb mutation" } 
@@ -2838,10 +2844,11 @@
           }
         }
         {
-          ids = { "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
+          ids = { "GOBLIN_WIZARD_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {6 8}
           autoTeam = false
+          noAuto = true
           spawnLocation = Pregnancy
           requirements = {
 		    { 0.0 TechId "horde womb mutation" } 
