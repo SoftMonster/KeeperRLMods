@@ -1405,9 +1405,24 @@
     name = "falling rubble trap"
     viewId = { "ruin_wall" }
     layer = CEILING
-    entryType = Trap { Area 1 PlaceFurniture "RUBBLE" }
+    entryType = Trap { Area 1 PlaceFurniture "FRIENDLY_RUBBLE" }
     warning = true
     constructMessage = SET_UP
+  }
+  "FRIENDLY_RUBBLE"
+  {
+    name = "rubble"
+    viewId = { "map_mountain2" }
+    constructMessage = none	
+    blockingEnemies = true
+    destroyedEffect = PlaceFurniture "STONES"
+	strength = 200
+    strength2 = {
+      200 BOULDER
+      200 DIG
+      200 HOSTILE_DIG
+      200 HOSTILE_DIG_NO_SKILL
+    }
   }
   "RUBBLE"
   {

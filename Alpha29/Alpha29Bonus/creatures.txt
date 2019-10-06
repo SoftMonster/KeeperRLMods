@@ -1505,7 +1505,7 @@
         firstNameGen = "VAMPIRE"
       }
       skills = {
-        LABORATORY 1.0
+        LABORATORY 1.0 #Modded
       }
       maxLevelIncrease = {
         MELEE 12
