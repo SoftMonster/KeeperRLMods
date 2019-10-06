@@ -105,7 +105,7 @@ New units:
 - Goblin King
 - Goblin Kaboomer
 - Goblin High Priest
-- Goblin Chickenmsncer
+- Goblin Chickenmancer
 - Goblin Brute
 - Goblin Archer
 - Elite Goblin Guard
