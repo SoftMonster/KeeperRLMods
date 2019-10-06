@@ -1046,7 +1046,7 @@
     }
   "Crossbow"
     {
-      viewId = { "crossbow" }
+      viewId = { "crossbow_1" }
       name = "crossbow"
       itemClass = RANGED_WEAPON
       equipmentSlot = RANGED_WEAPON

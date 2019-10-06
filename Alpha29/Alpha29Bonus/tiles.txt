@@ -727,8 +727,7 @@
   { "gnome_mage" "g" ColorId BLUE }
   { "gnome_priest" "p" ColorId GREEN }
   { "gnome_wizard" "g" ColorId BLUE }
- 
-   { "crossbow" ")" ColorId BROWN }
+  { "crossbow_1" ")" ColorId BROWN }
 
  #Modded walls
 
