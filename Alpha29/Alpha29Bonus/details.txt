@@ -1,5 +1,4 @@
 "SoftMonster"
-"New keeper classes and adventurers.
-About double the number of creatures.
-About double the number of factions.
-New spells, spell schools, technologies and map features."
+"New keeper classes, adventurers, creatures, factions, spells, technologies and map features.
+(Credits): SoftMonster and RighteousSinner, Acre, 8bit, and Logodum"
+
