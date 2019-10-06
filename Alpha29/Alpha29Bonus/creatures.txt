@@ -1504,6 +1504,9 @@
         name = "vampire lord"
         firstNameGen = "VAMPIRE"
       }
+      skills = {
+        LABORATORY 1.0
+      }
       maxLevelIncrease = {
         MELEE 12
         SPELL 12
