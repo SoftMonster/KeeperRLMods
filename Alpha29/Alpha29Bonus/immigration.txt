@@ -312,14 +312,22 @@
         {
           ids = { "DARK_ELF_WARRIOR" }
           traits = { FIGHTER }
+		  stripEquipment = false            #Modded
+          specialTraits = {
+             { 1.0 { AttrBonus DAMAGE 3 }}  #Modded
+          }
           requirements = {
             { 0.0 RecruitmentInfo { "DARK_ELVES_ALLY" } 3 FIGHTER }
             { 1.0 CostInfo GOLD 20 }
           }
         }
         {
-          ids = { "ORC" "ORC_FEMALE" } #Modded
+          ids = { "ORC_FEMALE" "ORC" } #Modded
           traits = { FIGHTER }
+		  stripEquipment = false            #Modded
+          specialTraits = {
+             { 1.0 { AttrBonus DAMAGE 3 }}  #Modded
+          }
           requirements = {
             { 0.0 RecruitmentInfo { "ORC_VILLAGE" } 3 FIGHTER }
             { 1.0 CostInfo GOLD 5 }
@@ -328,14 +336,22 @@
         {
           ids = { "HARPY" }
           traits = { FIGHTER }
+		  stripEquipment = false                   #Modded
+          specialTraits = {
+             { 1.0 { AttrBonus RANGED_DAMAGE 3 }}  #Modded
+          }
           requirements = {
             { 0.0 RecruitmentInfo { "HARPY_CAVE" } 3 FIGHTER }
-            { 1.0 CostInfo GOLD 12 }
+            { 1.0 CostInfo GOLD 5 }
           }
         }
         {
-          ids = { "OGRE" "OGRE_FEMALE" } #Modded
+          ids = { "OGRE_FEMALE" "OGRE" } #Modded
           traits = { FIGHTER }
+		  stripEquipment = false            #Modded
+          specialTraits = {
+             { 1.0 { AttrBonus DAMAGE 3 }}  #Modded
+          }
           requirements = {
             { 0.0 RecruitmentInfo { "OGRE_CAVE" "ORC_VILLAGE" } 3 FIGHTER }
             { 1.0 CostInfo GOLD 12 }
@@ -1576,23 +1592,25 @@
         {
           ids = { "HARPY" }
           traits = { FIGHTER }
+		  stripEquipment = false
           requirements = {
             { 0.0 RecruitmentInfo {"HARPY_CAVE"} 3 FIGHTER }
             { 1.0 CostInfo GOLD 12 }
           }
           specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 8 AttrBonus DEFENSE 5}}
           }
         }
         {
-          ids = { "OGRE" "OGRE_FEMALE" }
+          ids = { "OGRE_FEMALE" "OGRE" }
           traits = { FIGHTER }
+		  stripEquipment = false
           requirements = {
             { 0.0 RecruitmentInfo {"OGRE_CAVE" "ORC_VILLAGE"} 3 FIGHTER }
             { 1.0 CostInfo GOLD 12 }
           }
           specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
+    		 { 1.00 { AttrBonus DAMAGE 8 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
         }
         {
@@ -2107,45 +2125,49 @@
         {
           ids = { "DARK_ELF_WARRIOR" }
           traits = { FIGHTER }
+		  stripEquipment = false
           requirements = {
             { 0.0 RecruitmentInfo {"DARK_ELVES_ALLY"} 3 FIGHTER }
             { 1.0 CostInfo GOLD 20 }
           }
           specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+    		 { 1.00 { AttrBonus DAMAGE -2 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
         {
-          ids = { "ORC" "ORC_FEMALE" }
+          ids = { "ORC_FEMALE" "ORC" }
           traits = { FIGHTER }
+		  stripEquipment = false
           requirements = {
             { 0.0 RecruitmentInfo {"ORC_VILLAGE"} 3 FIGHTER }
             { 1.0 CostInfo GOLD 5 }
           }
           specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+    		 { 1.00 { AttrBonus DAMAGE -2 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
         {
           ids = { "HARPY" }
           traits = { FIGHTER }
+		  stripEquipment = false
           requirements = {
             { 0.0 RecruitmentInfo {"HARPY_CAVE"} 3 FIGHTER }
             { 1.0 CostInfo GOLD 12 }
           }
           specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -2 AttrBonus DEFENSE -5}}
           }
         }
         {
-          ids = { "OGRE" "OGRE_FEMALE" }
+          ids = { "OGRE_FEMALE" "OGRE" }
           traits = { FIGHTER }
+		  stripEquipment = false
           requirements = {
             { 0.0 RecruitmentInfo {"OGRE_CAVE" "ORC_VILLAGE"} 3 FIGHTER }
             { 1.0 CostInfo GOLD 12 }
           }
           specialTraits = {
-    		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
+    		 { 1.00 { AttrBonus DAMAGE -2 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
         }
         {
