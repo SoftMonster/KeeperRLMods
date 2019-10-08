@@ -1639,7 +1639,7 @@
       name = {
         name = "harpy"
         pluralName = "harpies"
-        firstNameGen = "ORC"
+        firstNameGen = "ORC_FEMALE"
       }
       hatedByEffect = HATE_GREENSKINS
     }
@@ -4543,6 +4543,10 @@
     {
       viewId = { "ogre_female" }
       gender = FEMALE
+      name = {
+        name = "ogre"
+        firstNameGen = "ORC_FEMALE"
+      }
       chatReactionFriendly = "\"complains about ogre males\""
       chatReactionHostile = "\"Die!\""
     }
@@ -4550,6 +4554,10 @@
     {
       viewId = { "orc_female" }
       gender = FEMALE
+      name = {
+        name = "orc"
+        firstNameGen = "ORC_FEMALE"
+      }
       chatReactionFriendly = "\"complains about orc males\""
       chatReactionHostile = "\"Die!\""
     }
@@ -5264,6 +5272,10 @@
     {
       viewId = { "dark_orc_female" }
       gender = FEMALE
+      name = {
+        name = "orc"
+        firstNameGen = "ORC_FEMALE"
+      }
     }
  "DARK_OGRE" inherit "OGRE"
     {
@@ -5283,6 +5295,10 @@
     {
       viewId = { "dark_troll_female" }
       gender = FEMALE
+      name = {
+        name = "ogre"
+        firstNameGen = "ORC_FEMALE"
+      }
     }
  "DARK_GOBLIN" inherit "GOBLIN"
     {
