@@ -1414,6 +1414,7 @@
     name = "rubble"
     viewId = { "map_mountain2" }
     constructMessage = none	
+    canSilentlyReplace = true #Allows remove construction to work
     blockMovement = true
 	strength = 200
     destroyedEffect = PlaceFurniture "STONES"
