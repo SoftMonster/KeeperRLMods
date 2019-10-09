@@ -1076,4 +1076,91 @@
    cooldown = 120
    sound = SPELL_SUMMON_SPIRIT
  }
+
+#########################
+#Ideas for future spells#
+#########################
+#
+# Necromancy 
+## Undead cloud
+## Raise corpse
+# Basic sorcery additions 
+## Detection
+## Pull
+## Light Bolt
+# Advanced sorcery additions 
+## Night vision
+## Discord
+## Magic Mine
+## Eviscerate
+# Master sorcery additions 
+## Levitation
+## Bolt of antimagic
+## Suppress magic
+## !Change Places!
+# Elite sorcery (new tech) 
+## Regrow Limb
+## Reveal treasures
+## Dark Persuasion
+## Grow trees
+## Firestorm
+## Invisible wall
+## Windstorm
+## Acid ball
+## Summon Target Dummy
+# Blood Magic School (New Tech) 
+## Blood Heal
+## Blood Drain (Vamparism)
+## Summon Bats
+## Blood Hex
+## Blood Craze
+## Teleport Other
+## Become vampire
+## Regrow Limb
+## Blood Curse
+## Turn to Thrall
+## Blood Ritual
+## Become Vampire Lord 
+## Summon Vampires
+## Gift Blood
+## Blood Wrath
+## Summon Blood Dragon
+# Illusion School 
+## Fae Deception
+## Hallucinate
+## Minor Invisibility
+## Fae eyes
+## Fae Trickery
+## invisibility
+## Mirage Dragon
+## Fae Clone
+## Fae Body
+## Steal Visage (Disguise)
+## Greater Invisibility
+## Illusionary Army
+# Holy Magic School (New Tech) 
+## Holy Heal
+## Smite
+## Imbue weapon
+## Turn Undead
+## Holy Strike
+## Holy Shield
+## Ressurrect
+## Parley
+## Holy Bulwark
+## Release Spirit
+## Summon Angels
+## God's Wrath
+# Life Spell School 
+## Drain Life
+## Vaccine
+## Thicken Blood
+## Allcure
+## Revive
+## Life Aura
+## Life's Call
+## Miracle of Sacrifice
+# Creature abilities implemented as spells 
+## Burrow
+## Pickpocket
 }

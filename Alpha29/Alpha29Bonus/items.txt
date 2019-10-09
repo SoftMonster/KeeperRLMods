@@ -1063,4 +1063,55 @@
       }
       price = 60
     }
+
+########################
+#Ideas for future items#
+########################
+# Elemental robe
+# Elemental sword
+# Dragon wing cloak
+# Helmet of Hate
+# Sword of Evil
+# Sword of Light
+# Defensive Pike
+# Force Staff (Directed blast spell)
+# Blood draining fencing foil
+# Bloodsword
+# Club of Light
+# Rod of Flame (fire spell etc.)
+# Sling
+# Throwing Stars
+# Wand of Fire
+# Wand of Ice
+# Wand of Rockblast
+# Mirror Shield
+# Shield of Displacement (teleport spell)
+# Elven Steel War Helm
+# Full elven steel plate armour
+# Thornmail
+# Crown of command
+# Helm of light
+# Robe of Darkness
+# Amulet of Teleportation
+# Ring of Free Action
+# Ring of Courage
+# Ring of Trap Detection
+# Amulet of Power
+# Ring of Darkness
+# Ring of Light
+# Ring of Ambush
+# Potion of garlic mixture
+# Terrain seeing potion
+# Potion of Hallucination
+# Scroll of Fire Ball
+# Scroll of mapping
+# Scroll of trap destruction
+# Scroll of blinding darkness
+# Scroll of knowledge
+# Scroll of Blinking
+# Tome of Alacrity
+# Tome of misfortune
+# Nets
+########################
+
 }

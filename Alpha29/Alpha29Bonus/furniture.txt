@@ -1550,4 +1550,48 @@
     wall = true
     buildingSupport = true
   }
+  
+####################
+#Ideas for new traps
+####################
+# Silver blade
+# Explosion Trap/magic mine (Knocks you back)
+# Confusion Trap (Causes Insanity)
+# Pitfall Trap (Stuns)
+# Summon Guardian Trap (Makes automation)
+# Relocation Trap (Teleports invader)
+# Memory Trap (Triggers spell cooldowns)
+# Weapon Destruction Trap (Kills weapons)
+# Ruining Trap (Damages stats)
+# Explosive door runes
+# Trick bed
+# Trick bookshelf
+# Trick chest
+# Magic bolt trap
+# Hidden passage and Door
+####################
+#Ideas for new rooms
+####################
+# Mushroom Farm
+# Medical Room
+# Market
+# Slave Market
+# Guard room
+# Beast Pit
+# Quarry
+# Ore Mine
+# Lounge
+# Arena
+# Limb Workshop
+############################
+#Ideas for new installations
+############################
+# Stone door
+# Bone door
+# Magic door
+# Crystal orbs (light)
+# Skull candles (light)
+# Large Bronze Brazier (light)
+############################
+
 }

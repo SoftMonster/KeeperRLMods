@@ -82,3 +82,36 @@
   "goblin glyph crafting"	 { "Turn all that shiny adamantite ore into something more useful than other resources." {"alchemical conversion" "jewellery"}}	
 }
 }
+
+###########################
+#Ideas for new technolgies#
+###########################
+# Elite Greenskins
+# Elite Undead
+# Animal Magic
+# Fertility
+# Elite Sorcery
+# Basic/Advanced/Master Necromancy
+# Overlord
+# Salaries
+# Stone laying 
+# Debris Management
+# Recycling
+# Resurrection
+# Military discipline
+# Tyranny
+# Guilds
+# Hideous strength surge
+# Unnatural dexterity surge
+# Evil growth surge
+# Keeper mutation
+# Regrow trees
+# Basic energies
+# Advanced energies
+# Master energies
+# Call to arms
+# Tactics (Military Tactics or tactical training)
+# Self Preservation
+# Settlements (Campaign mode only)
+# Diplomacy
+###########################

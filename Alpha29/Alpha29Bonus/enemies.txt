@@ -2600,4 +2600,16 @@
       }
     }
   }
+
+###########################
+#Ideas for future villains#
+###########################
+#Ant Hive
+#Grand Elvish City
+#Three cyclops
+#The forty thieves
+#Wolfville
+#The seven witches
+###########################
+    
 }
