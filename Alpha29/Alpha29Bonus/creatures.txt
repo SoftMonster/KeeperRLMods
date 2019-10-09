@@ -7145,5 +7145,42 @@
     {
       viewId = { "winged_imp" }
     }
-
 }
+
+##########################
+#Ideas for Future modding#
+##########################
+# The King
+# Druids
+# Magi
+# Tritons
+# Halflings
+# Bone Golem
+# Blacksmith
+# Elf blademaster(s)
+# Dwarf crossbowman
+# Dwarven Trapper
+# Floating eye
+# The Holy Warrior (humans)
+# The Valiant Archer (elves)
+# Warriors Wizzard
+# Dwarven Siege Engine
+# Winged spearmen
+# Satyr
+# Fauns,
+# Tyrannosaur
+# Yeti
+# Mermen 
+# Red scorpion
+# Eagle
+# Death sword
+# Slavemaster
+# Beastmaster
+# Lich
+# Ghoul
+# Ghast
+# Sea monster
+# Wall monster
+# Shade
+# Poltergeist
+#########################
