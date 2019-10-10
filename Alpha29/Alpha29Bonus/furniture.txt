@@ -1550,6 +1550,16 @@
     wall = true
     buildingSupport = true
   }
+  "SHALLOW_WATER_COSMETIC"
+  {
+    name = "shallow water"
+    viewId = { "water" }
+    layer = GROUND
+    summonedElement = "WATER_ELEMENTAL"
+    freezeTo = "ICE"
+    walkIntoFX = { WATER_SPLASH Rgb 82 148 255 255 }
+  }
+  
   
 ####################
 #Ideas for new traps

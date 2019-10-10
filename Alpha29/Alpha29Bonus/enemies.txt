@@ -2194,7 +2194,7 @@
 	  }
       tribe = MONSTER
       race = "ocean spirits"
-      buildingId = "MUD"
+      buildingId = "OCEAN_CAVE"
     }
     config = {
       immigrantInterval = 500
@@ -2461,7 +2461,7 @@
       }
       tribe = MONSTER
       race = "lions"
-      buildingId = "DUNGEON"
+      buildingId = "MUD"
     }
     config = {
       immigrantInterval = 1000

@@ -123,4 +123,9 @@
       gate = { "FIRE_TRAP" 1.0 }
 	  upStairs = "TAINTED_STAIRS_UP"
     }
+  "OCEAN_CAVE"
+    {
+	  wall = "MOUNTAIN"
+	  floorOutside = "SHALLOW_WATER_COSMETIC"
+    }
 }
