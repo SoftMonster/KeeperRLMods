@@ -22,7 +22,7 @@
     { "centar_king" } "CENTAURS" "Centaurs" MAIN
     { "armored_cow_demon" } "COW_DEMONS" "cow demons" MAIN
     { "hell_portal" } "HELL_PORTAL" "Hell portal" MAIN
-    { "magic_fairy" } "FAIRIES" "Fairies" MAIN
+    { "fairy_queen" } "FAIRIES" "Fairies" MAIN
     { "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN
     { "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN
 

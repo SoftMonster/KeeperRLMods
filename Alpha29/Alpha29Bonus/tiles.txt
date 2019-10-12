@@ -729,10 +729,18 @@
   { "gnome_wizard" "g" ColorId BLUE }
   { "crossbow_1" ")" ColorId BROWN }
 
+  { "fairy_queen" "H" ColorId WHITE }
+
  #Modded walls
 
   { viewId = "tree_wall" symbol = "#" color = ColorId GREEN wallShadow = true wallConnections = true }
   { viewId = "tainted_wall" symbol = "#" color = ColorId PURPLE wallShadow = true wallConnections = true }
+
+ #Modded floors
+
+  { "stone_pattern1" "." ColorId LIGHT_RED }
+  { "stone_pattern2" "." ColorId LIGHT_RED }
+  { "tainted_tile" "." ColorId PURPLE }
 
  #Immigrant variants
   { "winged_imp" "i" ColorId LIGHT_BROWN }

@@ -1887,20 +1887,80 @@
     }
     discoverable = false
   }
+  "COW_DUNGEON1"
+  {
+    settlement = {
+      type = MINETOWN
+      tribe = MONSTER
+      buildingId = "DUNGEON"
+      furniture = { "roomFurniture" }
+      inhabitants = {
+	    leader = {{ "COW_DEMON" }}
+        fighters = {
+          count = {12 15}
+          all = {
+		    3 "COW_DEMON"
+			1 "MINOTAUR"
+          }
+        }
+        civilians = {
+          count = {4 5}
+          all = {
+            10 "COW"
+			 1 "RAT"
+          }
+        }
+      }
+    }
+  }
+  "COW_DUNGEON2"
+  {
+    settlement = {
+      type = MINETOWN
+      tribe = MONSTER
+      buildingId = "DUNGEON"
+      furniture = { "roomFurniture" }
+      inhabitants = {
+	    leader = {{ "COW_DEMON" }}
+        fighters = {
+          count = {15 18}
+          all = {
+		    30 "COW_DEMON"
+			10 "MINOTAUR"
+			5 "DEMON_LORD"
+          }
+        }
+        civilians = {
+          count = {6 8}
+          all = {
+            10 "COW"
+			 1 "RAT"
+          }
+        }
+      }
+    }
+  }
   "COW_DEMONS"
   {
     settlement = {
-      type = SMALL_MINETOWN
+      type = MINETOWN
       tribe = MONSTER
 	  race = "cow demons"
       buildingId = "DUNGEON"
       inhabitants = {
 	    leader = {{ "ARMORED_COW_DEMON" }}
         fighters = {
-          count = {10 15}
+          count = {12 15}
           all = {
-		    1 "COW_DEMON"
-		    1 "COW"
+		    3 "COW_DEMON"
+			1 "MINOTAUR"
+		  }
+		}
+        civilians = {
+          count = {4 5}
+          all = {
+            10 "COW"
+			 1 "RAT"
 		  }
         }
       }
@@ -1911,7 +1971,7 @@
     }
     immigrants = {
       {
-        ids = {"COW" "COW_DEMON"}
+        ids = {"MINOTAUR" "COW_DEMON"}
         traits = {FIGHTER}
         frequency = 1
       }
@@ -1925,8 +1985,8 @@
     levelConnection = {
       topLevel = ExtraEnemy {"COW_DEMONS_ENTRY"}
       levels = {
-        { ExtraEnemy { "DUNGEON1" { 2 4 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON2" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "COW_DUNGEON1" { 2 4 } } 60 40 DUNGEON }
+        { ExtraEnemy { "COW_DUNGEON2" { 1 2 } } 70 50 DUNGEON }
         { MainEnemy 60 40 MINETOWN }
       }
     }
@@ -1937,9 +1997,9 @@
       type = CASTLE
       tribe = BANDIT
       inhabitants = {
-        leader = { { "GOBLIN_KING" } }
+        leader = {{ "GOBLIN_KING" }}
         fighters = {
-          count = {12 17}
+          count = {16 32}
           all = {
 			2 "GOBLIN_CHICKENMANCER"
 			2 "GOBLIN_BRUTE"
@@ -1948,12 +2008,56 @@
 			2 "GOBLIN_KABOOMER"
 			2 "GOBLIN_PRIEST"
 			2 "GOBLIN_WIZARD"
+			3 "GOBLIN_WARRIOR"
           }
         }
         civilians = {
           count = {6 9}
           all = {
-            1 "GOBLIN"
+            1 "GOBLIN_PLAYER"
+          }
+        }
+      }
+      locationNameGen = "TOWN"
+      race = "goblins"
+      stockpiles = {{ "magicShrooms" 20 "CHEST" }}
+      buildingId = "TAINTED"
+      shopItems = "villageShop"
+      furniture = { "goblinProps" }
+     }
+    levelConnection = {
+      topLevel = ExtraEnemy {"GOBLIN_ENTRY"}
+      levels = {
+        { ExtraEnemy { "GOBLIN_DUNGEON1" { 1 } } 60 40 DUNGEON }
+        { ExtraEnemy { "GOBLIN_DUNGEON2" { 1 } } 70 50 DUNGEON }
+        { ExtraEnemy { "GOBLIN_DUNGEON3" { 1 } } 80 60 DUNGEON }
+        { MainEnemy 60 40 DUNGEON }
+      }
+    }
+  }
+  "GOBLIN_ENTRY"
+  {
+    settlement = {
+      type = CASTLE
+      tribe = BANDIT
+      inhabitants = {
+         leader = { { "GOBLIN_WARRIOR" } }
+        fighters = {
+          count = {16 24}
+          all = {
+			2 "GOBLIN_CHICKENMANCER"
+			2 "GOBLIN_BRUTE"
+			3 "GOBLIN_ARCHER"
+			2 "GOBLIN_KABOOMER"
+			2 "GOBLIN_PRIEST"
+			2 "GOBLIN_WIZARD"
+			3 "GOBLIN_WARRIOR"
+          }
+        }
+        civilians = {
+          count = {6 9}
+          all = {
+            1 "GOBLIN_PLAYER"
           }
         }
       }
@@ -1966,14 +2070,12 @@
       outsideFeatures = "goblinProps"
     }
     config = {
-      immigrantInterval = 300
+      immigrantInterval = 120
       maxPopulation = 26
-      ghostProb = 0.1
-      spawnGhosts = 6
     }
     behaviour = {
-      minPopulation = 12
-      minTeamSize = 10
+      minPopulation = 16
+      minTeamSize = 14
       triggers = {
         RoomTrigger "THRONE" 0.0003
         SelfVictims
@@ -1990,13 +2092,104 @@
 			"GOBLIN_KABOOMER"
 			"GOBLIN_PRIEST"
 			"GOBLIN_WIZARD"
+			"GOBLIN_WARRIOR"
         }
         traits = {FIGHTER}
         frequency = 1
       }
     }
   }
-  
+    "GOBLIN_DUNGEON1"
+  {
+    settlement = {
+      type = MINETOWN
+      tribe = BANDIT
+      locationNameGen = "TOWN"
+      race = "goblins"
+      stockpiles = {{ "chest" 6 } { "minerals" 60 } { "goblinglyphs" 2 } } 
+      buildingId = "DUNGEON"
+      furniture = { "roomFurniture" }
+      inhabitants = {
+        leader = { { "GOBLIN_ARCHER" } }
+        fighters = {
+          count = {24 30}
+          all = {
+			20 "GOBLIN_CHICKENMANCER"
+			30 "GOBLIN_BRUTE"
+			35 "GOBLIN_ARCHER"
+			20 "GOBLIN_KABOOMER"
+			25 "GOBLIN_PRIEST"
+			20 "GOBLIN_WIZARD"
+			35 "GOBLIN_WARRIOR"
+			50 "GOBLIN_PLAYER"
+            4  "RAT"
+			1  "BLACK_RAT"
+          }
+        }
+      }
+    }
+  }
+    "GOBLIN_DUNGEON2"
+  {
+    settlement = {
+      type = MINETOWN
+      tribe = BANDIT
+      locationNameGen = "TOWN"
+      race = "goblins"
+      stockpiles = {{ "chest" 6 } { "minerals" 80 } { "goblinglyphs" 4 } } 
+      buildingId = "DUNGEON"
+      furniture = { "roomFurniture" }
+      inhabitants = {
+        leader = { { "ELITE_GOBLIN_GUARD" } }
+        fighters = {
+          count = {30 36}
+          all = {
+			10 "GOBLIN_CHICKENMANCER"
+			30 "GOBLIN_BRUTE"
+			20 "GOBLIN_ARCHER"
+			20 "GOBLIN_KABOOMER"
+			30 "GOBLIN_PRIEST"
+			35 "GOBLIN_WIZARD"
+			25 "GOBLIN_WARRIOR"
+			30 "GOBLIN_PLAYER"
+            4  "RAT"
+			1  "BLACK_RAT"
+          }
+        }
+      }
+    }
+  }
+    "GOBLIN_DUNGEON3"
+  {
+    settlement = {
+      type = MINETOWN
+      tribe = BANDIT
+      locationNameGen = "TOWN"
+      race = "goblins"
+      stockpiles =  {{ "chest" 6 } { "minerals" 100 } { "goblinglyphs" 6 } } 
+      buildingId = "DUNGEON"
+      furniture = { "roomFurniture" }
+      inhabitants = {
+        leader = { { "GOBLIN_HIGH_PRIEST" } }
+        fighters = {
+          count = {36 42}
+          all = {
+			30 "GOBLIN_CHICKENMANCER"
+			20 "GOBLIN_BRUTE"
+			40 "GOBLIN_ARCHER"
+			18 "GOBLIN_HIGH_PRIEST"
+			30 "GOBLIN_KABOOMER"
+			20 "GOBLIN_PRIEST"
+			25 "GOBLIN_WIZARD"
+			35 "ELITE_GOBLIN_GUARD"
+			20 "GOBLIN_PLAYER"
+            4  "RAT"
+			1  "BLACK_RAT"
+          }
+        }
+      }
+    }
+  }
 ########
 # Modded
 ########
@@ -2005,8 +2198,9 @@
     settlement = {
       type = FOREST
       inhabitants = {
+        leader = { { "FAIRY_QUEEN" } }
         fighters = {
-          count = {5 10}
+          count = {22 30}
           all = {
             1 "AIR_FAIRY"
             1 "DARK_FAIRY"
@@ -2015,7 +2209,6 @@
             1 "MAGIC_FAIRY"
             1 "NATURE_FAIRY"
             1 "LIGHT_FAIRY"
-            1 "DEMON_FAIRY"
             1 "WATER_FAIRY"
           }
         }
@@ -2025,8 +2218,8 @@
       buildingId = "WOOD"
     }
     config = {
-      immigrantInterval = 200
-      maxPopulation = 10
+      immigrantInterval = 120
+      maxPopulation = 40
     }
     immigrants = {
       {
@@ -2043,6 +2236,41 @@
       }
       attackBehaviour = KillMembers 5
 	}
+  }
+  "HELL_DUNGEON1"
+  {
+    settlement = {
+      type = MINETOWN
+      tribe = MONSTER
+      inhabitants = {
+        leader = { { "HELL_KNIGHT_LORD" } }
+        fighters = {
+          count = {22 30}
+          all = {
+            20 "HELL_KNIGHT"
+            14 "HELL_KNIGHT_BRUTE"
+            10 "HELL_KNIGHT_LORD"
+            12 "HELL_KNIGHT_SWORDMASTER"
+		  }
+		}
+        civilians = {
+          count = {2 5}
+          all = { 1 "HELL_PORTAL" }
+        }
+      }
+      race = "hell_knights"
+      buildingId = "DUNGEON"
+      stockpiles = {{ "gold" 120 }}
+      furniture = { "roomFurniture" }
+      surroundWithResources = 10    
+    }
+    behaviour = {
+      minPopulation = 0
+      minTeamSize = 1
+      triggers = {SelfVictims StolenItems MiningInProximity}
+      attackBehaviour = KillLeader
+      ransom = 0.5 80
+    }
   }
   "CENTAURS"
   {
@@ -2253,6 +2481,38 @@
         traits = {FIGHTER}
         frequency = 1
       }
+    }
+  }
+  "RAT_VILLAGE"
+  {
+    settlement = {
+      type = SMALL_VILLAGE
+      tribe = HUMAN
+      inhabitants = {
+        fighters = {
+          count = {2 5}
+          all = {
+            2 "RAT_SOLDIER"
+			1 "RAT_ARCHER"
+          }
+        }
+        civilians = {
+          count = {4 8}
+          all = {
+			13 "RAT_MAN"
+			14 "RAT_LADY"
+            11 "RAT"
+			1  "BLACK_RAT"
+          }
+        }
+      }
+      race = "ratmen"
+        buildingId = "MUD"
+        stockpiles = {
+          { "gold" 20 "TREASURE_CHEST" }
+        }
+      cropsDistance = 16
+        furniture = { "roomFurniture" }
     }
   }
   "ADOXIE_DEMONS"
@@ -2505,35 +2765,163 @@
   "RATMEN"
   {
     settlement = {
-      type = VILLAGE
+      type = MINETOWN
       tribe = HUMAN
       inhabitants = {
         leader = { { "RAT_KING" } }
         fighters = {
-          count = {7 10}
+          count = {18 24}
           all = {
-		    1 "RAT_SOLDIER"
-		    1 "RAT_LADY"
-		    1 "RAT_MAN"
-		    1 "RAT_GENERAL"
-		    1 "RAT_ARCHER"
+		    3 "RAT_SOLDIER"
+		    6 "RAT_GENERAL"
+		    2 "RAT_ARCHER"
 		  }
-        }
-      }
+		}
+        civilians = {
+          count = {4 8}
+          all = {
+			6 "RAT_LADY"
+            1 "RAT"
+			}
+		}
+	}
       locationNameGen = "TOWN"
       race = "ratmen"
       buildingId = "MUD"
+      stockpiles = {{ "gold" 200 "TREASURE_CHEST" }}
+      lootItem = { TechBook "archery" }
+    }
+    levelConnection = {
+      topLevel = ExtraEnemy {"RATMEN_ENTRY"}
+      levels = {
+        { ExtraEnemy { "RATMEN_DUNGEON1" { 2 4 } } 100 100 DUNGEON }
+        { ExtraEnemy { "RATMEN_DUNGEON2" { 3 5 } } 100 100 DUNGEON }
+        { ExtraEnemy { "RATMEN_DUNGEON3" { 4 6 } } 120 120 DUNGEON }
+        { MainEnemy 80 80 MINETOWN }
+		  }
+	  }
+  }
+  "RATMEN_ENTRY"
+  {
+    settlement = {
+      type = VILLAGE
+      tribe = HUMAN
+      inhabitants = {
+        leader = { { "RAT_GENERAL" } }
+        fighters = {
+          count = {10 16}
+          all = {
+		    5 "RAT_SOLDIER"
+		    1 "RAT_GENERAL"
+		    3 "RAT_ARCHER"
+		  }
+		}
+        civilians = {
+          count = {4 8}
+          all = {
+			13 "RAT_MAN"
+			14 "RAT_LADY"
+            11 "RAT"
+			1  "BLACK_RAT"
+			}
+		  }
+		}
+      locationNameGen = "TOWN"
+      race = "ratmen"
+      buildingId = "MUD"
+      stockpiles = {{ "gold" 50 "TREASURE_CHEST" }}
       outsideFeatures = "villageOutside"
     }
     config = {
       immigrantInterval = 140
-      maxPopulation = 11
+      maxPopulation = 21
     }
     immigrants = { 
       {
-        ids = { "RAT_SOLDIER" "RAT_LADY" "RAT_KING" "RAT_GENERAL" "RAT_MAN" "RAT_ARCHER" }
+        ids = { "RAT_SOLDIER" "RAT_GENERAL" "RAT_ARCHER" }
         traits = { FIGHTER }
         frequency = 1
+	  }
+	}
+  }
+  "RATMEN_DUNGEON1"
+  {
+    settlement = {
+      type = MINETOWN
+      tribe = MONSTER
+      buildingId = "DUNGEON"
+      furniture = { "roomFurniture" }
+      inhabitants = {
+	    leader = {{ "RAT_GENERAL" }}
+        fighters = {
+          count = {32 45}
+          all = {
+		    5 "RAT_SOLDIER"
+		    1 "RAT_GENERAL"
+		    3 "RAT_ARCHER"
+          }
+        }
+        civilians = {
+          count = {14 18}
+          all = {
+			3 "RAT_MAN"
+			4 "RAT_LADY"
+            1 "RAT"
+          }
+        }
+      }
+    }
+  }
+  "RATMEN_DUNGEON2"
+  {
+    settlement = {
+      type = MINETOWN
+      tribe = MONSTER
+      buildingId = "DUNGEON"
+      furniture = { "roomFurniture" }
+      inhabitants = {
+	    leader = {{ "RAT_GENERAL" }}
+        fighters = {
+          count = {42 55}
+          all = {
+		    5 "RAT_SOLDIER"
+		    1 "RAT_GENERAL"
+		    3 "RAT_ARCHER"
+          }
+        }
+        civilians = {
+          count = {24 28}
+          all = {
+			23 "RAT_MAN"
+			24 "RAT_LADY"
+            21 "RAT"
+			1  "BLACK_RAT"
+          }
+        }
+      }
+    }
+  }
+  "RATMEN_DUNGEON3"
+  {
+    settlement = {
+      type = MINETOWN
+      tribe = MONSTER
+      buildingId = "DUNGEON"
+      furniture = { "roomFurniture" }
+      inhabitants = {
+	    leader = {{ "RAT_GENERAL" }}
+        fighters = {
+          count = {82 105}
+          all = {
+		    35 "RAT_SOLDIER"
+		    31 "RAT_GENERAL"
+		    33 "RAT_ARCHER"
+			21 "RAT_MAN"
+			24 "RAT_LADY"
+            12 "RAT"
+			1  "BLACK_RAT"
+          }
+        }
       }
     }
   }

@@ -18,7 +18,7 @@ The mod will have ongoing updates, which will require it to be re-downloaded onc
 
 Thanks for your understanding.
 
-The mod can be discussed on Discord here:
+The mod can be discussed on Steam here:
 
 https://steamcommunity.com/workshop/filedetails/discussion/1854801359/1630790987595175192
 

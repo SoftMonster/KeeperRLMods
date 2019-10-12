@@ -191,6 +191,19 @@
 	"expert magic missile" 6
 	"summon automaton army" 7
   }
+  "fairy queen" SPELL
+  {
+	"expert healing" 1
+	"expert rapid magic missile" 2
+	"expert magic missile" 2
+	"fae deception" 3
+	"fae melee boost" 3
+	"fae time twisting" 4
+	"fae illusion" 5
+	"fae escape" 6
+	"fae teleport" 7
+	"double trouble" 7
+  }
 
 #----------------------------------------------------------
 # spells_schools.txt - August 2019 by Righteous for goblins

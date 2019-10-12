@@ -1076,6 +1076,60 @@
    cooldown = 120
    sound = SPELL_SUMMON_SPIRIT
  }
+#------------------------------------------------------------
+# spells.txt modded by Righteous October 2019 for Fairy Queen
+#------------------------------------------------------------
+
+ {
+    id =  "fae time twisting"
+    symbol = "🏃"
+    effect = Chain { Message "Time is commanded." Area 6 Filter ALLY Lasting SPEED Area 6 Filter ENEMY Lasting SLOWED }
+    cooldown = 80
+    sound = SPELL_SPEED_SELF
+  }
+  {
+    id =  "fae melee boost"
+    symbol = "🛡"
+    effect = Chain { Message "Fae Spirit of Endurance invoked." Area 6 Filter ALLY Lasting DEF_BONUS Area 6 Filter ALLY Lasting DAM_BONUS }
+    cooldown = 30
+    sound = SPELL_DEX_BONUS
+  }
+  {
+    id =  "fae illusion"
+    symbol = "🎭"
+    effect = Chain { Message "Magic concealment." Area 6 Filter ALLY Deception Area 6 Filter ALLY Lasting INVISIBLE }
+    cooldown = 30
+    sound = SPELL_TELEPORT
+  }
+  {
+    id =  "fae escape"
+    symbol = "✈️"
+    effect = Chain { Message "Fae escape." Deception Area 6 Filter ALLY Lasting INVISIBLE Escape }
+    cooldown = 30
+    sound = SPELL_TELEPORT
+  }
+  {
+    id =  "fae teleport"
+    symbol = "🌀"
+	range = 12
+    effect = Chain { Message "Fae teleport." Deception Area 6 Filter ALLY Lasting INVISIBLE Teleport }
+    cooldown = 30
+    sound = SPELL_DECEPTION
+  }
+  {
+    id =  "fae deception"
+    symbol = "🎭"
+    effect = Deception
+    cooldown = 5
+    sound = SPELL_INVISIBILITY
+  }
+  {
+   id = "summon fae army"
+   symbol = "👩!"
+   effect = Chain { Summon "AIR_FAIRY" { 2 3 } Summon "DARK_FAIRY" { 2 3 } Summon "EARTH_FAIRY" { 2 3 } Summon "ELECTRIC_FAIRY" { 2 3 } Summon "LIGHT_FAIRY" { 2 3 } Summon "MAGIC_FAIRY" { 2 3 } Summon "NATURE_FAIRY" { 2 3 } Summon "WATER_FAIRY" { 2 3 } }
+   cooldown = 200
+   sound = SPELL_SUMMON_SPIRIT
+  }
 
 #########################
 #Ideas for future spells#

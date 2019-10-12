@@ -188,4 +188,14 @@
       "ELVEN_RUG"
     }
   }
+  "dungeonstuff"
+  {
+    {
+      "GIANT_MUSHROOM" 6
+      "GROUND_TORCH" 5
+      "LITTLE_SPIDER_WEB" 5
+      "BIG_SPIDER_WEB" 1
+      "CHEST" 5
+    }
+  }
 }

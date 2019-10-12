@@ -3525,7 +3525,7 @@
         "directed blast"
         "fumes"
 		"arrow shield"
-		"magic missile"
+		"expert magic missile"
 		"summon air elementals"
       }
       permanentEffects = {
@@ -3689,7 +3689,8 @@
 	  spellSchools = { "illusion" }
       spells = {
 	    "healing"
-        "magic missile"
+        "expert magic missile"
+		"advanced rapid magic missile"
         "snakes"
         "telepathy"		
       }
@@ -3751,6 +3752,57 @@
       }
       chatReactionFriendly = "\"talks about fish and other water animals\""
       chatReactionHostile = "\"Drown, fairy hater!\""
+    }
+    "FAIRY_QUEEN"
+    {
+      viewId = { "fairy_queen" }
+      attr = {
+        DAMAGE 34
+        DEFENSE 45 
+        SPELL_DAMAGE 65  
+      }
+      body = {
+        type = Humanoid MEDIUM
+        material = FLESH
+        weight = 80
+        addBodyPart = {
+          WING 2
+        }
+      }
+      gender = FEMALE
+      maxLevelIncrease = {
+        SPELL 16
+      }
+	  spellSchools = { "fairy queen" }
+      spells = {
+		"expert healing"
+		"expert rapid magic missile"
+		"expert magic missile"
+		"fae deception"
+		"fae melee boost"
+		"fae time twisting"
+		"fae illusion"
+		"fae escape"
+		"fae teleport"
+		"summon fae army"
+		"double trouble"
+      }
+      permanentEffects = {
+        ELF_VISION 1
+     	SPEED 1
+        MAGIC_RESISTANCE 1
+		RANGED_RESISTANCE 1
+        COLD_RESISTANT 1
+		FIRE_RESISTANT 1
+        FLYING 1
+      }
+      name = {
+        name = "fairy queen"
+        pluralName = "fairies"
+        firstNameGen = "PIXIE"
+      }
+      chatReactionFriendly = "\"talks about ancient fae magic\""
+      chatReactionHostile = "\"Magic consume you!\""
     }
 	
 #---------------------------------------------------------
@@ -7163,7 +7215,7 @@
 # Floating eye
 # The Holy Warrior (humans)
 # The Valiant Archer (elves)
-# Warriors Wizzard
+# Warriors Wizard
 # Dwarven Siege Engine
 # Winged spearmen
 # Satyr

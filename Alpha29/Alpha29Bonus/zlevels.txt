@@ -142,6 +142,15 @@
     minDepth = 10
     width = 60
   }
+
+#Modded Hell Knight Level
+  {
+    type = FullZLevel {
+      enemy = "HELL_DUNGEON1"
+      attackChance = 1.0
+    }
+    minDepth = 10
+  }
 }
 
 # White and dark keepers (modded)
