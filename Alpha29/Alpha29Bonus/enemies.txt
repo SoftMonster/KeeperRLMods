@@ -2786,7 +2786,7 @@
 		}
 	}
       locationNameGen = "TOWN"
-      race = "ratmen"
+      race = "Royal Rat Family"
       buildingId = "MUD"
       stockpiles = {{ "gold" 200 "TREASURE_CHEST" }}
       lootItem = { TechBook "archery" }
@@ -2794,9 +2794,7 @@
     levelConnection = {
       topLevel = ExtraEnemy {"RATMEN_ENTRY"}
       levels = {
-        { ExtraEnemy { "RATMEN_DUNGEON1" { 2 4 } } 100 100 DUNGEON }
-        { ExtraEnemy { "RATMEN_DUNGEON2" { 3 5 } } 100 100 DUNGEON }
-        { ExtraEnemy { "RATMEN_DUNGEON3" { 4 6 } } 120 120 DUNGEON }
+        { ExtraEnemy { "RATMEN_DUNGEON" { 3 4 } } 100 100 DUNGEON }
         { MainEnemy 80 80 MINETOWN }
 		  }
 	  }
@@ -2809,7 +2807,7 @@
       inhabitants = {
         leader = { { "RAT_GENERAL" } }
         fighters = {
-          count = {10 16}
+          count = {10 15}
           all = {
 		    5 "RAT_SOLDIER"
 		    1 "RAT_GENERAL"
@@ -2817,7 +2815,7 @@
 		  }
 		}
         civilians = {
-          count = {4 8}
+          count = {2 4}
           all = {
 			13 "RAT_MAN"
 			14 "RAT_LADY"
@@ -2826,7 +2824,7 @@
 			}
 		  }
 		}
-      locationNameGen = "TOWN"
+      locationName = "the Guard"
       race = "ratmen"
       buildingId = "MUD"
       stockpiles = {{ "gold" 50 "TREASURE_CHEST" }}
@@ -2844,17 +2842,19 @@
 	  }
 	}
   }
-  "RATMEN_DUNGEON1"
+  "RATMEN_DUNGEON"
   {
     settlement = {
       type = MINETOWN
+      locationName = "the Order"
       tribe = MONSTER
+      race = "ratmen"
       buildingId = "DUNGEON"
       furniture = { "roomFurniture" }
       inhabitants = {
 	    leader = {{ "RAT_GENERAL" }}
         fighters = {
-          count = {32 45}
+          count = {15 20}
           all = {
 		    5 "RAT_SOLDIER"
 		    1 "RAT_GENERAL"
@@ -2862,64 +2862,11 @@
           }
         }
         civilians = {
-          count = {14 18}
+          count = {5 10}
           all = {
 			3 "RAT_MAN"
 			4 "RAT_LADY"
             1 "RAT"
-          }
-        }
-      }
-    }
-  }
-  "RATMEN_DUNGEON2"
-  {
-    settlement = {
-      type = MINETOWN
-      tribe = MONSTER
-      buildingId = "DUNGEON"
-      furniture = { "roomFurniture" }
-      inhabitants = {
-	    leader = {{ "RAT_GENERAL" }}
-        fighters = {
-          count = {42 55}
-          all = {
-		    5 "RAT_SOLDIER"
-		    1 "RAT_GENERAL"
-		    3 "RAT_ARCHER"
-          }
-        }
-        civilians = {
-          count = {24 28}
-          all = {
-			23 "RAT_MAN"
-			24 "RAT_LADY"
-            21 "RAT"
-			1  "BLACK_RAT"
-          }
-        }
-      }
-    }
-  }
-  "RATMEN_DUNGEON3"
-  {
-    settlement = {
-      type = MINETOWN
-      tribe = MONSTER
-      buildingId = "DUNGEON"
-      furniture = { "roomFurniture" }
-      inhabitants = {
-	    leader = {{ "RAT_GENERAL" }}
-        fighters = {
-          count = {82 105}
-          all = {
-		    35 "RAT_SOLDIER"
-		    31 "RAT_GENERAL"
-		    33 "RAT_ARCHER"
-			21 "RAT_MAN"
-			24 "RAT_LADY"
-            12 "RAT"
-			1  "BLACK_RAT"
           }
         }
       }
