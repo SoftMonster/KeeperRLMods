@@ -1896,7 +1896,7 @@
       tribe = MONSTER
       buildingId = "DUNGEON"
       race = "cow demons"
-      locationName = "Front Line Defenses"
+      locationName = "Dungeon Level Defenses"
       furniture = { "roomFurniture" }
       inhabitants = {
 	    leader = {{ "COW_DEMON" }}
