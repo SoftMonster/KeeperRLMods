@@ -95,8 +95,7 @@
     {{Ring FAST_TRAINING}                  10       GOLD 40}
     {{Ring SPELL_DAMAGE}                   10       GOLD 40}
 #   {{Ring SPYING}                         10       GOLD 40} #Modded - far too easy to loot dungeons!
-    {{Simple "SpyingRing"}          	   10		GOLD 100}
-    {{Simple "InvisibilityRing" }		   10		GOLD 100}
+    {{Simple "SpyingCrystal"}          	   10		GOLD 50} #Modded replacement
     {{Amulet NIGHT_VISION}                 10       GOLD 20}
     {{Amulet ELF_VISION}                   10       GOLD 20}
     {{Amulet WARNING}                      10       GOLD 30}
@@ -172,6 +171,7 @@
 # Lab
 {
     {{Potion RegrowBodyPart}  10       GOLD 100  "regrow limbs"}
+    {{Simple "SpyingCrystal"} 10	   GOLD 50}
 }
 
 # Jeweller
@@ -197,6 +197,7 @@
     {{Potion Lasting BLIND}                2        GOLD 2       "alchemy"}
     {{Potion Lasting SLOWED}               2        GOLD 2       "alchemy"}
     {{Potion Lasting SLEEP}                2        GOLD 2       "alchemy"}
+    {{Simple "SpyingCrystal"}             10	    GOLD 50      "alchemy"}
     {{Potion Lasting MELEE_VULNERABILITY}  4        GOLD 4       "elite alchemy"}
     {{Potion Lasting MAGIC_VULNERABILITY}  4        GOLD 4       "elite alchemy"}
     {{Potion Lasting RANGED_VULNERABILITY} 4        GOLD 4       "elite alchemy"}
@@ -295,13 +296,14 @@
     {{Amulet NIGHT_VISION}                 10       GOLD 20}
     {{Amulet ELF_VISION}                   10       GOLD 20}
     {{Amulet WARNING}                      10       GOLD 30}
-    {{Simple "DefenseAmulet"}                       10       GOLD 40}
+    {{Simple "DefenseAmulet"}              10       GOLD 40}
+    {{Simple "SpyingCrystal"}             10	    GOLD 50}
     {{Amulet REGENERATION}                 10       GOLD 60}
     {{Amulet RANGED_RESISTANCE}            20       GOLD 100    "gnomish jewellery"}
     {{Amulet TELEPATHY}                    20       GOLD 100    "gnomish jewellery"}
     {{Ring MELEE_RESISTANCE}               20       GOLD 100    "gnomish jewellery"}
     {{Ring FLYING}                         20       GOLD 100    "gnomish jewellery"}
-    {{Simple "GoldenStaff"}                         20       GOLD 200    "gnomish jewellery"}
+    {{Simple "GoldenStaff"}                20       GOLD 200    "gnomish jewellery"}
 }
 
 "dwarven"
@@ -386,10 +388,12 @@
     {{Amulet NIGHT_VISION}                 10       GOLD 20}
     {{Amulet ELF_VISION}                   10       GOLD 20}
     {{Amulet WARNING}                      10       GOLD 30}
-    {{Simple "DefenseAmulet"}                       10       GOLD 40}
+    {{Simple "DefenseAmulet"}              10       GOLD 40}
+    {{Simple "SpyingCrystal"}              10	    GOLD 50}
     {{Amulet REGENERATION}                 10       GOLD 60}
     {{Ring RAGE}						   100      GOLD 10		"master jewellery"}
     {{Ring DAM_BONUS}					   10		GOLD 100	"master jewellery"}
+    {{Simple "InvisibilityRing" }		   10		GOLD 300	"master jewellery"}
     {{Ring MELEE_RESISTANCE}			   10		GOLD 500	"master jewellery"}
 }
 
@@ -480,11 +484,11 @@
     {{Potion Lasting MELEE_VULNERABILITY}  1        GOLD 1      "advanced alchemy"}
     {{Potion Lasting MAGIC_VULNERABILITY}  1        GOLD 1      "advanced alchemy"}
     {{Potion Lasting INVISIBLE}            1        GOLD 1      "advanced alchemy"}
-    {{Simple "GoldPiece"}                           1        IRON 1      "alchemical conversion"       1000}
-    {{Simple "WoodPlank"}                           1        GOLD 1      "alchemical conversion"       1000}
-    {{Simple "IronOre"}                             1        GOLD 1      "alchemical conversion"       1000}
-    {{Simple "AdaOre"}                              1        GOLD 1      "alchemical conversion"       1000}
-    {{Simple "Rock"}                                1        GOLD 1      "alchemical conversion"       1000}
+    {{Simple "GoldPiece"}                  1        IRON 1      "alchemical conversion"       1000}
+    {{Simple "WoodPlank"}                  1        GOLD 1      "alchemical conversion"       1000}
+    {{Simple "IronOre"}                    1        GOLD 1      "alchemical conversion"       1000}
+    {{Simple "AdaOre"}                     1        GOLD 1      "alchemical conversion"       1000}
+    {{Simple "Rock"}                       1        GOLD 1      "alchemical conversion"       1000}
 }
 
 # Jeweller
@@ -499,7 +503,8 @@
     {{Amulet NIGHT_VISION}                 1       GOLD 1}
     {{Amulet ELF_VISION}                   1       GOLD 1}
     {{Amulet WARNING}                      1       GOLD 1}
-    {{Simple "DefenseAmulet"}                       1       GOLD 1}
+    {{Simple "DefenseAmulet"}              1       GOLD 1}
+    {{Simple "SpyingCrystal"}              1	   GOLD 1}
     {{Amulet REGENERATION}                 1       GOLD 1}
 }
 
@@ -633,8 +638,7 @@
     {{Ring FAST_TRAINING}									10			GOLD 30}
     {{Ring SPELL_DAMAGE}									10			GOLD 30}
 #   {{Ring SPYING}											10			GOLD 40} #Modded - Far too easy to loot dungeons!
-    {{Simple "SpyingRing"}          	   					10			GOLD 100}
-    {{Simple "InvisibilityRing" }		   					10			GOLD 100}
+    {{Simple "SpyingCrystal"}          	   					10			GOLD 50} #Modded replacement
     {{Amulet NIGHT_VISION}									10			GOLD 10}
     {{Amulet ELF_VISION}									10			GOLD 10}
     {{Amulet WARNING}										10	        GOLD 20}

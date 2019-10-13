@@ -1072,15 +1072,16 @@
       price = 100
 	  equipedAbility = "invisibility"
     }
-  "SpyingRing"
+  "SpyingCrystal"
     {
-      viewId = { "ring_green" }
-      name = "spying ring"
-      itemClass = ARMOR
-      equipmentSlot = RINGS
-      weight = 2
+      viewId = { "crystal1" }
+      name = "spying crystal"
+	  weight = 1
+      itemClass = TOOL
+      applyTime = 1
+      uses = 1
       price = 100
-	  equipedAbility = "spying"
+      effect = Lasting SPYING
     }
 
 ########################
