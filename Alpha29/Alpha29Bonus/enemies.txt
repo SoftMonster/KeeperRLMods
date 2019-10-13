@@ -1870,6 +1870,9 @@
       ransom = 0.5 80
     }
   }
+########
+# Modded
+########
   "COW_DEMONS_ENTRY"
   {
     settlement = {
@@ -2197,9 +2200,6 @@
       }
     }
   }
-########
-# Modded
-########
   "FAIRIES"
   {
     settlement = {
