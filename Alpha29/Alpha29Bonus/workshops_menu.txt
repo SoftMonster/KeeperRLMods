@@ -94,7 +94,7 @@
     {{Ring FAST_CRAFTING}                  10       GOLD 40}
     {{Ring FAST_TRAINING}                  10       GOLD 40}
     {{Ring SPELL_DAMAGE}                   10       GOLD 40}
-    {{Ring SPYING}                         10       GOLD 40}
+#   {{Ring SPYING}                         10       GOLD 40} #Modded - far too easy to loot dungeons!
     {{Amulet NIGHT_VISION}                 10       GOLD 20}
     {{Amulet ELF_VISION}                   10       GOLD 20}
     {{Amulet WARNING}                      10       GOLD 30}
@@ -630,7 +630,7 @@
     {{Ring FAST_CRAFTING}									10			GOLD 30}
     {{Ring FAST_TRAINING}									10			GOLD 30}
     {{Ring SPELL_DAMAGE}									10			GOLD 30}
-    {{Ring SPYING}											10			GOLD 40}
+#   {{Ring SPYING}											10			GOLD 40} #Modded - Far too easy to loot dungeons!
     {{Amulet NIGHT_VISION}									10			GOLD 10}
     {{Amulet ELF_VISION}									10			GOLD 10}
     {{Amulet WARNING}										10	        GOLD 20}
