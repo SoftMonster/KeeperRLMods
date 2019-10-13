@@ -4724,20 +4724,9 @@
         DEFENSE 1  
       }
       body = {
-        type = Humanoid SMALL
+        type = Bird SMALL
         material = SPIRIT
         weight = 3
-        addBodyPart = {
-          WING 2
-        }
-        intrinsicAttacks = {
-          ARM { Intrinsic { "fist_attack" } "fists" 1 {
-              attackType = HIT
-              attackMsg = SWING } }
-        }
-      }
-      maxLevelIncrease = {
-        SPELL 2
       }
       spells = {
         "invisibility"
