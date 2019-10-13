@@ -1033,7 +1033,6 @@
       equipedEffect = { RAGE }
 	  equipedAbility = "fire shield"
     }
-
   "InvisibilityRobe"
     {
       viewId = { "robe" }
@@ -1062,6 +1061,26 @@
         RANGED_DAMAGE 20
       }
       price = 60
+    }
+  "InvisibilityRing"
+    {
+      viewId = { "ring_green" }
+      name = "invisibility ring"
+      itemClass = ARMOR
+      equipmentSlot = RINGS
+      weight = 2
+      price = 100
+	  equipedAbility = "invisibility"
+    }
+  "SpyingRing"
+    {
+      viewId = { "ring_green" }
+      name = "spying ring"
+      itemClass = ARMOR
+      equipmentSlot = RINGS
+      weight = 2
+      price = 100
+	  equipedAbility = "spying"
     }
 
 ########################

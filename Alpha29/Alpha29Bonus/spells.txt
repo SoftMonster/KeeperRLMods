@@ -1130,6 +1130,13 @@
    cooldown = 200
    sound = SPELL_SUMMON_SPIRIT
   }
+  {
+    id =  "spying"
+    symbol = "🕵️"
+    effect = Lasting SPYING
+    cooldown = 3000
+    sound = SPELL_INVISIBILITY
+  }
 
 #########################
 #Ideas for future spells#
