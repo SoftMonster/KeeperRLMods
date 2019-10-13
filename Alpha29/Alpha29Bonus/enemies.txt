@@ -1875,7 +1875,7 @@
     settlement = {
       type = SMALL_MINETOWN
       tribe = MONSTER
-      race = "cow demons"
+      race = "fat cow"
       buildingId = "DUNGEON"
       outsideFeatures = "prisonerHeads"
       inhabitants = {
@@ -1895,6 +1895,8 @@
       type = MINETOWN
       tribe = MONSTER
       buildingId = "DUNGEON"
+      race = "cow demons"
+      locationName = "Front Line Defenses"
       furniture = { "roomFurniture" }
       inhabitants = {
 	    leader = {{ "COW_DEMON" }}
@@ -1920,6 +1922,8 @@
     settlement = {
       type = MINETOWN
       tribe = MONSTER
+      race = "cow demons"
+      locationName = "Rear Guard"
       buildingId = "DUNGEON"
       furniture = { "roomFurniture" }
       inhabitants = {
@@ -1947,7 +1951,8 @@
     settlement = {
       type = MINETOWN
       tribe = MONSTER
-	  race = "cow demons"
+      race = "cow demons"
+      locationName = "Last Stand"
       buildingId = "DUNGEON"
       inhabitants = {
 	    leader = {{ "ARMORED_COW_DEMON" }}
