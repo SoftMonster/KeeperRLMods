@@ -2205,9 +2205,8 @@
     settlement = {
       type = FOREST
       inhabitants = {
-        leader = { { "FAIRY_QUEEN" } }
         fighters = {
-          count = {22 30}
+          count = {5 10}
           all = {
             1 "AIR_FAIRY"
             1 "DARK_FAIRY"
