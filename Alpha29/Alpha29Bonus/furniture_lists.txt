@@ -198,4 +198,30 @@
       "CHEST" 5
     }
   }
+  "bottomlessdungeon"
+  {
+    {
+      "BED1" 1
+      "BED2" 1
+      "BED3" 1
+      "LOOT_COFFIN" 1
+      "VAMPIRE_COFFIN" 1
+      "GROUND_TORCH" 1
+      "CHEST" 1
+      "FOUNTAIN" 1
+      "WELL" 1
+      "STONES" 1
+	  "GRAVE" 1
+      "ALTAR" 1
+	  "TREASURE_CHEST" 1
+	  "TORTURE_TABLE" 1
+      "IMPALED_HEAD" 1
+      "GALLOWS" 1
+      "BEAST_CAGE" 1
+      "WHIPPING_POST" 1
+      "DWARVEN_REGENERATOR" 1
+      "ELVEN_RUG" 1
+      "GIANT_MUSHROOM" 1
+	}
+  }
 }

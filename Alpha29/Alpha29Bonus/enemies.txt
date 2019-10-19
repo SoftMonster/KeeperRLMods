@@ -2958,107 +2958,106 @@
     levelConnection = {
       topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY"}
       levels = {
-        { ExtraEnemy { "DUNGEON1" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON2" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON3" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON3" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON4" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON5" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON6" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON7" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON8" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON9" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON10" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON11" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON12" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON13" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON14" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON15" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON16" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON17" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON18" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON19" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON20" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON21" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON22" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON23" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON24" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON25" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON26" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON27" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON28" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON29" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON30" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON31" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON32" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON33" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON34" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON35" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON36" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON37" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON38" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON39" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON40" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON41" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON42" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON43" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON44" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON45" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON46" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON47" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON48" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON49" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON50" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON51" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON52" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON53" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON54" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON55" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON56" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON57" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON58" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON59" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON60" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON61" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON62" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON63" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON64" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON65" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON66" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON67" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON68" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON69" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON70" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON71" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON72" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON73" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON74" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON75" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON76" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON77" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON78" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON79" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON80" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON81" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON82" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON83" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON84" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON85" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON86" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON87" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON88" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON89" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON90" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON91" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON92" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON93" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON94" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON95" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON96" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON97" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON98" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON99" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DUNGEON100" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS1" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS2" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS3" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS4" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS5" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS6" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS7" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS8" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS9" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS10" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS11" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS12" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS13" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS14" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS15" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS16" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS17" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS18" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS19" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS20" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS21" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS22" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS23" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS24" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS25" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS26" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS27" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS28" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS29" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS30" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS31" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS32" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS33" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS34" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS35" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS36" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS37" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS38" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS39" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS40" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS41" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS42" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS43" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS44" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS45" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS46" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS47" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS48" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS49" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS50" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS51" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS52" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS53" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS54" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS55" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS56" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS57" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS58" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS59" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS60" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS61" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS62" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS63" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS64" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS65" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS66" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS67" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS68" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS69" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS70" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS71" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS72" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS73" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS74" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS75" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS76" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS77" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS78" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS79" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS80" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS81" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS82" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS83" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS84" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS85" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS86" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS87" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS88" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS89" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS90" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS91" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS92" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS93" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS94" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS95" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS96" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS97" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS98" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS99" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS100" { 1 2 } } 60 40 DUNGEON }
         { MainEnemy 60 40 MINETOWN }
       }
     }
@@ -3084,16 +3083,16 @@
 #Increasing difficulty of dungeons above depth 3
 ####################################################################
 
-  "BOTTOMLESS_DUNGEON1"
+  "BOTTOMLESS_TYPE_1"
   {
     settlement = {
       type = MINETOWN
       tribe = MONSTER
       locationName = "dungeon level"
       race = "dwellers"
-      buildingId = "BRICK"
-      furniture = { "roomFurniture" }
-      inhabitants = {
+	  buildingId = "MUD"
+      furniture = { "bottomlessdungeon" }
+	  inhabitants = {
         leader = {{
            "RAT_KING_DUNGEON"
            "THIEF_LEADER_DUNGEON"
@@ -3102,7 +3101,7 @@
 		   "BANDIT_LEADER_DUNGEON"
         }}
         fighters = {
-          count = {10 15}
+          count = {7 11}
           all = {
 			1 "BANDIT_DUNGEON"
 			1 "RAT_SOLDIER_DUNGEON"
@@ -3133,13 +3132,39 @@
 			1 "DWARF_MILITIA_DUNGEON"
 			1 "DWARF_WORKER_DUNGEON"
           }
+		}
+        civilians = {
+          count = {3 6}
+          all = {
+			1 "ANT_WORKER"
+			1 "BAT"
+			1 "BOAR"
+			1 "CAMEL"
+			1 "CAVE_BEAR"
+			1 "CHICKEN"
+			1 "CLAY_GOLEM"
+			1 "COW"
+			1 "DEER"
+			1 "DOG"
+			1 "DONKEY"
+			1 "FLY"
+			1 "FOX"
+			1 "GHOST"
+			1 "GOAT"
+			1 "HORSE"
+			1 "IMP"
+			1 "JACKAL"
+			1 "PIG"
+			1 "RAT"
+          }
         }
       }
     }
   }
-  "BOTTOMLESS_DUNGEON2" inherit "BOTTOMLESS_DUNGEON1"
+  "BOTTOMLESS_TYPE_2" inherit "BOTTOMLESS_TYPE_1"
   {
     settlement = append {
+	  buildingId = "MUD"
       inhabitants = append {
         leader = {{
            "SOFT_MONSTER_DUNGEON"
@@ -3211,14 +3236,30 @@
 			1 "DWARF_FIGHTER_DUNGEON"
 			1 "DWARF_WARRIOR_DUNGEON"
 	        1 "ELITE_DWARF_WARRIOR_DUNGEON"
-          }
+	        1 "ANT_SOLDIER"
+	        1 "AIR_ELEMENTAL"
+	        1 "EARTH_ELEMENTAL"
+	        1 "ENT"
+	        1 "FIRE_ELEMENTAL"
+	        1 "FIRE_SPHERE"
+	        1 "EYE_SERVANT"
+	        1 "IRON_GOLEM"
+	        1 "HEALING_TOTEM"
+	        1 "LAVA_GOLEM"
+	        1 "LOST_SOUL"
+	        1 "STONE_GOLEM"
+	        1 "SNAKE"
+	        1 "SPIDER"
+		  }
         }
+        civilians = {count = { 0 1} all = {} }
       }
     }
   }
-  "BOTTOMLESS_DUNGEON3" inherit "BOTTOMLESS_DUNGEON2"
+  "BOTTOMLESS_TYPE_3" inherit "BOTTOMLESS_TYPE_2"
   {
     settlement = append {
+      buildingId = "MUD"
       furniture = append { "bleedingTotem" }
       inhabitants = append {
         leader = {{
@@ -3275,126 +3316,132 @@
 			1 "GOBLIN_PRIEST_DUNGEON"
 			1 "GOBLIN_WIZARD_DUNGEON"
 			1 "SKELETON_MAGE_DUNGEON"
+			1 "ANT_QUEEN"
+			1 "AUTOMATON"
+			1 "GREEN_DRAGON"
+			1 "RED_DRAGON"
+			1 "HYDRA"
           }
         }
       }
     }
   }
 
-  "DUNGEON4" inherit "BOTTOMLESS_DUNGEON1" { settlement = append {
-    buildingId = "WOOD_CASTLE"
-	inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 1 } } } } }
-  "DUNGEON5" inherit "DUNGEON4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 2 } } } } }
-  "DUNGEON6" inherit "DUNGEON5" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 3 } } } } }
-  "DUNGEON7" inherit "DUNGEON6" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 4 } } } } }
-  "DUNGEON8" inherit "DUNGEON7" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 5 } } } } }
-  "DUNGEON9" inherit "DUNGEON8" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 6 } } } } }
+  "BOTTOMLESS1" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 1 } } } } }
+  "BOTTOMLESS2" inherit "BOTTOMLESS1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 2 } } } } }
+  "BOTTOMLESS3" inherit "BOTTOMLESS2" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 4 } } } } }
+  "BOTTOMLESS4" inherit "BOTTOMLESS3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 6 } } } } }
+  "BOTTOMLESS5" inherit "BOTTOMLESS4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 8 } } } } }
+  "BOTTOMLESS6" inherit "BOTTOMLESS5" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 9 } } } } }
+  "BOTTOMLESS7" inherit "BOTTOMLESS6" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 10 } } } } }
+  "BOTTOMLESS8" inherit "BOTTOMLESS7" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 11 } } } } }
+  "BOTTOMLESS9" inherit "BOTTOMLESS8" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 12 } } } } }
 
-  "DUNGEON10" inherit "BOTTOMLESS_DUNGEON2" { settlement = append {
+  "BOTTOMLESS10" inherit "BOTTOMLESS_TYPE_2" { settlement = append {
      buildingId = "RUINS"
 	 inhabitants = append { fighters = append { count = {8 12} baseLevelIncrease = { MELEE 7 } } } } }
-  "DUNGEON11" inherit "DUNGEON10" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 8 } } } } }
-  "DUNGEON12" inherit "DUNGEON11" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 9 } } } } }
-  "DUNGEON13" inherit "DUNGEON12" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 10 } } } } }
-  "DUNGEON14" inherit "DUNGEON13" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 11 } } } } }
-  "DUNGEON15" inherit "DUNGEON14" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 12 } } } } }
-  "DUNGEON16" inherit "DUNGEON15" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 13 } } } } }
-  "DUNGEON17" inherit "DUNGEON16" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 14 } } } } }
-  "DUNGEON18" inherit "DUNGEON17" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 15 } } } } }
-  "DUNGEON19" inherit "DUNGEON18" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 16 } } } } }
+  "BOTTOMLESS11" inherit "BOTTOMLESS10" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 8 } } } } }
+  "BOTTOMLESS12" inherit "BOTTOMLESS11" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 9 } } } } }
+  "BOTTOMLESS13" inherit "BOTTOMLESS12" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 10 } } } } }
+  "BOTTOMLESS14" inherit "BOTTOMLESS13" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 11 } } } } }
+  "BOTTOMLESS15" inherit "BOTTOMLESS14" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 12 } } } } }
+  "BOTTOMLESS16" inherit "BOTTOMLESS15" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 13 } } } } }
+  "BOTTOMLESS17" inherit "BOTTOMLESS16" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 14 } } } } }
+  "BOTTOMLESS18" inherit "BOTTOMLESS17" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 15 } } } } }
+  "BOTTOMLESS19" inherit "BOTTOMLESS18" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 16 } } } } }
 
-  "DUNGEON20" inherit "BOTTOMLESS_DUNGEON3" { settlement = append  {
+  "BOTTOMLESS20" inherit "BOTTOMLESS_TYPE_3" { settlement = append  {
       buildingId = "TAINTED"
 	  inhabitants = append { fighters = append { count = {8 12} baseLevelIncrease = { MELEE 5 } } } } }
-  "DUNGEON21" inherit "DUNGEON20" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 7 } } } } }
-  "DUNGEON22" inherit "DUNGEON21" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 9 } } } } }
-  "DUNGEON23" inherit "DUNGEON22" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 11 } } } } }
-  "DUNGEON24" inherit "DUNGEON23" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 13 } } } } }
-  "DUNGEON25" inherit "DUNGEON24" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 15 } } } } }
+  "BOTTOMLESS21" inherit "BOTTOMLESS20" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 7 } } } } }
+  "BOTTOMLESS22" inherit "BOTTOMLESS21" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 9 } } } } }
+  "BOTTOMLESS23" inherit "BOTTOMLESS22" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 11 } } } } }
+  "BOTTOMLESS24" inherit "BOTTOMLESS23" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 13 } } } } }
+  "BOTTOMLESS25" inherit "BOTTOMLESS24" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 15 } } } } }
 
-  "DUNGEON26" inherit "BOTTOMLESS_DUNGEON3"  { settlement = append {
+  "BOTTOMLESS26" inherit "BOTTOMLESS_TYPE_3"  { settlement = append {
      buildingId = "SANDSTONE_WALL_DWARVEN"
 	 inhabitants = append { fighters = append { count = {5 10} baseLevelIncrease = { MELEE 23 } } } } }
-  "DUNGEON27" inherit "DUNGEON26" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 18 } } } } }
-  "DUNGEON28" inherit "DUNGEON27" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 23 } } } } }
-  "DUNGEON29" inherit "DUNGEON28" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 26 } } } } }
-  "DUNGEON30" inherit "DUNGEON29" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 27 } } } } }
-  "DUNGEON31" inherit "DUNGEON30" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 28 } } } } }
-  "DUNGEON32" inherit "DUNGEON31" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 29 } } } } }
-  "DUNGEON33" inherit "DUNGEON32" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 30 } } } } }
-  "DUNGEON34" inherit "DUNGEON33" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 31 } } } } }
-  "DUNGEON35" inherit "DUNGEON34" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 32 } } } } }
-  "DUNGEON36" inherit "DUNGEON35" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 33 } } } } }
-  "DUNGEON37" inherit "DUNGEON36" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 34 } } } } }
-  "DUNGEON38" inherit "DUNGEON37" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 35 } } } } }
-  "DUNGEON39" inherit "DUNGEON38" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 36 } } } } }
-  "DUNGEON40" inherit "DUNGEON39" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 37 } } } } }
-  "DUNGEON41" inherit "DUNGEON40" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 38 } } } } }
-  "DUNGEON42" inherit "DUNGEON41" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 39 } } } } }
-  "DUNGEON43" inherit "DUNGEON42" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 40 } } } } }
-  "DUNGEON44" inherit "DUNGEON43" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 41 } } } } }
-  "DUNGEON45" inherit "DUNGEON44" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 42 } } } } }
-  "DUNGEON46" inherit "DUNGEON45" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 43 } } } } }
-  "DUNGEON47" inherit "DUNGEON46" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 44 } } } } }
-  "DUNGEON48" inherit "DUNGEON47" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 45 } } } } }
-  "DUNGEON49" inherit "DUNGEON48" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 46 } } } } }
-  "DUNGEON50" inherit "DUNGEON49" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 47 } } } } }
+  "BOTTOMLESS27" inherit "BOTTOMLESS26" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 18 } } } } }
+  "BOTTOMLESS28" inherit "BOTTOMLESS27" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 23 } } } } }
+  "BOTTOMLESS29" inherit "BOTTOMLESS28" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 26 } } } } }
+  "BOTTOMLESS30" inherit "BOTTOMLESS29" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 27 } } } } }
+  "BOTTOMLESS31" inherit "BOTTOMLESS30" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 28 } } } } }
+  "BOTTOMLESS32" inherit "BOTTOMLESS31" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 29 } } } } }
+  "BOTTOMLESS33" inherit "BOTTOMLESS32" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 30 } } } } }
+  "BOTTOMLESS34" inherit "BOTTOMLESS33" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 31 } } } } }
+  "BOTTOMLESS35" inherit "BOTTOMLESS34" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 32 } } } } }
+  "BOTTOMLESS36" inherit "BOTTOMLESS35" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 33 } } } } }
+  "BOTTOMLESS37" inherit "BOTTOMLESS36" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 34 } } } } }
+  "BOTTOMLESS38" inherit "BOTTOMLESS37" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 35 } } } } }
+  "BOTTOMLESS39" inherit "BOTTOMLESS38" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 36 } } } } }
+  "BOTTOMLESS40" inherit "BOTTOMLESS39" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 37 } } } } }
+  "BOTTOMLESS41" inherit "BOTTOMLESS40" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 38 } } } } }
+  "BOTTOMLESS42" inherit "BOTTOMLESS41" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 39 } } } } }
+  "BOTTOMLESS43" inherit "BOTTOMLESS42" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 40 } } } } }
+  "BOTTOMLESS44" inherit "BOTTOMLESS43" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 41 } } } } }
+  "BOTTOMLESS45" inherit "BOTTOMLESS44" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 42 } } } } }
+  "BOTTOMLESS46" inherit "BOTTOMLESS45" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 43 } } } } }
+  "BOTTOMLESS47" inherit "BOTTOMLESS46" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 44 } } } } }
+  "BOTTOMLESS48" inherit "BOTTOMLESS47" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 45 } } } } }
+  "BOTTOMLESS49" inherit "BOTTOMLESS48" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 46 } } } } }
+  "BOTTOMLESS50" inherit "BOTTOMLESS49" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 47 } } } } }
 
-  "DUNGEON51" inherit "DUNGEON50" { settlement = append {
+  "BOTTOMLESS51" inherit "BOTTOMLESS50" { settlement = append {
       buildingId = "MINOTAUR"
 	  inhabitants = append { fighters = append { count = {3 7} baseLevelIncrease = { MELEE 48 } } } } }
-  "DUNGEON52" inherit "DUNGEON51" { settlement = append  { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 49 } } } } }
-  "DUNGEON53" inherit "DUNGEON52" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 50 } } } } }
-  "DUNGEON54" inherit "DUNGEON53" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 51 } } } } }
-  "DUNGEON55" inherit "DUNGEON54" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 52 } } } } }
-  "DUNGEON56" inherit "DUNGEON55" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 53 } } } } }
-  "DUNGEON57" inherit "DUNGEON56" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 54 } } } } }
-  "DUNGEON58" inherit "DUNGEON57" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 55 } } } } }
-  "DUNGEON59" inherit "DUNGEON58" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 56 } } } } }
-  "DUNGEON60" inherit "DUNGEON59" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 57 } } } } }
-  "DUNGEON61" inherit "DUNGEON60" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 58 } } } } }
-  "DUNGEON62" inherit "DUNGEON61" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 59 } } } } }
-  "DUNGEON63" inherit "DUNGEON62" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 60 } } } } }
-  "DUNGEON64" inherit "DUNGEON63" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 61 } } } } }
-  "DUNGEON65" inherit "DUNGEON64" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 62 } } } } }
-  "DUNGEON66" inherit "DUNGEON65" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 63 } } } } }
-  "DUNGEON67" inherit "DUNGEON66" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 64 } } } } }
-  "DUNGEON68" inherit "DUNGEON67" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 65 } } } } }
-  "DUNGEON69" inherit "DUNGEON68" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 66 } } } } }
-  "DUNGEON70" inherit "DUNGEON69" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 67 } } } } }
-  "DUNGEON71" inherit "DUNGEON70" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 68 } } } } }
-  "DUNGEON72" inherit "DUNGEON71" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 69 } } } } }
-  "DUNGEON73" inherit "DUNGEON72" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 70 } } } } }
-  "DUNGEON74" inherit "DUNGEON73" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 71 } } } } }
-  "DUNGEON75" inherit "DUNGEON74" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 72 } } } } }
+  "BOTTOMLESS52" inherit "BOTTOMLESS51" { settlement = append  { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 49 } } } } }
+  "BOTTOMLESS53" inherit "BOTTOMLESS52" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 50 } } } } }
+  "BOTTOMLESS54" inherit "BOTTOMLESS53" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 51 } } } } }
+  "BOTTOMLESS55" inherit "BOTTOMLESS54" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 52 } } } } }
+  "BOTTOMLESS56" inherit "BOTTOMLESS55" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 53 } } } } }
+  "BOTTOMLESS57" inherit "BOTTOMLESS56" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 54 } } } } }
+  "BOTTOMLESS58" inherit "BOTTOMLESS57" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 55 } } } } }
+  "BOTTOMLESS59" inherit "BOTTOMLESS58" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 56 } } } } }
+  "BOTTOMLESS60" inherit "BOTTOMLESS59" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 57 } } } } }
+  "BOTTOMLESS61" inherit "BOTTOMLESS60" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 58 } } } } }
+  "BOTTOMLESS62" inherit "BOTTOMLESS61" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 59 } } } } }
+  "BOTTOMLESS63" inherit "BOTTOMLESS62" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 60 } } } } }
+  "BOTTOMLESS64" inherit "BOTTOMLESS63" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 61 } } } } }
+  "BOTTOMLESS65" inherit "BOTTOMLESS64" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 62 } } } } }
+  "BOTTOMLESS66" inherit "BOTTOMLESS65" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 63 } } } } }
+  "BOTTOMLESS67" inherit "BOTTOMLESS66" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 64 } } } } }
+  "BOTTOMLESS68" inherit "BOTTOMLESS67" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 65 } } } } }
+  "BOTTOMLESS69" inherit "BOTTOMLESS68" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 66 } } } } }
+  "BOTTOMLESS70" inherit "BOTTOMLESS69" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 67 } } } } }
+  "BOTTOMLESS71" inherit "BOTTOMLESS70" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 68 } } } } }
+  "BOTTOMLESS72" inherit "BOTTOMLESS71" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 69 } } } } }
+  "BOTTOMLESS73" inherit "BOTTOMLESS72" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 70 } } } } }
+  "BOTTOMLESS74" inherit "BOTTOMLESS73" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 71 } } } } }
+  "BOTTOMLESS75" inherit "BOTTOMLESS74" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 72 } } } } }
 
-  "DUNGEON76" inherit "DUNGEON75" { settlement = append {
+  "BOTTOMLESS76" inherit "BOTTOMLESS75" { settlement = append {
       buildingId = "BRICK"
 	  inhabitants = append { fighters = append { count = {3 7} baseLevelIncrease = { MELEE 48 } } } } }
-  "DUNGEON77" inherit "DUNGEON76" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 74 } } } } }
-  "DUNGEON78" inherit "DUNGEON77" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 75 } } } } }
-  "DUNGEON79" inherit "DUNGEON78" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 76 } } } } }
-  "DUNGEON80" inherit "DUNGEON79" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 77 } } } } }
-  "DUNGEON81" inherit "DUNGEON80" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 78 } } } } }
-  "DUNGEON82" inherit "DUNGEON81" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 79 } } } } }
-  "DUNGEON83" inherit "DUNGEON82" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 80 } } } } }
-  "DUNGEON84" inherit "DUNGEON83" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 81 } } } } }
-  "DUNGEON85" inherit "DUNGEON84" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 82 } } } } }
-  "DUNGEON86" inherit "DUNGEON85" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 83 } } } } }
-  "DUNGEON87" inherit "DUNGEON86" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 84 } } } } }
-  "DUNGEON88" inherit "DUNGEON87" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 85 } } } } }
-  "DUNGEON89" inherit "DUNGEON88" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 86 } } } } }
-  "DUNGEON90" inherit "DUNGEON89" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 87 } } } } }
-  "DUNGEON91" inherit "DUNGEON90" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 88 } } } } }
-  "DUNGEON92" inherit "DUNGEON91" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 89 } } } } }
-  "DUNGEON93" inherit "DUNGEON92" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 90 } } } } }
-  "DUNGEON94" inherit "DUNGEON93" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 91 } } } } }
-  "DUNGEON95" inherit "DUNGEON94" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 92 } } } } }
-  "DUNGEON96" inherit "DUNGEON95" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 93 } } } } }
-  "DUNGEON97" inherit "DUNGEON96" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 94 } } } } }
-  "DUNGEON98" inherit "DUNGEON97" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 95 } } } } }
-  "DUNGEON99" inherit "DUNGEON98" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 96 } } } } }
-  "DUNGEON100" inherit "DUNGEON99" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 97 } } } } }
+  "BOTTOMLESS77" inherit "BOTTOMLESS76" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 74 } } } } }
+  "BOTTOMLESS78" inherit "BOTTOMLESS77" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 75 } } } } }
+  "BOTTOMLESS79" inherit "BOTTOMLESS78" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 76 } } } } }
+  "BOTTOMLESS80" inherit "BOTTOMLESS79" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 77 } } } } }
+  "BOTTOMLESS81" inherit "BOTTOMLESS80" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 78 } } } } }
+  "BOTTOMLESS82" inherit "BOTTOMLESS81" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 79 } } } } }
+  "BOTTOMLESS83" inherit "BOTTOMLESS82" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 80 } } } } }
+  "BOTTOMLESS84" inherit "BOTTOMLESS83" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 81 } } } } }
+  "BOTTOMLESS85" inherit "BOTTOMLESS84" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 82 } } } } }
+  "BOTTOMLESS86" inherit "BOTTOMLESS85" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 83 } } } } }
+  "BOTTOMLESS87" inherit "BOTTOMLESS86" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 84 } } } } }
+  "BOTTOMLESS88" inherit "BOTTOMLESS87" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 85 } } } } }
+  "BOTTOMLESS89" inherit "BOTTOMLESS88" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 86 } } } } }
+  "BOTTOMLESS90" inherit "BOTTOMLESS89" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 87 } } } } }
+  "BOTTOMLESS91" inherit "BOTTOMLESS90" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 88 } } } } }
+  "BOTTOMLESS92" inherit "BOTTOMLESS91" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 89 } } } } }
+  "BOTTOMLESS93" inherit "BOTTOMLESS92" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 90 } } } } }
+  "BOTTOMLESS94" inherit "BOTTOMLESS93" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 91 } } } } }
+  "BOTTOMLESS95" inherit "BOTTOMLESS94" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 92 } } } } }
+  "BOTTOMLESS96" inherit "BOTTOMLESS95" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 93 } } } } }
+  "BOTTOMLESS97" inherit "BOTTOMLESS96" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 94 } } } } }
+  "BOTTOMLESS98" inherit "BOTTOMLESS97" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 95 } } } } }
+  "BOTTOMLESS99" inherit "BOTTOMLESS98" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 96 } } } } }
+  "BOTTOMLESS100" inherit "BOTTOMLESS99" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 97 } } } } }
 ####################################################################
 
 ###########################

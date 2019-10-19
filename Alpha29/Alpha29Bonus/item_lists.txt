@@ -274,11 +274,23 @@
     prefixChance = 0.3
   }
 
-  "dungeon" inherit "randomPrize"
+  "dungeon"
   {
-    items = append {
-      {{ Ring POISON_RESISTANT } 50 }
-      {{ Potion Lasting POISON_RESISTANT } 200 }
+    items = {
+      {{ Simple "WoodPlank"} 10 {4 9}}
+      {{ Simple "IronOre"} 10 {4 9 }}
+	  {{ Simple "Rock" } 10 {4 9 }}
+      {{ Simple "Club" } 10 }
+      {{ Simple "Knife" } 10 }
+      {{ Simple "Spear" } 10 }
+      {{ Simple "Sword" } 10 }
+      {{ Simple "Torch" } 10 }
+      {{ Mushroom Lasting HALLU} 10}
+      {{ Simple "Skeleton"} 10}
+      {{ Simple "LeatherArmor" } 10 }
+      {{ Simple "LeatherBoots" } 10 }
+      {{ Simple "LeatherGloves" } 10 }
+      {{ Simple "LeatherHelm" } 10 }
     }
   }
 
