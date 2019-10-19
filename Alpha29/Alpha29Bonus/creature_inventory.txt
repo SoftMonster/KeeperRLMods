@@ -635,4 +635,263 @@
       {
         { countMin = 30 countMax = 50 type = Simple "GoldPiece" chance = 1.0}
       }
+  
+  #Dungeon wimps
+  {
+	"BANDIT_DUNGEON"
+	"RAT_SOLDIER_DUNGEON"
+	"RAT_LADY_DUNGEON"
+	"PESEANT_DUNGEON"
+	"NOMAD_DUNGEON"
+	"CHILD_DUNGEON"
+	"ESKIMO_CHILD_DUNGEON"
+	"NOMAD_CHILD_DUNGEON"
+	"JESTER_DUNGEON"
+	"THIEF_DUNGEON"
+	"ZOMBIE_DUNGEON"
+	"MUMMY_DUNGEON"
+	"ORC_DUNGEON"
+	"KOBOLD_DUNGEON"
+	"GOBLIN_DUNGEON"
+	"ELF_DUNGEON"
+	"ELF_CHILD_DUNGEON"
+	"DARK_ELF_DUNGEON"
+	"DARK_ELF_CHILD_DUNGEON"
+	"CENTAUR_FARMER_DUNGEON"
+	"CENTAUR_CHILD_DUNGEON"
+	"RAT_MAN_DUNGEON"
+	"HOBGOBLIN_DUNGEON"
+	"DARK_GOBLIN_DUNGEON"
+	"DARK_HOBGOBLIN_DUNGEON"
+	"MILITIA_DUNGEON"
+	"DWARF_MILITIA_DUNGEON"
+	"DWARF_WORKER_DUNGEON"
+  }
+  {
+    { type = Simple "Sword", alternative = Simple "Club" prefixChance = 0.1 }
+    { type = Simple "WoodenShield" chance = 0.1 }
+	{ type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.1 chance = 0.5}
+	{ type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.1 chance = 0.5}
+	{ type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.1 chance = 0.5}
+	{ Simple "FirstAidKit" 1 2 0.1}
+	{ Potion Heal FLESH 1 4}
+	{ Simple "Torch" 1 2 0.1 }
+	{ Simple "Rock" 3 10 0.1 }
+  }
+  #Dungeon warriors
+  {
+	"ADVENTURER_DUNGEON"
+	"WITCHMAN_DUNGEON"
+	"DEMON_DWELLER_DUNGEON"
+	"KNIGHT_DUNGEON"
+	"WARRIOR_DUNGEON"
+	"OGRE_DUNGEON"
+	"DWARF_DUNGEON"
+	"DWARF_FEMALE_DUNGEON"
+	"LIZARDMAN_DUNGEON"
+	"DARK_ELF_WARRIOR_DUNGEON"
+	"WEREWOLF_DUNGEON"
+	"ABOMINATION_DUNGEON"
+	"CENTAUR_KNIGHT_DUNGEON"
+	"AMAZON_DUNGEON"
+	"AMAZON_CHAMPION_DUNGEON"
+	"AMAZON_WAR_MAIDEN_DUNGEON"
+	"RED_DRAGONNEWT_DUNGEON"
+	"GREEN_DRAGONEWT_DUNGEON"
+	"HELL_KNIGHT_DUNGEON"
+	"HELL_KNIGHT_BRUTE_DUNGEON"
+	"HELL_KNIGHT_SWORDMASTER_DUNGEON"
+	"RAT_GENERAL_DUNGEON"
+	"ARACHNE_DUNGEON"
+	"COW_DEMON_DUNGEON"
+	"ARMORED_COW_DEMON_DUNGEON"
+	"BANSHEE_DUNGEON"
+	"GIANT_DUNGEON"
+	"MUSHROOM_MAN_DUNGEON"
+	"OGRE_FEMALE_DUNGEON"
+	"SHARD_SPITTER_DUNGEON"
+	"SQUIDHOLDER_DUNGEON"
+	"WARRIOR_HERO_DUNGEON"
+	"THIEF_HERO_DUNGEON"
+	"DARK_ORC_DUNGEON"
+	"DARK_ORC_FEMALE_DUNGEON"
+	"DARK_OGRE_DUNGEON"
+	"DARK_OGRE_FEMALE_DUNGEON"
+	"ELITE_GOBLIN_GUARD_DUNGEON"
+	"GOBLIN_BRUTE_DUNGEON"
+	"GOBLIN_KABOOMER_DUNGEON"
+	"GOBLIN_MATRON_DUNGEON"
+	"GOBLIN_WARRIOR_DUNGEON"
+	"COMBAT_SUCCUBUS_DUNGEON"
+	"SKELETON_WARRIOR_DUNGEON"
+	"DWARF_FIGHTER_DUNGEON"
+	"DWARF_WARRIOR_DUNGEON"
+	"ELITE_DWARF_WARRIOR_DUNGEON"
+  }
+  {
+	  { type = Simple "HeavyClub", alternative = Simple "WarHammer" chance = 0.5 }
+	  { type = Simple "BattleAxe", alternative = Simple "ElvenSword"  chance = 0.5}	  
+	  { type = Simple "ChainArmor", alternative = Simple "LeatherArmor" prefixChance = 0.1 }
+      { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.1 }
+	  { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.1 }
+	  { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.1 }
+	  { Simple "FirstAidKit" 1 2 0.1}
+	  { Potion Heal FLESH 1 4}
+	  { Simple "Torch" 1 2 0.1 }
+	  { Simple "Rock" 3 10 0.1 }
+	  { Simple "AutomatonItem" 1 2 0.01}
+	  { Simple "DefenseAmulet" 1 2 0.01}
+	  { Potion Lasting MELEE_RESISTANCE 1 3 0.01}
+	  { Ring DAM_BONUS 1 2 0.01}
+	  { Ring RAGE 1 2 0.01}
+  }
+  #Dungeon archers
+  {
+    "ARCHER_DUNGEON"
+    "SKELETON_DUNGEON"
+    "HARPY_DUNGEON"
+    "ELF_ARCHER_DUNGEON"
+    "DRIAD_DUNGEON"
+    "CENTAUR_ARCHER_DUNGEON"
+    "AMAZON_ARCHER_DUNGEON"
+    "RAT_ARCHER_DUNGEON"
+    "GOBLIN_ARCHER_DUNGEON"
+	"CENTAUR_HUNTER_DUNGEON"
+  }
+  {
+	{ type = Simple "Bow"}
+    { type = Simple "Spear", alternative = Simple "Knife" prefixChance = 0.1 }
+	{ Potion Lasting RANGED_VULNERABILITY 1 2 0.05}
+	{ Amulet RANGED_RESISTANCE 1 2 0.05}
+	{ Amulet AMBUSH_SKILL 1 2 0.05}
+	{ Amulet DISARM_TRAPS_SKILL 1 2 0.05}
+	{ Amulet ELF_VISION 1 2 0.05}
+	{ Amulet NIGHT_VISION 1 2 0.05}
+	{ Amulet SWIMMING_SKILL 1 2 0.05}
+	{ type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.1 chance = 0.5}
+	{ type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.1 chance = 0.5}
+	{ type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.1 chance = 0.5}
+	{ Simple "FirstAidKit" 1 2 0.1 0.5}
+	{ Potion Heal FLESH 1 4}
+  }
+  #Dungeon spell users
+  {
+	"SUCCUBUS_DUNGEON"
+	"WITCH_DUNGEON"
+	"PRIEST_DUNGEON"
+	"SHAMAN_DUNGEON"
+	"SORCERER_DUNGEON"
+	"VAMPIRE_DUNGEON"
+	"ORC_MAGE_DUNGEON"
+	"ORC_HEALER_DUNGEON"
+	"GNOME_DUNGEON"
+	"ELEMENTALIST_DUNGEON"
+	"ANGEL_DUNGEON"
+	"ADOXIE_PRIEST_DUNGEON"
+	"AMAZON_ELDER_DUNGEON"
+	"AIR_FAIRY_DUNGEON"
+	"DARK_FAIRY_DUNGEON"
+	"DEMON_FAIRY_DUNGEON"
+	"EARTH_FAIRY_DUNGEON"
+	"ELECTRIC_FAIRY_DUNGEON"
+	"FIRE_FAIRY_DUNGEON"
+	"LIGHT_FAIRY_DUNGEON"
+	"MAGIC_FAIRY_DUNGEON"
+	"NATURE_FAIRY_DUNGEON"
+	"WATER_FAIRY_DUNGEON"
+	"GORGON_DUNGEON"
+	"CLERIC_HERO_DUNGEON"
+	"WIZARD_HERO_DUNGEON"
+	"WIZARD_ADVENTURER_DUNGEON"
+	"GOBLIN_CHICKENMANCER_DUNGEON"
+	"GOBLIN_HIGH_PRIEST_DUNGEON"
+	"GOBLIN_LEPRECHAUN_DUNGEON"
+	"DWARF_MONK_DUNGEON"
+	"NECROMANCER_DUNGEON"
+	"GOBLIN_PRIEST_DUNGEON"
+	"GOBLIN_WIZARD_DUNGEON"
+	"SKELETON_MAGE_DUNGEON"
+  }
+  {
+    { type = Simple "IronStaff", alternative = Simple "WoodenStaff" prefixChance = 0.1 }
+    { Potion Lasting MAGIC_VULNERABILITY 1 4 0.01}
+    { Potion Lasting MELEE_VULNERABILITY 1 4 0.01}
+    { Potion Lasting PEACEFULNESS 1 4 0.01}
+    { Potion Lasting POISON 1 4 0.01}
+    { Potion Lasting POISON_RESISTANT 1 4 0.01}
+    { Amulet REGENERATION 1 2 0.01}
+    { Ring SPELL_DAMAGE 1 2 0.01}
+    { Amulet TELEPATHY 1 2 0.01}
+    { Amulet WARNING 1 2 0.01}
+    { FireScroll 1 4 0.01}
+    { Simple "GoldenStaff" 1 2 0.01 0.5}
+    { Potion DestroyEquipment 1 2 0.01}
+    { Potion Heal SPIRIT 1 4 0.01}
+    { Potion Lasting BLEEDING 1 4 0.01}
+    { Potion Lasting BLIND 1 4 0.01}
+    { Potion Lasting COLLAPSED 1 4 0.01}
+    { Potion Lasting FLYING 1 4 0.01}
+    { Potion Lasting INSANITY 1 4 0.01}
+    { Potion Lasting INVISIBLE 1 4 0.01}
+    { Potion Lasting REGENERATION 1 4 0.01}
+    { Potion Lasting SLEEP 1 4 0.01}
+    { Potion Lasting SLOWED 1 4 0.01}
+    { Potion Lasting SPEED 1 4 0.01}
+    { Potion Lasting TELEPATHY 1 4 0.01}
+    { FireScroll 1 4 0.01}
+    { Ring FAST_CRAFTING 1 2 0.01}
+    { Ring FAST_TRAINING 1 2 0.01}
+    { Ring FIRE_RESISTANT 1 2 0.01}
+    { Ring MAGIC_RESISTANCE 1 2 0.01}
+    { Ring POISON_RESISTANT 1 2 0.01}
+    { Scroll Teleport 1 2 0.01}
+    { Ring RANGED_RESISTANCE 1 2 0.01}
+    { Ring RESTED 1 2 0.01}
+    { Ring SATIATED 1 2 0.01}
+    { Ring SLEEP_RESISTANT 1 2 0.01}
+    { Scroll CircularBlast 1 2 0.01}
+    { Scroll Deception 1 2 0.01}
+    { Scroll Escape 1 2 0.01}
+    { Scroll Lasting FIRE_RESISTANT 1 2 0.01}
+    { Scroll Summon "FIRE_ELEMENTAL" {1 2} 1 2 0.01}
+    { Scroll Summon "FLY" {3 4} 1 2 0.01}
+  }
+  #Dungeon bosses
+  {
+    "RAT_KING_DUNGEON"
+    "DJINN_DUNGEON"
+    "CYCLOPS_DUNGEON"
+    "DEMON_LORD_DUNGEON"
+    "MINOTAUR_DUNGEON"
+    "SOFT_MONSTER_DUNGEON"
+    "DUKE_DUNGEON"
+    "THIEF_LEADER_DUNGEON"
+    "VAMPIRE_LORD_DUNGEON"
+    "GNOME_CHIEF_DUNGEON" 
+    "DWARF_BARON_DUNGEON" 
+    "LIZARDLORD_DUNGEON" 
+    "ELF_LORD_DUNGEON" 
+    "DARK_ELF_LORD_DUNGEON" 
+    "CENTAUR_KING_DUNGEON" 
+    "AMAZON_QUEEN_DUNGEON" 
+    "FAIRY_QUEEN_DUNGEON" 
+    "HELL_KNIGHT_LORD_DUNGEON" 
+    "LION_QUEEN_DUNGEON" 
+    "GOBLIN_KING_DUNGEON" 
+    "BANDIT_LEADER_DUNGEON" 
+    "DWARF_QUEEN_DUNGEON" 
+  }
+  {
+    { type = Simple "AdaBattleAxe", alternative = Simple "AdaWarHammer" prefixChance = 0.1 }
+    { Simple "AdaArmor" 1 2 0.3}
+    { Simple "AdaBoots" 1 2 0.3}
+    { Simple "AdaGloves" 1 2 0.3}
+    { Simple "AdaHelm" 1 2 0.3}
+    { Potion Permanent DEF_BONUS 1 2 0.1}
+    { Potion Permanent SPEED 1 2 0.1}
+    { Potion RegrowBodyPart 1 2 0.1}
+    { Scroll Permanent DARKNESS_SOURCE 1 2 0.1}
+    { Scroll Enhance ARMOR 1 2 0.1}
+    { Scroll Enhance WEAPON 1 2 0.1}
+  }
 }

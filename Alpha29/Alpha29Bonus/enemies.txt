@@ -3084,7 +3084,204 @@
 #Increasing difficulty of dungeons above depth 3
 ####################################################################
 
-  "DUNGEON4" inherit "DUNGEON1" { settlement = append {
+  "BOTTOMLESS_DUNGEON1"
+  {
+    settlement = {
+      type = MINETOWN
+      tribe = MONSTER
+      locationName = "dungeon level"
+      race = "dwellers"
+      buildingId = "BRICK"
+      furniture = { "roomFurniture" }
+      inhabitants = {
+        leader = {{
+           "RAT_KING_DUNGEON"
+           "THIEF_LEADER_DUNGEON"
+           "GNOME_CHIEF_DUNGEON"
+		   "GOBLIN_KING_DUNGEON"
+		   "BANDIT_LEADER_DUNGEON"
+        }}
+        fighters = {
+          count = {10 15}
+          all = {
+			1 "BANDIT_DUNGEON"
+			1 "RAT_SOLDIER_DUNGEON"
+			1 "RAT_LADY_DUNGEON"
+			1 "PESEANT_DUNGEON"
+			1 "NOMAD_DUNGEON"
+			1 "CHILD_DUNGEON"
+			1 "ESKIMO_CHILD_DUNGEON"
+			1 "NOMAD_CHILD_DUNGEON"
+			1 "JESTER_DUNGEON"
+			1 "THIEF_DUNGEON"
+			1 "ZOMBIE_DUNGEON"
+			1 "MUMMY_DUNGEON"
+			1 "ORC_DUNGEON"
+			1 "KOBOLD_DUNGEON"
+			1 "GOBLIN_DUNGEON"
+			1 "ELF_DUNGEON"
+			1 "ELF_CHILD_DUNGEON"
+			1 "DARK_ELF_DUNGEON"
+			1 "DARK_ELF_CHILD_DUNGEON"
+			1 "CENTAUR_FARMER_DUNGEON"
+			1 "CENTAUR_CHILD_DUNGEON"
+			1 "RAT_MAN_DUNGEON"
+			1 "HOBGOBLIN_DUNGEON"
+			1 "DARK_GOBLIN_DUNGEON"
+			1 "DARK_HOBGOBLIN_DUNGEON"
+			1 "MILITIA_DUNGEON"
+			1 "DWARF_MILITIA_DUNGEON"
+			1 "DWARF_WORKER_DUNGEON"
+          }
+        }
+      }
+    }
+  }
+  "BOTTOMLESS_DUNGEON2" inherit "BOTTOMLESS_DUNGEON1"
+  {
+    settlement = append {
+      inhabitants = append {
+        leader = {{
+           "SOFT_MONSTER_DUNGEON"
+           "VAMPIRE_LORD_DUNGEON"
+           "DWARF_BARON_DUNGEON"
+           "LIZARDLORD_DUNGEON"
+           "ELF_LORD_DUNGEON"
+		   "DARK_ELF_LORD_DUNGEON"
+		   "CENTAUR_KING_DUNGEON"
+		   "LION_QUEEN_DUNGEON"
+		   "DWARF_QUEEN_DUNGEON"
+		}}
+        fighters = append {
+          all = append {
+			1 "ARCHER_DUNGEON"
+			1 "SKELETON_DUNGEON"
+			1 "HARPY_DUNGEON"
+			1 "ELF_ARCHER_DUNGEON"
+			1 "DRIAD_DUNGEON"
+			1 "CENTAUR_ARCHER_DUNGEON"
+			1 "AMAZON_ARCHER_DUNGEON"
+			1 "RAT_ARCHER_DUNGEON"
+			1 "GOBLIN_ARCHER_DUNGEON"
+			1 "CENTAUR_HUNTER_DUNGEON"
+			1 "ADVENTURER_DUNGEON"
+			1 "WITCHMAN_DUNGEON"
+			1 "DEMON_DWELLER_DUNGEON"
+			1 "KNIGHT_DUNGEON"
+			1 "WARRIOR_DUNGEON"
+			1 "OGRE_DUNGEON"
+			1 "DWARF_DUNGEON"
+			1 "DWARF_FEMALE_DUNGEON"
+			1 "LIZARDMAN_DUNGEON"
+			1 "DARK_ELF_WARRIOR_DUNGEON"
+			1 "WEREWOLF_DUNGEON"
+			1 "ABOMINATION_DUNGEON"
+			1 "CENTAUR_KNIGHT_DUNGEON"
+			1 "AMAZON_DUNGEON"
+			1 "AMAZON_CHAMPION_DUNGEON"
+			1 "AMAZON_WAR_MAIDEN_DUNGEON"
+			1 "RED_DRAGONNEWT_DUNGEON"
+			1 "GREEN_DRAGONEWT_DUNGEON"
+			1 "HELL_KNIGHT_DUNGEON"
+			1 "HELL_KNIGHT_BRUTE_DUNGEON"
+			1 "HELL_KNIGHT_SWORDMASTER_DUNGEON"
+			1 "RAT_GENERAL_DUNGEON"
+			1 "ARACHNE_DUNGEON"
+			1 "COW_DEMON_DUNGEON"
+			1 "ARMORED_COW_DEMON_DUNGEON"
+			1 "BANSHEE_DUNGEON"
+			1 "GIANT_DUNGEON"
+			1 "MUSHROOM_MAN_DUNGEON"
+			1 "OGRE_FEMALE_DUNGEON"
+			1 "SHARD_SPITTER_DUNGEON"
+			1 "SQUIDHOLDER_DUNGEON"
+			1 "WARRIOR_HERO_DUNGEON"
+			1 "THIEF_HERO_DUNGEON"
+			1 "DARK_ORC_DUNGEON"
+			1 "DARK_ORC_FEMALE_DUNGEON"
+			1 "DARK_OGRE_DUNGEON"
+			1 "DARK_OGRE_FEMALE_DUNGEON"
+			1 "ELITE_GOBLIN_GUARD_DUNGEON"
+			1 "GOBLIN_BRUTE_DUNGEON"
+			1 "GOBLIN_KABOOMER_DUNGEON"
+			1 "GOBLIN_MATRON_DUNGEON"
+			1 "GOBLIN_WARRIOR_DUNGEON"
+			1 "COMBAT_SUCCUBUS_DUNGEON"
+			1 "SKELETON_WARRIOR_DUNGEON"
+			1 "DWARF_FIGHTER_DUNGEON"
+			1 "DWARF_WARRIOR_DUNGEON"
+	        1 "ELITE_DWARF_WARRIOR_DUNGEON"
+          }
+        }
+      }
+    }
+  }
+  "BOTTOMLESS_DUNGEON3" inherit "BOTTOMLESS_DUNGEON2"
+  {
+    settlement = append {
+      furniture = append { "bleedingTotem" }
+      inhabitants = append {
+        leader = {{
+           "VAMPIRE_LORD_DUNGEON"
+           "DWARF_BARON_DUNGEON"
+           "LIZARDLORD_DUNGEON"
+           "ELF_LORD_DUNGEON"
+		   "DARK_ELF_LORD_DUNGEON"
+		   "CENTAUR_KING_DUNGEON"
+		   "LION_QUEEN_DUNGEON"
+		   "DWARF_QUEEN_DUNGEON"
+           "DEMON_LORD_DUNGEON"
+           "DJINN_DUNGEON"
+           "CYCLOPS_DUNGEON"
+           "DUKE_DUNGEON"
+           "MINOTAUR_DUNGEON"
+		   "AMAZON_QUEEN_DUNGEON"
+		   "HELL_KNIGHT_LORD_DUNGEON"
+        }}
+        fighters = append {
+          all = append {
+			1 "SUCCUBUS_DUNGEON"
+			1 "WITCH_DUNGEON"
+			1 "PRIEST_DUNGEON"
+			1 "SHAMAN_DUNGEON"
+			1 "SORCERER_DUNGEON"
+			1 "VAMPIRE_DUNGEON"
+			1 "ORC_MAGE_DUNGEON"
+			1 "ORC_HEALER_DUNGEON"
+			1 "GNOME_DUNGEON"
+			1 "ELEMENTALIST_DUNGEON"
+			1 "ANGEL_DUNGEON"
+			1 "ADOXIE_PRIEST_DUNGEON"
+			1 "AMAZON_ELDER_DUNGEON"
+			1 "AIR_FAIRY_DUNGEON"
+			1 "DARK_FAIRY_DUNGEON"
+			1 "DEMON_FAIRY_DUNGEON"
+			1 "EARTH_FAIRY_DUNGEON"
+			1 "ELECTRIC_FAIRY_DUNGEON"
+			1 "FIRE_FAIRY_DUNGEON"
+			1 "LIGHT_FAIRY_DUNGEON"
+			1 "MAGIC_FAIRY_DUNGEON"
+			1 "NATURE_FAIRY_DUNGEON"
+			1 "WATER_FAIRY_DUNGEON"
+			1 "GORGON_DUNGEON"
+			1 "CLERIC_HERO_DUNGEON"
+			1 "WIZARD_HERO_DUNGEON"
+			1 "WIZARD_ADVENTURER_DUNGEON"
+			1 "GOBLIN_CHICKENMANCER_DUNGEON"
+			1 "GOBLIN_HIGH_PRIEST_DUNGEON"
+			1 "GOBLIN_LEPRECHAUN_DUNGEON"
+			1 "DWARF_MONK_DUNGEON"
+			1 "NECROMANCER_DUNGEON"
+			1 "GOBLIN_PRIEST_DUNGEON"
+			1 "GOBLIN_WIZARD_DUNGEON"
+			1 "SKELETON_MAGE_DUNGEON"
+          }
+        }
+      }
+    }
+  }
+
+  "DUNGEON4" inherit "BOTTOMLESS_DUNGEON1" { settlement = append {
     buildingId = "WOOD_CASTLE"
 	inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 1 } } } } }
   "DUNGEON5" inherit "DUNGEON4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 2 } } } } }
@@ -3093,7 +3290,7 @@
   "DUNGEON8" inherit "DUNGEON7" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 5 } } } } }
   "DUNGEON9" inherit "DUNGEON8" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 6 } } } } }
 
-  "DUNGEON10" inherit "DUNGEON2" { settlement = append {
+  "DUNGEON10" inherit "BOTTOMLESS_DUNGEON2" { settlement = append {
      buildingId = "RUINS"
 	 inhabitants = append { fighters = append { count = {8 12} baseLevelIncrease = { MELEE 7 } } } } }
   "DUNGEON11" inherit "DUNGEON10" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 8 } } } } }
@@ -3106,7 +3303,7 @@
   "DUNGEON18" inherit "DUNGEON17" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 15 } } } } }
   "DUNGEON19" inherit "DUNGEON18" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 16 } } } } }
 
-  "DUNGEON20" inherit "DUNGEON3" { settlement = append  {
+  "DUNGEON20" inherit "BOTTOMLESS_DUNGEON3" { settlement = append  {
       buildingId = "TAINTED"
 	  inhabitants = append { fighters = append { count = {8 12} baseLevelIncrease = { MELEE 5 } } } } }
   "DUNGEON21" inherit "DUNGEON20" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 7 } } } } }
@@ -3115,7 +3312,7 @@
   "DUNGEON24" inherit "DUNGEON23" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 13 } } } } }
   "DUNGEON25" inherit "DUNGEON24" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 15 } } } } }
 
-  "DUNGEON26" inherit "DUNGEON3"  { settlement = append {
+  "DUNGEON26" inherit "BOTTOMLESS_DUNGEON3"  { settlement = append {
      buildingId = "SANDSTONE_WALL_DWARVEN"
 	 inhabitants = append { fighters = append { count = {5 10} baseLevelIncrease = { MELEE 23 } } } } }
   "DUNGEON27" inherit "DUNGEON26" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 18 } } } } }
@@ -3146,7 +3343,7 @@
   "DUNGEON51" inherit "DUNGEON50" { settlement = append {
       buildingId = "MINOTAUR"
 	  inhabitants = append { fighters = append { count = {3 7} baseLevelIncrease = { MELEE 48 } } } } }
-  "DUNGEON52" inherit "DUNGEON3" { settlement = append  { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 49 } } } } }
+  "DUNGEON52" inherit "DUNGEON51" { settlement = append  { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 49 } } } } }
   "DUNGEON53" inherit "DUNGEON52" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 50 } } } } }
   "DUNGEON54" inherit "DUNGEON53" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 51 } } } } }
   "DUNGEON55" inherit "DUNGEON54" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 52 } } } } }
@@ -3171,7 +3368,7 @@
   "DUNGEON74" inherit "DUNGEON73" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 71 } } } } }
   "DUNGEON75" inherit "DUNGEON74" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 72 } } } } }
 
-  "DUNGEON76" inherit "DUNGEON3" { settlement = append {
+  "DUNGEON76" inherit "DUNGEON75" { settlement = append {
       buildingId = "BRICK"
 	  inhabitants = append { fighters = append { count = {3 7} baseLevelIncrease = { MELEE 48 } } } } }
   "DUNGEON77" inherit "DUNGEON76" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 74 } } } } }
