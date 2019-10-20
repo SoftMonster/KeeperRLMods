@@ -2945,15 +2945,15 @@
 ####################################################################
 #Bottomless Dungeon
 ####################################################################
-  "BOTTOMLESS_DUNGEON" #This is the bottom level. TODO: Make it cool.
+  "BOTTOMLESS_DUNGEON"
   {
     settlement = {
       type = MINETOWN
       tribe = GNOME
       inhabitants = {
-        leader = { { "BANDIT" } }
+        leader = { { "DEATH" } }
       }
-      buildingId = "DUNGEON"
+      buildingId = "SANDSTONE_WALL_DWARVEN"
     }
     levelConnection = {
       topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY"}
@@ -3057,7 +3057,6 @@
         { ExtraEnemy { "BOTTOMLESS97" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS98" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS99" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS100" { 1 2 } } 60 40 DUNGEON }
         { MainEnemy 60 40 MINETOWN }
       }
     }
@@ -3097,7 +3096,6 @@
            "RAT_KING_DUNGEON"
            "THIEF_LEADER_DUNGEON"
            "GNOME_CHIEF_DUNGEON"
-		   "GOBLIN_KING_DUNGEON"
 		   "BANDIT_LEADER_DUNGEON"
         }}
         fighters = {
@@ -3161,11 +3159,16 @@
       }
     }
   }
-  "BOTTOMLESS_TYPE_2" inherit "BOTTOMLESS_TYPE_1"
+  "BOTTOMLESS_TYPE_2"
   {
-    settlement = append {
-	  buildingId = "MUD"
-      inhabitants = append {
+    settlement = {
+      type = MINETOWN
+      tribe = MONSTER
+      locationName = "dungeon level"
+      race = "dwellers"
+	  buildingId = "WOOD_CASTLE"
+      furniture = { "bottomlessdungeon" }
+	  inhabitants = {
         leader = {{
            "SOFT_MONSTER_DUNGEON"
            "VAMPIRE_LORD_DUNGEON"
@@ -3176,9 +3179,11 @@
 		   "CENTAUR_KING_DUNGEON"
 		   "LION_QUEEN_DUNGEON"
 		   "DWARF_QUEEN_DUNGEON"
+		   "GOBLIN_KING_DUNGEON"
 		}}
-        fighters = append {
-          all = append {
+        fighters = {
+          count = {7 11}
+          all = {
 			1 "ARCHER_DUNGEON"
 			1 "SKELETON_DUNGEON"
 			1 "HARPY_DUNGEON"
@@ -3252,16 +3257,19 @@
 	        1 "SPIDER"
 		  }
         }
-        civilians = {count = { 0 1} all = {} }
       }
     }
   }
-  "BOTTOMLESS_TYPE_3" inherit "BOTTOMLESS_TYPE_2"
+  "BOTTOMLESS_TYPE_3"
   {
-    settlement = append {
-      buildingId = "MUD"
-      furniture = append { "bleedingTotem" }
-      inhabitants = append {
+    settlement = {
+      type = MINETOWN
+      tribe = MONSTER
+      locationName = "dungeon level"
+      race = "dwellers"
+	  buildingId = "BRICK"
+      furniture = { "bottomlessdungeon" }
+	  inhabitants = {
         leader = {{
            "VAMPIRE_LORD_DUNGEON"
            "DWARF_BARON_DUNGEON"
@@ -3279,8 +3287,9 @@
 		   "AMAZON_QUEEN_DUNGEON"
 		   "HELL_KNIGHT_LORD_DUNGEON"
         }}
-        fighters = append {
-          all = append {
+        fighters = {
+          count = {6 10}
+          all = {
 			1 "SUCCUBUS_DUNGEON"
 			1 "WITCH_DUNGEON"
 			1 "PRIEST_DUNGEON"
@@ -3327,121 +3336,157 @@
     }
   }
 
+  "BOTTOMLESS_TYPE_4"
+  {
+    settlement = {
+      type = MINETOWN
+      tribe = MONSTER
+      locationName = "dungeon level"
+      race = "dwellers"
+	  buildingId = "RUINS"
+      furniture = { "bottomlessdungeon" }
+	  inhabitants = {
+        fighters = {
+          count = {4 5}
+          all = {
+           1 "DEMON_LORD_DUNGEON"
+           1 "VAMPIRE_LORD_DUNGEON"
+           1 "DWARF_BARON_DUNGEON"
+           1 "LIZARDLORD_DUNGEON"
+           1 "ELF_LORD_DUNGEON"
+		   1 "DARK_ELF_LORD_DUNGEON"
+		   1 "CENTAUR_KING_DUNGEON"
+		   1 "LION_QUEEN_DUNGEON"
+		   1 "DWARF_QUEEN_DUNGEON"
+           1 "DJINN_DUNGEON"
+           1 "CYCLOPS_DUNGEON"
+           1 "DUKE_DUNGEON"
+           1 "MINOTAUR_DUNGEON"
+		   1 "AMAZON_QUEEN_DUNGEON"
+		   1 "HELL_KNIGHT_LORD_DUNGEON"
+          }
+        }
+      }
+    }
+  }
+
+  "BOTTOMLESS_TYPE_2a" inherit "BOTTOMLESS_TYPE_2" { settlement = append {buildingId = "RUINS"}}
+  "BOTTOMLESS_TYPE_2b" inherit "BOTTOMLESS_TYPE_2" { settlement = append {buildingId = "TAINTED"}}
+  
+  "BOTTOMLESS_TYPE_3a" inherit "BOTTOMLESS_TYPE_3"
+     { settlement = append { buildingId = "MINOTAUR" inhabitants = append { fighters = append { count = {5 9}}}}}
+  "BOTTOMLESS_TYPE_3b" inherit "BOTTOMLESS_TYPE_3"
+     { settlement = append { buildingId = "SANDSTONE_WALL" inhabitants = append { fighters = append { count = {4 8}}}}}
+  "BOTTOMLESS_TYPE_3c" inherit "BOTTOMLESS_TYPE_3"
+     { settlement = append { buildingId = "TAINTED" inhabitants = append { fighters = append { count = {3 7}}}}}
+      
   "BOTTOMLESS1" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 1 } } } } }
-  "BOTTOMLESS2" inherit "BOTTOMLESS1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 2 } } } } }
-  "BOTTOMLESS3" inherit "BOTTOMLESS2" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 4 } } } } }
-  "BOTTOMLESS4" inherit "BOTTOMLESS3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 6 } } } } }
-  "BOTTOMLESS5" inherit "BOTTOMLESS4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 8 } } } } }
-  "BOTTOMLESS6" inherit "BOTTOMLESS5" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 9 } } } } }
-  "BOTTOMLESS7" inherit "BOTTOMLESS6" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 10 } } } } }
-  "BOTTOMLESS8" inherit "BOTTOMLESS7" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 11 } } } } }
-  "BOTTOMLESS9" inherit "BOTTOMLESS8" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 12 } } } } }
+  "BOTTOMLESS2" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 3 } } } } }
+  "BOTTOMLESS3" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 5 } } } } }
+  "BOTTOMLESS4" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 7 } } } } }
 
-  "BOTTOMLESS10" inherit "BOTTOMLESS_TYPE_2" { settlement = append {
-     buildingId = "RUINS"
-	 inhabitants = append { fighters = append { count = {8 12} baseLevelIncrease = { MELEE 7 } } } } }
-  "BOTTOMLESS11" inherit "BOTTOMLESS10" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 8 } } } } }
-  "BOTTOMLESS12" inherit "BOTTOMLESS11" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 9 } } } } }
-  "BOTTOMLESS13" inherit "BOTTOMLESS12" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 10 } } } } }
-  "BOTTOMLESS14" inherit "BOTTOMLESS13" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 11 } } } } }
-  "BOTTOMLESS15" inherit "BOTTOMLESS14" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 12 } } } } }
-  "BOTTOMLESS16" inherit "BOTTOMLESS15" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 13 } } } } }
-  "BOTTOMLESS17" inherit "BOTTOMLESS16" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 14 } } } } }
-  "BOTTOMLESS18" inherit "BOTTOMLESS17" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 15 } } } } }
-  "BOTTOMLESS19" inherit "BOTTOMLESS18" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 16 } } } } }
+  "BOTTOMLESS5" inherit "BOTTOMLESS_TYPE_2" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 1 } } } } }  
+  "BOTTOMLESS6" inherit "BOTTOMLESS_TYPE_2" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 3 } } } } }
+  "BOTTOMLESS7" inherit "BOTTOMLESS_TYPE_2" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 5 } } } } }
+  "BOTTOMLESS8" inherit "BOTTOMLESS_TYPE_2" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 7 } } } } }
 
-  "BOTTOMLESS20" inherit "BOTTOMLESS_TYPE_3" { settlement = append  {
-      buildingId = "TAINTED"
-	  inhabitants = append { fighters = append { count = {8 12} baseLevelIncrease = { MELEE 5 } } } } }
-  "BOTTOMLESS21" inherit "BOTTOMLESS20" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 7 } } } } }
-  "BOTTOMLESS22" inherit "BOTTOMLESS21" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 9 } } } } }
-  "BOTTOMLESS23" inherit "BOTTOMLESS22" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 11 } } } } }
-  "BOTTOMLESS24" inherit "BOTTOMLESS23" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 13 } } } } }
-  "BOTTOMLESS25" inherit "BOTTOMLESS24" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 15 } } } } }
+  "BOTTOMLESS9" inherit "BOTTOMLESS_TYPE_2a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 10  } } } } }
+  "BOTTOMLESS10" inherit "BOTTOMLESS_TYPE_2a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 11 } } } } }
+  "BOTTOMLESS11" inherit "BOTTOMLESS_TYPE_2a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 12 } } } } }
+  "BOTTOMLESS12" inherit "BOTTOMLESS_TYPE_2a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 13 } } } } }
+  "BOTTOMLESS13" inherit "BOTTOMLESS_TYPE_2a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 14} } } } }
+  "BOTTOMLESS14" inherit "BOTTOMLESS_TYPE_2a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 15 } } } } }
 
-  "BOTTOMLESS26" inherit "BOTTOMLESS_TYPE_3"  { settlement = append {
-     buildingId = "SANDSTONE_WALL_DWARVEN"
-	 inhabitants = append { fighters = append { count = {5 10} baseLevelIncrease = { MELEE 23 } } } } }
-  "BOTTOMLESS27" inherit "BOTTOMLESS26" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 18 } } } } }
-  "BOTTOMLESS28" inherit "BOTTOMLESS27" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 23 } } } } }
-  "BOTTOMLESS29" inherit "BOTTOMLESS28" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 26 } } } } }
-  "BOTTOMLESS30" inherit "BOTTOMLESS29" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 27 } } } } }
-  "BOTTOMLESS31" inherit "BOTTOMLESS30" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 28 } } } } }
-  "BOTTOMLESS32" inherit "BOTTOMLESS31" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 29 } } } } }
-  "BOTTOMLESS33" inherit "BOTTOMLESS32" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 30 } } } } }
-  "BOTTOMLESS34" inherit "BOTTOMLESS33" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 31 } } } } }
-  "BOTTOMLESS35" inherit "BOTTOMLESS34" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 32 } } } } }
-  "BOTTOMLESS36" inherit "BOTTOMLESS35" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 33 } } } } }
-  "BOTTOMLESS37" inherit "BOTTOMLESS36" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 34 } } } } }
-  "BOTTOMLESS38" inherit "BOTTOMLESS37" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 35 } } } } }
-  "BOTTOMLESS39" inherit "BOTTOMLESS38" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 36 } } } } }
-  "BOTTOMLESS40" inherit "BOTTOMLESS39" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 37 } } } } }
-  "BOTTOMLESS41" inherit "BOTTOMLESS40" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 38 } } } } }
-  "BOTTOMLESS42" inherit "BOTTOMLESS41" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 39 } } } } }
-  "BOTTOMLESS43" inherit "BOTTOMLESS42" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 40 } } } } }
-  "BOTTOMLESS44" inherit "BOTTOMLESS43" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 41 } } } } }
-  "BOTTOMLESS45" inherit "BOTTOMLESS44" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 42 } } } } }
-  "BOTTOMLESS46" inherit "BOTTOMLESS45" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 43 } } } } }
-  "BOTTOMLESS47" inherit "BOTTOMLESS46" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 44 } } } } }
-  "BOTTOMLESS48" inherit "BOTTOMLESS47" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 45 } } } } }
-  "BOTTOMLESS49" inherit "BOTTOMLESS48" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 46 } } } } }
-  "BOTTOMLESS50" inherit "BOTTOMLESS49" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 47 } } } } }
+  "BOTTOMLESS15" inherit "BOTTOMLESS_TYPE_2b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 16 } } } } }
+  "BOTTOMLESS16" inherit "BOTTOMLESS_TYPE_2b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 17 } } } } }
+  "BOTTOMLESS17" inherit "BOTTOMLESS_TYPE_2b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 18 } } } } }
+  "BOTTOMLESS18" inherit "BOTTOMLESS_TYPE_2b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 19 } } } } }
+  "BOTTOMLESS19" inherit "BOTTOMLESS_TYPE_2b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 20 } } } } }
 
-  "BOTTOMLESS51" inherit "BOTTOMLESS50" { settlement = append {
-      buildingId = "MINOTAUR"
-	  inhabitants = append { fighters = append { count = {3 7} baseLevelIncrease = { MELEE 48 } } } } }
-  "BOTTOMLESS52" inherit "BOTTOMLESS51" { settlement = append  { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 49 } } } } }
-  "BOTTOMLESS53" inherit "BOTTOMLESS52" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 50 } } } } }
-  "BOTTOMLESS54" inherit "BOTTOMLESS53" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 51 } } } } }
-  "BOTTOMLESS55" inherit "BOTTOMLESS54" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 52 } } } } }
-  "BOTTOMLESS56" inherit "BOTTOMLESS55" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 53 } } } } }
-  "BOTTOMLESS57" inherit "BOTTOMLESS56" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 54 } } } } }
-  "BOTTOMLESS58" inherit "BOTTOMLESS57" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 55 } } } } }
-  "BOTTOMLESS59" inherit "BOTTOMLESS58" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 56 } } } } }
-  "BOTTOMLESS60" inherit "BOTTOMLESS59" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 57 } } } } }
-  "BOTTOMLESS61" inherit "BOTTOMLESS60" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 58 } } } } }
-  "BOTTOMLESS62" inherit "BOTTOMLESS61" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 59 } } } } }
-  "BOTTOMLESS63" inherit "BOTTOMLESS62" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 60 } } } } }
-  "BOTTOMLESS64" inherit "BOTTOMLESS63" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 61 } } } } }
-  "BOTTOMLESS65" inherit "BOTTOMLESS64" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 62 } } } } }
-  "BOTTOMLESS66" inherit "BOTTOMLESS65" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 63 } } } } }
-  "BOTTOMLESS67" inherit "BOTTOMLESS66" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 64 } } } } }
-  "BOTTOMLESS68" inherit "BOTTOMLESS67" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 65 } } } } }
-  "BOTTOMLESS69" inherit "BOTTOMLESS68" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 66 } } } } }
-  "BOTTOMLESS70" inherit "BOTTOMLESS69" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 67 } } } } }
-  "BOTTOMLESS71" inherit "BOTTOMLESS70" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 68 } } } } }
-  "BOTTOMLESS72" inherit "BOTTOMLESS71" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 69 } } } } }
-  "BOTTOMLESS73" inherit "BOTTOMLESS72" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 70 } } } } }
-  "BOTTOMLESS74" inherit "BOTTOMLESS73" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 71 } } } } }
-  "BOTTOMLESS75" inherit "BOTTOMLESS74" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 72 } } } } }
+  "BOTTOMLESS20" inherit "BOTTOMLESS_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 1 } } } } }
+  "BOTTOMLESS21" inherit "BOTTOMLESS_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 3 } } } } }
+  "BOTTOMLESS22" inherit "BOTTOMLESS_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 5 } } } } }
+  "BOTTOMLESS23" inherit "BOTTOMLESS_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 7 } } } } }
+  "BOTTOMLESS24" inherit "BOTTOMLESS_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 9 } } } } }
+  "BOTTOMLESS25" inherit "BOTTOMLESS_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 11 } } } } }
 
-  "BOTTOMLESS76" inherit "BOTTOMLESS75" { settlement = append {
-      buildingId = "BRICK"
-	  inhabitants = append { fighters = append { count = {3 7} baseLevelIncrease = { MELEE 48 } } } } }
-  "BOTTOMLESS77" inherit "BOTTOMLESS76" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 74 } } } } }
-  "BOTTOMLESS78" inherit "BOTTOMLESS77" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 75 } } } } }
-  "BOTTOMLESS79" inherit "BOTTOMLESS78" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 76 } } } } }
-  "BOTTOMLESS80" inherit "BOTTOMLESS79" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 77 } } } } }
-  "BOTTOMLESS81" inherit "BOTTOMLESS80" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 78 } } } } }
-  "BOTTOMLESS82" inherit "BOTTOMLESS81" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 79 } } } } }
-  "BOTTOMLESS83" inherit "BOTTOMLESS82" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 80 } } } } }
-  "BOTTOMLESS84" inherit "BOTTOMLESS83" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 81 } } } } }
-  "BOTTOMLESS85" inherit "BOTTOMLESS84" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 82 } } } } }
-  "BOTTOMLESS86" inherit "BOTTOMLESS85" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 83 } } } } }
-  "BOTTOMLESS87" inherit "BOTTOMLESS86" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 84 } } } } }
-  "BOTTOMLESS88" inherit "BOTTOMLESS87" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 85 } } } } }
-  "BOTTOMLESS89" inherit "BOTTOMLESS88" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 86 } } } } }
-  "BOTTOMLESS90" inherit "BOTTOMLESS89" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 87 } } } } }
-  "BOTTOMLESS91" inherit "BOTTOMLESS90" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 88 } } } } }
-  "BOTTOMLESS92" inherit "BOTTOMLESS91" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 89 } } } } }
-  "BOTTOMLESS93" inherit "BOTTOMLESS92" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 90 } } } } }
-  "BOTTOMLESS94" inherit "BOTTOMLESS93" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 91 } } } } }
-  "BOTTOMLESS95" inherit "BOTTOMLESS94" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 92 } } } } }
-  "BOTTOMLESS96" inherit "BOTTOMLESS95" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 93 } } } } }
-  "BOTTOMLESS97" inherit "BOTTOMLESS96" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 94 } } } } }
-  "BOTTOMLESS98" inherit "BOTTOMLESS97" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 95 } } } } }
-  "BOTTOMLESS99" inherit "BOTTOMLESS98" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 96 } } } } }
-  "BOTTOMLESS100" inherit "BOTTOMLESS99" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 97 } } } } }
+  "BOTTOMLESS26" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 15 } } } } }
+  "BOTTOMLESS27" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 18 } } } } }
+  "BOTTOMLESS28" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 23 } } } } }
+  "BOTTOMLESS29" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 26 } } } } }
+  "BOTTOMLESS30" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 27 } } } } }
+  "BOTTOMLESS31" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 28 } } } } }
+  "BOTTOMLESS32" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 29 } } } } }
+  "BOTTOMLESS33" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 30 } } } } }
+  "BOTTOMLESS34" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 31 } } } } }
+  "BOTTOMLESS35" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 32 } } } } }
+  "BOTTOMLESS36" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 33 } } } } }
+  "BOTTOMLESS37" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 34 } } } } }
+  "BOTTOMLESS38" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 35 } } } } }
+  "BOTTOMLESS39" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 36 } } } } }
+  "BOTTOMLESS40" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 37 } } } } }
+  "BOTTOMLESS41" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 38 } } } } }
+  "BOTTOMLESS42" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 39 } } } } }
+  "BOTTOMLESS43" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 40 } } } } }
+  "BOTTOMLESS44" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 41 } } } } }
+  "BOTTOMLESS45" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 42 } } } } }
+  "BOTTOMLESS46" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 43 } } } } }
+  "BOTTOMLESS47" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 44 } } } } }
+  "BOTTOMLESS48" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 45 } } } } }
+  "BOTTOMLESS49" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 46 } } } } }
+  "BOTTOMLESS50" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 47 } } } } }
+
+  "BOTTOMLESS51" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 48 } } } } }
+  "BOTTOMLESS52" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 49 } } } } }
+  "BOTTOMLESS53" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 50 } } } } }
+  "BOTTOMLESS54" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 51 } } } } }
+  "BOTTOMLESS55" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 52 } } } } }
+  "BOTTOMLESS56" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 53 } } } } }
+  "BOTTOMLESS57" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 54 } } } } }
+  "BOTTOMLESS58" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 55 } } } } }
+  "BOTTOMLESS59" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 56 } } } } }
+  "BOTTOMLESS60" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 57 } } } } }
+  "BOTTOMLESS61" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 58 } } } } }
+  "BOTTOMLESS62" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 59 } } } } }
+  "BOTTOMLESS63" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 60 } } } } }
+  "BOTTOMLESS64" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 61 } } } } }
+
+  "BOTTOMLESS65" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 62 } } } } }
+  "BOTTOMLESS66" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 63 } } } } }
+  "BOTTOMLESS67" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 64 } } } } }
+  "BOTTOMLESS68" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 65 } } } } }
+  "BOTTOMLESS69" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 66 } } } } }
+  "BOTTOMLESS70" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 67 } } } } }
+  "BOTTOMLESS71" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 68 } } } } }
+  "BOTTOMLESS72" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 69 } } } } }
+  "BOTTOMLESS73" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 70 } } } } }
+  "BOTTOMLESS74" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 71 } } } } }
+  "BOTTOMLESS75" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 72 } } } } }
+  "BOTTOMLESS76" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 73 } } } } }
+  "BOTTOMLESS77" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 74 } } } } }
+  "BOTTOMLESS78" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 75 } } } } }
+  "BOTTOMLESS79" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 76 } } } } }
+  "BOTTOMLESS80" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 77 } } } } }
+  "BOTTOMLESS81" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 78 } } } } }
+  "BOTTOMLESS82" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 79 } } } } }
+  "BOTTOMLESS83" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 80 } } } } }
+  "BOTTOMLESS84" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 81 } } } } }
+  "BOTTOMLESS85" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 82 } } } } }
+  "BOTTOMLESS86" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 83 } } } } }
+  "BOTTOMLESS87" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 84 } } } } }
+  "BOTTOMLESS88" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 85 } } } } }
+  "BOTTOMLESS89" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 86 } } } } }
+
+  "BOTTOMLESS90" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 90 } } } } }
+  "BOTTOMLESS91" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 91 } } } } }
+  "BOTTOMLESS92" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 92 } } } } }
+  "BOTTOMLESS93" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 93 } } } } }
+  "BOTTOMLESS94" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 94 } } } } }
+  "BOTTOMLESS95" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 95 } } } } }
+  "BOTTOMLESS96" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 96 } } } } }
+  "BOTTOMLESS97" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 97 } } } } }
+  "BOTTOMLESS98" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 98 } } } } }
+  "BOTTOMLESS99" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 125 } } } } }
 ####################################################################
 
 ###########################
