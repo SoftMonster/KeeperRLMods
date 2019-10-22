@@ -7082,7 +7082,6 @@
         RANGED_RESISTANCE 1
         POISON_RESISTANT 1
         SLEEP_RESISTANT 1
-        SLOWED 1
       }
       name = {
         name = "giant contraption"
@@ -7109,7 +7108,9 @@
         }        
       }
       permanentEffects = {
+		RANGED_RESISTANCE 1
         FLYING 1
+        SPEED 1
       }
       name = {
         name = "possessed sword"
@@ -7140,6 +7141,8 @@
       }
       permanentEffects = {
         FLYING 1
+        RANGED_RESISTANCE 1
+        MELEE_RESISTANCE 1
       }
       name = {
         name = "ghost armour"
