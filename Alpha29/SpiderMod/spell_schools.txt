@@ -44,4 +44,24 @@
     "shove" 4
     "swap positions" 7
   }
+  "spider" MELEE
+  {
+    "spin web" 1
+    "healing" 2
+    "breed" 3
+    "haste" 4
+    "dig pit" 5
+    "breed dark spawn" 6
+    "regeneration" 6
+    "shove" 7
+	"cripple" 8
+	"cause blindness" 8
+	"breed horrors" 9
+    "defense bonus" 9
+    "swap positions" 10
+	"weapon dodge" 10
+	"mud wall" 11
+    "damage bonus" 11
+    "breed hell" 12
+  }
 }

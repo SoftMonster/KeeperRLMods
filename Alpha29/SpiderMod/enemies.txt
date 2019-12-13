@@ -940,7 +940,7 @@
   {
     settlement = {
       type = MINETOWN
-      tribe = DARK_ELF
+      tribe = BANDIT
       inhabitants = {
         leader = { { "DARK_ELF_LORD" } }
         fighters = {
@@ -986,7 +986,7 @@
   {
     settlement = {
       type = MINETOWN
-      tribe = DARK_ELF
+      tribe = BANDIT
       inhabitants = {
         leader = {
           id = { "DARK_ELF_LORD" }
@@ -1022,7 +1022,7 @@
   {
     settlement = {
       type = SMALL_MINETOWN
-      tribe = DARK_ELF
+      tribe = BANDIT
       inhabitants = {
         fighters = {
           count = {3 7}
@@ -1365,7 +1365,7 @@
   {
     settlement = {
       type = CAVE
-      tribe = GREENSKIN
+      tribe = BANDIT
       inhabitants = {
         fighters = {
           count = {4 8}
@@ -1393,7 +1393,7 @@
   {
     settlement = {
       type = CAVE
-      tribe = GREENSKIN
+      tribe = BANDIT
       inhabitants = {
         fighters = {
           count = {4 8}
@@ -1813,7 +1813,7 @@
   {
     settlement = {
       type = SMALL_MINETOWN
-      tribe = DARK_ELF
+      tribe = BANDIT
       inhabitants = {
         fighters = {
           count = {2 5}
@@ -1838,6 +1838,25 @@
       triggers = {SelfVictims StolenItems MiningInProximity}
       attackBehaviour = KillLeader
       ransom = 0.5 80
+    }
+  }
+  #Added for spiders
+  "PESEANTS"
+  {
+    settlement = {
+      type = SWAMP
+      inhabitants = {
+        leader = { { "PESEANT" } }
+        civilians = {
+          count = {3 7},
+          all = {
+            1 "PESEANT"
+          }
+        }
+      }
+      race = "pathetic humans"
+      tribe = MONSTER
+      buildingId = "DUNGEON"
     }
   }
 }

@@ -421,6 +421,49 @@
     id =  "breed"
     symbol = "::"
     effect = Chain {
+		Summon "SPIDER" {3}
+		Summon "GREEN_SPIDER" {1}
+		Summon "RED_SPIDER" {1}
+	}
+    cooldown = 100
+    castMessageType = ABILITY	
+  }
+  {
+    id =  "breed dark spawn"
+    upgrade = "breed"
+    symbol = "::"
+    effect = Chain {
+		Summon "SPIDER" {3}
+		Summon "GREEN_SPIDER" {1}
+		Summon "RED_SPIDER" {1}
+		Summon "BLUE_SPIDER" {1}
+		Summon "YELLOW_SPIDER" {1}
+	}
+    cooldown = 100
+    castMessageType = ABILITY	
+  }
+  {
+    id =  "breed horrors"
+    upgrade = "breed dark spawn"
+    symbol = "::"
+    effect = Chain {
+		Summon "SPIDER" {1}
+		Summon "GREEN_SPIDER" {1}
+		Summon "RED_SPIDER" {1}
+		Summon "BLUE_SPIDER" {1}
+		Summon "YELLOW_SPIDER" {1}
+		Summon "PINK_SPIDER" {1}
+		Summon "LIGHT_BLUE_SPIDER" {1}
+		Summon "LIGHT_RED_SPIDER" {1}
+	}
+    cooldown = 100
+    castMessageType = ABILITY	
+  }
+  {
+    id =  "breed hell"
+    upgrade = "breed horrors"    
+    symbol = "::"
+    effect = Chain {
 		Summon "SPIDER" {1}
 		Summon "GREEN_SPIDER" {1}
 		Summon "RED_SPIDER" {1}
@@ -430,10 +473,39 @@
 		Summon "LIGHT_BLUE_SPIDER" {1}
 		Summon "LIGHT_RED_SPIDER" {1}
 		Summon "LIGHT_BROWN_SPIDER" {1}
-        effect = Area 3 Filter ALLY Lasting SUMMONED
 	}
     cooldown = 100
     castMessageType = ABILITY	
+  }
+  {
+    id = "cause blindness" 
+    symbol = "👀"
+    range = 5
+    effect = Lasting BLIND
+    cooldown = 100
+    sound = SPELL_DECEPTION
+  }
+  {
+    id = "cripple"
+    symbol = "X"
+    range = 5
+    effect = Lasting COLLAPSED
+    cooldown = 120
+    sound = SPELL_BLAST
+  }
+  {
+    id = "weapon dodge"
+    symbol = "⇠⇢"
+    effect = Lasting MELEE_RESISTANCE
+    cooldown = 90
+    sound = SPELL_DEX_BONUS
+  }
+  {
+    id = "regeneration" 
+    symbol = "+"
+    effect = Lasting REGENERATION
+    cooldown = 50
+    sound = SPELL_DEX_BONUS
   }
 }
 

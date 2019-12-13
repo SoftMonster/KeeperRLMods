@@ -1,2 +1,2 @@
 ""
-"Official game content for KeeperRL."
+"Play as a spider queen amidst a human civil war."
