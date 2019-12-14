@@ -198,7 +198,7 @@
   {
     settlement = {
       type = VILLAGE
-      tribe = GREENSKIN
+      tribe = BANDIT
       inhabitants = {
         fighters = {
           count = {12 16}
