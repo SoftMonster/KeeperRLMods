@@ -1303,18 +1303,20 @@
     name = "spider web"
     viewId = { "web_trap" }
     entryType = Trap { Lasting ENTANGLED true }
-    usageType = SLEEP
-    tickType = BED
-    bedType = CAGE
+    usageType = TRAIN
+    maxTraining = {
+      MELEE 12
+    }
+    canBuildOutsideOfTerritory = true
   }
   "KEEPER_SPIDER_PIT"
   {
-    name = "pit"
+    name = "hole"
     viewId = { "pit" }
     blockingEnemies = true
-    xForgetAfterBuilding = true
     tickType = PIT
     canBuildOutsideOfTerritory = true
+    canSilentlyReplace = true
   }
   "KEEPER_SPIDER_MUD_WALL"
   {
@@ -1322,8 +1324,11 @@
     viewId = { "mud_wall" }
     blockingEnemies = true
     blockVision = { NORMAL ELF }
-    wall = true
-    buildingSupport = true
     strength = 80
+	usageType = SLEEP
+    tickType = BED
+    bedType = CAGE
+    canBuildOutsideOfTerritory = true
+    canSilentlyReplace = true
   }
 }

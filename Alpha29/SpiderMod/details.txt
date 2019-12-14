@@ -1,2 +1,2 @@
 ""
-"Play as a spider queen amidst a human civil war."
+"Play as a spider queen, either keeper or adventurer."

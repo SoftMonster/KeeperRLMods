@@ -3,18 +3,18 @@
   {
     creatureId = { "KEEPER_SPIDER" }
     tribeAlignment = EVIL
-    immigrantGroups = {
+    immigrantGroups = { "spirit"
 	}
-    technology = {
+    technology = { "spin webs"
     }
-    initialTech = {
+    initialTech = { "spin webs"
 	}
-    buildingGroups = {
+    buildingGroups = { "spider"
     }
     workshopGroups = {
 	}
     description =
-	  " ****NOTE: PLAY THIS CLASS AS AN ADVENTURER****
+	  "NOTE: SPIDER KEEPER IS JUST A MAXED ADVENTURER
 	   ========================================="
   }
 }
@@ -22,6 +22,6 @@
 # Adventurers
 {
     # CreatureId                     TribeAlignment 
-    { "KEEPER_SPIDER" }                  EVIL               "Breed giant spiders and take over the realm with your off-spring. Watch out for priests early game."
+    { "ADVENTURER_SPIDER" }          EVIL               "Breed giant spiders and take over the realm with your off-spring. Watch out for priests early game."
   }
 }

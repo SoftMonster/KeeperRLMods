@@ -348,7 +348,6 @@
       race = "humans"
       buildingId = "WOOD_CASTLE"
       stockpiles = {{ "gold" 160 "TREASURE_CHEST" }}
-      lootItem = {TechBook "beast mutation"}
       furniture = { "roomFurniture" }
       outsideFeatures = "castleOutside"
     }
@@ -635,7 +634,6 @@
       race = "elves"
       stockpiles = {{ "gold" 100 "TREASURE_CHEST"}}
       buildingId = "WOOD"
-      lootItem = {TechBook "master sorcery"}
       furniture = { "roomFurniture" }
     }
     config = {
@@ -902,7 +900,6 @@
       locationNameGen = "TOWN"
       race = "lizardmen"
       buildingId = "MUD"
-      lootItem = {TechBook "humanoid mutation"}
       shopItems = "goodMushrooms"
       furniture = { "roomFurniture" }
       outsideFeatures = "villageOutside"
@@ -1454,7 +1451,6 @@
       }
       race = "witch"
       buildingId = "WOOD"
-      lootItem = {TechBook "advanced alchemy"}
       furniture = { "witchInside" }
     }
   }

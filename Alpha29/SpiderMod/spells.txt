@@ -418,7 +418,7 @@
     castMessageType = ABILITY
   }
   {
-    id =  "breed"
+    id =  "hatch eggs"
     symbol = "::"
     effect = Chain {
 		Summon "SPIDER" {3}
@@ -430,7 +430,7 @@
   }
   {
     id =  "breed dark spawn"
-    upgrade = "breed"
+    upgrade = "hatch eggs"
     symbol = "::"
     effect = Chain {
 		Summon "SPIDER" {3}
