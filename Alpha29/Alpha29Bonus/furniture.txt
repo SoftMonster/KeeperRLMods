@@ -165,7 +165,7 @@
     strength = 50
     upgrade = "BOOKCASE_IRON"
     maxTraining = {
-      SPELL 12
+      SPELL 30
     }
     requiresLight = true
     destroyFX = { DESTROY_FURNITURE Rgb 190 190 40 255 }
@@ -339,8 +339,8 @@
     strength = 250
     destroyFX = { DESTROY_FURNITURE Rgb 190 190 40 255 }
 # if there is a destroyedEffect then the standard "is destroyed" text is not displayed, you need to add your own
-#    destroyedEffect = Chain { Message "The statue comes to life!" SummonEnemy "ADOXIE_HEAD" {1} }
-    destroyedRemains = "DOWN_STAIRS"
+    destroyedEffect = Chain { Message "The statue comes to life!" SummonEnemy "ADOXIE_HEAD" {1} }
+#    destroyedRemains = "DOWN_STAIRS"
   }
   "BARRICADE"
   {
@@ -367,10 +367,28 @@
     itemDrop = {{{{Simple "WoodPlank"} 1 { 8 14 }}}}
     summonedElement = "ENT"
     tryDestroyFX = { WOOD_SPLINTERS }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+      Chance 0.001 Chain { Message "You have scared a snake!" SummonEnemy "SNAKE" {1} }
+      Chance 0.001 Chain { Message "You have destroyed a birds nest!" SummonEnemy "RAVEN" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have attacked a tree spirit!" SummonEnemy "ENT" {1} }
+      Chance 0.001 Chain { Message "An angry driad falls from a tree!" SummonEnemy "DRIAD" {1} }
+      Chance 0.001 Chain { Message "You have disturbed a wolf!" SummonEnemy "WOLF" {1} }
+      Chance 0.001 Chain { Message "You have uncovered a fox!" SummonEnemy "FOX" {1} Area 0 Permanent SUMMONED }
+    } 
   }
   "DECID_TREE" inherit "CANIF_TREE"
   {
     viewId = { "decid_tree" }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+      Chance 0.001 Chain { Message "You have scared a snake!" SummonEnemy "SNAKE" {1} }
+      Chance 0.001 Chain { Message "You have destroyed a birds nest!" SummonEnemy "RAVEN" {1} }
+      Chance 0.001 Chain { Message "You have attacked a tree spirit!" SummonEnemy "ENT" {1} }
+      Chance 0.001 Chain { Message "An angry driad falls from a tree!" SummonEnemy "DRIAD" {1} }
+      Chance 0.001 Chain { Message "You have disturbed a wolf!" SummonEnemy "WOLF" {1} }
+      Chance 0.001 Chain { Message "You have uncovered a fox!" SummonEnemy "FOX" {1} }
+    } 
   }
   "CACTUS1" inherit "CANIF_TREE"
   {
@@ -415,6 +433,12 @@
     fire = 30
     itemDrop = {{{{Simple "WoodPlank"} 1 { 2 4 }}}}
     tryDestroyFX = { WOOD_SPLINTERS }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+      Chance 0.001 Chain { Message "A chicken walks out of a bush!" SummonEnemy "CHICKEN" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "A boar emerges fromt he bushes!" SummonEnemy "BOAR" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "Swarm of flies encountered." SummonEnemy "FLY" {4 5} Area 0 Permanent SUMMONED }
+    } 
   }
   "STONES"
   {
@@ -698,8 +722,11 @@
     name = "snowman"
     viewId = { "snowman" }
     canHideHere = true
-    blockMovement = true
-    strength = 10
+	
+	#Possible for blockMovement = true to crash it if it blocks an entrance. blockingEnemies seems to work better.
+    blockingEnemies = true #Modded.
+    
+	strength = 10
     meltInfo = { none }
   }
   "KEEPER_BOARD"
@@ -825,6 +852,14 @@
     }
     destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
     tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+	  Chance 0.001 Chain { Message "You have attacked a golem!" SummonEnemy "ADA_GOLEM" {1} }
+      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} Area 0 Permanent SUMMONED }
+	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
+    } 
   }
   "IRON_ORE"
   {
@@ -842,6 +877,14 @@
       2000 HOSTILE_DIG_NO_SKILL
     }
     destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+	  Chance 0.001 Chain { Message "You have attacked a iron golem!" SummonEnemy "IRON_GOLEM" {1} }
+      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} Area 0 Permanent SUMMONED }
+	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
+    } 
     tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
   }
   "STONE"
@@ -861,7 +904,15 @@
     }
     destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
     tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
-  }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+	  Chance 0.001 Chain { Message "You have attacked a stone golem!" SummonEnemy "STONE_GOLEM" {1} }
+      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} Area 0 Permanent SUMMONED }
+	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
+    } 
+ }
   "GOLD_ORE"
   {
     name = "gold ore"
@@ -879,6 +930,14 @@
     }
     destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
     tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+	  Chance 0.001 Chain { Message "You have attacked a gold golem!" SummonEnemy "GOLD_GOLEM" {1} }
+      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} Area 0 Permanent SUMMONED }
+      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} Area 0 Permanent SUMMONED }
+	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
+    } 
   }
   "DUNGEON_WALL"
   {
@@ -983,6 +1042,7 @@
     blockVision = { NORMAL ELF }
     wall = true
     canBuildOutsideOfTerritory = true
+	strength = 200 #Modded
     strength2 = {
       100 BOULDER
       100 DIG
@@ -1012,6 +1072,7 @@
     fire = 50
     luxury = 0.1
     layer = FLOOR
+    canBuildOutsideOfTerritory = true
   }
   "FLOOR_WOOD2" inherit "FLOOR_WOOD1"
   {
@@ -1023,6 +1084,7 @@
     viewId = { "stone_floor1" }
     luxury = 0.3
     layer = FLOOR
+    canBuildOutsideOfTerritory = true
   }
   "FLOOR_STONE2" inherit "FLOOR_STONE1"
   {
@@ -1034,6 +1096,7 @@
     viewId = { "carpet_floor1" }
     luxury = 0.7
     layer = FLOOR
+    canBuildOutsideOfTerritory = true
   }
   "FLOOR_CARPET2" inherit "FLOOR_CARPET1"
   {
@@ -1298,6 +1361,240 @@
     viewLayer = TORCH2
     canBuildOutsideOfTerritory = true
   }
+  
+##########
+#Modded
+##########
+
+  "CAVE_BUSHES"
+  {
+    name = "cave bushes"
+    viewId = { "bush" }
+    strength2 = {
+      10 CUT
+    }
+    blockMovement = true
+    fire = 30
+    itemDrop = {{{{Simple "WoodPlank"} 1 { 10 15 }}}}
+    tryDestroyFX = { WOOD_SPLINTERS }
+  }
+
+  "CASTLE_A1" { name = "castle" viewId = { "castle_a1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_A2" { name = "castle" viewId = { "castle_a2" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_A3" { name = "castle" viewId = { "castle_a3" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_A4" { name = "castle" viewId = { "castle_a4" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_B1" { name = "castle" viewId = { "castle_b1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_B2" { name = "castle" viewId = { "castle_b2" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_B3" { name = "castle" viewId = { "castle_b3" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_B4" { name = "castle" viewId = { "castle_b4" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_C1" { name = "castle" viewId = { "castle_c1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_C2" { name = "castle" viewId = { "castle_c2" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_C3" { name = "castle" viewId = { "castle_c3" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_C4" { name = "castle" viewId = { "castle_c4" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_D1" { name = "castle" viewId = { "castle_d1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
+  "CASTLE_D2" { name = "dungeon entrance" viewId = { "castle_d2" } canBuildOutsideOfTerritory = true }
+  "CASTLE_D3" { name = "dungeon entrance" viewId = { "castle_d3" } onBuilt = DOWN_STAIRS usageType = STAIRS canBuildOutsideOfTerritory = true }
+  "CASTLE_D4" { name = "castle" viewId = { "castle_d4" } blockMovement = true blockVision = { NORMAL ELF } wall = true canBuildOutsideOfTerritory = true }
+  
+  "ELVEN_RUG"
+  {
+    name = "elven rug of concealment"
+    viewId = { "floor_invi" }
+    layer = FLOOR
+    lastingEffect = ENEMY INVISIBLE 0
+    lightEmission = 20
+   }
+  "DWARVEN_REGENERATOR"
+  {
+    name = "dwarven regenerator"
+    viewId = { "floor_regen" }
+    layer = FLOOR
+    lastingEffect = ENEMY REGENERATION 0
+  }
+
+  "FALLING_RUBBLE_TRAP"
+  {
+    name = "falling rubble trap"
+    viewId = { "ruin_wall" }
+    layer = CEILING
+    entryType = Trap { Area 1 PlaceFurniture "RUBBLE" }
+    warning = true
+    constructMessage = SET_UP
+  }
+  "RUBBLE"
+  {
+    name = "rubble"
+    viewId = { "map_mountain2" }
+    constructMessage = none	
+    canSilentlyReplace = true #Allows remove construction to work
+    blockMovement = true
+	strength = 200
+    destroyedEffect = PlaceFurniture "STONES"
+    strength2 = {
+      200 BOULDER
+      200 DIG
+      200 HOSTILE_DIG
+      200 HOSTILE_DIG_NO_SKILL
+    }
+  }
+  "TAR_PIT"
+  {
+   name = "tar pit"
+   viewId = { "tar_pit" }
+   entryType = Trap { Lasting SLOWED }
+   warning = true
+   constructMessage = SET_UP
+  }
+
+  "FLOOR_SPIKES_TRAP"
+  {
+    name = "floor_spikes trap"
+    viewId = { "floor_spikes_trap" }
+    entryType = Trap { Lasting BLEEDING}
+    warning = true
+    constructMessage = SET_UP
+  }
+  "SEA_OF_BONES"
+  {
+    name = "The Sea of Bones"
+    viewId = { "bone" }
+    layer = GROUND
+  }
+  "FLOOR_STONE3"
+  {
+    name = "jeweled floor"
+    viewId = { "stone_pattern1" }
+    luxury = 0.7
+    layer = FLOOR
+    canBuildOutsideOfTerritory = true
+  }
+  "FLOOR_STONE4"
+  {
+    name = "jeweled floor"
+    viewId = { "stone_pattern2" }
+    luxury = 0.7
+    layer = FLOOR
+    canBuildOutsideOfTerritory = true
+  }
+  "FLOOR_TAINTED1"
+  {
+    name = "floor"
+    viewId = { "tainted_tile" }
+    luxury = 0.5
+    layer = FLOOR
+    canBuildOutsideOfTerritory = true
+  }
+  "MASS_GRAVE"
+  {
+    name = "mass grave"
+    viewId = { "impaled_head" }
+    wall = true
+  }
+  "LITTLE_SPIDER_WEB"
+  {
+    name = "spider web"
+    viewId = { "web_trap" }
+    strength = 1
+    blockingEnemies = true
+    destroyedEffect =  Chain { SummonEnemy "SPIDER" {1} PlaceFurniture "BROKEN_WEB" Area 0 Permanent SUMMONED }
+  }
+  "BIG_SPIDER_WEB"
+  {
+    name = "spider web"
+    viewId = { "web_trap" }
+    strength = 1
+    blockingEnemies = true
+    destroyedEffect =  Chain { SummonEnemy "SHELOB" {1} PlaceFurniture "CHEST" Area 0 Permanent SUMMONED }
+  }
+  "BACKGROUND_RUBBLE"
+  {
+    name = "rubble"
+    viewId = { "map_mountain2" }
+    canHideHere = true
+    blockingEnemies = true
+	strength = 200
+    destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
+    destroyedEffect = PlaceFurniture "STONES"
+  }
+  "BACKGROUND_BOULDER"
+  {
+    name = "boulder"
+    viewId = { "boulder" }
+    canHideHere = true
+    blockingEnemies = true
+	strength = 200
+    tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
+    destroyedEffect = PlaceFurniture "STONES"
+  }
+  "HOLE"
+  {
+    name = "hole"
+    viewId = { "pit" }
+	strength = 50
+	blockingEnemies = true
+    destroyedEffect = PlaceFurniture "BRIDGE"	
+  }
+  "BROKEN_WEB"
+  {
+    name = "broken web"
+    viewId = { "web_trap" }
+  }
+  "DUNGEON_ENTRY" inherit "DOWN_STAIRS"
+  {
+    name = "dungeon entrance"
+    viewId = { "dungeon_entrance" }
+  }
+  "ELEMENTALIST_STAIRS_DOWN" inherit "DOWN_STAIRS"
+  {
+    name = "spiraling stairs"
+    viewId = { "down_staircase" Rgb 58 255 106 106 }
+  }
+  "ELEMENTALIST_STAIRS_UP" inherit "UP_STAIRS"
+  {
+    name = "spiraling stairs"
+    viewId = { "up_staircase" Rgb 58 255 106 106  }
+  }
+  "TAINTED_STAIRS_DOWN" inherit "DOWN_STAIRS"
+  {
+    name = "blood-red stairs"
+    viewId = { "down_staircase" Rgb 255 0 0 255 }
+  }
+  "TAINTED_STAIRS_UP" inherit "UP_STAIRS"
+  {
+    name = "blood-red stairs"
+    viewId = { "up_staircase" Rgb 255 0 0 255  }
+  }
+  "TREE_WALL"
+  {
+    name = "tree wall"
+    viewId = { "tree_wall" }
+    blockMovement = true
+    blockVision = { NORMAL }
+    wall = true
+    buildingSupport = true
+	strength = 100
+    summonedElement = "ENT"
+    fire = 100
+    destroyFX = { DESTROY_FURNITURE Rgb 120 87 46 255 }
+  }
+  "TAINTED_WALL"
+  {
+    name = "tainted wall"
+    viewId = { "tainted_wall" }
+    blockMovement = true
+    blockVision = { NORMAL ELF }
+    wall = true
+    buildingSupport = true
+  }
+  "SHALLOW_WATER_COSMETIC"
+  {
+    name = "shallow water"
+    viewId = { "water" }
+    layer = GROUND
+    summonedElement = "WATER_ELEMENTAL"
+    freezeTo = "ICE"
+    walkIntoFX = { WATER_SPLASH Rgb 82 148 255 255 }
+  }
   "KEEPER_SPIDER_WEB"
   {
     name = "spider web"
@@ -1331,4 +1628,49 @@
     canBuildOutsideOfTerritory = true
     canSilentlyReplace = true
   }
+  
+  
+####################
+#Ideas for new traps
+####################
+# Silver blade
+# Explosion Trap/magic mine (Knocks you back)
+# Confusion Trap (Causes Insanity)
+# Pitfall Trap (Stuns)
+# Summon Guardian Trap (Makes automation)
+# Relocation Trap (Teleports invader)
+# Memory Trap (Triggers spell cooldowns)
+# Weapon Destruction Trap (Kills weapons)
+# Ruining Trap (Damages stats)
+# Explosive door runes
+# Trick bed
+# Trick bookshelf
+# Trick chest
+# Magic bolt trap
+# Hidden passage and Door
+####################
+#Ideas for new rooms
+####################
+# Mushroom Farm
+# Medical Room
+# Market
+# Slave Market
+# Guard room
+# Beast Pit
+# Quarry
+# Ore Mine
+# Lounge
+# Arena
+# Limb Workshop
+############################
+#Ideas for new installations
+############################
+# Stone door
+# Bone door
+# Magic door
+# Crystal orbs (light)
+# Skull candles (light)
+# Large Bronze Brazier (light)
+############################
+
 }
