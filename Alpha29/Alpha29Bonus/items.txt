@@ -132,9 +132,9 @@
         1 VictimEffect 1.0 SilverDamage
       }
     }
-  "BattleAxe"
+  "BattleAxe" #Modded
     {
-      viewId = { "battle_axe" }
+      viewId = { "steel_war_axe" }
       name = "battle axe"
       itemClass = WEAPON
       equipmentSlot = WEAPON
@@ -153,9 +153,9 @@
       }
       maxUpgrades = 1
     }
-  "AdaBattleAxe"
+  "AdaBattleAxe" #Modded
     {
-      viewId = { "ada_battle_axe" }
+      viewId = { "adamantite_war_axe" }
       shortName = "adamantine"
       name = "adamantine battle axe"
       itemClass = WEAPON
@@ -1082,6 +1082,139 @@
       uses = 1
       price = 100
       effect = Lasting SPYING
+    }
+  "DwarvenBeer"
+    {
+      viewId = { "dwarf_beer" }
+      name = "dwarven beer"
+      weight = 0.3
+      itemClass = TOOL
+      description = "Permanently increases your attack by 1, but makes you insane and halucinate for a while in exchange."
+      uses = 1
+      price = 100
+      effect = Chain { IncreaseAttr DAMAGE 1 Lasting INSANITY Lasting HALLU }
+    }
+  "LongSpear"
+    {
+      viewId = { "wood_spear" }
+      name = "long spear"
+      itemClass = WEAPON
+      equipmentSlot = WEAPON
+      weight = 6
+      modifiers = {
+        DAMAGE 8
+		DEFENSE 2
+      }
+      price = 8
+      weaponInfo = {
+        attackType = STAB
+        attackMsg = THRUST
+      }
+      genPrefixes = {
+        1 VictimEffect 0.1 Lasting POISON
+        1 ItemAttrBonus DAMAGE 3
+        1 ItemAttrBonus DEFENSE 3
+      }
+      maxUpgrades = 1
+    }
+  "Axe" #Modded
+    {
+      viewId = { "steel_battle_axe" }
+      name = "iron axe"
+      itemClass = WEAPON
+      equipmentSlot = WEAPON
+      weight = 5
+      modifiers = {
+        DAMAGE 10
+      }
+      price = 30
+      weaponInfo = {
+        attackType = CUT
+      }
+      genPrefixes = {
+        1 VictimEffect 0.4 Lasting BLEEDING
+        1 LastingEffect RAGE
+      }
+      maxUpgrades = 1
+    }
+  "AdaAxe" #Modded
+    {
+      viewId = { "ada_battle_axe" }
+      shortName = "adamantine"
+      name = "adamantine axe"
+      itemClass = WEAPON
+      equipmentSlot = WEAPON
+      weight = 4
+      modifiers = {
+        DAMAGE 14
+      }
+      price = 80
+      weaponInfo = {
+        attackType = CUT
+      }
+      genPrefixes = {
+        1 VictimEffect 0.6 Lasting BLEEDING
+      }
+      maxUpgrades = 2
+    }
+  "Mace"
+    {
+      viewId = { "steel_spiked_mace" }
+      name = "spiked mace"
+      itemClass = WEAPON
+      equipmentSlot = WEAPON
+      weight = 5
+      modifiers = {
+        DAMAGE 9
+		DEFENSE 1
+      }
+      price = 30
+      weaponInfo = {
+        attackType = CRUSH
+      }
+      genPrefixes = {
+        1 VictimEffect 0.3 Lasting COLLAPSED
+		1 VictimEffect 0.3 Lasting BLEEDING
+      }
+      maxUpgrades = 1
+	}
+  "AdaMace"
+    {
+      viewId = { "adamantite_spiked_mace" }
+      name = "adamantine spiked mace"
+      itemClass = WEAPON
+      equipmentSlot = WEAPON
+      weight = 4
+      modifiers = {
+        DAMAGE 12
+		DEFENSE 2
+      }
+      price = 100
+      weaponInfo = {
+        attackType = CRUSH
+      }
+      genPrefixes = {
+        1 VictimEffect 0.5 Lasting COLLAPSED
+		1 VictimEffect 0.5 Lasting BLEEDING
+      }
+      maxUpgrades = 2
+    }
+  "Net"
+    {
+      viewId = { "net" }
+      itemClass = RANGED_WEAPON
+      equipmentSlot = RANGED_WEAPON
+      rangedWeapon = RANGED_DAMAGE "net" {"net"} 5
+      weaponInfo = {
+        twoHanded = true
+	    victimEffect = { 0.7 Lasting ENTANGLED }
+      }
+      weight = 3
+      modifiers = {
+        RANGED_DAMAGE 2
+      }
+      name = "net"
+      price = 100
     }
 
 ########################

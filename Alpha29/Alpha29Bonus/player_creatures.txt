@@ -260,7 +260,7 @@
 {
     # CreatureId										TribeAlignment 
     { "ADOXIE_HEAD" }										EVIL               "(Easy)      Wipe the floor with mortals as Adoxie the Dark One."
-    { "ADVENTURER_SPIDER" }                                 EVIL               "(Hard)      Breed giant spiders and take over the realm with your off-spring. Watch out for priests early game."
+	{ "CLERIC_HERO" "CLERIC_HERO" }							LAWFUL             "(Easy) Be a cleric hero."
     { "ADVENTURER" "ADVENTURER_F" }							LAWFUL             "(Challenge) The Classic. Train a mixture of skills in magic, combat and archery!"
 	{ "WARRIOR_ADVENTURER" "WARRIOR_ADVENTURER_FEMALE" }    LAWFUL             "(Challenge) Focus on melee and support magic to crush your foes!"
 	{ "MAGE_ADVENTURER" "MAGE_ADVENTURER_FEMALE" }			LAWFUL             "(Challenge) Train in the way of a true wizard and conquer the land with spells!"
@@ -269,9 +269,8 @@
     { "MINOTAUR" }											EVIL               "(Challenge) Crush your enemies as a single minotaur warrior."
     { "WARRIOR_HERO" }										LAWFUL             "(Challenge) Play as a warrior hero."
     { "NECROMANCER" }										EVIL               "(Challenge) Oppose the world and rid it of all life."
-	{ "CLERIC_HERO" "CLERIC_HERO" }							LAWFUL             "(Challenge) Be a cleric hero."
     { "CYCLOPS" }                                           EVIL               "(Challenge) Slaughter the world as a lone cyclops."
 	{ "THIEF_HERO" "THIEF_HERO" }                           LAWFUL             "(Challenge) Play as an archer assassin. Travel light, rely on stealth and arrows."
 	{ "WIZARD_ADVENTURER" }                                 LAWFUL             "(Challenge) Wizard hero class. Train magic powers."
-
+    { "ADVENTURER_SPIDER" }                                 EVIL               "(Hard)      Breed giant spiders and take over the realm with your off-spring. Watch out for priests early game."
 }

@@ -732,6 +732,17 @@
 
   { "fairy_queen" "H" ColorId WHITE }
 
+ #MODDED by Righteous December 2019 (Adventurer Guild update)
+
+ { "wood_spear" "/" ColorId BROWN }
+ { "steel_battle_axe" ")" ColorId GREEN }
+ { "steel_spiked_mace" ")" ColorId GREEN }
+ { "adamantite_spiked_mace" ")" ColorId LIGHT_BLUE }
+ { "steel_war_axe" ")" ColorId GREEN }
+ { "adamantite_war_axe" ")" ColorId LIGHT_BLUE }
+ { "net" ")" ColorId LIGHT_GRAY }
+ { "dwarf_beer" "!" ColorId YELLOW }
+
  #Modded walls
 
   { viewId = "tree_wall" symbol = "#" color = ColorId GREEN wallShadow = true wallConnections = true }

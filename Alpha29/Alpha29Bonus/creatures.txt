@@ -5033,7 +5033,8 @@
       DEFENSE 10
       SPELL_DAMAGE 35
     }
-    spellSchools = { "ancient magic" }
+	spells = { "magic missile" }
+    spellSchools = { "ancient magic" "fire wizard" }
     skills = {
       LABORATORY 0.6
     }
@@ -7483,7 +7484,34 @@
 "GOBLIN_ARCHER_DUNGEON" inherit "GOBLIN_ARCHER" {}
 #############################################################
 
-	
+###################################################################################	
+#Monster variations for regular tribes (different inventory/some skill variation)
+###################################################################################	
+"DWARF_MILITIA_TRIBE" inherit "DWARF_MILITIA" {}
+"DWARF_FIGHTER_TRIBE" inherit "DWARF_FIGHTER" {}
+"DWARF_WARRIOR_TRIBE" inherit "DWARF_WARRIOR" {}
+"ELITE_DWARF_WARRIOR_TRIBE" inherit "ELITE_DWARF_WARRIOR" {}
+"DWARF_WORKER_TRIBE" inherit "DWARF_WORKER" {}
+"DWARF_MONK_TRIBE" inherit "DWARF_MONK"
+    {
+      viewId = { "dwarf_monk" }
+      attr = {
+        DAMAGE 36
+        DEFENSE 38
+		SPELL_DAMAGE 24
+	  }
+      maxLevelIncrease = {
+        MELEE 10
+		SPELL 7
+      }
+	  spellSchools = { "dwarf monk" "fighter" }
+	  spells = { "advanced healing" "fire breath" "stone to mud" "advanced cure poison" "pull" "shove" "battle cry" "block" "swap positions" }
+      chatReactionFriendly = "talks about drunken martial arts"
+      chatReactionHostile = "\"Die!\""
+      hatedByEffect = HATE_DWARVES
+    }
+
+
 	
 }
 

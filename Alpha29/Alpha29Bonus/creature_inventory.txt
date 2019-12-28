@@ -207,13 +207,14 @@
         { type = Simple "Torch" chance = 0.3 }
         { type = Simple "Bow" chance = 0.05 }
       }
-  {"DWARF"}
+  {"DWARF"} #Modded
       {
         { type = Simple "BattleAxe", alternative = Simple "WarHammer" }
         { Simple "ChainArmor"}
         { type = Simple "IronHelm" chance = 0.5 }
         { type = Simple "IronBoots" chance = 0.3 }
         { type = Simple "Torch" chance = 0.3 }
+		{ type = Simple "DwarvenBeer" chance = 0.1 }
         { Simple "GoldPiece" 2 6 }
       }
   {"DWARF_BARON"} #Modded
@@ -227,6 +228,7 @@
         { Simple "GoldPiece" 80 120 }
         { type = Glyph ARMOR ItemAttrBonus DEFENSE 4 chance = 0.3 }
         { type = Glyph WEAPON JoinPrefixes { LastingEffect BAD_BREATH VictimEffect 0.2 Lasting PANIC } chance = 0.3 }
+		{ type = Simple "DwarvenBeer" chance = 0.1 }
       }
   {"GNOME_CHIEF"}
       {
@@ -633,9 +635,76 @@
       }
   {"GOLD_GOLEM"}
       {
-        { countMin = 30 countMax = 50 type = Simple "GoldPiece" chance = 1.0}
+        { countMin = 30 countMax = 50 type = Simple "GoldPiece" chance = 1.0 }
       }
-  
+
+#-----------------------------------------------------------
+# creature_inventory.txt - Righteous Aug 2019 - Goblin Tribe
+#-----------------------------------------------------------
+  {"DWARF_MILITIA_TRIBE"}
+      {
+        { type = Simple "Spear", alternative = Simple "Sword" prefixChance = 0.05 }
+        { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.2 }
+        { type = Simple "LeatherArmor" prefixChance = 0.05 }
+        { Simple "LeatherBoots" }
+		{ Simple "WoodenShield" }
+        { type = Simple "Torch" chance = 0.1 }
+        { countMin = 4 countMax = 8 type = Simple "GoldPiece" chance = 0.6 }
+		{ type = Simple "DwarvenBeer" chance = 0.1 }
+	  }
+  {"DWARF_FIGHTER_TRIBE"}
+      {
+        { type = Simple "LongSpear" prefixChance = 0.1 }
+        { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.3 }
+        { type = Simple "LeatherArmor" prefixChance = 0.1 }
+        { Simple "LeatherBoots" }
+		{ Simple "LeatherHelm" }
+		{ Simple "WoodenShield" }
+        { type = Simple "Torch" chance = 0.2 }
+        { countMin = 6 countMax = 12 type = Simple "GoldPiece" chance = 0.6 }
+		{ type = Simple "DwarvenBeer" chance = 0.15 }
+	  }
+  {"DWARF_WARRIOR_TRIBE"}
+      {
+        { type = Simple "WarHammer", alternative = Simple "Axe" prefixChance = 0.2 }
+        { countMin = 1 countMax = 3 type = Potion Heal FLESH chance = 0.5 }
+        { type = Simple "ChainArmor" prefixChance = 0.1 }
+        { Simple "IronBoots" }
+		{ Simple "IronHelm" }
+		{ Simple "IronGloves" }
+        { type = Simple "Torch" chance = 0.2 }
+        { countMin = 6 countMax = 12 type = Simple "GoldPiece" chance = 0.6 }
+		{ type = Simple "DwarvenBeer" chance = 0.2 }
+	  }
+  {"ELITE_DWARF_WARRIOR_TRIBE"}
+      {
+        { type = Simple "Axe", alternative = Simple "AdaAxe" prefixChance = 0.2 }
+        { Potion Heal FLESH 1 2 }
+        { type = Simple "ChainArmor" prefixChance = 0.3 }
+        { type = Simple "IronBoots" prefixChance = 0.1 }
+		{ type = Simple "IronHelm" prefixChance = 0.1 }
+		{ type = Simple "IronGloves" prefixChance = 0.1 }
+		{ Simple "IronShield" }
+        { type = Simple "Torch" chance = 0.1 }
+        { Simple "GoldPiece" 5 20 }
+		{ countMin = 1 countMax = 2 type = Simple "DwarvenBeer" chance = 0.2 }
+	  }
+  {"DWARF_WORKER_TRIBE"}
+      {
+		{ Simple "Spear" }
+        { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.2 }
+        { Simple "LeatherArmor" }
+        { Simple "LeatherBoots" }
+        { type = Simple "Torch" chance = 0.9 }
+        { Simple "IronOre" 2 10 }
+		{ type = Simple "DwarvenBeer" chance = 0.05 }
+	  }
+  {"DWARF_MONK_TRIBE"}
+      {
+        { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.75 }
+		{ Simple "DwarvenBeer" 2 4 }
+	  }
+
   #Dungeon wimps
   {
 	"BANDIT_DUNGEON"

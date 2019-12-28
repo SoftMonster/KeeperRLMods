@@ -554,7 +554,7 @@
     }
     createOnBones = 0.1 { "KNIGHTS" "DWARVES" "ELEMENTALIST" }
   }
-  "DWARVES"
+  "DWARVES" #Modded
   {
     settlement = {
       type = MINETOWN
@@ -564,7 +564,11 @@
         fighters = {
           count = {6 9}
           all = {
-            1 "DWARF"
+		    2 "DWARF_MILITIA_TRIBE"
+            3 "DWARF_FIGHTER_TRIBE"
+			3 "DWARF_WARRIOR_TRIBE"
+			2 "ELITE_DWARF_WARRIOR_TRIBE"
+			1 "DWARF_MONK_TRIBE"
           }
           baseLevelIncrease = {
             MELEE 10
@@ -573,7 +577,9 @@
         civilians = {
           count = {3 5}
           all = {
-            2 "DWARF_FEMALE"
+            3 "PLAYER_DWARF_FEMALE"
+            3 "PLAYER_DWARF_FEMALE2"
+            3 "PLAYER_DWARF_FEMALE3"
             1 "RAT"
           }
         }
@@ -610,7 +616,7 @@
     }
     immigrants = {
       {
-        ids = {"DWARF"}
+        ids = { "DWARF_MILITIA_TRIBE" "DWARF_FIGHTER_TRIBE" "DWARF_WARRIOR_TRIBE" "ELITE_DWARF_WARRIOR_TRIBE" "DWARF_MONK_TRIBE"}
         traits = {FIGHTER}
         frequency = 1
       }
@@ -1758,7 +1764,7 @@
       stockpiles = {{ "minerals" 60 }}
     }
   }
-  "DWARF_CAVE"
+  "DWARF_CAVE" #Modded
   {
     settlement = {
       type = SMALL_MINETOWN
@@ -1766,11 +1772,21 @@
       inhabitants = {
         fighters = {
           count = {2 5}
-          all = { 1 "DWARF" }
+          all = { 		    
+			2 "DWARF_MILITIA_TRIBE"
+            3 "DWARF_FIGHTER_TRIBE"
+			3 "DWARF_WARRIOR_TRIBE"
+			2 "ELITE_DWARF_WARRIOR_TRIBE"
+			1 "DWARF_MONK_TRIBE" 
+		  }
         }
         civilians = {
           count = {2 5}
-          all = { 1 "DWARF_FEMALE" }
+          all = { 
+			1 "PLAYER_DWARF_FEMALE"
+			1 "PLAYER_DWARF_FEMALE2"
+			1 "PLAYER_DWARF_FEMALE3"
+		  }
         }
       }
       race = "dwarves"

@@ -595,9 +595,9 @@
         { ids = { "STONE_GOLEM" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo STONE 150} { 0.0 TechId "master earth magic"   }}}
         { ids = { "EARTH_ELEMENTAL" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo STONE 200} { 0.0 TechId "elite earth magic"    }}}
         { ids = { "IRON_GOLEM" }      traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 120}  { 0.0 TechId "basic metalic magic"  }}}
-        { ids = { "POSSESSED_SWORD" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"}}}
-        { ids = { "GHOST_ARMOUR" }    traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"}}}
-        { ids = { "GIANT_ROBOT" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 100}  { 0.0 TechId "magic contraptions"   }}}
+        { ids = { "POSSESSED_SWORD" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 500}  { 0.0 TechId "simplistic animations"}}}
+        { ids = { "GHOST_ARMOUR" }    traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 500}  { 0.0 TechId "simplistic animations"}}}
+        { ids = { "GIANT_ROBOT" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 1000}  { 0.0 TechId "magic contraptions"   }}}
         { ids = { "ADA_GOLEM" }       traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo ADA 120}   { 0.0 TechId "master metalic magic" }}}
         { ids = { "AUTOMATON" }       traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 200}  { 0.0 TechId "elite metalic magic"  }}}
         { ids = { "FIRE_SPHERE" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo GOLD 5}    { 0.0 TechId "basic fire magic"     }}}
