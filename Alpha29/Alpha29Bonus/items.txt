@@ -1021,7 +1021,7 @@
       weaponInfo = {
         attackType = STAB
         attackMsg = THRUST
-		victimEffect = { 1.0 Fire }
+		victimEffect = { 1.0 Chain {Fire Enhance ARMOR -1} }
 		attackerEffect = {
 		  Chain {
             Lasting FIRE_RESISTANT
