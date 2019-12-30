@@ -7183,6 +7183,25 @@
       chatReactionHostile = "\"Soon you will join my undead ranks. DIE!\""
       hatedByEffect = HATE_UNDEAD
     }
+  "DISENCHANTER" inherit "LOST_SOUL"
+    {
+      body = {
+        type = NonHumanoid LARGE
+        material = SPIRIT
+        deathSound = none
+        intrinsicAttacks = {
+          TORSO { Intrinsic { "touch_attack" } "touch" 0 {
+              attackType = HIT
+              attackMsg = TOUCH
+              victimEffect = { 0.5 Enhance ARMOR -1 }
+              attackerEffect = {Suicide DIE} } }
+        }
+      }
+      name = {
+        name = "disenchanter"
+      }
+    }
+
 #------------------
 #Immigrant variants
 #------------------
@@ -7320,7 +7339,6 @@
     }
 
 
-    
 #############################################################	
 #Monster variations for dungeons (different inventory)
 #############################################################

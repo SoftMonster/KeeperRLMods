@@ -1540,7 +1540,7 @@
     }
     immigrants = {
       {
-        ids = {"LOST_SOUL"}
+        ids = {"DISENCHANTER" "LOST_SOUL"}
         traits = {FIGHTER}
         specialTraits = {
           {1.0 {LastingEffect DISAPPEAR_DURING_DAY}}
