@@ -517,7 +517,7 @@
         SPEED 1 #Modded
       }
       courage = 100
-      spells = { "directed blast" }
+      spells = { "directed blast" "disenchantment bolt"}
       chatReactionFriendly = "\"Kneel before us!\""
       chatReactionHostile = "\"Face your death!\""
       name = {

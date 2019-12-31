@@ -988,6 +988,14 @@
    cooldown = 16
    sound = SPELL_BLAST
  }
+ {
+   id = "disenchantment bolt" 
+   symbol = "⇝"
+   range = 10
+   effect = Enhance ARMOR -1
+   cooldown = 180
+   sound = SPELL_BLAST
+ }
 #--------------------------------------------------------
 # spells.txt modding by Righteous August 2019 for Goblins
 #--------------------------------------------------------

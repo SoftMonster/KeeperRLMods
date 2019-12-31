@@ -152,6 +152,7 @@
    "curse" 6
    "fire shield" 6
    "regrow body parts" 7
+   "disenchantment bolt" 7 
   }
   "dwarf monk" SPELL
   {
