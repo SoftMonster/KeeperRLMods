@@ -216,23 +216,6 @@
     description = "(Challenge) Breed an army of goblins and overrun the land with numbers!" #Modded
   }
   {
-    creatureId = { "KEEPER_SPIDER" }
-    tribeAlignment = EVIL
-    immigrantGroups = { "spirit"
-	}
-    technology = { "spin webs"
-    }
-    initialTech = { "spin webs"
-	}
-    buildingGroups = { "spider"
-    }
-    workshopGroups = {
-	}
-    description =
-	  "NOTE: SPIDER KEEPER IS JUST A MAXED ADVENTURER
-	   ========================================="
-  }
-  {
     creatureId = { "DUNGEON_MASTER" }
     tribeAlignment = EVIL
     immigrantGroups = {"sandbox"}
