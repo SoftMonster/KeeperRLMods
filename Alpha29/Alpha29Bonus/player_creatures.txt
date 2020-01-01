@@ -227,7 +227,7 @@
     initialTech = {
 	}
     buildingGroups = {
-        "guildmaster" "orders"
+        "guildmaster" "floors" "orders"
     }
     workshopGroups = { "basic" "scrolls" }
     description = "Manage an adventurer guild and defeat evil."
