@@ -6701,7 +6701,7 @@
         MAGIC_VULNERABILITY 1
         NO_CARRY_LIMIT 1
       }
-	  }
+    }
    "DWARF_MONK"
     {
       viewId = { "dwarf_monk" }
@@ -7528,9 +7528,63 @@
       chatReactionHostile = "\"Die!\""
       hatedByEffect = HATE_DWARVES
     }
-
-
-	
+  "GUILDMASTER"
+    {
+      name = {
+        name = "guildmaster"
+        firstNameGen = "FIRST_MALE"
+        fullTitle = true
+      }
+      viewId = { "guildmaster_male1" }
+      viewIdUpgrades = { { "guildmaster_male2" } { "guildmaster_male3" } { "guildmaster_male4" }}
+      attr = {
+        DAMAGE 15
+        DEFENSE 15
+      }
+      permanentEffects = {
+        SPEED 1
+      }
+      body = {
+        type = Humanoid LARGE
+      }
+      chatReactionFriendly = "looks happy"
+      chatReactionHostile = "looks angry"
+      spells = { "healing" }
+    }
+  "GUILDMASTER_F" inherit "GUILDMASTER"
+    {
+      viewId = { "guildmaster_female1" }
+      gender = FEMALE
+      name = {
+        name = "wizard"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+      viewIdUpgrades = { { "guildmaster_female2" } { "guildmaster_female3" } { "guildmaster_female4" }}
+    }
+  "SHIPMENT"
+    {
+      viewId = { "caravan_cart" }
+      name = {
+        name = "resource shipment"
+      }
+      permanentEffects = {
+        SPEED 1
+        NO_CARRY_LIMIT 1
+      }
+      attr = {
+        DAMAGE 0
+        DEFENSE 0
+      }
+      body = {
+        type = Humanoid LARGE
+        material = SPIRIT
+	  }
+      deathDescription = "emptied for collection"
+      hatedByEffect = NO_CARRY_LIMIT #Emptied by workers
+      courage = 100
+    }
+  "SHIPMENT_START" inherit "SHIPMENT" {}
 }
 
 ##########################

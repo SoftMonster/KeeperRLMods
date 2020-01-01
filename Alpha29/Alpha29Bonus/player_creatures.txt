@@ -216,6 +216,23 @@
     description = "(Challenge) Breed an army of goblins and overrun the land with numbers!" #Modded
   }
   {
+    creatureId = { "GUILDMASTER" "GUILDMASTER_F"}
+    tribeAlignment = LAWFUL
+    immigrantGroups = { "guildmaster"
+	}
+    technology = {
+        "alchemy" "advanced alchemy" "iron working" "jewellery" "two-handed weapons" "archery"
+		"sorcery" "advanced sorcery" "magical weapons" "master sorcery"
+	}
+    initialTech = {
+	}
+    buildingGroups = {
+        "guildmaster" "orders"
+    }
+    workshopGroups = { "basic" "scrolls" }
+    description = "Manage an adventurer guild and defeat evil."
+  }
+  {
     creatureId = { "DUNGEON_MASTER" }
     tribeAlignment = EVIL
     immigrantGroups = {"sandbox"}

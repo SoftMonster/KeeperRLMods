@@ -1457,7 +1457,7 @@
   "SEA_OF_BONES"
   {
     name = "The Sea of Bones"
-    viewId = { "bone" }
+    viewId = { "bone_floor" }
     layer = GROUND
   }
   "FLOOR_STONE3"
@@ -1628,6 +1628,77 @@
     canBuildOutsideOfTerritory = true
     canSilentlyReplace = true
   }
+  "CASTLE_WALL_GM"
+  {
+    name = "wall"
+    viewId = { "castle_wall" }
+    blockMovement = true
+    blockVision = { NORMAL ELF }
+    buildingSupport = true
+    strength2 = {
+      300 BOULDER
+      100 DIG
+      1900 HOSTILE_DIG
+      2000 HOSTILE_DIG_NO_SKILL
+    }
+    canBuildOutsideOfTerritory = true
+  }
+  "WOOD_WALL_GM" inherit "CASTLE_WALL_GM"
+  {
+    viewId = { "wood_wall" }
+    summonedElement = "ENT"
+    fire = 100
+    destroyFX = { DESTROY_FURNITURE Rgb 120 87 46 255 }
+  }
+  "WOOD_DOOR_GM"
+  {
+    name = "wooden door"
+    viewId = { "wood_door_ew" }
+    blockingEnemies = true
+    canHideHere = true
+    blockVision = { NORMAL ELF }
+    fire = 50
+    strength = 80
+    clickType = LOCK
+    destroyFX = { DESTROY_FURNITURE Rgb 120 87 46 255 }
+    canBuildOutsideOfTerritory = true
+    buildingSupport = true
+  }
+  "IRON_DOOR_GM"
+  {
+    name = "iron door"
+    viewId = { "iron_door_ew" }
+    blockingEnemies = true
+    canHideHere = true
+    blockVision = { NORMAL ELF }
+    strength = 160
+    clickType = LOCK
+    destroyFX = { DESTROY_FURNITURE Rgb 120 120 120 255 }
+    canBuildOutsideOfTerritory = true
+    buildingSupport = true
+  }
+  "ADA_DOOR_GM"
+  {
+    name = "adamantine door"
+    viewId = { "ada_door_ew" }
+    blockingEnemies = true
+    canHideHere = true
+    blockVision = { NORMAL ELF }
+    strength = 320
+    clickType = LOCK
+    requiredSupport = { { { E W } } { { N S } {"ada_door_ns"} } }
+    destroyFX = { DESTROY_FURNITURE Rgb 120 120 120 255 }
+    canBuildOutsideOfTerritory = true
+    buildingSupport = true
+  }
+
+  "TRAINING_WOOD_GM" inherit "TRAINING_WOOD" { canBuildOutsideOfTerritory = true }
+  "TRAINING_IRON_GM" inherit "TRAINING_IRON" { canBuildOutsideOfTerritory = true }
+  "TRAINING_ADA_GM" inherit "TRAINING_ADA" { canBuildOutsideOfTerritory = true }
+  "ARCHERY_RANGE_GM" inherit "ARCHERY_RANGE" { canBuildOutsideOfTerritory = true }
+  "GROUND_TORCH_GM" inherit "GROUND_TORCH" { canBuildOutsideOfTerritory = true }
+  "FOUNTAIN_GM" inherit "FOUNTAIN" { canBuildOutsideOfTerritory = true }
+
   
   
 ####################

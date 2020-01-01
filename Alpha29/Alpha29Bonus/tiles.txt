@@ -756,5 +756,16 @@
 
  #Immigrant variants
   { "winged_imp" "i" ColorId LIGHT_BROWN }
-
+  
+ #Guildmaster
+   { "guildmaster_male1" "@" ColorId LIGHT_BROWN }
+   { "guildmaster_male2" "@" ColorId LIGHT_BROWN }
+   { "guildmaster_male3" "@" ColorId LIGHT_BROWN }
+   { "guildmaster_male4" "@" ColorId LIGHT_BROWN }
+   { "guildmaster_female1" "@" ColorId LIGHT_BROWN }
+   { "guildmaster_female2" "@" ColorId LIGHT_BROWN }
+   { "guildmaster_female3" "@" ColorId LIGHT_BROWN }
+   { "guildmaster_female4" "@" ColorId LIGHT_BROWN }
+   { "caravan_cart" "#" ColorId LIGHT_BROWN }
+   { "bone_floor" "." ColorId WHITE }
 }

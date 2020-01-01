@@ -44,22 +44,6 @@
         }
     }
 
-    "spirit"
-    {
-        {
-          ids = { "HUBBY" }
-          traits = { WORKER NO_LIMIT NO_EQUIPMENT }
-          spawnLocation = NearLeader
-          keybinding = CREATE_IMP
-          sound = CREATE_IMP 2
-          noAuto = true
-          initialRecruitment = 1
-          requirements = {
-            { 0 ExponentialCost GOLD 1 1 1 }
-          }
-        }
-    }
-
     "dark_keeper"
     {
         {
@@ -3006,5 +2990,33 @@
              { 0.1 { LastingEffect RAGE}}
           }
         }
+    }
+    "guildmaster"
+    {
+        {
+          ids = { "DWARF_WORKER" }
+          traits = { WORKER FIGHTER NO_LIMIT }
+          spawnLocation = NearLeader
+          keybinding = CREATE_IMP
+          sound = CREATE_IMP 2
+          noAuto = true
+          initialRecruitment = 4
+          requirements = {
+            { 1 ExponentialCost GOLD 30 5 4 }
+          }
+        }
+		{ ids = { "SHIPMENT"} traits = { FIGHTER } frequency = 1.0 stripEquipment = false }
+        { ids = { "SHIPMENT_START"} consumeIds = true initialRecruitment = 1 stripEquipment = false }
+		{ ids = { "CLERIC_HERO" } traits = { FIGHTER } frequency = 1.0 }
+		{ ids = { "ADVENTURER" "ADVENTURER_F"} traits = { FIGHTER } frequency = 1.0 }
+		{ ids = { "WARRIOR_ADVENTURER" "WARRIOR_ADVENTURER_FEMALE"} traits = { FIGHTER } frequency = 1.0 }
+        { ids = { "MAGE_ADVENTURER" "MAGE_ADVENTURER_FEMALE"} traits = { FIGHTER } frequency = 1.0 }
+		{ ids = { "RANGER_ADVENTURER" "RANGER_ADVENTURER_FEMALE"} traits = { FIGHTER } frequency = 1.0 }
+		{ ids = { "DWARF_BARON"} traits = { FIGHTER } frequency = 1.0 }
+		{ ids = { "MINOTAUR"} traits = { FIGHTER } frequency = 1.0 }
+        { ids = { "WARRIOR_HERO"} traits = { FIGHTER } frequency = 1.0 }
+		{ ids = { "CYCLOPS"} traits = { FIGHTER } frequency = 1.0 }
+		{ ids = { "THIEF_HERO"} traits = { FIGHTER } frequency = 1.0 }
+		{ ids = { "WIZARD_ADVENTURER"} traits = { FIGHTER } frequency = 1.0 }
     }
 }
