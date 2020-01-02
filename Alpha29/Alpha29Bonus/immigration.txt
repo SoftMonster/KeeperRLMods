@@ -3013,9 +3013,7 @@
         { ids = { "MAGE_ADVENTURER" "MAGE_ADVENTURER_FEMALE"} traits = { FIGHTER } frequency = 1.0 }
 		{ ids = { "RANGER_ADVENTURER" "RANGER_ADVENTURER_FEMALE"} traits = { FIGHTER } frequency = 1.0 }
 		{ ids = { "DWARF_BARON"} traits = { FIGHTER } frequency = 1.0 }
-		{ ids = { "MINOTAUR"} traits = { FIGHTER } frequency = 1.0 }
         { ids = { "WARRIOR_HERO"} traits = { FIGHTER } frequency = 1.0 }
-		{ ids = { "CYCLOPS"} traits = { FIGHTER } frequency = 1.0 }
 		{ ids = { "THIEF_HERO"} traits = { FIGHTER } frequency = 1.0 }
 		{ ids = { "WIZARD_ADVENTURER"} traits = { FIGHTER } frequency = 1.0 }
     }
