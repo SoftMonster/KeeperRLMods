@@ -51,7 +51,7 @@
         victimEffect = { 0.5 Lasting POISON }
       }
     }
-  "Spear"
+  "Spear" #MODDED
     {
       viewId = { "spear" }
       name = "spear"
@@ -67,6 +67,16 @@
         attackType = STAB
         attackMsg = THRUST
       }
+      genPrefixes = {
+        #MODDED
+        1 VictimEffect 0.15 Damage DAMAGE SPELL
+        1 VictimEffect 0.5 Lasting BLEEDING
+        1 VictimEffect 0.05 Ice
+        1 JoinPrefixes {
+          ItemAttrBonus DAMAGE 1
+          VictimEffect 0.1 Lasting POISON
+        }
+	  }
     }
   "Sword"
     {
