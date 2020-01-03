@@ -1691,6 +1691,39 @@
     canBuildOutsideOfTerritory = true
     buildingSupport = true
   }
+  "IRON_ALTAR"
+  {
+    name = "iron hero altar"
+    viewId = { "iron_hero_altar" }
+    blockMovement = true
+    canHideHere = true
+    luxury = 0.7
+    strength = 50
+    populationIncrease = 1 none
+    destroyFX = { DESTROY_FURNITURE Rgb 190 190 40 255 }
+  }
+  "GOLD_ALTAR"
+  {
+    name = "gold hero altar"
+    viewId = { "gold_hero_altar" }
+    blockMovement = true
+    canHideHere = true
+    luxury = 0.7
+    strength = 50
+    populationIncrease = 3 none
+    destroyFX = { DESTROY_FURNITURE Rgb 190 190 40 255 }
+  }
+  "ADA_ALTAR"
+  {
+    name = "adamantine hero altar"
+    viewId = { "ada_hero_altar" }
+    blockMovement = true
+    canHideHere = true
+    luxury = 0.7
+    strength = 50
+    populationIncrease = 10 none
+    destroyFX = { DESTROY_FURNITURE Rgb 190 190 40 255 }
+  }
 
   "TRAINING_WOOD_GM" inherit "TRAINING_WOOD" { canBuildOutsideOfTerritory = true }
   "TRAINING_IRON_GM" inherit "TRAINING_IRON" { canBuildOutsideOfTerritory = true }

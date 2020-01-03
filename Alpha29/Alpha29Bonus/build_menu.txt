@@ -89,6 +89,11 @@
 
     { Furniture {{ "FOUNTAIN_GM" }      STONE 30 }                  "Fountain"          "Installations" }
 
+    { Furniture {{ "IRON_ALTAR" }       IRON   100  }                "Iron hero altar"           "Installations" ""}
+
+    { Furniture {{ "GOLD_ALTAR" }       GOLD   100  }                "Gold hero altar"           "Installations" ""}
+
+    { Furniture {{ "ADA_ALTAR" }        ADA   100  }                 "Adamantine hero altar"     "Installations" ""}
   }
 
 

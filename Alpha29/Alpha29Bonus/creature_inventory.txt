@@ -644,8 +644,7 @@
   {"SHIPMENT_START" "SHIPMENT"}
       {
         { countMin = 10 countMax = 10 type = Simple "AdaOre" chance = 1.0 }
-        { countMin = 50 countMax = 50 type = Simple "GoldPiece" chance = 1.0 }
-        { countMin = 100 countMax = 100 type = Simple "IronOre" chance = 1.0 }
+        { countMin = 50 countMax = 50 type = Simple "IronOre" chance = 1.0 }
         { countMin = 100 countMax = 100 type = Simple "Rock" chance = 1.0 }
         { countMin = 1000 countMax = 1000 type = Simple "WoodPlank" chance = 1.0 }
       }

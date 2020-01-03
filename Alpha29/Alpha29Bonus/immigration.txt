@@ -3005,16 +3005,16 @@
             { 1 ExponentialCost GOLD 30 5 4 }
           }
         }
-		{ ids = { "SHIPMENT"} traits = { FIGHTER } frequency = 1.0 stripEquipment = false }
         { ids = { "SHIPMENT_START"} consumeIds = true initialRecruitment = 1 stripEquipment = false }
-		{ ids = { "CLERIC_HERO" } traits = { FIGHTER } frequency = 1.0 }
+		{ ids = { "SHIPMENT"} traits = { FIGHTER } frequency = 1.0 stripEquipment = false requirements = { { 1.0 CostInfo GOLD 10 } } }
 		{ ids = { "ADVENTURER" "ADVENTURER_F"} traits = { FIGHTER } frequency = 1.0 }
-		{ ids = { "WARRIOR_ADVENTURER" "WARRIOR_ADVENTURER_FEMALE"} traits = { FIGHTER } frequency = 1.0 }
-        { ids = { "MAGE_ADVENTURER" "MAGE_ADVENTURER_FEMALE"} traits = { FIGHTER } frequency = 1.0 }
-		{ ids = { "RANGER_ADVENTURER" "RANGER_ADVENTURER_FEMALE"} traits = { FIGHTER } frequency = 1.0 }
-		{ ids = { "DWARF_BARON"} traits = { FIGHTER } frequency = 1.0 }
-        { ids = { "WARRIOR_HERO"} traits = { FIGHTER } frequency = 1.0 }
-		{ ids = { "THIEF_HERO"} traits = { FIGHTER } frequency = 1.0 }
-		{ ids = { "WIZARD_ADVENTURER"} traits = { FIGHTER } frequency = 1.0 }
+		{ ids = { "WARRIOR_ADVENTURER" "WARRIOR_ADVENTURER_FEMALE"} traits = { FIGHTER } frequency = 1.0 requirements = { { 0.0 TechId "distinction" } }}
+        { ids = { "MAGE_ADVENTURER" "MAGE_ADVENTURER_FEMALE"} traits = { FIGHTER } frequency = 1.0 requirements = { { 0.0 TechId "reputation" } }}
+		{ ids = { "RANGER_ADVENTURER" "RANGER_ADVENTURER_FEMALE"} traits = { FIGHTER } frequency = 1.0 requirements = { { 0.0 TechId "reputation" } }}
+		{ ids = { "DWARF_BARON"} traits = { FIGHTER } frequency = 1.0 requirements = { { 0.0 TechId "renown" } }}
+        { ids = { "WARRIOR_HERO"} traits = { FIGHTER } frequency = 1.0 requirements = { { 0.0 TechId "renown" } }}
+		{ ids = { "THIEF_HERO"} traits = { FIGHTER } frequency = 1.0 requirements = { { 0.0 TechId "fame" } }}
+		{ ids = { "WIZARD_ADVENTURER"} traits = { FIGHTER } frequency = 1.0 requirements = { { 0.0 TechId "fame" } }}
+		{ ids = { "CLERIC_HERO" } traits = { FIGHTER } frequency = 1.0 requirements = { { 0.0 TechId "fame" } }}
     }
 }

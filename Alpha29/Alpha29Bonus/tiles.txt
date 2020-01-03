@@ -768,4 +768,7 @@
    { "guildmaster_female4" "@" ColorId LIGHT_BROWN }
    { "caravan_cart" "#" ColorId LIGHT_BROWN }
    { "bone_floor" "." ColorId WHITE }
+   { viewId = "iron_hero_altar" symbol = "&" color = ColorId DARK_GRAY roundShadow = true }
+   { viewId = "gold_hero_altar" symbol = "&" color = ColorId YELLOW roundShadow = true }
+   { viewId = "ada_hero_altar"  symbol = "&" color = ColorId LIGHT_GRAY roundShadow = true }
 }
