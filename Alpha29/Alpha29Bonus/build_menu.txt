@@ -7,6 +7,8 @@
   "guildmaster" #Mod
   {
 
+    { Furniture {{ "TREE_TRUNK_GM" } WOOD 0 } "Clear ground (uses fire)"   "Structure"  "" d {} true DIG_OR_CUT_TREES}
+
     { Furniture {{ "WOOD_WALL_GM" }                  WOOD 5 }       "Wooden building"   "Structure"
       "Outdoor building. Tiles covered by the roof are considered territory and can be built on." }
 

@@ -6700,6 +6700,7 @@
       permanentEffects = {
         MAGIC_VULNERABILITY 1
         NO_CARRY_LIMIT 1
+		REGENERATION 1
       }
     }
    "DWARF_MONK"
