@@ -79,8 +79,8 @@
     { Furniture {{ "POETRY_TABLE" } WOOD 12 }                    "Poetry table"          "Crafting"
         "Allows writing poems."}
 
-    { Furniture {{ "GROUND_TORCH_GM" }  WOOD 10  }                  "Standing torch"    "Installations"
-        "" 0 {} false BUILD_TORCH }
+    { Furniture {{ "TORCH_N_GM" "TORCH_E_GM" "TORCH_S_GM" "TORCH_W_GM" "GROUND_TORCH_GM"}}          "Torch"             "Installations"
+        "Add some light to the guild." c {} false BUILD_TORCH}
 
     { Furniture {{ "KEEPER_BOARD" }  WOOD 15 }                   "Message board"     "Installations"
         "A board where you can leave a message for other players." }

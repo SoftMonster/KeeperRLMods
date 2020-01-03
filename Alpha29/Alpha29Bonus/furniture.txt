@@ -1698,6 +1698,10 @@
   "ARCHERY_RANGE_GM" inherit "ARCHERY_RANGE" { canBuildOutsideOfTerritory = true }
   "GROUND_TORCH_GM" inherit "GROUND_TORCH" { canBuildOutsideOfTerritory = true }
   "FOUNTAIN_GM" inherit "FOUNTAIN" { canBuildOutsideOfTerritory = true }
+  "TORCH_N_GM" inherit "TORCH_N" {    requiredSupport = { { { } } } }
+  "TORCH_S_GM" inherit "TORCH_S" {    requiredSupport = { { { } } } }
+  "TORCH_E_GM" inherit "TORCH_E" {    requiredSupport = { { { } } } }
+  "TORCH_W_GM" inherit "TORCH_W" {    requiredSupport = { { { } } } }
 
   
   
