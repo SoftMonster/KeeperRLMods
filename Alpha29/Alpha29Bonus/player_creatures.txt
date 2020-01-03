@@ -215,23 +215,40 @@
     workshopGroups = { "goblin" "traps" }
     description = "(Challenge) Breed an army of goblins and overrun the land with numbers!" #Modded
   }
-  {
-    creatureId = { "GUILDMASTER" "GUILDMASTER_F"}
-    tribeAlignment = LAWFUL
-    immigrantGroups = { "guildmaster"
-	}
-    technology = {
-        "distinction" "reputation" "renown" "fame" "alchemy" "advanced alchemy" "iron working" "jewellery"
-		"two-handed weapons" "archery" "sorcery" "advanced sorcery" "magical weapons" "master sorcery"
-	}
-    initialTech = {
-	}
-    buildingGroups = {
-        "guildmaster" "floors" "orders"
-    }
-    workshopGroups = { "basic" "scrolls" }
-    description = "Manage an adventurer guild and defeat evil."
-  }
+#  {
+#    creatureId = { "KEEPER_SPIDER" }
+#    tribeAlignment = EVIL
+#    immigrantGroups = { "spirit"
+#	}
+#    technology = { "spin webs"
+#    }
+#    initialTech = { "spin webs"
+#	}
+#    buildingGroups = { "spider"
+#    }
+#    workshopGroups = {
+#	}
+#   description =
+#	  "NOTE: SPIDER KEEPER IS JUST A MAXED ADVENTURER
+#	   ========================================="
+#  }
+#  {
+#    creatureId = { "GUILDMASTER" "GUILDMASTER_F"}
+#    tribeAlignment = LAWFUL
+#    immigrantGroups = { "guildmaster"
+#	}
+#    technology = {
+#        "distinction" "reputation" "renown" "fame" "alchemy" "advanced alchemy" "iron working" "jewellery"
+#		"two-handed weapons" "archery" "sorcery" "advanced sorcery" "magical weapons" "master sorcery"
+#	}
+#    initialTech = {
+#	}
+#    buildingGroups = {
+#        "guildmaster" "floors" "orders"
+#    }
+#    workshopGroups = { "basic" "scrolls" }
+#    description = "Manage an adventurer guild and defeat evil."
+#  }
   {
     creatureId = { "DUNGEON_MASTER" }
     tribeAlignment = EVIL

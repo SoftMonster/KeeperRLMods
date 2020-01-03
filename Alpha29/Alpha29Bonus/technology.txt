@@ -81,10 +81,10 @@
   "legendary goblin priests" { "Allows the Recruitment of 4 goblin high priests."			  {"master sorcery"}}
   "goblin glyph crafting"	 { "Turn all that shiny adamantite ore into something more useful than other resources." {"alchemical conversion" "jewellery"}}
 #Adventurer Guild
-  "distinction"     { "Bring the guild out of obscurity, and train better heroes. Unlocks reputation."}
-  "reputation"      { "Work on the reputation of the guild to attract better heroes. Unlocks renown."}
-  "renown"          { "Build a renown for excellence and attact heroes from all over the land. Unlocks fame."}
-  "fame"            { "Get recognised across the land for being an elite guild and attracting only the best."}
+  "distinction"     { "Bring the guild out of obscurity, and train better heroes. Unlocks reputation." }
+  "reputation"      { "Work on the reputation of the guild to attract better heroes. Unlocks renown." {"distinction"} }
+  "renown"          { "Build a renown for excellence and attact heroes from all over the land. Unlocks fame." {"reputation"} }
+  "fame"            { "Get recognised across the land for being an elite guild and attracting only the best." {"renown"} }
 #Spiders
   "spin webs" { "Yup. That is what spiders do. Spin webs." }
 }
