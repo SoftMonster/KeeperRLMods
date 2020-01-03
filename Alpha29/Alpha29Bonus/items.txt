@@ -1209,24 +1209,7 @@
       }
       maxUpgrades = 2
     }
-  "Net"
-    {
-      viewId = { "net" }
-      itemClass = RANGED_WEAPON
-      equipmentSlot = RANGED_WEAPON
-      rangedWeapon = RANGED_DAMAGE "net" {"net"} 5
-      weaponInfo = {
-        twoHanded = true
-	    victimEffect = { 0.7 Lasting ENTANGLED }
-      }
-      weight = 3
-      modifiers = {
-        RANGED_DAMAGE 2
-      }
-      name = "net"
-      price = 100
-    }
-
+    
 ########################
 #Ideas for future items#
 ########################
