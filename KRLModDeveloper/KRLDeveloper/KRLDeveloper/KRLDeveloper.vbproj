@@ -74,6 +74,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmEffect.Designer.vb">
+      <DependentUpon>frmEffect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEffect.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HelperClass.vb" />
     <Compile Include="Items.Designer.vb">
       <DependentUpon>Items.vb</DependentUpon>
@@ -115,6 +121,12 @@
     <Compile Include="ucBracketQuotedString.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="ucEffect.Designer.vb">
+      <DependentUpon>ucEffect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucEffect.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ucSound.Designer.vb">
       <DependentUpon>ucSound.vb</DependentUpon>
     </Compile>
@@ -141,6 +153,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmEffect.resx">
+      <DependentUpon>frmEffect.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Items.resx">
       <DependentUpon>Items.vb</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucBoolean.resx">
       <DependentUpon>ucBoolean.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEffect.resx">
+      <DependentUpon>ucEffect.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucSound.resx">
       <DependentUpon>ucSound.vb</DependentUpon>

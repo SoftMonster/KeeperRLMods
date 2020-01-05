@@ -26,6 +26,8 @@ Partial Class Items
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.applySound = New KRLDeveloperNS.ucSound()
+        Me.EquipmentSlot = New KRLDeveloperNS.ucEquipmentSlot()
         Me.upgradeInfo = New System.Windows.Forms.TextBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.weaponInfo = New System.Windows.Forms.TextBox()
@@ -57,7 +59,6 @@ Partial Class Items
         Me.applyMsgFirstPerson = New KRLDeveloperNS.ucQuotedString()
         Me.applyMsgThirdPerson = New KRLDeveloperNS.ucQuotedString()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.effect = New System.Windows.Forms.TextBox()
         Me.uses = New System.Windows.Forms.TextBox()
         Me.applyTime = New System.Windows.Forms.TextBox()
         Me.maxUpgrades = New System.Windows.Forms.TextBox()
@@ -83,8 +84,7 @@ Partial Class Items
         Me.genPrefixes = New System.Windows.Forms.ComboBox()
         Me.modifiers = New System.Windows.Forms.ComboBox()
         Me.itemClass = New System.Windows.Forms.ComboBox()
-        Me.EquipmentSlot = New KRLDeveloperNS.ucEquipmentSlot()
-        Me.applySound = New KRLDeveloperNS.ucSound()
+        Me.effect = New KRLDeveloperNS.ucEffect()
         Me.TabPage2.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -96,7 +96,7 @@ Partial Class Items
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(792, 494)
+        Me.TabPage2.Size = New System.Drawing.Size(792, 547)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Output"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -106,7 +106,7 @@ Partial Class Items
         Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RichTextBox1.Location = New System.Drawing.Point(3, 3)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(786, 488)
+        Me.RichTextBox1.Size = New System.Drawing.Size(786, 541)
         Me.RichTextBox1.TabIndex = 0
         Me.RichTextBox1.Text = ""
         '
@@ -123,6 +123,7 @@ Partial Class Items
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.effect)
         Me.TabPage1.Controls.Add(Me.applySound)
         Me.TabPage1.Controls.Add(Me.EquipmentSlot)
         Me.TabPage1.Controls.Add(Me.upgradeInfo)
@@ -156,7 +157,6 @@ Partial Class Items
         Me.TabPage1.Controls.Add(Me.applyMsgFirstPerson)
         Me.TabPage1.Controls.Add(Me.applyMsgThirdPerson)
         Me.TabPage1.Controls.Add(Me.Label16)
-        Me.TabPage1.Controls.Add(Me.effect)
         Me.TabPage1.Controls.Add(Me.uses)
         Me.TabPage1.Controls.Add(Me.applyTime)
         Me.TabPage1.Controls.Add(Me.maxUpgrades)
@@ -189,6 +189,20 @@ Partial Class Items
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Tool"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'applySound
+        '
+        Me.applySound.Location = New System.Drawing.Point(439, 295)
+        Me.applySound.Name = "applySound"
+        Me.applySound.Size = New System.Drawing.Size(150, 25)
+        Me.applySound.TabIndex = 63
+        '
+        'EquipmentSlot
+        '
+        Me.EquipmentSlot.Location = New System.Drawing.Point(150, 238)
+        Me.EquipmentSlot.Name = "EquipmentSlot"
+        Me.EquipmentSlot.Size = New System.Drawing.Size(149, 25)
+        Me.EquipmentSlot.TabIndex = 62
         '
         'upgradeInfo
         '
@@ -450,13 +464,6 @@ Partial Class Items
         Me.Label16.TabIndex = 31
         Me.Label16.Text = "Effect:"
         '
-        'effect
-        '
-        Me.effect.Location = New System.Drawing.Point(439, 385)
-        Me.effect.Name = "effect"
-        Me.effect.Size = New System.Drawing.Size(150, 22)
-        Me.effect.TabIndex = 30
-        '
         'uses
         '
         Me.uses.Location = New System.Drawing.Point(439, 353)
@@ -668,19 +675,12 @@ Partial Class Items
         Me.itemClass.Size = New System.Drawing.Size(150, 24)
         Me.itemClass.TabIndex = 2
         '
-        'EquipmentSlot
+        'effect
         '
-        Me.EquipmentSlot.Location = New System.Drawing.Point(150, 238)
-        Me.EquipmentSlot.Name = "EquipmentSlot"
-        Me.EquipmentSlot.Size = New System.Drawing.Size(149, 25)
-        Me.EquipmentSlot.TabIndex = 62
-        '
-        'applySound
-        '
-        Me.applySound.Location = New System.Drawing.Point(439, 295)
-        Me.applySound.Name = "applySound"
-        Me.applySound.Size = New System.Drawing.Size(150, 25)
-        Me.applySound.TabIndex = 63
+        Me.effect.Location = New System.Drawing.Point(439, 386)
+        Me.effect.Name = "effect"
+        Me.effect.Size = New System.Drawing.Size(150, 25)
+        Me.effect.TabIndex = 64
         '
         'Items
         '
@@ -705,14 +705,12 @@ Partial Class Items
     Friend WithEvents Label19 As Label
     Friend WithEvents description As ucQuotedString
     Friend WithEvents effectDescription As UcBoolean
-    Friend WithEvents ownedEffect As ucLastingEffect
     Friend WithEvents Label18 As Label
     Friend WithEvents Plural As ucQuotedString
     Friend WithEvents Label17 As Label
     Friend WithEvents applyMsgFirstPerson As ucQuotedString
     Friend WithEvents applyMsgThirdPerson As ucQuotedString
     Friend WithEvents Label16 As Label
-    Friend WithEvents effect As TextBox
     Friend WithEvents uses As TextBox
     Friend WithEvents applyTime As TextBox
     Friend WithEvents maxUpgrades As TextBox
@@ -761,4 +759,6 @@ Partial Class Items
     Friend WithEvents Label27 As Label
     Friend WithEvents EquipmentSlot As ucEquipmentSlot
     Friend WithEvents applySound As ucSound
+    Friend WithEvents ownedEffect As ucLastingEffect
+    Friend WithEvents effect As ucEffect
 End Class
