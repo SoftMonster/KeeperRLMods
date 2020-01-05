@@ -63,7 +63,7 @@
       }
   {"DEMON_LORD"}
       {
-        { type = Simple "Sword" prefixChance = 0.1 }
+        { type = Simple "Sword", alternative = Simple "AdaMace" }
         { type = Glyph ARMOR LastingEffect MAGIC_RESISTANCE chance = 0.3 }
         { type = Glyph ARMOR LastingEffect SPEED chance = 0.3 }
         { type = Glyph ARMOR LastingEffect NO_CARRY_LIMIT chance = 0.3 }
@@ -72,7 +72,7 @@
   {"ADVENTURER_F" "ADVENTURER"}
       {
         { Simple "FirstAidKit" 2 4 }
-        { Simple "Knife"}
+		{ Simple "SpyingCrystal" }
         { Simple "Sword"}
         { Simple "LeatherGloves"}
         { Simple "LeatherArmor"}
@@ -91,7 +91,7 @@
       }
   {"KOBOLD"}
       {
-        { Simple "Spear"}
+        { type = Simple "Spear", alternative = Simple "LongSpear" }
       }
   {"GOBLIN"}
       {
@@ -101,7 +101,7 @@
   {"WARRIOR"} #Modded
       {
         { Simple "LeatherArmor"}
-        { Simple "HeavyClub" }
+        { type = Simple "HeavyClub", alternative = Simple "Mace" }		
         { Simple "WoodenShield" }
         { Simple "LeatherHelm" } 
         { Simple "LeatherBoots" }
@@ -198,11 +198,11 @@
       }
   {"OGRE"}
       {
-        { Simple "HeavyClub"}
+        { type = Simple "HeavyClub", alternative = Simple "Mace" }
       }
   {"BANDIT" "RAT_SOLDIER" "RAT_KING" "THIEF" } #Modded
       {
-        { Simple "Sword"}
+        { type = Simple "Sword", alternative = Simple "Axe"}
         { type = Potion Heal FLESH chance = 0.7 }
         { type = Simple "Torch" chance = 0.3 }
         { type = Simple "Bow" chance = 0.05 }

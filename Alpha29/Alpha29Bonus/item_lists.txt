@@ -157,6 +157,7 @@
       {{ Simple "AdaOre" } 10 {10 20} }
       {{ Simple "AdaSword" } 5 }
       {{ Simple "AdaWarHammer" } 5 }
+      {{ Simple "AdaMace" } 5 }
       {{ Amulet AMBUSH_SKILL } 10 }
       {{ Amulet DISARM_TRAPS_SKILL } 10 }
       {{ Amulet ELF_VISION } 10 }
@@ -173,6 +174,9 @@
       {{ Simple "Club" } 10 }
       {{ Simple "DefenseAmulet" } 10 }
       {{ Simple "ElvenSword" } 10 }
+      {{ Simple "LongSpear" } 10 }
+      {{ Simple "Axe" } 10 }
+      {{ Simple "Mace" } 10 }
       {{ FireScroll } 10 }
       {{ Simple "FirstAidKit" } 10 }
       {{ Simple "GoldenStaff" } 10 }
@@ -255,6 +259,8 @@
     #Rare
       {{ Potion RegrowBodyPart } 5 }
       {{ Ring TELEPATHY } 5 }
+      {{ Simple "SpyingCrystal" } 5 }
+      {{ Simple "DwarvenBeer" } 5 }
 	  {{ Ring MELEE_RESISTANCE } 3 }
       {{ Ring NO_CARRY_LIMIT } 3 }
       {{ Ring FLYING } 2 }
@@ -267,8 +273,8 @@
 	  {{ Glyph ARMOR LastingEffect DARKNESS_SOURCE } 1 }
       {{ Glyph WEAPON ItemAttrBonus DAMAGE 5 } 1 }
 	  {{ Glyph WEAPON VictimEffect 1.0 Lasting INSANITY } 1 }
-      {{ Potion Permanent SPEED } 1 }
-      {{ Simple "ElvenBow" } 1 }
+      {{ Potion Permanent SPEED }             1 }
+      {{ Simple "ElvenBow" }                  1 }
 	  {{ TechBook "iron working"}             1 }
 	  {{ TechBook "alchemy"}                  1 }
 	  {{ TechBook "advanced alchemy"}         1 }
