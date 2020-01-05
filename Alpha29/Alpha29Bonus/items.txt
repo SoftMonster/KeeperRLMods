@@ -1209,7 +1209,43 @@
       }
       maxUpgrades = 2
     }
-    
+  "WonderMushroom"
+	{
+      viewId = { "mushroom5" }
+      effectDescription = false
+	  name = "wonder mushroom"
+      description = "Wonder mushrooms do all sorts of different things."
+      weight =  1
+      price =  10 
+      itemClass =  TOOL 
+      applyMsgFirstPerson = "eat the wonder mushroom"
+      applyMsgThirdPerson = "eats a wonder mushroom"
+      applySound = DYING_PIG
+      applyTime = 1
+      uses = 1
+      effect = Chain {
+	    Lasting SATIATED
+		Chance 0.1 Heal FLESH
+		Chance 0.1 Heal SPIRIT
+		Chance 0.1 Ice
+		Chance 0.1 Enhance ARMOR 1
+		Chance 0.1 Deception
+		Chance 0.1 EmitPoisonGas 0.5
+		Chance 0.1 SummonEnemy "FLY" {3 7}
+		Chance 0.1 SummonElement
+		Chance 0.1 IncreaseAttr SPELL_DAMAGE 1
+		Chance 0.1 Lasting BLIND
+		Chance 0.1 PlaceFurniture "METEOR_SHOWER"
+		Chance 0.1 Enhance WEAPON -1
+		Chance 0.1 Lasting PANIC
+		Chance 0.1 Lasting IMMOBILE
+		Chance 0.1 Lasting SLEEP_RESISTANT
+		Chance 0.1 Lasting MAGIC_CANCELLATION
+		Chance 0.1 Lasting REGENERATION
+		Chance 0.1 Lasting COLD_RESISTANT
+		Chance 0.1 Permanent NO_CARRY_LIMIT
+      }
+    }
 ########################
 #Ideas for future items#
 ########################
