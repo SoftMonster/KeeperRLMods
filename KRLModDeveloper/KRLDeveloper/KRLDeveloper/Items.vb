@@ -3,6 +3,7 @@ Public Class Items
 
     Private Property CurrentItem As Integer = 1
     Private Sub Generate() Handles TabControl1.SelectedIndexChanged
+        If Me.DesignMode Then Exit Sub
         RichTextBox1.Text = ""
         Dim lstCTRLs As New SortedDictionary(Of Long, Control)
         Dim nCount As Integer = 0

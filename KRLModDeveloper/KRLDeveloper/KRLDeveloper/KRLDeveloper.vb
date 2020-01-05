@@ -5,7 +5,8 @@
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-        modDir = TextBox1.Text
+        If Me.DesignMode Then Exit Sub
+        ModDir = TextBox1.Text
     End Sub
 
 End Class

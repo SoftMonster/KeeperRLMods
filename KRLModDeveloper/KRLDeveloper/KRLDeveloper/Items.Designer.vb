@@ -26,6 +26,7 @@ Partial Class Items
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.effect = New KRLDeveloperNS.ucEffect()
         Me.applySound = New KRLDeveloperNS.ucSound()
         Me.EquipmentSlot = New KRLDeveloperNS.ucEquipmentSlot()
         Me.upgradeInfo = New System.Windows.Forms.TextBox()
@@ -80,11 +81,10 @@ Partial Class Items
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.XNam = New KRLDeveloperNS.ucQuotedString()
-        Me.viewID = New KRLDeveloperNS.ucBracketQuotedString()
+        Me.viewId = New KRLDeveloperNS.ucBracketQuotedString()
         Me.genPrefixes = New System.Windows.Forms.ComboBox()
         Me.modifiers = New System.Windows.Forms.ComboBox()
         Me.itemClass = New System.Windows.Forms.ComboBox()
-        Me.effect = New KRLDeveloperNS.ucEffect()
         Me.TabPage2.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -178,7 +178,7 @@ Partial Class Items
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.Label1)
         Me.TabPage1.Controls.Add(Me.XNam)
-        Me.TabPage1.Controls.Add(Me.viewID)
+        Me.TabPage1.Controls.Add(Me.viewId)
         Me.TabPage1.Controls.Add(Me.genPrefixes)
         Me.TabPage1.Controls.Add(Me.modifiers)
         Me.TabPage1.Controls.Add(Me.itemClass)
@@ -189,6 +189,13 @@ Partial Class Items
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Tool"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'effect
+        '
+        Me.effect.Location = New System.Drawing.Point(439, 386)
+        Me.effect.Name = "effect"
+        Me.effect.Size = New System.Drawing.Size(150, 25)
+        Me.effect.TabIndex = 64
         '
         'applySound
         '
@@ -642,12 +649,12 @@ Partial Class Items
         Me.XNam.TabIndex = 2
         Me.XNam.Tag = "name"
         '
-        'viewID
+        'viewId
         '
-        Me.viewID.Location = New System.Drawing.Point(149, 7)
-        Me.viewID.Name = "viewID"
-        Me.viewID.Size = New System.Drawing.Size(150, 25)
-        Me.viewID.TabIndex = 1
+        Me.viewId.Location = New System.Drawing.Point(149, 7)
+        Me.viewId.Name = "viewId"
+        Me.viewId.Size = New System.Drawing.Size(150, 25)
+        Me.viewId.TabIndex = 1
         '
         'genPrefixes
         '
@@ -674,13 +681,6 @@ Partial Class Items
         Me.itemClass.Name = "itemClass"
         Me.itemClass.Size = New System.Drawing.Size(150, 24)
         Me.itemClass.TabIndex = 2
-        '
-        'effect
-        '
-        Me.effect.Location = New System.Drawing.Point(439, 386)
-        Me.effect.Name = "effect"
-        Me.effect.Size = New System.Drawing.Size(150, 25)
-        Me.effect.TabIndex = 64
         '
         'Items
         '
@@ -732,7 +732,7 @@ Partial Class Items
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents XNam As ucQuotedString
-    Friend WithEvents viewID As ucBracketQuotedString
+    Friend WithEvents viewId As ucBracketQuotedString
     Friend WithEvents genPrefixes As ComboBox
     Friend WithEvents modifiers As ComboBox
     Friend WithEvents itemClass As ComboBox

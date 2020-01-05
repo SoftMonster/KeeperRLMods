@@ -12,6 +12,7 @@ Public Class frmEffect
     End Property
 
     Private Sub CloseMe(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        If Me.DesignMode Then Exit Sub
         Me.Visible = False
         e.Cancel = True
     End Sub
