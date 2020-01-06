@@ -127,6 +127,18 @@
     <Compile Include="ucEffect.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="ucBracketLastingEffect.Designer.vb">
+      <DependentUpon>ucBracketLastingEffect.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucBracketLastingEffect.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSpell.Designer.vb">
+      <DependentUpon>ucSpell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ucSpell.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ucSound.Designer.vb">
       <DependentUpon>ucSound.vb</DependentUpon>
     </Compile>
@@ -173,6 +185,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucEffect.resx">
       <DependentUpon>ucEffect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBracketLastingEffect.resx">
+      <DependentUpon>ucBracketLastingEffect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSpell.resx">
+      <DependentUpon>ucSpell.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucSound.resx">
       <DependentUpon>ucSound.vb</DependentUpon>

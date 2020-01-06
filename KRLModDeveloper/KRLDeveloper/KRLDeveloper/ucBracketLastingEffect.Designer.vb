@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class ucLastingEffect
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class ucBracketLastingEffect
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class ucLastingEffect
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
@@ -36,14 +36,14 @@ Partial Class ucLastingEffect
         Me.ComboBox1.Size = New System.Drawing.Size(198, 24)
         Me.ComboBox1.TabIndex = 0
         '
-        'ucLastingEffect
+        'ucBracketLastingEffect
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Controls.Add(Me.ComboBox1)
-        Me.Name = "ucLastingEffect"
-        Me.Size = New System.Drawing.Size(198, 25)
+        Me.Name = "ucBracketLastingEffect"
+        Me.Size = New System.Drawing.Size(198, 27)
         Me.ResumeLayout(False)
 
     End Sub

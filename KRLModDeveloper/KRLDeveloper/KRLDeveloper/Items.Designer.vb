@@ -26,9 +26,11 @@ Partial Class Items
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.equipedEffect = New KRLDeveloperNS.ucBracketLastingEffect()
         Me.effect = New KRLDeveloperNS.ucEffect()
         Me.applySound = New KRLDeveloperNS.ucSound()
-        Me.EquipmentSlot = New KRLDeveloperNS.ucEquipmentSlot()
+        Me.equipmentSlot = New KRLDeveloperNS.ucEquipmentSlot()
         Me.upgradeInfo = New System.Windows.Forms.TextBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.weaponInfo = New System.Windows.Forms.TextBox()
@@ -40,7 +42,6 @@ Partial Class Items
         Me.wishedCount = New System.Windows.Forms.TextBox()
         Me.displayUses = New KRLDeveloperNS.UcBoolean()
         Me.usedUpMsg = New KRLDeveloperNS.UcBoolean()
-        Me.equipedEffect = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.ingredientFor = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
@@ -85,6 +86,7 @@ Partial Class Items
         Me.genPrefixes = New System.Windows.Forms.ComboBox()
         Me.modifiers = New System.Windows.Forms.ComboBox()
         Me.itemClass = New System.Windows.Forms.ComboBox()
+        Me.equipedAbility = New KRLDeveloperNS.ucSpell()
         Me.TabPage2.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -123,9 +125,12 @@ Partial Class Items
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.equipedAbility)
+        Me.TabPage1.Controls.Add(Me.Label28)
+        Me.TabPage1.Controls.Add(Me.equipedEffect)
         Me.TabPage1.Controls.Add(Me.effect)
         Me.TabPage1.Controls.Add(Me.applySound)
-        Me.TabPage1.Controls.Add(Me.EquipmentSlot)
+        Me.TabPage1.Controls.Add(Me.equipmentSlot)
         Me.TabPage1.Controls.Add(Me.upgradeInfo)
         Me.TabPage1.Controls.Add(Me.Label27)
         Me.TabPage1.Controls.Add(Me.weaponInfo)
@@ -137,7 +142,6 @@ Partial Class Items
         Me.TabPage1.Controls.Add(Me.wishedCount)
         Me.TabPage1.Controls.Add(Me.displayUses)
         Me.TabPage1.Controls.Add(Me.usedUpMsg)
-        Me.TabPage1.Controls.Add(Me.equipedEffect)
         Me.TabPage1.Controls.Add(Me.Label24)
         Me.TabPage1.Controls.Add(Me.ingredientFor)
         Me.TabPage1.Controls.Add(Me.Label23)
@@ -190,6 +194,23 @@ Partial Class Items
         Me.TabPage1.Text = "Tool"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(21, 423)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(107, 17)
+        Me.Label28.TabIndex = 66
+        Me.Label28.Text = "Equipped Spell:"
+        '
+        'equipedEffect
+        '
+        Me.equipedEffect.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.equipedEffect.Location = New System.Drawing.Point(149, 391)
+        Me.equipedEffect.Name = "equipedEffect"
+        Me.equipedEffect.Size = New System.Drawing.Size(150, 25)
+        Me.equipedEffect.TabIndex = 65
+        '
         'effect
         '
         Me.effect.Location = New System.Drawing.Point(439, 386)
@@ -204,16 +225,16 @@ Partial Class Items
         Me.applySound.Size = New System.Drawing.Size(150, 25)
         Me.applySound.TabIndex = 63
         '
-        'EquipmentSlot
+        'equipmentSlot
         '
-        Me.EquipmentSlot.Location = New System.Drawing.Point(150, 238)
-        Me.EquipmentSlot.Name = "EquipmentSlot"
-        Me.EquipmentSlot.Size = New System.Drawing.Size(149, 25)
-        Me.EquipmentSlot.TabIndex = 62
+        Me.equipmentSlot.Location = New System.Drawing.Point(150, 238)
+        Me.equipmentSlot.Name = "equipmentSlot"
+        Me.equipmentSlot.Size = New System.Drawing.Size(149, 25)
+        Me.equipmentSlot.TabIndex = 62
         '
         'upgradeInfo
         '
-        Me.upgradeInfo.Location = New System.Drawing.Point(150, 435)
+        Me.upgradeInfo.Location = New System.Drawing.Point(150, 449)
         Me.upgradeInfo.Name = "upgradeInfo"
         Me.upgradeInfo.Size = New System.Drawing.Size(150, 22)
         Me.upgradeInfo.TabIndex = 61
@@ -221,7 +242,7 @@ Partial Class Items
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(3, 435)
+        Me.Label27.Location = New System.Drawing.Point(2, 452)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(141, 17)
         Me.Label27.TabIndex = 60
@@ -306,21 +327,14 @@ Partial Class Items
         Me.usedUpMsg.Size = New System.Drawing.Size(228, 23)
         Me.usedUpMsg.TabIndex = 51
         '
-        'equipedEffect
-        '
-        Me.equipedEffect.Location = New System.Drawing.Point(149, 396)
-        Me.equipedEffect.Name = "equipedEffect"
-        Me.equipedEffect.Size = New System.Drawing.Size(150, 22)
-        Me.equipedEffect.TabIndex = 50
-        '
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(16, 399)
+        Me.Label24.Location = New System.Drawing.Point(19, 394)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(119, 17)
+        Me.Label24.Size = New System.Drawing.Size(112, 17)
         Me.Label24.TabIndex = 49
-        Me.Label24.Text = "Equipped Effects:"
+        Me.Label24.Text = "Equipped Effect:"
         '
         'ingredientFor
         '
@@ -415,6 +429,7 @@ Partial Class Items
         '
         'ownedEffect
         '
+        Me.ownedEffect.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ownedEffect.Location = New System.Drawing.Point(149, 151)
         Me.ownedEffect.Name = "ownedEffect"
         Me.ownedEffect.Size = New System.Drawing.Size(150, 25)
@@ -465,11 +480,11 @@ Partial Class Items
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(320, 385)
+        Me.Label16.Location = New System.Drawing.Point(358, 386)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(48, 17)
+        Me.Label16.Size = New System.Drawing.Size(77, 17)
         Me.Label16.TabIndex = 31
-        Me.Label16.Text = "Effect:"
+        Me.Label16.Text = "Use Effect:"
         '
         'uses
         '
@@ -509,7 +524,7 @@ Partial Class Items
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(320, 295)
+        Me.Label15.Location = New System.Drawing.Point(379, 295)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(53, 17)
         Me.Label15.TabIndex = 29
@@ -518,7 +533,7 @@ Partial Class Items
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(320, 323)
+        Me.Label14.Location = New System.Drawing.Point(329, 323)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(103, 17)
         Me.Label14.TabIndex = 28
@@ -643,7 +658,7 @@ Partial Class Items
         '
         'XNam
         '
-        Me.XNam.Location = New System.Drawing.Point(149, 62)
+        Me.XNam.Location = New System.Drawing.Point(149, 66)
         Me.XNam.Name = "XNam"
         Me.XNam.Size = New System.Drawing.Size(150, 25)
         Me.XNam.TabIndex = 2
@@ -681,6 +696,14 @@ Partial Class Items
         Me.itemClass.Name = "itemClass"
         Me.itemClass.Size = New System.Drawing.Size(150, 24)
         Me.itemClass.TabIndex = 2
+        '
+        'equipedAbility
+        '
+        Me.equipedAbility.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.equipedAbility.Location = New System.Drawing.Point(149, 421)
+        Me.equipedAbility.Name = "equipedAbility"
+        Me.equipedAbility.Size = New System.Drawing.Size(150, 25)
+        Me.equipedAbility.TabIndex = 67
         '
         'Items
         '
@@ -740,7 +763,6 @@ Partial Class Items
     Friend WithEvents Label20 As Label
     Friend WithEvents Label21 As Label
     Friend WithEvents rangedWeapon As TextBox
-    Friend WithEvents equipedEffect As TextBox
     Friend WithEvents Label24 As Label
     Friend WithEvents ingredientFor As TextBox
     Friend WithEvents Label23 As Label
@@ -757,8 +779,11 @@ Partial Class Items
     Friend WithEvents weaponInfo As TextBox
     Friend WithEvents upgradeInfo As TextBox
     Friend WithEvents Label27 As Label
-    Friend WithEvents EquipmentSlot As ucEquipmentSlot
+    Friend WithEvents equipmentSlot As ucEquipmentSlot
     Friend WithEvents applySound As ucSound
     Friend WithEvents ownedEffect As ucLastingEffect
     Friend WithEvents effect As ucEffect
+    Friend WithEvents equipedEffect As ucBracketLastingEffect
+    Friend WithEvents Label28 As Label
+    Friend WithEvents equipedAbility As ucSpell
 End Class
