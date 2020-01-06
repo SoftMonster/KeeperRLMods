@@ -476,6 +476,11 @@
     {{Simple "AdaShield"}             1       ADA 1}
     {{Simple "AdaWarHammer"}          1       ADA 1       "two-handed weapons"}
     {{Simple "AdaBattleAxe"}          1       ADA 1       "two-handed weapons"}
+    {item = {Simple "RedDragonArmor"}   work = 1 cost = IRON 1 requireIngredient = true }
+    {item = {Simple "BlackDragonArmor"} work = 1 cost = IRON 1 requireIngredient = true }
+    {item = {Simple "WhiteDragonArmor"} work = 1 cost = IRON 1 requireIngredient = true }
+    {item = {Simple "GreenDragonArmor"} work = 1 cost = IRON 1 requireIngredient = true }
+    {item = {Simple "CyclopsHelm"}      work = 1 cost = IRON 1 requireIngredient = true }
 }
 
 # Lab
@@ -500,6 +505,9 @@
     {{Simple "IronOre"}                    1        GOLD 1      "alchemical conversion"       1000}
     {{Simple "AdaOre"}                     1        GOLD 1      "alchemical conversion"       1000}
     {{Simple "Rock"}                       1        GOLD 1      "alchemical conversion"       1000}
+    {item = {Potion IncreaseAttr DEFENSE 5}     work = 1 cost = GOLD 1 requireIngredient = true }
+    {item = {Potion Lasting PLAGUE}             work = 1 cost = GOLD 1 requireIngredient = true }
+    {item = {Potion Permanent POISON_RESISTANT} work = 1 cost = GOLD 1 requireIngredient = true }
 }
 
 # Jeweller
