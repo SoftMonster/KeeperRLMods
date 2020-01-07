@@ -76,7 +76,7 @@
           ItemAttrBonus DAMAGE 1
           VictimEffect 0.1 Lasting POISON
         }
-	  }
+      }
     }
   "Sword"
     {
@@ -1041,7 +1041,7 @@
         }
       }
       equipedEffect = { RAGE }
-	  equipedAbility = "fire shield"
+      equipedAbility = "fire shield"
     }
   "InvisibilityRobe"
     {
@@ -1054,7 +1054,7 @@
       modifiers = {
         DEFENSE 1
       }
-	  equipedAbility = "invisibility"
+      equipedAbility = "invisibility"
     }
   "Crossbow"
     {
@@ -1080,13 +1080,13 @@
       equipmentSlot = RINGS
       weight = 2
       price = 100
-	  equipedAbility = "invisibility"
+      equipedAbility = "invisibility"
     }
   "SpyingCrystal"
     {
       viewId = { "crystal1" }
       name = "spying crystal"
-	  weight = 1
+      weight = 1
       itemClass = TOOL
       applyTime = 1
       uses = 1
@@ -1187,7 +1187,7 @@
         1 VictimEffect 0.3 Lasting BLEEDING
       }
       maxUpgrades = 1
-	}
+    }
   "AdaMace"
     {
       viewId = { "adamantite_spiked_mace" }
@@ -1210,10 +1210,10 @@
       maxUpgrades = 2
     }
   "WonderMushroom"
-	{
+    {
       viewId = { "mushroom5" }
       effectDescription = false
-	  name = "wonder mushroom"
+      name = "wonder mushroom"
       description = "Wonder mushrooms do all sorts of different things."
       weight =  1
       price =  10 
@@ -1224,7 +1224,7 @@
       applyTime = 1
       uses = 1
       effect = Chain {
-	    Lasting SATIATED
+        Lasting SATIATED
         Chance 0.1 Enhance ARMOR 1
         Chance 0.1 Enhance WEAPON -1
         Chance 0.1 Deception
@@ -1250,10 +1250,11 @@
       }
     }
     "WandOfIce"
-	{
+    {
         viewId = { "wooden_staff" }
         effectDescription = false
         name = "wand of ice"
+        plural = "wands of ice"
         description = "A magic weapon that can shoot ice freezing enemies."
         weight =  1.5 
         price =  30 
@@ -1265,8 +1266,8 @@
         equipedEffect = { COLD_RESISTANT }
         equipedAbility = "ice cone"
       }
-	"RobesOfHell"
-	{
+    "RobesOfHell"
+    {
         viewId = { "robe" }
         name = "robes of hell"
         plural = "robes of hell"
@@ -1277,23 +1278,48 @@
         equipmentSlot =  BODY_ARMOR 
         modifiers =  { DEFENSE 5 } 
         equipedEffect = { TELEPATHY NIGHT_VISION RAGE FIRE_RESISTANT MAGIC_RESISTANCE }
-        equipedAbility = "firewall"	
+        equipedAbility = "firewall" 
     }
     "HeavenlyArmor"
     {
         viewId = { "chain_armor" }
-		shortName = "heavenly armor"
-		name = "heavenly armor"
-		weight =  15 
-		ownedEffect = LIGHT_SOURCE
-		price =  200
-		itemClass =  ARMOR 
-		equipmentSlot =  BODY_ARMOR 
-		modifiers =  { DEFENSE 10 } 
-		maxUpgrades = 0
-		equipedEffect = { MAGIC_RESISTANCE FLYING COLD_RESISTANT }
+        shortName = "heavenly armor"
+        name = "heavenly armor"
+        weight =  15 
+        ownedEffect = LIGHT_SOURCE
+        price =  200
+        itemClass =  ARMOR 
+        equipmentSlot =  BODY_ARMOR 
+        modifiers =  { DEFENSE 10 } 
+        maxUpgrades = 0
+        equipedEffect = { MAGIC_RESISTANCE FLYING COLD_RESISTANT }
     }
-	
+    "SpearOfLizardmen"
+    {
+        viewId = { "spear" }
+        shortName = "Spear of Lizardmen"
+        name = "Spear of Lizardmen"
+        plural = "spears of lizardmen"
+        weight =  1.5 
+        price =  4 
+        itemClass =  WEAPON 
+        equipmentSlot =  WEAPON 
+        modifiers =  { DAMAGE 12 DEFENSE 3} 
+        weaponInfo =  { attackType = STAB attackMsg = THRUST } 
+        equipedEffect = { SWIMMING_SKILL FAST_TRAINING SLEEP_RESISTANT RESTED NIGHT_VISION PLAGUE_RESISTANT }
+    }
+    "RingOfSubjection"
+    {
+        viewId = { "ring_green" }
+        name = "ring of subjection"
+        plural = "rings of subjection"
+        weight =  2 
+        price =  100 
+        itemClass =  ARMOR 
+        equipmentSlot =  RINGS 
+        equipedAbility = "pacify"   
+    }
+    
 ########################
 #Ideas for future items#
 ########################

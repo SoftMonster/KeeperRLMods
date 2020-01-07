@@ -126,6 +126,7 @@
       }
   {"LIZARDLORD"}
       {
+	    { Simple "SpearOfLizardmen" }
         { Simple "LeatherArmor"}
         { Potion RegrowBodyPart }
         { Simple "GoldPiece" 50 90 }
@@ -182,6 +183,7 @@
   {"DUKE"}
       {
         { type = Simple "BattleAxe" prefixChance = 1 }
+		{ Simple "RingOfSubjection" }
         { Simple "ChainArmor"}
         { Simple "IronHelm"}
         { Simple "IronBoots"}
