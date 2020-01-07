@@ -63,6 +63,7 @@
       }
   {"DEMON_LORD"}
       {
+        { Simple "RobesOfHell" } #Modded
         { type = Simple "Sword", alternative = Simple "AdaMace" }
         { type = Glyph ARMOR LastingEffect MAGIC_RESISTANCE chance = 0.3 }
         { type = Glyph ARMOR LastingEffect SPEED chance = 0.3 }
@@ -72,7 +73,7 @@
   {"ADVENTURER_F" "ADVENTURER"}
       {
         { Simple "FirstAidKit" 2 4 }
-		{ Simple "SpyingCrystal" }
+        { Simple "SpyingCrystal" }
         { Simple "Sword"}
         { Simple "LeatherGloves"}
         { Simple "LeatherArmor"}
@@ -81,13 +82,14 @@
       }
   {"ELEMENTALIST"}
       {
-        { Simple "WandOfIce"}
+        { Simple "WandOfIce"} #Modded
         { Simple "Torch"}
         { type = Glyph ARMOR LastingEffect FIRE_RESISTANT chance = 0.3 }
        }
   {"DEATH"}
       {
         { Simple "Scythe"}
+        { Simple "RobesOfHell"} #Modded
       }
   {"KOBOLD"}
       {
@@ -101,7 +103,7 @@
   {"WARRIOR"} #Modded
       {
         { Simple "LeatherArmor"}
-        { type = Simple "HeavyClub", alternative = Simple "Mace" }		
+        { type = Simple "HeavyClub", alternative = Simple "Mace" }      
         { Simple "WoodenShield" }
         { Simple "LeatherHelm" } 
         { Simple "LeatherBoots" }
@@ -214,7 +216,7 @@
         { type = Simple "IronHelm" chance = 0.5 }
         { type = Simple "IronBoots" chance = 0.3 }
         { type = Simple "Torch" chance = 0.3 }
-		{ type = Simple "DwarvenBeer" chance = 0.1 }
+        { type = Simple "DwarvenBeer" chance = 0.1 }
         { Simple "GoldPiece" 2 6 }
       }
   {"DWARF_BARON"} #Modded
@@ -228,7 +230,7 @@
         { Simple "GoldPiece" 80 120 }
         { type = Glyph ARMOR ItemAttrBonus DEFENSE 4 chance = 0.3 }
         { type = Glyph WEAPON JoinPrefixes { LastingEffect BAD_BREATH VictimEffect 0.2 Lasting PANIC } chance = 0.3 }
-		{ type = Simple "DwarvenBeer" chance = 0.1 }
+        { type = Simple "DwarvenBeer" chance = 0.1 }
       }
   {"GNOME_CHIEF"}
       {
@@ -308,7 +310,7 @@
       {
         { Simple "FirstAidKit" 2 4 }
         { Simple "Sword"}
-		{ Simple "WoodenShield"}
+        { Simple "WoodenShield"}
         { Simple "LeatherGloves"}
         { Simple "ChainArmor"}
         { Simple "LeatherHelm"}
@@ -317,23 +319,23 @@
   {"MAGE_ADVENTURER_FEMALE" "MAGE_ADVENTURER"}
       {
         { Simple "FirstAidKit" 2 4 }
-		{ Simple "IronStaff"}
+        { Simple "IronStaff"}
         { Simple "LeatherGloves"}
         { type = Simple "Robe" prefixChance = 1 }
         { Simple "LeatherHelm"}
-		{ Simple "LeatherBoots"}
+        { Simple "LeatherBoots"}
         { Simple "GoldPiece" 16 26 }
-	  }
+      }
   {"RANGER_ADVENTURER_FEMALE" "RANGER_ADVENTURER"}
       {
         { Simple "FirstAidKit" 2 4 }
         { Simple "Sword"}
-		{ Simple "Bow"}
+        { Simple "Bow"}
         { Simple "LeatherBoots"}
         { Simple "LeatherArmor"}
         { Simple "LeatherHelm"}
         { Simple "GoldPiece" 16 26 }
-	  }
+      }
   {"GIANT"}
       {
         { Simple "HeavyClub" }
@@ -398,7 +400,7 @@
         { Simple "WoodenStaff" }
         { Simple "LeatherHelm" }
         { Simple "LeatherBoots" }
-		{ Simple "LeatherGloves" }
+        { Simple "LeatherGloves" }
       }
   {"CENTAUR_HUNTER" "AMAZON_ARCHER"}
       {
@@ -427,20 +429,20 @@
       {
         { Simple "Sword" }
         { Simple "ChainArmor" }
-		{ Simple "LeatherGloves" }
+        { Simple "LeatherGloves" }
       }
   {"CENTAUR_KING"}
       {
         { type = Simple "AdaSword" prefixChance = 1 }
         { Simple "AdaArmor" }
-		{ Simple "AdaGloves" }
+        { Simple "AdaGloves" }
         { Potion Heal FLESH}
         { Simple "GoldPiece" 16 26 }
       }
   {"ARACHNE"}
       {
         { Simple "AdaSword" }
-		{ Simple "AdaGloves" }
+        { Simple "AdaGloves" }
         { Potion Heal FLESH}
         { Simple "GoldPiece" 10 15 }
       }
@@ -462,12 +464,12 @@
   {"FAIRY_QUEEN"}
       {
         { type = Simple "GoldenStaff" prefixChance = 1 }
-		{ type = Simple "AdaArmor" prefixChance = 1 }
-		{ Simple "GoldPiece" 350 450 }
+        { type = Simple "AdaArmor" prefixChance = 1 }
+        { Simple "GoldPiece" 350 450 }
         { type = Glyph ARMOR LastingEffect MAGIC_RESISTANCE chance = 0.8 }
         { type = Glyph ARMOR LastingEffect ELF_VISION chance = 0.5 }
-		{ type = Glyph ARMOR LastingEffect SPEED chance = 0.8 }
-		{ type = Glyph ARMOR LastingEffect FLYING chance = 0.5 }
+        { type = Glyph ARMOR LastingEffect SPEED chance = 0.8 }
+        { type = Glyph ARMOR LastingEffect FLYING chance = 0.5 }
       } 
   {"AMAZON_QUEEN"}
       {
@@ -477,7 +479,7 @@
   {"THIEF_HERO"}
       {
         { Simple "Bow" }
-		{ type = Simple "Knife" prefixChance = 1}
+        { type = Simple "Knife" prefixChance = 1}
       }
   
   {"RAT_GENERAL"}
@@ -489,7 +491,7 @@
         { type = Simple "Torch" chance = 0.3 }
         { Simple "GoldPiece" 2 6 }
       }
-  { "ABOMINATION" }	  
+  { "ABOMINATION" }   
       {
         { Simple "WarHammer" }
         { Simple "ChainArmor" }
@@ -499,13 +501,13 @@
         { type = Simple "Robe" prefixChance = 1}
         { Simple "IronStaff" }
         { type = Glyph ARMOR LastingEffect POISON_RESISTANT chance = 0.2 }
-      }	  
+      }   
   {"GORGON"}
       {
         { type = Simple "InvisibilityRobe"}
         { Simple "IronStaff" }
         { type = Glyph ARMOR LastingEffect COLD_RESISTANT chance = 0.2 }
-      }	  
+      }   
   {"AMAZON_WAR_MAIDEN" "AMAZON_CHAMPION"}
       {
         { Simple "ElvenSword"}
@@ -532,70 +534,70 @@
       }
   {"DWARF_QUEEN"}
       {
-	   { type = Simple "WarHammer" prefixChance = 1 }
-	   { Simple "ChainArmor" }
-	   { Potion Heal FLESH}
-	  }
+       { type = Simple "WarHammer" prefixChance = 1 }
+       { Simple "ChainArmor" }
+       { Potion Heal FLESH}
+      }
 
 #-----------------------------------------------------------
 # creature_inventory.txt - Righteous Aug 2019 - Goblin Tribe
 #-----------------------------------------------------------
   {"ELITE_GOBLIN_GUARD"}
       {
-		{ type = Simple "Sword" prefixChance = 1 }
+        { type = Simple "Sword" prefixChance = 1 }
         { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.4 }
       }
   {"GOBLIN_ARCHER"}
-	  {
-		{ Simple "Bow" }
-		{ Simple "Knife" }
-		{ Simple "LeatherArmor" }
-	    { type = Simple "LeatherBoots" chance = 0.3 }
+      {
+        { Simple "Bow" }
+        { Simple "Knife" }
+        { Simple "LeatherArmor" }
+        { type = Simple "LeatherBoots" chance = 0.3 }
         { type = Simple "LeatherGloves" chance = 0.6 }
         { countMin = 1 countMax = 3 type = Potion Heal FLESH chance = 0.9 }
-	  }
+      }
   {"GOBLIN_BRUTE"}
-	  {
+      {
         { Simple "HeavyClub" }
         { Simple "GoldPiece" 10 30 }
-	    { type = Simple "LeatherArmor" chance = 0.8 }
-		{ countMin = 1 countMax = 3 type = Potion Heal FLESH chance = 0.3 }
-	  }
+        { type = Simple "LeatherArmor" chance = 0.8 }
+        { countMin = 1 countMax = 3 type = Potion Heal FLESH chance = 0.3 }
+      }
   {"GOBLIN_CHICKENMANCER"}
       {
-		{ type = Simple "IronStaff", alternative = Simple "Sword" }
+        { type = Simple "IronStaff", alternative = Simple "Sword" }
         { Simple "LeatherBoots" }
         { type = Simple "LeatherArmor" prefixChance = 0.4 }
-		{ type = Simple "LeatherGloves" chance = 0.4 }
-	  }
+        { type = Simple "LeatherGloves" chance = 0.4 }
+      }
   {"GOBLIN_HIGH_PRIEST"}
-	  {
-	    { type = Simple "GoldenStaff" prefixChance = 1 }
+      {
+        { type = Simple "GoldenStaff" prefixChance = 1 }
         { type = Simple "LeatherArmor" prefixChance = 1 }
-		{ type = Simple "LeatherBoots" chance = 0.8 prefixChance = 0.2 }
+        { type = Simple "LeatherBoots" chance = 0.8 prefixChance = 0.2 }
         { type = Simple "LeatherGloves" chance = 0.3 prefixChance = 0.1 }
-	  }
+      }
   {"GOBLIN_KING"}
-  	  {
-	    { type = Simple "Fireblade" }
+      {
+        { type = Simple "Fireblade" }
         { type = Simple "AdaArmor" prefixChance = 0.8 }
-		{ type = Simple "AdaBoots" chance = 0.95 prefixChance = 0.1 }
+        { type = Simple "AdaBoots" chance = 0.95 prefixChance = 0.1 }
         { type = Simple "AdaGloves" chance = 0.6 prefixChance = 0.1 }
-		{ countMin = 1 countMax = 3 type = Scroll Summon "GOBLIN_WARRIOR" {6 9} }
+        { countMin = 1 countMax = 3 type = Scroll Summon "GOBLIN_WARRIOR" {6 9} }
         { type = Glyph ARMOR LastingEffect MAGIC_RESISTANCE chance = 0.5 }
-		{ type = Glyph ARMOR LastingEffect MELEE_RESISTANCE chance = 0.5 }
+        { type = Glyph ARMOR LastingEffect MELEE_RESISTANCE chance = 0.5 }
         { type = Glyph ARMOR LastingEffect SPEED chance = 0.5 }
         { type = Glyph ARMOR LastingEffect NO_CARRY_LIMIT chance = 0.3 }
         { type = Glyph WEAPON JoinPrefixes { ItemAttrBonus DAMAGE 20 AttackerEffect Suicide DIE} chance = 0.3 }
-	  }
+      }
   {"GOBLIN_LEPRECHAUN"}
-  	  {
-	    { Simple "GoldenStaff" }
+      {
+        { Simple "GoldenStaff" }
         { type = Simple "Robe" prefixChance = 1 }
-		{ type = Simple "LeatherBoots" prefixChance = 0.4 }
+        { type = Simple "LeatherBoots" prefixChance = 0.4 }
         { type = Simple "LeatherGloves" chance = 0.6 prefixChance = 0.4 }
-		{ Simple "GoldPiece" 320 440 }
-	  }
+        { Simple "GoldPiece" 320 440 }
+      }
   {"GOBLIN_PRIEST"}
       {
         { Simple "IronStaff" }
@@ -604,19 +606,19 @@
       }
   {"GOBLIN_WARRIOR"}
       {
-		{ type = Simple "Sword", alternative = Simple "WarHammer" prefixChance = 0.05 }
-		{ Simple "WoodenShield" }
+        { type = Simple "Sword", alternative = Simple "WarHammer" prefixChance = 0.05 }
+        { Simple "WoodenShield" }
         { Simple "ChainArmor" }
         { Simple "IronBoots" }
-		{ Simple "IronHelm" }
+        { Simple "IronHelm" }
         { type = Simple "Torch" chance = 0.3 }
         { countMin = 2 countMax = 4 type = Potion Heal FLESH chance = 0.8 }
       }
   {"GOBLIN_WIZARD"}
-	  {
+      {
         { Simple "IronStaff" }
-		{ type = Simple "Robe" prefixChance = 1 }
-		{ type = Simple "LeatherBoots" prefixChance = 0.2 }
+        { type = Simple "Robe" prefixChance = 1 }
+        { type = Simple "LeatherBoots" prefixChance = 0.2 }
         { countMin = 2 countMax = 4 type = Potion Heal FLESH chance = 0.8 }
         { countMin = 1 countMax = 3 type = Potion Lasting SLEEP chance = 0.5 }
         { countMin = 2 countMax = 4 type = Potion Lasting SLOWED chance = 0.6 }
@@ -624,11 +626,11 @@
         { type = Potion Lasting INVISIBLE chance = 0.2 }
         { countMin = 1 countMax = 3 type = Potion Lasting POISON chance = 0.6 }
         { countMin = 1 countMax = 2 type = Potion Lasting SPEED chance = 0.4 }
-	  }
+      }
   {"THIEF_LEADER" }
       {
         { Simple "Sword"}
-		{ Simple "GamblingRod"}
+        { Simple "GamblingRod"}
         { type = Potion Heal FLESH chance = 0.7 }
         { type = Simple "Torch" chance = 0.3 }
         { type = Simple "Bow" chance = 0.05 }
@@ -659,172 +661,172 @@
         { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.2 }
         { type = Simple "LeatherArmor" prefixChance = 0.05 }
         { Simple "LeatherBoots" }
-		{ Simple "WoodenShield" }
+        { Simple "WoodenShield" }
         { type = Simple "Torch" chance = 0.1 }
         { countMin = 4 countMax = 8 type = Simple "GoldPiece" chance = 0.6 }
-		{ type = Simple "DwarvenBeer" chance = 0.1 }
-	  }
+        { type = Simple "DwarvenBeer" chance = 0.1 }
+      }
   {"DWARF_FIGHTER_TRIBE"}
       {
         { type = Simple "LongSpear" prefixChance = 0.1 }
         { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.3 }
         { type = Simple "LeatherArmor" prefixChance = 0.1 }
         { Simple "LeatherBoots" }
-		{ Simple "LeatherHelm" }
-		{ Simple "WoodenShield" }
+        { Simple "LeatherHelm" }
+        { Simple "WoodenShield" }
         { type = Simple "Torch" chance = 0.2 }
         { countMin = 6 countMax = 12 type = Simple "GoldPiece" chance = 0.6 }
-		{ type = Simple "DwarvenBeer" chance = 0.15 }
-	  }
+        { type = Simple "DwarvenBeer" chance = 0.15 }
+      }
   {"DWARF_WARRIOR_TRIBE"}
       {
         { type = Simple "WarHammer", alternative = Simple "Axe" prefixChance = 0.2 }
         { countMin = 1 countMax = 3 type = Potion Heal FLESH chance = 0.5 }
         { type = Simple "ChainArmor" prefixChance = 0.1 }
         { Simple "IronBoots" }
-		{ Simple "IronHelm" }
-		{ Simple "IronGloves" }
+        { Simple "IronHelm" }
+        { Simple "IronGloves" }
         { type = Simple "Torch" chance = 0.2 }
         { countMin = 6 countMax = 12 type = Simple "GoldPiece" chance = 0.6 }
-		{ type = Simple "DwarvenBeer" chance = 0.2 }
-	  }
+        { type = Simple "DwarvenBeer" chance = 0.2 }
+      }
   {"ELITE_DWARF_WARRIOR_TRIBE"}
       {
         { type = Simple "Axe", alternative = Simple "AdaAxe" prefixChance = 0.2 }
         { Potion Heal FLESH 1 2 }
         { type = Simple "ChainArmor" prefixChance = 0.3 }
         { type = Simple "IronBoots" prefixChance = 0.1 }
-		{ type = Simple "IronHelm" prefixChance = 0.1 }
-		{ type = Simple "IronGloves" prefixChance = 0.1 }
-		{ Simple "IronShield" }
+        { type = Simple "IronHelm" prefixChance = 0.1 }
+        { type = Simple "IronGloves" prefixChance = 0.1 }
+        { Simple "IronShield" }
         { type = Simple "Torch" chance = 0.1 }
         { Simple "GoldPiece" 5 20 }
-		{ countMin = 1 countMax = 2 type = Simple "DwarvenBeer" chance = 0.2 }
-	  }
+        { countMin = 1 countMax = 2 type = Simple "DwarvenBeer" chance = 0.2 }
+      }
   {"DWARF_WORKER_TRIBE"}
       {
-		{ Simple "Spear" }
+        { Simple "Spear" }
         { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.2 }
         { Simple "LeatherArmor" }
         { Simple "LeatherBoots" }
         { type = Simple "Torch" chance = 0.9 }
         { Simple "IronOre" 2 10 }
-		{ type = Simple "DwarvenBeer" chance = 0.05 }
-	  }
+        { type = Simple "DwarvenBeer" chance = 0.05 }
+      }
   {"DWARF_MONK_TRIBE"}
       {
         { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.75 }
-		{ Simple "DwarvenBeer" 2 4 }
-	  }
+        { Simple "DwarvenBeer" 2 4 }
+      }
 
   #Dungeon wimps
   {
-	"BANDIT_DUNGEON"
-	"RAT_SOLDIER_DUNGEON"
-	"RAT_LADY_DUNGEON"
-	"PESEANT_DUNGEON"
-	"NOMAD_DUNGEON"
-	"CHILD_DUNGEON"
-	"ESKIMO_CHILD_DUNGEON"
-	"NOMAD_CHILD_DUNGEON"
-	"JESTER_DUNGEON"
-	"THIEF_DUNGEON"
-	"ZOMBIE_DUNGEON"
-	"MUMMY_DUNGEON"
-	"ORC_DUNGEON"
-	"KOBOLD_DUNGEON"
-	"GOBLIN_DUNGEON"
-	"ELF_DUNGEON"
-	"ELF_CHILD_DUNGEON"
-	"DARK_ELF_DUNGEON"
-	"DARK_ELF_CHILD_DUNGEON"
-	"CENTAUR_FARMER_DUNGEON"
-	"CENTAUR_CHILD_DUNGEON"
-	"RAT_MAN_DUNGEON"
-	"HOBGOBLIN_DUNGEON"
-	"DARK_GOBLIN_DUNGEON"
-	"DARK_HOBGOBLIN_DUNGEON"
-	"MILITIA_DUNGEON"
-	"DWARF_MILITIA_DUNGEON"
-	"DWARF_WORKER_DUNGEON"
+    "BANDIT_DUNGEON"
+    "RAT_SOLDIER_DUNGEON"
+    "RAT_LADY_DUNGEON"
+    "PESEANT_DUNGEON"
+    "NOMAD_DUNGEON"
+    "CHILD_DUNGEON"
+    "ESKIMO_CHILD_DUNGEON"
+    "NOMAD_CHILD_DUNGEON"
+    "JESTER_DUNGEON"
+    "THIEF_DUNGEON"
+    "ZOMBIE_DUNGEON"
+    "MUMMY_DUNGEON"
+    "ORC_DUNGEON"
+    "KOBOLD_DUNGEON"
+    "GOBLIN_DUNGEON"
+    "ELF_DUNGEON"
+    "ELF_CHILD_DUNGEON"
+    "DARK_ELF_DUNGEON"
+    "DARK_ELF_CHILD_DUNGEON"
+    "CENTAUR_FARMER_DUNGEON"
+    "CENTAUR_CHILD_DUNGEON"
+    "RAT_MAN_DUNGEON"
+    "HOBGOBLIN_DUNGEON"
+    "DARK_GOBLIN_DUNGEON"
+    "DARK_HOBGOBLIN_DUNGEON"
+    "MILITIA_DUNGEON"
+    "DWARF_MILITIA_DUNGEON"
+    "DWARF_WORKER_DUNGEON"
   }
   {
     { type = Simple "Sword", alternative = Simple "Club" prefixChance = 0.02 }
     { type = Simple "WoodenShield" chance = 0.1 }
-	{ type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.5}
-	{ type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.5}
-	{ type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.5}
-	{ Simple "FirstAidKit" 1 1 0.1}
-	{ Potion Heal FLESH 1 4 0.2 }
-	{ Simple "Torch" 1 1 0.1 }
-	{ Simple "Rock" 3 10 0.1 }
+    { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.5}
+    { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.5}
+    { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.5}
+    { Simple "FirstAidKit" 1 1 0.1}
+    { Potion Heal FLESH 1 4 0.2 }
+    { Simple "Torch" 1 1 0.1 }
+    { Simple "Rock" 3 10 0.1 }
   }
   #Dungeon warriors
   {
-	"ADVENTURER_DUNGEON"
-	"WITCHMAN_DUNGEON"
-	"DEMON_DWELLER_DUNGEON"
-	"KNIGHT_DUNGEON"
-	"WARRIOR_DUNGEON"
-	"OGRE_DUNGEON"
-	"DWARF_DUNGEON"
-	"DWARF_FEMALE_DUNGEON"
-	"LIZARDMAN_DUNGEON"
-	"DARK_ELF_WARRIOR_DUNGEON"
-	"WEREWOLF_DUNGEON"
-	"ABOMINATION_DUNGEON"
-	"CENTAUR_KNIGHT_DUNGEON"
-	"AMAZON_DUNGEON"
-	"AMAZON_CHAMPION_DUNGEON"
-	"AMAZON_WAR_MAIDEN_DUNGEON"
-	"RED_DRAGONNEWT_DUNGEON"
-	"GREEN_DRAGONEWT_DUNGEON"
-	"HELL_KNIGHT_DUNGEON"
-	"HELL_KNIGHT_BRUTE_DUNGEON"
-	"HELL_KNIGHT_SWORDMASTER_DUNGEON"
-	"RAT_GENERAL_DUNGEON"
-	"ARACHNE_DUNGEON"
-	"COW_DEMON_DUNGEON"
-	"ARMORED_COW_DEMON_DUNGEON"
-	"BANSHEE_DUNGEON"
-	"GIANT_DUNGEON"
-	"MUSHROOM_MAN_DUNGEON"
-	"OGRE_FEMALE_DUNGEON"
-	"SHARD_SPITTER_DUNGEON"
-	"SQUIDHOLDER_DUNGEON"
-	"WARRIOR_HERO_DUNGEON"
-	"THIEF_HERO_DUNGEON"
-	"DARK_ORC_DUNGEON"
-	"DARK_ORC_FEMALE_DUNGEON"
-	"DARK_OGRE_DUNGEON"
-	"DARK_OGRE_FEMALE_DUNGEON"
-	"ELITE_GOBLIN_GUARD_DUNGEON"
-	"GOBLIN_BRUTE_DUNGEON"
-	"GOBLIN_KABOOMER_DUNGEON"
-	"GOBLIN_MATRON_DUNGEON"
-	"GOBLIN_WARRIOR_DUNGEON"
-	"COMBAT_SUCCUBUS_DUNGEON"
-	"SKELETON_WARRIOR_DUNGEON"
-	"DWARF_FIGHTER_DUNGEON"
-	"DWARF_WARRIOR_DUNGEON"
-	"ELITE_DWARF_WARRIOR_DUNGEON"
+    "ADVENTURER_DUNGEON"
+    "WITCHMAN_DUNGEON"
+    "DEMON_DWELLER_DUNGEON"
+    "KNIGHT_DUNGEON"
+    "WARRIOR_DUNGEON"
+    "OGRE_DUNGEON"
+    "DWARF_DUNGEON"
+    "DWARF_FEMALE_DUNGEON"
+    "LIZARDMAN_DUNGEON"
+    "DARK_ELF_WARRIOR_DUNGEON"
+    "WEREWOLF_DUNGEON"
+    "ABOMINATION_DUNGEON"
+    "CENTAUR_KNIGHT_DUNGEON"
+    "AMAZON_DUNGEON"
+    "AMAZON_CHAMPION_DUNGEON"
+    "AMAZON_WAR_MAIDEN_DUNGEON"
+    "RED_DRAGONNEWT_DUNGEON"
+    "GREEN_DRAGONEWT_DUNGEON"
+    "HELL_KNIGHT_DUNGEON"
+    "HELL_KNIGHT_BRUTE_DUNGEON"
+    "HELL_KNIGHT_SWORDMASTER_DUNGEON"
+    "RAT_GENERAL_DUNGEON"
+    "ARACHNE_DUNGEON"
+    "COW_DEMON_DUNGEON"
+    "ARMORED_COW_DEMON_DUNGEON"
+    "BANSHEE_DUNGEON"
+    "GIANT_DUNGEON"
+    "MUSHROOM_MAN_DUNGEON"
+    "OGRE_FEMALE_DUNGEON"
+    "SHARD_SPITTER_DUNGEON"
+    "SQUIDHOLDER_DUNGEON"
+    "WARRIOR_HERO_DUNGEON"
+    "THIEF_HERO_DUNGEON"
+    "DARK_ORC_DUNGEON"
+    "DARK_ORC_FEMALE_DUNGEON"
+    "DARK_OGRE_DUNGEON"
+    "DARK_OGRE_FEMALE_DUNGEON"
+    "ELITE_GOBLIN_GUARD_DUNGEON"
+    "GOBLIN_BRUTE_DUNGEON"
+    "GOBLIN_KABOOMER_DUNGEON"
+    "GOBLIN_MATRON_DUNGEON"
+    "GOBLIN_WARRIOR_DUNGEON"
+    "COMBAT_SUCCUBUS_DUNGEON"
+    "SKELETON_WARRIOR_DUNGEON"
+    "DWARF_FIGHTER_DUNGEON"
+    "DWARF_WARRIOR_DUNGEON"
+    "ELITE_DWARF_WARRIOR_DUNGEON"
   }
   {
-	  { type = Simple "HeavyClub", alternative = Simple "WarHammer" chance = 0.5 }
-	  { type = Simple "BattleAxe", alternative = Simple "ElvenSword"  chance = 0.5}	  
-	  { type = Simple "ChainArmor", alternative = Simple "LeatherArmor" prefixChance = 0.02 }
+      { type = Simple "HeavyClub", alternative = Simple "WarHammer" chance = 0.5 }
+      { type = Simple "BattleAxe", alternative = Simple "ElvenSword"  chance = 0.5}   
+      { type = Simple "ChainArmor", alternative = Simple "LeatherArmor" prefixChance = 0.02 }
       { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 }
-	  { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 }
-	  { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 }
-	  { Simple "FirstAidKit" 1 1 0.1}
-	  { Potion Heal FLESH 1 4}
-	  { Simple "Torch" 1 1 0.1 }
-	  { Simple "Rock" 3 10 0.1 }
-	  { Simple "AutomatonItem" 1 1 0.01}
-	  { Simple "DefenseAmulet" 1 1 0.01}
-	  { Potion Lasting MELEE_RESISTANCE 1 3 0.01}
-	  { Ring DAM_BONUS 1 1 0.01}
-	  { Ring RAGE 1 1 0.01}
+      { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 }
+      { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 }
+      { Simple "FirstAidKit" 1 1 0.1}
+      { Potion Heal FLESH 1 4}
+      { Simple "Torch" 1 1 0.1 }
+      { Simple "Rock" 3 10 0.1 }
+      { Simple "AutomatonItem" 1 1 0.01}
+      { Simple "DefenseAmulet" 1 1 0.01}
+      { Potion Lasting MELEE_RESISTANCE 1 3 0.01}
+      { Ring DAM_BONUS 1 1 0.01}
+      { Ring RAGE 1 1 0.01}
   }
   #Dungeon archers
   {
@@ -837,61 +839,61 @@
     "AMAZON_ARCHER_DUNGEON"
     "RAT_ARCHER_DUNGEON"
     "GOBLIN_ARCHER_DUNGEON"
-	"CENTAUR_HUNTER_DUNGEON"
+    "CENTAUR_HUNTER_DUNGEON"
   }
   {
-	{ type = Simple "Bow", alternative = Simple "Crossbow" }
+    { type = Simple "Bow", alternative = Simple "Crossbow" }
     { type = Simple "Spear", alternative = Simple "Knife" prefixChance = 0.1 }
-	{ Potion Lasting RANGED_VULNERABILITY 1 1 0.05}
-	{ Amulet RANGED_RESISTANCE 1 1 0.05}
-	{ Amulet AMBUSH_SKILL 1 1 0.05}
-	{ Amulet DISARM_TRAPS_SKILL 1 1 0.05}
-	{ Amulet ELF_VISION 1 1 0.05}
-	{ Amulet NIGHT_VISION 1 1 0.05}
-	{ Amulet SWIMMING_SKILL 1 1 0.05}
-	{ type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.5}
-	{ type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.5}
-	{ type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.5}
-	{ Simple "FirstAidKit" 1 1 0.1 0.5}
-	{ Potion Heal FLESH 1 4 0.2 }
+    { Potion Lasting RANGED_VULNERABILITY 1 1 0.05}
+    { Amulet RANGED_RESISTANCE 1 1 0.05}
+    { Amulet AMBUSH_SKILL 1 1 0.05}
+    { Amulet DISARM_TRAPS_SKILL 1 1 0.05}
+    { Amulet ELF_VISION 1 1 0.05}
+    { Amulet NIGHT_VISION 1 1 0.05}
+    { Amulet SWIMMING_SKILL 1 1 0.05}
+    { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.5}
+    { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.5}
+    { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.5}
+    { Simple "FirstAidKit" 1 1 0.1 0.5}
+    { Potion Heal FLESH 1 4 0.2 }
   }
   #Dungeon spell users
   {
-	"SUCCUBUS_DUNGEON"
-	"WITCH_DUNGEON"
-	"PRIEST_DUNGEON"
-	"SHAMAN_DUNGEON"
-	"SORCERER_DUNGEON"
-	"VAMPIRE_DUNGEON"
-	"ORC_MAGE_DUNGEON"
-	"ORC_HEALER_DUNGEON"
-	"GNOME_DUNGEON"
-	"ELEMENTALIST_DUNGEON"
-	"ANGEL_DUNGEON"
-	"ADOXIE_PRIEST_DUNGEON"
-	"AMAZON_ELDER_DUNGEON"
-	"AIR_FAIRY_DUNGEON"
-	"DARK_FAIRY_DUNGEON"
-	"DEMON_FAIRY_DUNGEON"
-	"EARTH_FAIRY_DUNGEON"
-	"ELECTRIC_FAIRY_DUNGEON"
-	"FIRE_FAIRY_DUNGEON"
-	"LIGHT_FAIRY_DUNGEON"
-	"MAGIC_FAIRY_DUNGEON"
-	"NATURE_FAIRY_DUNGEON"
-	"WATER_FAIRY_DUNGEON"
-	"GORGON_DUNGEON"
-	"CLERIC_HERO_DUNGEON"
-	"WIZARD_HERO_DUNGEON"
-	"WIZARD_ADVENTURER_DUNGEON"
-	"GOBLIN_CHICKENMANCER_DUNGEON"
-	"GOBLIN_HIGH_PRIEST_DUNGEON"
-	"GOBLIN_LEPRECHAUN_DUNGEON"
-	"DWARF_MONK_DUNGEON"
-	"NECROMANCER_DUNGEON"
-	"GOBLIN_PRIEST_DUNGEON"
-	"GOBLIN_WIZARD_DUNGEON"
-	"SKELETON_MAGE_DUNGEON"
+    "SUCCUBUS_DUNGEON"
+    "WITCH_DUNGEON"
+    "PRIEST_DUNGEON"
+    "SHAMAN_DUNGEON"
+    "SORCERER_DUNGEON"
+    "VAMPIRE_DUNGEON"
+    "ORC_MAGE_DUNGEON"
+    "ORC_HEALER_DUNGEON"
+    "GNOME_DUNGEON"
+    "ELEMENTALIST_DUNGEON"
+    "ANGEL_DUNGEON"
+    "ADOXIE_PRIEST_DUNGEON"
+    "AMAZON_ELDER_DUNGEON"
+    "AIR_FAIRY_DUNGEON"
+    "DARK_FAIRY_DUNGEON"
+    "DEMON_FAIRY_DUNGEON"
+    "EARTH_FAIRY_DUNGEON"
+    "ELECTRIC_FAIRY_DUNGEON"
+    "FIRE_FAIRY_DUNGEON"
+    "LIGHT_FAIRY_DUNGEON"
+    "MAGIC_FAIRY_DUNGEON"
+    "NATURE_FAIRY_DUNGEON"
+    "WATER_FAIRY_DUNGEON"
+    "GORGON_DUNGEON"
+    "CLERIC_HERO_DUNGEON"
+    "WIZARD_HERO_DUNGEON"
+    "WIZARD_ADVENTURER_DUNGEON"
+    "GOBLIN_CHICKENMANCER_DUNGEON"
+    "GOBLIN_HIGH_PRIEST_DUNGEON"
+    "GOBLIN_LEPRECHAUN_DUNGEON"
+    "DWARF_MONK_DUNGEON"
+    "NECROMANCER_DUNGEON"
+    "GOBLIN_PRIEST_DUNGEON"
+    "GOBLIN_WIZARD_DUNGEON"
+    "SKELETON_MAGE_DUNGEON"
   }
   {
     { type = Simple "IronStaff", alternative = Simple "WoodenStaff" prefixChance = 0.03 }

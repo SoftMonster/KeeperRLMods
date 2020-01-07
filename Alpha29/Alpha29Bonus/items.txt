@@ -60,7 +60,7 @@
       weight = 1.5
       modifiers = {
         DAMAGE 6
-		DEFENSE 1 #Modded
+        DEFENSE 1 #Modded
       }
       price = 4
       weaponInfo = {
@@ -193,7 +193,7 @@
       weight = 8
       modifiers = {
         DAMAGE 12
-		DEFENSE 1 #Modded
+        DEFENSE 1 #Modded
       }
       price = 20
       weaponInfo = {
@@ -234,7 +234,7 @@
       weight = 2
       modifiers = {
         DAMAGE 4
-		DEFENSE 1 #Modded
+        DEFENSE 1 #Modded
       }
       price = 2
       weaponInfo = {
@@ -1031,14 +1031,14 @@
       weaponInfo = {
         attackType = STAB
         attackMsg = THRUST
-		victimEffect = { 1.0 Chain {Fire Enhance ARMOR -1} }
-		attackerEffect = {
-		  Chain {
+        victimEffect = { 1.0 Chain {Fire Enhance ARMOR -1} }
+        attackerEffect = {
+          Chain {
             Lasting FIRE_RESISTANT
             Lasting DAM_BONUS
             Lasting LIGHT_SOURCE
-		  }
-		}
+          }
+        }
       }
       equipedEffect = { RAGE }
 	  equipedAbility = "fire shield"
@@ -1113,7 +1113,7 @@
       weight = 6
       modifiers = {
         DAMAGE 8
-		DEFENSE 2
+        DEFENSE 2
       }
       price = 8
       weaponInfo = {
@@ -1176,7 +1176,7 @@
       weight = 5
       modifiers = {
         DAMAGE 9
-		DEFENSE 1
+        DEFENSE 1
       }
       price = 30
       weaponInfo = {
@@ -1184,7 +1184,7 @@
       }
       genPrefixes = {
         1 VictimEffect 0.3 Lasting COLLAPSED
-		1 VictimEffect 0.3 Lasting BLEEDING
+        1 VictimEffect 0.3 Lasting BLEEDING
       }
       maxUpgrades = 1
 	}
@@ -1197,7 +1197,7 @@
       weight = 4
       modifiers = {
         DAMAGE 12
-		DEFENSE 2
+        DEFENSE 2
       }
       price = 100
       weaponInfo = {
@@ -1205,7 +1205,7 @@
       }
       genPrefixes = {
         1 VictimEffect 0.5 Lasting COLLAPSED
-		1 VictimEffect 0.5 Lasting BLEEDING
+        1 VictimEffect 0.5 Lasting BLEEDING
       }
       maxUpgrades = 2
     }
@@ -1225,28 +1225,28 @@
       uses = 1
       effect = Chain {
 	    Lasting SATIATED
-		Chance 0.1 Enhance ARMOR 1
-		Chance 0.1 Enhance WEAPON -1
-		Chance 0.1 Deception
-		Chance 0.1 EmitPoisonGas 0.5
-		Chance 0.1 SummonEnemy "FLY" {3 7}
-		Chance 0.1 SummonElement
-		Chance 0.1 IncreaseAttr SPELL_DAMAGE 1
-		Chance 0.1 PlaceFurniture "METEOR_SHOWER"
-		Chance 0.1 PlaceFurniture "EYEBALL"
-		Chance 0.1 PlaceFurniture "GIANT_MUSHROOM"
-		Chance 0.1 Lasting BLIND
-		Chance 0.1 Lasting PANIC
-		Chance 0.1 Lasting FROZEN
-		Chance 0.1 Lasting SLEEP_RESISTANT
-		Chance 0.1 Lasting MAGIC_CANCELLATION
-		Chance 0.1 Lasting REGENERATION
-		Chance 0.1 Lasting COLD_RESISTANT
-		Chance 0.1 Lasting POISON
-		Chance 0.1 Lasting ON_FIRE
-		Chance 0.1 Permanent POISON_RESISTANT
-		Chance 0.1 Permanent NO_CARRY_LIMIT
-		Chance 0.1 Permanent SWIMMING_SKILL
+        Chance 0.1 Enhance ARMOR 1
+        Chance 0.1 Enhance WEAPON -1
+        Chance 0.1 Deception
+        Chance 0.1 EmitPoisonGas 0.5
+        Chance 0.1 SummonEnemy "FLY" {3 7}
+        Chance 0.1 SummonElement
+        Chance 0.1 IncreaseAttr SPELL_DAMAGE 1
+        Chance 0.1 PlaceFurniture "METEOR_SHOWER"
+        Chance 0.1 PlaceFurniture "EYEBALL"
+        Chance 0.1 PlaceFurniture "GIANT_MUSHROOM"
+        Chance 0.1 Lasting BLIND
+        Chance 0.1 Lasting PANIC
+        Chance 0.1 Lasting FROZEN
+        Chance 0.1 Lasting SLEEP_RESISTANT
+        Chance 0.1 Lasting MAGIC_CANCELLATION
+        Chance 0.1 Lasting REGENERATION
+        Chance 0.1 Lasting COLD_RESISTANT
+        Chance 0.1 Lasting POISON
+        Chance 0.1 Lasting ON_FIRE
+        Chance 0.1 Permanent POISON_RESISTANT
+        Chance 0.1 Permanent NO_CARRY_LIMIT
+        Chance 0.1 Permanent SWIMMING_SKILL
       }
     }
     "WandOfIce"
@@ -1265,7 +1265,20 @@
         equipedEffect = { COLD_RESISTANT }
         equipedAbility = "ice cone"
       }
-    }
+	"RobesOfHell"
+	{
+        viewId = { "robe" }
+        name = "robes of hell"
+        plural = "robes of hell"
+        weight =  2 
+        ownedEffect = DARKNESS_SOURCE
+        price =  10 
+        itemClass =  ARMOR 
+        equipmentSlot =  BODY_ARMOR 
+        modifiers =  { DEFENSE 5 } 
+        equipedEffect = { TELEPATHY NIGHT_VISION RAGE FIRE_RESISTANT MAGIC_RESISTANCE }
+        equipedAbility = "firewall"	
+	}
 
 ########################
 #Ideas for future items#
