@@ -1249,6 +1249,24 @@
 		Chance 0.1 Permanent SWIMMING_SKILL
       }
     }
+    "WandOfIce"
+	{
+        viewId = { "wooden_staff" }
+        effectDescription = false
+        name = "wand of ice"
+        description = "A magic weapon that can shoot ice freezing enemies."
+        weight =  1.5 
+        price =  30 
+        itemClass =  WEAPON 
+        equipmentSlot =  WEAPON 
+        modifiers =  { SPELL_DAMAGE 4 } 
+        weaponInfo =  { attackType = SPELL attackMsg = WAVE meleeAttackAttr = SPELL_DAMAGE victimEffect = { 1.0 Lasting FROZEN } } 
+        maxUpgrades =  1 
+        equipedEffect = { COLD_RESISTANT }
+        equipedAbility = "ice cone"
+      }
+    }
+
 ########################
 #Ideas for future items#
 ########################

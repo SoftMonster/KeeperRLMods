@@ -81,7 +81,7 @@
       }
   {"ELEMENTALIST"}
       {
-        { Simple "IronStaff"}
+        { Simple "WandOfIce"}
         { Simple "Torch"}
         { type = Glyph ARMOR LastingEffect FIRE_RESISTANT chance = 0.3 }
        }
