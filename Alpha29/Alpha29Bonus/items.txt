@@ -1329,6 +1329,21 @@
 		price =  0 
 		itemClass =  CORPSE 
     }
+	"StaffOfBleeding"
+	{
+		viewId = { "iron_staff" }
+		name = "staff of bleeding"
+		plural = "starves of bleeding"
+		weight =  1.5 
+		price =  60 
+        itemClass =  WEAPON 
+        equipmentSlot =  WEAPON 
+		modifiers =  { SPELL_DAMAGE 8 } 
+		weaponInfo =  { attackType = SPELL attackMsg = WAVE meleeAttackAttr = SPELL_DAMAGE } 
+		maxUpgrades =  2 
+		equipedEffect = { BLEEDING REGENERATION }
+		equipedAbility = "curse"	
+	}
 	
     
 ########################
