@@ -1319,6 +1319,17 @@
         equipmentSlot =  RINGS 
         equipedAbility = "pacify"   
     }
+    "BoneOfWizardry"
+    {
+		viewId = { "bone" }
+		name = "bone of wizardry"
+		plural = "bones of wizardry"
+		weight =  50 
+		ownedEffect = SPELL_DAMAGE
+		price =  0 
+		itemClass =  CORPSE 
+    }
+	
     
 ########################
 #Ideas for future items#

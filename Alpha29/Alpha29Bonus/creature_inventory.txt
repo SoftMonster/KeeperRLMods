@@ -237,7 +237,8 @@
       }
   {"GNOME_CHIEF"}
       {
-        { Simple "Sword"}
+        { Simple "Sword" }
+		{ Simple "BoneOfWizardry" }
       }
   {"VAMPIRE_LORD"}
       {
