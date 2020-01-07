@@ -1278,8 +1278,22 @@
         modifiers =  { DEFENSE 5 } 
         equipedEffect = { TELEPATHY NIGHT_VISION RAGE FIRE_RESISTANT MAGIC_RESISTANCE }
         equipedAbility = "firewall"	
-	}
-
+    }
+    "HeavenlyArmor"
+    {
+        viewId = { "chain_armor" }
+		shortName = "heavenly armor"
+		name = "heavenly armor"
+		weight =  15 
+		ownedEffect = LIGHT_SOURCE
+		price =  200
+		itemClass =  ARMOR 
+		equipmentSlot =  BODY_ARMOR 
+		modifiers =  { DEFENSE 10 } 
+		maxUpgrades = 0
+		equipedEffect = { MAGIC_RESISTANCE FLYING COLD_RESISTANT }
+    }
+	
 ########################
 #Ideas for future items#
 ########################
