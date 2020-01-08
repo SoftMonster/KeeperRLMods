@@ -434,97 +434,97 @@
 "sandbox"
 # Workshop
 {
-    {item = {Simple "Club"}    work = 3 cost = WOOD 1    tech = none      batchSize = 1    tutorialHighlight = SCHEDULE_CLUB}
-    {{Simple "LeatherArmor"}          6        WOOD 1}
-    {{Simple "LeatherHelm"}           1        WOOD 1}
-    {{Simple "LeatherBoots"}          2        WOOD 1}
-    {{Simple "LeatherGloves"}         1        WOOD 1}
-    {{Simple "HeavyClub"}             5        WOOD 1      "two-handed weapons"}
-    {{Simple "Bow"}                   13       WOOD 1      "archery"}
-    {{Simple "WoodenStaff"}           13       WOOD 1      "magical weapons"}
-    {{Simple "Torch"}                 2        WOOD 1}
-    {{TrapItem "BOULDER_TRAP" "boulder"}      1        STONE 1      "traps"}
-    {{TrapItem "POISON_GAS_TRAP" "poison"}    1        WOOD  1      "traps"}
-    {{TrapItem "ALARM_TRAP" "alarm"}          1        WOOD  1      "traps"}
-    {{TrapItem "WEB_TRAP" "web"}              1        WOOD  1      "traps"}
-    {{TrapItem "SURPRISE_TRAP" "surprise"}    1        WOOD  1      "traps"}
-    {{TrapItem "TERROR_TRAP" "terror"}        1        WOOD  1      "traps"}
-    {{TrapItem "FIRE_TRAP" "fire"}            1        WOOD  1      "traps"}
-    {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   11       IRON  1      "traps"}
-    {{TrapItem "TAR_PIT"  "tar bucket"}       1        STONE 1      "traps"}
-    {{TrapItem "FALLING_RUBBLE_TRAP"  "falling rubble"}  1 STONE 1  "traps"}
+    {item = {Simple "Club"}    work = 3 cost = WOOD 0    tech = none      batchSize = 1    tutorialHighlight = SCHEDULE_CLUB}
+    {{Simple "LeatherArmor"}          6        WOOD 0}
+    {{Simple "LeatherHelm"}           1        WOOD 0}
+    {{Simple "LeatherBoots"}          2        WOOD 0}
+    {{Simple "LeatherGloves"}         1        WOOD 0}
+    {{Simple "HeavyClub"}             5        WOOD 0      "two-handed weapons"}
+    {{Simple "Bow"}                   13       WOOD 0      "archery"}
+    {{Simple "WoodenStaff"}           13       WOOD 0      "magical weapons"}
+    {{Simple "Torch"}                 2        WOOD 0}
+    {{TrapItem "BOULDER_TRAP" "boulder"}      1        STONE 0      "traps"}
+    {{TrapItem "POISON_GAS_TRAP" "poison"}    1        WOOD  0      "traps"}
+    {{TrapItem "ALARM_TRAP" "alarm"}          1        WOOD  0      "traps"}
+    {{TrapItem "WEB_TRAP" "web"}              1        WOOD  0      "traps"}
+    {{TrapItem "SURPRISE_TRAP" "surprise"}    1        WOOD  0      "traps"}
+    {{TrapItem "TERROR_TRAP" "terror"}        1        WOOD  0      "traps"}
+    {{TrapItem "FIRE_TRAP" "fire"}            1        WOOD  0      "traps"}
+    {{TrapItem "FLOOR_SPIKES_TRAP" "spike"}   11       IRON  0      "traps"}
+    {{TrapItem "TAR_PIT"  "tar bucket"}       1        STONE 0      "traps"}
+    {{TrapItem "FALLING_RUBBLE_TRAP"  "falling rubble"}  1 STONE 0  "traps"}
 }
 
 # Forge
 
 {
-    {{Simple "Sword"}                 1       IRON 1}
-    {{Simple "ChainArmor"}            1       IRON 1}
-    {{Simple "IronHelm"}              1       IRON 1}
-    {{Simple "IronBoots"}             1       IRON 1}
-    {{Simple "IronGloves"}            1       IRON 1}
-    {{Simple "IronShield"}            1       IRON 1}
-    {{Simple "WarHammer"}             1       IRON 1      "two-handed weapons"}
-    {{Simple "BattleAxe"}             1       IRON 1      "two-handed weapons"}
-    {{Simple "IronStaff"}             1       IRON 1      "magical weapons"}
-    {{Simple "GoldenStaff"}           1       GOLD 1     "magical weapons"}
-    {{Simple "AdaSword"}              1       ADA 1}
-    {{Simple "AdaArmor"}              1       ADA 1}
-    {{Simple "AdaHelm"}               1       ADA 1}
-    {{Simple "AdaBoots"}              1       ADA 1}
-    {{Simple "AdaGloves"}             1       ADA 1}
-    {{Simple "AdaShield"}             1       ADA 1}
-    {{Simple "AdaWarHammer"}          1       ADA 1       "two-handed weapons"}
-    {{Simple "AdaBattleAxe"}          1       ADA 1       "two-handed weapons"}
-    {item = {Simple "RedDragonArmor"}   work = 1 cost = IRON 1 requireIngredient = true }
-    {item = {Simple "BlackDragonArmor"} work = 1 cost = IRON 1 requireIngredient = true }
-    {item = {Simple "WhiteDragonArmor"} work = 1 cost = IRON 1 requireIngredient = true }
-    {item = {Simple "GreenDragonArmor"} work = 1 cost = IRON 1 requireIngredient = true }
-    {item = {Simple "CyclopsHelm"}      work = 1 cost = IRON 1 requireIngredient = true }
+    {{Simple "Sword"}                 1       IRON 0}
+    {{Simple "ChainArmor"}            1       IRON 0}
+    {{Simple "IronHelm"}              1       IRON 0}
+    {{Simple "IronBoots"}             1       IRON 0}
+    {{Simple "IronGloves"}            1       IRON 0}
+    {{Simple "IronShield"}            1       IRON 0}
+    {{Simple "WarHammer"}             1       IRON 0      "two-handed weapons"}
+    {{Simple "BattleAxe"}             1       IRON 0      "two-handed weapons"}
+    {{Simple "IronStaff"}             1       IRON 0      "magical weapons"}
+    {{Simple "GoldenStaff"}           1       GOLD 0     "magical weapons"}
+    {{Simple "AdaSword"}              1       ADA 0}
+    {{Simple "AdaArmor"}              1       ADA 0}
+    {{Simple "AdaHelm"}               1       ADA 0}
+    {{Simple "AdaBoots"}              1       ADA 0}
+    {{Simple "AdaGloves"}             1       ADA 0}
+    {{Simple "AdaShield"}             1       ADA 0}
+    {{Simple "AdaWarHammer"}          1       ADA 0       "two-handed weapons"}
+    {{Simple "AdaBattleAxe"}          1       ADA 0       "two-handed weapons"}
+    {item = {Simple "RedDragonArmor"}   work = 1 cost = IRON 0 requireIngredient = true }
+    {item = {Simple "BlackDragonArmor"} work = 1 cost = IRON 0 requireIngredient = true }
+    {item = {Simple "WhiteDragonArmor"} work = 1 cost = IRON 0 requireIngredient = true }
+    {item = {Simple "GreenDragonArmor"} work = 1 cost = IRON 0 requireIngredient = true }
+    {item = {Simple "CyclopsHelm"}      work = 1 cost = IRON 0 requireIngredient = true }
 }
 
 # Lab
 
 {
-    {{Potion Lasting SLOWED}               1        GOLD 1}
-    {{Potion Lasting SLEEP}                1        GOLD 1}
-    {{Potion Lasting POISON_RESISTANT}     1        GOLD 1}
-    {{Potion Lasting SPEED}                1        GOLD 1}
-    {{Potion Lasting TELEPATHY}            1        GOLD 1}
-    {{Potion Lasting REGENERATION}         1        GOLD 1}
-    {{Potion Lasting POISON}               1        GOLD 1}
-    {{Potion Lasting FLYING}               1        GOLD 1}
-    {{Potion Heal FLESH}                   1        GOLD 1      "advanced alchemy"}
-    {{Potion Lasting BLIND}                1        GOLD 1      "advanced alchemy"}
-    {{Potion Lasting MELEE_RESISTANCE}     1        GOLD 1      "advanced alchemy"}
-    {{Potion Lasting MELEE_VULNERABILITY}  1        GOLD 1      "advanced alchemy"}
-    {{Potion Lasting MAGIC_VULNERABILITY}  1        GOLD 1      "advanced alchemy"}
-    {{Potion Lasting INVISIBLE}            1        GOLD 1      "advanced alchemy"}
-    {{Simple "GoldPiece"}                  1        IRON 1      "alchemical conversion"       1000}
-    {{Simple "WoodPlank"}                  1        GOLD 1      "alchemical conversion"       1000}
-    {{Simple "IronOre"}                    1        GOLD 1      "alchemical conversion"       1000}
-    {{Simple "AdaOre"}                     1        GOLD 1      "alchemical conversion"       1000}
-    {{Simple "Rock"}                       1        GOLD 1      "alchemical conversion"       1000}
-    {item = {Potion IncreaseAttr DEFENSE 5}     work = 1 cost = GOLD 1 requireIngredient = true }
-    {item = {Potion Lasting PLAGUE}             work = 1 cost = GOLD 1 requireIngredient = true }
-    {item = {Potion Permanent POISON_RESISTANT} work = 1 cost = GOLD 1 requireIngredient = true }
+    {{Potion Lasting SLOWED}               1        GOLD 0}
+    {{Potion Lasting SLEEP}                1        GOLD 0}
+    {{Potion Lasting POISON_RESISTANT}     1        GOLD 0}
+    {{Potion Lasting SPEED}                1        GOLD 0}
+    {{Potion Lasting TELEPATHY}            1        GOLD 0}
+    {{Potion Lasting REGENERATION}         1        GOLD 0}
+    {{Potion Lasting POISON}               1        GOLD 0}
+    {{Potion Lasting FLYING}               1        GOLD 0}
+    {{Potion Heal FLESH}                   1        GOLD 0      "advanced alchemy"}
+    {{Potion Lasting BLIND}                1        GOLD 0      "advanced alchemy"}
+    {{Potion Lasting MELEE_RESISTANCE}     1        GOLD 0      "advanced alchemy"}
+    {{Potion Lasting MELEE_VULNERABILITY}  1        GOLD 0      "advanced alchemy"}
+    {{Potion Lasting MAGIC_VULNERABILITY}  1        GOLD 0      "advanced alchemy"}
+    {{Potion Lasting INVISIBLE}            1        GOLD 0      "advanced alchemy"}
+    {{Simple "GoldPiece"}                  1        IRON 0      "alchemical conversion"       1000}
+    {{Simple "WoodPlank"}                  1        GOLD 0      "alchemical conversion"       1000}
+    {{Simple "IronOre"}                    1        GOLD 0      "alchemical conversion"       1000}
+    {{Simple "AdaOre"}                     1        GOLD 0      "alchemical conversion"       1000}
+    {{Simple "Rock"}                       1        GOLD 0      "alchemical conversion"       1000}
+    {item = {Potion IncreaseAttr DEFENSE 5}     work = 1 cost = GOLD 0 requireIngredient = true }
+    {item = {Potion Lasting PLAGUE}             work = 1 cost = GOLD 0 requireIngredient = true }
+    {item = {Potion Permanent POISON_RESISTANT} work = 1 cost = GOLD 0 requireIngredient = true }
 }
 
 # Jeweller
 {
-    {{Ring POISON_RESISTANT}               1       GOLD 1}
-    {{Ring FIRE_RESISTANT}                 1       GOLD 1}
-    {{Ring MAGIC_RESISTANCE}               1       GOLD 1}
-    {{Ring RESTED}                         1       GOLD 1}
-    {{Ring SATIATED}                       1       GOLD 1}
-    {{Ring FAST_CRAFTING}                  1       GOLD 1}
-    {{Ring FAST_TRAINING}                  1       GOLD 1}
-    {{Amulet NIGHT_VISION}                 1       GOLD 1}
-    {{Amulet ELF_VISION}                   1       GOLD 1}
-    {{Amulet WARNING}                      1       GOLD 1}
-    {{Simple "DefenseAmulet"}              1       GOLD 1}
-    {{Simple "SpyingCrystal"}              1	   GOLD 1}
-    {{Amulet REGENERATION}                 1       GOLD 1}
+    {{Ring POISON_RESISTANT}               1       GOLD 0}
+    {{Ring FIRE_RESISTANT}                 1       GOLD 0}
+    {{Ring MAGIC_RESISTANCE}               1       GOLD 0}
+    {{Ring RESTED}                         1       GOLD 0}
+    {{Ring SATIATED}                       1       GOLD 0}
+    {{Ring FAST_CRAFTING}                  1       GOLD 0}
+    {{Ring FAST_TRAINING}                  1       GOLD 0}
+    {{Amulet NIGHT_VISION}                 1       GOLD 0}
+    {{Amulet ELF_VISION}                   1       GOLD 0}
+    {{Amulet WARNING}                      1       GOLD 0}
+    {{Simple "DefenseAmulet"}              1       GOLD 0}
+    {{Simple "SpyingCrystal"}              1	   GOLD 0}
+    {{Amulet REGENERATION}                 1       GOLD 0}
 }
 
 "techBooks"
