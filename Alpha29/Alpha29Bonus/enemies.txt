@@ -2975,99 +2975,28 @@
       topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY"}
       levels = {
         { ExtraEnemy { "BOTTOMLESS1" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS2" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS3" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS4" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS5" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS6" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS7" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS8" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS9" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS10" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS11" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS12" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS13" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS14" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS15" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS16" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS17" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS18" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS19" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS20" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS21" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS22" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS23" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS24" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS25" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS26" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS27" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS28" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS29" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS30" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS31" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS32" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS33" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS34" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS35" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS36" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS37" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS38" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS39" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS40" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS41" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS42" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS43" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS44" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS45" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS46" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS47" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS48" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS49" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS50" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS51" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS52" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS53" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS54" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS55" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS56" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS57" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS58" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS59" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS60" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS61" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS62" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS63" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS64" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS65" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS66" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS67" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS68" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS69" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS70" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS71" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS72" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS73" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS74" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS75" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS76" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS77" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS78" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS79" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS80" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS81" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS82" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS83" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS84" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS85" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS86" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS87" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS88" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS89" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS90" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS91" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS92" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS93" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS94" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS95" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS96" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS97" { 1 2 } } 60 40 DUNGEON }
@@ -3093,9 +3022,9 @@
   }
 
 ####################################################################
-#Definition of dungeons level 4 to 100
+#Definition of dungeons level 1 to 100
 ####################################################################
-#Increasing difficulty of dungeons above depth 3
+#Increasing difficulty of dungeons
 ####################################################################
 
   "BOTTOMLESS_TYPE_1"

@@ -51,7 +51,7 @@
     { "dark_elf_lord" } "DARK_ELVES_ALLY" "Dark elves" ALLY
     { "gnome_boss" } "GNOMES" "Gnomes" ALLY
     { "orc_captain" } "ORC_VILLAGE" "Greenskin village" ALLY
-    { "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY
+    { "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Deep Dungeon" ALLY
 }
 
 # Villains for lawful keepers
