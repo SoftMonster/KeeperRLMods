@@ -354,7 +354,7 @@
         { type = Glyph WEAPON ItemAttrBonus DAMAGE 3 chance = 0.01 }
       }
 
-{"SKELETON_MAGE"}
+  {"SKELETON_MAGE"}
       {
         { Simple "WoodenStaff" }
         { Simple "Robe" }
