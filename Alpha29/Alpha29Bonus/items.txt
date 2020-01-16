@@ -1211,7 +1211,7 @@
     }
   "WonderMushroom"
     {
-      viewId = { "mushroom5" }
+      viewId = { "mushroom5" ColorId YELLOW }
       effectDescription = false
       name = "wonder mushroom"
       description = "Wonder mushrooms do all sorts of different things."
