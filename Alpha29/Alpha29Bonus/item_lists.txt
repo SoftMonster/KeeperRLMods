@@ -325,6 +325,7 @@
       {{Mushroom Lasting REGENERATION} 1000}
       {{Mushroom Lasting RAGE} 1000}
 	  {{Simple "WonderMushroom"} 1000}
+	  {{Simple "SleepMushroom"} 1000}
     }
   }
 

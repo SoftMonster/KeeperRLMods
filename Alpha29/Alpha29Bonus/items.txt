@@ -1244,10 +1244,25 @@
         Chance 0.1 Lasting COLD_RESISTANT
         Chance 0.1 Lasting POISON
         Chance 0.1 Lasting ON_FIRE
-        Chance 0.1 Permanent POISON_RESISTANT
-        Chance 0.1 Permanent NO_CARRY_LIMIT
+        Chance 0.1 Permanent RAGE
+        Chance 0.1 Permanent FAST_TRAINING
         Chance 0.1 Permanent SWIMMING_SKILL
       }
+    }
+  "SleepMushroom"
+    {
+      viewId = { "mushroom1" ColorId YELLOW }
+      effectDescription = false
+      name = "sleep mushroom"
+      description = "A great way to fix your sleep difficulties."
+      weight =  1
+      price =  10 
+      itemClass =  TOOL 
+      applyMsgFirstPerson = "eat the sleep mushroom"
+      applyMsgThirdPerson = "eats a sleep mushroom"
+      applyTime = 1
+      uses = 1
+      effect = Lasting SLEEP
     }
     "WandOfIce"
     {
