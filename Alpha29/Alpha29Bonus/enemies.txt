@@ -624,6 +624,7 @@
   }
   "ELVES"
   {
+    biomes = { FORREST }
     settlement = {
       type = CASTLE
       inhabitants = {
@@ -1736,7 +1737,7 @@
   {
     settlement = {
       type = FORREST_COTTAGE
-      tribe = LIZARD
+      tribe = BANDIT
       inhabitants = {
         fighters = {
           count = {2 3}
