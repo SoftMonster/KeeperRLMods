@@ -625,7 +625,7 @@
   "ELVES"
   {
     settlement = {
-      type = FORREST_VILLAGE
+      type = CASTLE
       inhabitants = {
         leader = { { "ELF_LORD" } }
         fighters = {
@@ -648,6 +648,7 @@
       buildingId = "BARRICADES" #Modded
       lootItem = {TechBook "master sorcery"}
       furniture = { "elvenRoomFurniture" } #Modded
+      shopItems = "villageShop"
     }
     config = {
       immigrantInterval = 500

@@ -168,7 +168,7 @@
     { "rat_king" } "RATMEN" "Rat men" LESSER
 
     { "duke4" } "KNIGHTS" "Knights" ALLY
-    { "elf_lord" } "ELVES" "Elves" ALLY
+    { "elf_lord" } "ELVES" "Elven Castle" ALLY
     { "dwarf_baron" } "DWARVES" "Dwarves" ALLY
     { "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY
 }
