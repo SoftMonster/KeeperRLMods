@@ -363,6 +363,12 @@
     cooldown = 150
   }
   {
+    id = "dungeon master wish"
+    symbol = "$"
+    effect = Wish
+    cooldown = 1
+  }
+  {
     id = "double trouble"
     symbol = "👤👤"
     effect = DoubleTrouble

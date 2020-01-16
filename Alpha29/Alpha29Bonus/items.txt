@@ -1344,7 +1344,23 @@
 		equipedEffect = { BLEEDING REGENERATION }
 		equipedAbility = "curse"	
 	}
-	
+#Staff of dungeon master for creative mode. Cannot be wished for.
+#Musn't be given to anything in creature inventory that can be wished for.
+	"StaffOfDungeonMaster"
+	{
+		viewId = { "iron_staff" }
+		name = "staff of dungeon master"
+		plural = "starves of dungeon master"
+		weight = 1.5 
+		price =  10000
+        itemClass =  WEAPON 
+        equipmentSlot =  WEAPON 
+		modifiers =  { SPELL_DAMAGE 80 DEFENSE 80 } 
+		weaponInfo =  { attackType = SPELL attackMsg = WAVE meleeAttackAttr = SPELL_DAMAGE } 
+		equipedAbility = "dungeon master wish"
+		equipedEffect = { SPEED POISON_RESISTANT FIRE_RESISTANT MELEE_RESISTANCE RANGED_RESISTANCE MAGIC_RESISTANCE }
+        wishedCount = { 0 } #Will crash the game. Stops it being wished for.
+	}	
     
 ########################
 #Ideas for future items#
