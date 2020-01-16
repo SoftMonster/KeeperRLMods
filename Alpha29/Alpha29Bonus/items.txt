@@ -1332,8 +1332,8 @@
 	"StaffOfBleeding"
 	{
 		viewId = { "iron_staff" }
-		name = "staff of bleeding"
-		plural = "starves of bleeding"
+		name = "staff of blood"
+		plural = "starves of blood"
 		weight =  1.5 
 		price =  60 
         itemClass =  WEAPON 
