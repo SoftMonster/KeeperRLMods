@@ -1217,7 +1217,7 @@
       description = "Wonder mushrooms do all sorts of different things."
       weight =  1
       price =  10 
-      itemClass =  TOOL 
+      itemClass =  FOOD
       applyMsgFirstPerson = "eat the wonder mushroom"
       applyMsgThirdPerson = "eats a wonder mushroom"
       applySound = DYING_PIG
@@ -1257,7 +1257,7 @@
       description = "A great way to fix your sleep difficulties."
       weight =  1
       price =  10 
-      itemClass =  TOOL 
+      itemClass =  FOOD
       applyMsgFirstPerson = "eat the sleep mushroom"
       applyMsgThirdPerson = "eats a sleep mushroom"
       applyTime = 1
