@@ -5056,7 +5056,7 @@
   }
   "MUMMY_LORD"
     {
-      viewId = { "mummy" }
+      viewId = { "mummy" ColorId GREEN }
       attr = {
         DAMAGE 20
         DEFENSE 20 
