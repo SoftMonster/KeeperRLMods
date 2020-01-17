@@ -109,6 +109,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NewCode.Designer.vb">
+      <DependentUpon>NewCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ucBoolean.Designer.vb">
       <DependentUpon>ucBoolean.vb</DependentUpon>
     </Compile>
@@ -180,6 +186,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="NewCode.resx">
+      <DependentUpon>NewCode.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucBoolean.resx">
       <DependentUpon>ucBoolean.vb</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +225,11 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="Resources\monster_generator_instructions.dat" />
+    <None Include="Resources\monster_keeper.dat" />
+    <None Include="Resources\monster_template.dat" />
+    <None Include="Resources\monster_template_attacks.dat" />
+    <None Include="Resources\monster_template_redundancy.dat" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

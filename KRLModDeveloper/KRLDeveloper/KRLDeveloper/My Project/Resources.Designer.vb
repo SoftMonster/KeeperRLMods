@@ -59,5 +59,55 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property monster_generator_instructions() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("monster_generator_instructions", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property monster_keeper() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("monster_keeper", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property monster_template() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("monster_template", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property monster_template_attacks() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("monster_template_attacks", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property monster_template_redundancy() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("monster_template_redundancy", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
     End Module
 End Namespace
