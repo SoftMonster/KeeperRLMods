@@ -153,4 +153,8 @@ Public Class KRLDeveloper
         End If
     End Function
 
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        frmVanillaViewer.VanillaFolder = TextBox1.Text
+        frmVanillaViewer.ShowDialog()
+    End Sub
 End Class
