@@ -85,6 +85,12 @@
     <Compile Include="frmEffect.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmSprites.Designer.vb">
+      <DependentUpon>frmSprites.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSprites.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmVanillaViewer.Designer.vb">
       <DependentUpon>frmVanillaViewer.vb</DependentUpon>
     </Compile>
@@ -184,6 +190,9 @@
   <ItemGroup>
     <EmbeddedResource Include="frmEffect.resx">
       <DependentUpon>frmEffect.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSprites.resx">
+      <DependentUpon>frmSprites.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmVanillaViewer.resx">
       <DependentUpon>frmVanillaViewer.vb</DependentUpon>
