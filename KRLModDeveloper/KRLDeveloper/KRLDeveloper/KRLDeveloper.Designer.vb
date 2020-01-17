@@ -30,11 +30,12 @@ Partial Class KRLDeveloper
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(611, 84)
+        Me.Button1.Location = New System.Drawing.Point(613, 169)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(126, 23)
         Me.Button1.TabIndex = 0
@@ -43,7 +44,7 @@ Partial Class KRLDeveloper
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(127, 27)
+        Me.TextBox1.Location = New System.Drawing.Point(129, 112)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(611, 22)
         Me.TextBox1.TabIndex = 1
@@ -52,7 +53,7 @@ Partial Class KRLDeveloper
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(127, 55)
+        Me.TextBox2.Location = New System.Drawing.Point(129, 140)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(610, 22)
         Me.TextBox2.TabIndex = 2
@@ -61,7 +62,7 @@ Partial Class KRLDeveloper
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(27, 32)
+        Me.Label1.Location = New System.Drawing.Point(29, 117)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(94, 17)
         Me.Label1.TabIndex = 3
@@ -70,7 +71,7 @@ Partial Class KRLDeveloper
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(30, 53)
+        Me.Label2.Location = New System.Drawing.Point(32, 138)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(83, 17)
         Me.Label2.TabIndex = 4
@@ -78,7 +79,7 @@ Partial Class KRLDeveloper
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(467, 84)
+        Me.Button2.Location = New System.Drawing.Point(469, 169)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(138, 23)
         Me.Button2.TabIndex = 5
@@ -87,7 +88,7 @@ Partial Class KRLDeveloper
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(343, 84)
+        Me.Button3.Location = New System.Drawing.Point(345, 169)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(118, 23)
         Me.Button3.TabIndex = 6
@@ -96,18 +97,29 @@ Partial Class KRLDeveloper
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(240, 84)
+        Me.Button4.Location = New System.Drawing.Point(242, 169)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(97, 23)
         Me.Button4.TabIndex = 7
         Me.Button4.Text = "Sprites"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(32, 26)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(680, 17)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "This app is just currently a collection of code that may be useful. It is not fit" &
+    " for any particular purpose (yet)."
+        '
         'KRLDeveloper
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(752, 119)
+        Me.ClientSize = New System.Drawing.Size(752, 204)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -131,4 +143,5 @@ Partial Class KRLDeveloper
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents Label3 As Label
 End Class
