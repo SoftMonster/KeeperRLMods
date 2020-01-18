@@ -1,18 +1,19 @@
 ###########################################
-#Structure taken from external_enemies.h
+#Code taken from external_enemies.h
 ###########################################
 # constexpr int firstAttackDelay = 1800;
 # constexpr int attackInterval = 1200;
 # constexpr int attackVariation = 450;
 # constexpr int afterWinTurn = 15000;
-
+###########################################
 # CreatureList SERIAL(creatures);
 # AttackBehaviour SERIAL(behaviour);
 # string SERIAL(name);
 # Range SERIAL(attackTime);
 # int SERIAL(maxOccurences) = 1;
 ###########################################
-
+# enemy.creatures.increaseBaseLevel({{ExperienceType::MELEE, max(0, attackTime / 1000 - 10)}})
+###########################################
 
 {
   {
@@ -338,6 +339,283 @@
     KillLeader
     "a pack of ogres"
     { 15000 50000 }
+    100
+  }
+  {
+    {
+      all = { 1 "DEMON_DWELLER" }
+      count = {5 10}
+      baseLevelIncrease = { MELEE 25 }
+    }
+    KillLeader
+    "a pack of demons"
+    { 100000 500000 }
+    100
+  }
+  {
+    {
+      count = {4 5}
+      all = {
+        1 "SHELOB"
+        1 "ARACHNE"
+        1 "SPECIAL_BMGN"
+      }
+    }
+    KillLeader
+    "a nest of spiders"
+    { 100000 500000 }
+    100
+  }
+  {
+    {
+      count = {3 7}
+      all = {
+        1 "HYDRA"
+	  }
+    }
+    KillLeader
+    "a nest of hydra"
+    { 100000 500000 }
+    100
+  }
+  {
+    {
+      count = {8 14}
+      all = {
+        1 "THIEF"
+	  }
+    }
+    KillLeader
+    "a den of thieves"
+    { 100000 500000 }
+    100
+  }
+  {
+    {
+       count = {16 32}
+       all = {
+	     2 "GOBLIN_CHICKENMANCER"
+		 2 "GOBLIN_BRUTE"
+		 3 "GOBLIN_ARCHER"
+		 1 "GOBLIN_HIGH_PRIEST"
+		 2 "GOBLIN_KABOOMER"
+		 2 "GOBLIN_PRIEST"
+		 2 "GOBLIN_WIZARD"
+		 3 "GOBLIN_WARRIOR"
+       }
+    }
+    KillLeader
+    "a goblin war army"
+    { 100000 500000 }
+    100
+  }
+  {
+    {
+      count = {15 18}
+      all = {
+        30 "COW_DEMON"
+        10 "MINOTAUR"
+        5 "DEMON_LORD"
+      }
+    }
+    KillLeader
+    "a party of cow demons"
+    { 100000 500000 }
+    100
+  }
+  {
+    {
+      count = {5 10}
+      all = {
+        1 "AIR_FAIRY"
+        1 "DARK_FAIRY"
+        1 "EARTH_FAIRY"
+        1 "ELECTRIC_FAIRY"
+        1 "MAGIC_FAIRY"
+        1 "NATURE_FAIRY"
+        1 "LIGHT_FAIRY"
+        1 "WATER_FAIRY"
+      }
+    }
+    KillLeader
+    "some fairies"
+    { 100000 500000 }
+    100
+  }
+  {
+    {
+	  count = {22 30}
+	  all = {
+		20 "HELL_KNIGHT"
+		14 "HELL_KNIGHT_BRUTE"
+		10 "HELL_KNIGHT_LORD"
+		12 "HELL_KNIGHT_SWORDMASTER"
+	  }
+    }
+    KillLeader
+    "many wrathful hellknights"
+    { 100000 500000 }
+    100
+  }
+  {
+    {
+      count = {10 15}
+	  all = {
+		1 "CENTAUR_ARCHER"
+		1 "CENTAUR_FARMER"
+		1 "CENTAUR_HUNTER"
+		1 "CENTAUR_CHILD"
+		1 "CENTAUR_KNIGHT"
+	  }
+    }
+    KillLeader
+    "a herd of centaurs"
+    { 100000 500000 }
+    100
+  }  
+  {
+    {
+	  count = {10 15}
+	  all = {
+		2 "AMAZON"
+		1 "AMAZON_ARCHER"
+		1 "AMAZON_CHAMPION"
+		1 "AMAZON_ELDER"
+		1 "AMAZON_WAR_MAIDEN"
+	  }
+    }
+    KillLeader
+    "an attack party of amazons"
+    { 100000 500000 }
+    100
+  }  
+  {
+    {
+	  count = {25 30}
+	  all = {
+		6 "VULTURE_ABOMINATION"
+		1 "EYE_SERVANT"
+	  }
+    }
+    KillLeader
+    "many abominations"
+    { 100000 500000 }
+    100
+  }
+  {
+    {
+	  count = {12 16}
+	  all = {
+		1 "SKELETON"
+		1 "SKELETON_MAGE"
+		1 "SKELETON_WARRIOR"
+	  }
+    }
+    KillLeader
+    "a skeleton army"
+    { 100000 500000 }
+    100
+  } 
+  {
+    {
+	  count = {10 15}
+	  all = {
+		1 "ANCIENT_GREEN_DRAGON"
+		1 "WHITE_DRAGON"
+		1 "BLACK_DRAGON"
+		1 "GREEN_DRAGON"
+		1 "RED_DRAGON"
+		2 "YOUNG_GREEN_DRAGON"
+		2 "YOUNG_RED_DRAGON"
+		6 "GREEN_DRAGONEWT"
+		6 "RED_DRAGONNEWT"
+	  }
+    }
+    KillLeader
+    "a huge dragon invasion"
+    { 100000 500000 }
+    100
+  }
+  {
+    {
+	  count = {25 30}
+	  all = {
+		1 "ARCHER_DUNGEON"
+		1 "SKELETON_DUNGEON"
+		1 "HARPY_DUNGEON"
+		1 "ELF_ARCHER_DUNGEON"
+		1 "DRIAD_DUNGEON"
+		1 "CENTAUR_ARCHER_DUNGEON"
+		1 "AMAZON_ARCHER_DUNGEON"
+		1 "RAT_ARCHER_DUNGEON"
+		1 "GOBLIN_ARCHER_DUNGEON"
+		1 "CENTAUR_HUNTER_DUNGEON"
+		1 "ADVENTURER_DUNGEON"
+		1 "WITCHMAN_DUNGEON"
+		1 "DEMON_DWELLER_DUNGEON"
+		1 "KNIGHT_DUNGEON"
+		1 "WARRIOR_DUNGEON"
+		1 "OGRE_DUNGEON"
+		1 "DWARF_DUNGEON"
+		1 "DWARF_FEMALE_DUNGEON"
+		1 "LIZARDMAN_DUNGEON"
+		1 "DARK_ELF_WARRIOR_DUNGEON"
+		1 "WEREWOLF_DUNGEON"
+		1 "ABOMINATION_DUNGEON"
+		1 "CENTAUR_KNIGHT_DUNGEON"
+		1 "AMAZON_DUNGEON"
+		1 "AMAZON_CHAMPION_DUNGEON"
+		1 "AMAZON_WAR_MAIDEN_DUNGEON"
+		1 "RED_DRAGONNEWT_DUNGEON"
+		1 "GREEN_DRAGONEWT_DUNGEON"
+		1 "HELL_KNIGHT_DUNGEON"
+		1 "HELL_KNIGHT_BRUTE_DUNGEON"
+		1 "HELL_KNIGHT_SWORDMASTER_DUNGEON"
+		1 "RAT_GENERAL_DUNGEON"
+		1 "ARACHNE_DUNGEON"
+		1 "COW_DEMON_DUNGEON"
+		1 "ARMORED_COW_DEMON_DUNGEON"
+		1 "BANSHEE_DUNGEON"
+		1 "GIANT_DUNGEON"
+		1 "MUSHROOM_MAN_DUNGEON"
+		1 "OGRE_FEMALE_DUNGEON"
+		1 "SHARD_SPITTER_DUNGEON"
+		1 "SQUIDHOLDER_DUNGEON"
+		1 "WARRIOR_HERO_DUNGEON"
+		1 "THIEF_HERO_DUNGEON"
+		1 "DARK_ORC_DUNGEON"
+		1 "DARK_ORC_FEMALE_DUNGEON"
+		1 "DARK_OGRE_DUNGEON"
+		1 "DARK_OGRE_FEMALE_DUNGEON"
+		1 "ELITE_GOBLIN_GUARD_DUNGEON"
+		1 "GOBLIN_BRUTE_DUNGEON"
+		1 "GOBLIN_KABOOMER_DUNGEON"
+		1 "GOBLIN_MATRON_DUNGEON"
+		1 "GOBLIN_WARRIOR_DUNGEON"
+		1 "COMBAT_SUCCUBUS_DUNGEON"
+		1 "SKELETON_WARRIOR_DUNGEON"
+		1 "DWARF_FIGHTER_DUNGEON"
+		1 "DWARF_WARRIOR_DUNGEON"
+		1 "ELITE_DWARF_WARRIOR_DUNGEON"
+		1 "ANT_SOLDIER"
+		1 "AIR_ELEMENTAL"
+		1 "EARTH_ELEMENTAL"
+		1 "ENT"
+		1 "FIRE_ELEMENTAL"
+		1 "FIRE_SPHERE"
+		1 "EYE_SERVANT"
+		1 "IRON_GOLEM"
+		1 "HEALING_TOTEM"
+		1 "LAVA_GOLEM"
+		1 "LOST_SOUL"
+		1 "STONE_GOLEM"
+		1 "SNAKE"
+		1 "SPIDER"
+	  }
+    }
+    KillLeader
+    "a hostile dungeon force"
+    { 100000 500000 }
     100
   }
 }
