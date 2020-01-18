@@ -146,7 +146,7 @@
     }
     initialTech = { "iron working" "alchemy" "advanced alchemy" "sorcery" "advanced sorcery" "master sorcery"}
     buildingGroups = {
-        "structure" "doors" "floors" "storage" "elemental" "throne" "orders" "installations"
+        "structure" "doors" "floors" "storage" "elemental" "quarters" "throne" "orders" "installations"
 		"magical_installations"
     }
     workshopGroups = {"elements"}
