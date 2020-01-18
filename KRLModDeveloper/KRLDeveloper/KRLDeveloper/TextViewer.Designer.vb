@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class NewCode
+Partial Class TextViewer
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -41,7 +41,7 @@ Partial Class NewCode
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Name = "NewCode"
-        Me.Text = "NewCode"
+        Me.Text = "Text Viewer"
         Me.ResumeLayout(False)
 
     End Sub

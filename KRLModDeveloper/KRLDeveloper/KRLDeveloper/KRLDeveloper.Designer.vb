@@ -31,6 +31,7 @@ Partial Class KRLDeveloper
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -114,11 +115,21 @@ Partial Class KRLDeveloper
         Me.Label3.Text = "This app is just currently a collection of code that may be useful. It is not fit" &
     " for any particular purpose (yet)."
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(593, 56)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(119, 23)
+        Me.Button5.TabIndex = 9
+        Me.Button5.Text = "View License"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'KRLDeveloper
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(752, 204)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -144,4 +155,5 @@ Partial Class KRLDeveloper
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents Button5 As Button
 End Class

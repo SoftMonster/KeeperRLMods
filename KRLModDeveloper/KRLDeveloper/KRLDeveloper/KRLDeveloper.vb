@@ -42,8 +42,8 @@ Public Class KRLDeveloper
             MsgBox("No code has been generated yet.")
             Exit Sub
         End If
-        NewCode.RichTextBox1.Text = Cod
-        NewCode.ShowDialog()
+        TextViewer.RichTextBox1.Text = Cod
+        TextViewer.ShowDialog()
     End Sub
 
     Public Function GetCreatureCode()
@@ -159,5 +159,10 @@ Public Class KRLDeveloper
     End Sub
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         frmSprites.ShowDialog()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        TextViewer.RichTextBox1.Text = My.Resources.COPYING
+        TextViewer.ShowDialog()
     End Sub
 End Class
