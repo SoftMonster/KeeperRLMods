@@ -1,3 +1,19 @@
+###########################################
+#Structure taken from external_enemies.h
+###########################################
+# constexpr int firstAttackDelay = 1800;
+# constexpr int attackInterval = 1200;
+# constexpr int attackVariation = 450;
+# constexpr int afterWinTurn = 15000;
+
+# CreatureList SERIAL(creatures);
+# AttackBehaviour SERIAL(behaviour);
+# string SERIAL(name);
+# Range SERIAL(attackTime);
+# int SERIAL(maxOccurences) = 1;
+###########################################
+
+
 {
   {
     {
