@@ -129,5 +129,28 @@ Namespace My.Resources
                 Return CType(obj,Byte())
             End Get
         End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to [[File:¬ViewId¬.png|100px|link=]] &apos;&apos;¬Comment¬
+        '''
+        '''= Base Stats =
+        '''*Gender:¬Gender¬
+        '''*Race:¬Race¬
+        '''*Body:¬Body¬
+        '''*Attributes:¬Attributes¬
+        '''*Skills:¬Skills¬
+        '''*Trining:¬Training¬
+        '''*Spell Schools:¬Spell Schools¬
+        '''*Spells: ¬Spells¬
+        '''*Permanent Effects:¬Permanent Effects¬
+        '''
+        '''[[Category: Creatures]]
+        '''.
+        '''</summary>
+        Friend ReadOnly Property WikiCreatureTemplate() As String
+            Get
+                Return ResourceManager.GetString("WikiCreatureTemplate", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace

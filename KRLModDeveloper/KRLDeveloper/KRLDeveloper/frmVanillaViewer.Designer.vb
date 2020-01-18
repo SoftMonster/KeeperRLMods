@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmVanillaViewer
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,13 +20,14 @@ Partial Class frmVanillaViewer
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.tbEditors = New System.Windows.Forms.TabControl()
-        Me.tbPlayerCreatures = New System.Windows.Forms.TabPage()
-        Me.dgvPlayerCreatures = New System.Windows.Forms.DataGridView()
         Me.tbCreatures = New System.Windows.Forms.TabPage()
+        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.dgvCreatures = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.dgvPlayerCreatures = New System.Windows.Forms.DataGridView()
         Me.tbCreatureInventory = New System.Windows.Forms.TabPage()
         Me.dgvCreatureInventory = New System.Windows.Forms.DataGridView()
         Me.tbTechnology = New System.Windows.Forms.TabPage()
@@ -44,10 +45,13 @@ Partial Class frmVanillaViewer
         Me.tbEnemies = New System.Windows.Forms.TabPage()
         Me.dgvResources = New System.Windows.Forms.DataGridView()
         Me.tbEditors.SuspendLayout()
-        Me.tbPlayerCreatures.SuspendLayout()
-        CType(Me.dgvPlayerCreatures, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbCreatures.SuspendLayout()
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer1.Panel1.SuspendLayout()
+        Me.SplitContainer1.Panel2.SuspendLayout()
+        Me.SplitContainer1.SuspendLayout()
         CType(Me.dgvCreatures, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvPlayerCreatures, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbCreatureInventory.SuspendLayout()
         CType(Me.dgvCreatureInventory, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbTechnology.SuspendLayout()
@@ -68,7 +72,6 @@ Partial Class frmVanillaViewer
         '
         'tbEditors
         '
-        Me.tbEditors.Controls.Add(Me.tbPlayerCreatures)
         Me.tbEditors.Controls.Add(Me.tbCreatures)
         Me.tbEditors.Controls.Add(Me.tbCreatureInventory)
         Me.tbEditors.Controls.Add(Me.tbTechnology)
@@ -86,17 +89,56 @@ Partial Class frmVanillaViewer
         Me.tbEditors.Size = New System.Drawing.Size(1067, 554)
         Me.tbEditors.TabIndex = 0
         '
-        'tbPlayerCreatures
+        'tbCreatures
         '
-        Me.tbPlayerCreatures.Controls.Add(Me.dgvPlayerCreatures)
-        Me.tbPlayerCreatures.Location = New System.Drawing.Point(4, 25)
-        Me.tbPlayerCreatures.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbPlayerCreatures.Name = "tbPlayerCreatures"
-        Me.tbPlayerCreatures.Padding = New System.Windows.Forms.Padding(4)
-        Me.tbPlayerCreatures.Size = New System.Drawing.Size(1059, 525)
-        Me.tbPlayerCreatures.TabIndex = 0
-        Me.tbPlayerCreatures.Text = "Player Creatures"
-        Me.tbPlayerCreatures.UseVisualStyleBackColor = True
+        Me.tbCreatures.Controls.Add(Me.SplitContainer1)
+        Me.tbCreatures.Controls.Add(Me.dgvPlayerCreatures)
+        Me.tbCreatures.Location = New System.Drawing.Point(4, 25)
+        Me.tbCreatures.Margin = New System.Windows.Forms.Padding(4)
+        Me.tbCreatures.Name = "tbCreatures"
+        Me.tbCreatures.Padding = New System.Windows.Forms.Padding(4)
+        Me.tbCreatures.Size = New System.Drawing.Size(1059, 525)
+        Me.tbCreatures.TabIndex = 0
+        Me.tbCreatures.Text = "Creatures"
+        Me.tbCreatures.UseVisualStyleBackColor = True
+        '
+        'SplitContainer1
+        '
+        Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainer1.Location = New System.Drawing.Point(4, 4)
+        Me.SplitContainer1.Name = "SplitContainer1"
+        Me.SplitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal
+        '
+        'SplitContainer1.Panel1
+        '
+        Me.SplitContainer1.Panel1.Controls.Add(Me.dgvCreatures)
+        '
+        'SplitContainer1.Panel2
+        '
+        Me.SplitContainer1.Panel2.Controls.Add(Me.Button1)
+        Me.SplitContainer1.Size = New System.Drawing.Size(1051, 517)
+        Me.SplitContainer1.SplitterDistance = 460
+        Me.SplitContainer1.TabIndex = 2
+        '
+        'dgvCreatures
+        '
+        Me.dgvCreatures.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvCreatures.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvCreatures.Location = New System.Drawing.Point(0, 0)
+        Me.dgvCreatures.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvCreatures.Name = "dgvCreatures"
+        Me.dgvCreatures.RowHeadersWidth = 51
+        Me.dgvCreatures.Size = New System.Drawing.Size(1051, 460)
+        Me.dgvCreatures.TabIndex = 4
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(911, 17)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(124, 23)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Wiki Suggestion"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'dgvPlayerCreatures
         '
@@ -108,29 +150,6 @@ Partial Class frmVanillaViewer
         Me.dgvPlayerCreatures.RowHeadersWidth = 51
         Me.dgvPlayerCreatures.Size = New System.Drawing.Size(1051, 517)
         Me.dgvPlayerCreatures.TabIndex = 1
-        '
-        'tbCreatures
-        '
-        Me.tbCreatures.Controls.Add(Me.dgvCreatures)
-        Me.tbCreatures.Location = New System.Drawing.Point(4, 25)
-        Me.tbCreatures.Margin = New System.Windows.Forms.Padding(4)
-        Me.tbCreatures.Name = "tbCreatures"
-        Me.tbCreatures.Padding = New System.Windows.Forms.Padding(4)
-        Me.tbCreatures.Size = New System.Drawing.Size(1059, 525)
-        Me.tbCreatures.TabIndex = 1
-        Me.tbCreatures.Text = "Creatures"
-        Me.tbCreatures.UseVisualStyleBackColor = True
-        '
-        'dgvCreatures
-        '
-        Me.dgvCreatures.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvCreatures.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvCreatures.Location = New System.Drawing.Point(4, 4)
-        Me.dgvCreatures.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgvCreatures.Name = "dgvCreatures"
-        Me.dgvCreatures.RowHeadersWidth = 51
-        Me.dgvCreatures.Size = New System.Drawing.Size(1051, 517)
-        Me.dgvCreatures.TabIndex = 2
         '
         'tbCreatureInventory
         '
@@ -318,10 +337,13 @@ Partial Class frmVanillaViewer
         Me.Name = "frmVanillaViewer"
         Me.Text = "Vanilla viewer"
         Me.tbEditors.ResumeLayout(False)
-        Me.tbPlayerCreatures.ResumeLayout(False)
-        CType(Me.dgvPlayerCreatures, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbCreatures.ResumeLayout(False)
+        Me.SplitContainer1.Panel1.ResumeLayout(False)
+        Me.SplitContainer1.Panel2.ResumeLayout(False)
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer1.ResumeLayout(False)
         CType(Me.dgvCreatures, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvPlayerCreatures, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbCreatureInventory.ResumeLayout(False)
         CType(Me.dgvCreatureInventory, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbTechnology.ResumeLayout(False)
@@ -343,10 +365,8 @@ Partial Class frmVanillaViewer
     End Sub
 
     Friend WithEvents tbEditors As TabControl
-    Friend WithEvents tbPlayerCreatures As TabPage
-    Friend WithEvents dgvPlayerCreatures As DataGridView
     Friend WithEvents tbCreatures As TabPage
-    Friend WithEvents dgvCreatures As DataGridView
+    Friend WithEvents dgvPlayerCreatures As DataGridView
     Friend WithEvents tbCreatureInventory As TabPage
     Friend WithEvents tbTechnology As TabPage
     Friend WithEvents tbImmigration As TabPage
@@ -363,4 +383,7 @@ Partial Class frmVanillaViewer
     Friend WithEvents DgvCampaignVillains As DataGridView
     Friend WithEvents dgvZLevels As DataGridView
     Friend WithEvents dgvResources As DataGridView
+    Friend WithEvents SplitContainer1 As SplitContainer
+    Friend WithEvents dgvCreatures As DataGridView
+    Friend WithEvents Button1 As Button
 End Class

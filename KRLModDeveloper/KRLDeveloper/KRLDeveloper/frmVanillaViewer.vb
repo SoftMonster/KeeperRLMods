@@ -78,4 +78,71 @@
         dgvResources.DataSource = gridData11.DisplayData
     End Sub
 
+    Private Sub Sizeme() Handles Me.Resize
+        If SplitContainer1.Height < 200 Then
+            Exit Sub
+        End If
+        SplitContainer1.SplitterDistance = SplitContainer1.Height - 60
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim row As DataGridViewRow = dgvCreatures.CurrentRow
+        If row Is Nothing Then Exit Sub
+        Dim txt As String = My.Resources.WikiCreatureTemplate
+        Dim final As String = txt
+        Dim monster As String = ""
+        For n = 1 To txt.Split("¬").Count - 1 Step 2
+            Dim section As String = txt.Split("¬")(n)
+            Dim value As String = ""
+            For Each column As DataGridViewColumn In dgvCreatures.Columns
+                If column.Name.ToUpper = section.ToUpper Then
+                    value = row.Cells(column.Name).Value.ToString
+                    Exit For
+                End If
+            Next
+            If value = "" Then
+                final = RemoveLine(final, "¬" + section + "¬")
+            Else
+                If section.ToUpper = "VIEWID" Then
+                    monster = value.Replace("{", "")
+                    monster = Split(monster, "Rgb")(0)
+                    monster = Replace(monster, "}", "")
+                    monster = Replace(monster, """", "").Trim()
+                    final = Replace(final, "¬" + section + "¬", monster)
+                Else
+                    final = Replace(final, "¬" + section + "¬", value.Trim)
+                End If
+            End If
+        Next
+        final = Replace(Replace(final, "{", ""), "}", "")
+        final = Replace(final, vbCrLf + "*", "*")
+        final = Replace(final, "*", vbCrLf + "*")
+        TextViewer.RichTextBox1.Text = final
+        TextViewer.ShowDialog()
+        If MsgBox("Copy to clipboard and launch editor on wiki?", vbYesNo) = vbNo Then
+            Exit Sub
+        End If
+        Dim link As String = "http://keeperrl.com/wiki/index.php?title=¬Monster¬&action=edit"
+        For Each word As String In monster.Split("_")
+            If word.Length > 0 Then
+                Dim capitalWord As String = word.Substring(0, 1).ToUpper + word.Substring(1, word.Length - 1)
+                monster = monster.Replace(word, capitalWord)
+            End If
+        Next
+        Clipboard.SetText(TextViewer.RichTextBox1.Text)
+        monster = InputBox("Enter wiki entry for this creature", "Edit wiki entry", monster)
+        Shell("Explorer """ + Replace(link, "¬Monster¬", monster) + """")
+    End Sub
+
+    Private Function RemoveLine(text As String, line As String)
+        Dim removal As String = ""
+        For Each lin As String In text.Split(vbCrLf)
+            If lin.ToUpper.Contains(line.ToUpper) Then
+                removal = lin
+                Exit For
+            End If
+        Next
+        Return Replace(text, removal, "",, CompareMethod.Text)
+    End Function
+
 End Class
