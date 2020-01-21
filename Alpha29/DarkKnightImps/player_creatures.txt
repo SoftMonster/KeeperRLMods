@@ -22,7 +22,7 @@
   {
     creatureId = { "KEEPER_KNIGHT" "KEEPER_KNIGHT_F" }
     tribeAlignment = EVIL
-    immigrantGroups = {"peseant_prisoners" "dark_keeper"}
+    immigrantGroups = {"peseant_prisoners" "imps" "dark_keeper"}
     technology = {
         "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
         "pig breeding" "iron working" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"

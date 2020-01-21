@@ -1,2 +1,2 @@
 ""
-"Official game content for KeeperRL."
+"The same as the official content except dark knights have imps."
