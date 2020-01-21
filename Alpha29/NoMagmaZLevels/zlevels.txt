@@ -44,38 +44,6 @@
     }
     minDepth = 10
   }
-  {
-    # A level full of water with some islands
-    type = WaterZLevel {
-      waterType = "WATER"
-      creatures = {
-        # Total no of creatures on this level. All are hostile
-        count = {10 11}
-        all = {
-          # The number is the weight, i.e. rats are twice as many as elementals
-          2 "RAT"
-          1 "WATER_ELEMENTAL"
-        }
-      }
-    }
-    minDepth = 7
-    maxDepth = 10
-    width = 60
-  }
-  {
-    type = WaterZLevel {
-      waterType = "MAGMA"
-      creatures = {
-        count = {10 11}
-        all = {
-          10 "FIRE_ELEMENTAL"
-          1 "RED_DRAGON"
-        }
-      }
-    }
-    minDepth = 10
-    width = 60
-  }
 }
 
 # Here come levels specific to white keepers
