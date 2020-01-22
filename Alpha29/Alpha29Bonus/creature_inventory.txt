@@ -64,7 +64,6 @@
       }
   {"DEMON_LORD"}
       {
-        { Simple "RobesOfHell" } #Modded
         { type = Simple "Sword", alternative = Simple "AdaMace" }
         { type = Glyph ARMOR LastingEffect MAGIC_RESISTANCE chance = 0.3 }
         { type = Glyph ARMOR LastingEffect SPEED chance = 0.3 }
