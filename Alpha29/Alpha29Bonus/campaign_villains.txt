@@ -14,7 +14,7 @@
     { "shaman" } "WARRIORS" "Warriors" MAIN
     { "thief_leader" } "THIEVES" "Thieves" MAIN
     { "demon_lord" } "DEMON_DEN" "Demon den" MAIN
-    { "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN
+    { "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN #Modded
 
 #Modded main villains
     { "ancient_reddragon" } "DRAGONS" "Greater dragon nest" MAIN
@@ -26,6 +26,7 @@
     { "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN
     { "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN
 
+#Vanilla lesser villains
     { "ent" } "ENTS" "Tree spirits" LESSER
     { "driad" } "DRIADS" "Driads" LESSER
     { "cyclops" } "CYCLOPS" "Cyclops" LESSER
@@ -33,7 +34,7 @@
     { "hydra" } "HYDRA" "Hydra" LESSER
     { "unicorn" } "UNICORN_HERD" "Unicorn herd" LESSER
     { "ant_queen" } "ANTS_OPEN" "Ants" LESSER
-#   { "dungeon_entrance" } "MAIN_DUNGEON" "Unremarkable dungeon" LESSER
+#   { "dungeon_entrance" } "MAIN_DUNGEON" "Unremarkable dungeon" LESSER #Mod - commented out
 #    ZOMBIE CEMETERY "Zombies" LESSER
 
 #Modded lesser villains
@@ -51,7 +52,7 @@
     { "dark_elf_lord" } "DARK_ELVES_ALLY" "Dark elves" ALLY
     { "gnome_boss" } "GNOMES" "Gnomes" ALLY
     { "orc_captain" } "ORC_VILLAGE" "Greenskin village" ALLY
-    { "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY
+    { "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY #Modded
 }
 
 # Villains for lawful keepers
@@ -85,9 +86,11 @@
     { "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER
     { "male_lion" } "LION_PRIDE" "Pride of Lions" LESSER
     { "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER
-    
+
+#Vanilla lawful ally
     { "dwarf_baron" } "DWARVES" "Dwarves" ALLY
-    { "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY
+    
+    { "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY #Modded
 }
 
 # Villains for evil adventurers
@@ -168,8 +171,8 @@
     { "rat_king" } "RATMEN" "Rat men" LESSER
 
     { "duke4" } "KNIGHTS" "Knights" ALLY
-    { "elf_lord" } "ELVES" "Elven Castle" ALLY
+    { "elf_lord" } "ELVES" "Elven Castle" ALLY #Modded
     { "dwarf_baron" } "DWARVES" "Dwarves" ALLY
-    { "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY
+    { "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY #Modded
 }
 

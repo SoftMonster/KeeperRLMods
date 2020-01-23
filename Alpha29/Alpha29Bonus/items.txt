@@ -144,7 +144,7 @@
     }
   "BattleAxe" #Modded
     {
-      viewId = { "steel_war_axe" }
+      viewId = { "steel_war_axe" } #modded
       name = "battle axe"
       itemClass = WEAPON
       equipmentSlot = WEAPON
@@ -165,7 +165,7 @@
     }
   "AdaBattleAxe" #Modded
     {
-      viewId = { "adamantite_war_axe" }
+      viewId = { "adamantite_war_axe" } #modded
       shortName = "adamantine"
       name = "adamantine battle axe"
       itemClass = WEAPON

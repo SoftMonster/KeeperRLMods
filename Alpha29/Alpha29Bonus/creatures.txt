@@ -517,7 +517,7 @@
         SPEED 1 #Modded
       }
       courage = 100
-      spells = { "directed blast" "disenchantment bolt"}
+      spells = { "directed blast" "disenchantment bolt"} #Modded
       chatReactionFriendly = "\"Kneel before us!\""
       chatReactionHostile = "\"Face your death!\""
       name = {
@@ -1639,7 +1639,7 @@
       name = {
         name = "harpy"
         pluralName = "harpies"
-        firstNameGen = "ORC_FEMALE"
+        firstNameGen = "ORC_FEMALE" #Modded
       }
       hatedByEffect = HATE_GREENSKINS
     }

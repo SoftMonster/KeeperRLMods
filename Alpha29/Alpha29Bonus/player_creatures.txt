@@ -39,7 +39,7 @@
         "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
     workshopGroups = { "basic" "scrolls" "traps" "techBooks" } #Modded
-    description = "(Challenge) Build and manage, defend against raids, and attack!" #Modded
+    description = "(Challenge) Build and manage your dream dungeon, defend against raids, and attack!" #Modded
 # Special traits example, all traits are added
 #   specialTraits = { LastingEffect SPEED ExtraTraining MELEE 5 }
   }

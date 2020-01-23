@@ -616,7 +616,7 @@
     }
     immigrants = {
       {
-        ids = { "DWARF_MILITIA_TRIBE" "DWARF_FIGHTER_TRIBE" "DWARF_WARRIOR_TRIBE" "ELITE_DWARF_WARRIOR_TRIBE" "DWARF_MONK_TRIBE"}
+        ids = { "DWARF_MILITIA_TRIBE" "DWARF_FIGHTER_TRIBE" "DWARF_WARRIOR_TRIBE" "ELITE_DWARF_WARRIOR_TRIBE" "DWARF_MONK_TRIBE"} #Modded
         traits = {FIGHTER}
         frequency = 1
       }
@@ -624,9 +624,9 @@
   }
   "ELVES"
   {
-    biomes = { FORREST }
+    biomes = { FORREST } #Modded
     settlement = {
-      type = CASTLE
+      type = CASTLE #Modded
       inhabitants = {
         leader = { { "ELF_LORD" } }
         fighters = {
@@ -649,7 +649,7 @@
       buildingId = "BARRICADES" #Modded
       lootItem = {TechBook "master sorcery"}
       furniture = { "elvenRoomFurniture" } #Modded
-      shopItems = "villageShop"
+      shopItems = "villageShop" #Modded
     }
     config = {
       immigrantInterval = 500
@@ -779,10 +779,11 @@
     levelConnection = {
       topLevel = ExtraEnemy {"MAIN_DUNGEON_ENTRY"}
       levels = {
-#        { ExtraEnemy { "DUNGEON1" { 1 } } 60 40 DUNGEON }
-#        { ExtraEnemy { "DUNGEON2" { 1 } } 60 40 DUNGEON }
-#        { ExtraEnemy { "DUNGEON3" { 1 } } 60 40 DUNGEON }
+        { ExtraEnemy { "DUNGEON1" { 1 } } 40 30 DUNGEON }
+        { ExtraEnemy { "DUNGEON2" { 1 } } 40 30 DUNGEON }
+        { ExtraEnemy { "DUNGEON3" { 1 } } 40 30 DUNGEON }
         { MainEnemy 60 40 ADOXIE_TEMPLE }
+        { ExtraEnemy { "ADOXIE" { 1 } } 15 15 TOWER true }
       }
     }
   }
@@ -1048,8 +1049,8 @@
     settlement = {
       type = MINETOWN
       tribe = MONSTER
-      locationName = "dungeon level"
-      race = "dwellers"
+      locationName = "dungeon level" #Modded
+      race = "dwellers"              #Modded
       buildingId = "DUNGEON"
       furniture = { "roomFurniture" }
       inhabitants = {
@@ -1504,7 +1505,7 @@
         leader = { { "PRIEST" } }
       }
       buildingId = "BRICK"
-      furniture = { "templeInside" }
+      furniture = { "templeInside"    }
     }
     discoverable = false
   }
@@ -1542,7 +1543,7 @@
     }
     immigrants = {
       {
-        ids = {"DISENCHANTER" "LOST_SOUL"}
+        ids = {"DISENCHANTER" "LOST_SOUL"} #Modded
         traits = {FIGHTER}
         specialTraits = {
           {1.0 {LastingEffect DISAPPEAR_DURING_DAY}}
@@ -1737,7 +1738,7 @@
   {
     settlement = {
       type = FORREST_COTTAGE
-      tribe = BANDIT
+      tribe = BANDIT #Modded
       inhabitants = {
         fighters = {
           count = {2 3}

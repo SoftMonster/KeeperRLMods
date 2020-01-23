@@ -40,7 +40,7 @@
       {{Simple "LeatherBoots"} 2}
       {{Simple "LeatherGloves"} 2}
       {{Simple "IronBoots"} 1}
-	  {{Simple "WoodenShield"} 2}
+	  {{Simple "WoodenShield"} 2}  #Modded
     }
     unique = {
       {Simple "Bow"} {1 2}
@@ -56,7 +56,8 @@
     }
   }
 
-  "dwarfShop" inherit "armory"
+   #Modded
+  "dwarfShop" inherit "armory" 
   {
     items = {
 	  {{Simple "LongSpear" } 3}
@@ -67,6 +68,7 @@
       prefixChance = 0.2
   }
 
+   #Modded
   "dragonCave"
   {
     items = {
@@ -85,9 +87,9 @@
   "minerals"
   {
     items = {
-      {{Simple "IronOre"} 5 }
-      {{Simple "Rock"} 5 }
-	  {{Simple "AdaOre"} 1 }
+      {{Simple "IronOre"} 5 }  #Modded
+      {{Simple "Rock"} 5 }     #Modded
+	  {{Simple "AdaOre"} 1 }   #Modded
     }
   }
 
@@ -145,6 +147,7 @@
     }
   }
 
+   #Modded
   "randomPrize"
   {
     items = {
@@ -295,7 +298,7 @@
     prefixChance = 0.3
   }
 
-  "dungeon"
+  "dungeon" #Modded - reduced items because of spying effect.
   {
     items = {
       {{ Simple "WoodPlank"} 10 {4 9}}

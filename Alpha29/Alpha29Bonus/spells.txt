@@ -362,7 +362,7 @@
     targetSelf = false
     cooldown = 150
   }
-  {
+  { #modded
     id = "dungeon master wish"
     symbol = "$"
     effect = Wish

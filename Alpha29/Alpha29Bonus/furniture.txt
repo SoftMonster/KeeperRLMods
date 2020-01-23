@@ -165,7 +165,7 @@
     strength = 50
     upgrade = "BOOKCASE_IRON"
     maxTraining = {
-      SPELL 30
+      SPELL 30 #Modded
     }
     requiresLight = true
     destroyFX = { DESTROY_FURNITURE Rgb 190 190 40 255 }
@@ -339,8 +339,8 @@
     strength = 250
     destroyFX = { DESTROY_FURNITURE Rgb 190 190 40 255 }
 # if there is a destroyedEffect then the standard "is destroyed" text is not displayed, you need to add your own
-    destroyedEffect = Chain { Message "The statue comes to life!" SummonEnemy "ADOXIE_HEAD" {1} }
-#    destroyedRemains = "DOWN_STAIRS"
+#    destroyedEffect = Chain { Message "The statue comes to life!" SummonEnemy "ADOXIE_HEAD" {1} }
+    destroyedRemains = "DOWN_STAIRS"
   }
   "BARRICADE"
   {
@@ -1072,7 +1072,7 @@
     fire = 50
     luxury = 0.1
     layer = FLOOR
-    canBuildOutsideOfTerritory = true
+    canBuildOutsideOfTerritory = true #Modded
   }
   "FLOOR_WOOD2" inherit "FLOOR_WOOD1"
   {
@@ -1084,7 +1084,7 @@
     viewId = { "stone_floor1" }
     luxury = 0.3
     layer = FLOOR
-    canBuildOutsideOfTerritory = true
+    canBuildOutsideOfTerritory = true  #Modded
   }
   "FLOOR_STONE2" inherit "FLOOR_STONE1"
   {
@@ -1096,7 +1096,7 @@
     viewId = { "carpet_floor1" }
     luxury = 0.7
     layer = FLOOR
-    canBuildOutsideOfTerritory = true
+    canBuildOutsideOfTerritory = true  #Modded
   }
   "FLOOR_CARPET2" inherit "FLOOR_CARPET1"
   {

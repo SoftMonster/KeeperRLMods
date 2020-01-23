@@ -58,13 +58,13 @@
   {"ANGEL"}
       {
         { type = Simple "Sword" prefixChance = 0.1 }
-		{ Simple "HeavenlyArmor" }
+		{ Simple "HeavenlyArmor" } #Modded
         { type = Glyph ARMOR ItemAttrBonus DEFENSE 3 chance = 0.3 }
         { type = Glyph WEAPON ItemAttrBonus DAMAGE 3 chance = 0.3 }
       }
   {"DEMON_LORD"}
       {
-        { type = Simple "Sword", alternative = Simple "AdaMace" }
+        { type = Simple "Sword", alternative = Simple "AdaMace" } #Modded
         { type = Glyph ARMOR LastingEffect MAGIC_RESISTANCE chance = 0.3 }
         { type = Glyph ARMOR LastingEffect SPEED chance = 0.3 }
         { type = Glyph ARMOR LastingEffect NO_CARRY_LIMIT chance = 0.3 }
@@ -73,7 +73,7 @@
   {"ADVENTURER_F" "ADVENTURER"}
       {
         { Simple "FirstAidKit" 2 4 }
-        { Simple "SpyingCrystal" }
+        { Simple "SpyingCrystal" } #Modded
         { Simple "Sword"}
         { Simple "LeatherGloves"}
         { Simple "LeatherArmor"}
@@ -93,7 +93,7 @@
       }
   {"KOBOLD"}
       {
-        { type = Simple "Spear", alternative = Simple "LongSpear" }
+        { type = Simple "Spear", alternative = Simple "LongSpear" } #Modded
       }
   {"GOBLIN"}
       {
@@ -125,7 +125,7 @@
       }
   {"LIZARDLORD"}
       {
-	    { Simple "SpearOfLizardmen" }
+	    { Simple "SpearOfLizardmen" } #Modded
         { Simple "LeatherArmor"}
         { Potion RegrowBodyPart }
         { Simple "GoldPiece" 50 90 }
@@ -182,7 +182,7 @@
   {"DUKE"}
       {
         { type = Simple "BattleAxe" prefixChance = 1 }
-		{ Simple "RingOfSubjection" }
+		{ Simple "RingOfSubjection" } #Modded
         { Simple "ChainArmor"}
         { Simple "IronHelm"}
         { Simple "IronBoots"}
@@ -202,11 +202,11 @@
       }
   {"OGRE"}
       {
-        { type = Simple "HeavyClub", alternative = Simple "Mace" }
+        { type = Simple "HeavyClub", alternative = Simple "Mace" } #Modded
       }
   {"BANDIT" "RAT_SOLDIER" "RAT_KING" "THIEF" } #Modded
       {
-        { type = Simple "Sword", alternative = Simple "Axe"}
+        { type = Simple "Sword", alternative = Simple "Axe"} #Modded
         { type = Potion Heal FLESH chance = 0.7 }
         { type = Simple "Torch" chance = 0.3 }
         { type = Simple "Bow" chance = 0.05 }
@@ -218,31 +218,31 @@
         { type = Simple "IronHelm" chance = 0.5 }
         { type = Simple "IronBoots" chance = 0.3 }
         { type = Simple "Torch" chance = 0.3 }
-        { type = Simple "DwarvenBeer" chance = 0.1 }
+        { type = Simple "DwarvenBeer" chance = 0.1 } #Modded
         { Simple "GoldPiece" 2 6 }
       }
   {"DWARF_BARON"} #Modded
       {
         { type = Simple "BattleAxe", alternative = Simple "WarHammer" prefixChance = 1 }
         { Potion Heal FLESH 2 3 }
-        { type = Simple "AdaArmor" prefixChance = 1 }
-        { Simple "AdaBoots" }
-        { Simple "AdaHelm" }
+        { type = Simple "AdaArmor" prefixChance = 1 } #Modded
+        { Simple "AdaBoots" } #Modded
+        { Simple "AdaHelm" } #Modded
         { type = Simple "Torch" chance = 0.3 }
         { Simple "GoldPiece" 80 120 }
         { type = Glyph ARMOR ItemAttrBonus DEFENSE 4 chance = 0.3 }
         { type = Glyph WEAPON JoinPrefixes { LastingEffect BAD_BREATH VictimEffect 0.2 Lasting PANIC } chance = 0.3 }
-        { type = Simple "DwarvenBeer" chance = 0.1 }
+        { type = Simple "DwarvenBeer" chance = 0.1 } #Modded
       }
   {"GNOME_CHIEF"}
       {
         { Simple "Sword" }
-		{ Simple "BoneOfWizardry" }
+		{ Simple "BoneOfWizardry" } #Modded
       }
   {"VAMPIRE_LORD"}
       {
         { Simple "Robe"}
-        { Simple "StaffOfBleeding" }
+        { Simple "StaffOfBleeding" } #Modded
         { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
       }
   {"DARK_ELF_LORD" "ELF_LORD"}
