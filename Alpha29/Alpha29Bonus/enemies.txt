@@ -801,6 +801,20 @@
       }
     }
   }
+  "ADOXIE"
+  {
+    settlement = {
+      type = CAVE
+      tribe = MONSTER
+      buildingId = "BLACK"
+      inhabitants = {
+        fighters = {
+          count = {1}
+          all = { 1 "ADOXIE_HEAD" }
+        }
+      }
+    }
+  }  
   "NO_AGGRO_BANDITS"
   {
     settlement = {
