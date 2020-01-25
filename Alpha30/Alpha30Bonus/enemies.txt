@@ -678,7 +678,7 @@
   }
   "ELVES"
   {
-    biomes = { "FORREST" } #Modded
+    biomes = { "FOREST" } #Modded
     settlement = {
       type = Builtin CASTLE #Modded
       inhabitants = {

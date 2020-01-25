@@ -77,7 +77,7 @@
 }
 
 # Jeweller
-  "JEWELLER"
+  "JEWELER"
 {
     {{Ring POISON_RESISTANT}               10       GOLD 20}
     {{Ring COLD_RESISTANT}                 10       GOLD 20}
@@ -214,11 +214,6 @@
     {{Potion RegrowBodyPart 1}  10       GOLD 100  "regrow limbs"}
     {{Simple "SpyingCrystal"} 10	   GOLD 50}
 }
-
-# Jeweller
-  "JEWELLER"
-{
-}
 }
 
 # Add more groups here, remember that there need to be 4 lists in each group, each for each workshop type.
@@ -259,10 +254,6 @@
     {{Simple "Rock"}                                1        GOLD 100     "alchemical conversion"       100}
 }
 
-# Jeweller
-  "JEWELLER"
-{
-}
 }
 
 
@@ -337,7 +328,7 @@
 }
 
 # Jeweller
-  "JEWELLER"
+  "JEWELER"
 {
     {{Ring POISON_RESISTANT}               10       GOLD 20}
     {{Ring COLD_RESISTANT}                 10       GOLD 20}
@@ -443,7 +434,7 @@
 }
 
 # Jeweller
-  "JEWELLER"
+  "JEWELER"
 {
     {{Ring POISON_RESISTANT}               10       GOLD 20}
     {{Ring FIRE_RESISTANT}                 10       GOLD 30}
@@ -481,7 +472,7 @@
 }
 # Jewellery for white knight's special royal jewellery technology
 # See lasting_effect.h
-  "JEWELLER"
+  "JEWELER"
 {
     {{Amulet SWIMMING_SKILL}     40 GOLD    80 "royal jewellery"}
     {{Ring SLEEP_RESISTANT}      40 GOLD   100 "royal jewellery"}
@@ -578,7 +569,7 @@
 }
 
 # Jeweller
-  "JEWELLER"
+  "JEWELER"
 {
     {{Ring POISON_RESISTANT}               1       GOLD 0}
     {{Ring FIRE_RESISTANT}                 1       GOLD 0}
@@ -625,10 +616,6 @@
   "LABORATORY"
 {
 }
-# Jewellery
-  "JEWELLER"
-{
-}
 }
 
 "scrolls"
@@ -660,11 +647,6 @@
 
 # Lab
   "LABORATORY"
-{
-}
-
-# Jewellery
-  "JEWELLER"
 {
 }
 }
@@ -732,7 +714,7 @@
 }
 
 # Jeweller
-  "JEWELLER"
+  "JEWELER"
 {
     {{Ring RESTED}											10			GOLD 20}
     {{Ring SATIATED}										10			GOLD 20}

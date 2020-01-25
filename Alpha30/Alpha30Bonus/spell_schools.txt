@@ -74,7 +74,7 @@
     "cure poison" 4
     "teleport" 5
 	"arrow shield" 6
-	"regrow body parts" 7
+	"regrow body part" 7
   }
   "high priest" SPELL
   {
@@ -156,7 +156,7 @@
    "summon skeleton warriors" 5
    "curse" 6
    "fire shield" 6
-   "regrow body parts" 7
+   "regrow body part" 7
   }
   "dwarf monk" SPELL
   {
@@ -237,7 +237,7 @@
     "invisibility" 5
     "escape" 6
     "summon spirit" 6
-    "regrow body parts" 7
+    "regrow body part" 7
     "expert magic missile" 7
   }
   "goblin priest" SPELL
@@ -255,7 +255,7 @@
     "invisibility" 9
     "escape" 10
     "summon spirit" 11
-    "regrow body parts" 12
+    "regrow body part" 12
   } 
   "goblin wizard" SPELL
   {

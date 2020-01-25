@@ -1300,4 +1300,10 @@
     cooldown = 50
     sound = SPELL_DEX_BONUS
   }
-  
+"summon spirit"
+  {
+    symbol = "👾"
+    effect = Summon "SPIRIT" { 3 5 } 100
+    cooldown = 100
+    sound = SPELL_FIRE_SPHERE_PET
+  }
