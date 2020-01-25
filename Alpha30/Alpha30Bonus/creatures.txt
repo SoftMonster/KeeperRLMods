@@ -242,6 +242,12 @@
         { type = Potion Heal FLESH chance = 0.7 }
         { type = Simple "Torch" chance = 0.3 }
         { type = Simple "Bow" chance = 0.05 }
+        { type = Simple "WoodenShield" chance = 0.2 }
+        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+        { Simple "FirstAidKit" 1 1 0.1}
+        { Simple "Rock" 3 10 0.1 }
       }
     }
   "RAT_SOLDIER"
@@ -267,7 +273,14 @@
         { type = Potion Heal FLESH chance = 0.7 }
         { type = Simple "Torch" chance = 0.3 }
         { type = Simple "Bow" chance = 0.05 }
-    }
+        { type = Simple "WoodenShield" chance = 0.2 }
+        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+        { Simple "FirstAidKit" 1 1 0.1}
+        { Simple "Torch" 1 1 0.1 }
+        { Simple "Rock" 3 10 0.1 }
+      }
     }
   "RAT_LADY"
     {
@@ -287,6 +300,11 @@
       }
       name = {
         name = "rat woman"
+      }
+	  inventory = {
+        { Simple "FirstAidKit" 1 1 0.1}
+        { Potion Heal FLESH 1 4 0.2 }
+        { Simple "Torch" 1 1 0.1 }
       }
     }
   "RAT_KING"
@@ -1147,6 +1165,14 @@
         name = "peasant"
       }
       hatedByEffect = HATE_HUMANS
+	  inventory = {
+        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+        { Simple "FirstAidKit" 1 1 0.1}
+        { Potion Heal FLESH 1 4 0.2 }
+        { Simple "Torch" 1 1 0.1 }
+        { Simple "Rock" 3 10 0.1 }
+      }
     }
   "PESEANT_PLAYER" inherit "PESEANT"
     {
@@ -1252,7 +1278,13 @@
         name = "jester"
       }
       hatedByEffect = HATE_HUMANS
-    }
+	  inventory = {
+        { type = Simple "WoodenShield" chance = 0.2 }
+        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+      }
+	}
   "DUKE"
     {
       viewId = { "duke4" }
@@ -1440,17 +1472,25 @@
     }
     }
   "THIEF" inherit "WARRIOR"
-    {
-      viewId = { "thief" }
-      name = {
-        name = "thief"
-      }
+  {
+    viewId = { "thief" }
+    name = {
+      name = "thief"
+    }
     inventory = {
       { Simple "LeatherArmor"}
       { Simple "Axe"}
       { Simple "GoldPiece" 2 5 }
+      { type = Simple "WoodenShield" chance = 0.1 }
+      { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
+      { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
+      { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+      { Simple "FirstAidKit" 1 1 0.1}
+      { Potion Heal FLESH 1 4 0.2 }
+      { Simple "Torch" 1 1 0.1 }
+      { Simple "Rock" 3 10 0.1 }
     }
-    }
+  }
   "THIEF_LEADER" inherit "THIEF"
     {
    attr = {
@@ -1515,6 +1555,14 @@
         pluralName = "children"
       }
       hatedByEffect = HATE_HUMANS
+	  inventory = {
+        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+        { Simple "FirstAidKit" 1 1 0.1}
+        { Potion Heal FLESH 1 4 0.2 }
+        { Simple "Torch" 1 1 0.1 }
+        { Simple "Rock" 3 10 0.1 }
+      }
     }
   "ESKIMO_CHILD" inherit "CHILD"
     {
@@ -1831,6 +1879,13 @@
         name = "zombie"
       }
       hatedByEffect = HATE_UNDEAD
+	  inventory = {
+        { type = Simple "WoodenShield" chance = 0.2 }
+        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+        { Simple "Rock" 3 10 0.1 }
+	  }
     }
   "SKELETON"
     {
@@ -1962,7 +2017,11 @@
       inventory = {
         { type = Simple "Club" chance = 0.05 }
         { type = Simple "WoodenShield" chance = 0.05 }
-      }
+        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+        { Simple "Rock" 3 10 0.1 }
+	  }
     }
   "ORC"
     {
@@ -1991,6 +2050,13 @@
       inventory = {
         { Simple "Club"}
         { Simple "LeatherArmor"}
+        { type = Simple "WoodenShield" chance = 0.2 }
+        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+        { Simple "FirstAidKit" 1 1 0.1}
+        { Potion Heal FLESH 1 4 0.2 }
+        { Simple "Torch" 1 1 0.1 }
       }
     }
   "ORC_MAGE"
@@ -2110,6 +2176,13 @@
       }
     inventory = {
         { type = Simple "Spear", alternative = Simple "LongSpear" } #Modded
+        { type = Simple "WoodenShield" chance = 0.2 }
+        { type = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+        { Simple "FirstAidKit" 1 1 0.1}
+        { Potion Heal FLESH 1 4 0.2 }
+        { Simple "Torch" 1 1 0.1 }
     }
     }
   "GNOME"
@@ -2185,10 +2258,11 @@
         firstNameGen = "ORC"
       }
       hatedByEffect = HATE_GREENSKINS
-    inventory = {
-      { Simple "Club"}
-      { type = Simple "LeatherBoots" chance = 0.3 }
-    }
+      inventory = {
+        { Simple "Club"}
+        { type = Simple "LeatherBoots" chance = 0.3 }
+        { Simple "Torch" 1 1 0.1 }
+      }
     }
   "IMP"
     {
@@ -2472,6 +2546,11 @@
         pluralName = "elves"
       }
       hatedByEffect = HATE_ELVES
+	  inventory = {
+        { Simple "FirstAidKit" 1 1 0.1}
+        { Potion Heal FLESH 1 4 0.2 }
+        { Simple "Torch" 1 1 0.1 }
+	  }
     }
   "ELF_ARCHER"
     {
@@ -2526,6 +2605,11 @@
         pluralName = "elf children"
       }
       hatedByEffect = HATE_ELVES
+	  inventory = {
+        { Simple "FirstAidKit" 1 1 0.1}
+        { Potion Heal FLESH 1 4 0.2 }
+        { Simple "Torch" 1 1 0.1 }
+	  }
     }
   "ELF_LORD"
     {
@@ -2594,6 +2678,11 @@
         pluralName = "dark elves"
       }
       hatedByEffect = HATE_ELVES
+	  inventory = {
+        { Simple "FirstAidKit" 1 1 0.1}
+        { Potion Heal FLESH 1 4 0.2 }
+        { Simple "Torch" 1 1 0.1 }
+	  }
     }
   "DARK_ELF_WARRIOR"
     {
@@ -2649,6 +2738,11 @@
         pluralName = "dark elf children"
       }
       hatedByEffect = HATE_ELVES
+	  inventory = {
+        { Simple "FirstAidKit" 1 1 0.1}
+        { Potion Heal FLESH 1 4 0.2 }
+        { Simple "Torch" 1 1 0.1 }
+	  }
     }
   "DARK_ELF_LORD"
     {
@@ -3749,6 +3843,11 @@
       }
       chatReactionFriendly = "\"talks about farming\""
       chatReactionHostile = "\"Stay Back!\""
+	  inventory = {
+        { Simple "FirstAidKit" 1 1 0.1}
+        { Potion Heal FLESH 1 4 0.2 }
+        { Simple "Torch" 1 1 0.1 }
+	  }
     }
  "CENTAUR_HUNTER" inherit "CENTAUR_ARCHER"
     {
@@ -3797,6 +3896,11 @@
       chatReactionFriendly = "\"talks about playing in the fields\""
       chatReactionHostile = "\"Don't hurt me!\""
       courage = -1
+	  inventory = {
+        { Simple "FirstAidKit" 1 1 0.1}
+        { Potion Heal FLESH 1 4 0.2 }
+        { Simple "Torch" 1 1 0.1 }
+	  }
     }
  "CENTAUR_KING" inherit "CENTAUR_ARCHER"
     {
@@ -4856,6 +4960,12 @@
       }
       chatReactionFriendly = "talks about cheese"
       chatReactionHostile = "makes angry rat noises"
+	  inventory = {
+		{ type = Simple "WoodenShield" chance = 0.2 }
+		{ type = Simple "IronHelm", alternative = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "LeatherBoots", alternative = Simple "IronBoots" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "LeatherGloves", alternative = Simple "IronGloves" prefixChance = 0.02 chance = 0.1}
+	  }
     }
     "RAT_GENERAL" inherit "RAT_MAN"
     {
@@ -5212,6 +5322,10 @@
       chatReactionHostile = "\"Die!\""
       inventory = {
         { Simple "Spear"}
+		{ type = Simple "WoodenShield" chance = 0.2 }
+		{ type = Simple "IronHelm", alternative = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "LeatherBoots", alternative = Simple "IronBoots" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "LeatherGloves", alternative = Simple "IronGloves" prefixChance = 0.02 chance = 0.1}
       }
     }
     "MUSHROOM_MAN"
@@ -7312,6 +7426,9 @@
       inventory = {
         { Simple "Sword" }
         { Simple "WoodenShield" }
+        { type = Simple "IronHelm", alternative = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "LeatherBoots", alternative = Simple "IronBoots" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "LeatherGloves", alternative = Simple "IronGloves" prefixChance = 0.02 chance = 0.1}
       }
     }
     "MILITIA"
@@ -7436,6 +7553,13 @@
 	  chatReactionFriendly = "curses all orcs"
       chatReactionHostile = "\"Die!\""
       hatedByEffect = HATE_DWARVES
+      inventory = {
+        { Simple "Axe" }
+        { Simple "WoodenShield" }
+        { type = Simple "IronHelm", alternative = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "LeatherBoots", alternative = Simple "IronBoots" prefixChance = 0.02 chance = 0.1}
+        { type = Simple "LeatherGloves", alternative = Simple "IronGloves" prefixChance = 0.02 chance = 0.1}
+      }
     }
   "DWARF_FIGHTER" inherit "DWARF_MILITIA"
     {
@@ -7507,6 +7631,11 @@
         MAGIC_VULNERABILITY 1
         NO_CARRY_LIMIT 1
 		REGENERATION 1
+      }
+	  inventory = {
+		{ type = Simple "IronHelm", alternative = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "LeatherBoots", alternative = Simple "IronBoots" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "LeatherGloves", alternative = Simple "IronGloves" prefixChance = 0.02 chance = 0.1}
       }
     }
    "DWARF_MONK"
