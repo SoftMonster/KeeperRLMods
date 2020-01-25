@@ -1383,15 +1383,21 @@
         name = "archer"
       }
       hatedByEffect = HATE_HUMANS
-    inventory = {
-      { Simple "Bow"}
-      { Simple "Knife"}
-      { Simple "LeatherArmor"}
-      { Simple "LeatherBoots"}
-      { type = Simple "Torch" chance = 0.3 }
-      { type = Potion Heal FLESH chance = 0.7 }
-      { Simple "GoldPiece" 4 10 }
-    }
+      inventory = {
+        { Simple "Bow"}
+        { Simple "Knife"}
+        { Simple "LeatherArmor"}
+        { Simple "LeatherBoots"}
+        { type = Simple "Torch" chance = 0.3 }
+        { type = Potion Heal FLESH chance = 0.7 }
+        { Simple "GoldPiece" 4 10 }
+        { Amulet RANGED_RESISTANCE 1 1 0.05}
+        { Amulet AMBUSH_SKILL 1 1 0.05}
+        { Amulet DISARM_TRAPS_SKILL 1 1 0.05}
+        { Amulet ELF_VISION 1 1 0.05}
+        { Amulet NIGHT_VISION 1 1 0.05}
+        { Amulet SWIMMING_SKILL 1 1 0.05}
+      }
     }
   "PRIEST"
     {
@@ -1958,6 +1964,7 @@
       }
       hatedByEffect = HATE_UNDEAD
       inventory = { # Modded
+        { type = Simple "Bow" chance = 0.3 }
         { Simple "Knife" }
         { type = Simple "WoodenShield" chance = 0.01 }
       }
@@ -2208,9 +2215,15 @@
         firstNameGen = "ORC_FEMALE" #Modded
       }
       hatedByEffect = HATE_GREENSKINS
-    inventory = {
-      { Simple "Bow"}
-    }
+      inventory = {
+        { Simple "Bow"}
+        { Amulet RANGED_RESISTANCE 1 1 0.05}
+        { Amulet AMBUSH_SKILL 1 1 0.05}
+        { Amulet DISARM_TRAPS_SKILL 1 1 0.05}
+        { Amulet ELF_VISION 1 1 0.05}
+        { Amulet NIGHT_VISION 1 1 0.05}
+        { Amulet SWIMMING_SKILL 1 1 0.05}
+      }
     }
   "KOBOLD"
     {
@@ -2656,12 +2669,18 @@
         name = "elven archer"
       }
       hatedByEffect = HATE_ELVES
-    inventory = {
-      { Simple "ElvenSword"}
-      { Simple "LeatherArmor"}
-      { Simple "Bow"}
-      { Simple "GoldPiece" 2 6 }
-    }
+      inventory = {
+        { Simple "ElvenSword"}
+        { Simple "LeatherArmor"}
+        { Simple "Bow"}
+        { Simple "GoldPiece" 2 6 }
+        { Amulet RANGED_RESISTANCE 1 1 0.05}
+        { Amulet AMBUSH_SKILL 1 1 0.05}
+        { Amulet DISARM_TRAPS_SKILL 1 1 0.05}
+        { Amulet ELF_VISION 1 1 0.05}
+        { Amulet NIGHT_VISION 1 1 0.05}
+        { Amulet SWIMMING_SKILL 1 1 0.05}
+      }
     }
   "ELF_CHILD"
     {
@@ -2899,9 +2918,15 @@
       name = {
         name = "dryad"
       }
-    inventory = {
-      { Simple "Bow"}
-    }
+      inventory = {
+        { Simple "Bow"}
+        { Amulet RANGED_RESISTANCE 1 1 0.05}
+        { Amulet AMBUSH_SKILL 1 1 0.05}
+        { Amulet DISARM_TRAPS_SKILL 1 1 0.05}
+        { Amulet ELF_VISION 1 1 0.05}
+        { Amulet NIGHT_VISION 1 1 0.05}
+        { Amulet SWIMMING_SKILL 1 1 0.05}
+      }
     }
   "HORSE"
     {
@@ -3921,10 +3946,12 @@
         { Simple "Bow"}
         { Simple "GoldPiece" 2 6 }
         { Simple "DefenseAmulet" 1 1 0.03}
-        { Potion Lasting MELEE_RESISTANCE 1 3 0.03}
-        { Ring DAM_BONUS 1 1 0.03}
-        { Ring DEF_BONUS 1 1 0.03}
-        { Ring RAGE 1 1 0.03}
+        { Amulet RANGED_RESISTANCE 1 1 0.05}
+        { Amulet AMBUSH_SKILL 1 1 0.05}
+        { Amulet DISARM_TRAPS_SKILL 1 1 0.05}
+        { Amulet ELF_VISION 1 1 0.05}
+        { Amulet NIGHT_VISION 1 1 0.05}
+        { Amulet SWIMMING_SKILL 1 1 0.05}
       }
     }
  "CENTAUR_FARMER" inherit "CENTAUR_ARCHER"
@@ -3984,6 +4011,12 @@
       chatReactionHostile = "\"Die!\""
       inventory = {
         { Simple "Bow"}
+        { Amulet RANGED_RESISTANCE 1 1 0.05}
+        { Amulet AMBUSH_SKILL 1 1 0.05}
+        { Amulet DISARM_TRAPS_SKILL 1 1 0.05}
+        { Amulet ELF_VISION 1 1 0.05}
+        { Amulet NIGHT_VISION 1 1 0.05}
+        { Amulet SWIMMING_SKILL 1 1 0.05}
       }
     }
  "CENTAUR_CHILD" inherit "CENTAUR_ARCHER"
@@ -4156,6 +4189,12 @@
       chatReactionHostile = "\"Die, fiend!\""
       inventory = {
         { Simple "Bow"}
+        { Amulet RANGED_RESISTANCE 1 1 0.05}
+        { Amulet AMBUSH_SKILL 1 1 0.05}
+        { Amulet DISARM_TRAPS_SKILL 1 1 0.05}
+        { Amulet ELF_VISION 1 1 0.05}
+        { Amulet NIGHT_VISION 1 1 0.05}
+        { Amulet SWIMMING_SKILL 1 1 0.05}
       }
     }
     "AMAZON_CHAMPION" inherit "AMAZON"
@@ -4365,6 +4404,21 @@
       inventory = {
         { type = Simple "WoodenStaff", alternative = Simple "IronStaff" }
         { type = Simple "LeatherArmor" chance = 0.2 }
+        { Potion Lasting MAGIC_VULNERABILITY 1 4 0.01}
+        { Potion Lasting PEACEFULNESS 1 4 0.01}
+        { Potion Lasting POISON_RESISTANT 1 4 0.01}
+        { Potion DestroyEquipment 1 1 0.01}
+        { Potion Lasting BLEEDING 1 4 0.01}
+        { Potion Lasting BLIND 1 4 0.01}
+        { Potion Lasting COLLAPSED 1 4 0.01}
+        { Potion Lasting FLYING 1 4 0.01}
+        { Potion Lasting INSANITY 1 4 0.01}
+        { Potion Lasting INVISIBLE 1 4 0.01}
+        { Potion Lasting REGENERATION 1 4 0.01}
+        { Potion Lasting SLEEP 1 4 0.01}
+        { Potion Lasting SLOWED 1 4 0.01}
+        { Potion Lasting SPEED 1 4 0.01}
+        { Potion Lasting TELEPATHY 1 4 0.01}
       }
     }
     "DARK_FAIRY" inherit "AIR_FAIRY"
@@ -5187,6 +5241,12 @@
         { type = Simple "Torch" chance = 0.3 }
         { type = Potion Heal FLESH chance = 0.7 }
         { Simple "GoldPiece" 4 10 }
+        { Amulet RANGED_RESISTANCE 1 1 0.02}
+        { Amulet AMBUSH_SKILL 1 1 0.02}
+        { Amulet DISARM_TRAPS_SKILL 1 1 0.02}
+        { Amulet ELF_VISION 1 1 0.02}
+        { Amulet NIGHT_VISION 1 1 0.02}
+        { Amulet SWIMMING_SKILL 1 1 0.02}
       }
     }
 #---------------------------------------------------------
@@ -5918,6 +5978,12 @@
       inventory = {
         { Simple "Bow" }
         { type = Simple "Knife" prefixChance = 1}
+        { Amulet RANGED_RESISTANCE 1 1 0.05}
+        { Amulet AMBUSH_SKILL 1 1 0.05}
+        { Amulet DISARM_TRAPS_SKILL 1 1 0.05}
+        { Amulet ELF_VISION 1 1 0.05}
+        { Amulet NIGHT_VISION 1 1 0.05}
+        { Amulet SWIMMING_SKILL 1 1 0.05}
       }
   }
   "CLERIC_HERO"
@@ -6497,12 +6563,16 @@
         { Simple "DefenseAmulet" 1 1 0.03}
         { Potion Lasting MELEE_RESISTANCE 1 3 0.03}
         { Ring DAM_BONUS 1 1 0.03}
-        { Ring DEF_BONUS 1 1 0.03}
-        { Ring RAGE 1 1 0.03}
+        { Amulet RANGED_RESISTANCE 1 1 0.05}
+        { Amulet AMBUSH_SKILL 1 1 0.05}
+        { Amulet DISARM_TRAPS_SKILL 1 1 0.05}
+        { Amulet ELF_VISION 1 1 0.05}
+        { Amulet NIGHT_VISION 1 1 0.05}
+        { Amulet SWIMMING_SKILL 1 1 0.05}
       }
 	}
     "GOBLIN_BRUTE"
-      {
+    {
       viewId = { "goblin_brute" }
       attr = {
         DAMAGE 44
@@ -6581,10 +6651,21 @@
         { type = Simple "LeatherArmor" prefixChance = 0.4 }
         { type = Simple "LeatherGloves" chance = 0.4 }
         { Simple "DefenseAmulet" 1 1 0.03}
-        { Potion Lasting MELEE_RESISTANCE 1 3 0.03}
-        { Ring DAM_BONUS 1 1 0.03}
-        { Ring DEF_BONUS 1 1 0.03}
-        { Ring RAGE 1 1 0.03}
+        { Potion Lasting MAGIC_VULNERABILITY 1 4 0.01}
+        { Potion Lasting PEACEFULNESS 1 4 0.01}
+        { Potion Lasting POISON_RESISTANT 1 4 0.01}
+        { Potion DestroyEquipment 1 1 0.01}
+        { Potion Lasting BLEEDING 1 4 0.01}
+        { Potion Lasting BLIND 1 4 0.01}
+        { Potion Lasting COLLAPSED 1 4 0.01}
+        { Potion Lasting FLYING 1 4 0.01}
+        { Potion Lasting INSANITY 1 4 0.01}
+        { Potion Lasting INVISIBLE 1 4 0.01}
+        { Potion Lasting REGENERATION 1 4 0.01}
+        { Potion Lasting SLEEP 1 4 0.01}
+        { Potion Lasting SLOWED 1 4 0.01}
+        { Potion Lasting SPEED 1 4 0.01}
+        { Potion Lasting TELEPATHY 1 4 0.01}
       }
 	}
 	"GOBLIN_HIGH_PRIEST"
@@ -6629,10 +6710,21 @@
         { type = Simple "LeatherBoots" chance = 0.8 prefixChance = 0.2 }
         { type = Simple "LeatherGloves" chance = 0.3 prefixChance = 0.1 }
         { Simple "DefenseAmulet" 1 1 0.03}
-        { Potion Lasting MELEE_RESISTANCE 1 3 0.03}
-        { Ring DAM_BONUS 1 1 0.03}
-        { Ring DEF_BONUS 1 1 0.03}
-        { Ring RAGE 1 1 0.03}
+        { Potion Lasting MAGIC_VULNERABILITY 1 4 0.01}
+        { Potion Lasting PEACEFULNESS 1 4 0.01}
+        { Potion Lasting POISON_RESISTANT 1 4 0.01}
+        { Potion DestroyEquipment 1 1 0.01}
+        { Potion Lasting BLEEDING 1 4 0.01}
+        { Potion Lasting BLIND 1 4 0.01}
+        { Potion Lasting COLLAPSED 1 4 0.01}
+        { Potion Lasting FLYING 1 4 0.01}
+        { Potion Lasting INSANITY 1 4 0.01}
+        { Potion Lasting INVISIBLE 1 4 0.01}
+        { Potion Lasting REGENERATION 1 4 0.01}
+        { Potion Lasting SLEEP 1 4 0.01}
+        { Potion Lasting SLOWED 1 4 0.01}
+        { Potion Lasting SPEED 1 4 0.01}
+        { Potion Lasting TELEPATHY 1 4 0.01}
       }
 	}
     "GOBLIN_KABOOMER"
@@ -6759,6 +6851,21 @@
         { type = Simple "LeatherBoots" prefixChance = 0.4 }
         { type = Simple "LeatherGloves" chance = 0.6 prefixChance = 0.4 }
         { Simple "GoldPiece" 320 440 }
+        { Potion Lasting MAGIC_VULNERABILITY 1 4 0.01}
+        { Potion Lasting PEACEFULNESS 1 4 0.01}
+        { Potion Lasting POISON_RESISTANT 1 4 0.01}
+        { Potion DestroyEquipment 1 1 0.01}
+        { Potion Lasting BLEEDING 1 4 0.01}
+        { Potion Lasting BLIND 1 4 0.01}
+        { Potion Lasting COLLAPSED 1 4 0.01}
+        { Potion Lasting FLYING 1 4 0.01}
+        { Potion Lasting INSANITY 1 4 0.01}
+        { Potion Lasting INVISIBLE 1 4 0.01}
+        { Potion Lasting REGENERATION 1 4 0.01}
+        { Potion Lasting SLEEP 1 4 0.01}
+        { Potion Lasting SLOWED 1 4 0.01}
+        { Potion Lasting SPEED 1 4 0.01}
+        { Potion Lasting TELEPATHY 1 4 0.01}
       }
 	}
   "GOBLIN_MATRON"
@@ -6834,6 +6941,21 @@
         { Simple "IronStaff" }
         { Simple "LeatherBoots" }
         { type = Simple "Robe" prefixChance = 1 }
+        { Potion Lasting MAGIC_VULNERABILITY 1 4 0.01}
+        { Potion Lasting PEACEFULNESS 1 4 0.01}
+        { Potion Lasting POISON_RESISTANT 1 4 0.01}
+        { Potion DestroyEquipment 1 1 0.01}
+        { Potion Lasting BLEEDING 1 4 0.01}
+        { Potion Lasting BLIND 1 4 0.01}
+        { Potion Lasting COLLAPSED 1 4 0.01}
+        { Potion Lasting FLYING 1 4 0.01}
+        { Potion Lasting INSANITY 1 4 0.01}
+        { Potion Lasting INVISIBLE 1 4 0.01}
+        { Potion Lasting REGENERATION 1 4 0.01}
+        { Potion Lasting SLEEP 1 4 0.01}
+        { Potion Lasting SLOWED 1 4 0.01}
+        { Potion Lasting SPEED 1 4 0.01}
+        { Potion Lasting TELEPATHY 1 4 0.01}
       }
 	}
     "GOBLIN_WARRIOR"
@@ -6929,6 +7051,21 @@
         { type = Potion Lasting INVISIBLE chance = 0.2 }
         { countMin = 1 countMax = 3 type = Potion Lasting POISON chance = 0.6 }
         { countMin = 1 countMax = 2 type = Potion Lasting SPEED chance = 0.4 }
+        { Potion Lasting MAGIC_VULNERABILITY 1 4 0.01}
+        { Potion Lasting PEACEFULNESS 1 4 0.01}
+        { Potion Lasting POISON_RESISTANT 1 4 0.01}
+        { Potion DestroyEquipment 1 1 0.01}
+        { Potion Lasting BLEEDING 1 4 0.01}
+        { Potion Lasting BLIND 1 4 0.01}
+        { Potion Lasting COLLAPSED 1 4 0.01}
+        { Potion Lasting FLYING 1 4 0.01}
+        { Potion Lasting INSANITY 1 4 0.01}
+        { Potion Lasting INVISIBLE 1 4 0.01}
+        { Potion Lasting REGENERATION 1 4 0.01}
+        { Potion Lasting SLEEP 1 4 0.01}
+        { Potion Lasting SLOWED 1 4 0.01}
+        { Potion Lasting SPEED 1 4 0.01}
+        { Potion Lasting TELEPATHY 1 4 0.01}
       }
 	}
 
