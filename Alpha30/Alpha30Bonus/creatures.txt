@@ -1461,6 +1461,13 @@
       name = {
         name = "thief leader"
       }
+      inventory = {
+        { Simple "Sword"}
+        { Simple "GamblingRod"}
+        { type = Potion Heal FLESH chance = 0.7 }
+        { type = Simple "Torch" chance = 0.3 }
+        { type = Simple "Bow" chance = 0.05 }
+      }
     }
   "SORCERER"
     {
@@ -1848,6 +1855,10 @@
         name = "skeleton"
       }
       hatedByEffect = HATE_UNDEAD
+      inventory = { # Modded
+        { Simple "Knife" }
+        { type = Simple "WoodenShield" chance = 0.01 }
+      }
     }
   "VAMPIRE"
     {
@@ -1948,6 +1959,10 @@
         pluralName = "mummies"
       }
       hatedByEffect = HATE_UNDEAD
+      inventory = {
+        { type = Simple "Club" chance = 0.05 }
+        { type = Simple "WoodenShield" chance = 0.05 }
+      }
     }
   "ORC"
     {
@@ -3612,6 +3627,10 @@
       name = {
         name = "abomination"
       }
+      inventory = {
+        { Simple "WarHammer" }
+        { Simple "ChainArmor" }
+      }
     }
 
 ###########
@@ -3700,6 +3719,12 @@
       }
       chatReactionFriendly = "\"curses all greenskins\""
       chatReactionHostile = "\"Die!\""
+      inventory = {
+        { Simple "ElvenSword"}
+        { Simple "LeatherArmor"}
+        { Simple "Bow"}
+        { Simple "GoldPiece" 2 6 }
+      }
     }
  "CENTAUR_FARMER" inherit "CENTAUR_ARCHER"
     {
@@ -3751,6 +3776,9 @@
       }
       chatReactionFriendly = "\"talks about methods of trackings animals\""
       chatReactionHostile = "\"Die!\""
+      inventory = {
+        { Simple "Bow"}
+      }
     }
  "CENTAUR_CHILD" inherit "CENTAUR_ARCHER"
     {
@@ -3790,6 +3818,13 @@
       chatReactionHostile = "\"Die!\""
       deathDescription = "slain"
       courage = 1
+      inventory = {
+        { type = Simple "AdaSword" prefixChance = 1 }
+        { Simple "AdaArmor" }
+        { Simple "AdaGloves" }
+        { Potion Heal FLESH}
+        { Simple "GoldPiece" 16 26 }
+      }
     }
  "CENTAUR_KNIGHT" inherit "CENTAUR_ARCHER"
     {
@@ -3813,6 +3848,11 @@
       chatReactionFriendly = "\"talks about slaying greenskins\""
       chatReactionHostile = "\"Perish Fiend!\""
       courage = 1
+      inventory = {
+        { Simple "Sword" }
+        { Simple "ChainArmor" }
+        { Simple "LeatherGloves" }
+      }
     }
 	
 #---------------------------------------------------------
@@ -3859,6 +3899,9 @@
       chatReactionFriendly = "\"talks about her god's many blessings\""
       chatReactionHostile = "\"Die, fiend!\""
       courage = 1
+      inventory = {
+        { Simple "Spear"}
+      }
     }
     "AMAZON_ARCHER" inherit "AMAZON"
     {
@@ -3883,6 +3926,9 @@
       }
       chatReactionFriendly = "\"talks about tracking prey\""
       chatReactionHostile = "\"Die, fiend!\""
+      inventory = {
+        { Simple "Bow"}
+      }
     }
     "AMAZON_CHAMPION" inherit "AMAZON"
     {
@@ -3945,6 +3991,11 @@
       }
       chatReactionFriendly = "\"talks about legends of old.\""
       chatReactionHostile = "\"Die, fiend!\""
+      inventory = {
+        { type = Simple "Robe" prefixChance = 1}
+        { Simple "IronStaff" }
+        { type = Glyph ARMOR LastingEffect POISON_RESISTANT chance = 0.2 }
+      }   
     }
     "AMAZON_QUEEN" inherit "AMAZON"
     {
@@ -3984,6 +4035,10 @@
       chatReactionFriendly = "\"complains about the teachings of the elders\""
       chatReactionHostile = "\"Die, fiend!\""
       courage = 1
+      inventory = {
+        { type = Simple "GoldenStaff" prefixChance = 1 }
+        { Simple "LeatherArmor" }
+      }
     }
     "AMAZON_WAR_MAIDEN" inherit "AMAZON"
     {
@@ -4014,6 +4069,11 @@
       chatReactionFriendly = "\"talks about combat training\""
       chatReactionHostile = "\"Die!\""
       courage = 1
+      inventory = {
+        { Simple "ElvenSword"}
+        { Simple "LeatherArmor"}
+        { Simple "GoldPiece" 2 6 }
+      }
     }
 
 #---------------------------------------------------------
@@ -4066,6 +4126,10 @@
       }
       chatReactionFriendly = "\"talks about flying through clouds\""
       chatReactionHostile = "\"Don't mess with Air Fairies!\""
+      inventory = {
+        { type = Simple "WoodenStaff", alternative = Simple "IronStaff" }
+        { type = Simple "LeatherArmor" chance = 0.2 }
+      }
     }
     "DARK_FAIRY" inherit "AIR_FAIRY"
     {
@@ -4325,6 +4389,15 @@
       }
       chatReactionFriendly = "\"talks about ancient fae magic\""
       chatReactionHostile = "\"Magic consume you!\""
+      inventory = {
+        { type = Simple "GoldenStaff" prefixChance = 1 }
+        { type = Simple "AdaArmor" prefixChance = 1 }
+        { Simple "GoldPiece" 350 450 }
+        { type = Glyph ARMOR LastingEffect MAGIC_RESISTANCE chance = 0.8 }
+        { type = Glyph ARMOR LastingEffect ELF_VISION chance = 0.5 }
+        { type = Glyph ARMOR LastingEffect SPEED chance = 0.8 }
+        { type = Glyph ARMOR LastingEffect FLYING chance = 0.5 }
+      } 
     }
 	
 #---------------------------------------------------------
@@ -4376,6 +4449,9 @@
       }
       chatReactionFriendly = "\"Ag Muz Los Lot\""
       chatReactionHostile = "\"ROOOAAAR!\""
+      inventory = {
+        { Simple "GoldPiece" 40 70 }
+      }
     }
   "YOUNG_GREEN_DRAGON" inherit "GREEN_DRAGON"
     {
@@ -4391,6 +4467,9 @@
       }
       chatReactionFriendly = "\"Viidost Los Pruzah Fah Krii, Nuz Ni Fah Mey\""
       chatReactionHostile = "\"ROOOAAAR!\""
+      inventory = {
+        { Simple "GoldPiece" 40 70 }
+      }
     }
  "ZOMBIE_DRAGON"
     {
@@ -4528,6 +4607,10 @@
       }
       chatReactionFriendly = "\"Dragons are scary\""
       chatReactionHostile = "\"Die!\""
+      inventory = {
+        { Simple "WoodenStaff"}
+        { Simple "LeatherArmor"}
+      }
     }
  "GREEN_DRAGONEWT" inherit "RED_DRAGONNEWT"
     {
@@ -4559,6 +4642,10 @@
       name = {
         name = "green dragonewt"
         firstNameGen = "DOG"
+      }
+      inventory = {
+        { Simple "LeatherArmor" }
+        { Simple "GoldPiece" 5 10 }
       }
     }
 
@@ -4786,10 +4873,18 @@
       }
       name = {
         name = "rat general"
-	}
+	  }
       chatReactionFriendly = "complains about surface dwellers"
       chatReactionHostile = "makes angry rat noises"
+      inventory = {
+        { type = Simple "BattleAxe", alternative = Simple "WarHammer" }
+        { Simple "ChainArmor"}
+        { type = Simple "IronHelm" chance = 0.5 }
+        { type = Simple "IronBoots" chance = 0.3 }
+        { type = Simple "Torch" chance = 0.3 }
+        { Simple "GoldPiece" 2 6 }
       }
+    }
     "RAT_ARCHER" inherit "RAT_MAN"
     {
       viewId = { "rat_bowman" }
@@ -4804,9 +4899,18 @@
       }
       name = {
         name = "rat archer"
-	}
+      }
       chatReactionFriendly = "complains about it being too dark underground to shoot things"
       chatReactionHostile = "makes angry rat noises"
+      inventory = {
+        { Simple "Bow"}
+        { Simple "Knife"}
+        { Simple "LeatherArmor"}
+        { Simple "LeatherBoots"}
+        { type = Simple "Torch" chance = 0.3 }
+        { type = Potion Heal FLESH chance = 0.7 }
+        { Simple "GoldPiece" 4 10 }
+      }
     }
 #---------------------------------------------------------
 #Miscellaneous modded creatures
@@ -4862,6 +4966,12 @@
       chatReactionFriendly = "\"You look tasty, do you retain fluids?\""
       chatReactionHostile = "\"Prepare to be food!\""
       deathDescription = "slain"
+      inventory = {
+        { Simple "AdaSword" }
+        { Simple "AdaGloves" }
+        { Potion Heal FLESH}
+        { Simple "GoldPiece" 10 15 }
+      }
     }
     "COW_DEMON"
     {
@@ -4904,6 +5014,14 @@
       }
       chatReactionFriendly = "\"Gruu...?\""
       chatReactionHostile = "\"GRUUU!!!\""
+      inventory = {
+        { Simple "Sword"}
+        { Simple "ChainArmor"}
+        { Simple "LeatherBoots"}
+        { type = Simple "Torch" chance = 0.3 }
+        { type = Potion Heal FLESH chance = 0.7 }
+        { Simple "GoldPiece" 6 16 }
+      }
     }
     "BANSHEE"
     {
@@ -5005,6 +5123,11 @@
       }
       chatReactionFriendly = "\"talks about annoying small people\""
       chatReactionHostile = "\"makes angry giant noises\""
+      inventory = {
+        { Simple "HeavyClub" }
+        { Simple "GoldPiece" 30 50 }
+        { type = Glyph ARMOR ItemAttrBonus DEFENSE 5 chance = 0.1 }
+      }
     }
     "GORGON"
     {
@@ -5049,6 +5172,11 @@
       }
       chatReactionFriendly = "\"Don't get stiff on my account Hehe...\""
       chatReactionHostile = "\"I'll make you a statue!\""
+      inventory = {
+        { type = Simple "InvisibilityRobe"}
+        { Simple "IronStaff" }
+        { type = Glyph ARMOR LastingEffect COLD_RESISTANT chance = 0.2 }
+      }   
     }
     "HOBGOBLIN"
     {
@@ -5082,6 +5210,9 @@
       }
       chatReactionFriendly = "\"complains about other greenskins\""
       chatReactionHostile = "\"Die!\""
+      inventory = {
+        { Simple "Spear"}
+      }
     }
     "MUSHROOM_MAN"
     {
@@ -5503,6 +5634,10 @@
     chatReactionFriendly = "chats about when she robbed a shop"
     chatReactionHostile  = "\"A knife awaits your back my friend!\""
     hatedByEffect = HATE_HUMANS
+      inventory = {
+        { Simple "Bow" }
+        { type = Simple "Knife" prefixChance = 1}
+      }
   }
   "CLERIC_HERO"
     {
@@ -5537,6 +5672,13 @@
     chatReactionFriendly = "talks at length about his goddess"
     chatReactionHostile  = "\"Your afterlife will be horrible!\""
     hatedByEffect = HATE_HUMANS
+      inventory = {
+        { Simple "LeatherArmor" }
+        { Simple "WoodenStaff" }
+        { Simple "LeatherHelm" }
+        { Simple "LeatherBoots" }
+        { Simple "LeatherGloves" }
+      }
   }
   "WIZARD_HERO"
     {
@@ -5569,6 +5711,13 @@
     chatReactionFriendly = "rambles some philosophy about the price of magic"
     chatReactionHostile  = "\"The war shall be won!\""
     hatedByEffect = HATE_HUMANS
+      inventory = {
+        { Simple "LeatherArmor" }
+        { Simple "WoodenStaff" }
+        { Simple "LeatherHelm" }
+        { Simple "LeatherBoots" }
+        { Simple "LeatherGloves" }
+      }
   }
   "WIZARD_ADVENTURER" inherit "WIZARD_HERO"
     {
@@ -5970,6 +6119,9 @@
       name = {
         name = "gold golem"
       }
+      inventory = {
+        { countMin = 30 countMax = 50 type = Simple "GoldPiece" chance = 1.0 }
+      }
 	}
 
 #---------------------------------------------------------
@@ -6009,6 +6161,10 @@
         firstNameGen = "ORC"
       }
       hatedByEffect = HATE_GREENSKINS
+      inventory = {
+        { type = Simple "Sword" prefixChance = 1 }
+        { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.4 }
+      }
     }
     "GOBLIN_ARCHER"
     {
@@ -6035,6 +6191,14 @@
         firstNameGen = "ORC"
       }
       hatedByEffect = HATE_GREENSKINS
+      inventory = {
+        { Simple "Bow" }
+        { Simple "Knife" }
+        { Simple "LeatherArmor" }
+        { type = Simple "LeatherBoots" chance = 0.3 }
+        { type = Simple "LeatherGloves" chance = 0.6 }
+        { countMin = 1 countMax = 3 type = Potion Heal FLESH chance = 0.9 }
+      }
 	}
     "GOBLIN_BRUTE"
       {
@@ -6065,6 +6229,12 @@
         firstNameGen = "ORC"
       }
       hatedByEffect = HATE_GREENSKINS
+      inventory = {
+        { Simple "HeavyClub" }
+        { Simple "GoldPiece" 10 30 }
+        { type = Simple "LeatherArmor" chance = 0.8 }
+        { countMin = 1 countMax = 3 type = Potion Heal FLESH chance = 0.3 }
+      }
     }
     "GOBLIN_CHICKENMANCER"
     {
@@ -6099,6 +6269,12 @@
         firstNameGen = "ORC"
       }
       hatedByEffect = HATE_GREENSKINS
+      inventory = {
+        { type = Simple "IronStaff", alternative = Simple "Sword" }
+        { Simple "LeatherBoots" }
+        { type = Simple "LeatherArmor" prefixChance = 0.4 }
+        { type = Simple "LeatherGloves" chance = 0.4 }
+      }
 	}
 	"GOBLIN_HIGH_PRIEST"
     {
@@ -6136,6 +6312,12 @@
         firstNameGen = "ORC"
       }
       hatedByEffect = HATE_GREENSKINS
+      inventory = {
+        { type = Simple "GoldenStaff" prefixChance = 1 }
+        { type = Simple "LeatherArmor" prefixChance = 1 }
+        { type = Simple "LeatherBoots" chance = 0.8 prefixChance = 0.2 }
+        { type = Simple "LeatherGloves" chance = 0.3 prefixChance = 0.1 }
+      }
 	}
     "GOBLIN_KABOOMER"
     {
@@ -6211,6 +6393,18 @@
         firstNameGen = "ORC"
       }
       hatedByEffect = HATE_GREENSKINS
+      inventory = {
+        { type = Simple "Fireblade" }
+        { type = Simple "AdaArmor" prefixChance = 0.8 }
+        { type = Simple "AdaBoots" chance = 0.95 prefixChance = 0.1 }
+        { type = Simple "AdaGloves" chance = 0.6 prefixChance = 0.1 }
+        { countMin = 1 countMax = 3 type = Scroll Summon "GOBLIN_WARRIOR" {6 9} 100 }
+        { type = Glyph ARMOR LastingEffect MAGIC_RESISTANCE chance = 0.5 }
+        { type = Glyph ARMOR LastingEffect MELEE_RESISTANCE chance = 0.5 }
+        { type = Glyph ARMOR LastingEffect SPEED chance = 0.5 }
+        { type = Glyph ARMOR LastingEffect NO_CARRY_LIMIT chance = 0.3 }
+        { type = Glyph WEAPON JoinPrefixes { ItemAttrBonus DAMAGE 20 AttackerEffect Suicide DIE} chance = 0.3 }
+      }
 	}
 	"GOBLIN_LEPRECHAUN"
     {
@@ -6243,6 +6437,13 @@
         firstNameGen = "ORC"
       }
       hatedByEffect = HATE_GREENSKINS
+      inventory = {
+        { Simple "GoldenStaff" }
+        { type = Simple "Robe" prefixChance = 1 }
+        { type = Simple "LeatherBoots" prefixChance = 0.4 }
+        { type = Simple "LeatherGloves" chance = 0.6 prefixChance = 0.4 }
+        { Simple "GoldPiece" 320 440 }
+      }
 	}
   "GOBLIN_MATRON"
     {
@@ -6313,6 +6514,11 @@
         firstNameGen = "ORC"
       }
       hatedByEffect = HATE_GREENSKINS
+      inventory = {
+        { Simple "IronStaff" }
+        { Simple "LeatherBoots" }
+        { type = Simple "Robe" prefixChance = 1 }
+      }
 	}
     "GOBLIN_WARRIOR"
     {
@@ -6347,6 +6553,15 @@
         firstNameGen = "ORC"
       }
       hatedByEffect = HATE_GREENSKINS
+      inventory = {
+        { type = Simple "Sword", alternative = Simple "WarHammer" prefixChance = 0.05 }
+        { Simple "WoodenShield" }
+        { Simple "ChainArmor" }
+        { Simple "IronBoots" }
+        { Simple "IronHelm" }
+        { type = Simple "Torch" chance = 0.3 }
+        { countMin = 2 countMax = 4 type = Potion Heal FLESH chance = 0.8 }
+      }
     }
 	"GOBLIN_WIZARD"
     {
@@ -6387,6 +6602,18 @@
         firstNameGen = "ORC"
       }
       hatedByEffect = HATE_GREENSKINS
+      inventory = {
+        { Simple "IronStaff" }
+        { type = Simple "Robe" prefixChance = 1 }
+        { type = Simple "LeatherBoots" prefixChance = 0.2 }
+        { countMin = 2 countMax = 4 type = Potion Heal FLESH chance = 0.8 }
+        { countMin = 1 countMax = 3 type = Potion Lasting SLEEP chance = 0.5 }
+        { countMin = 2 countMax = 4 type = Potion Lasting SLOWED chance = 0.6 }
+        { countMin = 1 countMax = 3 type = Potion Lasting BLIND chance = 0.2 }
+        { type = Potion Lasting INVISIBLE chance = 0.2 }
+        { countMin = 1 countMax = 3 type = Potion Lasting POISON chance = 0.6 }
+        { countMin = 1 countMax = 2 type = Potion Lasting SPEED chance = 0.4 }
+      }
 	}
 
 #---------------------------------------------------------
@@ -6851,6 +7078,15 @@
       }
       hatedByEffect = HATE_HUMANS
       spellSchools = { "fighter" "war magic" }
+      inventory = {
+        { Simple "FirstAidKit" 2 4 }
+        { Simple "Sword"}
+        { Simple "WoodenShield"}
+        { Simple "LeatherGloves"}
+        { Simple "ChainArmor"}
+        { Simple "LeatherHelm"}
+        { Simple "GoldPiece" 16 26 }
+      }
     }
   "WARRIOR_ADVENTURER_FEMALE" inherit "WARRIOR_ADVENTURER"
     {
@@ -6892,6 +7128,15 @@
 		 "advanced magic missile" 
 		 "escape" 
 	  }
+      inventory = {
+        { Simple "FirstAidKit" 2 4 }
+        { Simple "IronStaff"}
+        { Simple "LeatherGloves"}
+        { type = Simple "Robe" prefixChance = 1 }
+        { Simple "LeatherHelm"}
+        { Simple "LeatherBoots"}
+        { Simple "GoldPiece" 16 26 }
+      }
     }
   "MAGE_ADVENTURER_FEMALE" inherit "MAGE_ADVENTURER"
     {
@@ -6933,6 +7178,15 @@
 		 "healing"
 		 "escape"
       }
+      inventory = {
+        { Simple "FirstAidKit" 2 4 }
+        { Simple "Sword"}
+        { Simple "Bow"}
+        { Simple "LeatherBoots"}
+        { Simple "LeatherArmor"}
+        { Simple "LeatherHelm"}
+        { Simple "GoldPiece" 16 26 }
+      }
 	}
   "RANGER_ADVENTURER_FEMALE" inherit "RANGER_ADVENTURER"
     {
@@ -6971,6 +7225,16 @@
         name = "bandit leader"
       }
       hatedByEffect = HATE_HUMANS
+      inventory = {
+       { Simple "Sword" }
+       { Simple "WoodenShield" }
+       { Simple "LeatherArmor" }
+       { type = Simple "LeatherBoots" chance = 0.5 }
+       { type = Simple "LeatherGloves" chance = 0.5 }
+       { type = Potion Heal FLESH chance = 0.9 }
+       { type = Simple "Bow" chance = 0.9 }
+       { type = Ring DISARM_TRAPS_SKILL chance = 0.2 }
+      }
     }
 
   "FIRE_SPHERE"
@@ -7045,6 +7309,10 @@
         firstNameGen = "FIRST_MALE"
       }
       hatedByEffect = HATE_HUMANS
+      inventory = {
+        { Simple "Sword" }
+        { Simple "WoodenShield" }
+      }
     }
     "MILITIA"
     {
@@ -7093,6 +7361,15 @@
       }
       hatedByEffect = HATE_UNDEAD
       courage = 1
+      inventory = {
+        { Simple "Sword" }
+        { Simple "ChainArmor" }
+        { Simple "WoodenShield" }
+        { type = Simple "Bow" chance = 0.01 }
+        { type = Simple "LeatherGloves" chance = 0.3 }
+        { type = Simple "LeatherBoots" chance = 0.3 }
+        { type = Simple "LeatherHelm" chance = 0.3 }
+      }
     }
     "SKELETON_MAGE"
     {
@@ -7122,6 +7399,10 @@
       }
       hatedByEffect = HATE_UNDEAD
       courage = -1
+      inventory = {
+        { Simple "WoodenStaff" }
+        { Simple "Robe" }
+      }
     }
 #---------------------
 #Player Dwarf Faction
@@ -7378,6 +7659,11 @@
       chatReactionHostile = "\"Die!\""
       gender = FEMALE
       hatedByEffect = HATE_DWARVES
+      inventory = {
+       { type = Simple "WarHammer" prefixChance = 1 }
+       { Simple "ChainArmor" }
+       { Potion Heal FLESH}
+      }
     }
 #---------------------
 #Player Gnome Faction
@@ -7731,6 +8017,12 @@
       chatReactionFriendly = "\"At your service, master!\""
       chatReactionHostile = "\"Soon you will join my undead ranks. DIE!\""
       hatedByEffect = HATE_UNDEAD
+      inventory = {
+        { Simple "IronStaff" }
+        { Simple "Robe" }
+        { type = Glyph ARMOR ItemAttrBonus DEFENSE 3 chance = 0.01 }
+        { type = Glyph WEAPON ItemAttrBonus DAMAGE 3 chance = 0.01 }
+      }
     }
   "DISENCHANTER" inherit "LOST_SOUL"
     {
@@ -8099,6 +8391,9 @@
       chatReactionFriendly = "looks happy"
       chatReactionHostile = "looks angry"
       spells = { "healing" }
+      inventory = {
+        { Simple "Robe"}
+      }
     }
   "GUILDMASTER_F" inherit "GUILDMASTER"
     {
@@ -8132,6 +8427,12 @@
       deathDescription = "emptied for collection"
       hatedByEffect = NO_CARRY_LIMIT #Emptied by workers
       courage = 100
+      inventory = {
+        { countMin = 10 countMax = 10 type = Simple "AdaOre" chance = 1.0 }
+        { countMin = 50 countMax = 50 type = Simple "IronOre" chance = 1.0 }
+        { countMin = 100 countMax = 100 type = Simple "Rock" chance = 1.0 }
+        { countMin = 1000 countMax = 1000 type = Simple "WoodPlank" chance = 1.0 }
+      }
     }
   "SHIPMENT_START" inherit "SHIPMENT" {}
 }
