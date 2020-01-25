@@ -491,11 +491,6 @@
   message = "repair the automaton" "repairs the automaton"
 }
 
-
-#################
-# Modded
-#################
-
 "rapid magic missile"
   {
     symbol = "⥇"
@@ -506,7 +501,7 @@
   }
 "advanced rapid magic missile"
   {
-	upgrade = "rapid magic missile"
+    upgrade = "rapid magic missile"
     symbol = "⥇"
     effect = Damage SPELL_DAMAGE SPELL
     range = 6
@@ -515,7 +510,7 @@
   }
 "expert rapid magic missile"
   {
-	upgrade = "advanced rapid magic missile"
+    upgrade = "advanced rapid magic missile"
     symbol = "⥇"
     effect = Damage SPELL_DAMAGE SPELL
     range = 8
@@ -534,7 +529,7 @@
   }
 "advanced magic blast"
   {
-	upgrade = "magic blast"
+    upgrade = "magic blast"
     symbol = "💨"
     effect = Chain { Damage SPELL_DAMAGE SPELL Blast }
     range = 8
@@ -544,7 +539,7 @@
   }
 "expert magic blast"
   {
-	upgrade = "advanced magic blast"
+    upgrade = "advanced magic blast"
     symbol = "💨"
     effect = Chain { Damage SPELL_DAMAGE SPELL Blast }
     range = 10
@@ -600,7 +595,7 @@
   }
 "area haste"
   {
-	upgrade = "haste other"
+    upgrade = "haste other"
     symbol = "🏃"
     effect = Chain { Message "Time is altered." Area 2 Filter ALLY Lasting SPEED }
     cooldown = 110
@@ -617,7 +612,7 @@
   }
 "area defense bonus"
   {
-	upgrade = "defend other"
+    upgrade = "defend other"
     symbol = "🛡"
     effect = Chain { Message "Spirit of Endurance invoked." Area 2 Filter ALLY Lasting DEF_BONUS }
     cooldown = 70
@@ -648,14 +643,14 @@
   }
 "healing totem"
   {
-    symbol = "/+\\"
-    effect = Summon "HEALING_TOTEM" { 1 2 } 100
+    symbol = "¬+¬"
+    effect = Summon "HEALING_TOTEM" { 1 } 100
     cooldown = 250
     sound = SPELL_SUMMON_SPIRIT
   }
 "buff totem"
   {
-    symbol = "/💪\\"
+    symbol = "¬💪¬"
     effect = Summon "BUFF_TOTEM" { 1 2 } 100
     cooldown = 250
     sound = SPELL_SUMMON_SPIRIT
@@ -671,7 +666,7 @@
   }
 "advanced firewall"
   {
-	upgrade = "firewall"
+    upgrade = "firewall"
     symbol = "𝍔"
     effect =  CustomArea PlaceFurniture "FIRE_WALL" { 0 -3 0 -2 0 -1 0 0 0 1 0 2 0 3 1 -2 1 -1 1 0 1 1 1 2 -1 -2 -1 -1 -1 0 -1 1 -1 2 }
     endOnly = true
@@ -681,7 +676,7 @@
   }
 "expert firewall"
   {
-	upgrade = "advanced firewall"
+    upgrade = "advanced firewall"
     symbol = "𝍔"
     effect =  CustomArea PlaceFurniture "FIRE_WALL" { 0 -4 0 -3 0 -2 0 -1 0 0 0 1 0 2 0 3 0 4 1 -3 1 -2 1 -1 1 0 1 1 1 2 1 3 -1 -3 -1 -2 -1 -1 -1 0 -1 1 -1 2 -1 3 }
     endOnly = true
@@ -691,7 +686,7 @@
   }
 "advanced fireball"
   {
-	upgrade = "fireball"
+    upgrade = "fireball"
     symbol = "🔥"
     effect = Fire
     fx = FIREBALL
@@ -701,7 +696,7 @@
   }
 "expert fireball"
   {
-	upgrade = "advanced fireball"
+    upgrade = "advanced fireball"
     symbol = "🔥"
     effect = Fire
     fx = FIREBALL
@@ -720,7 +715,7 @@
   }
 "advanced fireblast"
   {
-	upgrade = "fireblast"
+    upgrade = "fireblast"
     symbol = "🔥💥"
     effect = Chain { Fire CircularBlast Blast }
     fx = FIREBALL
@@ -730,7 +725,7 @@
   }
 "expert fireblast"
   {
-	upgrade = "advanced fireblast"
+    upgrade = "advanced fireblast"
     symbol = "🔥💥"
     effect = Chain { Fire CircularBlast Blast }
     fx = FIREBALL
@@ -781,7 +776,7 @@
  }
 "adamantine golem"
  {
-   symbol = "👤"
+   symbol = "o"
    effect = Summon "ADA_GOLEM" { 1 2 } 100
    cooldown = 100
    sound = SPELL_SUMMON_SPIRIT
@@ -789,7 +784,7 @@
 "adamantine golems"
 {
    upgrade = "adamantine golem"
-   symbol = "👤"
+   symbol = "oo"
    effect = Summon "ADA_GOLEM" { 4 7 } 100
    cooldown = 100
    sound = SPELL_SUMMON_SPIRIT
@@ -892,7 +887,7 @@
  }
 "boar"
  {
-   symbol = "🐖"
+   symbol = "^"
    effect = Summon "BOAR" { 3 4 } 100
    cooldown = 50
    sound = SPELL_SUMMON_SPIRIT
@@ -1019,7 +1014,7 @@
  }
  "summon air elementals"
  {
-   symbol = "🕵"
+   symbol = "||"
    effect = Summon "AIR_ELEMENTAL" { 3 4 } 100
    cooldown = 200
    sound = SPELL_SUMMON_SPIRIT
@@ -1040,7 +1035,7 @@
  }
 "adoxie eye"
  {
-   symbol =  "👁️"
+   symbol =  "(.)"
    effect = Summon "ADOXIE_EYE" { 1 2 } 100
    cooldown = 50
    sound = SPELL_SUMMON_SPIRIT
@@ -1089,11 +1084,7 @@
    effect = Enhance ARMOR -1
    cooldown = 180
    sound = SPELL_BLAST
- }
-#--------------------------------------------------------
-# spells.txt modding by Righteous August 2019 for Goblins
-#--------------------------------------------------------
-
+}
 "summon giant chickens"
  {
    symbol = "🐔"
@@ -1103,7 +1094,7 @@
  }
 "summon chickens"
  {
-   symbol = "🐔"
+   symbol = ".."
    effect = Summon "BATTLE_CHICKEN" { 4 7 } 100
    cooldown = 10
    sound = SPELL_SUMMON_SPIRIT
@@ -1178,10 +1169,6 @@
    cooldown = 120
    sound = SPELL_SUMMON_SPIRIT
  }
-#------------------------------------------------------------
-# spells.txt modded by Righteous October 2019 for Fairy Queen
-#------------------------------------------------------------
-
   "fae time twisting"
  {
     symbol = "🏃"
@@ -1213,7 +1200,7 @@
   "fae teleport"
   {
     symbol = "🌀"
-	range = 12
+    range = 12
     effect = Chain { Message "Fae teleport." Deception Area 6 Filter ALLY Lasting INVISIBLE Teleport }
     cooldown = 30
     sound = SPELL_DECEPTION
@@ -1227,14 +1214,11 @@
   }
 "summon fae army"
   {
-   symbol = "👩!"
+   symbol = "!!"
    effect = Chain { Summon "AIR_FAIRY" { 2 3 } 100 Summon "DARK_FAIRY" { 2 3 } 100 Summon "EARTH_FAIRY" { 2 3 } 100 Summon "ELECTRIC_FAIRY" { 2 3 } 100 Summon "LIGHT_FAIRY" { 2 3 } 100 Summon "MAGIC_FAIRY" { 2 3 } 100 Summon "NATURE_FAIRY" { 2 3 } 100 Summon "WATER_FAIRY" { 2 3 } 100 }
    cooldown = 200
    sound = SPELL_SUMMON_SPIRIT
   }
-#########
-#Spiders#
-#########
   "spin web"
   {
     symbol = "*"
@@ -1249,7 +1233,7 @@
   }
   "mud wall"
   {
-    symbol = "#"
+    symbol = "="
     effect = PlaceFurniture "KEEPER_SPIDER_MUD_WALL"
     cooldown = 0
   }
@@ -1266,7 +1250,7 @@
   "breed dark spawn"
   {
     upgrade = "hatch eggs"
-    symbol = "::"
+    symbol = ";;"
     effect = Chain {
 		Summon "SPIDER" {3} 100
 		Summon "GREEN_SPIDER" {1} 100
@@ -1279,7 +1263,7 @@
   "breed horrors"
   {
     upgrade = "breed dark spawn"
-    symbol = "::"
+    symbol = ",,"
     effect = Chain {
 		Summon "SPIDER" {1} 100
 		Summon "GREEN_SPIDER" {1} 100
@@ -1295,7 +1279,7 @@
   "breed hell"
   {
     upgrade = "breed horrors"    
-    symbol = "::"
+    symbol = "**"
     effect = Chain {
 		Summon "SPIDER" {1} 100
 		Summon "GREEN_SPIDER" {1} 100
@@ -1316,91 +1300,4 @@
     cooldown = 50
     sound = SPELL_DEX_BONUS
   }
-
-#########################
-#Ideas for future spells#
-#########################
-#
-# Necromancy 
-## Undead cloud
-## Raise corpse
-# Basic sorcery additions 
-## Detection
-## Pull
-## Light Bolt
-# Advanced sorcery additions 
-## Night vision
-## Discord
-## Magic Mine
-## Eviscerate
-# Master sorcery additions 
-## Levitation
-## Bolt of antimagic
-## Suppress magic
-## !Change Places!
-# Elite sorcery (new tech) 
-## Regrow Limb
-## Reveal treasures
-## Dark Persuasion
-## Grow trees
-## Firestorm
-## Invisible wall
-## Windstorm
-## Acid ball
-## Summon Target Dummy
-# Blood Magic School (New Tech) 
-## Blood Heal
-## Blood Drain (Vamparism)
-## Summon Bats
-## Blood Hex
-## Blood Craze
-## Teleport Other
-## Become vampire
-## Regrow Limb
-## Blood Curse
-## Turn to Thrall
-## Blood Ritual
-## Become Vampire Lord 
-## Summon Vampires
-## Gift Blood
-## Blood Wrath
-## Summon Blood Dragon
-# Illusion School 
-## Fae Deception
-## Hallucinate
-## Minor Invisibility
-## Fae eyes
-## Fae Trickery
-## invisibility
-## Mirage Dragon
-## Fae Clone
-## Fae Body
-## Steal Visage (Disguise)
-## Greater Invisibility
-## Illusionary Army
-# Holy Magic School (New Tech) 
-## Holy Heal
-## Smite
-## Imbue weapon
-## Turn Undead
-## Holy Strike
-## Holy Shield
-## Ressurrect
-## Parley
-## Holy Bulwark
-## Release Spirit
-## Summon Angels
-## God's Wrath
-# Life Spell School 
-## Drain Life
-## Vaccine
-## Thicken Blood
-## Allcure
-## Revive
-## Life Aura
-## Life's Call
-## Miracle of Sacrifice
-# Creature abilities implemented as spells 
-## Burrow
-## Pickpocket
-}
+  
