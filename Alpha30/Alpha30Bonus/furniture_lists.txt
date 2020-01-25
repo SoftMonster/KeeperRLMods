@@ -1,118 +1,100 @@
-"roomFurniture"
-{
+#############
+# Modded
+#############
+
+  "emptyChests"
   {
-    "BED1" 2
-    "GROUND_TORCH" 1
-    "CHEST" 2
+    {
+	  "TREASURE_CHEST" 1
+    }
   }
-}
-"snowFurniture"
-{
+  "chests"
   {
-    "SNOWMAN" 1
+    {
+      "CHEST" 1
+    }
   }
-}
-"castleFurniture"
-{
+  "demonic"
   {
-    "BED1" 2
-    "GROUND_TORCH" 1
-    "FOUNTAIN" 1
-    "CHEST" 2
+    {
+	  "TORTURE_TABLE" 1
+    }
   }
-}
-"dungeonOutside"
-{
+  "caveWells"
   {
-    "GROUND_TORCH" 1
+    {
+      "WELL" 1
+    }
   }
-}
-"bleedingTotem"
-{
+  "prisonerHeads"
   {
+    {
+      "IMPALED_HEAD" 1
+    }
   }
+  "goblinProps"
   {
-    "BLEEDING_TOTEM"
+    {
+      "GALLOWS" 1
+      "BEAST_CAGE" 1
+      "WHIPPING_POST" 1
+      "TORTURE_TABLE" 1
+    }
   }
-}
-"castleOutside"
-{
+  "dwarvenRoomFurniture"
   {
-    "INVISIBLE_ALARM" 10
-    "GROUND_TORCH" 1
-    "WELL" 1
+    {
+      "BED1" 20
+      "GROUND_TORCH" 10
+      "DWARVEN_REGENERATOR" 5
+      "CHEST" 20
+    }
   }
-}
-"villageOutside"
-{
+  "elvenRoomFurniture"
   {
-    "GROUND_TORCH" 1
-    "WELL" 1
+    {
+      "BED1" 20
+      "GROUND_TORCH" 10
+      "CHEST" 20
+    }
+    {
+      "ELVEN_RUG"
+    }
   }
-}
-"vegetationLow"
-{
+  "dungeonstuff"
   {
-    "CANIF_TREE" 2
-    "BUSH" 1
+    {
+      "GIANT_MUSHROOM" 6
+      "GROUND_TORCH" 5
+      "LITTLE_SPIDER_WEB" 5
+      "BIG_SPIDER_WEB" 1
+      "CHEST" 5
+    }
   }
-}
-"vegetationHigh"
-{
+  "bottomlessdungeon"
   {
-    "DECID_TREE" 2
-    "BUSH" 1
+    {
+      "BED1" 1
+      "BED2" 1
+      "BED3" 1
+      "LOOT_COFFIN" 1
+      "VAMPIRE_COFFIN" 1
+      "GROUND_TORCH" 1
+      "CHEST" 1
+      "FOUNTAIN" 1
+      "WELL" 1
+      "STONES" 1
+	  "GRAVE" 1
+      "ALTAR" 1
+	  "TREASURE_CHEST" 1
+	  "TORTURE_TABLE" 1
+      "IMPALED_HEAD" 1
+      "GALLOWS" 1
+      "BEAST_CAGE" 1
+      "WHIPPING_POST" 1
+      "DWARVEN_REGENERATOR" 1
+      "ELVEN_RUG" 1
+      "GIANT_MUSHROOM" 1
+	}
   }
-}
-"vegetationDesert"
-{
-  {
-    "CACTUS1" 2
-  }
-}
-"randomTerrain"
-{
-  {
-    "STONES" 1
-  }
-}
-"cryptCoffins"
-{
-  {
-    "LOOT_COFFIN" 1
-  }
-  {
-    "VAMPIRE_COFFIN"
-  }
-}  
-"towerInside"
-{
-  {
-    "GROUND_TORCH" 1
-  }
-}
-"graves"
-{
-  {
-    "GRAVE" 1
-  }
-}
-"templeInside"
-{
-  {
-    "CHEST" 1
-  }
-  {
-    "ALTAR"
-  }
-}
-"witchInside"
-{
-  {
-    "LABORATORY" 1
-  }
-}
-"adoxie" inherit "roomFurniture"
-{
-  unique = { "ADOXIE_STATUE" }
-}
+

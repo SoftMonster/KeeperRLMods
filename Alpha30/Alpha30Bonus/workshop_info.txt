@@ -1,5 +1,0 @@
-"WORKSHOP" "WORKSHOP" "workshop"
-"FORGE" "FORGE" "forge"
-"LABORATORY" "LABORATORY" "laboratory"
-"JEWELER" "JEWELLER" "jeweler"
-
