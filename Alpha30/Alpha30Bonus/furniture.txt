@@ -951,10 +951,10 @@
     tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
     #Modded - destroyed effect added
     destroyedEffect = Chain {
-	  Chance 0.001 Chain { Message "You have attacked a golem!" SummonEnemy "ADA_GOLEM" {1} none }
-      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} none }
-      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} none }
-      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} none }
+	  Chance 0.001 Chain { Message "You have attacked a golem!" SummonEnemy "ADA_GOLEM" { 1 } none }
+      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" { 1 } none }
+      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" { 1 } none }
+      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" { 1 } none }
 	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
     } 
   }
