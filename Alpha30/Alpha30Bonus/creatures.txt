@@ -327,6 +327,15 @@
       }
       inventory = {
         { type = Simple "Sword", alternative = Simple "Axe"} #Modded
+		{ Simple "AdaArmor" 1 1 0.01 }
+		{ Simple "AdaBoots" 1 1 0.01 }
+		{ Simple "AdaGloves" 1 1 0.1 }
+		{ Simple "AdaHelm" 1 1 0.1 }
+		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.01 }
+		{ Potion Permanent SPEED 1 1 0.01 }
+		{ Potion RegrowBodyPart 1 1 0.01 }
+		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.01 }
         { type = Potion Heal FLESH chance = 0.7 }
         { type = Simple "Torch" chance = 0.3 }
         { type = Simple "Bow" chance = 0.05 }
@@ -700,13 +709,22 @@
      maxLevelIncrease = {
         SPELL 7
       }
-    inventory = {
-        { type = Simple "Sword", alternative = Simple "AdaMace" } #Modded
-        { type = Glyph ARMOR LastingEffect MAGIC_RESISTANCE chance = 0.3 }
-        { type = Glyph ARMOR LastingEffect SPEED chance = 0.3 }
-        { type = Glyph ARMOR LastingEffect NO_CARRY_LIMIT chance = 0.3 }
-        { type = Glyph WEAPON JoinPrefixes { ItemAttrBonus DAMAGE 20 AttackerEffect Suicide DIE} chance = 0.3 }
-    }
+     inventory = {
+		{ type = Simple "BattleAxe", alternative = Simple "WarHammer" prefixChance = 0.1 }
+		{ Simple "AdaArmor" 1 1 0.03 }
+		{ Simple "AdaBoots" 1 1 0.03 }
+		{ Simple "AdaGloves" 1 1 0.03 }
+		{ Simple "AdaHelm" 1 1 0.03 }
+		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		{ Potion Permanent SPEED 1 1 0.03 }
+		{ Potion RegrowBodyPart 1 1 0.03 }
+		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
+        { type = Glyph ARMOR LastingEffect MAGIC_RESISTANCE chance = 0.2 }
+        { type = Glyph ARMOR LastingEffect SPEED chance = 0.2 }
+        { type = Glyph ARMOR LastingEffect NO_CARRY_LIMIT chance = 0.2 }
+        { type = Glyph WEAPON JoinPrefixes { ItemAttrBonus DAMAGE 20 AttackerEffect Suicide DIE} chance = 0.2 }
+      }
     }
   "MINOTAUR"
     {
@@ -729,10 +747,19 @@
         name = "minotaur"
       }
     inventory = {
-      { Simple "BattleAxe"}
-      { type = Glyph ARMOR ItemAttrBonus DEFENSE 5 chance = 0.3 }
-      { type = Glyph WEAPON ItemAttrBonus DAMAGE 5 chance = 0.3 }
-    }
+		{ type = Simple "BattleAxe", alternative = Simple "WarHammer" prefixChance = 0.1 }
+		{ Simple "AdaArmor" 1 1 0.03 }
+		{ Simple "AdaBoots" 1 1 0.03 }
+		{ Simple "AdaGloves" 1 1 0.03 }
+		{ Simple "AdaHelm" 1 1 0.03 }
+		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		{ Potion Permanent SPEED 1 1 0.03 }
+		{ Potion RegrowBodyPart 1 1 0.03 }
+		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
+        { type = Glyph ARMOR ItemAttrBonus DEFENSE 5 chance = 0.3 }
+        { type = Glyph WEAPON ItemAttrBonus DAMAGE 5 chance = 0.3 }
+      }
     }
   "SOFT_MONSTER"
     {
@@ -1981,13 +2008,22 @@
       }
       spellSchools = { "mage" }
       spells = { "defense bonus" "damage bonus" "deception" }
-    chatReactionFriendly = "\"There are times when you simply cannot refuse a drink!\""
-    chatReactionHostile = "\"There are times when you simply cannot refuse a drink!\""
-    inventory = {
+      chatReactionFriendly = "\"There are times when you simply cannot refuse a drink!\""
+      chatReactionHostile = "\"There are times when you simply cannot refuse a drink!\""
+      inventory = {
         { Simple "Robe"}
         { Simple "StaffOfBleeding" } #Modded
         { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
-    }
+        { Simple "AdaArmor" 1 1 0.03 }
+        { Simple "AdaBoots" 1 1 0.03 }
+        { Simple "AdaGloves" 1 1 0.03 }
+		{ Simple "AdaHelm" 1 1 0.03 }
+		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		{ Potion Permanent SPEED 1 1 0.03 }
+		{ Potion RegrowBodyPart 1 1 0.03 }
+		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
+      }
     }
   "MUMMY"
     {
@@ -2230,7 +2266,15 @@
     inventory = {
         { Simple "Sword" }
 		{ Simple "BoneOfWizardry" } #Modded
-    }
+        { Simple "AdaBoots" 1 1 0.03 }
+        { Simple "AdaGloves" 1 1 0.03 }
+		{ Simple "AdaHelm" 1 1 0.03 }
+		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		{ Potion Permanent SPEED 1 1 0.03 }
+		{ Potion RegrowBodyPart 1 1 0.03 }
+		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
+      }
     }
   "GOBLIN"
     {
@@ -2638,19 +2682,27 @@
         name = "elf lord"
       }
       hatedByEffect = HATE_ELVES
-    inventory = {
-      { type = Simple "ElvenSword" prefixChance = 1 }
-      { Simple "LeatherArmor"}
-      { Simple "ElvenBow"}
-      { Simple "GoldPiece" 80 120 }
-      { Scroll Escape }
-      { type = Glyph WEAPON JoinPrefixes { ItemAttrBonus DAMAGE 10 LastingEffect INSANITY} chance = 0.3 }
-      { type = Glyph ARMOR LastingEffect NIGHT_VISION chance = 0.3 }
-      { type = Glyph ARMOR LastingEffect ELF_VISION chance = 0.3 }
-      { type = Glyph ARMOR LastingEffect REGENERATION chance = 0.3 }
-      { type = Glyph WEAPON LastingEffect DARKNESS_SOURCE chance = 0.3 }
-      { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
-    }
+      inventory = {
+		  { type = Simple "ElvenSword" prefixChance = 1 }
+		  { Simple "LeatherArmor"}
+		  { Simple "ElvenBow"}
+		  { Simple "GoldPiece" 80 120 }
+		  { Scroll Escape }
+		  { Simple "AdaBoots" 1 1 0.03 }
+		  { Simple "AdaGloves" 1 1 0.03 }
+		  { Simple "AdaHelm" 1 1 0.03 }
+		  { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		  { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		  { Potion Permanent SPEED 1 1 0.03 }
+		  { Potion RegrowBodyPart 1 1 0.03 }
+		  { Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
+		  { type = Glyph WEAPON JoinPrefixes { ItemAttrBonus DAMAGE 10 LastingEffect INSANITY} chance = 0.3 }
+		  { type = Glyph ARMOR LastingEffect NIGHT_VISION chance = 0.3 }
+		  { type = Glyph ARMOR LastingEffect ELF_VISION chance = 0.3 }
+		  { type = Glyph ARMOR LastingEffect REGENERATION chance = 0.3 }
+		  { type = Glyph WEAPON LastingEffect DARKNESS_SOURCE chance = 0.3 }
+		  { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
+      }
     }
   "DARK_ELF"
     {
@@ -2766,19 +2818,27 @@
         name = "dark elf lord"
       }
       hatedByEffect = HATE_ELVES
-    inventory = {
-      { type = Simple "ElvenSword" prefixChance = 1 }
-      { Simple "LeatherArmor"}
-      { Simple "ElvenBow"}
-      { Simple "GoldPiece" 80 120 }
-      { Scroll Escape }
-      { type = Glyph WEAPON JoinPrefixes { ItemAttrBonus DAMAGE 10 LastingEffect INSANITY} chance = 0.3 }
-      { type = Glyph ARMOR LastingEffect NIGHT_VISION chance = 0.3 }
-      { type = Glyph ARMOR LastingEffect ELF_VISION chance = 0.3 }
-      { type = Glyph ARMOR LastingEffect REGENERATION chance = 0.3 }
-      { type = Glyph WEAPON LastingEffect DARKNESS_SOURCE chance = 0.3 }
-      { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
-    }
+      inventory = {
+		  { type = Simple "ElvenSword" prefixChance = 1 }
+		  { Simple "AdaBoots" 1 1 0.03 }
+		  { Simple "AdaGloves" 1 1 0.03 }
+		  { Simple "AdaHelm" 1 1 0.03 }
+		  { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		  { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		  { Potion Permanent SPEED 1 1 0.03 }
+		  { Potion RegrowBodyPart 1 1 0.03 }
+		  { Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
+		  { Simple "LeatherArmor"}
+		  { Simple "ElvenBow"}
+		  { Simple "GoldPiece" 80 120 }
+		  { Scroll Escape }
+		  { type = Glyph WEAPON JoinPrefixes { ItemAttrBonus DAMAGE 10 LastingEffect INSANITY} chance = 0.3 }
+		  { type = Glyph ARMOR LastingEffect NIGHT_VISION chance = 0.3 }
+		  { type = Glyph ARMOR LastingEffect ELF_VISION chance = 0.3 }
+		  { type = Glyph ARMOR LastingEffect REGENERATION chance = 0.3 }
+		  { type = Glyph WEAPON LastingEffect DARKNESS_SOURCE chance = 0.3 }
+		  { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
+      }
     }
   "DRIAD"
     {
@@ -3926,6 +3986,13 @@
         { type = Simple "AdaSword" prefixChance = 1 }
         { Simple "AdaArmor" }
         { Simple "AdaGloves" }
+		{ Simple "AdaBoots" 1 1 0.03 }
+		{ Simple "AdaHelm" 1 1 0.03 }
+		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		{ Potion Permanent SPEED 1 1 0.03 }
+		{ Potion RegrowBodyPart 1 1 0.03 }
+		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
         { Potion Heal FLESH}
         { Simple "GoldPiece" 16 26 }
       }
@@ -4142,6 +4209,14 @@
       inventory = {
         { type = Simple "GoldenStaff" prefixChance = 1 }
         { Simple "LeatherArmor" }
+		{ Simple "AdaBoots" 1 1 0.03 }
+        { Simple "AdaGloves" 1 1 0.03 }
+	    { Simple "AdaHelm" 1 1 0.03 }
+	    { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
+	    { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+	    { Potion Permanent SPEED 1 1 0.03 }
+	    { Potion RegrowBodyPart 1 1 0.03 }
+	    { Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
       }
     }
     "AMAZON_WAR_MAIDEN" inherit "AMAZON"
@@ -4496,6 +4571,14 @@
       inventory = {
         { type = Simple "GoldenStaff" prefixChance = 1 }
         { type = Simple "AdaArmor" prefixChance = 1 }
+		{ Simple "AdaBoots" 1 1 0.03 }
+        { Simple "AdaGloves" 1 1 0.03 }
+	    { Simple "AdaHelm" 1 1 0.03 }
+	    { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
+	    { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+	    { Potion Permanent SPEED 1 1 0.03 }
+	    { Potion RegrowBodyPart 1 1 0.03 }
+	    { Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
         { Simple "GoldPiece" 350 450 }
         { type = Glyph ARMOR LastingEffect MAGIC_RESISTANCE chance = 0.8 }
         { type = Glyph ARMOR LastingEffect ELF_VISION chance = 0.5 }
@@ -4853,6 +4936,16 @@
       }
       chatReactionFriendly = "\"!Dlrowrevo eht mialcer llahs stneicna eht\""
       chatReactionHostile = "\"!Hsirep\""
+      inventory = {
+		  { Simple "AdaBoots" 1 1 0.1 }
+		  { Simple "AdaGloves" 1 1 0.1 }
+		  { Simple "AdaHelm" 1 1 0.1 }
+		  { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.05 }
+		  { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.05 }
+		  { Potion Permanent SPEED 1 1 0.05 }
+		  { Potion RegrowBodyPart 1 1 0.05 }
+		  { Scroll Permanent DARKNESS_SOURCE 1 1 0.05 }
+      }
     }
     "HELL_KNIGHT_SWORDMASTER" inherit "HELL_KNIGHT"
     {
@@ -6174,6 +6267,16 @@
         name = "lion queen"
         pluralName = "lion queens"
       }
+      inventory = {
+		  { Simple "AdaBoots" 1 1 0.03 }
+		  { Simple "AdaGloves" 1 1 0.03 }
+		  { Simple "AdaHelm" 1 1 0.03 }
+		  { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		  { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		  { Potion Permanent SPEED 1 1 0.03 }
+		  { Potion RegrowBodyPart 1 1 0.03 }
+		  { Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
+      }	  
     }
 #---------------------------------------------------------
 #New Creatures for goblin Tribe - Righteous August 2019
@@ -7790,6 +7893,14 @@
       hatedByEffect = HATE_DWARVES
       inventory = {
        { type = Simple "WarHammer" prefixChance = 1 }
+       { Simple "AdaBoots" 1 1 0.03 }
+       { Simple "AdaGloves" 1 1 0.03 }
+	   { Simple "AdaHelm" 1 1 0.03 }
+       { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
+	   { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+	   { Potion Permanent SPEED 1 1 0.03 }
+	   { Potion RegrowBodyPart 1 1 0.03 }
+	   { Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
        { Simple "ChainArmor" }
        { Potion Heal FLESH}
       }
