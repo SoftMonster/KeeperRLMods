@@ -3858,7 +3858,63 @@
 ##Modding##
 ###########
 
-#Difficulty mods
+#############
+#Base classes
+#############
+
+"BASE_SPELL_CASTER_1"
+#Inherit for a large random inventory
+{
+  name = { name = "base class" }
+  viewId = { "gnome" }
+  attr = { DEFENSE 10 }
+  body = { type = Humanoid MEDIUM }
+  inventory = {
+    { type = Simple "IronStaff", alternative = Simple "WoodenStaff" prefixChance = 0.03 }
+    { Potion Lasting MAGIC_VULNERABILITY 1 4 0.01}
+    { Potion Lasting MELEE_VULNERABILITY 1 4 0.01}
+    { Potion Lasting PEACEFULNESS 1 4 0.01}
+    { Potion Lasting POISON 1 4 0.01}
+    { Potion Lasting POISON_RESISTANT 1 4 0.01}
+    { Amulet REGENERATION 1 1 0.01}
+    { Ring SPELL_DAMAGE 1 1 0.01}
+    { Amulet TELEPATHY 1 1 0.01}
+    { Amulet WARNING 1 1 0.01}
+    { Simple "GoldenStaff" 1 1 0.01 0.5}
+    { Potion DestroyEquipment 1 1 0.01}
+    { Potion Heal SPIRIT 1 4 0.01}
+    { Potion Lasting BLEEDING 1 4 0.01}
+    { Potion Lasting BLIND 1 4 0.01}
+    { Potion Lasting COLLAPSED 1 4 0.01}
+    { Potion Lasting FLYING 1 4 0.01}
+    { Potion Lasting INSANITY 1 4 0.01}
+    { Potion Lasting INVISIBLE 1 4 0.01}
+    { Potion Lasting REGENERATION 1 4 0.01}
+    { Potion Lasting SLEEP 1 4 0.01}
+    { Potion Lasting SLOWED 1 4 0.01}
+    { Potion Lasting SPEED 1 4 0.01}
+    { Potion Lasting TELEPATHY 1 4 0.01}
+    { FireScroll 1 4 0.01}
+    { Ring FAST_CRAFTING 1 1 0.01}
+    { Ring FAST_TRAINING 1 1 0.01}
+    { Ring FIRE_RESISTANT 1 1 0.01}
+    { Ring MAGIC_RESISTANCE 1 1 0.01}
+    { Ring POISON_RESISTANT 1 1 0.01}
+    { Scroll Teleport 1 1 0.01}
+    { Ring RANGED_RESISTANCE 1 1 0.01}
+    { Ring RESTED 1 1 0.01}
+    { Ring SATIATED 1 1 0.01}
+    { Ring SLEEP_RESISTANT 1 1 0.01}
+    { Scroll CircularBlast 1 1 0.01}
+    { Scroll Deception 1 1 0.01}
+    { Scroll Escape 1 1 0.01}
+    { Scroll Lasting FIRE_RESISTANT 1 1 0.01}
+  }
+}
+
+#################
+#Difficulty mods#
+#################
 
   "KEEPER_MAGE_EASY" inherit "KEEPER_MAGE"
     {
@@ -4356,7 +4412,7 @@
 #---------------------------------------------------------
 
 	
-    "AIR_FAIRY"
+    "AIR_FAIRY" inherit "BASE_SPELL_CASTER_1"
     {
       viewId = { "air_fairy" }
       attr = {
@@ -4401,25 +4457,6 @@
       }
       chatReactionFriendly = "\"talks about flying through clouds\""
       chatReactionHostile = "\"Don't mess with Air Fairies!\""
-      inventory = {
-        { type = Simple "WoodenStaff", alternative = Simple "IronStaff" }
-        { type = Simple "LeatherArmor" chance = 0.2 }
-        { Potion Lasting MAGIC_VULNERABILITY 1 4 0.01}
-        { Potion Lasting PEACEFULNESS 1 4 0.01}
-        { Potion Lasting POISON_RESISTANT 1 4 0.01}
-        { Potion DestroyEquipment 1 1 0.01}
-        { Potion Lasting BLEEDING 1 4 0.01}
-        { Potion Lasting BLIND 1 4 0.01}
-        { Potion Lasting COLLAPSED 1 4 0.01}
-        { Potion Lasting FLYING 1 4 0.01}
-        { Potion Lasting INSANITY 1 4 0.01}
-        { Potion Lasting INVISIBLE 1 4 0.01}
-        { Potion Lasting REGENERATION 1 4 0.01}
-        { Potion Lasting SLEEP 1 4 0.01}
-        { Potion Lasting SLOWED 1 4 0.01}
-        { Potion Lasting SPEED 1 4 0.01}
-        { Potion Lasting TELEPATHY 1 4 0.01}
-      }
     }
     "DARK_FAIRY" inherit "AIR_FAIRY"
     {
@@ -5360,7 +5397,7 @@
         { Simple "GoldPiece" 6 16 }
       }
     }
-    "BANSHEE"
+    "BANSHEE" inherit "BASE_SPELL_CASTER_1"
     {
       viewId = { "banshee" }
       attr = {
@@ -6072,7 +6109,7 @@
       SPELL 20
     }
   }
-  "MUMMY_LORD"
+  "MUMMY_LORD" inherit "BASE_SPELL_CASTER_1"
     {
       viewId = { "mummy" ColorId GREEN }
       attr = {
