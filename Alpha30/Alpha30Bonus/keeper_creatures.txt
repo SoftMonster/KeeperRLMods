@@ -6,11 +6,8 @@
     tribeAlignment = EVIL
     immigrantGroups = {"imps" "dark_keeper" "dark_keeper_modded" } #Modded#
 #Modded#
-    technology = {
-        "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
-        "pig breeding" "iron working" "simplistic animations"
-		"magic contraptions" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
-        "advanced sorcery" "magical weapons" "master sorcery" "demonology" "dragon taming" "demonic alliance"
+    technology = append {
+        "simplistic animations" "magic contraptions" "dragon taming" "demonic alliance"
 		"magic paper production" "advanced inscription" "master inscription"
     }
     initialTech = { "sorcery" }
@@ -71,12 +68,8 @@
     tribeAlignment = EVIL
     immigrantGroups = {"peseant_prisoners" "imps" "dark_keeper" "dark_knight_modded"}
 #Modded
-    technology = {
-        "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
-        "pig breeding" "iron working" "simplistic animations"
-		"magic contraptions" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
-        "advanced sorcery" "magical weapons" "master sorcery" "demonology"
-		"magic paper production" "advanced inscription" "master inscription"
+    technology = append {
+        "simplistic animations" "magic contraptions" "magic paper production" "advanced inscription" "master inscription"
     }
     initialTech = { "iron working" }
     buildingGroups = {
@@ -92,10 +85,8 @@
     tribeAlignment = LAWFUL
     immigrantGroups = {"peseants" "white_keeper" "white_keeper_modded"}
 #Modded
-    technology = {
-        "alchemy" "advanced alchemy" "alchemical conversion" "pig breeding" "iron working"
-		"simplistic animations" "magic contraptions" "jewellery" "two-handed weapons" "archery" "sorcery"
-        "advanced sorcery" "magical weapons" "master sorcery" "legendary heroes" "royal jewellery" "unicorn taming"
+    technology = append {
+		"simplistic animations" "magic contraptions" "legendary heroes" "royal jewellery" "unicorn taming"
         "magic paper production" "advanced inscription" "master inscription"
     }
     initialTech = { "archery" }
