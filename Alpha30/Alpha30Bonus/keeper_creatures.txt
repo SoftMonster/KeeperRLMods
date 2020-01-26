@@ -1,3 +1,114 @@
+# The ids are there to modify, inherit, etc.
+# They also get ordered alphabetically, hence the 1, 2, ... in the front.
+
+"1_dark_mage" modify {
+    creatureId = { "KEEPER_MAGE" "KEEPER_MAGE_F" }
+    tribeAlignment = EVIL
+    immigrantGroups = {"imps" "dark_keeper" "dark_keeper_modded" } #Modded#
+#Modded#
+    technology = {
+        "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
+        "pig breeding" "iron working" "simplistic animations"
+		"magic contraptions" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
+        "advanced sorcery" "magical weapons" "master sorcery" "demonology" "dragon taming" "demonic alliance"
+		"magic paper production" "advanced inscription" "master inscription"
+    }
+    initialTech = { "sorcery" }
+#Modded#
+    buildingGroups = {
+        "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
+        "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
+    }
+    workshopGroups = { "basic" "scrolls" "traps" "techBooks" } #Modded
+    description = "(Challenge) Build and manage your dream dungeon, defend against raids, and attack!" #Modded
+# Special traits example, all traits are added
+#   specialTraits = { LastingEffect SPEED ExtraTraining MELEE 5 }
+  }
+"1a_dark_mage_easy"
+{
+    #Modded
+    creatureId = { "KEEPER_MAGE_EASY" "KEEPER_MAGE_F_EASY" }
+    tribeAlignment = EVIL
+    immigrantGroups = {"dark_keeper_easy_mode"}
+    technology = {
+         "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
+        "pig breeding" "iron working" "simplistic animations"
+		"magic contraptions" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
+        "advanced sorcery" "magical weapons" "master sorcery" "demonology" "dragon taming" "demonic alliance"
+		"magic paper production" "advanced inscription" "master inscription"
+    }
+    initialTech = { "sorcery" }
+    buildingGroups = {
+        "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
+        "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
+    }
+    workshopGroups = { "basic" "scrolls" "traps" "techBooks"}
+    description = "(Easy) Play in easy mode and get a big bonus on all immigrants. But you have to wear a silly green robe."
+  }
+#Modded
+"1b_dark_mage_hard"
+  {
+    creatureId = { "KEEPER_MAGE_HARD" "KEEPER_MAGE_F_HARD" }
+    tribeAlignment = EVIL
+    immigrantGroups = {"dark_keeper_hard_mode"}
+    technology = {
+        "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
+        "pig breeding" "iron working" "simplistic animations" "magic contraptions" "jewellery"
+		"two-handed weapons" "traps" "archery" "sorcery"
+        "advanced sorcery" "magical weapons" "master sorcery" "demonology" "dragon taming" "demonic alliance" "absorbtion"
+        "magic paper production" "advanced inscription" "master inscription"
+    }
+    initialTech = { "sorcery" }
+    buildingGroups = {
+        "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
+        "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
+    }
+    workshopGroups = { "basic" "scrolls" "traps" "techBooks" }
+    description = "(Hard) Play in hard mode and test your skills to the limit for experienced players. You get to wear a cool purple robe."
+  }
+"2_dark_knight" modify {
+    creatureId = { "KEEPER_KNIGHT" "KEEPER_KNIGHT_F" }
+    tribeAlignment = EVIL
+    immigrantGroups = {"peseant_prisoners" "imps" "dark_keeper" "dark_knight_modded"}
+#Modded
+    technology = {
+        "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
+        "pig breeding" "iron working" "simplistic animations"
+		"magic contraptions" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
+        "advanced sorcery" "magical weapons" "master sorcery" "demonology"
+		"magic paper production" "advanced inscription" "master inscription"
+    }
+    initialTech = { "iron working" }
+    buildingGroups = {
+        "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
+        "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
+    }
+#Modded
+    workshopGroups = { "basic" "scrolls" "traps" "techBooks" }
+    description = "(Challenge) The dark knight keeper is better at melee combat but worse at spell casting."
+  }
+"3_white_knight" modify {
+    creatureId = { "KEEPER_KNIGHT_WHITE" "KEEPER_KNIGHT_WHITE_F" }
+    tribeAlignment = LAWFUL
+    immigrantGroups = {"peseants" "white_keeper" "white_keeper_modded"}
+#Modded
+    technology = {
+        "alchemy" "advanced alchemy" "alchemical conversion" "pig breeding" "iron working"
+		"simplistic animations" "magic contraptions" "jewellery" "two-handed weapons" "archery" "sorcery"
+        "advanced sorcery" "magical weapons" "master sorcery" "legendary heroes" "royal jewellery" "unicorn taming"
+        "magic paper production" "advanced inscription" "master inscription"
+    }
+    initialTech = { "archery" }
+#Modded
+    buildingGroups = {
+        "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage"
+        "pigsty" "training" "crafting" "prison" "orders" "installations"
+    }
+    workshopGroups = { "basic" "white knights workshop" }
+#Modded
+    description = "(Hard) Be on the side of the good!"
+  }
+
 #####################
 #Extra modded Keepers
 #####################
