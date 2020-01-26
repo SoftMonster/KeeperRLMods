@@ -95,7 +95,6 @@
     }
   }
   "DEMON_LORD" modify {
-    {
      inventory = {
 		{ type = Simple "BattleAxe", alternative = Simple "WarHammer" prefixChance = 0.1 }
 		{ Simple "AdaArmor" 1 1 0.03 }
@@ -145,6 +144,7 @@
     }
   "KNIGHT_PLAYER" modify {
       viewId = { "knight" Rgb 58 255 106 106 } #Modded
+   }
   "JESTER_PLAYER" modify {
       viewId = { "jester" Rgb 58 255 106 106 } #Modded
     }
@@ -180,7 +180,6 @@
     }
   }
   "JESTER" modify {
-    {
 	  inventory = {
         { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
         { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
@@ -246,7 +245,7 @@
       { type = Glyph WEAPON ItemAttrBonus DAMAGE 3 chance = 0.3 }
     }
     }
-  "THIEF" modify { inherit "WARRIOR"
+  "THIEF" modify {
     inventory = {
       { Simple "LeatherArmor"}
       { Simple "Axe"}
@@ -261,7 +260,7 @@
       { Simple "Rock" 3 10 0.1 }
     }
   }
-  "THIEF_LEADER" modify { inherit "THIEF"
+  "THIEF_LEADER" modify {
       inventory = {
         { Simple "Sword"}
         { Simple "GamblingRod"}
@@ -296,7 +295,7 @@
         { type = Simple "WoodenShield" chance = 0.01 }
       }
     }
-  "VAMPIRE_LORD" modify { inherit "VAMPIRE"
+  "VAMPIRE_LORD" modify {
       skills = {
         "LABORATORY" 1.0 #Modded
       }
@@ -326,7 +325,6 @@
 	  }
     }
   "ORC" modify {
-    {
       inventory = {
         { Simple "Club"}
         { Simple "LeatherArmor"}
@@ -377,6 +375,7 @@
       }
     }
   "GOBLIN" modify {
+    inventory = {
         { Simple "Club"}
         { type = Simple "LeatherBoots" chance = 0.3 }
         { Simple "Torch" 1 1 0.1 }
@@ -433,7 +432,7 @@
       { Ring RAGE 1 1 0.03}
     }
   }
-"LIZARDLORD" modify { inherit "LIZARDMAN"
+"LIZARDLORD" modify {
     inventory = {
 	    { Simple "SpearOfLizardmen" } #Modded
         { Simple "LeatherArmor"}

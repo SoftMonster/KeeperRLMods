@@ -1,4 +1,4 @@
-  "healer" modify { SPELL
+  "healer" modify SPELL {
     "advanced healing" 1
     "healing totem" 1 #Modded
     "expert healing" 2
@@ -8,8 +8,7 @@
     "poison resistance" 6
     "group healing" 7
   }
-  "fire" modify { SPELL
-  {
+  "fire" modify SPELL {
     "fire elemental" 1
     "advanced fire elemental" 2
     "fireball" 3
@@ -23,8 +22,7 @@
 	"advanced fireblast" 11 #Modded
 	"expert firewall" 12 #Modded
   }
-  "illusion" modify { SPELL
-  {
+  "illusion" modify SPELL {
     "deception" 1
     "invisibility" 2
     "escape" 3
@@ -32,8 +30,8 @@
     "pacify" 6 #Modded
     "mind bolt" 7 #Modded
   }
-  "fighter" modify { MELEE #Modded multiple entries
-  {
+  "fighter" modify MELEE {
+    #Modded multiple entries
     "shove" 2
     "battle cry" 4
     "block" 5

@@ -1,19 +1,25 @@
   "ORC_VILLAGE" modify {
     settlement = {
-    type = Builtin VILLAGE
+      type = Builtin VILLAGE
       tribe = GREENSKIN
       inhabitants = {
-        fighters = {
-          count = {12 16}
-          all = {
-            1 "ORC"
-            1 "ORC_FEMALE" #Modded
-            1 "OGRE"
-            1 "OGRE_FEMALE" #Modded
-            1 "HOBGOBLIN" #Modded
+          fighters = {
+            count = {12 16}
+            all = {
+              1 "ORC"
+              1 "ORC_FEMALE" #Modded
+              1 "OGRE"
+              1 "OGRE_FEMALE" #Modded
+              1 "HOBGOBLIN" #Modded
+            }
           }
-        }
-      }
+	  }
+      locationNameGen = "TOWN"
+      race = "greenskins"
+      buildingId = "BRICK"
+      furniture = { "roomFurniture" }
+      outsideFeatures = "villageOutside"
+	}
   }
   "DEMON_DEN" modify {
     settlement = {
@@ -60,10 +66,49 @@
           }
         }
       }
+      locationNameGen = "TOWN"
+      race = "humans"
+      buildingId = "WOOD"
+      shopItems = { "armory" }
+      furniture = { "roomFurniture" }
+    }
   }
-  "KNIGHTS" modify {
-      stockpiles = {{ "gold" 140 "FLOOR_SPIKES_TRAP" } }  #Modded
+"KNIGHTS" modify {
+  settlement = {
+    type = Builtin CASTLE
+    tribe = HUMAN
+    inhabitants = {
+      leader = { { "DUKE" } }
+      fighters = {
+        count = {12 17}
+        all = {
+          1 "PRIEST"
+          3 "KNIGHT"
+          1 "ARCHER"
+        }
+      }
+      civilians = {
+        count = {6 9}
+        all = {
+          1 "PESEANT"
+          1 "CHILD"
+          1 "DONKEY"
+          1 "HORSE"
+          1 "COW"
+          1 "PIG"
+          1 "DOG"
+        }
+      }
+    }
+    locationNameGen = "TOWN"
+    race = "humans"
+    stockpiles = {{ "gold" 140 "FLOOR_SPIKES_TRAP" } }  #Modded
+    buildingId = "BRICK"
+    shopItems = { "villageShop" }
+    furniture = { "castleFurniture" }
+    outsideFeatures = "castleOutside"
   }
+}
   "MINOTAUR"  modify {
     settlement = {
     type = Builtin CAVE
@@ -165,6 +210,12 @@
       }
       furniture = { "elvenRoomFurniture" } #Modded
       shopItems = { "villageShop" } #Modded
+      locationNameGen = "TOWN"
+      tribe = ELF
+      race = "elves"
+      stockpiles = {{ "gold" 100 "TREASURE_CHEST"}}
+      buildingId = "WOOD"
+      lootItem = {TechBook "master sorcery"}
     }
   }
   "ELEMENTALIST_ENTRY" modify {
@@ -240,15 +291,6 @@
       buildingId = "DUNGEON"
     }
   }
-  "BANDITS" inherit "NO_AGGRO_BANDITS" modify {
-    behaviour = {
-      minPopulation = 0
-      minTeamSize = 3
-      triggers = {Gold 300} #Modded
-      attackBehaviour = StealGold
-      ransom = 0.5 80
-    }
-  }
   "DUNGEON1" modify {
     settlement = {
       type = Builtin MINETOWN
@@ -289,19 +331,6 @@
     }
   }
 
-  "WHITE_DRAGON_ENTRY"  modify { inherit "MAIN_DUNGEON_ENTRY" #Modded
-    settlement = {
-      type = Builtin CAVE
-      tribe = BANDIT
-      buildingId = "GLACIER"
-      inhabitants = {
-        fighters = {
-          count = {2 4}
-          all = { 1 "RAT" }
-        }
-      }
-    }
-  }
   "SHELOB" modify { #Modded
     settlement = {
       type = Builtin VILLAGE

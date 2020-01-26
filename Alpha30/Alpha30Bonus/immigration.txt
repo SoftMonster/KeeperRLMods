@@ -25,7 +25,7 @@
         }
     }
 
-    "dark_keeper" moidfy {
+    "dark_keeper" modify {
     
         {
           ids = { "GOBLIN" }

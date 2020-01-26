@@ -41,7 +41,7 @@
     } 
   }
 
-  "DECID_TREE" inherit "CANIF_TREE" modify {
+  "DECID_TREE" modify {
     viewId = { "decid_tree" }
     #Modded - destroyed effect added
     destroyedEffect = Chain {
@@ -71,193 +71,7 @@
       Chance 0.001 Chain { Message "Swarm of flies encountered." SummonEnemy "FLY" {4 5} none }
     } 
   }
-  "STONES"
-  {
-    name = "rocks"
-    viewId = { "stones" }
-  canSilentlyReplace = true
-  }
-  "CROPS"
-  {
-    name = "wheat"
-    viewId = { "crops" }
-  usageType = UsageEffect "scythe " Chance 0.3 CreatureMessage "scythe the field" "scythes the field"
-    usageTime = 3
-  }
-  "PIGSTY"
-  {
-    name = "pigsty"
-    viewId = { "mud" }
-    tickType = PIGSTY
-    populationIncrease = 0.25 4
-  }
-  "GROUND_TORCH"
-  {
-    name = "standing torch"
-    viewId = { "standing_torch" }
-    luxury = 0.1
-    lightEmission = 8.2
-  }
-  "TORCH_N"
-  {
-    name = "torch"
-    viewId = { "torch" }
-    lightEmission = 8.2
-    layer = CEILING
-    viewLayer = TORCH1
-    attachmentDir = N
-    requiredSupport = { { { N } } }
-    canBuildOutsideOfTerritory = true
-  }
-  "TORCH_S" inherit "TORCH_N"
-  {
-    viewLayer = TORCH2
-    attachmentDir = S
-    requiredSupport = { { { S } } }
-  }
-  "TORCH_E" inherit "TORCH_S"
-  {
-    attachmentDir = E
-    requiredSupport = { { { E } } }
-  }
-  "TORCH_W" inherit "TORCH_S"
-  {
-    attachmentDir = W
-    requiredSupport = { { { W } } }
-  }
-  "CANDELABRUM_N" inherit "TORCH_N"
-  {
-    name = "candelabrum"
-    viewId = { "candelabrum_ns" }
-    luxury = 0.3
-  }
-  "CANDELABRUM_S" inherit "TORCH_S"
-  {
-    name = "candelabrum"
-    viewId = { "candelabrum_ns" }
-    luxury = 0.3
-  }
-  "CANDELABRUM_E" inherit "TORCH_E"
-  {
-    name = "candelabrum"
-    viewId = { "candelabrum_e" }
-    luxury = 0.3
-  }
-  "CANDELABRUM_W" inherit "TORCH_W"
-  {
-    name = "candelabrum"
-    viewId = { "candelabrum_w" }
-    luxury = 0.3
-  }
-  "TORTURE_TABLE"
-  {
-    name = "torture table"
-    viewId = { "torture_table" }
-    canHideHere = true
-  usageType = BuiltinUsageId TIE_UP
-    strength = 80
-    destroyFX = { DESTROY_FURNITURE Rgb 120 120 120 255 }
-  }
-  "FOUNTAIN"
-  {
-    name = "fountain"
-    viewId = { "fountain" }
-    canHideHere = true
-    luxury = 0.7
-  usageType = UsageEffect "drink from"
-      Chain {
-        CreatureMessage "take a sip" "takes a sip"
-        ChooseRandom {
-          Heal FLESH
-          Lasting SLEEP
-          Lasting SLOWED
-          Lasting BLIND
-          Lasting INVISIBLE
-          Lasting POISON
-          Lasting POISON_RESISTANT
-          Lasting FLYING
-          Lasting SPEED
-        }
-      }
-    summonedElement = "WATER_ELEMENTAL"
-    strength = 80
-    destroyFX = { DESTROY_FURNITURE Rgb 120 120 120 255 }
-  }
-  "ALTAR"
-  {
-    name = "altar"
-    viewId = { "altar" }
-    canHideHere = true
-  strength = 80
-  usageType = UsageEffect "desecrate" Chain {
-    CreatureMessage "desecrate the altar" "desecrates the altar"
-    DestroyWalls BASH
-    ChooseRandom {
-      Chain {
-        Message "A streak of magical energy is released"
-        ChooseRandom {
-          Permanent RAGE
-          Permanent BLIND
-          Permanent PANIC
-          Permanent SPEED
-          Permanent FLYING
-          Permanent SLOWED
-          Permanent INSANITY
-          Permanent COLLAPSED
-          Permanent INVISIBLE
-          Permanent TELEPATHY
-          Permanent MELEE_RESISTANCE
-          Permanent MELEE_VULNERABILITY
-          Permanent MAGIC_RESISTANCE
-          Permanent MAGIC_VULNERABILITY
-          Permanent RANGED_RESISTANCE
-          Permanent RANGED_VULNERABILITY
-          Permanent BAD_BREATH
-          Permanent NIGHT_VISION
-          Permanent PEACEFULNESS
-        }
-      }
-      Chain {
-        Message "A streak of magical energy is released"
-        ChooseRandom {
-          IncreaseAttr DAMAGE -3
-          IncreaseAttr DAMAGE 3
-          IncreaseAttr RANGED_DAMAGE -3
-          IncreaseAttr RANGED_DAMAGE 3
-          IncreaseAttr SPELL_DAMAGE -3
-          IncreaseAttr SPELL_DAMAGE 3
-          IncreaseAttr DEFENSE -3
-          IncreaseAttr DEFENSE 3
-          Acid
-          Fire
-          Lasting DAM_BONUS
-          Lasting BLIND
-          Lasting POISON
-          Lasting BLEEDING
-          Lasting HALLU
-        }
-      }
-      Chain {
-        Message "Wrath upon you!"
-        SummonEnemy "ANGEL" {3 6} none
-      }
-      Chain {
-        CreatureMessage "find some gold coins in the cracks" "finds some gold coins in the cracks"
-        DropItems {Simple "GoldPiece"} {50 100}
-      }
-      Chain {
-        CreatureMessage "find a glyph in the cracks!" "finds a glyph in the cracks!"
-        ChooseRandom {
-          DropItems {Glyph ARMOR ItemAttrBonus DAMAGE 2} {1}
-          DropItems {Glyph ARMOR ItemAttrBonus DEFENSE 2} {1}
-          DropItems {Glyph ARMOR LastingEffect TELEPATHY} {1}
-          DropItems {Glyph WEAPON VictimEffect 0.3 Lasting BLEEDING} {1}
-        }
-      }
-    }
-  }
   "ADAMANTIUM_ORE" modify {
-  {
     name = "adamantium ore"
     viewId = { "adamantium_ore" }
     blockMovement = true
@@ -382,7 +196,7 @@
     canBuildOutsideOfTerritory = true #Modded
   }
   
-  "FLOOR_WOOD2" modify {inherit "FLOOR_WOOD1"
+  "FLOOR_WOOD2" modify {
     viewId = { "wood_floor4" }
   }
 
