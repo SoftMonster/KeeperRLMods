@@ -1,3 +1,46 @@
+  "healer" modify { SPELL
+    "advanced healing" 1
+    "healing totem" 1 #Modded
+    "expert healing" 2
+    "cure poison" 3
+    "advanced cure poison" 4
+    "cure blindness" 5
+    "poison resistance" 6
+    "group healing" 7
+  }
+  "fire" modify { SPELL
+  {
+    "fire elemental" 1
+    "advanced fire elemental" 2
+    "fireball" 3
+    "fire shield" 4 #Modded
+    "firewall" 5
+	"advanced fireball" 6 #Modded
+	"fireblast" 7 #Modded
+	"magma bolt" 8 #Modded
+	"advanced firewall" 9 #Modded
+	"expert fireball" 10 #Modded
+	"advanced fireblast" 11 #Modded
+	"expert firewall" 12 #Modded
+  }
+  "illusion" modify { SPELL
+  {
+    "deception" 1
+    "invisibility" 2
+    "escape" 3
+    "panic" 5
+    "pacify" 6 #Modded
+    "mind bolt" 7 #Modded
+  }
+  "fighter" modify { MELEE #Modded multiple entries
+  {
+    "shove" 2
+    "battle cry" 4
+    "block" 5
+    "swap positions" 6
+    "weapon dodge" 7
+  }
+
 ################
 #Modded schools
 ################
