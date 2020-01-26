@@ -1,3 +1,407 @@
+  "BOOKCASE_GOLD" modify {
+    name = "golden bookcase"
+    viewId = { "bookcase_gold" }
+    blockMovement = true
+  usageType = BuiltinUsageId STUDY
+    usageTime = 5
+    canHideHere = true
+    fire = 70
+    strength = 50
+    upgrade = "BOOKCASE_IRON"
+    maxTraining = {
+      SPELL 30 #Modded
+    }
+    requiresLight = true
+    destroyFX = { DESTROY_FURNITURE Rgb 190 190 40 255 }
+  }
+  "CANIF_TREE" modify {
+    name = "tree"
+    viewId = { "canif_tree" }
+    canHideHere = true
+    blockVision = { NORMAL }
+    destroyedRemains = "TREE_TRUNK"
+    burntRemains = "BURNT_TREE"
+    dissolveTo = "BURNT_TREE"
+    strength2 = {
+      100 BOULDER
+      70 CUT
+    }
+    fire = 100
+    itemDrop = {{{{Simple "WoodPlank"} 1 { 8 14 }}}}
+    summonedElement = "ENT"
+    tryDestroyFX = { WOOD_SPLINTERS }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+      Chance 0.001 Chain { Message "You have scared a snake!" SummonEnemy "SNAKE" {1} none }
+      Chance 0.001 Chain { Message "You have destroyed a birds nest!" SummonEnemy "RAVEN" {1} none }
+      Chance 0.001 Chain { Message "You have attacked a tree spirit!" SummonEnemy "ENT" {1} none }
+      Chance 0.001 Chain { Message "An angry driad falls from a tree!" SummonEnemy "DRIAD" {1} none }
+      Chance 0.001 Chain { Message "You have disturbed a wolf!" SummonEnemy "WOLF" {1} none }
+      Chance 0.001 Chain { Message "You have uncovered a fox!" SummonEnemy "FOX" {1} none }
+    } 
+  }
+
+  "DECID_TREE" inherit "CANIF_TREE" modify {
+    viewId = { "decid_tree" }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+      Chance 0.001 Chain { Message "You have scared a snake!" SummonEnemy "SNAKE" {1} none }
+      Chance 0.001 Chain { Message "You have destroyed a birds nest!" SummonEnemy "RAVEN" {1} none }
+      Chance 0.001 Chain { Message "You have attacked a tree spirit!" SummonEnemy "ENT" {1} none }
+      Chance 0.001 Chain { Message "An angry driad falls from a tree!" SummonEnemy "DRIAD" {1} none }
+      Chance 0.001 Chain { Message "You have disturbed a wolf!" SummonEnemy "WOLF" {1} none }
+      Chance 0.001 Chain { Message "You have uncovered a fox!" SummonEnemy "FOX" {1} none }
+    } 
+  }
+  "BUSH" modify {
+    name = "bush"
+    viewId = { "bush" }
+    strength2 = {
+      20 BOULDER
+      10 CUT
+    }
+    canHideHere = true
+    fire = 30
+    itemDrop = {{{{Simple "WoodPlank"} 1 { 2 4 }}}}
+    tryDestroyFX = { WOOD_SPLINTERS }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+      Chance 0.001 Chain { Message "A chicken walks out of a bush!" SummonEnemy "CHICKEN" {1} none }
+      Chance 0.001 Chain { Message "A boar emerges from the bushes!" SummonEnemy "BOAR" {1} none }
+      Chance 0.001 Chain { Message "Swarm of flies encountered." SummonEnemy "FLY" {4 5} none }
+    } 
+  }
+  "STONES"
+  {
+    name = "rocks"
+    viewId = { "stones" }
+  canSilentlyReplace = true
+  }
+  "CROPS"
+  {
+    name = "wheat"
+    viewId = { "crops" }
+  usageType = UsageEffect "scythe " Chance 0.3 CreatureMessage "scythe the field" "scythes the field"
+    usageTime = 3
+  }
+  "PIGSTY"
+  {
+    name = "pigsty"
+    viewId = { "mud" }
+    tickType = PIGSTY
+    populationIncrease = 0.25 4
+  }
+  "GROUND_TORCH"
+  {
+    name = "standing torch"
+    viewId = { "standing_torch" }
+    luxury = 0.1
+    lightEmission = 8.2
+  }
+  "TORCH_N"
+  {
+    name = "torch"
+    viewId = { "torch" }
+    lightEmission = 8.2
+    layer = CEILING
+    viewLayer = TORCH1
+    attachmentDir = N
+    requiredSupport = { { { N } } }
+    canBuildOutsideOfTerritory = true
+  }
+  "TORCH_S" inherit "TORCH_N"
+  {
+    viewLayer = TORCH2
+    attachmentDir = S
+    requiredSupport = { { { S } } }
+  }
+  "TORCH_E" inherit "TORCH_S"
+  {
+    attachmentDir = E
+    requiredSupport = { { { E } } }
+  }
+  "TORCH_W" inherit "TORCH_S"
+  {
+    attachmentDir = W
+    requiredSupport = { { { W } } }
+  }
+  "CANDELABRUM_N" inherit "TORCH_N"
+  {
+    name = "candelabrum"
+    viewId = { "candelabrum_ns" }
+    luxury = 0.3
+  }
+  "CANDELABRUM_S" inherit "TORCH_S"
+  {
+    name = "candelabrum"
+    viewId = { "candelabrum_ns" }
+    luxury = 0.3
+  }
+  "CANDELABRUM_E" inherit "TORCH_E"
+  {
+    name = "candelabrum"
+    viewId = { "candelabrum_e" }
+    luxury = 0.3
+  }
+  "CANDELABRUM_W" inherit "TORCH_W"
+  {
+    name = "candelabrum"
+    viewId = { "candelabrum_w" }
+    luxury = 0.3
+  }
+  "TORTURE_TABLE"
+  {
+    name = "torture table"
+    viewId = { "torture_table" }
+    canHideHere = true
+  usageType = BuiltinUsageId TIE_UP
+    strength = 80
+    destroyFX = { DESTROY_FURNITURE Rgb 120 120 120 255 }
+  }
+  "FOUNTAIN"
+  {
+    name = "fountain"
+    viewId = { "fountain" }
+    canHideHere = true
+    luxury = 0.7
+  usageType = UsageEffect "drink from"
+      Chain {
+        CreatureMessage "take a sip" "takes a sip"
+        ChooseRandom {
+          Heal FLESH
+          Lasting SLEEP
+          Lasting SLOWED
+          Lasting BLIND
+          Lasting INVISIBLE
+          Lasting POISON
+          Lasting POISON_RESISTANT
+          Lasting FLYING
+          Lasting SPEED
+        }
+      }
+    summonedElement = "WATER_ELEMENTAL"
+    strength = 80
+    destroyFX = { DESTROY_FURNITURE Rgb 120 120 120 255 }
+  }
+  "ALTAR"
+  {
+    name = "altar"
+    viewId = { "altar" }
+    canHideHere = true
+  strength = 80
+  usageType = UsageEffect "desecrate" Chain {
+    CreatureMessage "desecrate the altar" "desecrates the altar"
+    DestroyWalls BASH
+    ChooseRandom {
+      Chain {
+        Message "A streak of magical energy is released"
+        ChooseRandom {
+          Permanent RAGE
+          Permanent BLIND
+          Permanent PANIC
+          Permanent SPEED
+          Permanent FLYING
+          Permanent SLOWED
+          Permanent INSANITY
+          Permanent COLLAPSED
+          Permanent INVISIBLE
+          Permanent TELEPATHY
+          Permanent MELEE_RESISTANCE
+          Permanent MELEE_VULNERABILITY
+          Permanent MAGIC_RESISTANCE
+          Permanent MAGIC_VULNERABILITY
+          Permanent RANGED_RESISTANCE
+          Permanent RANGED_VULNERABILITY
+          Permanent BAD_BREATH
+          Permanent NIGHT_VISION
+          Permanent PEACEFULNESS
+        }
+      }
+      Chain {
+        Message "A streak of magical energy is released"
+        ChooseRandom {
+          IncreaseAttr DAMAGE -3
+          IncreaseAttr DAMAGE 3
+          IncreaseAttr RANGED_DAMAGE -3
+          IncreaseAttr RANGED_DAMAGE 3
+          IncreaseAttr SPELL_DAMAGE -3
+          IncreaseAttr SPELL_DAMAGE 3
+          IncreaseAttr DEFENSE -3
+          IncreaseAttr DEFENSE 3
+          Acid
+          Fire
+          Lasting DAM_BONUS
+          Lasting BLIND
+          Lasting POISON
+          Lasting BLEEDING
+          Lasting HALLU
+        }
+      }
+      Chain {
+        Message "Wrath upon you!"
+        SummonEnemy "ANGEL" {3 6} none
+      }
+      Chain {
+        CreatureMessage "find some gold coins in the cracks" "finds some gold coins in the cracks"
+        DropItems {Simple "GoldPiece"} {50 100}
+      }
+      Chain {
+        CreatureMessage "find a glyph in the cracks!" "finds a glyph in the cracks!"
+        ChooseRandom {
+          DropItems {Glyph ARMOR ItemAttrBonus DAMAGE 2} {1}
+          DropItems {Glyph ARMOR ItemAttrBonus DEFENSE 2} {1}
+          DropItems {Glyph ARMOR LastingEffect TELEPATHY} {1}
+          DropItems {Glyph WEAPON VictimEffect 0.3 Lasting BLEEDING} {1}
+        }
+      }
+    }
+  }
+  "ADAMANTIUM_ORE" modify {
+  {
+    name = "adamantium ore"
+    viewId = { "adamantium_ore" }
+    blockMovement = true
+    blockVision = { NORMAL ELF }
+    wall = true
+    clearFogOfWar = true
+    itemDrop = {{{{Simple "AdaOre"} 1 { 16 28 }}}}
+    strength2 = {
+      500 BOULDER
+      500 DIG
+      500 HOSTILE_DIG
+      2000 HOSTILE_DIG_NO_SKILL
+    }
+    destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
+    tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+	  Chance 0.001 Chain { Message "You have attacked a golem!" SummonEnemy "ADA_GOLEM" { 1 } none }
+      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" { 1 } none }
+      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" { 1 } none }
+      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" { 1 } none }
+	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
+    } 
+  }
+  "IRON_ORE" modify {
+    name = "iron ore"
+    viewId = { "iron_ore" }
+    blockMovement = true
+    blockVision = { NORMAL ELF }
+    wall = true
+    clearFogOfWar = true
+    itemDrop = {{{{Simple "IronOre"} 1 { 16 28 }}}}
+    strength2 = {
+      200 BOULDER
+      220 DIG
+      200 HOSTILE_DIG
+      2000 HOSTILE_DIG_NO_SKILL
+    }
+    destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+	  Chance 0.001 Chain { Message "You have attacked a iron golem!" SummonEnemy "IRON_GOLEM" {1} none }
+      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} none }
+      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} none }
+      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} none }
+	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
+    } 
+    tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
+  }
+  "STONE" modify {
+    name = "granite"
+    viewId = { "stone" }
+    blockMovement = true
+    blockVision = { NORMAL ELF }
+    wall = true
+    clearFogOfWar = true
+    itemDrop = {{{{Simple "Rock"} 1 { 16 28 }}}}
+    strength2 = {
+      200 BOULDER
+      250 DIG
+      200 HOSTILE_DIG
+      2000 HOSTILE_DIG_NO_SKILL
+    }
+    destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
+    tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+	  Chance 0.001 Chain { Message "You have attacked a stone golem!" SummonEnemy "STONE_GOLEM" {1} none }
+      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} none }
+      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} none }
+      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} none }
+	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
+    } 
+ }
+  "GOLD_ORE" modify {
+    name = "gold ore"
+    viewId = { "gold_ore" }
+    blockMovement = true
+    blockVision = { NORMAL ELF }
+    wall = true
+    clearFogOfWar = true
+    itemDrop = {{{{Simple "GoldPiece"} 1 { 16 28 }}}}
+    strength2 = {
+      200 BOULDER
+      220 DIG
+      200 HOSTILE_DIG
+      2000 HOSTILE_DIG_NO_SKILL
+    }
+    destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
+    tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
+    #Modded - destroyed effect added
+    destroyedEffect = Chain {
+	  Chance 0.001 Chain { Message "You have attacked a gold golem!" SummonEnemy "GOLD_GOLEM" {1} none }
+      Chance 0.001 Chain { Message "You have woken a bat!" SummonEnemy "BAT" {1} none }
+      Chance 0.001 Chain { Message "You have disturbed a rat!" SummonEnemy "RAT" {1} none }
+      Chance 0.001 Chain { Message "You have disturbed a spider!" SummonEnemy "SPIDER" {1} none }
+	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
+    } 
+  }
+  "RUIN_WALL" modify {
+    name = "wall"
+    viewId = { "ruin_wall" }
+    blockMovement = true
+    blockVision = { NORMAL ELF }
+    wall = true
+    canBuildOutsideOfTerritory = true
+	strength = 200 #Modded
+    strength2 = {
+      100 BOULDER
+      100 DIG
+      300 HOSTILE_DIG
+      300 HOSTILE_DIG_NO_SKILL
+    }
+  }
+
+  "FLOOR_WOOD1" modify {
+    name = "floor"
+    viewId = { "wood_floor2" }
+    fire = 50
+    luxury = 0.1
+    layer = FLOOR
+    canBuildOutsideOfTerritory = true #Modded
+  }
+  
+  "FLOOR_WOOD2" modify {inherit "FLOOR_WOOD1"
+    viewId = { "wood_floor4" }
+  }
+
+  "FLOOR_STONE1" modify {
+    name = "floor"
+    viewId = { "stone_floor1" }
+    luxury = 0.3
+    layer = FLOOR
+    canBuildOutsideOfTerritory = true  #Modded
+  }
+
+  "FLOOR_CARPET1" modify {
+    name = "floor"
+    viewId = { "carpet_floor1" }
+    luxury = 0.7
+    layer = FLOOR
+    canBuildOutsideOfTerritory = true  #Modded
+  }
+  
 ##########
 #Modded
 ##########
