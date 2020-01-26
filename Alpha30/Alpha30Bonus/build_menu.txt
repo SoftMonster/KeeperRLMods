@@ -94,6 +94,59 @@
     { Furniture {{ "ADA_ALTAR" }        ADA   100  }                 "Adamantine hero altar"     "Installations" ""}
   }
 
+
+  "floors" modify {
+  
+    { Furniture {{ "FLOOR_WOOD1" }                WOOD 2 }       "Wooden"            "Floors"
+        "" f {} true BUILD_FLOOR}
+    { Furniture {{ "FLOOR_WOOD2" }                WOOD 2 }       "Wooden"            "Floors"
+        "" 0 {} true BUILD_FLOOR}
+    { Furniture {{ "FLOOR_STONE1" }               STONE 2 }      "Stone"             "Floors" }
+    { Furniture {{ "FLOOR_STONE2" }               STONE 2 }      "Stone"             "Floors" }
+    { Furniture {{ "FLOOR_STONE3" }               STONE 4 }      "Jeweled"           "Floors" } #Modded
+    { Furniture {{ "FLOOR_STONE4" }               STONE 4 }      "Jeweled"           "Floors" } #Modded
+    { Furniture {{ "FLOOR_CARPET1" }              GOLD 2 }       "Carpet"            "Floors" }
+    { Furniture {{ "FLOOR_CARPET2" }              GOLD 2 }       "Carpet"            "Floors" }
+    { DestroyLayers {FLOOR}                                      "Remove floor"      "Floors" }
+
+  }
+
+  "traps" modify {
+  
+    { Trap "TERROR_TRAP" { "terror_trap" }                                 "Terror trap"       "Traps"
+        "Causes the trespasser to panic." 0                   { TechId "traps" }}
+
+    { Trap "POISON_GAS_TRAP" { "gas_trap" }                                "Gas trap"          "Traps"
+        "Releases a cloud of poisonous gas." 0                { TechId "traps" }}
+
+    { Trap "ALARM_TRAP" { "alarm_trap" }                                   "Alarm trap"        "Traps"
+        "Summons all minions" 0                               { TechId "traps" }}
+
+    { Trap "WEB_TRAP" { "web_trap" }                                       "Web trap"          "Traps"
+        "Immobilises the trespasser for some time." 0         { TechId "traps" }}
+
+    { Trap "BOULDER_TRAP" { "boulder" }                                    "Boulder trap"      "Traps"
+        "Causes a huge boulder to roll towards the enemy." 0  { TechId "traps" }}
+
+    { Trap "SURPRISE_TRAP" { "surprise_trap" }                             "Surprise trap"     "Traps"
+        "Teleports nearby minions to deal with the trespasser." 0 { TechId "traps" }}
+
+    { Trap "FIRE_TRAP" { "fire_trap" }                                     "Fire trap"        "Traps"
+        "Causes a tower of flame to errupt under the trespasser." 0 { TechId "traps" }}
+
+    #Modded Traps        
+    { Trap "FLOOR_SPIKES_TRAP" { "floor_spikes_trap" }                     "Floor Spikes trap" "Traps"
+        "Causes a group of spikes to spring up from the floor under the trespasser." 0 { TechId "traps" }}
+
+    { Trap "TAR_PIT" { "tar_pit" }                                          "Tar pit"          "Traps"
+        "Slows down interlopers." 0                           { TechId "traps" }}
+
+    { Trap "FALLING_RUBBLE_TRAP" { "map_mountain2" }                        "Falling rubble trap" "Traps"
+        "Rubble will fall down around them." 0                { TechId "traps" }}
+
+
+  }
+
   #Extra floors for white knights
   "white knight floors"
   {
