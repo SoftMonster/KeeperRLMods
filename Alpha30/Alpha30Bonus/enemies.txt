@@ -1,3 +1,547 @@
+  "ORC_VILLAGE" modify {
+    settlement = {
+    type = Builtin VILLAGE
+      tribe = GREENSKIN
+      inhabitants = {
+        fighters = {
+          count = {12 16}
+          all = {
+            1 "ORC"
+            1 "ORC_FEMALE" #Modded
+            1 "OGRE"
+            1 "OGRE_FEMALE" #Modded
+            1 "HOBGOBLIN" #Modded
+          }
+        }
+      }
+  }
+  "DEMON_DEN" modify {
+    settlement = {
+    type = Builtin VILLAGE
+      buildingId = "TAINTED" #Modded
+      tribe = MONSTER
+      inhabitants = {
+        leader = { { "DEMON_LORD" } }
+        fighters = {
+          count = {5 10}
+          all = { 1 "DEMON_DWELLER" }
+        }
+      }
+      locationName = "Darkshrine"
+      race = "demons"
+      furniture = { "dungeonOutside" }
+      outsideFeatures = "dungeonOutside"
+    }
+  }
+  "VILLAGE" modify {
+    settlement = {
+    type = Builtin VILLAGE
+      tribe = HUMAN
+      inhabitants = {
+        leader = { { "KNIGHT" } }
+        fighters = {
+          count = {4 8}
+          all = {
+            1 "KNIGHT"
+            1 "ARCHER"
+            1 "MILITIA" #Modded
+          }
+        }
+        civilians = {
+          count = {4 8}
+          all = {
+            1 "PESEANT"
+            1 "CHILD"
+            1 "DONKEY"
+            1 "HORSE"
+            1 "COW"
+            1 "PIG"
+            1 "DOG"
+          }
+        }
+      }
+  }
+  "KNIGHTS" modify {
+      stockpiles = {{ "gold" 140 "FLOOR_SPIKES_TRAP" } }  #Modded
+  }
+  "MINOTAUR"  modify {
+    settlement = {
+    type = Builtin CAVE
+      tribe = MONSTER
+      inhabitants = {
+        leader = { { "MINOTAUR" } }
+      }
+      locationName = "maze"
+      race = "monsters"
+      furniture = { "roomFurniture" }
+      buildingId = "MINOTAUR" #Modded
+    }
+  }
+  "DWARVES" modify {#Modded
+    settlement = {
+    type = Builtin MINETOWN
+      tribe = DWARF
+      inhabitants = {
+        leader = { { "DWARF_BARON" } }
+        fighters = {
+          count = {6 9}
+          all = {
+		    2 "DWARF_MILITIA_TRIBE"
+            3 "DWARF_FIGHTER_TRIBE"
+			3 "DWARF_WARRIOR_TRIBE"
+			2 "ELITE_DWARF_WARRIOR_TRIBE"
+			1 "DWARF_MONK_TRIBE"
+          }
+          baseLevelIncrease = {
+            MELEE 10
+          }
+        }
+        civilians = {
+          count = {3 5}
+          all = {
+            3 "PLAYER_DWARF_FEMALE"
+            3 "PLAYER_DWARF_FEMALE2"
+            3 "PLAYER_DWARF_FEMALE3"
+            1 "RAT"
+          }
+        }
+      }
+      locationNameGen = "TOWN"
+      race = "dwarves"
+      buildingId = "DUNGEON"
+      stockpiles = {{ "gold" 200 "TREASURE_CHEST"} {"minerals" 120 }}
+      shopItems = { "dwarfShop" }
+      outsideFeatures = "dungeonOutside"
+      surroundWithResources = 5
+      furniture = { "dwarvenRoomFurniture" } #Modded
+    }
+    config = {
+      immigrantInterval = 500
+      maxPopulation = 15
+      ghostProb = 0.1
+      spawnGhosts = 4
+    }
+    behaviour = {
+      minPopulation = 3
+      minTeamSize = 4
+      triggers = {
+        RoomTrigger "THRONE" 0.0003
+        RoomTrigger "IMPALED_HEAD" 0.0001
+        SelfVictims
+        NumConquered 3
+        StolenItems
+        FinishOff
+        Proximity
+      }
+      attackBehaviour = KillMembers 3
+      ransom = 0.8 320
+    }
+    immigrants = {
+      {
+        ids = { "DWARF_MILITIA_TRIBE" "DWARF_FIGHTER_TRIBE" "DWARF_WARRIOR_TRIBE" "ELITE_DWARF_WARRIOR_TRIBE" "DWARF_MONK_TRIBE"} #Modded
+        traits = {FIGHTER}
+        frequency = 1
+      }
+    }
+  }
+  "ELVES" modify {
+    biomes = { "FOREST" } #Modded
+    settlement = {
+      type = Builtin CASTLE #Modded
+      inhabitants = {
+        leader = { { "ELF_LORD" } }
+        fighters = {
+          count = {6 9}
+          all = { 1 "ELF_ARCHER" }
+        }
+        civilians = {
+          count = {6 9},
+          all = {
+            1 "ELF"
+            1 "ELF_CHILD"
+            1 "HORSE"
+          }
+        }
+      }
+      furniture = { "elvenRoomFurniture" } #Modded
+      shopItems = { "villageShop" } #Modded
+    }
+  }
+  "ELEMENTALIST_ENTRY" modify {
+    settlement = {
+    type = Builtin TOWER
+      tribe = HUMAN
+      buildingId  = "ELEMENTALIST"
+      inhabitants = {
+        fighters = {
+          count = {1 2}
+          all = { 1 "SHARD_SPITTER" }
+        }
+      }
+    }
+    discoverable = false
+  }
+  "ELEMENTALIST_FLOOR" modify {
+    settlement = {
+      inhabitants = {
+        fighters = {
+          count = {1 3}
+          all = {
+            1 "AIR_ELEMENTAL"
+            1 "WATER_ELEMENTAL"
+            1 "FIRE_ELEMENTAL"
+            1 "EARTH_ELEMENTAL"
+          }
+        }
+      }
+      type = Builtin TOWER
+      tribe = HUMAN
+      buildingId = "ELEMENTALIST" #Modded
+    }
+    discoverable = false
+  }
+  "ELEMENTALIST" modify {
+    settlement = {
+    type = Builtin TOWER
+      inhabitants = {
+        leader = { { "ELEMENTALIST" } }
+      }
+      tribe = HUMAN
+      buildingId = "ELEMENTALIST" #Modded
+      furniture = { "roomFurniture" }
+    }
+  }
+  "MAIN_DUNGEON_ENTRY" modify {
+    settlement = {
+    type = Builtin CAVE
+      tribe = BANDIT
+      buildingId = "DUNGEON_ENTRY" #Modded
+      inhabitants = {
+        fighters = {
+          count = {2 4}
+          all = { 1 "RAT" }
+        }
+      }
+    }
+  }
+
+  "NO_AGGRO_BANDITS" modify {
+    settlement = {
+    type = Builtin CAVE
+      inhabitants = {
+       leader = { { "BANDIT_LEADER" } } #Modded
+        fighters = {
+          count = {4 9}
+          all = { 1 "BANDIT" }
+        }
+      }
+      tribe = BANDIT
+      race = "bandits"
+      buildingId = "DUNGEON"
+    }
+  }
+  "BANDITS" inherit "NO_AGGRO_BANDITS" modify {
+    behaviour = {
+      minPopulation = 0
+      minTeamSize = 3
+      triggers = {Gold 300} #Modded
+      attackBehaviour = StealGold
+      ransom = 0.5 80
+    }
+  }
+  "DUNGEON1" modify {
+    settlement = {
+      type = Builtin MINETOWN
+      tribe = MONSTER
+      locationName = "dungeon level" #Modded
+      race = "dwellers"              #Modded
+      buildingId = "DUNGEON"
+      furniture = { "roomFurniture" }
+      shopItems = { "dungeon" }
+      inhabitants = {
+        fighters = {
+          count = {10 15}
+          all = {
+            100 "BANDIT"
+            15 "CYCLOPS"
+            15 "WITCH"
+            20 "CLAY_GOLEM"
+            20 "STONE_GOLEM"
+            20 "IRON_GOLEM"
+            20 "LAVA_GOLEM"
+            10 "FIRE_ELEMENTAL"
+            10 "WATER_ELEMENTAL"
+            10 "EARTH_ELEMENTAL"
+            10 "AIR_ELEMENTAL"
+            100 "GNOME"
+            20 "GNOME_CHIEF"
+            100 "DWARF"
+            40 "DWARF_FEMALE"
+            200 "JACKAL"
+            200 "BAT"
+            150 "SNAKE"
+            200 "SPIDER"
+            100 "FLY"
+            100 "RAT"
+          }
+        }
+      }
+    }
+  }
+
+  "WHITE_DRAGON_ENTRY"  modify { inherit "MAIN_DUNGEON_ENTRY" #Modded
+    settlement = {
+      type = Builtin CAVE
+      tribe = BANDIT
+      buildingId = "GLACIER"
+      inhabitants = {
+        fighters = {
+          count = {2 4}
+          all = { 1 "RAT" }
+        }
+      }
+    }
+  }
+  "SHELOB" modify { #Modded
+    settlement = {
+      type = Builtin VILLAGE
+      tribe = SHELOB
+      inhabitants = {
+        leader = { { "SHELOB" } }
+        fighters = {
+          count = {4 5}
+          all = {
+		    1 "ARACHNE"
+            1 "SPECIAL_BMGN"
+          }
+        }
+        civilians = {
+        count = {4 6},
+          all = {
+            1 "SPIDER_FOOD"
+            1 "SPIDER"
+          }
+        }
+      }
+      race = "giant spider"
+      buildingId = "DUNGEON"
+    }
+    config = {
+     leaderAsFighter = true
+    }
+    createOnBones = 0.6 { "DWARF_CAVE" "KOBOLD_CAVE" "OGRE_CAVE" "HARPY_CAVE" "OGRE_CAVE" "HARPY_CAVE"} #Modded
+  }
+  "CEMETERY" modify { #Modded
+    settlement = {
+    type = Builtin CEMETERY
+      inhabitants = {
+        leader = {
+        id = { "NECROMANCER" }
+          baseLevelIncrease = {
+            MELEE 3
+            SPELL 7
+          } }
+        fighters = {
+          count = {8 12}
+          all = { 1 "ZOMBIE" 1 "SKELETON" }
+        }
+      }
+      locationName = "cemetery"
+      tribe = MONSTER
+      race = "undead"
+      furniture = { "cryptCoffins" }
+      buildingId = "TAINTED"
+    }
+    levelConnection = {
+      topLevel = ExtraEnemy { "CEMETERY_ENTRY" }
+      levels = {
+        {MainEnemy 40 40 MAZE }
+      }
+    }
+  }
+  "CEMETERY_ENTRY" modify {
+    settlement = {
+    type = Builtin CEMETERY
+      inhabitants = {
+        fighters = {
+          count = {1 2}
+          all = {
+            1 "SKELETON_MAGE" #Modded
+          }
+        }
+      }
+      locationName = "cemetery"
+      race = "undead"
+      tribe = MONSTER
+      furniture = { "graves" }
+      buildingId = "BRICK"
+    }
+    discoverable = false
+  }
+  "RUINS" modify {
+    settlement = {
+    type = Builtin COTTAGE
+      tribe = MONSTER
+      race = "ruins"
+      dontBuildRoad = true
+      closeToPlayer = true
+      buildingId = "RUINS"
+    }
+    config = {
+      immigrantInterval = 700
+      maxPopulation = 3
+      conquerCondition = DESTROY_BUILDINGS
+    }
+    immigrants = {
+      {
+        ids = {"DISENCHANTER" "LOST_SOUL"} #Modded
+        traits = {FIGHTER}
+        specialTraits = {
+          {1.0 {LastingEffect DISAPPEAR_DURING_DAY}}
+        }
+        frequency = 1
+        requirements = {
+          {1.0 SunlightState NIGHT}
+        }
+        spawnLocation = InsideTerritory
+      }
+    }
+  }
+  "HUMAN_COTTAGE" modify {
+    settlement = {
+    type = Builtin COTTAGE
+      tribe = HUMAN
+      cropsDistance = 13
+      inhabitants = {
+        fighters = {
+          count = {2 4}
+          all = { 1 "PESEANT" }
+        }
+        civilians = {
+          count = {3 7},
+          all = {
+            1 "CHILD"
+            1 "HORSE"
+            1 "DONKEY"
+            1 "COW"
+            1 "PIG"
+            1 "DOG"
+          }
+        }
+      }
+      race = "humans"
+      buildingId = "WOOD"
+      furniture = { "roomFurniture" }
+    }
+    config = {
+      guardianInfo = "MILITIA" 0.2 1 3 #Modded
+    }
+  }
+  "LIZARDMEN_COTTAGE" modify {
+    settlement = {
+    type = Builtin FORREST_COTTAGE
+      tribe = BANDIT #Modded
+      inhabitants = {
+        fighters = {
+          count = {2 3}
+          all = { 1 "LIZARDMAN" }
+        }
+      }
+      race = "lizardmen"
+      buildingId = "WOOD"
+      furniture = { "roomFurniture" }
+    }
+    createOnBones = 1.0 { "ELVEN_COTTAGE" }
+  }
+  "DWARF_CAVE" modify { #Modded
+    settlement = {
+    type = Builtin SMALL_MINETOWN
+      tribe = DWARF
+      inhabitants = {
+        fighters = {
+          count = {2 5}
+          all = { 		    
+			2 "DWARF_MILITIA_TRIBE"
+            3 "DWARF_FIGHTER_TRIBE"
+			3 "DWARF_WARRIOR_TRIBE"
+			2 "ELITE_DWARF_WARRIOR_TRIBE"
+			1 "DWARF_MONK_TRIBE" 
+		  }
+        }
+        civilians = {
+          count = {2 5}
+          all = { 
+			1 "PLAYER_DWARF_FEMALE"
+			1 "PLAYER_DWARF_FEMALE2"
+			1 "PLAYER_DWARF_FEMALE3"
+		  }
+        }
+      }
+      race = "dwarves"
+      buildingId = "DUNGEON"
+      stockpiles = {{ "minerals" 60}}
+      outsideFeatures = "dungeonOutside"
+      furniture = { "roomFurniture" }
+      surroundWithResources = 6     
+    }
+    behaviour = {
+      minPopulation = 0
+      minTeamSize = 1
+    triggers = { SelfVictims StolenItems }
+      attackBehaviour = KillLeader
+      ransom = 0.5 80
+    }
+  }
+  "RAT_CAVE" modify {
+    settlement = {
+    type = Builtin VAULT
+      inhabitants = {
+        fighters = {
+          count = {10 11} 
+          all = {
+            25 "RAT"       #Modded
+			1  "BLACK_RAT" #Modded
+          }
+        }
+      }
+      closeToPlayer = true
+      dontConnectCave = true
+      tribe = MONSTER
+      buildingId = "DUNGEON"
+    }
+    discoverable = false
+  }
+  "RAT_PEOPLE_CAVE" modify {
+    settlement = {
+    type = Builtin VAULT
+      buildingId = "DUNGEON"
+      tribe = MONSTER
+      inhabitants = {
+        leader = { { "RAT_KING" } }
+        fighters = {
+          count = {2 5}
+          all = { 1 "RAT_SOLDIER" }
+        }
+        civilians = {
+          count = {2 5}
+          all = {
+            1 "RAT_LADY"
+            1 "RAT"
+          }
+        }
+      }
+      closeToPlayer = true
+      dontConnectCave = true
+      outsideFeatures = "caveWells" #Modded
+    }
+    discoverable = false
+    behaviour = {
+      minPopulation = 0
+      minTeamSize = 1
+      attackBehaviour = KillLeader
+    }
+  }
+
 ########
 # Modded
 ########
