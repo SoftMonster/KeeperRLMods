@@ -14,7 +14,7 @@
 #Modded#
     buildingGroups = {
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
-        "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
+        "training" "crafting" "laboratory" "jeweller" "poetry" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
     workshopGroups = { "basic" "scrolls" "traps" "techBooks" } #Modded
     description = "(Challenge) Build and manage your dream dungeon, defend against raids, and attack!" #Modded
@@ -37,7 +37,7 @@
     initialTech = { "sorcery" }
     buildingGroups = {
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
-        "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
+        "training" "crafting" "laboratory" "jeweller" "poetry" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
     workshopGroups = { "basic" "scrolls" "traps" "techBooks"}
     description = "(Easy) Play in easy mode and get a big bonus on all immigrants. But you have to wear a silly green robe."
@@ -58,7 +58,7 @@
     initialTech = { "sorcery" }
     buildingGroups = {
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
-        "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
+        "training" "crafting" "laboratory" "jeweller" "poetry" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
     workshopGroups = { "basic" "scrolls" "traps" "techBooks" }
     description = "(Hard) Play in hard mode and test your skills to the limit for experienced players. You get to wear a cool purple robe."
@@ -74,7 +74,7 @@
     initialTech = { "iron working" }
     buildingGroups = {
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
-        "training" "crafting" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
+        "training" "crafting" "laboratory" "jeweller" "poetry" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
 #Modded
     workshopGroups = { "basic" "scrolls" "traps" "techBooks" }
@@ -93,7 +93,7 @@
 #Modded
     buildingGroups = {
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage"
-        "pigsty" "training" "crafting" "prison" "orders" "installations"
+        "pigsty" "training" "crafting" "laboratory" "jeweller" "poetry" "prison" "orders" "installations"
     }
     workshopGroups = { "basic" "white knights workshop" }
 #Modded
@@ -118,7 +118,7 @@
     initialTech = { "sorcery" "archery" }
     buildingGroups = {
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "pigsty"
-        "archery" "crafting" "prison" "orders" "installations" "magical_installations" "traps"
+        "archery" "crafting" "laboratory" "jeweller" "poetry" "prison" "orders" "installations" "magical_installations" "traps"
     }
     workshopGroups = { "gnomish" "scrolls" }
     description = "(Challenge) Manage a tribe of gnomes."
@@ -189,7 +189,7 @@
     }
     initialTech = { "iron working" "traps" }
     buildingGroups = {
-        "structure" "doors" "floors" "storage" "zones" "throne" "beds" "crafting" "pigsty" "dwarven"
+        "structure" "doors" "floors" "storage" "zones" "throne" "beds" "crafting" "laboratory" "jeweller" "poetry" "pigsty" "dwarven"
         "dwarven training" "orders" "installations" "magical_installations" "traps"
     }
     workshopGroups = {"dwarven"}
@@ -209,7 +209,7 @@
     initialTech = { "iron working" "alchemy" "sorcery" "traps" }
     buildingGroups = {
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "pigsty"
-        "training" "crafting" "prison" "orders" "installations" "magical_installations" "traps"
+        "training" "crafting" "laboratory" "jeweller" "poetry" "prison" "orders" "installations" "magical_installations" "traps"
     }
     workshopGroups = { "goblin" "traps" }
     description = "(Challenge) Breed an army of goblins and overrun the land with numbers!" #Modded
