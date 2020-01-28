@@ -58,4 +58,3 @@
 	  wall = "MOUNTAIN"
 	  floorOutside = "SHALLOW_WATER_COSMETIC"
     }
-}
