@@ -20,7 +20,7 @@
           noAuto = true
           initialRecruitment = 7 #Modded
           requirements = {
-            { 1 ExponentialCost GOLD 5 5 7 } #Modded
+            { 1 ExponentialCost "GOLD" 5 5 7 } #Modded
           }
         }
     }
@@ -169,7 +169,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
          { 0.2 { ExtraIntrinsicAttack
@@ -193,7 +193,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
             { 0.1 AttractionInfo 1 {FurnitureType "ARCHERY_RANGE"}}
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 0.3 { LastingEffect SLOWED }}
@@ -207,7 +207,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
             { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 0.3 { LastingEffect TELEPATHY }}
@@ -225,7 +225,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
             { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 1.0 { LastingEffect BAD_BREATH }}
@@ -239,7 +239,7 @@
           requirements = {
             { 0.3 AttractionInfo 1 {FurnitureType "DEMON_SHRINE"}}
             { 0.0 FurnitureType "DEMON_SHRINE" } #Modded
-            { 0.0 CostInfo DEMON_PIETY 300 }
+            { 0.0 CostInfo "DEMON_PIETY" 300 }
           }
         }
         {
@@ -250,7 +250,7 @@
           requirements = {
             { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
             { 0.3 AttractionInfo 1 {FurnitureType "BED3"}} #Modded
-            { 0.0 CostInfo DEMON_PIETY 1000 }            
+            { 0.0 CostInfo "DEMON_PIETY" 1000 }            
             { 0.0 NegateRequirement TechId "combat succubus" } #Modded		  
           }
         }
@@ -262,7 +262,7 @@
           requirements = {
             { 0.3 AttractionInfo 3 {FurnitureType "DEMON_SHRINE"}}
             { 0.0 FurnitureType "DEMON_SHRINE" } #Modded
-            { 0.0 CostInfo DEMON_PIETY 3000 }
+            { 0.0 CostInfo "DEMON_PIETY" 3000 }
           }
         }
         {
@@ -328,7 +328,7 @@
           }
           requirements = {
             { 0.0 RecruitmentInfo { "DARK_ELVES_ALLY" } 3 FIGHTER }
-            { 1.0 CostInfo GOLD 20 }
+            { 1.0 CostInfo "GOLD" 20 }
           }
         }
         {
@@ -340,7 +340,7 @@
           }
           requirements = {
             { 0.0 RecruitmentInfo { "ORC_VILLAGE" } 3 FIGHTER }
-            { 1.0 CostInfo GOLD 5 }
+            { 1.0 CostInfo "GOLD" 5 }
           }
         }
         {
@@ -352,7 +352,7 @@
           }
           requirements = {
             { 0.0 RecruitmentInfo { "HARPY_CAVE" } 3 FIGHTER }
-            { 1.0 CostInfo GOLD 5 }
+            { 1.0 CostInfo "GOLD" 5 }
           }
         }
         {
@@ -364,7 +364,7 @@
           }
           requirements = {
             { 0.0 RecruitmentInfo { "OGRE_CAVE" "ORC_VILLAGE" } 3 FIGHTER }
-            { 1.0 CostInfo GOLD 12 }
+            { 1.0 CostInfo "GOLD" 12 }
           }
         }
         {
@@ -375,7 +375,7 @@
           requirements = {
             { 0.0 TechId "humanoid mutation" }
             { 0.0 Pregnancy }
-            { 1.0 CostInfo GOLD 100 }
+            { 1.0 CostInfo "GOLD" 100 }
           }
           specialTraits = {
              { 0.1 { LastingEffect INSANITY}}
@@ -389,7 +389,7 @@
           requirements = {
             { 0.0 TechId "beast mutation" }
             { 0.0 Pregnancy }
-            { 1.0 CostInfo GOLD 100 }
+            { 1.0 CostInfo "GOLD" 100 }
           }
         }
     }
@@ -489,7 +489,7 @@
       traits = { FIGHTER }
       requirements = {
         { 0.0 RecruitmentInfo { "DWARVES" } 0 FIGHTER }
-        { 1.0 CostInfo GOLD 100 }
+        { 1.0 CostInfo "GOLD" 100 }
       }
       specialTraits = {
        { 1.0 { WorkshopType "FORGE" }}
@@ -502,7 +502,7 @@
       spawnLocation = FurnitureType "ANGEL_SHRINE"
       requirements = {
         { 0.3 AttractionInfo 1 {FurnitureType "ANGEL_SHRINE"}}
-        { 0.0 CostInfo DEMON_PIETY 300 }
+        { 0.0 CostInfo "DEMON_PIETY" 300 }
       }
     }
     {
@@ -512,7 +512,7 @@
       spawnLocation = FurnitureType "ANGEL_SHRINE"
       requirements = {
         { 0.3 AttractionInfo 2 {FurnitureType "ANGEL_SHRINE"}}
-        { 0.0 CostInfo DEMON_PIETY 1000 }
+        { 0.0 CostInfo "DEMON_PIETY" 1000 }
       }
     }
     {
@@ -522,7 +522,7 @@
       spawnLocation = FurnitureType "ANGEL_SHRINE"
       requirements = {
         { 0.3 AttractionInfo 2 {FurnitureType "ANGEL_SHRINE"}}
-        { 0.0 CostInfo DEMON_PIETY 3000 }
+        { 0.0 CostInfo "DEMON_PIETY" 3000 }
       }
     }
     {
@@ -530,7 +530,7 @@
       traits = { FIGHTER }
       requirements = {
         { 0.0 RecruitmentInfo { "TEUTONS" } 3 FIGHTER }
-        { 1.0 CostInfo GOLD 150 }
+        { 1.0 CostInfo "GOLD" 150 }
       }
     }
     {
@@ -541,7 +541,7 @@
     {
           ids = { "DONKEY" "COW" "HORSE" "GOAT" }
           traits = { NO_LIMIT INCREASE_POPULATION }
-          requirements = { { 1.0 CostInfo GOLD 50 } }
+          requirements = { { 1.0 CostInfo "GOLD" 50 } }
     }
 }
 
@@ -557,7 +557,7 @@
           noAuto = true
           initialRecruitment = 4
           requirements = {
-            { 1 ExponentialCost GOLD 30 5 4 }
+            { 1 ExponentialCost "GOLD" 30 5 4 }
           }
         }
         {
@@ -570,21 +570,21 @@
             { 0.0 TechId "sorcery" }
           }
         }
-        { ids = { "CLAY_GOLEM" }      traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo STONE 120} { 0.0 TechId "basic earth magic"    }}}
-        { ids = { "STONE_GOLEM" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo STONE 150} { 0.0 TechId "master earth magic"   }}}
-        { ids = { "EARTH_ELEMENTAL" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo STONE 200} { 0.0 TechId "elite earth magic"    }}}
-        { ids = { "IRON_GOLEM" }      traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 120}  { 0.0 TechId "basic metalic magic"  }}}
-        { ids = { "POSSESSED_SWORD" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 500}  { 0.0 TechId "simplistic animations"}}}
-        { ids = { "GHOST_ARMOUR" }    traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 500}  { 0.0 TechId "simplistic animations"}}}
-        { ids = { "GIANT_ROBOT" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 1000}  { 0.0 TechId "magic contraptions"   }}}
-        { ids = { "ADA_GOLEM" }       traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo ADA 120}   { 0.0 TechId "master metalic magic" }}}
-        { ids = { "AUTOMATON" }       traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo IRON 200}  { 0.0 TechId "elite metalic magic"  }}}
-        { ids = { "FIRE_SPHERE" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo GOLD 5}    { 0.0 TechId "basic fire magic"     }}}
-        { ids = { "LAVA_GOLEM" }      traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo GOLD 50}   { 0.0 TechId "master fire magic"    }}}
-        { ids = { "FIRE_ELEMENTAL" }  traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo GOLD 80}   { 0.0 TechId "elite fire magic"     }}}
-        { ids = { "ENT" }             traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo WOOD 300 } { 0.0 TechId "basic forest magic"   }}}
-        { ids = { "WATER_ELEMENTAL" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo WOOD 500}  { 0.0 TechId "master forest magic"  }}}
-        { ids = { "AIR_ELEMENTAL" }   traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo GOLD 80}   { 0.0 TechId "elite forest magic"   }}}
+        { ids = { "CLAY_GOLEM" }      traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "STONE" 120} { 0.0 TechId "basic earth magic"    }}}
+        { ids = { "STONE_GOLEM" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "STONE" 150} { 0.0 TechId "master earth magic"   }}}
+        { ids = { "EARTH_ELEMENTAL" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "STONE" 200} { 0.0 TechId "elite earth magic"    }}}
+        { ids = { "IRON_GOLEM" }      traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "IRON" 120}  { 0.0 TechId "basic metalic magic"  }}}
+        { ids = { "POSSESSED_SWORD" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "IRON" 500}  { 0.0 TechId "simplistic animations"}}}
+        { ids = { "GHOST_ARMOUR" }    traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "IRON" 500}  { 0.0 TechId "simplistic animations"}}}
+        { ids = { "GIANT_ROBOT" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "IRON" 1000}  { 0.0 TechId "magic contraptions"   }}}
+        { ids = { "ADA_GOLEM" }       traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "ADA" 120}   { 0.0 TechId "master metalic magic" }}}
+        { ids = { "AUTOMATON" }       traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "IRON" 200}  { 0.0 TechId "elite metalic magic"  }}}
+        { ids = { "FIRE_SPHERE" }     traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "GOLD" 5}    { 0.0 TechId "basic fire magic"     }}}
+        { ids = { "LAVA_GOLEM" }      traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "GOLD" 50}   { 0.0 TechId "master fire magic"    }}}
+        { ids = { "FIRE_ELEMENTAL" }  traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "GOLD" 80}   { 0.0 TechId "elite fire magic"     }}}
+        { ids = { "ENT" }             traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "WOOD" 300 } { 0.0 TechId "basic forest magic"   }}}
+        { ids = { "WATER_ELEMENTAL" } traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "WOOD" 500}  { 0.0 TechId "master forest magic"  }}}
+        { ids = { "AIR_ELEMENTAL" }   traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "GOLD" 80}   { 0.0 TechId "elite forest magic"   }}}
     }
     
     "gnomish"
@@ -598,7 +598,7 @@
           noAuto = true
           initialRecruitment = 4
           requirements = {
-            { 1 ExponentialCost GOLD 30 5 4 }
+            { 1 ExponentialCost "GOLD" 30 5 4 }
           }
         }  
         {
@@ -607,7 +607,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
         }
         {
           ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
@@ -615,7 +615,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
         }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
@@ -623,14 +623,14 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
+          requirements = { {  1.0 CostInfo "IRON" 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
         }
         {
           ids = { "AUTOMATON" }
           traits = { FIGHTER }
           spawnLocation = FurnitureType "FORGE"
           noAuto = true    
-          requirements = { {  1.0 CostInfo IRON 200}  { 0.0 TechId "gnomish smithy" } }
+          requirements = { {  1.0 CostInfo "IRON" 200}  { 0.0 TechId "gnomish smithy" } }
         }
         {
           ids = { "GNOME_PLAYER" }
@@ -760,7 +760,7 @@
           noAuto = true
           initialRecruitment = 4
           requirements = {
-            { 1 ExponentialCost GOLD 30 5 4 }
+            { 1 ExponentialCost "GOLD" 30 5 4 }
           }
         }
         {
@@ -769,7 +769,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
        }
         {
           ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
@@ -777,7 +777,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
        }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
@@ -785,7 +785,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
+          requirements = { {  1.0 CostInfo "IRON" 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
         }
         {
           ids = { "DWARF_MILITIA" }
@@ -862,7 +862,7 @@
           ids = { "PLAYER_DWARF_FEMALE" "PLAYER_DWARF_FEMALE2" "PLAYER_DWARF_FEMALE3" }
           traits = { NO_LIMIT INCREASE_POPULATION NO_EQUIPMENT }
           requirements = {
-            { 1.0 CostInfo GOLD 40 }
+            { 1.0 CostInfo "GOLD" 40 }
 		  }
           specialTraits = {
             { 0.4 { LastingEffect COPULATION_SKILL }}
@@ -875,7 +875,7 @@
           stripEquipment = false 
           requirements = {
             { 1.0 FurnitureType "THRONE" }
-            { 1.0 CostInfo GOLD 500 }
+            { 1.0 CostInfo "GOLD" 500 }
             { 0.0 TechId "marriage of convenience" }
           }
         }
@@ -916,7 +916,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
         }
         {
           ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
@@ -924,7 +924,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
         }
 		{
 		  ids = { "NECROMANCER" }
@@ -934,7 +934,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 4000 }
             { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
@@ -951,7 +951,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 3000 }
             { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
@@ -968,7 +968,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 4000 }
             { 0.1 AttractionInfo 1 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 2}
+            { 0.0 CostInfo "CORPSE" 2}
           }
           specialTraits = {
              { 0.03 { AttrBonus DAMAGE 5 }}
@@ -984,7 +984,7 @@
           keybinding = CREATE_IMP
           noAuto = true
           requirements = {
-            { 1.0 CostInfo CORPSE 1}
+            { 1.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              {1.0 { LastingEffect DARKNESS_SOURCE }}
@@ -1001,7 +1001,7 @@
           requirements = {
             { 0.0 TechId "zombie hoards" }
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
-            { 0.6 CostInfo CORPSE 1}
+            { 0.6 CostInfo "CORPSE" 1}
           }
         }
         {
@@ -1013,7 +1013,7 @@
           initialRecruitment = 1
           requirements = {
             { 0.0 TechId "zombie hoards" }
-            { 1.0 CostInfo CORPSE 1}
+            { 1.0 CostInfo "CORPSE" 1}
           }
         }
         {
@@ -1036,7 +1036,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 TechId "skeleton hoards" }
-            { 0.8 CostInfo CORPSE 1}
+            { 0.8 CostInfo "CORPSE" 1}
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
           }
         }
@@ -1077,7 +1077,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 TechId "vampire hoards" }
-            { 1.0 CostInfo CORPSE 1}
+            { 1.0 CostInfo "CORPSE" 1}
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
           }
         }
@@ -1091,7 +1091,7 @@
           requirements = {
             { 0.0 TechId "vampire hoards" }
             { 1.0 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
-            { 1.0 CostInfo CORPSE 1}
+            { 1.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 0.3 { LastingEffect TELEPATHY }}
@@ -1124,7 +1124,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 TechId "mummy hoards" }
-            { 0.8 CostInfo CORPSE 1}
+            { 0.8 CostInfo "CORPSE" 1}
             { 1.0 AttractionInfo 1 {FurnitureType "GRAVE"}}
           }
         }
@@ -1138,7 +1138,7 @@
           requirements = {
             { 0.0 TechId "mummy hoards" }
             { 1.0 AttractionInfo 1 {FurnitureType "COFFIN3"}}
-            { 1.0 CostInfo CORPSE 1}
+            { 1.0 CostInfo "CORPSE" 1}
 		  }
           specialTraits = {
              { 0.3 { ExtraTraining MELEE 3}}
@@ -1257,7 +1257,7 @@
 		    { 1.00 { ExtraBodyPart WING 2 AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
           requirements = {
-            { 1 ExponentialCost GOLD 20 5 7 }
+            { 1 ExponentialCost "GOLD" 20 5 7 }
           }
         }
         {
@@ -1388,7 +1388,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 0.1 { ExtraBodyPart HEAD 1}}
@@ -1406,7 +1406,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
             { 0.1 AttractionInfo 1 {FurnitureType "ARCHERY_RANGE"}}
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 0.3 { LastingEffect SLOWED }}
@@ -1421,7 +1421,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
             { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 0.3 { LastingEffect TELEPATHY }}
@@ -1440,7 +1440,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
             { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 1.0 { LastingEffect BAD_BREATH }}
@@ -1455,7 +1455,7 @@
           requirements = {
             { 0.3 AttractionInfo 1 {FurnitureType "DEMON_SHRINE"}}
             { 0.0 FurnitureType "DEMON_SHRINE" }
-            { 0.0 CostInfo DEMON_PIETY 300 }
+            { 0.0 CostInfo "DEMON_PIETY" 300 }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
@@ -1469,7 +1469,7 @@
           requirements = {
             { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
             { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
-            { 0.0 CostInfo DEMON_PIETY 1000 }            
+            { 0.0 CostInfo "DEMON_PIETY" 1000 }            
             { 0.0 NegateRequirement TechId "combat succubus" }		  
           }
           specialTraits = {
@@ -1484,7 +1484,7 @@
           requirements = {
             { 0.3 AttractionInfo 3 {FurnitureType "DEMON_SHRINE"}}
             { 0.0 FurnitureType "DEMON_SHRINE" }
-            { 0.0 CostInfo DEMON_PIETY 3000 }
+            { 0.0 CostInfo "DEMON_PIETY" 3000 }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
@@ -1562,7 +1562,7 @@
           traits = { FIGHTER }
           requirements = {
             { 0.0 RecruitmentInfo {"DARK_ELVES_ALLY"} 3 FIGHTER }
-            { 1.0 CostInfo GOLD 20 }
+            { 1.0 CostInfo "GOLD" 20 }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
@@ -1573,7 +1573,7 @@
           traits = { FIGHTER }
           requirements = {
             { 0.0 RecruitmentInfo {"ORC_VILLAGE"} 3 FIGHTER }
-            { 1.0 CostInfo GOLD 5 }
+            { 1.0 CostInfo "GOLD" 5 }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
@@ -1585,7 +1585,7 @@
 		  stripEquipment = false
           requirements = {
             { 0.0 RecruitmentInfo {"HARPY_CAVE"} 3 FIGHTER }
-            { 1.0 CostInfo GOLD 12 }
+            { 1.0 CostInfo "GOLD" 12 }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 8 AttrBonus DEFENSE 5}}
@@ -1597,7 +1597,7 @@
 		  stripEquipment = false
           requirements = {
             { 0.0 RecruitmentInfo {"OGRE_CAVE" "ORC_VILLAGE"} 3 FIGHTER }
-            { 1.0 CostInfo GOLD 12 }
+            { 1.0 CostInfo "GOLD" 12 }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 8 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
@@ -1611,7 +1611,7 @@
           requirements = {
             { 0.0 TechId "humanoid mutation" }
             { 0.0 Pregnancy }
-            { 1.0 CostInfo GOLD 100 }
+            { 1.0 CostInfo "GOLD" 100 }
           }
           specialTraits = {
              { 0.1 { LastingEffect INSANITY}}
@@ -1626,7 +1626,7 @@
           requirements = {
             { 0.0 TechId "beast mutation" }
             { 0.0 Pregnancy }
-            { 1.0 CostInfo GOLD 100 }
+            { 1.0 CostInfo "GOLD" 100 }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
@@ -1640,7 +1640,7 @@
           requirements = {
             { 1.0 FurnitureType "THRONE" }
             { 1.0 FurnitureType "PORTAL" }
-            { 1.0 CostInfo GOLD 500 }
+            { 1.0 CostInfo "GOLD" 500 }
             { 0.0 TechId "dragon taming" }
           }
           specialTraits = {
@@ -1655,7 +1655,7 @@
           requirements = {
             { 1.0 FurnitureType "THRONE" }
             { 1.0 FurnitureType "PORTAL" }
-            { 1.0 CostInfo GOLD 500 }
+            { 1.0 CostInfo "GOLD" 500 }
             { 0.0 TechId "demonic alliance" }
           }
           specialTraits = {
@@ -1718,7 +1718,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
@@ -1729,7 +1729,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
@@ -1740,7 +1740,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
+          requirements = { {  1.0 CostInfo "IRON" 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}
           }
@@ -1753,7 +1753,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 4000 }
             { 0.1 AttractionInfo 5 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 5 }
+            { 0.0 CostInfo "CORPSE" 5 }
           }
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
@@ -1771,7 +1771,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 3000 }
             { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 3}
+            { 0.0 CostInfo "CORPSE" 3}
           }
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
@@ -1789,7 +1789,7 @@
           requirements = {
             { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
             { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
-            { 0.0 CostInfo DEMON_PIETY 1000 }
+            { 0.0 CostInfo "DEMON_PIETY" 1000 }
             { 0.0 TechId "combat succubus" }
           }
           specialTraits = {
@@ -1811,7 +1811,7 @@
 		    { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
           requirements = {
-            { 1 ExponentialCost GOLD 30 5 4 }
+            { 1 ExponentialCost "GOLD" 30 5 4 }
           }
         }
         {
@@ -1942,7 +1942,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 0.1 { ExtraBodyPart HEAD 1}}
@@ -1960,7 +1960,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
             { 0.1 AttractionInfo 1 {FurnitureType "ARCHERY_RANGE"}}
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 0.3 { LastingEffect SLOWED }}
@@ -1975,7 +1975,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
             { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 0.3 { LastingEffect TELEPATHY }}
@@ -1994,7 +1994,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
             { 0.1 AttractionInfo 1 {FurnitureType "TRAINING_IRON"}}
-            { 0.0 CostInfo CORPSE 1}
+            { 0.0 CostInfo "CORPSE" 1}
           }
           specialTraits = {
              { 1.0 { LastingEffect BAD_BREATH }}
@@ -2009,7 +2009,7 @@
           requirements = {
             { 0.3 AttractionInfo 1 {FurnitureType "DEMON_SHRINE"}}
             { 0.0 FurnitureType "DEMON_SHRINE" }
-            { 0.0 CostInfo DEMON_PIETY 300 }
+            { 0.0 CostInfo "DEMON_PIETY" 300 }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
@@ -2023,7 +2023,7 @@
           requirements = {
             { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
             { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
-            { 0.0 CostInfo DEMON_PIETY 1000 }            
+            { 0.0 CostInfo "DEMON_PIETY" 1000 }            
             { 0.0 NegateRequirement TechId "combat succubus" }		  
           }
           specialTraits = {
@@ -2038,7 +2038,7 @@
           requirements = {
             { 0.3 AttractionInfo 3 {FurnitureType "DEMON_SHRINE"}}
             { 0.0 FurnitureType "DEMON_SHRINE" }
-            { 0.0 CostInfo DEMON_PIETY 3000 }
+            { 0.0 CostInfo "DEMON_PIETY" 3000 }
             { 0.0 TechId "absorbtion" }
           }
           specialTraits = {
@@ -2118,7 +2118,7 @@
 		  stripEquipment = false
           requirements = {
             { 0.0 RecruitmentInfo {"DARK_ELVES_ALLY"} 3 FIGHTER }
-            { 1.0 CostInfo GOLD 20 }
+            { 1.0 CostInfo "GOLD" 20 }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -2 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
@@ -2130,7 +2130,7 @@
 		  stripEquipment = false
           requirements = {
             { 0.0 RecruitmentInfo {"ORC_VILLAGE"} 3 FIGHTER }
-            { 1.0 CostInfo GOLD 5 }
+            { 1.0 CostInfo "GOLD" 5 }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -2 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
@@ -2142,7 +2142,7 @@
 		  stripEquipment = false
           requirements = {
             { 0.0 RecruitmentInfo {"HARPY_CAVE"} 3 FIGHTER }
-            { 1.0 CostInfo GOLD 12 }
+            { 1.0 CostInfo "GOLD" 12 }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -2 AttrBonus DEFENSE -5}}
@@ -2154,7 +2154,7 @@
 		  stripEquipment = false
           requirements = {
             { 0.0 RecruitmentInfo {"OGRE_CAVE" "ORC_VILLAGE"} 3 FIGHTER }
-            { 1.0 CostInfo GOLD 12 }
+            { 1.0 CostInfo "GOLD" 12 }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -2 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
@@ -2168,7 +2168,7 @@
           requirements = {
             { 0.0 TechId "humanoid mutation" }
             { 0.0 Pregnancy }
-            { 1.0 CostInfo GOLD 100 }
+            { 1.0 CostInfo "GOLD" 100 }
           }
           specialTraits = {
              { 0.1 { LastingEffect INSANITY}}
@@ -2183,7 +2183,7 @@
           requirements = {
             { 0.0 TechId "beast mutation" }
             { 0.0 Pregnancy }
-            { 1.0 CostInfo GOLD 100 }
+            { 1.0 CostInfo "GOLD" 100 }
           }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
@@ -2197,7 +2197,7 @@
           requirements = {
             { 1.0 FurnitureType "THRONE" }
             { 1.0 FurnitureType "PORTAL" }
-            { 1.0 CostInfo GOLD 500 }
+            { 1.0 CostInfo "GOLD" 500 }
             { 0.0 TechId "dragon taming" }
           }
           specialTraits = {
@@ -2212,7 +2212,7 @@
           requirements = {
             { 1.0 FurnitureType "THRONE" }
             { 1.0 FurnitureType "PORTAL" }
-            { 1.0 CostInfo GOLD 500 }
+            { 1.0 CostInfo "GOLD" 500 }
             { 0.0 TechId "demonic alliance" }
           }
           specialTraits = {
@@ -2225,7 +2225,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
@@ -2236,7 +2236,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
@@ -2247,7 +2247,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          requirements = { {  1.0 CostInfo "IRON" 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
           specialTraits = {
     		 { 1.00 { AttrBonus DAMAGE -5 AttrBonus SPELL_DAMAGE -5 AttrBonus RANGED_DAMAGE -5 AttrBonus DEFENSE -5}}
           }
@@ -2260,7 +2260,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 4000 }
             { 0.1 AttractionInfo 5 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 5 }
+            { 0.0 CostInfo "CORPSE" 5 }
           }
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
@@ -2278,7 +2278,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 3000 }
             { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 3}
+            { 0.0 CostInfo "CORPSE" 3}
           }
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
@@ -2347,7 +2347,7 @@
           requirements = {
             { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
             { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
-            { 0.0 CostInfo DEMON_PIETY 1000 }
+            { 0.0 CostInfo "DEMON_PIETY" 1000 }
             { 0.0 TechId "combat succubus" }
           }
           specialTraits = {
@@ -2359,18 +2359,18 @@
     {
         { ids = { "WINGED_IMP" } traits = { WORKER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100
          specialTraits = {{ 1.00 { ExtraBodyPart WING 2 AttrBonus DAMAGE 5 AttrBonus SPELL_DAMAGE 5 AttrBonus RANGED_DAMAGE 5 AttrBonus DEFENSE 5}}}
-		 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
-        { ids = { "BENGAL_TIGER" "ELEPHANT" "LION" "SCREE_BIRD" "LIONESS" "MUSHROOM_MAN" "SQUIDHOLDER" "SPRITE" "GARGOYLE" "COW_DEMON" "RAT_SOLDIER" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
-        { ids = { "AIR_FAIRY" "DARK_FAIRY" "DEMON_FAIRY" "EARTH_FAIRY" "ELECTRIC_FAIRY" "FIRE_FAIRY" "MAGIC_FAIRY" "NATURE_FAIRY" "LIGHT_FAIRY" "WATER_FAIRY" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
-        { ids = { "ANCIENT_GREEN_DRAGON" "ANCIENT_RED_DRAGON" "ZOMBIE_DRAGON" "SPIRIT_DRAGON" "RED_DRAGONNEWT" "GREEN_DRAGONEWT" "RED_DRAGON" "GREEN_DRAGON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
-        { ids = { "JESTER_PLAYER" "PESEANT" "MILITIA_PLAYER" "PRIEST" "KNIGHT" "AMAZON" "AMAZON_ARCHER" "AMAZON_CHAMPION" "AMAZON_ELDER" "AMAZON_QUEEN" "AMAZON_WAR_MAIDEN" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
-        { ids = { "GNOME" "GNOME_CHIEF" "DWARF" "DWARF_FEMALE" "DWARF_BARON" "KOBOLD" "BANDIT" "LIZARDMAN" "LIZARDLORD" "BANDIT_LEADER" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
-        { ids = { "SPECIAL_BLBN" "SPECIAL_BLBW" "SPECIAL_BLGN" "SPECIAL_BLGW" "SPECIAL_BMBN" "SPECIAL_BMBW" "SPECIAL_BMGN" "SPECIAL_BMGW" "SPECIAL_HLBN" "SPECIAL_HLBW" "SPECIAL_HLGN" "SPECIAL_HLGW" "SPECIAL_HMBN" "SPECIAL_HMBW" "SPECIAL_HMGN" "SPECIAL_HMGW"  } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
-        { ids = { "HYDRA" "MINOTAUR" "UNICORN" "CYCLOPS" "DEMON_DWELLER" "DEMON_LORD" "WITCH" "ADOXIE_HEAD" "ABOMINATION" "ARACHNE" "COW_DEMON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
-        { ids = { "ZOMBIE" "SKELETON" "NECROMANCER" "SKELETON_MAGE" "SKELETON_WARRIOR" "MUMMY" "VAMPIRE" "VAMPIRE_LORD" "SUCCUBUS" "DOPPLEGANGER" "LOST_SOUL" "SPIRIT" "GOBLIN" "ORC" "ORC_MAGE" "OGRE" "HARPY"}  traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
-        { ids = { "FIRE_ELEMENTAL" "WATER_ELEMENTAL" "ENT" "AIR_ELEMENTAL" "FIRE_SPHERE" "EARTH_ELEMENTAL" "IRON_GOLEM" "LAVA_GOLEM" "ADA_GOLEM" "GIANT_ROBOT" "AUTOMATON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
-        { ids = { "ELF" "ELF_ARCHER" "ELF_CHILD" "ELF_LORD" "DARK_ELF" "DARK_ELF_WARRIOR" "DARK_ELF_CHILD" "DARK_ELF_LORD" "DRIAD" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
-        { ids = { "HORSE" "COW" "PIG" "GOAT" "DONKEY" "JACKAL" "DEER" "BOAR" "FOX" "SNAKE" "SPIDER" "FLY" "RAT" "RAVEN" "BAT" "WOLF" "CAVE_BEAR" "WEREWOLF" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost GOLD 0 0 1000 }}}
+		 requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
+        { ids = { "BENGAL_TIGER" "ELEPHANT" "LION" "SCREE_BIRD" "LIONESS" "MUSHROOM_MAN" "SQUIDHOLDER" "SPRITE" "GARGOYLE" "COW_DEMON" "RAT_SOLDIER" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
+        { ids = { "AIR_FAIRY" "DARK_FAIRY" "DEMON_FAIRY" "EARTH_FAIRY" "ELECTRIC_FAIRY" "FIRE_FAIRY" "MAGIC_FAIRY" "NATURE_FAIRY" "LIGHT_FAIRY" "WATER_FAIRY" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
+        { ids = { "ANCIENT_GREEN_DRAGON" "ANCIENT_RED_DRAGON" "ZOMBIE_DRAGON" "SPIRIT_DRAGON" "RED_DRAGONNEWT" "GREEN_DRAGONEWT" "RED_DRAGON" "GREEN_DRAGON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
+        { ids = { "JESTER_PLAYER" "PESEANT" "MILITIA_PLAYER" "PRIEST" "KNIGHT" "AMAZON" "AMAZON_ARCHER" "AMAZON_CHAMPION" "AMAZON_ELDER" "AMAZON_QUEEN" "AMAZON_WAR_MAIDEN" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
+        { ids = { "GNOME" "GNOME_CHIEF" "DWARF" "DWARF_FEMALE" "DWARF_BARON" "KOBOLD" "BANDIT" "LIZARDMAN" "LIZARDLORD" "BANDIT_LEADER" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
+        { ids = { "SPECIAL_BLBN" "SPECIAL_BLBW" "SPECIAL_BLGN" "SPECIAL_BLGW" "SPECIAL_BMBN" "SPECIAL_BMBW" "SPECIAL_BMGN" "SPECIAL_BMGW" "SPECIAL_HLBN" "SPECIAL_HLBW" "SPECIAL_HLGN" "SPECIAL_HLGW" "SPECIAL_HMBN" "SPECIAL_HMBW" "SPECIAL_HMGN" "SPECIAL_HMGW"  } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
+        { ids = { "HYDRA" "MINOTAUR" "UNICORN" "CYCLOPS" "DEMON_DWELLER" "DEMON_LORD" "WITCH" "ADOXIE_HEAD" "ABOMINATION" "ARACHNE" "COW_DEMON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
+        { ids = { "ZOMBIE" "SKELETON" "NECROMANCER" "SKELETON_MAGE" "SKELETON_WARRIOR" "MUMMY" "VAMPIRE" "VAMPIRE_LORD" "SUCCUBUS" "DOPPLEGANGER" "LOST_SOUL" "SPIRIT" "GOBLIN" "ORC" "ORC_MAGE" "OGRE" "HARPY"}  traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
+        { ids = { "FIRE_ELEMENTAL" "WATER_ELEMENTAL" "ENT" "AIR_ELEMENTAL" "FIRE_SPHERE" "EARTH_ELEMENTAL" "IRON_GOLEM" "LAVA_GOLEM" "ADA_GOLEM" "GIANT_ROBOT" "AUTOMATON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
+        { ids = { "ELF" "ELF_ARCHER" "ELF_CHILD" "ELF_LORD" "DARK_ELF" "DARK_ELF_WARRIOR" "DARK_ELF_CHILD" "DARK_ELF_LORD" "DRIAD" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
+        { ids = { "HORSE" "COW" "PIG" "GOAT" "DONKEY" "JACKAL" "DEER" "BOAR" "FOX" "SNAKE" "SPIDER" "FLY" "RAT" "RAVEN" "BAT" "WOLF" "CAVE_BEAR" "WEREWOLF" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true initialRecruitment = 100 requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
     }	
 
     "dark_keeper_modded"
@@ -2431,7 +2431,7 @@
           requirements = {
             { 1.0 FurnitureType "THRONE" }
             { 1.0 FurnitureType "PORTAL" }
-            { 1.0 CostInfo GOLD 500 }
+            { 1.0 CostInfo "GOLD" 500 }
             { 0.0 TechId "dragon taming" }
           }
         }
@@ -2443,7 +2443,7 @@
           requirements = {
             { 1.0 FurnitureType "THRONE" }
             { 1.0 FurnitureType "PORTAL" }
-            { 1.0 CostInfo GOLD 500 }
+            { 1.0 CostInfo "GOLD" 500 }
             { 0.0 TechId "demonic alliance" }
           }
         }
@@ -2453,7 +2453,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
         }
         {
           ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
@@ -2461,7 +2461,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
         }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
@@ -2469,7 +2469,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
+          requirements = { {  1.0 CostInfo "IRON" 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
         }
         {
           ids = { "COMBAT_SUCCUBUS" }
@@ -2479,7 +2479,7 @@
           requirements = {
             { 0.0 AttractionInfo 2 {FurnitureType "DEMON_SHRINE"}}
             { 0.3 AttractionInfo 1 {FurnitureType "BED3"}}
-            { 0.0 CostInfo DEMON_PIETY 1000 }
+            { 0.0 CostInfo "DEMON_PIETY" 1000 }
             { 0.0 TechId "combat succubus" }
           }
         }
@@ -2491,7 +2491,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 4000 }
             { 0.1 AttractionInfo 5 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 5}
+            { 0.0 CostInfo "CORPSE" 5}
           }
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
@@ -2508,7 +2508,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 3000 }
             { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 3}
+            { 0.0 CostInfo "CORPSE" 3}
           }
           specialTraits = {
              { 0.03 { AttrBonus SPELL_DAMAGE 5 }}
@@ -2575,7 +2575,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
         }
         {
           ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
@@ -2583,7 +2583,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
         }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
@@ -2591,7 +2591,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
+          requirements = { {  1.0 CostInfo "IRON" 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
         }
 		{
           ids = { "CYCLOPS" }
@@ -2601,7 +2601,7 @@
           requirements = {
             { 0.0 TechId "cyclops mutation" }
             { 0.0 Pregnancy }
-            { 1.0 CostInfo GOLD 500 }
+            { 1.0 CostInfo "GOLD" 500 }
 		  }
         }
 		{
@@ -2612,7 +2612,7 @@
           requirements = {
             { 0.0 TechId "minotaur mutation" }
             { 0.0 Pregnancy }
-            { 1.0 CostInfo GOLD 500 }
+            { 1.0 CostInfo "GOLD" 500 }
           }
         }
         {
@@ -2643,7 +2643,7 @@
           requirements = {
             { 0.0 MinTurnRequirement 4000 }
             { 0.1 AttractionInfo 3 {FurnitureType "GRAVE"}}
-            { 0.0 CostInfo CORPSE 3}
+            { 0.0 CostInfo "CORPSE" 3}
           }
           specialTraits = {
              { 0.03 { AttrBonus DAMAGE 5 }}
@@ -2671,7 +2671,7 @@
 		  noAuto = true
 		  initialRecruitment = 2
           requirements = {
-            { 1 ExponentialCost GOLD 40 40 4 }
+            { 1 ExponentialCost "GOLD" 40 40 4 }
           }
         }
         {
@@ -2687,7 +2687,7 @@
           traits = { NO_EQUIPMENT }
 		  noAuto = true
           requirements = {
-            { 1.0 CostInfo GOLD 16 }
+            { 1.0 CostInfo "GOLD" 16 }
           }
         }
         {
@@ -2891,7 +2891,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
         }
         {
           ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
@@ -2899,7 +2899,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
         }
         {
           ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
@@ -2907,7 +2907,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo IRON 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
+          requirements = { {  1.0 CostInfo "IRON" 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }
         }
         {
           ids = { "MILITIA_PLAYER" }
@@ -2915,7 +2915,7 @@
           frequency = 0.2
           groupSize = {5 6}
           requirements = {
-            { 1.0 CostInfo GOLD 6 } 
+            { 1.0 CostInfo "GOLD" 6 } 
           }
           specialTraits = {
              { 0.05 { ExtraTraining MELEE 2}}
@@ -2974,7 +2974,7 @@
           consumeIds = true
           requirements = {
             { 0.0 TechId "legendary heroes" }
-            { 1.0 CostInfo GOLD 100 }
+            { 1.0 CostInfo "GOLD" 100 }
           }
           specialTraits = {
              { 0.1 { LastingEffect RAGE}}
@@ -2992,11 +2992,11 @@
           noAuto = true
           initialRecruitment = 4
           requirements = {
-            { 1 ExponentialCost GOLD 30 5 4 }
+            { 1 ExponentialCost "GOLD" 30 5 4 }
           }
         }
         { ids = { "SHIPMENT_START"} consumeIds = true initialRecruitment = 1 stripEquipment = false }
-		{ ids = { "SHIPMENT"} traits = { FIGHTER } frequency = 1.0 stripEquipment = false requirements = { { 1.0 CostInfo GOLD 10 } } }
+		{ ids = { "SHIPMENT"} traits = { FIGHTER } frequency = 1.0 stripEquipment = false requirements = { { 1.0 CostInfo "GOLD" 10 } } }
 		{ ids = { "ADVENTURER" "ADVENTURER_F"} traits = { FIGHTER } frequency = 1.0 }
 		{ ids = { "WARRIOR_ADVENTURER" "WARRIOR_ADVENTURER_FEMALE"} traits = { FIGHTER } frequency = 1.0 requirements = { { 0.0 TechId "distinction" } }}
         { ids = { "MAGE_ADVENTURER" "MAGE_ADVENTURER_FEMALE"} traits = { FIGHTER } frequency = 1.0 requirements = { { 0.0 TechId "reputation" } }}
