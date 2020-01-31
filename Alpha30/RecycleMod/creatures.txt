@@ -1,0 +1,5 @@
+"KEEPER_KNIGHT" modify {
+    skills = append {
+	  "FURNACE" 1.0
+    }
+}

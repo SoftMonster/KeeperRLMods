@@ -1,0 +1,7 @@
+"FURNACE" {
+  "FURNACE"
+  {
+	{item = {Simple "IronOre"} work = 5 cost = "WOOD" 0 tech = none batchSize = 10 requireIngredient = "scrap metal" }
+
+  }
+}
