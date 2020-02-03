@@ -2684,7 +2684,7 @@
         }
 	    {
           ids = { "GOBLIN_KABOOMER_PLAYER" }
-          traits = { NO_EQUIPMENT }
+          traits = { FIGHTER NO_EQUIPMENT }
 		  noAuto = true
           requirements = {
             { 1.0 CostInfo "GOLD" 16 }
