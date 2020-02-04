@@ -587,89 +587,106 @@
         { ids = { "AIR_ELEMENTAL" }   traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "GOLD" 80}   { 0.0 TechId "elite forest magic"   }}}
     }
     
-    "gnomish"
+    "gnomes" modify {
     {
-        {
-          ids = { "IMP" }
-          traits = { WORKER NO_LIMIT NO_EQUIPMENT }
-          spawnLocation = NearLeader
-          keybinding = CREATE_IMP
-          sound = CREATE_IMP 2
-          noAuto = true
-          initialRecruitment = 4
-          requirements = {
-            { 1 ExponentialCost "GOLD" 30 5 4 }
-          }
-        }  
-        {
-          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true
-          consumeIds = true    
-          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
-        }
-        {
-          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true
-          consumeIds = true    
-          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
-        }
-        {
-          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true
-          consumeIds = true    
-          requirements = { {  1.0 CostInfo "IRON" 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
-        }
-        {
-          ids = { "AUTOMATON" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true    
-          requirements = { {  1.0 CostInfo "IRON" 200}  { 0.0 TechId "gnomish smithy" } }
-        }
-        {
+      ids = { "GNOME_PLAYER" }
+      traits = { LEADER }
+      invisible = true
+      initialRecruitment = 0
+      spawnLocation = NearLeader
+    }
+    {
+      ids = { "AUTOMATON_WORKER_WOOD" }
+      traits = { WORKER NO_LIMIT }
+      invisible = true
+      initialRecruitment = 3
+      spawnLocation = NearLeader
+    }
+    {
+      ids = { "AUTOMATON_WORKER_WOOD" }
+      traits = { WORKER NO_LIMIT }
+      requirements = {
+        { 0.0 AssembledRequirement }
+      }
+    }
+    {
+      ids = { "AUTOMATON_WORKER_IRON" }
+      traits = { WORKER NO_LIMIT }
+      requirements = {
+        { 0.0 AssembledRequirement }
+      }
+    }
+    {
+      ids = { "AUTOMATON_CORPUS_WOOD" }
+      traits = { FIGHTER }
+      requirements = {
+        { 0.0 AssembledRequirement }
+      }
+    }
+    {
+      ids = { "LIGHT_AUTOMATON_CORPUS_WOOD" }
+      traits = { FIGHTER }
+      requirements = {
+        { 0.0 AssembledRequirement }
+      }
+    }
+    {
+      ids = { "AUTOMATON_CORPUS_IRON" }
+      traits = { FIGHTER }
+      requirements = {
+        { 0.0 AssembledRequirement }
+      }
+    }
+    {
+      ids = { "LIGHT_AUTOMATON_CORPUS_IRON" }
+      traits = { FIGHTER }
+      requirements = {
+        { 0.0 AssembledRequirement }
+      }
+    }
+    {
+      ids = { "HEAVY_AUTOMATON_CORPUS_IRON" }
+      traits = { FIGHTER }
+      requirements = {
+        { 0.0 AssembledRequirement }
+      }
+	}
+	{
           ids = { "GNOME_PLAYER" }
-          traits = { FIGHTER }
-          frequency = 0.45
+          traits = { FIGHTER LEADER}
+          frequency = 0.15
           specialTraits = {
-            { 0.2 { WorkshopType "WORKSHOP" }}
-            { 0.2 { WorkshopType "FORGE" }}
-            { 0.2 { WorkshopType "JEWELER" }}
-            { 0.2 { LastingEffect DISARM_TRAPS_SKILL }}
-            { 0.2 { LastingEffect SWIMMING_SKILL }}
-            { 0.2 { WorkshopType "LABORATORY" }}
-            { 0.2 { LastingEffect MAGIC_RESISTANCE }}
-            { 0.2 { LastingEffect REGENERATION }}
-            { 0.2 { LastingEffect TELEPATHY }}
-            { 0.2 { LastingEffect SLEEP_RESISTANT }}
-            { 0.2 { LastingEffect NIGHT_VISION }}
-            { 0.2 { LastingEffect HATE_ELVES }}
-            { 0.2 { LastingEffect HATE_HUMANS }}
+            { 0.05 { WorkshopType "WORKSHOP" }}
+            { 0.05 { WorkshopType "FORGE" }}
+            { 0.1 { WorkshopType "JEWELER" }}
+            { 0.05 { LastingEffect DISARM_TRAPS_SKILL }}
+            { 0.1 { LastingEffect SWIMMING_SKILL }}
+            { 0.1 { WorkshopType "LABORATORY" }}
+            { 0.05 { LastingEffect MAGIC_RESISTANCE }}
+            { 0.05 { LastingEffect REGENERATION }}
+            { 0.1 { LastingEffect TELEPATHY }}
+            { 0.1 { LastingEffect SLEEP_RESISTANT }}
+            { 0.1 { LastingEffect NIGHT_VISION }}
+            { 0.05 { LastingEffect HATE_ELVES }}
+            { 0.05 { LastingEffect HATE_HUMANS }}
             { 1.0 { AttrBonus SPELL_DAMAGE 10 ExtraTraining SPELL 12 }}
 		  }
 		}
 		{
           ids = { "GNOME_CROSSBOWMAN_PLAYER" }
-          traits = { FIGHTER }
-          frequency = 0.5
+          traits = { FIGHTER LEADER }
+          frequency = 0.2
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
             { 0.2 AttractionInfo 1 {FurnitureType "ARCHERY_RANGE"}}
             { 0.0 TechId "archery" }}
           specialTraits = {
-            { 0.2 { LastingEffect DISARM_TRAPS_SKILL }}
-            { 0.2 { LastingEffect SWIMMING_SKILL }}
-            { 0.2 { WorkshopType "LABORATORY" }}
-            { 0.1 { LastingEffect MAGIC_RESISTANCE }}
-            { 0.2 { LastingEffect RANGED_RESISTANCE }}
-            { 0.1 { LastingEffect REGENERATION }}
-            { 0.1 { LastingEffect TELEPATHY }}
-            { 0.1 { LastingEffect SLEEP_RESISTANT }}
+            { 0.25 { LastingEffect DISARM_TRAPS_SKILL }}
+            { 0.1 { LastingEffect SWIMMING_SKILL }}
+            { 0.05 { LastingEffect MAGIC_RESISTANCE }}
+            { 0.05 { LastingEffect RANGED_RESISTANCE }}
+            { 0.05 { LastingEffect REGENERATION }}
+            { 0.05 { LastingEffect TELEPATHY }}
             { 0.4 { LastingEffect NIGHT_VISION }}
             { 0.2 { LastingEffect HATE_ELVES }}
             { 0.2 { LastingEffect HATE_HUMANS }}
@@ -677,17 +694,16 @@
         }
 		{
           ids = { "GNOME_FIRE_MAGE_PLAYER" "GNOME_MAGE_PLAYER" }
-          traits = { FIGHTER }
-          frequency = 0.45
+          traits = { FIGHTER LEADER }
+          frequency = 0.15
           requirements = {
             { 0.2 AttractionInfo 1 {FurnitureType "BOOKCASE_IRON"}}
             { 0.0 TechId "advanced sorcery" }}
           specialTraits = {
-            { 0.1 { WorkshopType "JEWELER" }}
-            { 0.2 { LastingEffect DISARM_TRAPS_SKILL }}
-            { 0.2 { LastingEffect SWIMMING_SKILL }}
-            { 0.1 { WorkshopType "LABORATORY" }}
-            { 0.2 { LastingEffect MAGIC_RESISTANCE }}
+            { 0.2 { WorkshopType "JEWELER" }}
+            { 0.05 { LastingEffect SWIMMING_SKILL }}
+            { 0.2 { WorkshopType "LABORATORY" }}
+            { 0.05 { LastingEffect MAGIC_RESISTANCE }}
 			{ 0.2 { LastingEffect FIRE_RESISTANT }}
 			{ 0.05 { LastingEffect POISON_RESISTANT }}
             { 0.4 { LastingEffect TELEPATHY }}
@@ -700,8 +716,8 @@
         }
 		{
           ids = { "GNOME_MAGE_PLAYER" }
-          traits = { FIGHTER }
-          frequency = 0.35
+          traits = { FIGHTER LEADER }
+          frequency = 0.15
           requirements = {
             { 0.2 AttractionInfo 1 {FurnitureType "BOOKCASE_WOOD"}}
             { 0.0 TechId "sorcery" }}
@@ -723,7 +739,7 @@
         }
         {
           ids = { "GNOME_FIRE_WIZARD_PLAYER" "GNOME_FIRE_WIZARD_PLAYER" }
-          traits = { FIGHTER }
+          traits = { FIGHTER LEADER }
           frequency = 0.65
 		  consumeIds = true
           requirements = {
@@ -732,21 +748,11 @@
         }
         {
           ids = { "GNOME_WIZARD_PLAYER" "GNOME_WIZARD_PLAYER" }
-          traits = { FIGHTER }
+          traits = { FIGHTER LEADER }
           frequency = 0.65
 		  consumeIds = true
           requirements = {
             { 0.0 TechId "gnome wizards" }
-          }
-        }
-        {
-          ids = { "MUSHROOM_MAN" }
-          traits = { FIGHTER }
-          frequency = 0.2
-		  consumeIds = true
-          initialRecruitment = 1
-          requirements = {
-            { 0.0 TechId "alchemical conversion" }
           }
         }
     }

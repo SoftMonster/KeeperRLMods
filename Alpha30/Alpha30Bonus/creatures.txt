@@ -359,6 +359,30 @@
         { Potion Heal FLESH 1 4 0.2 }
         { Simple "Torch" 1 1 0.1 }
     }
+	}
+ "GNOME" modify {
+      viewId = { "gnome" }
+      attr = {
+        DAMAGE 12
+        DEFENSE 13 
+      }
+      body = {
+        type = Humanoid MEDIUM
+      }
+      spellSchools = { "gnomeish" } #Modded
+		spells = { "repair automaton" }
+      chatReactionFriendly = "talks about crafting"
+      chatReactionHostile = "\"Die!\""
+      skills = {
+        "LABORATORY" 0.3
+        "WORKSHOP" 0.6
+        "FORGE" 0.6
+        "JEWELER" 0.6
+      }
+      name = {
+        name = "gnome"
+        firstNameGen = "DWARF"
+    }
     }
   "GNOME_CHIEF" modify {
     inventory = {
@@ -3846,7 +3870,7 @@
       chatReactionFriendly = "talks about serving the king"
       chatReactionHostile = "\"Die!\""
 	  permanentEffects = {
-        DISARM_TRAPS_SKILL 1
+		RANGED_VULNERABILITY 1
 		MELEE_RESISTANCE 1
 	  }
       skills = {
@@ -3903,7 +3927,6 @@
       chatReactionFriendly = "talks about clubbing things"
       chatReactionHostile = "\"Die!\""
       permanentEffects = {
-	    MELEE_RESISTANCE 1
         RANGED_RESISTANCE 1
 		MAGIC_VULNERABILITY 1
         REGENERATION 1
@@ -4117,7 +4140,6 @@
       chatReactionHostile = "\"Die!\""
 	  permanentEffects = {
         DISARM_TRAPS_SKILL 1
-		MELEE_RESISTANCE 1
 	  }
       skills = {
         "FORGE" 0.8
@@ -4883,15 +4905,16 @@
 #---------------------
   "GNOME_PLAYER"
     {
-      viewId = { "gnome" Rgb 150 90 10 255 } #Modded
+      viewId = { "gnome" } #Modded
       attr = {
-        DAMAGE 10
-        DEFENSE 10 
+        DAMAGE 12
+        DEFENSE 13 
       }
       body = {
         type = Humanoid MEDIUM
       }
       spellSchools = { "gnomeish" } #Modded
+		spells = { "repair automaton" }
       chatReactionFriendly = "talks about crafting"
       chatReactionHostile = "\"Die!\""
       skills = {
@@ -4903,7 +4926,34 @@
       name = {
         name = "gnome"
         firstNameGen = "DWARF"
-      }
+	}
+  }
+"GNOME_CHIEF_PLAYER"
+  {
+    viewId = { "gnome_boss" }
+    attr = {
+      DAMAGE 20
+      DEFENSE 20 
+    }
+    body = {
+      type = Humanoid MEDIUM
+    }
+      spellSchools = { "gnomeish" } #Modded
+		spells = { "repair automaton" }
+    chatReactionFriendly = "talks about digging"
+    chatReactionHostile = "\"Die!\""
+    skills = {
+        "JEWELER" 1
+        "LABORATORY" 0.6
+        "WORKSHOP" 0.8
+        "FORGE" 0.8
+    }
+    name = {
+      name = "gnome chief"
+    }
+    inventory = {
+      { Simple "Sword"}
+	 }
     }
   "GNOME_ALCHEMIST_PLAYER"
     {

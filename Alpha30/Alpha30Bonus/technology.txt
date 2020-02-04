@@ -36,9 +36,9 @@
   "elite metalic magic"      { "Summon automatons."                                           {"master metalic magic"}}
   "elite fire magic"         { "Summon fire elementals."                                      {"master fire magic"}}
 #Gnomeworld
-  "gnomish smithy"           { "Produce automatons."														{"iron working"}}
-  "gnomish alchemy"          { "Produce special potions that are available to gnomes."						{"alchemy"}}
-  "gnomish jewellery"        { "Build a jeweler room and produce magical rings and amulets."				{"jewellery"}}
+  "gnomish magic"			 { "Unlocks the ability to create advanced magic weapons"}
+  "gnomish alchemy"          { "Produce special potions that are available to gnomes."		  {"alchemy"}}
+  "gnomish jewellery"        { "Produce more advanced magical rings and amulets."			  {"jewellery"}}
   "gnome wizards"			 { "Recruit powerful gnome spellcasters. Each type can only be recruited twice" {"master sorcery"}}
 #DwarvenStronghold
   "redemption"               { "Convert the wicked by building torture tables."}
