@@ -686,21 +686,21 @@
   "fae melee boost"
   {
     symbol = "🛡"
-    effect = Chain { Message "Fae Spirit of Endurance invoked." Area 6 Filter ALLY Lasting DEF_BONUS Area 6 Filter ALLY Lasting DAM_BONUS }
+    effect = Chain { Message "Fae Spirit of Endurance invoked." Area 3 Filter ALLY Lasting DEF_BONUS Area 3 Filter ALLY Lasting DAM_BONUS }
     cooldown = 30
     sound = SPELL_DEX_BONUS
   }
   "fae illusion"
   {
     symbol = "🎭"
-    effect = Chain { Message "Magic concealment." Area 6 Filter ALLY Deception Area 6 Filter ALLY Lasting INVISIBLE }
+    effect = Chain { Message "Magic concealment." Area 3 Filter ALLY Lasting INVISIBLE Area 1 Filter ALLY Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 }
     cooldown = 30
     sound = SPELL_TELEPORT
   }
   "fae escape"
   {
     symbol = "✈️"
-    effect = Chain { Message "Fae escape." Deception Area 6 Filter ALLY Lasting INVISIBLE Escape }
+    effect = Chain { Message "Fae escape." Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 Lasting INVISIBLE Escape }
     cooldown = 30
     sound = SPELL_TELEPORT
   }
@@ -708,14 +708,15 @@
   {
     symbol = "🌀"
     range = 12
-    effect = Chain { Message "Fae teleport." Deception Area 6 Filter ALLY Lasting INVISIBLE Teleport }
+    effect = Chain { Message "Magic is commanded." Teleport Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 Lasting INVISIBLE }
     cooldown = 30
+	endOnly = true
     sound = SPELL_DECEPTION
   }
   "fae deception"
   {
     symbol = "🎭"
-    effect = Deception
+    effect = Chain { Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 }
     cooldown = 5
     sound = SPELL_INVISIBILITY
   }
