@@ -465,7 +465,7 @@
     name = "hole"
     viewId = { "pit" }
     blockingEnemies = true
-    tickType = PIT
+    tickType = Builtin PIT
     canBuildOutsideOfTerritory = true
     canSilentlyReplace = true
   }
@@ -477,7 +477,7 @@
     blockVision = { NORMAL ELF }
     strength = 80
   usageType = UsageEffect "sleep in" Lasting SLEEP
-    tickType = BED
+    tickType = Builtin BED
     bedType = CAGE
     canBuildOutsideOfTerritory = true
     canSilentlyReplace = true
