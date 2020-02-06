@@ -337,3 +337,8 @@
    { viewId = "iron_hero_altar" symbol = "&" color = ColorId DARK_GRAY roundShadow = true }
    { viewId = "gold_hero_altar" symbol = "&" color = ColorId YELLOW roundShadow = true }
    { viewId = "ada_hero_altar"  symbol = "&" color = ColorId LIGHT_GRAY roundShadow = true }
+
+ #MODDED by Righteous Februrary 2020 (Adventurer update part 2)
+
+  { "barbarian" "@" ColorId YELLOW }
+  { "barbarian_female" "@" ColorId YELLOW }

@@ -4316,7 +4316,7 @@
         AMBUSH_SKILL 1
       }
       maxLevelIncrease = {
-        MELEE 24
+        MELEE 18
         SPELL 12
       }
       hatedByEffect = HATE_HUMANS
@@ -4440,6 +4440,53 @@
         firstNameGen = "FIRST_FEMALE"
         fullTitle = true
        }
+	}
+#-------------------------------------
+#New adventurer calsses Februrary 2020
+#-------------------------------------
+  "BARBARIAN"
+    {
+      viewId = { "barbarian" }
+      attr = {
+        DAMAGE 26
+        DEFENSE 18 
+      }
+      body = {
+        type = Humanoid LARGE
+      }
+      name = {
+        name = "barbarian"
+        firstNameGen = "FIRST_MALE"
+        fullTitle = true
+       }
+      permanentEffects = {
+        REGENERATION 1
+      }
+      maxLevelIncrease = {
+        MELEE 30
+      }
+      hatedByEffect = HATE_HUMANS
+      spellSchools = { "fighter" "barbarian" }
+	   spells = {
+		 "battle cry"
+	  }
+      inventory = {
+        { countMin = 2 countMax = 4 type = Potion Heal FLESH }
+        { Simple "BattleAxe"}
+		{ Simple "LeatherArmor"}
+        { Simple "LeatherBoots"}
+        { Simple "GoldPiece" 16 26 }
+      }
+    }
+  "BARBARIAN_FEMALE" inherit "BARBARIAN"
+    {
+      viewId = { "barbarian_female" }
+      gender = FEMALE
+      name = {
+        name = "warrior"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
 	}
 #------------------------
 #Ungrouped Misc Units

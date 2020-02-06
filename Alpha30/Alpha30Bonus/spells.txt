@@ -815,3 +815,101 @@
     cooldown = 100
     sound = SPELL_FIRE_SPHERE_PET
   }
+#------------------------------
+#Barbarian Skills Feb 2020
+#------------------------------
+"wild swing"
+  {
+    symbol = "🌀💥"
+    effect = Chain { Area 1 Damage DAMAGE CUT CircularBlast }
+    cooldown = 2
+    sound = BLADE_DAMAGE
+  }
+"blood rage"
+  {
+    symbol = "💪"
+    effect = Chain { Lasting RAGE Lasting SPEED Lasting INSANITY }
+    cooldown = 90
+    sound = SPELL_STR_BONUS
+  }
+"air render"
+  {
+    symbol = "☽"
+    effect = Chain { Damage DAMAGE CUT }
+	range = 3
+    cooldown = 12
+	endOnly = true
+    sound = SPELL_AIR_BLAST
+  }
+"martial blast"
+  {
+    symbol = "💥"
+    effect = Chain { Area 2 CircularBlast }
+    cooldown = 2
+    sound = SPELL_AIR_BLAST
+  }
+"martial strike"
+  {
+    symbol = "💥"
+    effect = Chain { Damage DAMAGE CUT Blast }
+	range = 4
+    cooldown = 20
+    sound = BLUNT_DAMAGE
+  }
+"break through"
+  {
+    symbol = "💥➭"
+    effect = Chain { Damage DAMAGE CUT DestroyWalls DIG }
+	range = 1
+    cooldown = 5
+    sound = BLUNT_DAMAGE
+  }
+"throw sand" 
+ {
+   symbol = "△"
+   range = 4
+   effect = ChooseRandom { Lasting BLIND FixedDamage DAMAGE 1 CUT }
+   cooldown = 10
+   sound = SHOOT_BOW
+   message = "throw sand!" "throws sand!"
+ }
+"decapitate"
+ {
+   symbol = "👱"
+   range = 1
+   effect = LoseBodyPart HEAD
+   cooldown = 200
+   sound = BLADE_DAMAGE
+ }
+"leg strike"
+ {
+   symbol = "👞"
+   range = 1
+   effect = LoseBodyPart LEG
+   cooldown = 50
+   sound = BLADE_DAMAGE
+ }
+"arm strike"
+ {
+   symbol = "✋"
+   range = 1
+   effect = LoseBodyPart ARM
+   cooldown = 50
+   sound = BLADE_DAMAGE
+ }
+"curse of rage"
+ {
+   symbol = "😈"
+   effect = Chain { IncreaseAttr DAMAGE 1 IncreaseAttr DEFENSE -1 }
+   targetSelf = true
+   cooldown = 500
+   sound = SPELL_WORD_OF_POWER
+ }
+"heroic leap"
+{
+  symbol = "↷"
+  effect = Chain { Jump CircularBlast }
+  range = 3
+  cooldown = 10
+  message = "jump" "jumps"
+}

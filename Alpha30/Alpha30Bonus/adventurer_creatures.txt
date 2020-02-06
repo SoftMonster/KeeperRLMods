@@ -8,6 +8,8 @@
 { "MAGE_ADVENTURER" "MAGE_ADVENTURER_FEMALE" }			LAWFUL             "(Challenge) Train in the way of a true wizard and conquer the land with spells!"
 "6_ranger_adventurer"
 { "RANGER_ADVENTURER" "RANGER_ADVENTURER_FEMALE" }		LAWFUL             "(Challenge) Play as an archer. Use archery and some melee skill to kill your enemies!"
+"7_barbarian"
+{ "BARBARIAN" "BARBARIAN_FEMALE" }						LAWFUL             "(Challenge) Play as a Barbarian. Crush all in your path with overwhelming strength!"
 "7_dwarf_baron"
 { "DWARF_BARON" }										LAWFUL             "(Challenge) March solo against the foes of the dwarves."
 "8_minotaur"
