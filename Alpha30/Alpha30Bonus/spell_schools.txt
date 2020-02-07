@@ -324,10 +324,10 @@
 	"curse of rage" 1
 	"throw sand" 2
 	"heroic leap" 3
-	"arm strike" 4
-	"leg strike" 4
-	"air render" 5
-	"martial blast" 6
+	"martial blast" 4
+	"arm strike" 5
+	"leg strike" 5
+	"air render" 6
 	"break through" 7
 	"martial strike" 8
 	"blood rage" 9
