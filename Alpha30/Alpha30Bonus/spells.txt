@@ -844,7 +844,7 @@
 "martial blast"
   {
     symbol = "💥"
-    effect = Chain { Area 2 CircularBlast }
+    effect = Chain { Area 2 Blast }
     cooldown = 2
     sound = SPELL_AIR_BLAST
   }
@@ -877,7 +877,7 @@
  {
    symbol = "👱"
    range = 1
-   effect = LoseBodyPart HEAD
+   effect = Chain { LoseBodyPart HEAD Lasting BLEEDING }
    cooldown = 200
    sound = BLADE_DAMAGE
  }
@@ -885,7 +885,7 @@
  {
    symbol = "👞"
    range = 1
-   effect = LoseBodyPart LEG
+   effect = Chain { LoseBodyPart LEG Lasting BLEEDING }
    cooldown = 50
    sound = BLADE_DAMAGE
  }
@@ -893,7 +893,7 @@
  {
    symbol = "✋"
    range = 1
-   effect = LoseBodyPart ARM
+   effect = Chain { LoseBodyPart ARM Lasting BLEEDING }
    cooldown = 50
    sound = BLADE_DAMAGE
  }
@@ -911,5 +911,6 @@
   effect = Chain { Jump CircularBlast }
   range = 3
   cooldown = 10
+  endOnly = true
   message = "jump" "jumps"
 }
