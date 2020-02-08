@@ -630,10 +630,6 @@
   }
 
   #Fairies
-  "FEY_SAND" inherit "SAND"
-  {
-    viewId = { "fey_sand" }
-  }
   "FEY_GRASS" inherit "GRASS"
   {
     viewId = { "fey_grass" }
@@ -641,10 +637,6 @@
   "FEY_HILL" inherit "HILL"
   {
     viewId = { "fey_hill" }
-  }
-  "FEY_WATER" inherit "WATER"
-  {
-    viewId = { "fey_water" }
   }
   "FEY_TREE1" inherit "CANIF_TREE" { viewId = { "fey_tree" }}
   "FEY_TREE2" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId LIGHT_BROWN }}

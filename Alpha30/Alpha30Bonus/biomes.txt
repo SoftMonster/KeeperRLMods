@@ -44,11 +44,10 @@
 {
   lakes = {
     size = {5}
-    count = {3}
+    count = {0}
   }
-  overrideWaterType = "FEY_WATER"
   items = "magicShrooms"
-  itemCount = {0}
+  itemCount = {50}
   mountains = {
     lowlandRatio = 0.95
     hillRatio = 0.02
@@ -56,13 +55,12 @@
     grass = "FEY_GRASS"
     mountain = "MOUNTAIN"
     mountainDeep = "MOUNTAIN"
-    mountainFloor = "FEY_SAND"
+    mountainFloor = "SAND"
   }
   wildlife = {
-    count = { 6 12 }
+    count = { 20 30 }
     all = {
       4 "RAVEN"
-      4 "UNICORN"
     }
   }
   forests = {
