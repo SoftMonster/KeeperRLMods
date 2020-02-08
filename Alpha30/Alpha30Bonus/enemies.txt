@@ -1833,7 +1833,7 @@
     tribe = HUMAN
     type = MapLayoutId "castle64"
     inhabitants = {
-      leader = { { "DUKE" } }
+      leader = { { "KING" } }
       fighters = {
         count = {40 41}
         all = {
