@@ -644,7 +644,7 @@
   }
   "FEY_WATER" inherit "WATER"
   {
-    viewId = { "water" Rgb 190 190 40 255 }
+    viewId = { "fey_water" }
   }
   "FEY_TREE1" inherit "CANIF_TREE" { viewId = { "fey_tree" }}
   "FEY_TREE2" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId LIGHT_BROWN }}

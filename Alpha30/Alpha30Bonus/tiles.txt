@@ -350,7 +350,8 @@
   { viewId = "lava_rock" symbol = "." color = ColorId BLUE canMirror = true extraBorders = { "magma" }  }
 
  #Fairies
-  { viewId = "fey_sand" symbol = "." color = ColorId YELLOW canMirror = true extraBorders = { "water" } }
-  { viewId = "fey_hill" symbol = "𝀢" color = ColorId DARK_GREEN isSymbolFont = true canMirror = true extraBorders = { "water" "fey_sand" } }
-  { viewId = "fey_grass" symbol = "𝃰" color = ColorId GREEN isSymbolFont = true canMirror = true extraBorders = { "water" "fey_hill" "sand" "fey_sand" } }
+  { viewId = "fey_water" symbol = "~" color = ColorId LIGHT_BLUE waterSides = "fey_water" animated = true spriteColor = Rgb 190 190 40 255 }
+  { viewId = "fey_sand" symbol = "." color = ColorId YELLOW canMirror = true extraBorders = { "fey_water" } }
+  { viewId = "fey_hill" symbol = "𝀢" color = ColorId DARK_GREEN isSymbolFont = true canMirror = true extraBorders = { "fey_water" "fey_sand" } }
+  { viewId = "fey_grass" symbol = "𝃰" color = ColorId GREEN isSymbolFont = true canMirror = true extraBorders = { "fey_water" "fey_hill" "fey_sand" } }
   { viewId = "fey_tree" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
