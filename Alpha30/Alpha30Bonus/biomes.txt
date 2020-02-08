@@ -40,6 +40,46 @@
   }
 }
 
+"ENCHANTED_FOREST"
+{
+  lakes = {
+    size = {5}
+    count = {3}
+  }
+  overrideWaterType = "FEY_WATER"
+  items = "magicShrooms"
+  itemCount = {0}
+  mountains = {
+    lowlandRatio = 0.95
+    hillRatio = 0.02
+    hill = "FEY_HILL"
+    grass = "FEY_GRASS"
+    mountain = "MOUNTAIN"
+    mountainDeep = "MOUNTAIN"
+    mountainFloor = "FEY_SAND"
+  }
+  wildlife = {
+    count = { 6 12 }
+    all = {
+      4 "RAVEN"
+      4 "UNICORN"
+    }
+  }
+  forests = {
+    {
+      ratio = 0.9
+      density = 0.3
+      onType = "FEY_GRASS"
+      trees = "vegetationFey"
+    }
+  }
+  darkKeeperEnemies = {
+  }
+  whiteKeeperEnemies = {
+  }
+}
+
+
 "CITY"
 {
   lakes = {

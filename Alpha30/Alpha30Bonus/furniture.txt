@@ -2,7 +2,7 @@
     name = "golden bookcase"
     viewId = { "bookcase_gold" }
     blockMovement = true
-  usageType = BuiltinUsageId STUDY
+    usageType = BuiltinUsageId STUDY
     usageTime = 5
     canHideHere = true
     fire = 70
@@ -629,7 +629,34 @@
 	}
   }
 
-
+  #Fairies
+  "FEY_SAND" inherit "SAND"
+  {
+    viewId = { "fey_sand" }
+  }
+  "FEY_GRASS" inherit "GRASS"
+  {
+    viewId = { "fey_grass" }
+  }
+  "FEY_HILL" inherit "HILL"
+  {
+    viewId = { "fey_hill" }
+  }
+  "FEY_WATER" inherit "WATER"
+  {
+    viewId = { "water" Rgb 190 190 40 255 }
+  }
+  "FEY_TREE1" inherit "CANIF_TREE" { viewId = { "fey_tree" }}
+  "FEY_TREE2" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId LIGHT_BROWN }}
+  "FEY_TREE3" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId WHITE }}
+  "FEY_TREE4" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId YELLOW }}
+  "FEY_TREE5" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId RED }}
+  "FEY_TREE6" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId LIGHT_BLUE }}
+  "FEY_TREE7" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId LIGHT_GRAY }}
+  "FEY_TREE8" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId PURPLE }}
+  "FEY_TREE9" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId ORANGE }}
+  "FEY_TREE10" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId DARK_GRAY }}
+  
   
 ####################
 #Ideas for new traps

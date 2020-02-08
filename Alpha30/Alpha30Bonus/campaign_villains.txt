@@ -10,7 +10,7 @@ EVIL_KEEPER modify append {
    {{ "centar_king" } "CENTAURS" "Centaurs" MAIN }
    {{ "armored_cow_demon" } "COW_DEMONS" "cow demons" MAIN }
    {{ "hell_portal" } "HELL_PORTAL" "Hell portal" MAIN }
-   #{{ "fairy_queen" } "TOWER_OF_ILLUSIA" "Tower of Illusia" MAIN }
+   {{ "fairy_queen" } "TOWER_OF_ILLUSIA" "Tower of Illusia" MAIN }
    {{ "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN }
    {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
 

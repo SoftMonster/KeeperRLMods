@@ -20,6 +20,21 @@
 	  "BURNT_TREE" 1
     }	
   }
+  "vegetationFey"
+  {
+    {
+	  "FEY_TREE1" 1
+	  "FEY_TREE2" 1
+	  "FEY_TREE3" 1
+	  "FEY_TREE4" 1
+	  "FEY_TREE5" 1
+	  "FEY_TREE6" 1
+	  "FEY_TREE7" 1
+	  "FEY_TREE8" 1
+	  "FEY_TREE9" 1
+	  "FEY_TREE10" 1
+    }	
+  }
   "emptyChests"
   {
     {
