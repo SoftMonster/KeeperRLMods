@@ -5689,7 +5689,7 @@
       }
     }
   "SHIPMENT_START" inherit "SHIPMENT" {}
-	}
+
   "KING"
 	  {
         name = {
@@ -5701,7 +5701,7 @@
       attr = {
         DAMAGE 10
         DEFENSE 35
-		SPELL 40
+		SPELL_DAMAGE 40
       }
       permanentEffects = {
         HATE_GREENSKINS 1
@@ -5722,17 +5722,17 @@
 		 }
       inventory = {
 		{ type = Simple "GoldenStaff" prefixChance = 1 }
-		{ Simple "AdaArmor" prefixChance = 0.8 }
-		{ Simple "AdaBoots" prefixChance = 0.8 }
-		{ Simple "AdaGloves" prefixChance = 0.8 }
-		{ Simple "AdaHelm" prefixChance = 0.8 }
+		{ type = Simple "AdaArmor" prefixChance = 0.8 }
+		{ type = Simple "AdaBoots" prefixChance = 0.8 }
+		{ type = Simple "AdaGloves" prefixChance = 0.8 }
+		{ type = Simple "AdaHelm" prefixChance = 0.8 }
 		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.5 }
 		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.5 }
 		{ Potion Permanent SPEED 1 1 0.5 }
 		{ Potion RegrowBodyPart 1 1 1 0.5 }
         { type = Potion Heal FLESH countMin = 2 countMax = 4 }
 		{ Ring MAGIC_RESISTANCE 1 1 0.8}
-        { Ring POISON_RESISTANCE 1 1 0.8}
+        { Ring POISON_RESISTANT 1 1 0.8}
         { Amulet REGENERATION 1 1 1.0}
       }
 
