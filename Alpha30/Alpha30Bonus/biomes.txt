@@ -57,9 +57,15 @@
     }
   }
   darkKeeperEnemies = {
-    { id = "CITY_BUILDING" count = { 15 16 } }
+    { id = "CITY_BUILDING" count = { 2 3 } }
+    { id = "CITY_BUILDING2" count = { 2 3 } }
+    { id = "CITY_BARRACKS" count = { 1 2 } }
+    { id = "CITY_GROUP" count = { 2 3 } }
   }
   whiteKeeperEnemies = {
-    { id = "CITY_BUILDING" count = { 15 16 } }
+    { id = "CITY_BUILDING" count = { 2 3 } }
+    { id = "CITY_BUILDING2" count = { 2 3 } }
+    { id = "CITY_BARRACKS" count = { 1 2 } }
+    { id = "CITY_GROUP" count = { 2 3 } }
   }
 }

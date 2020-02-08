@@ -68,3 +68,8 @@
       floorOutside = "FLOOR_STONE1_COSMETIC"
       floorInside = "FLOOR_STONE1_COSMETIC"
   }
+  "CITY_BRICK_GRASS" inherit "BRICK"
+  {
+      floorOutside = "GRASS"
+      floorInside = "FLOOR_STONE1_COSMETIC"
+  }

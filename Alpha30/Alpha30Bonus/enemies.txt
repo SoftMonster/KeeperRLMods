@@ -1773,11 +1773,8 @@
   "CITY_BUILDING" inherit "HUMAN_COTTAGE"
   {
   discoverable = false
-  config = {
-    guardianInfo = "PESEANT" 0.003 1 2
-  }
   settlement = append {
-    buildingId = "CITY_BRICK"
+    buildingId = "CITY_BRICK_GRASS"
     cropsDistance = none
     inhabitants = {
       fighters = {
@@ -1785,10 +1782,45 @@
         all = { 1 "PESEANT" }
         }
       }
-    furniture = { }
     outsideFeatures = "dungeonOutside"
     }
   }  
+  "CITY_BUILDING2" inherit "HUMAN_COTTAGE"
+  {
+  discoverable = false
+  settlement = append {
+    cropsDistance = none
+    type = Builtin TOWER
+    buildingId = "CITY_BRICK_GRASS"
+    shopItems = { "armory" }
+    }
+  }
+  "CITY_BARRACKS" inherit "WARRIORS"
+  {
+  discoverable = false
+  settlement = append {
+    buildingId = "CITY_BRICK"
+    shopItems = { "armory" }
+    }
+  }
+  "CITY_GROUP"
+  {
+    discoverable = false
+    settlement = {
+    type = Builtin VILLAGE
+    tribe = HUMAN
+    inhabitants = {
+      leader = { { "KNIGHT" } }
+      fighters = {
+        count = {7 10}
+        all = { 1 "PESEANT" }
+      }
+    }
+    buildingId = "CITY_BRICK_GRASS"
+    furniture = { "roomFurniture" }
+    outsideFeatures = "villageOutside"
+    }
+  }
   "KNIGHTS_VOLCANIC" inherit "KNIGHTS"
   {
     biomes = { "VOLCANIC" }  
