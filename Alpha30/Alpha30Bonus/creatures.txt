@@ -5735,7 +5735,7 @@
         { Ring POISON_RESISTANT 1 1 0.8}
         { Amulet REGENERATION 1 1 1.0}
       }
-
+}
 ##########################
 #Ideas for Future modding#
 ##########################

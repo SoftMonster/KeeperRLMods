@@ -342,3 +342,6 @@
 
   { "barbarian" "@" ColorId YELLOW }
   { "barbarian_female" "@" ColorId YELLOW }
+  
+ #King
+  { "king" "@" ColorId PURPLE }
