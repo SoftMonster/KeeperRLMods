@@ -44,28 +44,43 @@
   mountains = {
     lowlandRatio = 0.98
     hillRatio = 0.01
-    hill = "FLOOR_STONE1_COSMETIC"
-    grass = "FLOOR_STONE1_COSMETIC"
+    hill = "GRASS"
+    grass = "GRASS"
     mountain = "CASTLE_WALL"
     mountainDeep = "CASTLE_WALL"
     mountainFloor = "FLOOR_STONE1_COSMETIC"
   }
+  forests = {
+    {
+      ratio = 0.3
+      density = 0.15
+      onType = "GRASS"
+      trees = "vegetationLow"
+    }
+    {
+      ratio = 0.25
+      density = 0.2
+      onType = "GRASS"
+      trees = "vegetationLow"
+    }
+  }
   wildlife = {
-    count = { 6 12 }
+    count = { 4 6 }
     all = {
-      4 "PESEANT"
+      1 "RAT"
+	  1 "DEER"
     }
   }
   darkKeeperEnemies = {
-    { id = "CITY_BUILDING" count = { 2 3 } }
-    { id = "CITY_BUILDING2" count = { 2 3 } }
+    { id = "CITY_BUILDING" count = { 1 2 } }
+    { id = "CITY_BUILDING2" count = { 1 2 } }
     { id = "CITY_BARRACKS" count = { 1 2 } }
-    { id = "CITY_GROUP" count = { 2 3 } }
+    { id = "CITY_GROUP" count = { 7 8 } }
   }
   whiteKeeperEnemies = {
-    { id = "CITY_BUILDING" count = { 2 3 } }
-    { id = "CITY_BUILDING2" count = { 2 3 } }
+    { id = "CITY_BUILDING" count = { 1 2 } }
+    { id = "CITY_BUILDING2" count = { 1 2 } }
     { id = "CITY_BARRACKS" count = { 1 2 } }
-    { id = "CITY_GROUP" count = { 2 3 } }
+    { id = "CITY_GROUP" count = { 7 8 } }
   }
 }
