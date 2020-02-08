@@ -4,6 +4,7 @@ EVIL_KEEPER modify append {
 #    { "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN #Modded
 
 #Modded main villains
+   {{ "king" } "KING" "The King" MAIN}
    {{ "ancient_reddragon" } "DRAGONS" "Greater dragon nest" MAIN }
    {{ "amazon_queen" } "AMAZONS" "Amazons" MAIN }
    {{ "centar_king" } "CENTAURS" "Centaurs" MAIN }
@@ -44,6 +45,7 @@ LAWFUL_KEEPER modify append {
     {{ "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER }
 
 #Modded lawful ally
+    {{ "king" } "KING" "The King" ALLY}
     {{ "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY } #Modded
 }
 
@@ -52,6 +54,7 @@ EVIL_ADVENTURER modify append {
 
 #Extra modded villains
 
+    {{ "king" } "KING" "The King" MAIN}
     {{ "hell_portal" } "HELL_PORTAL" "Hell portal" MAIN }
     {{ "amazon_queen" } "AMAZONS" "Amazons" MAIN }
     {{ "centar_king" } "CENTAURS" "Centaurs" MAIN }
