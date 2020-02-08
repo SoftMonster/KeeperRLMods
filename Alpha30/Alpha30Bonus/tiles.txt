@@ -345,3 +345,6 @@
   
  #King
   { "king" "@" ColorId PURPLE }
+
+ #Volcano
+  { "lava_rock" "." ColorId BLUE }

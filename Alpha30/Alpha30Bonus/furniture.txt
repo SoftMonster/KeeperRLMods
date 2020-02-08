@@ -252,7 +252,7 @@
   
   "RED_MUD" inherit "MUD"
   {
-    viewId = { "mud" ColorId RED }
+    viewId = { "lava_rock" }
    }
   "FLOOR_STONE1_COSMETIC" inherit "MUD"
   {
