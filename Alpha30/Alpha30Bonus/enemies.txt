@@ -1088,7 +1088,7 @@
     race = "Tower Guardians"
     stockpiles = {{ "gold" 340 "TREASURE_CHEST" }}
     buildingId = "BRICK"
-    furniture = { "castleFurniture" }
+    furniture = { "palace_furniture" }
     outsideFeatures = "castleOutside"
   }
   discoverable = false
@@ -1120,7 +1120,7 @@
     }
     race = "Tower Inhabitants"
     buildingId = "BRICK"
-    furniture = { "castleFurniture" }
+    furniture = { "palace_furniture" }
     outsideFeatures = "castleOutside"
   }
   discoverable = false
@@ -1149,7 +1149,7 @@
 	  }
     }
     buildingId = "BRICK"
-    furniture = { "roomFurniture" }
+    furniture = { "palace_furniture" }
   }
   config = {
     leaderAsFighter = true

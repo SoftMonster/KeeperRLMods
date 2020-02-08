@@ -148,7 +148,7 @@
     "BED1" 1
     "GROUND_TORCH" 1
     "FOUNTAIN" 1
-    "CHEST" 1
+    "FIREPROOF_CHEST" 1
     "FLOOR_STONE1_COSMETIC" 30  
   }
   }
