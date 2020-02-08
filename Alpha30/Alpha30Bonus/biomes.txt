@@ -75,13 +75,15 @@
     { id = "CITY_BUILDING" count = { 1 2 } }
     { id = "CITY_BUILDING2" count = { 1 2 } }
     { id = "CITY_BARRACKS" count = { 1 2 } }
-    { id = "CITY_GROUP" count = { 7 8 } }
+    { id = "CITY_GROUP" count = { 5 7 } }
+	{ id = "CITY_GROUP_SHOP" count = { 2 4 } }
   }
   whiteKeeperEnemies = {
     { id = "CITY_BUILDING" count = { 1 2 } }
     { id = "CITY_BUILDING2" count = { 1 2 } }
     { id = "CITY_BARRACKS" count = { 1 2 } }
-    { id = "CITY_GROUP" count = { 7 8 } }
+    { id = "CITY_GROUP" count = { 5 7 } }
+	{ id = "CITY_GROUP_SHOP" count = { 2 4 } }
   }
 }
 "PALACE"
@@ -124,7 +126,11 @@
     }
   }
   darkKeeperEnemies = {
+	{ id = "CITY_GROUP_SHOP" count = { 5 6 } }
+    { id = "CITY_GROUP" count = { 2 3 } }
   }
   whiteKeeperEnemies = {
+	{ id = "CITY_GROUP_SHOP" count = { 5 6 } }
+    { id = "CITY_GROUP" count = { 2 3 } }
   }
 }

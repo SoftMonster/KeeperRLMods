@@ -1821,6 +1821,25 @@
     outsideFeatures = "villageOutside"
     }
   }
+  "CITY_GROUP_SHOP"
+  {
+    discoverable = false
+    settlement = {
+    type = Builtin VILLAGE
+    tribe = HUMAN
+    inhabitants = {
+      leader = { { "KNIGHT" } }
+      fighters = {
+        count = {7 10}
+        all = { 1 "PESEANT" }
+      }
+    }
+    buildingId = "CITY_BRICK_GRASS"
+	shopItems = { "villageShop" }
+    furniture = { "roomFurniture" }
+    outsideFeatures = "villageOutside"
+    }
+  }
   "KNIGHTS_VOLCANIC" inherit "KNIGHTS"
   {
     biomes = { "VOLCANIC" }  
@@ -1835,11 +1854,11 @@
     inhabitants = {
       leader = { { "KING" } }
       fighters = {
-        count = {40 41}
+        count = {55 62}
         all = {
           1 "PRIEST"
           3 "KNIGHT"
-          1 "ARCHER"
+          2 "ARCHER"
         }
       }
     }
