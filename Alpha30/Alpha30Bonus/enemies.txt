@@ -1,3 +1,9 @@
+  "RED_DRAGON" modify {
+    biomes = { "VOLCANIC" }  
+    settlement = append {
+      buildingId = "VOLCANIC_BRICK"
+	}
+  }
   "ORC_VILLAGE" modify {
     settlement = {
       type = Builtin VILLAGE
@@ -1486,7 +1492,7 @@
         }
       }
     }
-    createOnBones = 1.0 { "KNIGHTS" }
+    createOnBones = 1.0 { "KNIGHTS_VOLCANIC" }
     config = {
       immigrantInterval = 300
       maxPopulation = 20
@@ -1509,6 +1515,7 @@
   }
   "HELL_PORTAL"
   {
+    biomes = { "VOLCANIC" }  
     settlement = {
       type = Builtin CAVE
       tribe = MONSTER
@@ -1518,7 +1525,7 @@
       locationName = "hell portal"
       race = "hell knights"
       furniture = { "roomFurniture" }
-      buildingId = "BRICK"
+      buildingId = "VOLCANIC_BRICK"
     }
     config = {
       immigrantInterval = 20
@@ -1727,6 +1734,30 @@
         }
       }
     }
+  }
+  "DRAGON_NEWT_COTTAGE" inherit "HUMAN_COTTAGE"
+  {
+  discoverable = false
+  config = {
+    guardianInfo = "RED_DRAGONNEWT_WILDLIFE" 0.003 1 2
+  }
+  settlement = append {
+    buildingId = "VOLCANIC_BRICK"
+    cropsDistance = none
+    inhabitants = {
+      fighters = {
+        count = {2 4}
+        all = { 1 "RED_DRAGONNEWT_WILDLIFE" }
+        }
+      }
+    furniture = { }
+    outsideFeatures = "dungeonOutside"
+    }
+  }
+  
+  "KNIGHTS_VOLCANIC" inherit "KNIGHTS"
+  {
+    biomes = { "VOLCANIC" }  
   }
 
 ####################################################################

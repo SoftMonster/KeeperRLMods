@@ -250,9 +250,13 @@
   "CASTLE_D3" { name = "dungeon entrance" viewId = { "castle_d3" } onBuilt = DOWN_STAIRS usageType = BuiltinUsageId STAIRS canBuildOutsideOfTerritory = true }
   "CASTLE_D4" { name = "castle" viewId = { "castle_d4" } blockMovement = true blockVision = { NORMAL ELF } wall = true canBuildOutsideOfTerritory = true }
   
+  "RED_MUD" inherit "MUD"
+  {
+    viewId = { "mud" ColorId RED }
+   }
   "ELVEN_RUG"
   {
-    name = "elven rug of concealment"
+    name = "elven rug of concealent"
     viewId = { "floor_invi" }
     layer = FLOOR
     lastingEffect = ENEMY INVISIBLE 0

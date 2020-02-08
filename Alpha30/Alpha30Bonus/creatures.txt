@@ -1748,7 +1748,12 @@
         { Ring RAGE 1 1 0.03}
       }
     }
-
+     "RED_DRAGONNEWT_WILDLIFE" inherit "RED_DRAGONNEWT"
+	 {
+      courage = -1
+      noChase = true
+	 }
+	 
 #---------------------------------------------------------
 #Hell knight faction
 #---------------------------------------------------------

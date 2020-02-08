@@ -58,3 +58,7 @@
 	  wall = "MOUNTAIN"
 	  floorOutside = "SHALLOW_WATER_COSMETIC"
     }
+  "VOLCANIC_BRICK" inherit "BRICK"
+  {
+      floorOutside = "RED_MUD"
+  }

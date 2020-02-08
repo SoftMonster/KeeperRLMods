@@ -110,7 +110,7 @@ Public Class frmSprites
     End Sub
 
     Private Function GetSub(tmpcol As Color) As Color
-        Dim av As Long = (CLng(tmpcol.R) + CLng(tmpcol.B) + CLng(tmpcol.B)) / 3
+        Dim av As Long = (CLng(tmpcol.R) + CLng(tmpcol.B) + CLng(tmpcol.B))
         Return Color.FromArgb(av, av, av)
     End Function
 
