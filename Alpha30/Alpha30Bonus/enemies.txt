@@ -2,6 +2,7 @@
     biomes = { "VOLCANIC" }  
     settlement = append {
       buildingId = "VOLCANIC_BRICK"
+      tribe = BANDIT
 	}
   }
   "ORC_VILLAGE" modify {
@@ -80,6 +81,7 @@
     }
   }
 "KNIGHTS" modify {
+  biomes = { "CITY"} 
   settlement = {
     type = Builtin CASTLE
     tribe = HUMAN
@@ -109,7 +111,7 @@
     locationNameGen = "TOWN"
     race = "humans"
     stockpiles = {{ "gold" 140 "FLOOR_SPIKES_TRAP" } }  #Modded
-    buildingId = "BRICK"
+    buildingId = "CITY_BRICK"
     shopItems = { "villageShop" }
     furniture = { "castleFurniture" }
     outsideFeatures = "castleOutside"
@@ -1470,7 +1472,7 @@
   {
     settlement = {
       type = Builtin CASTLE
-      tribe = HUMAN
+      tribe = BANDIT
 	  race = "dragons"
 	  buildingId = "RUINS"
 	  furniture = { "randomTerrain" }
@@ -1518,7 +1520,7 @@
     biomes = { "VOLCANIC" }  
     settlement = {
       type = Builtin CAVE
-      tribe = MONSTER
+      tribe = BANDIT
       inhabitants = {
         leader = { { "HELL_PORTAL" } }
       }
@@ -1743,6 +1745,7 @@
   }
   settlement = append {
     buildingId = "VOLCANIC_BRICK"
+    tribe = BANDIT
     cropsDistance = none
     inhabitants = {
       fighters = {
@@ -1754,7 +1757,38 @@
     outsideFeatures = "dungeonOutside"
     }
   }
-  
+  "HELL_KNIGHT_ISLAND" inherit "DRAGON_NEWT_COTTAGE"
+  {
+  settlement = append {
+    type = Builtin MINETOWN
+    outsideFeatures = "fireproof_chests"
+    inhabitants = {
+      fighters = {
+        count = {2 4}
+        all = { 1 "HELL_KNIGHT" }
+        }
+      }
+    }
+  }
+  "CITY_BUILDING" inherit "HUMAN_COTTAGE"
+  {
+  discoverable = false
+  config = {
+    guardianInfo = "PESEANT" 0.003 1 2
+  }
+  settlement = append {
+    buildingId = "CITY_BRICK"
+    cropsDistance = none
+    inhabitants = {
+      fighters = {
+        count = {2 4}
+        all = { 1 "PESEANT" }
+        }
+      }
+    furniture = { }
+    outsideFeatures = "dungeonOutside"
+    }
+  }  
   "KNIGHTS_VOLCANIC" inherit "KNIGHTS"
   {
     biomes = { "VOLCANIC" }  

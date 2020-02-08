@@ -61,4 +61,10 @@
   "VOLCANIC_BRICK" inherit "BRICK"
   {
       floorOutside = "RED_MUD"
+      floorInside = "RED_MUD"
+  }
+  "CITY_BRICK" inherit "BRICK"
+  {
+      floorOutside = "FLOOR_STONE1_COSMETIC"
+      floorInside = "FLOOR_STONE1_COSMETIC"
   }

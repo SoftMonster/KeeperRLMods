@@ -23,15 +23,43 @@
     }
   }
   darkKeeperEnemies = {
-    { id = "DRAGON_NEWT_COTTAGE" count = { 3 5 } }
+    { id = "DRAGON_NEWT_COTTAGE" count = { 3 4 } }
+    { id = "HELL_KNIGHT_ISLAND" count = { 2 3 } }
   }
   whiteKeeperEnemies = {
-    { id = "DRAGON_NEWT_COTTAGE" count = { 3 5 } }
+    { id = "DRAGON_NEWT_COTTAGE" count = { 3 4 } }
+    { id = "HELL_KNIGHT_ISLAND" count = { 2 3 } }
   }
-  darkKeeperBaseEnemies = {
-    { id = "DRAGON_NEWT_COTTAGE" count = { 3 5 } }
+}
+
+"CITY"
+{
+  lakes = {
+    size = {5 15}
+    count = {2 6}
   }
-  whiteKeeperBaseEnemies = {
-    { id = "DRAGON_NEWT_COTTAGE" count = { 3 5 } }
+  overrideWaterType = "GRASS"
+  items = "magicShrooms"
+  itemCount = {0}
+  mountains = {
+    lowlandRatio = 0.98
+    hillRatio = 0.01
+    hill = "FLOOR_STONE1_COSMETIC"
+    grass = "FLOOR_STONE1_COSMETIC"
+    mountain = "CASTLE_WALL"
+    mountainDeep = "CASTLE_WALL"
+    mountainFloor = "FLOOR_STONE1_COSMETIC"
+  }
+  wildlife = {
+    count = { 6 12 }
+    all = {
+      4 "PESEANT"
+    }
+  }
+  darkKeeperEnemies = {
+    { id = "CITY_BUILDING" count = { 15 16 } }
+  }
+  whiteKeeperEnemies = {
+    { id = "CITY_BUILDING" count = { 15 16 } }
   }
 }

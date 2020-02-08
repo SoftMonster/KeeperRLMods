@@ -254,6 +254,10 @@
   {
     viewId = { "mud" ColorId RED }
    }
+  "FLOOR_STONE1_COSMETIC" inherit "MUD"
+  {
+    viewId = { "stone_floor1" }
+   }
   "ELVEN_RUG"
   {
     name = "elven rug of concealent"
@@ -581,6 +585,13 @@
     strength = 50
     populationIncrease = 10 none
     destroyFX = { DESTROY_FURNITURE Rgb 190 190 40 255 }
+  }
+  "FIREPROOF_CHEST"
+  {
+    name = "chest"
+    viewId = { "chest" }
+    canHideHere = true
+    usageType = BuiltinUsageId CHEST
   }
 
   "TRAINING_WOOD_GM" inherit "TRAINING_WOOD" { canBuildOutsideOfTerritory = true }

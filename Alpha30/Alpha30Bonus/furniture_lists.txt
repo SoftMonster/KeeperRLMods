@@ -110,4 +110,10 @@
       "GIANT_MUSHROOM" 1
 	}
   }
+  "fireproof_chests"
+  {
+    {
+	  "FIREPROOF_CHEST" 1
+    }
+  }
 
