@@ -14,7 +14,12 @@
 #############
 # Modded
 #############
-
+  "vegetationBurnt"
+  {
+    {
+	  "BURNT_TREE" 1
+    }	
+  }
   "emptyChests"
   {
     {

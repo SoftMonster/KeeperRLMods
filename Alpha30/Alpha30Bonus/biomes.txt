@@ -19,7 +19,15 @@
   wildlife = {
     count = { 6 12 }
     all = {
-      4 "RED_DRAGONNEWT_WILDLIFE"
+      4 "BAT"
+    }
+  }
+  forests = {
+    {
+      ratio = 0.01
+      density = 0.05
+      onType = "RED_MUD"
+      trees = "vegetationBurnt"
     }
   }
   darkKeeperEnemies = {
