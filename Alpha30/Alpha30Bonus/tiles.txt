@@ -347,4 +347,5 @@
   { "king" "@" ColorId PURPLE }
 
  #Volcano
-  { "lava_rock" "." ColorId BLUE }
+  { viewId = "lava_rock" symbol = "." color = ColorId BLUE canMirror = true waterSides = "magma" }
+
