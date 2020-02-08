@@ -116,4 +116,19 @@
 	  "FIREPROOF_CHEST" 1
     }
   }
-
+  "palace_furniture"
+  {
+    {
+	"WELL" 1
+	"ALTAR" 1
+    "TRAINING_WOOD_NO_BLOCK" 1
+    "BOOKCASE_WOOD_NO_BLOCK" 1
+    "BED3" 1
+    "BED2" 1
+    "BED1" 1
+    "GROUND_TORCH" 1
+    "FOUNTAIN" 1
+    "CHEST" 1
+    "FLOOR_STONE1_COSMETIC" 30  
+  }
+  }

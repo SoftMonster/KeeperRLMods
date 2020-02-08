@@ -104,8 +104,6 @@ LAWFUL_ADVENTURER modify append {
     {{ "male_lion" } "LION_PRIDE" "Pride of Lions" LESSER }
     {{ "rat_king" } "RATMEN" "Rat men" LESSER }
 
-    {{ "duke4" } "KNIGHTS" "Knights" ALLY}
-    {{ "elf_lord" } "ELVES" "Elves" ALLY}
-    {{ "dwarf_baron" } "DWARVES" "Dwarves" ALLY}
+    {{ "duke4" } "KING" "The King" ALLY}
     {{ "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY} #Modded
 }

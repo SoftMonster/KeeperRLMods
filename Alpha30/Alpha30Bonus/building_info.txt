@@ -67,6 +67,7 @@
   {
       floorOutside = "FLOOR_STONE1_COSMETIC"
       floorInside = "FLOOR_STONE1_COSMETIC"
+      prettyFloor = "FLOOR_STONE1_COSMETIC"
   }
   "CITY_BRICK_GRASS" inherit "BRICK"
   {

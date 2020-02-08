@@ -606,6 +606,30 @@
   "GROUND_TORCH_GM" inherit "GROUND_TORCH" { canBuildOutsideOfTerritory = true }
   "TREE_TRUNK_GM" inherit "TREE_TRUNK"  { canBuildOutsideOfTerritory = true  onBuilt = SET_ON_FIRE fire = 1  xForgetAfterBuilding = true }
   
+  #Palace
+  "TRAINING_WOOD_NO_BLOCK"
+  {
+	  name = "wooden training dummy"
+	  viewId = { "training_wood" }
+	  usageType = BuiltinUsageId TRAIN
+	  canHideHere = true
+	  maxTraining = {
+		MELEE 3
+	  }
+  }
+  "BOOKCASE_WOOD_NO_BLOCK"
+  {
+	name = "wooden bookcase"
+	viewId = { "bookcase_wood" }
+	usageType = BuiltinUsageId STUDY
+	usageTime = 5
+	canHideHere = true
+	maxTraining = {
+	SPELL 3
+	}
+  }
+
+
   
 ####################
 #Ideas for new traps

@@ -1825,6 +1825,71 @@
   {
     biomes = { "VOLCANIC" }  
   }
+  
+  "KING"
+  {
+  biomes = { "PALACE" }  
+  settlement = {
+    tribe = HUMAN
+    type = MapLayoutId "castle64"
+    inhabitants = {
+      leader = { { "DUKE" } }
+      fighters = {
+        count = {40 41}
+        all = {
+          1 "PRIEST"
+          3 "KNIGHT"
+          1 "ARCHER"
+        }
+      }
+    }
+   locationNameGen = "TOWN"
+   race = "humans"
+   buildingId = "CITY_BRICK"
+   shopItems = { "villageShop" }
+   furniture = { "palace_furniture" }
+   outsideFeatures = "castleOutside"
+  }
+  config = {
+    immigrantInterval = 300
+    maxPopulation = 26
+    ghostProb = 0.1
+    spawnGhosts = 6
+  }
+  behaviour = {
+    minPopulation = 12
+    minTeamSize = 10
+    triggers = {
+      RoomTrigger "THRONE" 0.0003
+      RoomTrigger "IMPALED_HEAD" 0.0001
+      SelfVictims
+      NumConquered 3
+      StolenItems
+      FinishOff
+      Proximity
+    }
+    attackBehaviour = KillLeader
+    ransom = 0.9 400
+  }
+  immigrants = {
+    {
+      ids = {"ARCHER"}
+      traits = {FIGHTER}
+      frequency = 1
+    }
+    {
+      ids = {"KNIGHT"}
+      traits = {FIGHTER}
+      frequency = 1
+    }
+  }
+  levelConnection = {
+    topLevel = MainEnemy
+    levels = {
+      { ExtraEnemy { "MINOTAUR" { 1 2 } } 40 40 MAZE }
+    }
+  }
+}
 
 ####################################################################
 #Bottomless Dungeon
