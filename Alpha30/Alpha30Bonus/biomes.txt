@@ -149,8 +149,8 @@
     hillRatio = 0.01
     hill = "GRASS"
     grass = "GRASS"
-    mountain = "CASTLE_WALL"
-    mountainDeep = "CASTLE_WALL"
+    mountain = "FEY_WALL"
+    mountainDeep = "FEY_WALL"
     mountainFloor = "FLOOR_STONE1_COSMETIC"
   }
   forests = {

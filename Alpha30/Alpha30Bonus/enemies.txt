@@ -1089,7 +1089,7 @@
     }
     race = "Tower Guardians"
     stockpiles = {{ "gold" 340 "TREASURE_CHEST" }}
-    buildingId = "BRICK"
+    buildingId = "FAIRY_BRICK"
     furniture = { "palace_furniture" }
     outsideFeatures = "castleOutside"
   }
@@ -1121,7 +1121,7 @@
 	  }
     }
     race = "Tower Inhabitants"
-    buildingId = "BRICK"
+    buildingId = "FAIRY_BRICK"
     furniture = { "palace_furniture" }
     outsideFeatures = "castleOutside"
   }
@@ -1150,7 +1150,7 @@
 		}
 	  }
     }
-    buildingId = "BRICK"
+    buildingId = "FAIRY_BRICK"
     furniture = { "palace_furniture" }
   }
   config = {

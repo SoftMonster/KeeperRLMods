@@ -245,3 +245,4 @@
   { viewId = "fey_hill" symbol = "𝀢" color = ColorId DARK_GREEN isSymbolFont = true canMirror = true extraBorders = { "water" "sand" } }
   { viewId = "fey_grass" symbol = "𝃰" color = ColorId GREEN isSymbolFont = true canMirror = true extraBorders = { "water" "fey_hill" "sand" } }
   { viewId = "fey_tree" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
+  { viewId = "fey_wall" symbol = "#" color = ColorId PURPLE wallShadow = true wallConnections = true }
