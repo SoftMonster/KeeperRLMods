@@ -32,7 +32,6 @@
 	  "FEY_TREE10" 1
     }	
   }
-  
   "vegetationWebs"
   {
     {
@@ -42,7 +41,14 @@
       "BIG_SPIDER_WEB" 1
 	}
   }
-  
+  "vegetationHaunted"
+  {
+    {
+      "DECID_TREE" 50
+      "BUSH" 25
+      "GRAVE" 3
+	}
+  }  
   "emptyChests"
   {
     {

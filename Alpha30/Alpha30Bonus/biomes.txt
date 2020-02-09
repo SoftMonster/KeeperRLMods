@@ -201,3 +201,36 @@
     }
   }
 }
+  
+"HAUNTED_GRASSLAND" inherit "GRASSLAND"
+{
+  forests = {
+    {
+      ratio = 0.3
+      density = 0.25
+      onType = "GRASS"
+      trees = "vegetationHaunted"
+    }
+    {
+      ratio = 0.8
+      density = 0.25
+      onType = "HILL"
+      trees = "vegetationHaunted"
+    }
+  }
+  wildlife = {
+    count = { 3 6 }
+    all = {
+      4 "LOST_SOUL"
+      2 "DISENCHANTER"
+    }
+  }
+  darkKeeperEnemies = {
+    { id = "CORPSES"count = {2} }
+    { id = "RUINS" count = { 4 6 } }
+  }
+  whiteKeeperEnemies = {
+    { id = "CORPSES"count = {2} }
+    { id = "RUINS" count = { 4 6 } }
+  }  
+}

@@ -340,7 +340,7 @@
   }
 
   "SHELOB" modify { #Modded
-    biomes = { "SPIDER_MOUNTAIN"}
+    biomes = { "SPIDER_MOUNTAIN" }
     settlement = {
       type = Builtin VILLAGE
       tribe = SHELOB
@@ -370,6 +370,7 @@
     createOnBones = 0.6 { "DWARF_CAVE" "KOBOLD_CAVE" "OGRE_CAVE" "HARPY_CAVE" "OGRE_CAVE" "HARPY_CAVE"} #Modded
   }
   "CEMETERY" modify { #Modded
+    biomes = { "HAUNTED_GRASSLAND" }
     settlement = {
     type = Builtin CEMETERY
       inhabitants = {
