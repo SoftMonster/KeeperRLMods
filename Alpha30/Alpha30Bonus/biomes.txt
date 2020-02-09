@@ -44,8 +44,9 @@
 {
   lakes = {
     size = {5}
-    count = {0}
+    count = {3}
   }
+  overrideWaterType = "FEY_WATER"
   items = "magicShrooms"
   itemCount = {50}
   mountains = {

@@ -642,6 +642,10 @@
   {
     viewId = { "fey_wall" }
   }
+  "FEY_WATER" inherit "WATER"
+  {
+    viewId = { "fey_water" }
+  }
   "FEY_TREE1" inherit "CANIF_TREE" { viewId = { "fey_tree" }}
   "FEY_TREE2" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId LIGHT_BROWN }}
   "FEY_TREE3" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId WHITE }}
