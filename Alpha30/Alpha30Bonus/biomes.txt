@@ -183,3 +183,21 @@
     { id = "CITY_GROUP" count = { 2 3 } }
   }
 }
+
+"SPIDER_MOUNTAIN" inherit "MOUNTAIN"
+{
+  forests = {
+    {
+      ratio = 0.3
+      density = 0.5
+      onType = "GRASS"
+      trees = "vegetationWebs"
+    }
+    {
+      ratio = 0.8
+      density = 0.5
+      onType = "HILL"
+      trees = "vegetationWebs"
+    }
+  }
+}

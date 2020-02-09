@@ -340,6 +340,7 @@
   }
 
   "SHELOB" modify { #Modded
+    biomes = { "SPIDER_MOUNTAIN"}
     settlement = {
       type = Builtin VILLAGE
       tribe = SHELOB

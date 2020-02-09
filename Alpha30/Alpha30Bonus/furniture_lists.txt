@@ -1,13 +1,10 @@
   "randomTerrain" modify {
     {
-      "STONES" 25 #Modded
+      "STONES" 30 #Modded
 #Modded additional items
 	  "BACKGROUND_RUBBLE" 5	  
-	  "GRAVE" 5
       "BACKGROUND_BOULDER" 5
       "HOLE" 5
-      "LITTLE_SPIDER_WEB" 2
-      "BIG_SPIDER_WEB" 1
 	}
   }
 
@@ -35,6 +32,17 @@
 	  "FEY_TREE10" 1
     }	
   }
+  
+  "vegetationWebs"
+  {
+    {
+      "DECID_TREE" 50
+      "BUSH" 25
+      "LITTLE_SPIDER_WEB" 2
+      "BIG_SPIDER_WEB" 1
+	}
+  }
+  
   "emptyChests"
   {
     {
