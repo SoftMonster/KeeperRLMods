@@ -5689,6 +5689,9 @@
       }
     }
   "SHIPMENT_START" inherit "SHIPMENT" {}
+  "YELLOW_PARROT" inherit "RAVEN" { viewId = { "raven" ColorId YELLOW } name = { name = "yellow parrot" groupName = "flock" }}
+  "RED_PARROT" inherit "RAVEN" { viewId = { "raven" ColorId RED } name = { name = "red parrot" groupName = "flock" }}
+  "BLUE_BIRD" inherit "RAVEN" { viewId = { "raven" ColorId BLUE } name = { name = "blue bird" groupName = "flock" }}
 
   "KING"
 	  {

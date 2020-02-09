@@ -60,7 +60,10 @@
   wildlife = {
     count = { 20 30 }
     all = {
-      4 "RAVEN"
+      1 "RAVEN"
+      1 "YELLOW_PARROT"
+      1 "RED_PARROT"
+      1 "BLUE_BIRD"
     }
   }
   forests = {
