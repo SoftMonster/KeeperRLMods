@@ -77,4 +77,5 @@
   "FAIRY_BRICK" inherit "BRICK"
   {
   	  wall = "FEY_WALL"
+	  floorInside = "FLOOR_STONE1_COSMETIC"
   }
