@@ -5737,7 +5737,74 @@
 		{ Ring MAGIC_RESISTANCE 1 1 0.8}
         { Ring POISON_RESISTANT 1 1 0.8}
         { Amulet REGENERATION 1 1 1.0}
-      }
+	}
+  }
+"BANDIT_PUNK"
+  {
+    viewId = { "bandit_punk" }
+    attr = {
+      DAMAGE 25
+      DEFENSE 23
+	  RANGED_DAMAGE 15
+    }
+    body = {
+      type = Humanoid LARGE
+    }
+    chatReactionFriendly = "curses all law enforcement"
+    chatReactionHostile = "\"Die!\""
+    maxLevelIncrease = {
+      MELEE 4
+    }
+    name = {
+      name = "bandit punk"
+    }
+    hatedByEffect = HATE_HUMANS
+    inventory = {
+        { type = Simple "Mace", alternative = Simple "Axe"}
+        { type = Potion Heal FLESH countMin = 1 countMax = 2 }
+		{ type = Potion Lasting BLIND chance = 0.2 }
+        { type = Simple "Torch" chance = 0.7 }
+        { type = Simple "Bow" chance = 0.6 }
+        { type = Simple "WoodenShield", alternative = Simple "IronShield" chance = 0.4 }
+        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.1 chance = 0.7}
+        { type = Simple "IronBoots", alternative = Simple "AdaBoots" prefixChance = 0.1 chance = 0.5}
+        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.1 chance = 0.1}
+		{ type = Simple "ChainArmor", alternative = Simple "LeatherArmor" prefixChance = 0.1 chance = 0.8}
+        { Simple "FirstAidKit" 1 1 0.1}
+	}
+  }
+"BANDIT_OMALLY"
+  {
+    viewId = { "bandit_omally" }
+    attr = {
+      DAMAGE 30
+      DEFENSE 34
+	  RANGED_DAMAGE 15
+    }
+    body = {
+      type = Humanoid LARGE
+    }
+    chatReactionFriendly = "complains there isn't enough booze."
+    chatReactionHostile = "\"Die!\""
+    maxLevelIncrease = {
+      MELEE 7
+    }
+    name = {
+      name = "Bandit Lord O'mally"
+    }
+    hatedByEffect = HATE_HUMANS
+    inventory = {
+        { type = Simple "OmallyKnife" }
+        { type = Potion Heal FLESH countMin = 3 countMax = 4 }
+		{ type = Potion Lasting BLIND countMin = 1 countMax = 2 }
+        { type = Simple "Bow" }
+        { type = Simple "IronHelm" prefixChance = 0.4 }
+        { type = Simple "IronBoots" prefixChance = 0.4 }
+        { type = Simple "IronGloves" prefixChance = 0.4 }
+		{ type = Simple "ChainArmor" prefixChance = 0.4 }
+		{ Simple "DwarvenBeer" 4 6 }
+
+  }
 }
 ##########################
 #Ideas for Future modding#

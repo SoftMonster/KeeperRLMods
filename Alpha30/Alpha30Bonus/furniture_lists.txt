@@ -164,5 +164,16 @@
     "FOUNTAIN" 1
     "FIREPROOF_CHEST" 1
     "FLOOR_STONE1_COSMETIC" 30  
+    }
   }
+"overgrownRuins"
+{
+  {
+    "CANIF_TREE" 2
+    "BUSH" 1
+	"GROUND_TORCH" 2
+	"MUD" 30
+	"CHEST" 1
+    }
   }
+}

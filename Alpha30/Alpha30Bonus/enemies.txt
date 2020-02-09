@@ -1908,6 +1908,60 @@
     }
   }
 }
+  "OMALLY_BANDITS"
+  {
+  biomes = { "CITY_RUINS" }  
+  settlement = {
+    tribe = BANDIT
+    type = MapLayoutId "ruins70"
+    inhabitants = {
+      leader = { { "BANDIT_OMALLY" } }
+      fighters = {
+        count = {55 62}
+        all = {
+          1 "BANDIT_PUNK"
+          2 "BANDIT"
+        }
+      }
+    }
+   locationNameGen = "TOWN"
+   race = "O'mally Bandits"
+   buildingId = "CITY_BRICK"
+   furniture = { "overgrownRuins" }
+   outsideFeatures = "randomTerrain"
+  }
+  config = {
+    immigrantInterval = 300
+    maxPopulation = 66
+    ghostProb = 0.1
+    spawnGhosts = 6
+  }
+  behaviour = {
+    minPopulation = 42
+    minTeamSize = 14
+    triggers = {
+      SelfVictims
+      StolenItems
+      FinishOff
+      Proximity
+	  Gold 400
+    }
+    attackBehaviour = StealGold
+    ransom = 0.9 340
+  }
+  immigrants = {
+    {
+      ids = {"BANDIT"}
+      traits = {FIGHTER}
+      frequency = 3
+    }
+    {
+      ids = {"BANDIT_PUNK"}
+      traits = {FIGHTER}
+      frequency = 1
+    }
+  }
+}
 
 ####################################################################
 #Bottomless Dungeon

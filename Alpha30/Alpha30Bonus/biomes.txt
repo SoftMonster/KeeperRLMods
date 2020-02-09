@@ -64,6 +64,7 @@
       1 "RAVEN"
       1 "YELLOW_PARROT"
       1 "RED_PARROT"
+      1 "BLUE_BIRD"
       3 "SPRITE"
     }
   }
@@ -236,4 +237,50 @@
     { id = "RUINS" count = { 4 6 } }
   }  
   keeperBiome = none
+}
+"CITY_RUINS"
+{
+  lakes = {
+    size = {5 15}
+    count = {0}
+  }
+  overrideWaterType = "GRASS"
+  items = "magicShrooms"
+  itemCount = {0}
+  mountains = {
+    lowlandRatio = 0.98
+    hillRatio = 0.01
+    hill = "GRASS"
+    grass = "GRASS"
+    mountain = "MOUNTAIN"
+    mountainDeep = "MOUNTAIN2"
+    mountainFloor = "FLOOR"
+  }
+  forests = {
+    {
+      ratio = 0.3
+      density = 0.15
+      onType = "GRASS"
+      trees = "vegetationLow"
+    }
+    {
+      ratio = 0.25
+      density = 0.2
+      onType = "GRASS"
+      trees = "vegetationLow"
+    }
+  }
+  wildlife = {
+    count = { 8 12 }
+    all = {
+      1 "RAT"
+	  2 "DEER"
+    }
+  }
+  darkKeeperEnemies = {
+    { id = "COTTAGE_BANDITS" count = { 5 6 } }
+  }
+  whiteKeeperEnemies = {
+    { id = "COTTAGE_BANDITS" count = { 5 6 } }
+  }
 }

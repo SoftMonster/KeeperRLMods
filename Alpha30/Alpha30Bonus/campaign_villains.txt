@@ -16,6 +16,7 @@ EVIL_KEEPER modify append {
 
 #Modded lesser villains
    {{ "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER }
+   {{ "bandit_omally" } "OMALLY_BANDITS" "O'mally Bandits" LESSER }
    {{ "male_lion" } "LION_PRIDE" "Pride of Lions" LESSER }
    {{ "rat_king" } "RATMEN" "Rat men" LESSER }
    {{ "zombie" } "CEMETERY" "Zombies" LESSER }
@@ -43,6 +44,7 @@ LAWFUL_KEEPER modify append {
     {{ "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER }
     {{ "male_lion" } "LION_PRIDE" "Pride of Lions" LESSER }
     {{ "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER }
+    {{ "bandit_omally" } "OMALLY_BANDITS" "O'mally Bandits" LESSER }
 
 #Modded lawful ally
     {{ "king" } "KING" "The King" ALLY}
@@ -74,6 +76,7 @@ EVIL_ADVENTURER modify append {
     {{ "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER }
     {{ "male_lion" } "LION_PRIDE" "Pride of Lions" LESSER }
     {{ "bandit" } "BANDITS" "Bandits" LESSER }
+    {{ "bandit_omally" } "OMALLY_BANDITS" "O'mally Bandits" LESSER }
     {{ "rat_king" } "RATMEN" "Rat men" LESSER }
     {{ "ent" } "ENTS" "Tree spirits" LESSER }
     {{ "driad" } "DRIADS" "Driads" LESSER }

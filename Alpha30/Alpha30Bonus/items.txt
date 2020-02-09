@@ -359,6 +359,21 @@
 		equipedEffect = { BLEEDING REGENERATION }
 		equipedAbility = "curse"	
 	}
+	"OmallyKnife"
+	{
+		viewId = { "knife" }
+		name = "O'mally's Knife"
+		plural = "O'mally's Knives"
+		weight = 1
+		price = 100
+		itemClass = WEAPON
+		equipmentSlot = WEAPON
+		modifiers = { DAMAGE 9 }
+		weaponInfo = { 
+		attackType = STAB
+        victimEffect = { 1.0 Chain { Lasting POISON Lasting BLEEDING } } }
+		equipedEffect = { POISON_RESISTANT }	
+	}
 #Staff of dungeon master for creative mode. Cannot be wished for.
 #Musn't be given to anything in creature inventory that can be wished for.
 #	"StaffOfDungeonMaster"
