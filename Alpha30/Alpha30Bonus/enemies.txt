@@ -1477,7 +1477,7 @@
       type = Builtin CASTLE
       tribe = BANDIT
 	  race = "dragons"
-	  buildingId = "RUINS"
+	  buildingId = "VOLCANIC_BRICK"
 	  furniture = { "randomTerrain" }
       stockpiles = { { "minerals" 1 "BACKGROUND_RUBBLE" } }
       shopItems = { "jewellery" }
@@ -1845,9 +1845,11 @@
   }
   "KNIGHTS_VOLCANIC" inherit "KNIGHTS"
   {
+    settlement = append {
+      buildingId = "VOLCANIC_BRICK"
+    }
     biomes = { "VOLCANIC" }  
-  }
-  
+  }  
   "KING"
   {
   biomes = { "PALACE" }  

@@ -240,6 +240,7 @@
 
  #Volcano
   { viewId = "lava_rock" symbol = "." color = ColorId BLUE canMirror = true extraBorders = { "magma" }  }
+  { viewId = "volc_wall" symbol = "#" color = ColorId BLUE wallShadow = true wallConnections = true }
 
  #Fairies
   { viewId = "fey_water" symbol = "~" color = ColorId LIGHT_BLUE waterSides = "fey_water" animated = true spriteColor = Rgb 190 190 40 255 }

@@ -426,6 +426,15 @@
     name = "blood-red stairs"
     viewId = { "up_staircase" Rgb 255 0 0 255  }
   }
+  "VOLC_WALL"
+  {
+    name = "wall"
+    viewId = { "volc_wall" }
+    blockMovement = true
+    blockVision = { NORMAL ELF }
+    wall = true
+    buildingSupport = true
+  }
   "TREE_WALL"
   {
     name = "tree wall"

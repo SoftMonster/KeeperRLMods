@@ -62,6 +62,7 @@
   {
       floorOutside = "RED_MUD"
       floorInside = "RED_MUD"
+      wall = "VOLC_WALL"
   }
   "CITY_BRICK" inherit "BRICK"
   {
