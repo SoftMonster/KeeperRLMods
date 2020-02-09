@@ -201,6 +201,7 @@
       trees = "vegetationWebs"
     }
   }
+  keeperBiome = none
 }
   
 "HAUNTED_GRASSLAND" inherit "GRASSLAND"
@@ -234,4 +235,5 @@
     { id = "CORPSES"count = {2} }
     { id = "RUINS" count = { 4 6 } }
   }  
+  keeperBiome = none
 }
