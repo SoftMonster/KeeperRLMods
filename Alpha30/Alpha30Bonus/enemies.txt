@@ -1926,7 +1926,7 @@
     }
    locationNameGen = "TOWN"
    race = "O'mally Bandits"
-   buildingId = "CITY_BRICK"
+   buildingId = "BRICK_RUINS"
    furniture = { "overgrownRuins" }
    outsideFeatures = "randomTerrain"
   }
@@ -1960,6 +1960,12 @@
       traits = {FIGHTER}
       frequency = 1
     }
+  }
+}
+  "COTTAGE_BANDIT_RUINS" inherit "COTTAGE_BANDITS"
+{
+  settlement = append {
+   buildingId = "BRICK_RUINS"
   }
 }
 

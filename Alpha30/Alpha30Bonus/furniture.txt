@@ -220,6 +220,16 @@
 #Modded
 ##########
 
+  "RUINS"
+  {
+    name = "ruin wall"
+    viewId = { "ruin_wall" }
+    blockMovement = true
+    blockVision = { NORMAL ELF }
+    wall = true
+    buildingSupport = true
+  }
+
   "CAVE_BUSHES"
   {
     name = "cave bushes"
