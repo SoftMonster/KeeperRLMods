@@ -435,6 +435,14 @@
     wall = true
     buildingSupport = true
   }
+  "VOLC_STONE_FLOOR"
+  {
+    name = "floor"
+    viewId = { "volc_stone_floor" }
+    luxury = 0.5
+    layer = GROUND
+  }
+
   "TREE_WALL"
   {
     name = "tree wall"

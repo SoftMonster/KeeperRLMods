@@ -60,9 +60,14 @@
     }
   "VOLCANIC_BRICK" inherit "BRICK"
   {
+      floorOutside = "VOLC_STONE_FLOOR"
+      floorInside = "VOLC_STONE_FLOOR"
+      wall = "VOLC_WALL"
+  }
+  "VOLCANIC_ISLAND" inherit "BRICK"
+  {
       floorOutside = "RED_MUD"
       floorInside = "RED_MUD"
-      wall = "VOLC_WALL"
   }
   "CITY_BRICK" inherit "BRICK"
   {
