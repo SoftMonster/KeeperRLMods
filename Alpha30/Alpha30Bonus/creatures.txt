@@ -5811,6 +5811,25 @@
   "BLUE_BIRD" inherit "RAVEN" { viewId = { "raven" ColorId BLUE } name = { name = "blue bird" groupName = "flock" } permanentEffects = { PEACEFULNESS 1 } }
   "NON_CASTING_UNICORN" inherit "UNICORN" { skills = { } permanentEffects = { PEACEFULNESS 1 } }
 
+"BUNNY"
+  {
+    viewId = { "bunny" }
+    attr = {
+      DAMAGE 1
+      DEFENSE 1 
+    }
+    body = {
+      type = FourLegged SMALL
+      weight = 1
+    }
+	permanentEffects = { PEACEFULNESS 1 }
+    noChase = true
+    petReaction = "twitches"
+    name = {
+      name = "bunny"
+    }
+  }
+
 ##########################
 #Ideas for Future modding#
 ##########################

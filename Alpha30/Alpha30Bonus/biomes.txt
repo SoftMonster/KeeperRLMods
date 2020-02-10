@@ -66,6 +66,7 @@
       1 "RED_PARROT"
       1 "BLUE_BIRD"
       3 "SPRITE"
+      3 "BUNNY"
 	  3 "NON_CASTING_UNICORN"
     }
   }

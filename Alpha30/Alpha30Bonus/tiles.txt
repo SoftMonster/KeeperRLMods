@@ -249,6 +249,7 @@
   { viewId = "fey_grass" symbol = "𝃰" color = ColorId GREEN isSymbolFont = true canMirror = true extraBorders = { "fey_water" "fey_hill" "fey_sand" } }
   { viewId = "fey_tree" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
   { viewId = "fey_wall" symbol = "#" color = ColorId PURPLE wallShadow = true wallConnections = true }
+  { viewId = "bunny" symbol = "h" color = ColorId WHITE }
 
   #O'mally Bandits
   { "bandit_punk" "@" ColorId BLUE }
