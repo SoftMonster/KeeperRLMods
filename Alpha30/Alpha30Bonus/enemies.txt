@@ -1964,6 +1964,7 @@
 }
   "COTTAGE_BANDIT_RUINS" inherit "COTTAGE_BANDITS"
 {
+  discoverable = false
   settlement = append {
    buildingId = "BRICK_RUINS"
   }
