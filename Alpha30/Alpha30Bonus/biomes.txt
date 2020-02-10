@@ -225,8 +225,7 @@
   wildlife = {
     count = { 3 6 }
     all = {
-      4 "LOST_SOUL"
-      2 "DISENCHANTER"
+      5 "SKELETON"
     }
   }
   darkKeeperEnemies = {
