@@ -673,17 +673,65 @@
   {
     viewId = { "fey_water" }
   }
-  "FEY_TREE1" inherit "CANIF_TREE" { viewId = { "fey_tree" }}
-  "FEY_TREE2" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId LIGHT_BROWN }}
-  "FEY_TREE3" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId WHITE }}
-  "FEY_TREE4" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId YELLOW }}
-  "FEY_TREE5" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId RED }}
-  "FEY_TREE6" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId LIGHT_BLUE }}
-  "FEY_TREE7" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId LIGHT_GRAY }}
-  "FEY_TREE8" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId PURPLE }}
-  "FEY_TREE9" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId ORANGE }}
-  "FEY_TREE10" inherit "CANIF_TREE" { viewId = { "fey_tree" ColorId DARK_GRAY }}
-  
+  "FEY_TREE31" inherit "CANIF_TREE" { viewId = { "fey_tree1" }}
+  "FEY_TREE32" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId LIGHT_BROWN }}
+  "FEY_TREE33" inherit "CANIF_TREE" { viewId = { "fey_bush1" ColorId WHITE }}
+  "FEY_TREE34" inherit "CANIF_TREE" { viewId = { "fey_tree1_mark" ColorId YELLOW }}
+  "FEY_TREE35" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId RED }}
+  "FEY_TREE36" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId LIGHT_BLUE }}
+  "FEY_TREE37" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId LIGHT_GRAY }}
+  "FEY_TREE38" inherit "CANIF_TREE" { viewId = { "fey_bush1" ColorId PURPLE }}
+  "FEY_TREE39" inherit "CANIF_TREE" { viewId = { "fey_tree1_mark" ColorId ORANGE }}
+  "FEY_TREE40" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId DARK_GRAY }}
+  "FEY_TREE41" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId WHITE }}
+  "FEY_TREE42" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId ORANGE_BROWN }}
+  "FEY_TREE43" inherit "CANIF_TREE" { viewId = { "fey_tree1_mark" ColorId BROWN }}
+  "FEY_TREE44" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId DARK_BROWN }} 
+  "FEY_TREE45" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId  GRAY }}
+  "FEY_TREE46" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId  ALMOST_GRAY }}
+  "FEY_TREE47" inherit "CANIF_TREE" { viewId = { "fey_bush1" ColorId  ALMOST_BLACK }}
+  "FEY_TREE48" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId  ALMOST_DARK_GRAY }}
+  "FEY_TREE49" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId  BLACK }}
+  "FEY_TREE50" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId  ALMOST_WHITE }}
+  "FEY_TREE51" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId  GREEN }}
+  "FEY_TREE52" inherit "CANIF_TREE" { viewId = { "fey_tree1_mark" ColorId  LIGHT_GREEN }}
+  "FEY_TREE53" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId  DARK_GREEN }}
+  "FEY_TREE54" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId  LIGHT_RED }}
+  "FEY_TREE55" inherit "CANIF_TREE" { viewId = { "fey_tree1_mark" ColorId  PINK }}
+  "FEY_TREE56" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId  BLUE }}
+  "FEY_TREE57" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId  DARK_BLUE }}
+  "FEY_TREE58" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId  SKY_BLUE }}
+  "FEY_TREE59" inherit "CANIF_TREE" { viewId = { "fey_bush1" ColorId  VIOLET }}
+ 
+  "FEY_TREE61" inherit "CANIF_TREE" { viewId = { "fey_tree2" }}
+  "FEY_TREE62" inherit "CANIF_TREE" { viewId = { "fey_tree2_mark" ColorId LIGHT_BROWN }}
+  "FEY_TREE63" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId WHITE }}
+  "FEY_TREE64" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId YELLOW }}
+  "FEY_TREE65" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId RED }}
+  "FEY_TREE66" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId LIGHT_BLUE }}
+  "FEY_TREE67" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId LIGHT_GRAY }}
+  "FEY_TREE68" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId PURPLE }}
+  "FEY_TREE69" inherit "CANIF_TREE" { viewId = { "fey_bush1" ColorId ORANGE }}
+  "FEY_TREE70" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId DARK_GRAY }}
+  "FEY_TREE71" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId WHITE }}
+  "FEY_TREE72" inherit "CANIF_TREE" { viewId = { "fey_bush1" ColorId ORANGE_BROWN }}
+  "FEY_TREE73" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId BROWN }}
+  "FEY_TREE74" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId DARK_BROWN }} 
+  "FEY_TREE75" inherit "CANIF_TREE" { viewId = { "fey_bush1" ColorId  GRAY }}
+  "FEY_TREE76" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  ALMOST_GRAY }}
+  "FEY_TREE77" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  ALMOST_BLACK }}
+  "FEY_TREE78" inherit "CANIF_TREE" { viewId = { "fey_tree2_mark" ColorId  ALMOST_DARK_GRAY }}
+  "FEY_TREE79" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  BLACK }}
+  "FEY_TREE80" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  ALMOST_WHITE }}
+  "FEY_TREE81" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  GREEN }}
+  "FEY_TREE82" inherit "CANIF_TREE" { viewId = { "fey_bush1" ColorId  LIGHT_GREEN }}
+  "FEY_TREE83" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  DARK_GREEN }}
+  "FEY_TREE84" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  LIGHT_RED }}
+  "FEY_TREE85" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  PINK }}
+  "FEY_TREE86" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  BLUE }}
+  "FEY_TREE87" inherit "CANIF_TREE" { viewId = { "fey_tree2_mark" ColorId  DARK_BLUE }}
+  "FEY_TREE88" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  SKY_BLUE }}
+  "FEY_TREE89" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  VIOLET }}
   
 ####################
 #Ideas for new traps
