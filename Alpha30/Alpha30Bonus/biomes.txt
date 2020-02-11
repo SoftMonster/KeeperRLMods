@@ -47,6 +47,7 @@
     count = {3}
   }
   overrideWaterType = "FEY_WATER"
+  sandType = "FEY_SAND"
   items = "magicShrooms"
   itemCount = {50}
   mountains = {
@@ -64,7 +65,8 @@
       1 "RAVEN"
       1 "YELLOW_PARROT"
       1 "RED_PARROT"
-      1 "BLUE_BIRD"
+      1 "BLUE_PARROT"
+      1 "GREEN_PARROT"
       3 "SPRITE"
       3 "BUNNY"
 	  3 "NON_CASTING_UNICORN"

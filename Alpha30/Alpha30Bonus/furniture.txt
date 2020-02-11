@@ -661,6 +661,10 @@
   {
     viewId = { "fey_grass" }
   }
+  "FEY_SAND" inherit "SAND"
+  {
+    viewId = { "fey_sand" }
+  }
   "FEY_HILL" inherit "HILL"
   {
     viewId = { "fey_hill" }

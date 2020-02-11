@@ -5806,10 +5806,11 @@
 
   #Fairy
   
-  "YELLOW_PARROT" inherit "RAVEN" { viewId = { "raven" ColorId YELLOW } name = { name = "yellow parrot" groupName = "flock" } permanentEffects = { PEACEFULNESS 1 } }
-  "RED_PARROT" inherit "RAVEN" { viewId = { "raven" ColorId RED } name = { name = "red parrot" groupName = "flock" } permanentEffects = { PEACEFULNESS 1 } }
-  "BLUE_BIRD" inherit "RAVEN" { viewId = { "raven" ColorId BLUE } name = { name = "blue bird" groupName = "flock" } permanentEffects = { PEACEFULNESS 1 } }
-  "NON_CASTING_UNICORN" inherit "UNICORN" { skills = { } permanentEffects = { PEACEFULNESS 1 } }
+  "YELLOW_PARROT" inherit "RAVEN" { viewId = { "raven" ColorId YELLOW } name = { name = "yellow parrot" groupName = "flock" } }
+  "RED_PARROT" inherit "RAVEN" { viewId = { "raven" ColorId RED } name = { name = "red parrot" groupName = "flock" } }
+  "BLUE_PARROT" inherit "RAVEN" { viewId = { "raven" ColorId BLUE } name = { name = "blue parrot" groupName = "flock" }  }
+  "GREEN_PARROT" inherit "RAVEN" { viewId = { "raven" ColorId GREEN } name = { name = "green parrot" groupName = "flock" }  }
+  "NON_CASTING_UNICORN" inherit "UNICORN" { skills = { } }
 
 "BUNNY"
   {
@@ -5822,7 +5823,6 @@
       type = FourLegged SMALL
       weight = 1
     }
-	permanentEffects = { PEACEFULNESS 1 }
     noChase = true
     petReaction = "twitches"
     name = {
