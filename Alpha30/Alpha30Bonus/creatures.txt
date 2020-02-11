@@ -4299,6 +4299,13 @@
       chatReactionHostile = "\"A wooden buff totem.\""
       deathDescription = "destroyed"
     }
+
+   "ZOMBIE_DARK" inherit "ZOMBIE"
+   {
+     inventory = {}
+     permanentEffects = { DARKNESS_SOURCE 1 }		
+   }
+	
 #-------------------------------------
 #New adventurer calsses September 2019
 #-------------------------------------

@@ -1583,6 +1583,7 @@
   }
   "RATMEN"
   {
+    biomes = { "DARK_SWAMP" }
     settlement = {
       type = Builtin MINETOWN
       tribe = HUMAN

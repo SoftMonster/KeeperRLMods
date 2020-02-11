@@ -721,21 +721,54 @@
   "FEY_TREE72" inherit "CANIF_TREE" { viewId = { "fey_bush1" ColorId ORANGE_BROWN }}
   "FEY_TREE73" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId BROWN }}
   "FEY_TREE74" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId DARK_BROWN }} 
-  "FEY_TREE75" inherit "CANIF_TREE" { viewId = { "fey_bush1" ColorId  GRAY }}
-  "FEY_TREE76" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  ALMOST_GRAY }}
-  "FEY_TREE77" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  ALMOST_BLACK }}
-  "FEY_TREE78" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  ALMOST_DARK_GRAY }}
-  "FEY_TREE79" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  BLACK }}
-  "FEY_TREE80" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  ALMOST_WHITE }}
-  "FEY_TREE81" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  GREEN }}
-  "FEY_TREE82" inherit "CANIF_TREE" { viewId = { "fey_bush1" ColorId  LIGHT_GREEN }}
-  "FEY_TREE83" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  DARK_GREEN }}
-  "FEY_TREE84" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  LIGHT_RED }}
-  "FEY_TREE85" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  PINK }}
-  "FEY_TREE86" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  BLUE }}
-  "FEY_TREE87" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  DARK_BLUE }}
-  "FEY_TREE88" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  SKY_BLUE }}
-  "FEY_TREE89" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId  VIOLET }}
+  "FEY_TREE75" inherit "CANIF_TREE" { viewId = { "fey_bush1" ColorId GRAY }}
+  "FEY_TREE76" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId ALMOST_GRAY }}
+  "FEY_TREE77" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId ALMOST_BLACK }}
+  "FEY_TREE78" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId ALMOST_DARK_GRAY }}
+  "FEY_TREE79" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId BLACK }}
+  "FEY_TREE80" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId ALMOST_WHITE }}
+  "FEY_TREE81" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId GREEN }}
+  "FEY_TREE82" inherit "CANIF_TREE" { viewId = { "fey_bush1" ColorId LIGHT_GREEN }}
+  "FEY_TREE83" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId DARK_GREEN }}
+  "FEY_TREE84" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId LIGHT_RED }}
+  "FEY_TREE85" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId PINK }}
+  "FEY_TREE86" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId BLUE }}
+  "FEY_TREE87" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId DARK_BLUE }}
+  "FEY_TREE88" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId SKY_BLUE }}
+  "FEY_TREE89" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId VIOLET }}
+  
+  #Swamp
+  "SWAMP_TREE1" inherit "CANIF_TREE" { viewId = { "swamp_tree1" ColorId GREEN }}
+  "SWAMP_TREE2" inherit "CANIF_TREE" { viewId = { "swamp_tree2" ColorId GREEN }}
+  "SWAMP_BUSH1" inherit "CANIF_TREE" { viewId = { "swamp_bush1" ColorId GREEN }}
+  "SWAMP_LILY_PAD1" inherit "CANIF_TREE" { viewId = { "swamp_lily_pad1" ColorId GREEN }}
+  "SWAMP_LILY_PADS2" inherit "CANIF_TREE" { viewId = { "swamp_lily_pads2" ColorId GREEN }}
+  "SWAMP_GRASS" inherit "GRASS"
+  {
+    viewId = { "swamp_grass" }
+  }
+  "SWAMP_HILL" inherit "HILL"
+  {
+    viewId = { "swamp_hill" }
+  }
+  "SWAMP_WATER"
+  {
+    name = "swamp water"
+    viewId = { "swamp_water" }
+    layer = GROUND
+    summonedElement = "WATER_ELEMENTAL"
+    walkIntoFX = { WATER_SPLASH Rgb 82 148 255 255 }
+  }
+  
+  "ZOMBIE_SPAWNER"
+  {
+    name = "healing totem"
+    viewId = { "totem" Rgb 156 58 68 255 }
+    tickType = Effect Chance 0.05 SummonEnemy "ZOMBIE_DARK" { 1 4 } 50
+    blockMovement = true
+    canHideHere = true
+    strength = 100
+  }
   
 ####################
 #Ideas for new traps

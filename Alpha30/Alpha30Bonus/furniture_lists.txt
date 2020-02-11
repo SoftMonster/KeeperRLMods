@@ -84,6 +84,25 @@
 
     }	
   }
+  "vegetationSwampWater"
+  {
+    {
+      "SWAMP_BUSH1" 10
+	  "SWAMP_LILY_PAD1" 10
+	  "SWAMP_LILY_PADS2" 10
+    }
+  }	
+  "vegetationSwampGrass"
+  {
+    {
+      "SWAMP_TREE1" 200
+      "SWAMP_TREE2" 200
+      "SWAMP_BUSH1" 200
+	  "ZOMBIE_SPAWNER" 2
+      "LITTLE_SPIDER_WEB" 2
+      "BIG_SPIDER_WEB" 1
+    }
+  }	
   "vegetationWebs"
   {
     {

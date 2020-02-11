@@ -86,6 +86,52 @@
   }
 }
 
+"DARK_SWAMP"
+{
+  lakes = {
+    size = {5 30}
+    count = {10 12}
+  }
+  overrideWaterType = "SWAMP_WATER"
+  sandType = "SWAMP_WATER"
+  items = "magicShrooms"
+  itemCount = {10}
+  mountains = {
+    lowlandRatio = 0.95
+    hillRatio = 0.02
+    hill = "SWAMP_HILL"
+    grass = "SWAMP_GRASS"
+    mountain = "SWAMP_WATER"
+    mountainDeep = "SWAMP_WATER"
+    mountainFloor = "SWAMP_GRASS"
+  }
+  forests = {
+    {
+      ratio = 0.3
+      density = 0.45
+      onType = "SWAMP_WATER"
+      trees = "vegetationSwampWater"
+    }
+    {
+      ratio = 0.50
+      density = 0.2
+      onType = "SWAMP_GRASS"
+      trees = "vegetationSwampGrass"
+    }
+  }
+  wildlife = {
+    count = { 20 }
+    all = {
+      1 "RAT"
+      1 "BLACK_RAT"
+      1 "GREEN_SPIDER"
+    }
+  }
+  darkKeeperEnemies = {
+  }
+  whiteKeeperEnemies = {
+  }
+}
 
 "CITY"
 {
