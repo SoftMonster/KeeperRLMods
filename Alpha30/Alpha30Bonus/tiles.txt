@@ -250,9 +250,7 @@
   { viewId = "fey_grass" symbol = "𝃰" color = ColorId GREEN isSymbolFont = true canMirror = true extraBorders = { "fey_water" "fey_hill" "fey_sand" } }
   { viewId = "fey_bush1" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
   { viewId = "fey_tree1" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
-  { viewId = "fey_tree1_mark" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
   { viewId = "fey_tree2" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
-  { viewId = "fey_tree2_mark" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
   { viewId = "fey_wall" symbol = "#" color = ColorId PURPLE wallShadow = true wallConnections = true }
   { viewId = "bunny" symbol = "h" color = ColorId WHITE }
 
