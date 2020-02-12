@@ -41,7 +41,7 @@
         }
       }
       equipedEffect = { RAGE }
-      equipedAbility = "fire shield"
+      equipedAbility = { "fire shield" }
     }
   "InvisibilityRobe"
     {
@@ -54,7 +54,7 @@
       modifiers = {
         DEFENSE 1
       }
-      equipedAbility = "invisibility"
+      equipedAbility = { "invisibility" }
     }
   "Crossbow"
     {
@@ -80,7 +80,7 @@
       equipmentSlot = RINGS
       weight = 2
       price = 100
-      equipedAbility = "invisibility"
+      equipedAbility = { "invisibility" }
     }
   "SpyingCrystal"
     {
@@ -279,7 +279,7 @@
         weaponInfo =  { attackType = SPELL attackMsg = WAVE meleeAttackAttr = SPELL_DAMAGE victimEffect = { 1.0 Lasting FROZEN } } 
         maxUpgrades =  1 
         equipedEffect = { COLD_RESISTANT }
-        equipedAbility = "ice cone"
+        equipedAbility = { "ice cone" }
       }
     "RobesOfHell"
     {
@@ -293,7 +293,7 @@
         equipmentSlot =  BODY_ARMOR 
         modifiers =  { DEFENSE 5 } 
         equipedEffect = { TELEPATHY NIGHT_VISION RAGE FIRE_RESISTANT MAGIC_RESISTANCE }
-        equipedAbility = "firewall" 
+        equipedAbility = { "firewall" }
     }
     "HeavenlyArmor"
     {
@@ -332,7 +332,7 @@
         price =  100 
         itemClass =  ARMOR 
         equipmentSlot =  RINGS 
-        equipedAbility = "pacify"   
+        equipedAbility = { "pacify" }  
     }
     "BoneOfWizardry"
     {
@@ -357,7 +357,7 @@
 		weaponInfo =  { attackType = SPELL attackMsg = WAVE meleeAttackAttr = SPELL_DAMAGE } 
 		maxUpgrades =  2 
 		equipedEffect = { BLEEDING REGENERATION }
-		equipedAbility = "curse"	
+		equipedAbility = { "curse" }
 	}
 	"OmallyKnife"
 	{
@@ -387,7 +387,7 @@
 #        equipmentSlot =  WEAPON 
 #		modifiers =  { SPELL_DAMAGE 80 DEFENSE 80 } 
 #		weaponInfo =  { attackType = SPELL attackMsg = WAVE meleeAttackAttr = SPELL_DAMAGE } 
-#		equipedAbility = "dungeon master wish"
+#		equipedAbility = { "dungeon master wish" }
 #		equipedEffect = { SPEED POISON_RESISTANT FIRE_RESISTANT MELEE_RESISTANCE RANGED_RESISTANCE MAGIC_RESISTANCE }
 #        wishedCount = { 0 } #Will crash the game. Stops it being wished for.
 #	}	

@@ -762,7 +762,7 @@
   
   "ZOMBIE_SPAWNER"
   {
-    name = "healing totem"
+    name = "zombie spawner"
     viewId = { "totem" Rgb 156 58 68 255 }
     tickType = Effect Chance 0.05 SummonEnemy "ZOMBIE_DARK" { 1 4 } 50
     blockMovement = true
