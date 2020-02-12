@@ -227,12 +227,20 @@
     }
   }
   darkKeeperEnemies = {
-	{ id = "CITY_GROUP_SHOP" count = { 5 6 } }
-    { id = "CITY_GROUP" count = { 2 3 } }
+	{ id = "ROYAL_BLACKSMITH" count = { 1 } }
+	{ id = "ROYAL_TRAPSMITH" count = { 1 } }
+	{ id = "ROYAL_SCRIBE" count = { 1 } }
+	{ id = "ROYAL_TANNER" count = { 1 } }
+	{ id = "ROYAL_BREWER" count = { 1 } }
+	{ id = "ROYAL_JEWELLER" count = { 1 } }
   }
   whiteKeeperEnemies = {
-	{ id = "CITY_GROUP_SHOP" count = { 5 6 } }
-    { id = "CITY_GROUP" count = { 2 3 } }
+	{ id = "ROYAL_BLACKSMITH" count = { 1 } }
+	{ id = "ROYAL_TRAPSMITH" count = { 1 } }
+	{ id = "ROYAL_SCRIBE" count = { 1 } }
+	{ id = "ROYAL_TANNER" count = { 1 } }
+	{ id = "ROYAL_BREWER" count = { 1 } }
+	{ id = "ROYAL_JEWELLER" count = { 1 } }
   }
 }
 

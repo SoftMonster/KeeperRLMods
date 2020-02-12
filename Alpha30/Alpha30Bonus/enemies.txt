@@ -1826,9 +1826,8 @@
     outsideFeatures = "villageOutside"
     }
   }
-  "CITY_GROUP_SHOP"
+  "CITY_GROUP_SHOP_BASE"
   {
-    discoverable = false
     settlement = {
     type = Builtin VILLAGE
     tribe = HUMAN
@@ -1840,11 +1839,19 @@
       }
     }
     buildingId = "CITY_BRICK_GRASS"
-	shopItems = { "villageShop" }
     furniture = { "roomFurniture" }
     outsideFeatures = "villageOutside"
     }
   }
+  
+  "CITY_GROUP_SHOP"  inherit "CITY_GROUP_SHOP_BASE" { discoverable = false settlement = append { shopItems = { "villageShop" } } }
+  "ROYAL_BLACKSMITH" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Blacksmith" shopItems = { "iron" } } }
+  "ROYAL_SCRIBE" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Scribe" shopItems = { "scribeScrolls" } } }
+  "ROYAL_TANNER" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Tanner" shopItems = { "leather" } } }
+  "ROYAL_BREWER" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Brewer" shopItems = { "breweryPotions" } } }
+  "ROYAL_JEWELLER" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Jeweller" shopItems = { "royalJewellery" } } }
+  "ROYAL_TRAPSMITH" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Trapsmith" shopItems = { "traps" } } }
+
   "KING"
   {
   biomes = { "PALACE" }  
@@ -1905,7 +1912,32 @@
   levelConnection = {
     topLevel = MainEnemy
     levels = {
-      { ExtraEnemy { "MINOTAUR" { 1 2 } } 40 40 MAZE }
+        { ExtraEnemy { "BOTTOMLESS1" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS4" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS8" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS12" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS16" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS20" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS24" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS28" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS32" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS36" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS40" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS44" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS48" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS52" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS56" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS60" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS64" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS68" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS72" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS76" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS80" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS84" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS88" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS92" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS96" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS99" { 1 2 } } 60 40 DUNGEON }
     }
   }
 }
