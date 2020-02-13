@@ -1068,6 +1068,7 @@
 	settlement = {
 	  type = MapLayoutId "fairy_tower_entry"
       tribe = ELF
+      locationName = "Goddess Illusia's Tower"
       inhabitants = {
         fighters = {
           count = {24 36}
@@ -1092,14 +1093,39 @@
     buildingId = "FAIRY_BRICK"
     furniture = { "palace_furniture" }
     outsideFeatures = "castleOutside"
-  }
-  discoverable = false
+	  }
+  behaviour = {
+    minPopulation = 1
+    minTeamSize = 1
+      triggers = {
+      SelfVictims
     }
+    attackBehaviour = CampAndSpawn {
+      count = {12 18}
+      all = {
+            1 "AIR_FAIRY"
+            1 "DARK_FAIRY"
+            1 "EARTH_FAIRY"
+            1 "ELECTRIC_FAIRY"
+			1 "FIRE_FAIRY"
+            1 "MAGIC_FAIRY"
+            1 "NATURE_FAIRY"
+            1 "LIGHT_FAIRY"
+            1 "WATER_FAIRY"
+            1 "AIR_ELEMENTAL"
+            1 "WATER_ELEMENTAL"
+            1 "FIRE_ELEMENTAL"
+            1 "EARTH_ELEMENTAL"
+		  }
+		}
+	  }
+	}
 	"FAIRY_TOWER_FLOOR"
 	{
 	settlement = {
     type = MapLayoutId "fairy_tower_floor"
     tribe = ELF
+    locationName = "Goddess Illusia's Tower"
 	inhabitants = {
 	  fighters = {
         count = {8 12}
@@ -1124,8 +1150,32 @@
     buildingId = "FAIRY_BRICK"
     furniture = { "palace_furniture" }
     outsideFeatures = "castleOutside"
+	}
+  behaviour = {
+    minPopulation = 1
+    minTeamSize = 1
+      triggers = {
+      SelfVictims
+    }
+    attackBehaviour = CampAndSpawn {
+      count = {12 18}
+      all = {
+            1 "AIR_FAIRY"
+            1 "DARK_FAIRY"
+            1 "EARTH_FAIRY"
+            1 "ELECTRIC_FAIRY"
+			1 "FIRE_FAIRY"
+            1 "MAGIC_FAIRY"
+            1 "NATURE_FAIRY"
+            1 "LIGHT_FAIRY"
+            1 "WATER_FAIRY"
+            1 "AIR_ELEMENTAL"
+            1 "WATER_ELEMENTAL"
+            1 "FIRE_ELEMENTAL"
+            1 "EARTH_ELEMENTAL"
+	  }
+	}
   }
-  discoverable = false
 }
 "TOWER_OF_ILLUSIA"
 {
@@ -1150,6 +1200,7 @@
 		}
 	  }
     }
+	race = "Tower of Illusia"
     buildingId = "FAIRY_BRICK"
     furniture = { "palace_furniture" }
   }
@@ -1160,14 +1211,15 @@
     direction = UP
     topLevel = ExtraEnemy { "FAIRY_TOWER_ENTRY" }
     levels = {
-      { ExtraEnemy { "FAIRY_TOWER_FLOOR" { 8 12 } } 18 18 TOWER }
+      { ExtraEnemy { "FAIRY_TOWER_FLOOR" { 8 12 } } 24 24 BASIC }
 	  { MainEnemy 18 18 TOWER }
     }
   }
   behaviour = {
-    minPopulation = 10
-    minTeamSize = 8
-    triggers = {
+    minPopulation = 1
+    minTeamSize = 1
+      triggers = {
+      SelfVictims
       RoomTrigger "THRONE" 0.0003
       RoomTrigger "IMPALED_HEAD" 0.0001
       NumConquered 3
