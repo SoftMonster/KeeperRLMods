@@ -51,16 +51,16 @@
   items = "magicShrooms"
   itemCount = {50}
   mountains = {
-    lowlandRatio = 0.95
-    hillRatio = 0.02
+    lowlandRatio = 0.85
+    hillRatio = 0.05
     hill = "FEY_HILL"
     grass = "FEY_GRASS"
     mountain = "MOUNTAIN"
     mountainDeep = "MOUNTAIN"
-    mountainFloor = "SAND"
+    mountainFloor = "FLOOR"
   }
   wildlife = {
-    count = { 20 30 }
+    count = { 30 40 }
     all = {
       1 "RAVEN"
       1 "YELLOW_PARROT"
@@ -77,6 +77,12 @@
       ratio = 0.9
       density = 0.3
       onType = "FEY_GRASS"
+      trees = "vegetationFey"
+    }
+	{
+      ratio = 0.9
+      density = 0.45
+      onType = "FEY_HILL"
       trees = "vegetationFey"
     }
   }
