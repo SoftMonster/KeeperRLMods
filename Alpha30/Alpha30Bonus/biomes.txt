@@ -5,6 +5,7 @@
     count = {2 6}
   }
   overrideWaterType = "MAGMA"
+  sandType = "MAGMA"
   items = "magicShrooms"
   itemCount = {0}
   mountains = {
@@ -146,6 +147,7 @@
     count = {0}
   }
   overrideWaterType = "GRASS"
+  sandType = "GRASS"
   items = "magicShrooms"
   itemCount = {0}
   mountains = {
@@ -200,6 +202,7 @@
     count = {0}
   }
   overrideWaterType = "GRASS"
+  sandType = "GRASS"
   items = "magicShrooms"
   itemCount = {0}
   mountains = {
