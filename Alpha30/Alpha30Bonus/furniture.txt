@@ -511,7 +511,7 @@
     blockingEnemies = true
     blockVision = { NORMAL ELF }
     strength = 80
-  usageType = UsageEffect "sleep in" Lasting SLEEP
+    usageType = UsageEffect "sleep in" Lasting SLEEP
     tickType = Builtin BED
     bedType = CAGE
     canBuildOutsideOfTerritory = true
@@ -654,6 +654,11 @@
 	maxTraining = {
 	SPELL 3
 	}
+  }
+
+  "CURSED_WALL" inherit "DUNGEON_WALL"
+  {
+    viewId = { "cursed_wall" }
   }
 
   #Fairies

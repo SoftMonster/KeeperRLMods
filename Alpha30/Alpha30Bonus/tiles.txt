@@ -237,6 +237,11 @@
   
  #King
   { "king" "@" ColorId PURPLE }
+  { "shadow_king" "@" ColorId LIGHT_GRAY }
+  { "shadow_knight" "p" ColorId LIGHT_GRAY }
+  { "shadow_archer" "p" ColorId LIGHT_GRAY }
+  { "shadow_priest" "p" ColorId LIGHT_GRAY }
+  { viewId = "cursed_wall" symbol = "#" color = ColorId DARK_GRAY wallShadow = true wallConnections = true }
 
  #Volcano
   { viewId = "lava_rock" symbol = "." color = ColorId BLUE canMirror = true extraBorders = { "magma" }  }

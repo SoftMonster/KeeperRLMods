@@ -25,6 +25,7 @@ EVIL_KEEPER modify append {
 
 #Modded ally
     {{ "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY} #Modded
+#    {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
 }
 
 # Villains for lawful keepers
@@ -36,6 +37,7 @@ LAWFUL_KEEPER modify append {
     {{ "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN }
     {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
     {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
+#    {{ "shadow_king" } "SHADOW_KING" "The Shadow King" MAIN}
 
 #ToDo: ADOXIE NEEDS MERGING
 #  { "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN
@@ -91,6 +93,7 @@ EVIL_ADVENTURER modify append {
     {{ "dark_elf_lord" } "DARK_ELVES_ALLY" "Dark elves" ALLY }
     {{ "gnome_boss" } "GNOMES" "Gnomes" ALLY }
     {{ "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY }
+#    {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
 }
 
 # Villains for lawful adventurers

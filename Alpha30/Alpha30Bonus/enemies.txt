@@ -1993,6 +1993,42 @@
     }
   }
 }
+
+"SHADOW_KING" inherit "KING"
+{
+  biomes = { "PALACE" }  
+  settlement = append {
+    tribe = DARK_ELF #Allied to dark elves and dark keepers
+    inhabitants = {
+      leader = { { "SHADOW_KING" } }
+      fighters = {
+        count = {55 62}
+        all = {
+          1 "SHADOW_PRIEST"
+          3 "SHADOW_KNIGHT"
+          2 "SHADOW_ARCHER"
+        }
+      }
+    }
+   race = "shadows"
+   buildingId = "SHADOW_CITY_BRICK"
+   furniture = { "palace_furniture" }
+   outsideFeatures = "castleOutside"
+  }
+  immigrants = {
+    {
+      ids = {"SHADOW_ARCHER"}
+      traits = {FIGHTER}
+      frequency = 1
+    }
+    {
+      ids = {"SHADOW_KNIGHT"}
+      traits = {FIGHTER}
+      frequency = 1
+    }
+  }
+}
+
   "OMALLY_BANDITS"
   {
   biomes = { "CITY_RUINS" }  
