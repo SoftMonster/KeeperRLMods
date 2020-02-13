@@ -245,7 +245,7 @@
 
  #Fairies
   { viewId = "fey_sand" symbol = "." color = ColorId YELLOW canMirror = true extraBorders = { "fey_water" } }
-  { viewId = "fey_water" symbol = "~" color = ColorId LIGHT_BLUE waterSides = "fey_water" animated = true spriteColor = Rgb 190 190 40 255 }
+  { viewId = "fey_water" symbol = "~" color = ColorId LIGHT_BLUE waterSides = "fey_water" animated = true spriteColor = Rgb 255 255 255 255 }
   { viewId = "fey_hill" symbol = "𝀢" color = ColorId DARK_GREEN isSymbolFont = true canMirror = true extraBorders = { "fey_water" "fey_sand" } }
   { viewId = "fey_grass" symbol = "𝃰" color = ColorId GREEN isSymbolFont = true canMirror = true extraBorders = { "fey_water" "fey_hill" "fey_sand" } }
   { viewId = "fey_bush1" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
@@ -256,7 +256,7 @@
 
  #Swamp
   { viewId = "swamp_grass" symbol = "." color = ColorId YELLOW canMirror = true extraBorders = { "swamp_hill" "water" "swamp_water" "swamp_sand" "swamp_grass" } }
-  { viewId = "swamp_water" symbol = "~" color = ColorId LIGHT_BLUE waterSides = "swamp_water" animated = true spriteColor = Rgb 190 190 40 255 }
+  { viewId = "swamp_water" symbol = "~" color = ColorId LIGHT_BLUE waterSides = "swamp_water" animated = true spriteColor = Rgb 255 255 255 255 }
   { viewId = "swamp_hill" symbol = "𝀢" color = ColorId DARK_GREEN isSymbolFont = true canMirror = true extraBorders = { "swamp_hill" "water" "swamp_water" "swamp_sand" "swamp_grass"} }
   { viewId = "swamp_tree1" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
   { viewId = "swamp_tree2" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
