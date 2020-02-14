@@ -2296,7 +2296,6 @@
 			1 "DONKEY"
 			1 "FLY"
 			1 "FOX"
-			1 "GHOST"
 			1 "GOAT"
 			1 "HORSE"
 			1 "IMP"
