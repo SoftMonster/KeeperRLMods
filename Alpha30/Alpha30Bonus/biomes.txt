@@ -11,11 +11,11 @@
   mountains = {
     lowlandRatio = 0.45
     hillRatio = 0.2
-    hill = "RED_MUD"
-    grass = "RED_MUD"
+    hill = "LAVA_ROCK"
+    grass = "LAVA_ROCK"
     mountain = "MAGMA"
     mountainDeep = "MAGMA"
-    mountainFloor = "RED_MUD"
+    mountainFloor = "LAVA_ROCK"
   }
   wildlife = {
     count = { 6 12 }
@@ -27,7 +27,7 @@
     {
       ratio = 0.01
       density = 0.05
-      onType = "RED_MUD"
+      onType = "LAVA_ROCK"
       trees = "vegetationBurnt"
     }
   }
@@ -149,11 +149,11 @@
   overrideWaterType = "GRASS"
   sandType = "GRASS"
   items = "magicShrooms"
-  itemCount = {0}
+  itemCount = { 6 12 }
   mountains = {
-    lowlandRatio = 0.98
-    hillRatio = 0.01
-    hill = "GRASS"
+    lowlandRatio = 0.85
+    hillRatio = 0.08
+    hill = "HILL"
     grass = "GRASS"
     mountain = "CASTLE_WALL"
     mountainDeep = "CASTLE_WALL"
@@ -161,23 +161,24 @@
   }
   forests = {
     {
-      ratio = 0.3
+      ratio = 0.7
       density = 0.15
       onType = "GRASS"
       trees = "vegetationLow"
     }
     {
-      ratio = 0.25
-      density = 0.2
-      onType = "GRASS"
+      ratio = 0.1
+      density = 0.25
+      onType = "HILL"
       trees = "vegetationLow"
     }
   }
   wildlife = {
     count = { 4 6 }
     all = {
-      1 "RAT"
+      1 "BOAR"
 	  1 "DEER"
+	  1 "RAVEN"
     }
   }
   darkKeeperEnemies = {
@@ -204,35 +205,36 @@
   overrideWaterType = "GRASS"
   sandType = "GRASS"
   items = "magicShrooms"
-  itemCount = {0}
+  itemCount = { 6 12 }
   mountains = {
-    lowlandRatio = 0.98
-    hillRatio = 0.01
-    hill = "GRASS"
+    lowlandRatio = 0.94
+    hillRatio = 0.04
+    hill = "HILL"
     grass = "GRASS"
-    mountain = "FEY_WALL"
-    mountainDeep = "FEY_WALL"
-    mountainFloor = "FLOOR_STONE1_COSMETIC"
+    mountain = "MOUNTAIN"
+    mountainDeep = "MOUNTAIN"
+    mountainFloor = "FLOOR"
   }
   forests = {
     {
-      ratio = 0.3
+      ratio = 0.75
       density = 0.15
       onType = "GRASS"
       trees = "vegetationLow"
     }
     {
-      ratio = 0.25
+      ratio = 0.1
       density = 0.2
-      onType = "GRASS"
-      trees = "vegetationLow"
+      onType = "HILL"
+      trees = "vegetationHigh"
     }
   }
   wildlife = {
     count = { 4 6 }
     all = {
-      1 "RAT"
+      1 "BOAR"
 	  1 "DEER"
+	  1 "FOX"
     }
   }
   darkKeeperEnemies = {
@@ -311,11 +313,12 @@
     count = {0}
   }
   overrideWaterType = "GRASS"
+  sandType = "GRASS"
   items = "magicShrooms"
-  itemCount = {0}
+  itemCount = { 6 12 }
   mountains = {
-    lowlandRatio = 0.98
-    hillRatio = 0.01
+    lowlandRatio = 0.9
+    hillRatio = 0.09
     hill = "GRASS"
     grass = "GRASS"
     mountain = "MOUNTAIN"
@@ -328,6 +331,12 @@
       density = 0.15
       onType = "GRASS"
       trees = "vegetationLow"
+    }
+    {
+      ratio = 0.2
+      density = 0.25
+      onType = "HILL"
+      trees = "vegetationHigh"
     }
   }
   wildlife = {

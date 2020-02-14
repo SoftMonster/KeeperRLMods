@@ -260,7 +260,7 @@
   "CASTLE_D3" { name = "dungeon entrance" viewId = { "castle_d3" } onBuilt = DOWN_STAIRS usageType = BuiltinUsageId STAIRS canBuildOutsideOfTerritory = true }
   "CASTLE_D4" { name = "castle" viewId = { "castle_d4" } blockMovement = true blockVision = { NORMAL ELF } wall = true canBuildOutsideOfTerritory = true }
   
-  "RED_MUD" inherit "MUD"
+  "LAVA_ROCK" inherit "MUD"
   {
     viewId = { "lava_rock" }
    }

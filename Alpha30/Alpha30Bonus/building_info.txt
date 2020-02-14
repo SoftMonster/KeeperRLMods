@@ -66,21 +66,21 @@
   }
   "VOLCANIC_ISLAND" inherit "BRICK"
   {
-      floorOutside = "RED_MUD"
-      floorInside = "RED_MUD"
+      floorOutside = "LAVA_ROCK"
+      floorInside = "LAVA_ROCK"
   }
   "CITY_BRICK" inherit "BRICK"
   {
       floorOutside = "FLOOR_STONE1_COSMETIC"
       floorInside = "FLOOR_STONE1_COSMETIC"
-      prettyFloor = "FLOOR_STONE1_COSMETIC"
+      prettyFloor = "FLOOR_CARPET1"
   }
   "SHADOW_CITY_BRICK" inherit "BRICK"
   {
   	  wall = "CURSED_WALL"
       floorOutside = "FLOOR_STONE1_COSMETIC"
       floorInside = "FLOOR_STONE1_COSMETIC"
-      prettyFloor = "FLOOR_STONE1_COSMETIC"
+      prettyFloor = "FLOOR_CARPET1"
   }
   "BRICK_RUINS" inherit "BRICK"
   {
