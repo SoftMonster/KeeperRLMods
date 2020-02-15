@@ -815,6 +815,38 @@
     cooldown = 100
     sound = SPELL_FIRE_SPHERE_PET
   }
+"summon rats"
+  {
+   symbol = "🐭"
+   effect = Chain { Summon "RAT" { 3 6 } 100 Summon "BLACK_RAT" { 0 2 } 100 }
+   cooldown = 40
+   sound = SPELL_SUMMON_SPIRIT
+  }
+"poison bolt" 
+ {
+   symbol = "☠"
+   range = 3
+   effect = Lasting POISON
+   cooldown = 100
+   sound = SPELL_DECEPTION
+ }
+"flaming strike"
+  {
+    symbol = "🔥☽"
+    effect = Chain { Fire Damage DAMAGE CUT }
+    fx = FIREBALL
+    range = 3
+    cooldown = 14
+    sound = SPELL_FIRE_SPHERE_PET
+  }
+"blowback"
+  {
+    symbol = "🔥💥"
+    effect = Chain { Fire CircularBlast }
+    fx = FIREBALL
+    cooldown = 60
+    sound = SPELL_BLAST
+  }
 #------------------------------
 #Barbarian Skills Feb 2020
 #------------------------------
