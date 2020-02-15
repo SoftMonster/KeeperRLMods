@@ -2139,17 +2139,17 @@
     {
       viewId = { "armored_cow_demon" }
       attr = {
-        DAMAGE 38
-        DEFENSE 55   
+        DAMAGE 50
+        DEFENSE 65   
       }
       name = {
-        name = "armored cow demon"
+        name = "cow demon lord"
         firstNameGen = "DEMON"
       }
       chatReactionFriendly = "\"Gruu...?\""
       chatReactionHostile = "\"GRUUU!!!\""
       inventory = {
-        { Simple "Sword"}
+        { Simple "Fireblade"}
         { Simple "ChainArmor"}
         { Simple "LeatherBoots"}
         { type = Simple "Torch" chance = 0.3 }
@@ -3599,7 +3599,7 @@
       }
       hatedByEffect = HATE_GREENSKINS
       inventory = {
-        { type = Simple "Fireblade" }
+        { type = Simple "VenSword" prefixChance = 0.9 }
         { type = Simple "AdaArmor" prefixChance = 0.8 }
         { type = Simple "AdaBoots" chance = 0.95 prefixChance = 0.1 }
         { type = Simple "AdaGloves" chance = 0.6 prefixChance = 0.1 }
