@@ -67,14 +67,21 @@
 
   "dragonCave" modify {
     items = {
-      {{Simple "GoldPiece"} 16 {30 100} }
-      {{Simple "Sword"} 5 }
-      {{Simple "BattleAxe"} 5 }
-      {{Simple "WarHammer"} 5 }
-	  {{Simple "Axe"} 3 }
-	  {{Simple "Mace"} 3 }
-	  {{Simple "AdaBattleAxe"} 1 }
-	  {{Simple "AdaWarHammer"} 1 }
+      {{Simple "GoldPiece"} 30 {30 100} }
+      {{Simple "Sword"} 10 }
+      {{Simple "BattleAxe"} 10 }
+      {{Simple "WarHammer"} 10 }
+	  {{Simple "Axe"} 6 }
+	  {{Simple "Mace"} 6 }
+	  {{Simple "AdaBattleAxe"} 2 }
+	  {{Simple "AdaWarHammer"} 2 }
+	  {{Simple "VenHelm"} 1 }
+	  {{Simple "InfSword"} 1 }
+	  {{Simple "VenShield"} 1 }
+	  {{Simple "InfLongSpear"} 1 }
+	  {{Simple "InfAxe"} 1 }
+	  {{Simple "InfMace"} 1 }
+	  {{Simple "InfShield"} 1 }
     }
     prefixChance = 1
   }

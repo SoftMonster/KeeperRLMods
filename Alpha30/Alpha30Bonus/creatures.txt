@@ -96,7 +96,7 @@
   }
   "DEMON_LORD" modify {
      inventory = {
-		{ type = Simple "BattleAxe", alternative = Simple "WarHammer" prefixChance = 0.1 }
+		{ type = Simple "InfBattleAxe", alternative = Simple "InfWarHammer" prefixChance = 0.1 }
 		{ Simple "AdaArmor" 1 1 0.03 }
 		{ Simple "AdaBoots" 1 1 0.03 }
 		{ Simple "AdaGloves" 1 1 0.03 }
@@ -114,7 +114,7 @@
     }
   "MINOTAUR" modify {
     inventory = {
-		{ type = Simple "BattleAxe", alternative = Simple "WarHammer" prefixChance = 0.1 }
+		{ type = Simple "VenBattleAxe", alternative = Simple "VenWarHammer" prefixChance = 0.1 }
 		{ Simple "AdaArmor" 1 1 0.03 }
 		{ Simple "AdaBoots" 1 1 0.03 }
 		{ Simple "AdaGloves" 1 1 0.03 }
@@ -190,7 +190,7 @@
     inventory = {
         { type = Simple "BattleAxe" prefixChance = 1 }
 		{ Simple "RingOfSubjection" } #Modded
-        { Simple "ChainArmor"}
+        { Simple "VenArmor"}
         { Simple "IronHelm"}
         { Simple "IronBoots"}
         { Potion Heal FLESH 3 5 }
@@ -262,7 +262,7 @@
   }
   "THIEF_LEADER" modify {
       inventory = {
-        { Simple "Sword"}
+        { Simple "VenSword"}
         { Simple "GamblingRod"}
         { type = Potion Heal FLESH chance = 0.7 }
         { type = Simple "Torch" chance = 0.3 }
@@ -433,7 +433,7 @@
     }
   "DWARF_BARON" modify {
     inventory = {
-        { type = Simple "BattleAxe", alternative = Simple "WarHammer" prefixChance = 1 }
+        { type = Simple "VenAxe", alternative = Simple "VenMace" prefixChance = 1 }
         { Potion Heal FLESH 2 3 }
         { type = Simple "AdaArmor" prefixChance = 1 } #Modded
         { Simple "AdaBoots" } #Modded
@@ -492,7 +492,7 @@
 		  { Simple "ElvenBow"}
 		  { Simple "GoldPiece" 80 120 }
 		  { Scroll Escape }
-		  { Simple "AdaBoots" 1 1 0.03 }
+		  { Simple "InfBoots" 1 1 0.03 }
 		  { Simple "AdaGloves" 1 1 0.03 }
 		  { Simple "AdaHelm" 1 1 0.03 }
 		  { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
@@ -512,7 +512,7 @@
       inventory = {
 		  { type = Simple "ElvenSword" prefixChance = 1 }
 		  { Simple "AdaBoots" 1 1 0.03 }
-		  { Simple "AdaGloves" 1 1 0.03 }
+		  { Simple "InfGloves" 1 1 0.03 }
 		  { Simple "AdaHelm" 1 1 0.03 }
 		  { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
 		  { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
@@ -838,7 +838,7 @@
       deathDescription = "slain"
       courage = 1
       inventory = {
-        { type = Simple "AdaSword" prefixChance = 1 }
+        { type = Simple "VenLongSpear" prefixChance = 1 }
         { Simple "AdaArmor" }
         { Simple "AdaGloves" }
 		{ Simple "AdaBoots" 1 1 0.03 }
@@ -1436,6 +1436,7 @@
       chatReactionHostile = "\"Magic consume you!\""
       inventory = {
         { type = Simple "GoldenStaff" prefixChance = 1 }
+        { type = Simple "VenShield" }
         { type = Simple "AdaArmor" prefixChance = 1 }
 		{ Simple "AdaBoots" 1 1 0.03 }
         { Simple "AdaGloves" 1 1 0.03 }
@@ -1864,7 +1865,7 @@
       inventory = {
 		  { Simple "AdaBoots" 1 1 0.1 }
 		  { Simple "AdaGloves" 1 1 0.1 }
-		  { Simple "AdaHelm" 1 1 0.1 }
+		  { Simple "InfHelm" 1 1 0.1 }
 		  { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.05 }
 		  { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.05 }
 		  { Potion Permanent SPEED 1 1 0.05 }
@@ -3206,7 +3207,7 @@
       }
       inventory = {
 		  { Simple "AdaBoots" 1 1 0.03 }
-		  { Simple "AdaGloves" 1 1 0.03 }
+		  { Simple "VenGloves" 1 1 0.03 }
 		  { Simple "AdaHelm" 1 1 0.03 }
 		  { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
 		  { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
@@ -5730,8 +5731,8 @@
 		 }
       inventory = {
 		{ type = Simple "GoldenStaff" prefixChance = 1 }
-		{ type = Simple "AdaArmor" prefixChance = 0.8 }
-		{ type = Simple "AdaBoots" prefixChance = 0.8 }
+		{ type = Simple "InfArmor" prefixChance = 0.8 }
+		{ type = Simple "VenBoots" prefixChance = 0.8 }
 		{ type = Simple "AdaGloves" prefixChance = 0.8 }
 		{ type = Simple "AdaHelm" prefixChance = 0.8 }
 		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.5 }
