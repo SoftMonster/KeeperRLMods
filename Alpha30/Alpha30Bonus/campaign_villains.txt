@@ -1,7 +1,6 @@
 EVIL_KEEPER modify append {
  
 #ToDo: ADOXIE NEEDS MERGING
-#    { "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN #Modded
 
 #Modded main villains
    {{ "king" } "KING" "The King" MAIN}
@@ -13,6 +12,7 @@ EVIL_KEEPER modify append {
    {{ "fairy_queen" } "TOWER_OF_ILLUSIA" "Tower of Illusia" MAIN }
    {{ "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN }
    {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
+   {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
 
 #Modded lesser villains
    {{ "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER }
@@ -39,8 +39,6 @@ LAWFUL_KEEPER modify append {
     {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
 #    {{ "shadow_king" } "SHADOW_KING" "The Shadow King" MAIN}
 
-#ToDo: ADOXIE NEEDS MERGING
-#  { "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN
 
 #Modded lesser villains
     {{ "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER }
@@ -103,9 +101,7 @@ LAWFUL_ADVENTURER modify append {
     {{ "armored_cow_demon" } "COW_DEMONS" "cow demons" MAIN }
     {{ "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN }
     {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
-
-#ToDo: ADOXIE NEEDS MERGING
-#   { "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN
+    {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
 
 #Modded
     {{ "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER }
