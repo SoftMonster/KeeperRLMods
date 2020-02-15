@@ -33,11 +33,16 @@ Public Class frmSprites
 
     End Sub
 
-    Private Sub textbox2_change() Handles TextBox2.TextChanged
+    Private Sub textbox2_change() Handles TextBox2.TextChanged, TextBox1.textchanged
         Try
             If Not Directory.Exists(TextBox2.Text) Then Exit Sub
             dirs = Directory.GetFiles(TextBox2.Text, TextBox1.Text)
             count = 0
+            If dirs.Count = 0 Then Exit Sub
+            fil = dirs(count)
+            bmp = SafeGetImageFromFile(fil)
+            original = bmp.Clone
+            colCount = 1
         Catch ex As Exception
             MsgBox(ex.Message)
             m_bDoing = False
@@ -121,7 +126,7 @@ Public Class frmSprites
             If fil Is Nothing Then Exit Sub
             Dim fold As String = Replace(TextBox2.Text, Split(TextBox2.Text, "\").Last, TextBox4.Text) + "\"
             Dim tmpBMP As Bitmap = PictureBox2.BackgroundImage.Clone
-            tmpBMP.Save("C:\temp\special_bmgn.png", Imaging.ImageFormat.Png)
+            tmpBMP.Save("C:\temp\" + Label1.Text, Imaging.ImageFormat.Png)
             m_bDoing = False
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -223,10 +228,6 @@ Public Class frmSprites
         Dim tmpbmp As Bitmap = PictureBox2.BackgroundImage
         PictureBox2.BackgroundImage = Nothing
         tmpbmp.Dispose()
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-
     End Sub
 
 End Class
