@@ -116,6 +116,8 @@ Public Class frmSprites
 
     Private Function GetSub(tmpcol As Color) As Color
         Dim av As Long = (CLng(tmpcol.R) + CLng(tmpcol.B) + CLng(tmpcol.B))
+        If av > 255 Then av = av / 2
+        If av > 255 Then av = av / 1.5
         Return Color.FromArgb(av, av, av)
     End Function
 

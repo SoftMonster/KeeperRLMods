@@ -19,6 +19,5 @@ C:\KeeperRLMods\KRLModDeveloper\KRLDeveloper\KRLDeveloper\obj\Debug\KRLDeveloper
 C:\KeeperRLMods\KRLModDeveloper\KRLDeveloper\KRLDeveloper\obj\Debug\KRLDeveloperNS.ucBracketLastingEffect.resources
 C:\KeeperRLMods\KRLModDeveloper\KRLDeveloper\KRLDeveloper\obj\Debug\KRLDeveloperNS.ucSpell.resources
 C:\KeeperRLMods\KRLModDeveloper\KRLDeveloper\KRLDeveloper\obj\Debug\KRLDeveloperNS.frmVanillaViewer.resources
-C:\KeeperRLMods\KRLModDeveloper\KRLDeveloper\KRLDeveloper\obj\Debug\KRLDeveloper.vbprojAssemblyReference.cache
 C:\KeeperRLMods\KRLModDeveloper\KRLDeveloper\KRLDeveloper\obj\Debug\KRLDeveloperNS.frmSprites.resources
 C:\KeeperRLMods\KRLModDeveloper\KRLDeveloper\KRLDeveloper\obj\Debug\KRLDeveloperNS.TextViewer.resources
