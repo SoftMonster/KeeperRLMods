@@ -52,6 +52,16 @@
 	"arrow shield" 6
 	"regrow body part" 7
   }
+  "rat mage" SPELL 
+  {
+    "deception" 1
+	"summon rats" 2
+    "escape" 3
+	"cause blindness" 4
+    "advanced healing" 5
+    "teleport" 6
+    "invisibility" 7 
+  }
   "high priest" SPELL
   {
 	"summon air elementals" 9
