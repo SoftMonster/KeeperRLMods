@@ -2,6 +2,8 @@
 Public Class Items
 
     Private Property CurrentItem As Integer = 1
+    Public VanillaDir As String
+
     Private Sub Generate() Handles TabControl1.SelectedIndexChanged
         If Me.DesignMode Then Exit Sub
         RichTextBox1.Text = ""
@@ -33,8 +35,8 @@ Public Class Items
 
     End Sub
 
-    Private Sub ReadItem()
-        Dim fil As String = ModDir + "items.txt"
+    Private Sub ReadItem() Handles Me.Load
+        Dim fil As String = Replace(VanillaDir + "\items.txt", "\\", "\")
         Dim content As String = System.IO.File.ReadAllText(fil)
         Dim kvps As Dictionary(Of String, String) = GetSection(content, CurrentItem)
         For Each ctrl As Control In TabControl1.TabPages(0).Controls
@@ -43,10 +45,10 @@ Public Class Items
             ElseIf Not ctrl.Tag Is Nothing Then
                 If kvps.ContainsKey(UCase(ctrl.Tag.Trim)) Then
                     ctrl.Text = kvps(ctrl.Tag.Trim.ToUpper)
-                ElseIf Not ctrl.Name.ToUpper.contains("LABEL") Then
+                ElseIf Not ctrl.Name.ToUpper.Contains("LABEL") Then
                     ctrl.Text = ""
                 End If
-            ElseIf Not ctrl.Name.ToUpper.contains("LABEL") Then
+            ElseIf Not ctrl.Name.ToUpper.Contains("LABEL") Then
                 ctrl.Text = ""
             End If
         Next
@@ -56,7 +58,7 @@ Public Class Items
         Dim splitByOpen As String() = Split(input, "{")
         Dim ret As String = ""
         Dim sectionNo As Integer = 1
-        For opens = 2 To splitByOpen.Count - 1
+        For opens = 1 To splitByOpen.Count - 1
             If ret.Split("{").Count = ret.Split("}").Count Then
                 sectionNo = sectionNo + 1
                 If sectionNo = requiredSection + 2 Then

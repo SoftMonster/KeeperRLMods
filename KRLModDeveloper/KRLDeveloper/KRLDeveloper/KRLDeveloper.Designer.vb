@@ -49,8 +49,7 @@ Partial Class KRLDeveloper
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(611, 22)
         Me.TextBox1.TabIndex = 1
-        Me.TextBox1.Text = "C:\Program Files (x86)\Steam\steamapps\common\KeeperRL\data_free\game_config\vani" &
-    "lla\"
+        Me.TextBox1.Text = "C:\Program Files (x86)\Steam\steamapps\common\KeeperRL\data_free\game_config\"
         '
         'TextBox2
         '

@@ -14,6 +14,7 @@ Public Class clsCreaturePopulator
     Public Sub Load()
         inputRow = 0
         DisplayData = New Creatures
+        FileName = Replace(FileName, "\\", "\")
         Dim txt As String = File.ReadAllText(FileName)
         txt = txt.Replace(vbCr, vbLf)
         txt = txt.Replace(vbLf + vbLf, vbLf)

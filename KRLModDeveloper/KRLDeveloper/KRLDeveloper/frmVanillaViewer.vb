@@ -1,6 +1,6 @@
 ﻿Public Class frmVanillaViewer
 
-    Public VanillaFolder As String = "C:\Program Files (x86)\Steam\steamapps\common\KeeperRL\data_free\game_config\vanilla"
+    Public VanillaFolder As String = "C:\Program Files (x86)\Steam\steamapps\common\KeeperRL\data_free\game_config"
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         dgvPlayerCreatures.AutoGenerateColumns = True
@@ -8,7 +8,7 @@
         'txt.StartsWith("{""") Or
         'txt.StartsWith("type =") Or
         Dim gridData1 As New clsCreaturePopulator
-        gridData1.FileName = VanillaFolder + "\player_creatures.txt"
+        gridData1.FileName = VanillaFolder + "\keeper_creatures.txt"
         gridData1.lineBreak = "{ """
         gridData1.lineBreak2 = "creatureId = "
         gridData1.Load()
@@ -23,8 +23,8 @@
         Dim gridData3 As New clsCreaturePopulator
         gridData3.FileName = VanillaFolder + "\creature_inventory.txt"
         gridData3.lineBreak = "{"""
-        gridData3.Load()
-        dgvCreatureInventory.DataSource = gridData3.DisplayData
+        'gridData3.Load()
+        'dgvCreatureInventory.DataSource = gridData3.DisplayData
 
         Dim gridData4 As New clsCreaturePopulator
         gridData4.FileName = VanillaFolder + "\technology.txt"
