@@ -7,7 +7,7 @@
 "5_mage_adventurer"
 { "MAGE_ADVENTURER" "MAGE_ADVENTURER_FEMALE" }			LAWFUL             "(Challenge) Train in the ways of a true wizard and conquer the land with spells!"
 "6_ranger_adventurer"
-{ "RANGER_ADVENTURER" "RANGER_ADVENTURER_FEMALE" }		LAWFUL             "(Easy) Play as an Ranger and use archery and some melee skill to hunt your enemies!"
+{ "RANGER_ADVENTURER" "RANGER_ADVENTURER_FEMALE" }		LAWFUL             "(Easy) Play as a Ranger and use archery and some melee skill to hunt your enemies!"
 "7_barbarian"
 { "BARBARIAN" "BARBARIAN_FEMALE" }						LAWFUL             "(Challenge) Play as a Barbarian and crush all in your path with overwhelming strength!"
 "7_dwarf_baron"
