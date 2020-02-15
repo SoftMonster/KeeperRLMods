@@ -96,3 +96,10 @@
   	  wall = "FEY_WALL"
 	  floorInside = "FLOOR_STONE1_COSMETIC"
   }
+  "ZOMBIE"
+    {
+      wall = "ZOMBIE_WALL"
+      door = { "IRON_DOOR" 1.0 }
+	  upStairs = "TAINTED_STAIRS_UP"
+	  downStairs = "TAINTED_STAIRS_DOWN"
+    }

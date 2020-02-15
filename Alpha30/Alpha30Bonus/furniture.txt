@@ -475,6 +475,15 @@
     wall = true
     buildingSupport = true
   }
+  "ZOMBIE_WALL"
+  {
+    name = "zombie wall"
+    viewId = { "zombie_altar_wall" }
+    blockMovement = true
+    blockVision = { NORMAL ELF }
+    wall = true
+    buildingSupport = true
+  }
   "SHALLOW_WATER_COSMETIC"
   {
     name = "shallow water"

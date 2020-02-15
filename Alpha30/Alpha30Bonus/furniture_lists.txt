@@ -8,6 +8,16 @@
 	}
   }
 
+  "cryptCoffins" modify {
+  {
+    "LOOT_COFFIN" 1
+	"ZOMBIE_SPAWNER" 1
+  }
+  {
+    "VAMPIRE_COFFIN"
+  }
+}
+
 #############
 # Modded
 #############

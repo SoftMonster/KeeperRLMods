@@ -19,7 +19,6 @@ EVIL_KEEPER modify append {
    {{ "bandit_omally" } "OMALLY_BANDITS" "O'mally Bandits" LESSER }
    {{ "male_lion" } "LION_PRIDE" "Pride of Lions" LESSER }
    {{ "rat_king" } "RATMEN" "Rat men" LESSER }
-   {{ "zombie" } "CEMETERY" "Zombies" LESSER }
    {{ "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER }
    {{ "ocean_portal" } "OCEAN_PORTAL" "Ocean Portal" LESSER }
 
@@ -84,7 +83,6 @@ EVIL_ADVENTURER modify append {
     {{ "hydra" } "HYDRA" "Hydra" LESSER }
     {{ "unicorn" } "UNICORN_HERD" "Unicorn herd" LESSER }
     {{ "ant_queen" } "ANTS_OPEN" "Ants" LESSER }
-    {{ "zombie" } "CEMETERY" "Zombies" LESSER }
     {{ "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER }
     {{ "ocean_portal" } "OCEAN_PORTAL" "Ocean Portal" LESSER }
 

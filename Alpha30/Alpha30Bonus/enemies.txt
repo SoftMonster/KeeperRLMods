@@ -389,7 +389,7 @@
       tribe = MONSTER
       race = "undead"
       furniture = { "cryptCoffins" }
-      buildingId = "TAINTED"
+      buildingId = "ZOMBIE"
     }
     levelConnection = {
       topLevel = ExtraEnemy { "CEMETERY_ENTRY" }
