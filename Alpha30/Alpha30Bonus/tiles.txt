@@ -60,12 +60,6 @@
   { "hell_knight_lord" "p" ColorId RED }
   { "hell_knight_swordmaster" "p" ColorId RED }
   { "hell_portal" "0" ColorId RED }
-  { "hell_steel_battle_axe" "|" ColorId RED }
-  { "hell_steel_spear" "|" ColorId RED }
-  { "hell_steel_spiked_mace" "-" ColorId RED }
-  { "hell_steel_sword" "-" ColorId RED }
-  { "hell_steel_warhammer" "|" ColorId RED }
-  { "hell_steel_war_axe" "|" ColorId RED }
   { "high_priest" "p" ColorId WHITE }
   { "hobgoblin" "o" ColorId RED }
   { "light_fairy" "h" ColorId WHITE }
@@ -274,3 +268,38 @@
   #O'mally Bandits
   { "bandit_punk" "@" ColorId BLUE }
   { "bandit_omally" "O" ColorId ORANGE }
+
+  #Armaments
+  { "hell_steel_battle_axe" ")" ColorId RED }
+  { "hell_steel_spear" "/" ColorId RED }
+  { "hell_steel_spiked_mace" ")" ColorId RED }
+  { "hell_steel_sword" ")" ColorId RED }
+  { "hell_steel_warhammer" ")" ColorId RED }
+  { "hell_steel_war_axe" ")" ColorId RED }
+  { "hell_steel_armor" "[" ColorId RED }
+  { "hell_steel_gloves" "[" ColorId RED }
+  { "hell_steel_boots" "[" ColorId RED }
+  { "hell_steel_helm" "[" ColorId RED }
+  { "hell_steel_shield" "[" ColorId RED }
+  { "infernite_battle_axe" ")" ColorId RED }
+  { "infernite_spear" "/" ColorId RED }
+  { "infernite_spiked_mace" ")" ColorId RED }
+  { "infernite_sword" ")" ColorId RED }
+  { "infernite_warhammer" ")" ColorId RED }
+  { "infernite_war_axe" ")" ColorId RED }
+  { "infernite_armor" "[" ColorId RED }
+  { "infernite_gloves" "[" ColorId RED }
+  { "infernite_boots" "[" ColorId RED }
+  { "infernite_helm" "[" ColorId RED }
+  { "infernite_shield" "[" ColorId RED }
+  { "venorack_battle_axe" ")" ColorId GREEN }
+  { "venorack_spear" "/" ColorId GREEN }
+  { "venorack_spiked_mace" ")" ColorId GREEN }
+  { "venorack_sword" ")" ColorId GREEN }
+  { "venorack_warhammer" ")" ColorId GREEN }
+  { "venorack_war_axe" ")" ColorId GREEN }
+  { "venorack_armor" "[" ColorId GREEN }
+  { "venorack_gloves" "[" ColorId GREEN }
+  { "venorack_boots" "[" ColorId GREEN }
+  { "venorack_helm" "[" ColorId GREEN }
+  { "venorack_shield" "[" ColorId GREEN }
