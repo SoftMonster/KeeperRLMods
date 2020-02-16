@@ -1906,7 +1906,7 @@
       }
     }
     buildingId = "CITY_BRICK_GRASS"
-    furniture = { "roomFurniture" }
+    furniture = { "palace_furniture" }
     outsideFeatures = "villageOutside"
     }
   }
@@ -1930,9 +1930,9 @@
       fighters = {
         count = {55 62}
         all = {
-          1 "PRIEST"
-          3 "KNIGHT"
-          2 "ARCHER"
+          1 "ROYAL_PRIEST"
+          3 "ROYAL_KNIGHT"
+          2 "ROYAL_ARCHER"
         }
       }
     }
@@ -1966,12 +1966,12 @@
   }
   immigrants = {
     {
-      ids = {"ARCHER"}
+      ids = {"ROYAL_ARCHER"}
       traits = {FIGHTER}
       frequency = 1
     }
     {
-      ids = {"KNIGHT"}
+      ids = {"ROYAL_KNIGHT"}
       traits = {FIGHTER}
       frequency = 1
     }

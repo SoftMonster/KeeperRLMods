@@ -629,6 +629,34 @@
     canHideHere = true
     usageType = BuiltinUsageId CHEST
   }
+  "LOCKED_CHEST"
+  {
+    name = "locked chest"
+    viewId = { "chest" }
+    canHideHere = true
+    strength = 1
+    destroyedRemains = "TREASURE_CHEST"
+    usageType = UsageEffect "force open" Chain {
+      ChooseRandom {
+    	  DropItems {Simple "GoldPiece"} {15 25}
+    	  DropItems {Simple "GoldPiece"} {15 25}
+		  SummonEnemy "RAT" {3 4} none
+      }
+      ChooseRandom {
+        Message "The chest breaks open easily."
+        Message "The chest resists and then suddenly breaks open."
+        Message "The chest cracks along the top."
+        Chain { Message "A blue gas leaks from the chest. You feel drugged!" Lasting HALLU }
+        Chain { Message "The chest catches fire as you trigger the trap." Fire }
+        Chain { Message "A frost bolt hits you!" Ice }
+        Chain { Message "An acid b all splashes you!" Acid }
+        Chain { Message "You are stabbed by a needle!" Lasting POISON }
+        Chain { Message "A small device slits you open!" Lasting BLEEDING }
+        Chain { Message "Something makes you cough!" Lasting PLAGUE }
+      } 
+      DestroyWalls BASH
+	}
+  }
 
   "TRAINING_WOOD_GM" inherit "TRAINING_WOOD" { canBuildOutsideOfTerritory = true }
   "TRAINING_IRON_GM" inherit "TRAINING_IRON" { canBuildOutsideOfTerritory = true }
