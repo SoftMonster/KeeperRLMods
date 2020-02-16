@@ -336,6 +336,16 @@
         equipmentSlot =  RINGS 
         equipedAbility = { "pacify" }  
     }
+  "IlluRing"
+    {
+      viewId = { "ring_green" }
+      name = "Ring of Illusia"
+      itemClass = ARMOR
+      equipmentSlot = RINGS
+      weight = 0.5
+      price = 1000
+      equipedAbility = { "double trouble" }
+    }
     "BoneOfWizardry"
     {
 		viewId = { "bone" }
@@ -393,6 +403,11 @@
 #		equipedEffect = { SPEED POISON_RESISTANT FIRE_RESISTANT MELEE_RESISTANCE RANGED_RESISTANCE MAGIC_RESISTANCE }
 #        wishedCount = { 0 } #Will crash the game. Stops it being wished for.
 #	}
+
+#--------------
+#Armaments
+#--------------
+
 "VenSword"
   {
     viewId = { "venorack_sword" }

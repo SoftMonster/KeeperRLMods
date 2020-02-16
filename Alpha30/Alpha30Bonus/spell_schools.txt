@@ -193,7 +193,6 @@
 	"fae illusion" 5
 	"fae escape" 6
 	"fae teleport" 7
-	"double trouble" 7
   }
 
 #----------------------------------------------------------
