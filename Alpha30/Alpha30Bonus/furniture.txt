@@ -817,11 +817,20 @@
   "FEY_TREE89" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId VIOLET }}
   
   #Swamp
-  "SWAMP_TREE1" inherit "CANIF_TREE" { viewId = { "swamp_tree1" ColorId GREEN }}
-  "SWAMP_TREE2" inherit "CANIF_TREE" { viewId = { "swamp_tree2" ColorId GREEN }}
-  "SWAMP_BUSH1" inherit "CANIF_TREE" { viewId = { "swamp_bush1" ColorId GREEN }}
-  "SWAMP_LILY_PAD1" inherit "CANIF_TREE" { viewId = { "swamp_lily_pad1" ColorId GREEN }}
-  "SWAMP_LILY_PADS2" inherit "CANIF_TREE" { viewId = { "swamp_lily_pads2" ColorId GREEN }}
+  "SWAMP_TREE1" inherit "CANIF_TREE" { viewId = { "swamp_tree1" ColorId GREEN }
+    viewLayer = TORCH1 }
+  "SWAMP_TREE2" inherit "CANIF_TREE" { viewId = { "swamp_tree2" ColorId GREEN }
+    viewLayer = TORCH1 }
+  "SWAMP_BUSH1" inherit "CANIF_TREE" { viewId = { "swamp_bush1" ColorId GREEN }
+    viewLayer = TORCH1 }
+  "SWAMP_REEDS" inherit "CANIF_TREE" { viewId = { "swamp_grass_reeds" ColorId GREEN }
+    viewLayer = TORCH1 }
+  "SWAMP_LILY_PAD1" inherit "CANIF_TREE" { viewId = { "swamp_lily_pad1" ColorId GREEN }
+    viewLayer = TORCH1 }
+  "SWAMP_LILY_PADS2" inherit "CANIF_TREE" { viewId = { "swamp_lily_pads2" ColorId GREEN }
+    viewLayer = TORCH1 }
+  "SWAMP_WATER_REEDS" inherit "CANIF_TREE" { viewId = { "swamp_water_reeds" ColorId GREEN }
+    viewLayer = TORCH1 }
   "SWAMP_GRASS" inherit "GRASS"
   {
     viewId = { "swamp_grass" }

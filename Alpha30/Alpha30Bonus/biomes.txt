@@ -100,30 +100,42 @@
     count = {10 12}
   }
   overrideWaterType = "SWAMP_WATER"
-  sandType = "SWAMP_WATER"
+  sandType = "SWAMP_HILL"
   items = "magicShrooms"
   itemCount = {10}
   mountains = {
-    lowlandRatio = 0.95
-    hillRatio = 0.02
+    lowlandRatio = 0.55
+    hillRatio = 0.32
     hill = "SWAMP_HILL"
     grass = "SWAMP_GRASS"
-    mountain = "SWAMP_WATER"
-    mountainDeep = "SWAMP_WATER"
-    mountainFloor = "SWAMP_GRASS"
+    mountain = "MOUNTAIN"
+    mountainDeep = "MOUNTAIN2"
+    mountainFloor = "FLOOR"
   }
   forests = {
     {
-      ratio = 0.3
-      density = 0.45
+      ratio = 0.99
+      density = 0.25
       onType = "SWAMP_WATER"
       trees = "vegetationSwampWater"
     }
     {
-      ratio = 0.50
-      density = 0.2
+      ratio = 0.99
+      density = 0.25
       onType = "SWAMP_GRASS"
       trees = "vegetationSwampGrass"
+    }
+    {
+      ratio = 0.99
+      density = 0.35
+      onType = "SWAMP_HILL"
+      trees = "vegetationSwampGrass"
+    }
+    {
+      ratio = 0.9
+      density = 0.25
+      onType = "WATER"
+      trees = "vegetationSwampWater"
     }
   }
   wildlife = {
