@@ -730,7 +730,7 @@
 "summon fae clone"
   {
    symbol = "🎭"
-   effect = Summon "FAIRY_QUEEN_ILLUSION_2" { 1 1 } 40
+   effect = Summon "FAIRY_QUEEN_ILLUSION_2" { 1 } 40
    cooldown = 30
    sound = SPELL_SUMMON_SPIRIT
   }
