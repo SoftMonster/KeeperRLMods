@@ -240,7 +240,7 @@ ALL modify {
       enemy = "HELL_DUNGEON1"
       attackChance = 1.0
     }
-    minDepth = 10
+    minDepth = 12
   }
 }
 

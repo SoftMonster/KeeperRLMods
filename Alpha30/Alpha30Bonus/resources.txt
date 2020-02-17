@@ -1,32 +1,51 @@
 # At every level, including ground (level 0), the game randomly chooses one of available sets.
 # Some levels, like water level, won't generate the resources, obviously.
-#  {
-#    counts = {
-# 	  "MASS_GRAVE" {5 10} 0 1
-#    }
-#    minDepth = 0
-#    maxDepth = 0
-#  }
-#  {
-#    counts = {
-#	    "MASS_GRAVE" {2 3} 1 0   
-#        "STONE"      {2 3} 2 2
-#        "IRON_ORE"   {2 3} 2 2
-#        "GOLD_ORE"   {2 3} 1 1
-#    }
-#    minDepth = 1
-#    maxDepth = 1
-#  }
+  {
+    counts = {
+ 	  "MASS_GRAVE" {3 6} 0 1
+    }
+    minDepth = 0
+    maxDepth = 0
+  }
+  {
+    counts = {
+	    "MASS_GRAVE" {2 3} 1 0   
+        "STONE"      {2 3} 2 2
+        "IRON_ORE"   {2 3} 2 2
+        "GOLD_ORE"   {2 3} 1 1
+    }
+    minDepth = 1
+    maxDepth = 1
+  }
   { # Modded
     counts = {
-	    "CAVE_BUSHES" {5 10} 3 0
+	    "CAVE_BUSHES" {3 6} 3 0
+        "STONE"       {2 3} 2 2
+        "IRON_ORE"    {2 3} 2 2
+        "GOLD_ORE"    {2 3} 1 1
     }
     minDepth = 2
   }
-#  {
-#    counts = {
-#        "GOLD_ORE"       {3 4} 2 2
-#        "ADAMANTIUM_ORE" {3 4} 2 2
-#    }
-#    minDepth = 6
-#  }
+  { # Modded
+    counts = {
+        "STONE"       {4 5} 4 2
+        "IRON_ORE"    {2 4} 5 3
+        "GOLD_ORE"    {2 4} 2 2
+    }
+    minDepth = 3
+  }
+  { # Modded
+    counts = {
+        "STONE"       {1 2} 4 2
+        "IRON_ORE"    {5 7} 5 3
+        "GOLD_ORE"    {1 2} 4 4
+    }
+    minDepth = 3
+  }
+  {
+    counts = {
+        "GOLD_ORE"       {4 5} 2 2
+        "ADAMANTIUM_ORE" {3 4} 2 2
+    }
+    minDepth = 6
+  }

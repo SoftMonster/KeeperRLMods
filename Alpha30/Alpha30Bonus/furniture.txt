@@ -1,4 +1,4 @@
-  "BOOKCASE_GOLD" modify {
+  "BOOKCASE_GOLD" modify append {
     name = "golden bookcase"
     viewId = { "bookcase_gold" }
     blockMovement = true
@@ -14,7 +14,7 @@
     requiresLight = true
     destroyFX = { DESTROY_FURNITURE Rgb 190 190 40 255 }
   }
-  "CANIF_TREE" modify {
+  "CANIF_TREE" modify append {
     name = "tree"
     viewId = { "canif_tree" }
     canHideHere = true
@@ -41,7 +41,7 @@
     } 
   }
 
-  "DECID_TREE" modify {
+  "DECID_TREE" modify append {
     viewId = { "decid_tree" }
     #Modded - destroyed effect added
     destroyedEffect = Chain {
@@ -53,7 +53,7 @@
       Chance 0.001 Chain { Message "You have uncovered a fox!" SummonEnemy "FOX" {1} none }
     } 
   }
-  "BUSH" modify {
+  "BUSH" modify append {
     name = "bush"
     viewId = { "bush" }
     strength2 = {
@@ -71,7 +71,7 @@
       Chance 0.001 Chain { Message "Swarm of flies encountered." SummonEnemy "FLY" {4 5} none }
     } 
   }
-  "ADAMANTIUM_ORE" modify {
+  "ADAMANTIUM_ORE" modify append {
     name = "adamantium ore"
     viewId = { "adamantium_ore" }
     blockMovement = true
@@ -96,7 +96,7 @@
 	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
     } 
   }
-  "IRON_ORE" modify {
+  "IRON_ORE" modify append {
     name = "iron ore"
     viewId = { "iron_ore" }
     blockMovement = true
@@ -121,7 +121,7 @@
     } 
     tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
   }
-  "STONE" modify {
+  "STONE" modify append {
     name = "granite"
     viewId = { "stone" }
     blockMovement = true
@@ -146,7 +146,7 @@
 	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
     } 
  }
-  "GOLD_ORE" modify {
+  "GOLD_ORE" modify append {
     name = "gold ore"
     viewId = { "gold_ore" }
     blockMovement = true
@@ -171,7 +171,7 @@
 	  Chance 0.001 Chain { Message "There is a cave-in in the mines!" Area 1 PlaceFurniture "RUBBLE" }
     } 
   }
-  "RUIN_WALL" modify {
+  "RUIN_WALL" modify append {
     name = "wall"
     viewId = { "ruin_wall" }
     blockMovement = true
@@ -187,7 +187,7 @@
     }
   }
 
-  "FLOOR_WOOD1" modify {
+  "FLOOR_WOOD1" modify append {
     name = "floor"
     viewId = { "wood_floor2" }
     fire = 50
@@ -196,11 +196,11 @@
     canBuildOutsideOfTerritory = true #Modded
   }
   
-  "FLOOR_WOOD2" modify {
+  "FLOOR_WOOD2" modify append {
     viewId = { "wood_floor4" }
   }
 
-  "FLOOR_STONE1" modify {
+  "FLOOR_STONE1" modify append {
     name = "floor"
     viewId = { "stone_floor1" }
     luxury = 0.3
@@ -208,7 +208,7 @@
     canBuildOutsideOfTerritory = true  #Modded
   }
 
-  "FLOOR_CARPET1" modify {
+  "FLOOR_CARPET1" modify append{
     name = "floor"
     viewId = { "carpet_floor1" }
     luxury = 0.7
@@ -219,7 +219,42 @@
 ##########
 #Modded
 ##########
-
+  "INFERNITE_ORE"
+  {
+  name = "infernite ore"
+  viewId = { "infernite_ore" }
+  blockMovement = true
+  blockVision = { NORMAL ELF }
+  wall = true
+  clearFogOfWar = true
+  itemDrop = {{{{Simple "InfOre"} 1 { 16 28 }}}}
+  strength2 = {
+    500 BOULDER
+    500 DIG
+    500 HOSTILE_DIG
+    2000 HOSTILE_DIG_NO_SKILL
+  }
+  destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
+  tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
+  }
+  "VENORACK_ORE"
+  {
+  name = "venorack ore"
+  viewId = { "venorack_ore" }
+  blockMovement = true
+  blockVision = { NORMAL ELF }
+  wall = true
+  clearFogOfWar = true
+  itemDrop = {{{{Simple "VenOre"} 1 { 16 28 }}}}
+  strength2 = {
+    500 BOULDER
+    500 DIG
+    500 HOSTILE_DIG
+    2000 HOSTILE_DIG_NO_SKILL
+  }
+  destroyFX = { ROCK_CLOUD Rgb 200 200 200 255 }
+  tryDestroyFX = { ROCK_SPLINTERS Rgb 200 200 200 255 }
+  }
   "RUINS"
   {
     name = "ruin wall"

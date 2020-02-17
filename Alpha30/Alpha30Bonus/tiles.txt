@@ -304,3 +304,21 @@
   { "venorack_boots" "[" ColorId GREEN }
   { "venorack_helm" "[" ColorId GREEN }
   { "venorack_shield" "[" ColorId GREEN }
+
+  #Resources
+  { "infernite_ore_pile" "✱" ColorId RED }
+  { "venorack_ore_pile" "✱" ColorId GREEN }
+  { "darksteel_ore_pile" "✱" ColorId GRAY }
+  { "hellsteel_ore_pile" "✱" ColorId DARK_GRAY }
+{ viewId = "infernite_ore" symbol = "⁂" color = ColorId RED
+  isSymbolFont = true wallShadow = true mountainSides = "mountain"
+  background = "mountain2" }
+{ viewId = "venorack_ore" symbol = "⁂" color = ColorId GREEN
+  isSymbolFont = true wallShadow = true mountainSides = "mountain"
+  background = "mountain2" }
+{ viewId = "darksteel_ore" symbol = "⁂" color = ColorId GRAY
+  isSymbolFont = true wallShadow = true mountainSides = "mountain"
+  background = "mountain2" }
+{ viewId = "hellsteel_ore" symbol = "⁂" color = ColorId DARK_GRAY
+  isSymbolFont = true wallShadow = true mountainSides = "mountain"
+  background = "mountain2" }

@@ -405,6 +405,29 @@
 #	}
 
 #--------------
+#Resources
+#--------------
+"InfOre"
+  {
+    viewId = { "infernite_ore_pile" }
+	ownedEffect = LIGHT_SOURCE
+    name = "infernite ore"
+    itemClass = OTHER
+    price = 0
+    resourceId = "INF"
+    weight = 1
+  }
+"VenOre"
+  {
+    viewId = { "venorack_ore_pile" }
+    name = "venorack ore"
+    itemClass = OTHER
+    price = 0
+    resourceId = "VEN"
+    weight = 0.5
+  }
+
+#--------------
 #Armaments
 #--------------
 

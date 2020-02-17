@@ -1,5 +1,5 @@
   
-"basic" modify {
+"basic" modify append {
 
 "WORKSHOP"
 {
@@ -36,6 +36,22 @@
     {{Simple "BattleAxe"}             22       "IRON" 50      "two-handed weapons"}
     {{Simple "IronStaff"}             20       "IRON" 40      "magical weapons"}
     {{Simple "GoldenStaff"}           20       "GOLD" 200     "magical weapons"}
+    {{Simple "VenSword"}              20       "VEN" 20		  "magical weapons"}
+    {{Simple "VenArmor"}              30       "VEN" 40		  "magical weapons"}
+    {{Simple "VenHelm"}               15       "VEN" 16		  "magical weapons"}
+    {{Simple "VenBoots"}              15       "VEN" 24		  "magical weapons"}
+    {{Simple "VenGloves"}             6        "VEN" 2		  "magical weapons"}
+    {{Simple "VenShield"}             12       "VEN" 24		  "magical weapons"}
+    {{Simple "VenWarHammer"}          20       "VEN" 40      "magical weapons"}
+    {{Simple "VenBattleAxe"}          22       "VEN" 50      "magical weapons"}
+    {{Simple "InfSword"}              20       "INF" 20		  "magical weapons"}
+    {{Simple "InfArmor"}              30       "INF" 40		  "magical weapons"}
+    {{Simple "InfHelm"}               15       "INF" 16		  "magical weapons"}
+    {{Simple "InfBoots"}              15       "INF" 24		  "magical weapons"}
+    {{Simple "InfGloves"}             6        "INF" 2		  "magical weapons"}
+    {{Simple "InfShield"}             12       "INF" 24		  "magical weapons"}
+    {{Simple "InfWarHammer"}          20       "INF" 40      "magical weapons"}
+    {{Simple "InfBattleAxe"}          22       "INF" 50      "magical weapons"}
     {{Simple "AdaSword"}              20       "ADA" 20}
     {{Simple "AdaArmor"}              30       "ADA" 40}
     {{Simple "AdaHelm"}               15       "ADA" 16}
@@ -67,13 +83,17 @@
       {item = {Potion Lasting PLAGUE} work = 5 cost = "GOLD" 10 requireIngredient = "zombie_brain" }
       {item = {Potion Permanent POISON_RESISTANT} work = 20 cost = "GOLD" 80 requireIngredient = "hydra_tongue" }
 	{{Simple "GoldPiece"}                           5        "IRON"  20      "alchemical conversion"       10}
+	{{Simple "GoldPiece"}                           5        "VEN"   16      "alchemical conversion"       10}
+	{{Simple "GoldPiece"}                           5        "INF"   8       "alchemical conversion"       10}
     {{Simple "GoldPiece"}                           5        "ADA"   4       "alchemical conversion"       10}
-    {{Simple "GoldPiece"}                           5        "WOOD"  20      "alchemical conversion"       10}
-    {{Simple "GoldPiece"}                           5        "STONE" 50      "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "WOOD"  24      "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "STONE" 24      "alchemical conversion"       10}
     {{Simple "WoodPlank"}                           5        "GOLD"  6       "alchemical conversion"       10}
-    {{Simple "IronOre"}                             5        "GOLD"  6	   "alchemical conversion"       10}
+    {{Simple "IronOre"}                             5        "GOLD"  6	     "alchemical conversion"       10}
+    {{Simple "VenOre"}                              5        "GOLD"  8	     "alchemical conversion"       10}
+	{{Simple "InfOre"}                              5        "GOLD"  24      "alchemical conversion"       10}
     {{Simple "AdaOre"}                              5        "GOLD"  30      "alchemical conversion"       10}
-    {{Simple "Rock"}                                5        "GOLD"  2       "alchemical conversion"       10}
+    {{Simple "Rock"}                                5        "GOLD"  6       "alchemical conversion"       10}
 }
 
 # Jeweller
@@ -98,7 +118,7 @@
 }
 }
 
-"traps" modify {
+"traps" modify append {
 
 "WORKSHOP"
 {
@@ -117,7 +137,7 @@
   }
 }
 
-"gnomes" modify {
+"gnomes" modify append {
 
 "WORKSHOP"
 {
@@ -208,11 +228,18 @@
     {{Potion RegrowBodyPart 1}             8        "GOLD" 80      "gnomish alchemy"}
     {{Potion Lasting BLEEDING}             8        "GOLD" 80      "gnomish alchemy"}
     {{Potion Lasting PEACEFULNESS}         8        "GOLD" 40      "gnomish alchemy"}
-    {{Simple "GoldPiece"}                  5        "IRON" 30      "alchemical conversion"       10}
-    {{Simple "WoodPlank"}                  5        "GOLD" 10      "alchemical conversion"       10}
-    {{Simple "IronOre"}                    5        "GOLD" 10      "alchemical conversion"       10}
-    {{Simple "AdaOre"}                     5        "GOLD" 40      "alchemical conversion"       10}
-    {{Simple "Rock"}                       5        "GOLD" 10      "alchemical conversion"       10}
+	{{Simple "GoldPiece"}                           5        "IRON"  20      "alchemical conversion"       10}
+	{{Simple "GoldPiece"}                           5        "VEN"   16      "alchemical conversion"       10}
+	{{Simple "GoldPiece"}                           5        "INF"   8       "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "ADA"   4       "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "WOOD"  24      "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "STONE" 24      "alchemical conversion"       10}
+    {{Simple "WoodPlank"}                           5        "GOLD"  6       "alchemical conversion"       10}
+    {{Simple "IronOre"}                             5        "GOLD"  6	     "alchemical conversion"       10}
+    {{Simple "VenOre"}                              5        "GOLD"  8	     "alchemical conversion"       10}
+	{{Simple "InfOre"}                              5        "GOLD"  24      "alchemical conversion"       10}
+    {{Simple "AdaOre"}                              5        "GOLD"  30      "alchemical conversion"       10}
+    {{Simple "Rock"}                                5        "GOLD"  6       "alchemical conversion"       10}
 }
 
   "JEWELER"
@@ -273,6 +300,26 @@
     {{Simple "BattleAxe"}             22       "IRON" 35      "two-handed weapons"}
     {{Simple "IronStaff"}             20       "IRON" 20      "magical weapons"}
     {{Simple "GoldenStaff"}           20       "GOLD" 120     "magical weapons"}
+    {{Simple "VenSword"}              10       "VEN" 15      "magical weapons"}
+    {{Simple "VenMace"}               14       "VEN" 25      "magical weapons"}
+    {{Simple "VenAxe"}                18       "VEN" 30      "magical weapons"}
+    {{Simple "VenArmor"}              30       "VEN" 30      "magical weapons"}
+    {{Simple "VenHelm"}               15       "VEN" 12      "magical weapons"}
+    {{Simple "VenBoots"}              15       "VEN" 18      "magical weapons"}
+    {{Simple "VenGloves"}             6        "VEN" 2       "magical weapons"}
+    {{Simple "VenShield"}             12       "VEN" 18      "magical weapons"}
+    {{Simple "VenWarHammer"}          20       "VEN" 30		 "magical weapons"}
+    {{Simple "VenBattleAxe"}          22       "VEN" 40      "magical weapons"}
+    {{Simple "InfSword"}              10       "INF" 15      "magical weapons"}
+	{{Simple "InfMace"}               14       "INF" 25      "magical weapons"}
+    {{Simple "InfAxe"}                18       "INF" 30      "magical weapons"}
+    {{Simple "InfArmor"}              30       "INF" 30      "magical weapons"}
+    {{Simple "InfHelm"}               15       "INF" 12      "magical weapons"}
+    {{Simple "InfBoots"}              15       "INF" 18      "magical weapons"}
+    {{Simple "InfGloves"}             6        "INF" 2       "magical weapons"}
+    {{Simple "InfShield"}             12       "INF" 18      "magical weapons"}
+    {{Simple "InfWarHammer"}          20       "INF" 30      "magical weapons"}
+    {{Simple "InfBattleAxe"}          22       "INF" 40      "magical weapons"}
     {{Simple "AdaSword"}              12       "ADA" 15}
     {{Simple "AdaMace"}               16       "ADA" 25}
     {{Simple "AdaAxe"}                20       "ADA" 30}
@@ -323,12 +370,18 @@
     {{Potion Lasting COLLAPSED}            8        "GOLD" 8       "elite alchemy"}
     {{Potion Lasting BLEEDING}             8        "GOLD" 8       "elite alchemy"}
     {{Potion Lasting INSANITY}             8        "GOLD" 8       "elite alchemy"}
-    {{Simple "GoldPiece"}                           1        "IRON" 100     "alchemical conversion"       100}
-    {{Simple "GoldPiece"}                           1        "ADA"  100     "alchemical conversion"       100}
-    {{Simple "WoodPlank"}                           1        "GOLD" 100     "alchemical conversion"       100}
-    {{Simple "IronOre"}                             1        "GOLD" 100     "alchemical conversion"       100}
-    {{Simple "AdaOre"}                              1        "GOLD" 100     "alchemical conversion"       100}
-    {{Simple "Rock"}                                1        "GOLD" 100     "alchemical conversion"       100}
+	{{Simple "GoldPiece"}                           5        "IRON"  20      "alchemical conversion"       10}
+	{{Simple "GoldPiece"}                           5        "VEN"   16      "alchemical conversion"       10}
+	{{Simple "GoldPiece"}                           5        "INF"   8       "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "ADA"   4       "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "WOOD"  24      "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "STONE" 24      "alchemical conversion"       10}
+    {{Simple "WoodPlank"}                           5        "GOLD"  6       "alchemical conversion"       10}
+    {{Simple "IronOre"}                             5        "GOLD"  6	     "alchemical conversion"       10}
+    {{Simple "VenOre"}                              5        "GOLD"  8	     "alchemical conversion"       10}
+	{{Simple "InfOre"}                              5        "GOLD"  24      "alchemical conversion"       10}
+    {{Simple "AdaOre"}                              5        "GOLD"  30      "alchemical conversion"       10}
+    {{Simple "Rock"}                                5        "GOLD"  6       "alchemical conversion"       10}
 }
 
 }
@@ -372,6 +425,28 @@
     {{Simple "IronShield"}            12       "IRON" 18}
     {{Simple "WarHammer"}             16       "IRON" 30      "two-handed weapons"}
     {{Simple "BattleAxe"}             22       "IRON" 40      "two-handed weapons"}
+    {{Simple "VenSword"}              10       "VEN" 15}
+    {{Simple "VenLongSpear"}          12       "VEN" 20}
+    {{Simple "VenMace"}               14       "VEN" 25}
+    {{Simple "VenAxe"}                18       "VEN" 30}
+    {{Simple "VenArmor"}              30       "VEN" 30}
+    {{Simple "VenHelm"}               15       "VEN" 12}
+    {{Simple "VenBoots"}              15       "VEN" 18}
+    {{Simple "VenGloves"}             6        "VEN" 2}
+    {{Simple "VenShield"}             12       "VEN" 18}
+    {{Simple "VenWarHammer"}          20       "VEN" 30		 "two-handed weapons"}
+    {{Simple "VenBattleAxe"}          22       "VEN" 40      "two-handed weapons"}
+    {{Simple "InfSword"}              10       "INF" 15}
+    {{Simple "InfLongSpear"}          12       "INF" 20}
+	{{Simple "InfMace"}               14       "INF" 25}
+    {{Simple "InfAxe"}                18       "INF" 30}
+    {{Simple "InfArmor"}              30       "INF" 30}
+    {{Simple "InfHelm"}               15       "INF" 12}
+    {{Simple "InfBoots"}              15       "INF" 18}
+    {{Simple "InfGloves"}             6        "INF" 2}
+    {{Simple "InfShield"}             12       "INF" 18}
+    {{Simple "InfWarHammer"}          20       "INF" 30      "two-handed weapons"}
+    {{Simple "InfBattleAxe"}          22       "INF" 40      "two-handed weapons"}
     {{Simple "AdaSword"}              12       "ADA" 15}
     {{Simple "AdaMace"}               16       "ADA" 25}
     {{Simple "AdaAxe"}                20       "ADA" 30}
@@ -406,11 +481,18 @@
 	{{Potion Permanent MELEE_RESISTANCE} 100        "GOLD" 800     "dwarven alchemy"}
     {{Potion Permanent DEF_BONUS}        100        "GOLD" 300     "dwarven alchemy"}
 	{{Potion IncreaseAttr DAMAGE 1}      100        "GOLD" 1200    "dwarven alchemy"}
-    {{Simple "GoldPiece"}                  5        "IRON" 30      "alchemical conversion"       10}
-    {{Simple "WoodPlank"}                  5        "GOLD" 10      "alchemical conversion"       10}
-    {{Simple "IronOre"}                    5        "GOLD" 10      "alchemical conversion"       10}
-    {{Simple "AdaOre"}                     5        "GOLD" 40      "alchemical conversion"       10}
-    {{Simple "Rock"}                                5        "GOLD" 10      "alchemical conversion"       10}
+	{{Simple "GoldPiece"}                           5        "IRON"  20      "alchemical conversion"       10}
+	{{Simple "GoldPiece"}                           5        "VEN"   16      "alchemical conversion"       10}
+	{{Simple "GoldPiece"}                           5        "INF"   8       "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "ADA"   4       "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "WOOD"  24      "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "STONE" 24      "alchemical conversion"       10}
+    {{Simple "WoodPlank"}                           5        "GOLD"  6       "alchemical conversion"       10}
+    {{Simple "IronOre"}                             5        "GOLD"  6	     "alchemical conversion"       10}
+    {{Simple "VenOre"}                              5        "GOLD"  8	     "alchemical conversion"       10}
+	{{Simple "InfOre"}                              5        "GOLD"  24      "alchemical conversion"       10}
+    {{Simple "AdaOre"}                              5        "GOLD"  30      "alchemical conversion"       10}
+    {{Simple "Rock"}                                5        "GOLD"  6       "alchemical conversion"       10}
 }
 
 # Jeweller
@@ -504,6 +586,26 @@
     {{Simple "BattleAxe"}             1       "IRON" 0      "two-handed weapons"}
     {{Simple "IronStaff"}             1       "IRON" 0      "magical weapons"}
     {{Simple "GoldenStaff"}           1       "GOLD" 0     "magical weapons"}
+    {{Simple "VenSword"}              1       "VEN" 0      "magical weapons"}
+    {{Simple "VenMace"}               1       "VEN" 0      "magical weapons"}
+    {{Simple "VenAxe"}                1       "VEN" 0      "magical weapons"}
+    {{Simple "VenArmor"}              3       "VEN" 0      "magical weapons"}
+    {{Simple "VenHelm"}               1       "VEN" 0      "magical weapons"}
+    {{Simple "VenBoots"}              1       "VEN" 0      "magical weapons"}
+    {{Simple "VenGloves"}             1       "VEN" 0      "magical weapons"}
+    {{Simple "VenShield"}             1       "VEN" 0      "magical weapons"}
+    {{Simple "VenWarHammer"}          1       "VEN" 0	   "magical weapons"}
+    {{Simple "VenBattleAxe"}          1       "VEN" 0      "magical weapons"}
+    {{Simple "InfSword"}              1       "INF" 0      "magical weapons"}
+	{{Simple "InfMace"}               1       "INF" 0      "magical weapons"}
+    {{Simple "InfAxe"}                1       "INF" 0      "magical weapons"}
+    {{Simple "InfArmor"}              1       "INF" 0      "magical weapons"}
+    {{Simple "InfHelm"}               1       "INF" 0      "magical weapons"}
+    {{Simple "InfBoots"}              1       "INF" 0      "magical weapons"}
+    {{Simple "InfGloves"}             1       "INF" 0      "magical weapons"}
+    {{Simple "InfShield"}             1       "INF" 0      "magical weapons"}
+    {{Simple "InfWarHammer"}          1       "INF" 0      "magical weapons"}
+    {{Simple "InfBattleAxe"}          1       "INF" 0      "magical weapons"}
     {{Simple "AdaSword"}              1       "ADA" 0}
     {{Simple "AdaArmor"}              1       "ADA" 0}
     {{Simple "AdaHelm"}               1       "ADA" 0}
@@ -538,10 +640,12 @@
     {{Potion Lasting MELEE_VULNERABILITY}  1        "GOLD" 0      "advanced alchemy"}
     {{Potion Lasting MAGIC_VULNERABILITY}  1        "GOLD" 0      "advanced alchemy"}
     {{Potion Lasting INVISIBLE}            1        "GOLD" 0      "advanced alchemy"}
-    {{Simple "GoldPiece"}                  1        "IRON" 0      "alchemical conversion"       1000}
+    {{Simple "GoldPiece"}                  1        "WOOD" 0      "alchemical conversion"       1000}
     {{Simple "WoodPlank"}                  1        "GOLD" 0      "alchemical conversion"       1000}
     {{Simple "IronOre"}                    1        "GOLD" 0      "alchemical conversion"       1000}
     {{Simple "AdaOre"}                     1        "GOLD" 0      "alchemical conversion"       1000}
+	{{Simple "VenOre"}                     1        "GOLD" 0      "alchemical conversion"       1000}
+	{{Simple "InfOre"}                     1        "GOLD" 0      "alchemical conversion"       1000}
     {{Simple "Rock"}                       1        "GOLD" 0      "alchemical conversion"       1000}
       {item = {Potion IncreaseAttr DEFENSE 5} work = 20 cost = "GOLD" 100 requireIngredient = "cyclops_brain" }
       {item = {Potion Lasting PLAGUE} work = 5 cost = "GOLD" 10 requireIngredient = "zombie_brain" }
@@ -687,10 +791,18 @@
       {item = {Potion IncreaseAttr DEFENSE 5} work = 20 cost = "GOLD" 100 requireIngredient = "cyclops_brain" }
       {item = {Potion Lasting PLAGUE} work = 5 cost = "GOLD" 10 requireIngredient = "zombie_brain" }
       {item = {Potion Permanent POISON_RESISTANT} work = 20 cost = "GOLD" 80 requireIngredient = "hydra_tongue" }
-    {{Simple "GoldPiece"}                           5        "IRON" 20      "alchemical conversion"       10}
-    {{Simple "WoodPlank"}                           5        "GOLD" 10      "alchemical conversion"       20}
-    {{Simple "IronOre"}                             5        "GOLD" 10      "alchemical conversion"       10}
-    {{Simple "Rock"}                                5        "GOLD" 10      "alchemical conversion"       20}
+	{{Simple "GoldPiece"}                           5        "IRON"  20      "alchemical conversion"       10}
+	{{Simple "GoldPiece"}                           5        "VEN"   16      "alchemical conversion"       10}
+	{{Simple "GoldPiece"}                           5        "INF"   8       "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "ADA"   4       "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "WOOD"  24      "alchemical conversion"       10}
+    {{Simple "GoldPiece"}                           5        "STONE" 24      "alchemical conversion"       10}
+    {{Simple "WoodPlank"}                           5        "GOLD"  6       "alchemical conversion"       10}
+    {{Simple "IronOre"}                             5        "GOLD"  6	     "alchemical conversion"       10}
+    {{Simple "VenOre"}                              5        "GOLD"  8	     "alchemical conversion"       10}
+	{{Simple "InfOre"}                              5        "GOLD"  24      "alchemical conversion"       10}
+    {{Simple "AdaOre"}                              5        "GOLD"  30      "alchemical conversion"       10}
+    {{Simple "Rock"}                                5        "GOLD"  6       "alchemical conversion"       10}
 }
 
 # Jeweller
