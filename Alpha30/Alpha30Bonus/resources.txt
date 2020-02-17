@@ -2,13 +2,6 @@
 # Some levels, like water level, won't generate the resources, obviously.
   {
     counts = {
- 	  "MASS_GRAVE" {1 2} 0 1
-    }
-    minDepth = 0
-    maxDepth = 0
-  }
-  {
-    counts = {
 	    "MASS_GRAVE" {2 3} 1 0   
         "STONE"      {2 3} 2 2
         "IRON_ORE"   {2 3} 2 2
