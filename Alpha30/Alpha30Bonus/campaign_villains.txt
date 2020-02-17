@@ -21,7 +21,9 @@ EVIL_KEEPER modify append {
    {{ "ocean_portal" } "OCEAN_PORTAL" "Ocean Portal" LESSER }
 
 #Ally
-    {{ "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance" } "BEGINNERS_DUNGEON" "Beginners Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance" } "ADVANCED_DUNGEON" "Advanced Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance" } "EXPERT_DUNGEON" "Expert Dungeon" ALLY} #Modded
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
 }
 
@@ -45,7 +47,9 @@ LAWFUL_KEEPER modify append {
 
 #Modded lawful ally
     {{ "king" } "KING" "The King" ALLY}
-    {{ "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY } #Modded
+    {{ "dungeon_entrance" } "BEGINNERS_DUNGEON" "Beginners Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance" } "ADVANCED_DUNGEON" "Advanced Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance" } "EXPERT_DUNGEON" "Expert Dungeon" ALLY} #Modded
 }
 
 # Villains for evil adventurers
@@ -86,7 +90,9 @@ EVIL_ADVENTURER modify append {
 
     {{ "dark_elf_lord" } "DARK_ELVES_ALLY" "Dark elves" ALLY }
     {{ "gnome_boss" } "GNOMES" "Gnomes" ALLY }
-    {{ "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY }
+    {{ "dungeon_entrance" } "BEGINNERS_DUNGEON" "Beginners Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance" } "ADVANCED_DUNGEON" "Advanced Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance" } "EXPERT_DUNGEON" "Expert Dungeon" ALLY} #Modded
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
 }
 
@@ -107,5 +113,7 @@ LAWFUL_ADVENTURER modify append {
     {{ "rat_king" } "RATMEN" "Rat men" LESSER }
 
     {{ "king" } "KING" "The King" ALLY}
-    {{ "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance" } "BEGINNERS_DUNGEON" "Beginners Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance" } "ADVANCED_DUNGEON" "Advanced Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance" } "EXPERT_DUNGEON" "Expert Dungeon" ALLY} #Modded
 }

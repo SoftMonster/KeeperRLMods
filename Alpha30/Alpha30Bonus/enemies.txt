@@ -2126,15 +2126,15 @@
 }
 
 ####################################################################
-#Bottomless Dungeon
+#"Bottomless" Dungeons
 ####################################################################
-  "BOTTOMLESS_DUNGEON"
+  "BEGINNERS_DUNGEON"
   {
     settlement = {
       type = Builtin MINETOWN
       tribe = GNOME
       inhabitants = {
-        leader = { { "DEATH" } }
+        leader = { { "RED_DRAGON" } }
       }
       buildingId = "SANDSTONE_WALL_DWARVEN"
     }
@@ -2161,35 +2161,24 @@
         { ExtraEnemy { "BOTTOMLESS18" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS19" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS20" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS21" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS22" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS23" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS24" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS25" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS26" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS27" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS28" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS29" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS30" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS31" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS32" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS33" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS34" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS35" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS36" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS37" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS38" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS39" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS40" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS41" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS42" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS43" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS44" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS45" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS46" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS47" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS48" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS49" { 1 2 } } 60 40 DUNGEON }
+        { MainEnemy 60 40 MINETOWN }
+      }
+    }
+  }
+
+  "EXPERT_DUNGEON"
+  {
+    settlement = {
+      type = Builtin MINETOWN
+      tribe = GNOME
+      inhabitants = {
+        leader = { { "DEATH" } }
+      }
+      buildingId = "SANDSTONE_WALL_DWARVEN"
+    }
+    levelConnection = {
+      topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY"}
+      levels = {
         { ExtraEnemy { "BOTTOMLESS50" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS51" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS52" { 1 2 } } 60 40 DUNGEON }
@@ -2244,10 +2233,57 @@
       }
     }
   }
+  "ADVANCED_DUNGEON"
+  {
+    settlement = {
+      type = Builtin MINETOWN
+      tribe = GNOME
+      inhabitants = {
+        leader = { { "GOBLIN_KING" } }
+      }
+      buildingId = "SANDSTONE_WALL_DWARVEN"
+    }
+    levelConnection = {
+      topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY"}
+      levels = {
+        { ExtraEnemy { "BOTTOMLESS21" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS22" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS23" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS24" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS25" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS26" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS27" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS28" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS29" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS30" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS31" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS32" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS33" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS34" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS35" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS36" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS37" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS38" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS39" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS40" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS41" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS42" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS43" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS44" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS45" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS46" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS47" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS48" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS49" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS50" { 1 2 } } 60 40 DUNGEON }
+        { MainEnemy 60 40 MINETOWN }
+      }
+    }
+  }
 ####################################################################
-# Entry to bottomless dungeon
+# Entry to "bottomless" dungeons
 ####################################################################
-  "BOTTOMLESS_ENTRY" #This is the top level. TODO: Make it cool.
+  "BOTTOMLESS_ENTRY"
   {
     settlement = {
       type = Builtin MINETOWN

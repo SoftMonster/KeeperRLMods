@@ -1,12 +1,43 @@
-  "randomTerrain" modify {
-    {
+"roomFurniture" modify
+{
+  {
+    "BED1" 2
+    "GROUND_TORCH" 1
+    "CHEST" 1
+    "LOCKED_CHEST" 1 #Added
+  }
+}
+"castleFurniture" modify
+{
+  {
+    "BED1" 2
+    "GROUND_TORCH" 1
+    "FOUNTAIN" 1
+    "CHEST" 1
+    "LOCKED_CHEST" 1 #Added
+  }
+}
+"templeInside" modify
+{
+  {
+    "CHEST" 1
+    "LOCKED_CHEST" 1 #Added
+  }
+  {
+    "ALTAR"
+  }
+}
+"randomTerrain" modify {
+{
       "STONES" 30 #Modded
+
 #Modded additional items
+
 	  "BACKGROUND_RUBBLE" 5	  
       "BACKGROUND_BOULDER" 5
       "HOLE" 5
 	}
-  }
+}
 
   "cryptCoffins" modify {
   {
