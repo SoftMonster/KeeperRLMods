@@ -2,7 +2,7 @@
 # Some levels, like water level, won't generate the resources, obviously.
   {
     counts = {
- 	  "MASS_GRAVE" {3 6} 0 1
+ 	  "MASS_GRAVE" {1 2} 0 1
     }
     minDepth = 0
     maxDepth = 0
@@ -28,9 +28,10 @@
   }
   { # Modded
     counts = {
-        "STONE"       {4 5} 4 2
-        "IRON_ORE"    {2 4} 5 3
-        "GOLD_ORE"    {2 4} 2 2
+        "STONE"        {4 5} 4 2
+        "IRON_ORE"     {2 4} 5 3
+        "GOLD_ORE"     {2 4} 2 2
+		"VENORACK_ORE" {1 2} 2 2
     }
     minDepth = 3
   }
@@ -42,10 +43,17 @@
     }
     minDepth = 3
   }
+  { # Modded
+    counts = {
+        "IRON_ORE"         {3 4} 5 3
+        "INFERNITE_ORE"    {2 3} 3 2
+    }
+    minDepth = 5
+  }
   {
     counts = {
-        "GOLD_ORE"       {4 5} 2 2
-        "ADAMANTIUM_ORE" {3 4} 2 2
+        "GOLD_ORE"       {4 5} 4 2
+        "ADAMANTIUM_ORE" {3 4} 4 2
     }
     minDepth = 6
   }
