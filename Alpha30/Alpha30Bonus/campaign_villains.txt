@@ -1,8 +1,6 @@
 EVIL_KEEPER modify append {
  
-#ToDo: ADOXIE NEEDS MERGING
-
-#Modded main villains
+#Main villains
    {{ "king" } "KING" "The King" MAIN}
    {{ "ancient_reddragon" } "DRAGONS" "Greater dragon nest" MAIN }
    {{ "amazon_queen" } "AMAZONS" "Amazons" MAIN }
@@ -14,7 +12,7 @@ EVIL_KEEPER modify append {
    {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
    {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
 
-#Modded lesser villains
+#Lesser villains
    {{ "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER }
    {{ "bandit_omally" } "OMALLY_BANDITS" "O'mally Bandits" LESSER }
    {{ "male_lion" } "LION_PRIDE" "Pride of Lions" LESSER }
@@ -22,9 +20,9 @@ EVIL_KEEPER modify append {
    {{ "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER }
    {{ "ocean_portal" } "OCEAN_PORTAL" "Ocean Portal" LESSER }
 
-#Modded ally
+#Ally
     {{ "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY} #Modded
-#    {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
+    {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
 }
 
 # Villains for lawful keepers
@@ -36,7 +34,7 @@ LAWFUL_KEEPER modify append {
     {{ "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN }
     {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
     {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
-#    {{ "shadow_king" } "SHADOW_KING" "The Shadow King" MAIN}
+    {{ "shadow_king" } "SHADOW_KING" "The Shadow King" MAIN}
 
 
 #Modded lesser villains
@@ -89,7 +87,7 @@ EVIL_ADVENTURER modify append {
     {{ "dark_elf_lord" } "DARK_ELVES_ALLY" "Dark elves" ALLY }
     {{ "gnome_boss" } "GNOMES" "Gnomes" ALLY }
     {{ "dungeon_entrance" } "BOTTOMLESS_DUNGEON" "Bottomless Dungeon" ALLY }
-#    {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
+    {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
 }
 
 # Villains for lawful adventurers
@@ -100,6 +98,7 @@ LAWFUL_ADVENTURER modify append {
     {{ "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN }
     {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
     {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
+    {{ "shadow_king" } "SHADOW_KING" "The Shadow King" MAIN}
 
 #Modded
     {{ "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER }

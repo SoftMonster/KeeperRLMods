@@ -255,6 +255,59 @@
   }
 }
 
+"SHADOW_PALACE"
+{
+  lakes = {
+    size = {5 15}
+    count = {0}
+  }
+  overrideWaterType = "FLOOR"
+  sandType = "FLOOR"
+  items = "magicShrooms"
+  itemCount = { 6 12 }
+  mountains = {
+    lowlandRatio = 0.94
+    hillRatio = 0.04
+    hill = "MOUNTAIN"
+    grass = "FLOOR"
+    mountain = "MOUNTAIN"
+    mountainDeep = "MOUNTAIN"
+    mountainFloor = "FLOOR"
+  }
+  forests = {
+    {
+      ratio = 0.1
+      density = 0.2
+      onType = "FLOOR"
+      trees = "vegetationBurnt"
+    }
+  }
+  wildlife = {
+    count = { 20 }
+    all = {
+      1 "RAT"
+      1 "BLACK_RAT"
+      1 "GREEN_SPIDER"
+    }
+  }
+ darkKeeperEnemies = {
+	{ id = "SHADOW_BLACKSMITH" count = { 1 } }
+	{ id = "SHADOW_TRAPSMITH" count = { 1 } }
+	{ id = "SHADOW_SCRIBE" count = { 1 } }
+	{ id = "SHADOW_TANNER" count = { 1 } }
+	{ id = "SHADOW_BREWER" count = { 1 } }
+	{ id = "SHADOW_JEWELLER" count = { 1 } }
+  }
+  whiteKeeperEnemies = {
+	{ id = "SHADOW_BLACKSMITH" count = { 1 } }
+	{ id = "SHADOW_TRAPSMITH" count = { 1 } }
+	{ id = "SHADOW_SCRIBE" count = { 1 } }
+	{ id = "SHADOW_TANNER" count = { 1 } }
+	{ id = "SHADOW_BREWER" count = { 1 } }
+	{ id = "SHADOW_JEWELLER" count = { 1 } }
+  }
+}
+
 "SPIDER_MOUNTAIN" inherit "MOUNTAIN"
 {
   forests = {

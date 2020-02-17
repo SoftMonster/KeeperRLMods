@@ -1910,14 +1910,33 @@
     outsideFeatures = "villageOutside"
     }
   }
+  "SHADOW_GROUP_SHOP_BASE"
+  {
+    settlement = {
+    type = Builtin VILLAGE
+    tribe = DARK_ELF
+    inhabitants = { leader = { { "SHADOW_KNIGHT" } } }
+    buildingId = "DUNGEON"  
+    furniture = { "palace_furniture" }
+    outsideFeatures = "villageOutside"
+    }
+  }
   
   "CITY_GROUP_SHOP"  inherit "CITY_GROUP_SHOP_BASE" { discoverable = false settlement = append { shopItems = { "villageShop" } } }
+
   "ROYAL_BLACKSMITH" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Blacksmith" shopItems = { "iron" } } }
   "ROYAL_SCRIBE" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Scribe" shopItems = { "scribeScrolls" } } }
   "ROYAL_TANNER" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Tanner" shopItems = { "leather" } } }
   "ROYAL_BREWER" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Brewer" shopItems = { "breweryPotions" } } }
   "ROYAL_JEWELLER" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Jeweller" shopItems = { "royalJewellery" } } }
   "ROYAL_TRAPSMITH" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Trapsmith" shopItems = { "traps" } } }
+  
+  "SHADOW_BLACKSMITH" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Blacksmith" shopItems = { "iron" } } }
+  "SHADOW_SCRIBE" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Scribe" shopItems = { "scribeScrolls" } } }
+  "SHADOW_TANNER" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Tanner" shopItems = { "leather" } } }
+  "SHADOW_BREWER" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Brewer" shopItems = { "breweryPotions" } } }
+  "SHADOW_JEWELLER" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Jeweller" shopItems = { "royalJewellery" } } }
+  "SHADOW_TRAPSMITH" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Trapsmith" shopItems = { "traps" } } }
 
   "KING"
   {
@@ -2011,7 +2030,7 @@
 
 "SHADOW_KING" inherit "KING"
 {
-  biomes = { "PALACE" }  
+  biomes = { "SHADOW_PALACE" }  
   settlement = append {
     tribe = DARK_ELF #Allied to dark elves and dark keepers
     inhabitants = {
