@@ -139,6 +139,7 @@
   "chests"
   {
     {
+      "LOCKED_CHEST" 1
       "CHEST" 1
     }
   }
@@ -175,7 +176,8 @@
       "BED1" 20
       "GROUND_TORCH" 10
       "DWARVEN_REGENERATOR" 5
-      "CHEST" 20
+      "LOCKED_CHEST" 10
+      "CHEST" 10
     }
   }
   "elvenRoomFurniture"
@@ -183,7 +185,8 @@
     {
       "BED1" 20
       "GROUND_TORCH" 10
-      "CHEST" 20
+      "LOCKED_CHEST" 10
+      "CHEST" 10
     }
     {
       "ELVEN_RUG"
@@ -196,6 +199,7 @@
       "GROUND_TORCH" 5
       "LITTLE_SPIDER_WEB" 5
       "BIG_SPIDER_WEB" 1
+      "LOCKED_CHEST" 5
       "CHEST" 5
     }
   }
@@ -208,6 +212,7 @@
       "LOOT_COFFIN" 1
       "VAMPIRE_COFFIN" 1
       "GROUND_TORCH" 1
+      "LOCKED_CHEST" 1
       "CHEST" 1
       "FOUNTAIN" 1
       "WELL" 1
@@ -244,6 +249,7 @@
     "GROUND_TORCH" 1
     "FOUNTAIN" 1
     "LOCKED_CHEST" 1
+    "CHEST" 1
     "FLOOR_STONE1_COSMETIC" 30  
     }
   }
@@ -254,6 +260,7 @@
     "BUSH" 1
 	"GROUND_TORCH" 2
 	"MUD" 30
+    "LOCKED_CHEST" 1
 	"CHEST" 1
     }
   }

@@ -1916,7 +1916,7 @@
     type = Builtin VILLAGE
     tribe = DARK_ELF
     inhabitants = { leader = { { "SHADOW_KNIGHT" } } }
-    buildingId = "DUNGEON"  
+    buildingId = "SHADOW_CITY_BRICK"  
     furniture = { "palace_furniture" }
     outsideFeatures = "villageOutside"
     }

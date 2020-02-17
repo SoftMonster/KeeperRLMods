@@ -5826,9 +5826,9 @@
   }
   
   "SHADOW_KING" inherit "KING" { viewId = { "shadow_king" } }
-  "SHADOW_KNIGHT" inherit "KNIGHT" { viewId = { "shadow_knight" } }
-  "SHADOW_PRIEST" inherit "PRIEST" { viewId = { "shadow_priest" } }
-  "SHADOW_ARCHER" inherit "ARCHER" { viewId = { "shadow_archer" } }
+  "SHADOW_KNIGHT" inherit "ROYAL_KNIGHT" { viewId = { "shadow_knight" } }
+  "SHADOW_PRIEST" inherit "ROYAL_PRIEST" { viewId = { "shadow_priest" } }
+  "SHADOW_ARCHER" inherit "ROYAL_ARCHER" { viewId = { "shadow_archer" } }
   
   
 "BANDIT_PUNK"
