@@ -130,9 +130,10 @@
       buildingId = "MINOTAUR" #Modded
     }
   }
-  "DWARVES" modify {#Modded
+  "DWARVES" modify {
+    biomes = { "DWARF_MOUNTAIN" }
     settlement = {
-    type = Builtin MINETOWN
+    type = MapLayoutId "mountain64"
       tribe = DWARF
       inhabitants = {
         leader = { { "DWARF_BARON" } }
