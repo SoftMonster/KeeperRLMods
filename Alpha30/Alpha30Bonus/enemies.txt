@@ -615,7 +615,7 @@
         { ExtraEnemy { "ADOXIE_DWARVES" { 1 } } 300 90 MAZE }
         { ExtraEnemy { "ADOXIE_DEMONS" { 1 } } 50 50 MAZE }
         { MainEnemy 30 30 MINETOWN }
-        { ExtraEnemy { "DEATH_2" { 1 } } 40 30 BASIC true }
+        { ExtraEnemy { "DEATH_2" { 1 } } 40 30 BASIC "The Dark Abode" true }
         { ExtraEnemy { "DUNGEON1" { 1 } } 40 30 DUNGEON }
       }
     }
