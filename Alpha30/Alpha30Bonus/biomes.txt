@@ -442,15 +442,13 @@
       ratio = 0.5
       density = 0.005
       onType = "FLOOR"
-      trees = "dwarvenRoomFurniture"
+      trees = "vegetationBurnt"
     }
   }
   wildlife = {
     count = { 30 }
     all = {
-		3 "PLAYER_DWARF_FEMALE"
-		3 "PLAYER_DWARF_FEMALE2"
-		3 "PLAYER_DWARF_FEMALE3"
+		3 "RAT"
     }
   }
   darkKeeperEnemies = {
