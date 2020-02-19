@@ -632,7 +632,7 @@
   }
 "VenBoots"
   {
-    viewId = { "iron_boots" }
+    viewId = { "venorack_boots" }
     shortName = "boots"
     name = "pair of venorack boots"
     plural = "pairs of venorack boots"
