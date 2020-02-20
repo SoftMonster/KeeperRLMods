@@ -707,15 +707,6 @@
   "GROUND_TORCH_GM" inherit "GROUND_TORCH" { canBuildOutsideOfTerritory = true }
   "TREE_TRUNK_GM" inherit "TREE_TRUNK"  { canBuildOutsideOfTerritory = true  onBuilt = SET_ON_FIRE fire = 1  xForgetAfterBuilding = true }
   
-  "MOUNTAIN_GRASS" inherit "GRASS"
-  {
-    viewId = { "mountain" }
-  }
-  "FLOOR_GRASS" inherit "GRASS"
-  {
-    viewId = { "floor" }
-  }
-
   #Palace
   "TRAINING_WOOD_NO_BLOCK"
   {

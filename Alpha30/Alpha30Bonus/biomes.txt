@@ -421,8 +421,8 @@
 "DWARF_MOUNTAIN"
 {
   lakes = {
-    size = {3 5}
-    count = {0}
+    size = { 2 }
+    count = { 0 }
   }
   overrideWaterType = "FLOOR"
   sandType = "FLOOR"
