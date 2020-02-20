@@ -1,5 +1,5 @@
 "2_adoxie_head"
-{ "ADOXIE_HEAD" }										EVIL               "(Easy)      Wipe the floor with mortals as Adoxie the Dark One."
+{ "ADOXIE_HEAD_PLAYER" }								EVIL               "(Easy) Wipe the floor with mortals as Adoxie the Dark One."
 "3_cleric_hero"
 { "CLERIC_HERO" "CLERIC_HERO" }							LAWFUL             "(Easy) Be a cleric hero."
 "4_warrior_adventurer"
