@@ -301,7 +301,13 @@
    }
   "FLOOR_STONE1_COSMETIC" inherit "MUD"
   {
+    name = "floor"
     viewId = { "stone_floor1" }
+   }
+  "FLOOR_STONE2_COSMETIC" inherit "MUD"
+  {
+    name = "floor"
+    viewId = { "stone_floor5" }
    }
   "ELVEN_RUG"
   {

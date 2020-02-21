@@ -130,51 +130,57 @@
       buildingId = "MINOTAUR" #Modded
     }
   }
-  "DWARVES" modify {
+  "DWARF_KINGDOM" {
     biomes = { "DWARF_MOUNTAIN" }
     settlement = {
     type = MapLayoutId "mountain64"
       tribe = DWARF
       inhabitants = {
-        leader = { { "DWARF_BARON" } }
+        leader = { { "DWARF_QUEEN_TRIBE" } }
         fighters = {
-          count = {6 9}
+          count = {44 56}
           all = {
-		    2 "DWARF_MILITIA_TRIBE"
-            3 "DWARF_FIGHTER_TRIBE"
+		    1 "DWARF_MILITIA_TRIBE"
+            2 "DWARF_FIGHTER_TRIBE"
 			3 "DWARF_WARRIOR_TRIBE"
-			2 "ELITE_DWARF_WARRIOR_TRIBE"
+			3 "ELITE_DWARF_WARRIOR_TRIBE"
 			1 "DWARF_MONK_TRIBE"
-          }
-          baseLevelIncrease = {
-            MELEE 10
+			1 "DWARF_BARON"
           }
         }
         civilians = {
-          count = {3 5}
+          count = {24 32}
           all = {
             3 "PLAYER_DWARF_FEMALE"
             3 "PLAYER_DWARF_FEMALE2"
             3 "PLAYER_DWARF_FEMALE3"
+			4 "DWARF_WORKER_TRIBE"
             1 "RAT"
           }
         }
       }
       locationNameGen = "TOWN"
       race = "dwarves"
-      buildingId = "DUNGEON"
-      stockpiles = {{ "gold" 200 "TREASURE_CHEST"} {"minerals" 120 }}
+      buildingId = "CITY_DWARF"
+      stockpiles = {{ "gold" 1000 "TREASURE_CHEST"} {"minerals" 1200 }}
       shopItems = { "dwarfShop" }
       outsideFeatures = "dungeonOutside"
       surroundWithResources = 5
       furniture = { "dwarvenRoomFurniture" } #Modded
-    }
+	 }
+    levelConnection = {
+      topLevel = MainEnemy 
+      levels = {
+        {ExtraEnemy { "DWARF_MARKET" { 1 } } 50 50 BLACK_MARKET }
+		{ExtraEnemy { "DWARF_MINE" { 1 } } 80 80 DUNGEON }
+	   }
+     }
     config = {
       immigrantInterval = 500
       maxPopulation = 15
       ghostProb = 0.1
       spawnGhosts = 4
-    }
+     }
     behaviour = {
       minPopulation = 3
       minTeamSize = 4
@@ -195,7 +201,7 @@
         ids = { "DWARF_MILITIA_TRIBE" "DWARF_FIGHTER_TRIBE" "DWARF_WARRIOR_TRIBE" "ELITE_DWARF_WARRIOR_TRIBE" "DWARF_MONK_TRIBE"} #Modded
         traits = {FIGHTER}
         frequency = 1
-      }
+	  }
     }
   }
   "ELVES" modify {
@@ -227,6 +233,71 @@
       lootItem = {TechBook "master sorcery"}
     }
   }
+"DWARF_MARKET"
+{
+  settlement = {
+    type = Builtin VILLAGE
+    tribe = DWARF
+    inhabitants = {
+      leader = { { "DWARF_BARON" } }
+      fighters = {
+        count = {18 26}
+        all = {
+          1 "DWARF_FIGHTER_TRIBE"
+		  1 "DWARF_WARRIOR_TRIBE"
+		  1 "ELITE_DWARF_WARRIOR_TRIBE"
+		  }
+        }
+      civilians = {
+        count = {42 52}
+        all = {
+		  1 "DWARF_BLACKSMITH"
+          5 "PLAYER_DWARF_FEMALE"
+          5 "PLAYER_DWARF_FEMALE2"
+          5 "PLAYER_DWARF_FEMALE3"
+		  5 "DWARF_WORKER_TRIBE"
+		}
+	  }
+    }
+    locationName = "Dwarven Market"
+    race = "dwarves"
+    buildingId = "DUNGEON"
+    stockpiles = {{ "gold" 2000 "TREASURE_CHEST"} {"minerals" 120 } {"minerals" 120 } {"minerals" 120 } {"minerals" 120 } {"minerals" 120 } {"minerals" 120 }}
+    shopItems = { "dwarfShop" "dwarfShop" "dwarfShop" "armory" "chest" "jewellery" "breweryPotions" "scribeScrolls" "iron" "villageShop" "villageShop" "minerals" }
+    outsideFeatures = "dungeonOutside"
+    furniture = { "roomFurniture" }
+  }
+}
+"DWARF_MINE"
+{
+  settlement = {
+    type = Builtin ANT_NEST
+    tribe = DWARF
+    inhabitants = {
+      leader = { { "ELITE_DWARF_WARRIOR_TRIBE" } }
+      fighters = {
+        count = {18 28}
+        all = {
+		  1 "DWARF_WARRIOR_TRIBE"
+		  1 "ELITE_DWARF_WARRIOR_TRIBE"
+		  6 "DWARF_WORKER_TRIBE"
+		  }
+        }
+      civilians = {
+        count = {4 8}
+        all = {
+		  1 "DWARF_WORKER_TRIBE"
+		}
+	  }
+    }
+    locationName = "Dwarven Mines"
+    race = "dwarves"
+    buildingId = "DUNGEON"
+    shopItems = { "dwarfminerals" "dwarfminerals" "dwarfminerals" "minerals" "minerals"  "corpse" "corpse" }
+    outsideFeatures = "dungeonOutside"
+    furniture = { "roomFurniture" }
+  }
+}
   "ELEMENTALIST_ENTRY" modify {
     settlement = {
     type = Builtin TOWER

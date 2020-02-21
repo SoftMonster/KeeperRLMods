@@ -58,6 +58,14 @@
 	  "BURNT_TREE" 1
     }	
   }
+  "vegetationDwarf"
+  {
+    {
+	  "BURNT_TREE" 3
+	  "DECID_TREE" 1
+	  "CANIF_TREE" 1
+    }	
+  }
   "vegetationFey"
   {
     {

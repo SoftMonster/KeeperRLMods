@@ -11,6 +11,7 @@ EVIL_KEEPER modify append {
    {{ "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN }
    {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
    {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
+   {{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" MAIN}
 
 #Lesser villains
    {{ "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER }
@@ -47,6 +48,7 @@ LAWFUL_KEEPER modify append {
 
 #Modded lawful ally
     {{ "king" } "KING" "The King" ALLY}
+	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" ALLY}
     {{ "dungeon_entrance" ColorId GREEN } "BEGINNERS_DUNGEON" "Beginners Dungeon" ALLY} #Modded
     {{ "dungeon_entrance" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon" ALLY} #Modded
     {{ "dungeon_entrance" ColorId RED } "EXPERT_DUNGEON" "Expert Dungeon" ALLY} #Modded
@@ -58,6 +60,7 @@ EVIL_ADVENTURER modify append {
 #Extra modded villains
 
     {{ "king" } "KING" "The King" MAIN}
+	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" MAIN}
     {{ "hell_portal" } "HELL_PORTAL" "Hell portal" MAIN }
     {{ "amazon_queen" } "AMAZONS" "Amazons" MAIN }
     {{ "centar_king" } "CENTAURS" "Centaurs" MAIN }
@@ -113,6 +116,7 @@ LAWFUL_ADVENTURER modify append {
     {{ "rat_king" } "RATMEN" "Rat men" LESSER }
 
     {{ "king" } "KING" "The King" ALLY}
+	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" ALLY}
     {{ "dungeon_entrance" ColorId GREEN } "BEGINNERS_DUNGEON" "Beginners Dungeon" ALLY} #Modded
     {{ "dungeon_entrance" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon" ALLY} #Modded
     {{ "dungeon_entrance" ColorId RED } "EXPERT_DUNGEON" "Expert Dungeon" ALLY} #Modded

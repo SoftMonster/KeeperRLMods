@@ -91,6 +91,17 @@
       floorOutside = "GRASS"
       floorInside = "FLOOR_STONE1_COSMETIC"
   }
+"CITY_DWARF"
+  {
+    wall = "MOUNTAIN"
+    floorInside = "FLOOR_STONE2_COSMETIC"
+    floorOutside = "FLOOR_STONE2_COSMETIC"
+	prettyFloor = "FLOOR_CARPET2"
+    door = { "IRON_DOOR" 1.0 }
+    gate = { "IRON_GATE" 1.0 }
+	water = {LAVA}
+	bridge = "STONE_BRIDGE"
+  }
   "FAIRY_BRICK" inherit "BRICK"
   {
   	  wall = "FEY_WALL"

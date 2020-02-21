@@ -3215,7 +3215,6 @@
       deathDescription = "destroyed"
       courage = 1
     }
- 
    "ADOXIE_HEAD_PLAYER" inherit "ADOXIE_HEAD" {
     permanentEffects = {
       MAGIC_RESISTANCE 1
@@ -5758,6 +5757,30 @@
         { Simple "DwarvenBeer" 2 4 }
       }
     }
+  "DWARF_QUEEN_TRIBE" inherit "DWARF_QUEEN"
+    {
+      attr = {
+        DAMAGE 36
+        DEFENSE 34 
+      }
+	  maxLevelIncrease = {
+        MELEE 4
+	  }
+	  spells = { "advanced healing" "area defense bonus" "area damage bonus" }
+	  inventory = {
+       { type = Simple "InfWarHammer", alternative = Simple "AdaWarHammer" prefixChance = 1 }
+	   { type = Simple "InfArmor", alternative = Simple "AdaArmor" prefixChance = 0.9 }
+       { type = Simple "InfBoots", alternative = Simple "AdaBoots" prefixChance = 0.8 }
+       { type = Simple "InfGloves", alternative = Simple "AdaGloves" prefixChance = 0.7 }
+	   { type = Simple "InfHelm", alternative = Simple "AdaHelm" prefixChance = 0.65 chance = 0.8 }
+       { type = Scroll IncreaseAttr DAMAGE 2, alternative = Scroll IncreaseAttr DEFENSE 2 countMin = 1 countMax = 1 }
+	   { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 }
+	   { Potion Permanent SPEED 1 1 1 }
+	   { Potion RegrowBodyPart 1 1 1 1 }
+	   { Scroll Permanent LIGHT_SOURCE 1 1 0.4 }
+       { Potion Heal FLESH 2 3 1}
+      }
+ 	}
   "GUILDMASTER"
     {
       name = {

@@ -44,10 +44,10 @@
   
   "dwarfShop" modify { 
     items = {
-      {{Simple "Knife"} 5}
+      {{Simple "Knife"} 1}
       {{Simple "Sword"} 2}
-      {{Simple "BattleAxe"} 2}
-      {{Simple "WarHammer"} 2}
+      {{Simple "BattleAxe"} 3}
+      {{Simple "WarHammer"} 4}
       {{Simple "Bow"} 4}
       {{Simple "LeatherArmor"} 2}
       {{Simple "ChainArmor"} 1}
@@ -58,9 +58,22 @@
       {{Simple "IronBoots"} 1}
 	  {{Simple "WoodenShield"} 2}  #Modded
 	  {{Simple "LongSpear" } 3}
-      {{Simple "Axe"} 3}
-      {{Simple "Mace"} 2}
+      {{Simple "Axe"} 4}
+      {{Simple "Mace"} 3}
+      {{Simple "AdaAxe"} 1}
+      {{Simple "AdaMace"} 1}
 	  {{Simple "IronShield"} 3}
+	  {{Simple "AdaShield"} 1}
+      {{Simple "InfSword"} 1}
+      {{Simple "InfBattleAxe"} 1}
+      {{Simple "InfWarHammer"} 1}
+      {{Simple "AdaArmor"} 2}
+      {{Simple "InfArmor"} 1}
+      {{Simple "AdaHelm"} 2}
+      {{Simple "InfHelm"} 1}
+      {{Simple "InfAxe"} 1}
+      {{Simple "InfMace"} 1}
+	  {{Simple "InfShield"} 1}
 	}
       prefixChance = 0.2
   }
@@ -745,3 +758,13 @@
 	  {{ Glyph ARMOR LastingEffect FIRE_RESISTANT} 3}
 	}
   }
+"dwarfminerals"
+{
+  items = {
+    {{Simple "IronOre"} 5 }
+    {{Simple "Rock"} 2 }
+	{{Simple "AdaOre"} 3 }
+	{{Simple "InfOre"} 2 }
+	{{Simple "VenOre"} 1 }
+  }
+}
