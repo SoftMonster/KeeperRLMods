@@ -273,15 +273,15 @@
     size = {5 15}
     count = {0}
   }
-  overrideWaterType = "FLOOR"
-  sandType = "FLOOR"
+  overrideWaterType = "HILL"
+  sandType = "HILL"
   items = "magicShrooms"
   itemCount = { 6 12 }
   mountains = {
     lowlandRatio = 0.94
     hillRatio = 0.04
     hill = "MOUNTAIN"
-    grass = "FLOOR"
+    grass = "HILL"
     mountain = "MOUNTAIN"
     mountainDeep = "MOUNTAIN"
     mountainFloor = "FLOOR"
