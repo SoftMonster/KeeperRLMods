@@ -93,6 +93,7 @@
   { "young_reddragon" "d" ColorId RED }
   { "zombiedragon" "z" ColorId GRAY }
   { "troll_champion_female" "O" ColorId LIGHT_GRAY }
+  { "locked_chest" "꞊" ColorId BROWN }
 
 #Added by your boi; Acre June 2019
 

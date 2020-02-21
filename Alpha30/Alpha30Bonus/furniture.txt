@@ -673,7 +673,7 @@
   "LOCKED_CHEST"
   {
     name = "chest"
-    viewId = { "chest" }
+    viewId = { "locked_chest" }
     canHideHere = true
     strength = 1
     destroyedRemains = "TREASURE_CHEST"
