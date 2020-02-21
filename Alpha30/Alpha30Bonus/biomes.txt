@@ -429,7 +429,7 @@
   items = "magicShrooms"
   itemCount = { 0 }
   mountains = {
-    lowlandRatio = 0.72
+    lowlandRatio = 0.75
     hillRatio = 0.04
     hill = "MOUNTAIN"
     grass = "HILL"
