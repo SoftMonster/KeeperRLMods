@@ -883,6 +883,22 @@
     strength = 100
   }
   
+"BLOOD_WELL"
+{
+  name = "well of blood"
+  viewId = { "well" ColorId RED }
+  canHideHere = true
+  luxury = 0.7
+  usageType = UsageEffect "drink from"
+      Chain {
+        CreatureMessage "take a sip" "takes a sip"
+		RegrowBodyPart 1
+      }
+  strength = 80
+  destroyFX = { DESTROY_FURNITURE Rgb 120 120 120 255 }
+}
+
+
 ####################
 #Ideas for new traps
 ####################

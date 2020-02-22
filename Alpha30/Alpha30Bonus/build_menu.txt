@@ -437,6 +437,7 @@
         "Allows you to make potions to regrow lost limbs." 0 {TechId "regrow limbs" }}
     { Furniture {{ "FORGE" } "IRON" 20 } "Forge"                                       "Crafting"
         "Produces metal weapons and armor."    0 { TechId "iron working" }}
+    { Furniture { types = { "BLOOD_WELL" } cost = "GOLD" 500 limit = 1} "Well of blood" "" ""  0   {DungeonLevel 5 TechId "regrow limbs" } }
     { Furniture { types = { "THRONE" } cost = "GOLD" 500 limit = 4} "Throne" "" ""  0   {DungeonLevel 10} }
   }
 
