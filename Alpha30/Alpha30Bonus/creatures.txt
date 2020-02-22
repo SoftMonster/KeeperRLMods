@@ -5967,7 +5967,7 @@
     }
     courage = 1
     name = {
-      name = "Duke"
+      name = "Shadow Duke"
       firstNameGen = "FIRST_MALE"
       fullTitle = true
     }
