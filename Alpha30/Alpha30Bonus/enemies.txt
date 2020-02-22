@@ -1984,11 +1984,18 @@
   }
   "SHADOW_GROUP_SHOP_BASE"
   {
+    discoverable = false
     settlement = {
     type = Builtin VILLAGE
     tribe = DARK_ELF
-    inhabitants = { leader = { { "SHADOW_KNIGHT" } } }
-    buildingId = "SHADOW_CITY_BRICK"  
+    inhabitants = { 
+		leader = { { "SHADOW_KNIGHT" } } 
+	    fighters = {
+			count = {7 10}
+			all = { 1 "SHADOW_SPIRIT" }
+	  }
+	}
+    buildingId = "SHADOW_CITY_GRASS"  
     furniture = { "palace_furniture" }
     outsideFeatures = "villageOutside"
     }
@@ -2021,9 +2028,10 @@
       fighters = {
         count = {55 62}
         all = {
-          1 "ROYAL_PRIEST"
-          3 "ROYAL_KNIGHT"
-          2 "ROYAL_ARCHER"
+          10 "ROYAL_PRIEST"
+          30 "ROYAL_KNIGHT"
+          20 "ROYAL_ARCHER"
+		  2 "DUKE"
         }
       }
     }
@@ -2110,9 +2118,10 @@
       fighters = {
         count = {55 62}
         all = {
-          1 "SHADOW_PRIEST"
-          3 "SHADOW_KNIGHT"
-          2 "SHADOW_ARCHER"
+          10 "SHADOW_PRIEST"
+          30 "SHADOW_KNIGHT"
+          20 "SHADOW_ARCHER"
+		  2 "SHADOW_DUKE"
         }
       }
     }

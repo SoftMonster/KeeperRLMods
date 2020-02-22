@@ -58,6 +58,15 @@
 	  "BURNT_TREE" 1
     }	
   }
+  "vegetationWastes"
+  {
+    {
+	  "BURNT_TREE" 28
+	  "GIANT_MUSHROOM" 12
+	  "HOLE" 1
+	  "GROUND_TORCH" 8
+    }	
+  }
   "vegetationDwarf"
   {
     {
@@ -289,8 +298,7 @@
     "GROUND_TORCH" 1
     "FOUNTAIN" 1
     "LOCKED_CHEST" 1
-    "CHEST" 1
-    "FLOOR_STONE1_COSMETIC" 30  
+    "CHEST" 1 
     }
   }
 "overgrownRuins"

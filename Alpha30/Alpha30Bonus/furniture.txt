@@ -397,6 +397,25 @@
     layer = FLOOR
     canBuildOutsideOfTerritory = true
   }
+  "FLOOR_ZOMBIE1"
+  {
+    name = "floor"
+    viewId = { "zombie_stone_floor" }
+    luxury = 0.6
+    layer = GROUND
+  }
+  "FLOOR_ZOMBIE_CARPET1"
+  {
+    name = "carpet"
+    viewId = { "zombie_carpet" }
+    luxury = 0.6
+    layer = GROUND
+  }
+  "CORRUPTED_HILL" inherit "GRASS" 
+  {
+	name = "wasteland"
+    viewId = { "corrupted_hill" }
+  }
   "MASS_GRAVE"
   {
     name = "mass grave"
@@ -518,7 +537,7 @@
   }
   "ZOMBIE_WALL"
   {
-    name = "zombie wall"
+    name = "wall"
     viewId = { "zombie_altar_wall" }
     blockMovement = true
     blockVision = { NORMAL ELF }

@@ -5812,7 +5812,7 @@
       viewId = { "guildmaster_female1" }
       gender = FEMALE
       name = {
-        name = "wizard"
+        name = "guildmaster"
         firstNameGen = "FIRST_FEMALE"
         fullTitle = true
       }
@@ -5879,6 +5879,7 @@
 		 "summon spirit"
 		 "regrow body part"		
 		 }
+	  hatedByEffect = HATE_HUMANS
       inventory = {
 		{ type = Simple "GoldenStaff" prefixChance = 1 }
 		{ type = Simple "InfArmor" prefixChance = 0.8 }
@@ -5895,11 +5896,97 @@
         { Amulet REGENERATION 1 1 1.0}
 	}
   }
+  "SHADOW_KING"
+	  {
+        name = {
+        name = "Shadow King"
+        firstNameGen = "FIRST_MALE"
+        fullTitle = true
+      }
+      viewId = { "shadow_king" }
+      attr = {
+        DAMAGE 10
+        DEFENSE 35
+		SPELL_DAMAGE 40
+      }
+      permanentEffects = {
+        HATE_HUMANS 1
+		DARKNESS_SOURCE 1
+      }
+      body = {
+	    material = UNDEAD_FLESH
+        type = Humanoid LARGE
+      }
+      chatReactionFriendly = "curses all humans"
+      chatReactionHostile = "calls for guards"
+	  spellSchools = { "healer" "high priest" }
+      spells = { 		 
+		 "expert healing"
+		 "invisibility"
+		 "expert magic missile"
+		 "escape"
+		 "summon spirit"
+		 "regrow body part"		
+		 }
+	  hatedByEffect = HATE_UNDEAD
+      inventory = {
+		{ type = Simple "GoldenStaff" prefixChance = 1 }
+		{ type = Simple "InfArmor" prefixChance = 0.8 }
+		{ type = Simple "VenBoots" prefixChance = 0.8 }
+		{ type = Simple "AdaGloves" prefixChance = 0.8 }
+		{ type = Simple "AdaHelm" prefixChance = 0.8 }
+		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.5 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.5 }
+		{ Potion Permanent SPEED 1 1 0.5 }
+		{ Potion RegrowBodyPart 1 1 1 0.5 }
+        { type = Potion Heal FLESH countMin = 2 countMax = 4 }
+		{ Ring MAGIC_RESISTANCE 1 1 0.8}
+        { Ring POISON_RESISTANT 1 1 0.8}
+        { Amulet REGENERATION 1 1 1.0}
+    }
+  }
+  "SHADOW_DUKE"
+  {
+    viewId = { "shadow_knightboss" }
+    attr = {
+      DAMAGE 53
+      DEFENSE 42
+    }
+    body = {
+	  material = UNDEAD_FLESH
+      type = Humanoid LARGE
+    }
+    permanentEffects = {
+      MELEE_RESISTANCE 1
+	  DARKNESS_SOURCE 1
+    }
+    chatReactionFriendly = "curses all dungeons"
+    chatReactionHostile = "\"Die!\""
+    maxLevelIncrease = {
+      MELEE 3
+    }
+    courage = 1
+    name = {
+      name = "Duke"
+      firstNameGen = "FIRST_MALE"
+      fullTitle = true
+    }
+    hatedByEffect = HATE_UNDEAD
+    inventory = {
+      { type = Simple "AdaBattleAxe" prefixChance = 1 }
+      { Simple "InfArmor"}
+      { Simple "InfHelm"}
+      { Simple "IronBoots"}
+      { Potion Heal FLESH 3 5 }
+      { type = Simple "Torch" chance = 0.3 }
+      { Simple "GoldPiece" 140 200 }
+    }
+  }
   
-  "SHADOW_KING" inherit "KING" { viewId = { "shadow_king" } }
-  "SHADOW_KNIGHT" inherit "ROYAL_KNIGHT" { viewId = { "shadow_knight" } }
-  "SHADOW_PRIEST" inherit "ROYAL_PRIEST" { viewId = { "shadow_priest" } }
-  "SHADOW_ARCHER" inherit "ROYAL_ARCHER" { viewId = { "shadow_archer" } }
+  "SHADOW_KNIGHT" inherit "ROYAL_KNIGHT" { name = { name = "Shadow Knight" } body = { material = UNDEAD_FLESH type = Humanoid LARGE } viewId = { "shadow_knight" } permanentEffects = { DARKNESS_SOURCE 1 } hatedByEffect = HATE_UNDEAD }
+  "SHADOW_PRIEST" inherit "ROYAL_PRIEST" { name = { name = "Shadow Priest" } body = { material = UNDEAD_FLESH type = Humanoid LARGE } viewId = { "shadow_priest" } permanentEffects = { DARKNESS_SOURCE 1 } hatedByEffect = HATE_UNDEAD }
+  "SHADOW_ARCHER" inherit "ROYAL_ARCHER" { name = { name = "Shadow Archer" } body = { material = UNDEAD_FLESH type = Humanoid LARGE } viewId = { "shadow_archer" } permanentEffects = { DARKNESS_SOURCE 1 } hatedByEffect = HATE_UNDEAD }
+  "SHADOW_SPIRIT" inherit "LOST_SOUL" { name = { name = "Spirit of Sorrow" } viewId = { "shadow_spirit_light" } permanentEffects = { LIGHT_SOURCE 1 } hatedByEffect = HATE_UNDEAD }
   
   
 "BANDIT_PUNK"
@@ -5910,7 +5997,7 @@
       DEFENSE 23
 	  RANGED_DAMAGE 15
     }
-    body = {
+	body = {
       type = Humanoid LARGE
     }
     chatReactionFriendly = "curses all law enforcement"

@@ -207,6 +207,9 @@
   { "stone_pattern1" "." ColorId LIGHT_RED }
   { "stone_pattern2" "." ColorId LIGHT_RED }
   { "tainted_tile" "." ColorId PURPLE }
+  { "zombie_carpet" "." ColorId PURPLE }
+  { "zombie_stone_floor" "." ColorId DARK_BLUE }
+  { viewId = "corrupted_hill" symbol = "𝀢" color = ColorId GRAY isSymbolFont = true canMirror = true }
 
  #Immigrant variants
   { "winged_imp" "i" ColorId LIGHT_BROWN }
@@ -235,8 +238,10 @@
   { "king" "@" ColorId PURPLE }
   { "shadow_king" "@" ColorId LIGHT_GRAY }
   { "shadow_knight" "p" ColorId LIGHT_GRAY }
+  { "shadow_knightboss" "P" ColorId GRAY }
   { "shadow_archer" "p" ColorId LIGHT_GRAY }
   { "shadow_priest" "p" ColorId LIGHT_GRAY }
+  { viewId = "shadow_spirit_light" symbol = "@" color = ColorId LIGHT_BLUE animated = true }
   { viewId = "cursed_wall" symbol = "#" color = ColorId DARK_GRAY wallShadow = true wallConnections = true }
 
  #Volcano
@@ -258,7 +263,7 @@
  #Swamp
   { viewId = "swamp_grass" symbol = "." color = ColorId YELLOW canMirror = true extraBorders = { "swamp_hill" "water" "swamp_water" } }
   { viewId = "swamp_water" symbol = "~" color = ColorId LIGHT_BLUE waterSides = "swamp_water" animated = true spriteColor = Rgb 255 255 255 255 }
-  { viewId = "swamp_hill" symbol = "𝀢" color = ColorId DARK_GREEN isSymbolFont = true canMirror = true extraBorders = { "water" "swamp_water" } }
+  { viewId = "swamp_hill" symbol = "𝀢" color = ColorId DARK_GREEN isSymbolFont = true canMirror = true extraBorders = { "water" "swamp_water" "corrupted_hill" } }
   { viewId = "swamp_tree1" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
   { viewId = "swamp_tree2" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
   { viewId = "swamp_bush1" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }

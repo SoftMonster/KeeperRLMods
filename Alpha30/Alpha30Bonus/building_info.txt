@@ -75,12 +75,23 @@
       floorInside = "FLOOR_STONE1_COSMETIC"
       prettyFloor = "FLOOR_CARPET1"
   }
-  "SHADOW_CITY_BRICK" inherit "BRICK"
+  "SHADOW_CITY_BRICK"
   {
-  	  wall = "CURSED_WALL"
-      floorOutside = "FLOOR_STONE1_COSMETIC"
-      floorInside = "FLOOR_STONE1_COSMETIC"
-      prettyFloor = "FLOOR_CARPET1"
+  	  wall = "ZOMBIE_WALL"
+	  floorOutside = "FLOOR_ZOMBIE1"
+      floorInside = "FLOOR_ZOMBIE1"
+      prettyFloor = "FLOOR_ZOMBIE_CARPET1"
+	  door = { "IRON_DOOR" 1.0 }
+      gate = { "IRON_GATE" 1.0 }
+	  upStairs = "TAINTED_STAIRS_UP"
+	  downStairs = "TAINTED_STAIRS_DOWN"
+	  water = { LAVA }
+	  bridge = "STONE_BRIDGE"
+  }
+    "SHADOW_CITY_GRASS" inherit "SHADOW_CITY_BRICK"
+  {
+  	  wall = "ZOMBIE_WALL"
+	  floorOutside = "CORRUPTED_HILL"
   }
   "BRICK_RUINS" inherit "BRICK"
   {

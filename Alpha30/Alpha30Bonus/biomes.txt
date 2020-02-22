@@ -273,31 +273,37 @@
     size = {5 15}
     count = {0}
   }
-  overrideWaterType = "HILL"
-  sandType = "HILL"
+  overrideWaterType = "CORRUPTED_HILL"
+  sandType = "CORRUPTED_HILL"
   items = "magicShrooms"
-  itemCount = { 6 12 }
+  itemCount = { 16 32 }
   mountains = {
-    lowlandRatio = 0.94
-    hillRatio = 0.04
-    hill = "MOUNTAIN"
-    grass = "HILL"
+    lowlandRatio = 0.82
+    hillRatio = 0.16
+    hill = "SWAMP_HILL"
+    grass = "CORRUPTED_HILL"
     mountain = "MOUNTAIN"
-    mountainDeep = "MOUNTAIN"
+    mountainDeep = "MOUNTAIN2"
     mountainFloor = "FLOOR"
   }
   forests = {
     {
-      ratio = 0.1
-      density = 0.2
-      onType = "FLOOR"
-      trees = "vegetationBurnt"
+      ratio = 0.9
+      density = 0.08
+      onType = "CORRUPTED_HILL"
+      trees = "vegetationWastes"
+    }
+    {
+      ratio = 0.99
+      density = 0.12
+      onType = "SWAMP_HILL"
+      trees = "vegetationSwampGrass"
     }
   }
   wildlife = {
     count = { 20 }
     all = {
-      1 "RAT"
+      2 "BAT"
       1 "BLACK_RAT"
       1 "GREEN_SPIDER"
     }
@@ -429,7 +435,7 @@
   items = "magicShrooms"
   itemCount = { 0 }
   mountains = {
-    lowlandRatio = 0.75
+    lowlandRatio = 0.77
     hillRatio = 0.04
     hill = "MOUNTAIN"
     grass = "HILL"
