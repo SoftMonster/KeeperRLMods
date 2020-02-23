@@ -2411,8 +2411,10 @@
 ####################################################################
 #Definition of dungeons level 1 to 100
 ####################################################################
-#Increasing difficulty of dungeons
+#Increasing difficulty of dungeons. Usable for villain dungeons and z-levels
 ####################################################################
+
+  #Start with base classes for the different types of dungeon
 
   "BOTTOMLESS_TYPE_1"
   {
@@ -2701,8 +2703,12 @@
     }
   }
 
+  #Split base class 2 into 2a and 2b
+
   "BOTTOMLESS_TYPE_2a" inherit "BOTTOMLESS_TYPE_2" { settlement = append {buildingId = "RUINS"}}
   "BOTTOMLESS_TYPE_2b" inherit "BOTTOMLESS_TYPE_2" { settlement = append {buildingId = "TAINTED"}}
+  
+  #Split base class 3 into 3a, 3b and 3c
   
   "BOTTOMLESS_TYPE_3a" inherit "BOTTOMLESS_TYPE_3"
      { settlement = append { buildingId = "MINOTAUR" inhabitants = append { fighters = append { count = {5 9}}}}}
@@ -2711,6 +2717,10 @@
   "BOTTOMLESS_TYPE_3c" inherit "BOTTOMLESS_TYPE_3"
      { settlement = append { buildingId = "TAINTED" inhabitants = append { fighters = append { count = {3 7}}}}}
       
+	  
+  #Define 100 levels of dungeons with increasing difficulty based on the base classes available.
+  #This ensures that there is a continuous stream of enemies available getting gradually harder.  
+	  
   "BOTTOMLESS1" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 1 } } } } }
   "BOTTOMLESS2" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 3 } } } } }
   "BOTTOMLESS3" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 5 } } } } }
