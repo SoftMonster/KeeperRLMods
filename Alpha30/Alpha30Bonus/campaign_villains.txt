@@ -22,9 +22,9 @@ EVIL_KEEPER modify append {
    {{ "ocean_portal" } "OCEAN_PORTAL" "Ocean Portal" LESSER }
 
 #Ally
-    {{ "dungeon_entrance" ColorId GREEN } "BEGINNERS_DUNGEON" "Beginners Dungeon" ALLY} #Modded
-    {{ "dungeon_entrance" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon" ALLY} #Modded
-    {{ "dungeon_entrance" ColorId RED } "EXPERT_DUNGEON" "Expert Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
+    {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
+    {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
 }
 
@@ -49,9 +49,9 @@ LAWFUL_KEEPER modify append {
 #Modded lawful ally
     {{ "king" } "KING" "The King" ALLY}
 	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" ALLY}
-    {{ "dungeon_entrance" ColorId GREEN } "BEGINNERS_DUNGEON" "Beginners Dungeon" ALLY} #Modded
-    {{ "dungeon_entrance" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon" ALLY} #Modded
-    {{ "dungeon_entrance" ColorId RED } "EXPERT_DUNGEON" "Expert Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
+    {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
+    {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded
 }
 
 # Villains for evil adventurers
@@ -93,9 +93,9 @@ EVIL_ADVENTURER modify append {
 
     {{ "dark_elf_lord" } "DARK_ELVES_ALLY" "Dark elves" ALLY }
     {{ "gnome_boss" } "GNOMES" "Gnomes" ALLY }
-    {{ "dungeon_entrance" ColorId GREEN } "BEGINNERS_DUNGEON" "Beginners Dungeon" ALLY} #Modded
-    {{ "dungeon_entrance" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon" ALLY} #Modded
-    {{ "dungeon_entrance" ColorId RED } "EXPERT_DUNGEON" "Expert Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
+    {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
+    {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
 }
 
@@ -117,7 +117,7 @@ LAWFUL_ADVENTURER modify append {
 
     {{ "king" } "KING" "The King" ALLY}
 	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" ALLY}
-    {{ "dungeon_entrance" ColorId GREEN } "BEGINNERS_DUNGEON" "Beginners Dungeon" ALLY} #Modded
-    {{ "dungeon_entrance" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon" ALLY} #Modded
-    {{ "dungeon_entrance" ColorId RED } "EXPERT_DUNGEON" "Expert Dungeon" ALLY} #Modded
+    {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
+    {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
+    {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded
 }

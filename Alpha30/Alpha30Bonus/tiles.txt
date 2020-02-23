@@ -329,3 +329,7 @@
 { viewId = "hellsteel_ore" symbol = "⁂" color = ColorId DARK_GRAY
   isSymbolFont = true wallShadow = true mountainSides = "mountain"
   background = "mountain2" }
+  
+   #Misc
+  { "dungeon_entrance_color" ">" ColorId WHITE }
+   

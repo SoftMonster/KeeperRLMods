@@ -1969,7 +1969,7 @@
   {
     settlement = {
     type = Builtin VILLAGE
-    tribe = HUMAN
+    tribe = HUMAN #Lawful alignment
     inhabitants = {
       leader = { { "KNIGHT" } }
       fighters = {
@@ -1987,7 +1987,7 @@
     discoverable = false
     settlement = {
     type = Builtin VILLAGE
-    tribe = DARK_ELF
+    tribe = DARK_ELF #Evil alignment
     inhabitants = { 
 		leader = { { "SHADOW_KNIGHT" } } 
 	    fighters = {
@@ -1996,6 +1996,24 @@
 	  }
 	}
     buildingId = "SHADOW_CITY_GRASS"  
+    furniture = { "palace_furniture" }
+    outsideFeatures = "villageOutside"
+    }
+  }
+  "NEUTRAL_GROUP_SHOP_BASE"
+  {
+    discoverable = false
+    settlement = {
+    type = Builtin VILLAGE
+    tribe = GNOME #Neutral alignment
+    inhabitants = { 
+		leader = { { "GNOME_CHIEF" } } 
+	    fighters = {
+			count = { 10 11 }
+			all = { 1 "AUTOMATON" }
+	  }
+	}
+    buildingId = "DUNGEON"  
     furniture = { "palace_furniture" }
     outsideFeatures = "villageOutside"
     }
@@ -2016,6 +2034,13 @@
   "SHADOW_BREWER" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Brewer" shopItems = { "breweryPotions" } } }
   "SHADOW_JEWELLER" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Jeweller" shopItems = { "royalJewellery" } } }
   "SHADOW_TRAPSMITH" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Trapsmith" shopItems = { "traps" } } }
+
+  "NEUTRAL_BLACKSMITH" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Blacksmith" shopItems = { "iron" } } }
+  "NEUTRAL_SCRIBE" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Scribe" shopItems = { "scribeScrolls" } } }
+  "NEUTRAL_TANNER" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Tanner" shopItems = { "leather" } } }
+  "NEUTRAL_BREWER" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Brewer" shopItems = { "breweryPotions" } } }
+  "NEUTRAL_JEWELLER" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Jeweller" shopItems = { "royalJewellery" } } }
+  "NEUTRAL_TRAPSMITH" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Trapsmith" shopItems = { "traps" } } }
 
   "KING"
   {
@@ -2211,9 +2236,10 @@
 ####################################################################
   "BEGINNERS_DUNGEON"
   {
+    biomes = { "NEUTRAL_TOWN" }
     settlement = {
       type = Builtin MINETOWN
-      tribe = GNOME
+      tribe = MONSTER
       inhabitants = {
         leader = { { "RED_DRAGON" } }
       }
@@ -2249,9 +2275,10 @@
 
   "EXPERT_DUNGEON"
   {
+    biomes = { "NEUTRAL_TOWN" }
     settlement = {
       type = Builtin MINETOWN
-      tribe = GNOME
+      tribe = MONSTER
       inhabitants = {
         leader = { { "DEATH" } }
       }
@@ -2316,9 +2343,10 @@
   }
   "ADVANCED_DUNGEON"
   {
+    biomes = { "NEUTRAL_TOWN" }
     settlement = {
       type = Builtin MINETOWN
-      tribe = GNOME
+      tribe = MONSTER
       inhabitants = {
         leader = { { "GOBLIN_KING" } }
       }
@@ -2367,10 +2395,14 @@
   "BOTTOMLESS_ENTRY"
   {
     settlement = {
-      type = Builtin MINETOWN
-      tribe = GNOME
+      type = Builtin COTTAGE
+      tribe = GNOME #Gnomish alignment is neutral to both good and evil characters
       inhabitants = {
-        leader = { { "BANDIT" } }
+        leader = { { "GNOME_CHIEF" } }
+        fighters = {
+          count = { 5 6}
+          all = { 1 "AUTOMATON" }
+        }
       }
       buildingId = "DUNGEON"
     }

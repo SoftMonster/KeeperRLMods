@@ -326,6 +326,49 @@
   }
 }
 
+"NEUTRAL_TOWN"
+{
+  lakes = {
+    size = {5 15}
+    count = {0}
+  }
+  overrideWaterType = "HILL"
+  sandType = "HILL"
+  items = "magicShrooms"
+  itemCount = { 16 32 }
+  mountains = {
+    lowlandRatio = 0.82
+    hillRatio = 0.16
+    hill = "HILL"
+    grass = "GRASS"
+    mountain = "MOUNTAIN"
+    mountainDeep = "MOUNTAIN2"
+    mountainFloor = "FLOOR"
+  }
+  wildlife = {
+    count = { 20 }
+    all = {
+      2 "DEER"
+    }
+  }
+ darkKeeperEnemies = {
+	{ id = "NEUTRAL_BLACKSMITH" count = { 1 } }
+	{ id = "NEUTRAL_TRAPSMITH" count = { 1 } }
+	{ id = "NEUTRAL_SCRIBE" count = { 1 } }
+	{ id = "NEUTRAL_TANNER" count = { 1 } }
+	{ id = "NEUTRAL_BREWER" count = { 1 } }
+	{ id = "NEUTRAL_JEWELLER" count = { 1 } }
+  }
+  whiteKeeperEnemies = {
+	{ id = "NEUTRAL_BLACKSMITH" count = { 1 } }
+	{ id = "NEUTRAL_TRAPSMITH" count = { 1 } }
+	{ id = "NEUTRAL_SCRIBE" count = { 1 } }
+	{ id = "NEUTRAL_TANNER" count = { 1 } }
+	{ id = "NEUTRAL_BREWER" count = { 1 } }
+	{ id = "NEUTRAL_JEWELLER" count = { 1 } }
+  }
+}
+
 "SPIDER_MOUNTAIN" inherit "MOUNTAIN"
 {
   forests = {
