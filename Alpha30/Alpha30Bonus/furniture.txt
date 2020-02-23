@@ -840,6 +840,26 @@
   "FEY_TREE87" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId DARK_BLUE }}
   "FEY_TREE88" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId SKY_BLUE }}
   "FEY_TREE89" inherit "CANIF_TREE" { viewId = { "fey_tree2" ColorId VIOLET }}
+
+  #Fairy and driad herbs
+  "HERB_1"
+  {
+    name = "herb"
+    viewId = { "herb1" }
+    strength2 = { 10 DIG }
+    fire = 100
+    itemDrop = {{{{Simple "Berry1"} 1 { 1 }}}}
+    usageType = UsageEffect "dig" DestroyWalls DIG	
+  }
+
+  "HERB_2" inherit "HERB_1" { viewId = { "herb2" } itemDrop = {{{{Simple "Berry2"} 1 { 1 }}}}}
+  "HERB_3" inherit "HERB_1" { viewId = { "herb3" } itemDrop = {{{{Simple "Berry3"} 1 { 1 }}}}}
+  "HERB_4" inherit "HERB_1" { viewId = { "herb4" } itemDrop = {{{{Simple "Berry4"} 1 { 1 }}}}}
+  "HERB_5" inherit "HERB_1" { viewId = { "herb5" } itemDrop = {{{{Simple "Leaf1"} 1 { 1 }}}}}
+  "HERB_6" inherit "HERB_1" { viewId = { "herb6" } itemDrop = {{{{Simple "Flower1"} 1 { 1 }}}}}
+  "HERB_7" inherit "HERB_1" { viewId = { "herb7" } itemDrop = {{{{Simple "Flower2"} 1 { 1 }}}}}
+
+  
   
   #Swamp
   "SWAMP_TREE1" inherit "CANIF_TREE" { viewId = { "swamp_tree1" ColorId GREEN }

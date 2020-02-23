@@ -507,3 +507,16 @@
   whiteKeeperEnemies = {
   }
 }
+
+"HERB_GRASSLAND" inherit "GRASSLAND"
+{
+  forests = {
+  {
+      ratio = 0.3
+      density = 0.25
+      onType = "GRASS"
+      trees = "vegetationHerbs"
+    }
+  }
+  keeperBiome = none
+}

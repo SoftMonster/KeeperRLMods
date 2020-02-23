@@ -266,6 +266,70 @@
       uses = 1
       effect = Lasting SLEEP
     }
+  "Berry1"
+    {
+      viewId = { "berry1" }
+      effectDescription = false
+      name = "dark herb"
+      description = "A fresh herb."
+      weight =  1
+      price =  10 
+      itemClass =  FOOD
+      applyTime = 1
+      uses = 1
+      effect = Lasting COLLAPSED
+    }
+  "Berry2" inherit "Berry1"
+    {
+      viewId = { "berry2" }
+      effect = Lasting SLOWED
+      name = "strange berries"
+    }
+  "Berry3" inherit "Berry1"
+    {
+      viewId = { "berry3" }
+      effect = Lasting BLIND
+      name = "cold plant"
+    }
+  "Berry4" inherit "Berry1"
+    {
+      viewId = { "berry4" }
+      name = "smelly herb"
+      effect = Chain {
+        Heal FLESH
+        Heal SPIRIT
+        RemoveLasting POISON
+        RemoveLasting BLEEDING
+        RemoveLasting PLAGUE
+        RemoveLasting COLLAPSED
+        RemoveLasting SLOWED
+        RemoveLasting BLIND
+        RegrowBodyPart 10
+      }
+    }
+  "Leaf1" inherit "Berry1"
+    {
+      viewId = { "leaf1" }
+      name = "leaf of herb"
+      effect = Chain {
+        Heal FLESH
+        Heal SPIRIT
+		Lasting SPEED
+      }
+    }
+  "Flower1" inherit "Berry1"
+    {
+      viewId = { "flower1" }
+      effect = Lasting POISON
+      name = "red flower"
+    }
+  "Flower2" inherit "Berry1"
+    {
+      viewId = { "flower2" }
+      effect = Escape 
+      name = "small flower"
+    }
+	
     "WandOfIce"
     {
         viewId = { "wooden_staff" }

@@ -67,6 +67,20 @@
 	  "GROUND_TORCH" 8
     }	
   }
+  "vegetationHerbs"
+  {
+    {
+	  "DECID_TREE" 100
+	  "CANIF_TREE" 100
+  	  "HERB_1" 1
+	  "HERB_2" 1
+	  "HERB_3" 1
+	  "HERB_4" 1
+	  "HERB_5" 1
+	  "HERB_6" 1
+	  "HERB_7" 1
+    }	
+  }
   "vegetationDwarf"
   {
     {
@@ -138,7 +152,13 @@
 	  "FEY_TREE87" 1
 	  "FEY_TREE88" 1
 	  "FEY_TREE89" 1
-
+	  "HERB_1" 1
+	  "HERB_2" 1
+	  "HERB_3" 1
+	  "HERB_4" 1
+	  "HERB_5" 1
+	  "HERB_6" 1
+	  "HERB_7" 1
 
     }	
   }

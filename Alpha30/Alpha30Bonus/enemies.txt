@@ -5,6 +5,12 @@
       tribe = BANDIT
 	}
   }
+  "UNICORN_HERD" modify {
+    biomes = { "HERB_GRASSLAND" }  
+  }
+  "DRIADS" modify {
+    biomes = { "HERB_GRASSLAND" }  
+  }
   "ORC_VILLAGE" modify {
     settlement = {
       type = Builtin VILLAGE

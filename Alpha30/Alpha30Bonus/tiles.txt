@@ -259,6 +259,20 @@
   { viewId = "fey_tree2" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
   { viewId = "fey_wall" symbol = "#" color = ColorId PURPLE wallShadow = true wallConnections = true }
   { viewId = "bunny" symbol = "h" color = ColorId WHITE }
+  { viewId = "herb1" symbol = "," color = ColorId GREEN }
+  { viewId = "herb2" symbol = "," color = ColorId GREEN }
+  { viewId = "herb3" symbol = "," color = ColorId GREEN }
+  { viewId = "herb4" symbol = "," color = ColorId GREEN }
+  { viewId = "herb5" symbol = "," color = ColorId GREEN }
+  { viewId = "herb6" symbol = "," color = ColorId GREEN }
+  { viewId = "herb7" symbol = "," color = ColorId GREEN }
+  { viewId = "berry1" symbol = "," color = ColorId GREEN }
+  { viewId = "berry2" symbol = "," color = ColorId GREEN }
+  { viewId = "berry3" symbol = "," color = ColorId GREEN }
+  { viewId = "berry4" symbol = "," color = ColorId GREEN }
+  { viewId = "leaf1" symbol = "," color = ColorId GREEN }
+  { viewId = "flower1" symbol = "," color = ColorId GREEN }
+  { viewId = "flower2" symbol = "," color = ColorId GREEN }
 
  #Swamp
   { viewId = "swamp_grass" symbol = "." color = ColorId YELLOW canMirror = true extraBorders = { "swamp_hill" "water" "swamp_water" } }
