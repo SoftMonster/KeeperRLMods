@@ -1,3 +1,9 @@
+  "HYDRA" modify append {
+      genderAlternatives = {
+      FEMALE { "hydra" ColorId YELLOW }
+    }
+  }
+
   "ADVENTURER" modify append {
     inventory = {
         { Simple "FirstAidKit" 2 4 }
@@ -153,49 +159,6 @@
   }
   "PRIEST_PLAYER" modify append {
       viewId = { "priest" Rgb 255 0 0 255 } #Modded
-  }
-  "ROYAL_KNIGHT" inherit "KNIGHT" {
-    viewId = { "knight" ColorId PURPLE } #Modded
-    inventory = {
-      { Simple "Sword"}
-      { Simple "ChainArmor"}
-      { Simple "LeatherBoots"}
-    }
-    attr = {
-      DAMAGE 45
-      DEFENSE 35
-    }
-    name = {
-      name = "royal knight"
-    }
-   }
-  "ROYAL_ARCHER" inherit "ARCHER" {
-      viewId = { "archer" ColorId PURPLE } #Modded
-      attr = {
-      DAMAGE 22
-      DEFENSE 32
-      RANGED_DAMAGE 40
-    }
-    name = {
-      name = "royal archer"
-    }
-    inventory = {
-        { Simple "Bow"}
-        { Simple "Knife"}
-        { Simple "LeatherArmor"}
-        { Simple "LeatherBoots"}
-    }
-  }
-  "ROYAL_PRIEST" inherit "PRIEST" {
-    viewId = { "priest" ColorId PURPLE } #Modded
-    attr = {
-      DAMAGE 15
-      DEFENSE 30
-      SPELL_DAMAGE 40
-    }
-    name = {
-      name = "royal priest"
-    }
   }
   "PESEANT" modify append {
 	  inventory = {
@@ -721,6 +684,52 @@
       viewIdUpgrades = {{ "keeper_f2"  Rgb 106 106 255 106 } { "keeper_f3"  Rgb 106 106 255 106 } { "keeper_f4"  Rgb 106 106 255 106 }}
     }
 
+#---------------------------------------------------------
+#The KING
+#---------------------------------------------------------
+  "ROYAL_KNIGHT" inherit "KNIGHT" {
+    viewId = { "knight" ColorId PURPLE } #Modded
+    inventory = {
+      { Simple "Sword"}
+      { Simple "ChainArmor"}
+      { Simple "LeatherBoots"}
+    }
+    attr = {
+      DAMAGE 45
+      DEFENSE 35
+    }
+    name = {
+      name = "royal knight"
+    }
+   }
+  "ROYAL_ARCHER" inherit "ARCHER" {
+      viewId = { "archer" ColorId PURPLE } #Modded
+      attr = {
+      DAMAGE 22
+      DEFENSE 32
+      RANGED_DAMAGE 40
+    }
+    name = {
+      name = "royal archer"
+    }
+    inventory = {
+        { Simple "Bow"}
+        { Simple "Knife"}
+        { Simple "LeatherArmor"}
+        { Simple "LeatherBoots"}
+    }
+  }
+  "ROYAL_PRIEST" inherit "PRIEST" {
+    viewId = { "priest" ColorId PURPLE } #Modded
+    attr = {
+      DAMAGE 15
+      DEFENSE 30
+      SPELL_DAMAGE 40
+    }
+    name = {
+      name = "royal priest"
+    }
+  }
 #---------------------------------------------------------
 #Centaur faction
 #---------------------------------------------------------
