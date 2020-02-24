@@ -1,3 +1,9 @@
+  "HYDRA" modify {
+      genderAlternatives = {
+      FEMALE { "hydra" ColorId YELLOW }
+    }
+  }
+
   "ADVENTURER" modify {
     inventory = {
         { Simple "FirstAidKit" 2 4 }
