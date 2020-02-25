@@ -354,7 +354,7 @@
       trees = "vegetationLow"
     }
     {
-      ratio = 0.1
+      ratio = 0.99
       density = 0.2
       onType = "HILL"
       trees = "vegetationHigh"
@@ -383,6 +383,55 @@
 	{ id = "ROYAL_TANNER" count = { 1 } }
 	{ id = "ROYAL_BREWER" count = { 1 } }
 	{ id = "ROYAL_JEWELLER" count = { 1 } }
+  }
+}
+
+"CENTAUR_PALACE"
+{
+  lakes = {
+    size = {5 15}
+    count = {0}
+  }
+  overrideWaterType = "GRASS"
+  sandType = "GRASS"
+  items = "magicShrooms"
+  itemCount = { 6 12 }
+  mountains = {
+    lowlandRatio = 0.94
+    hillRatio = 0.04
+    hill = "HILL"
+    grass = "GRASS"
+    mountain = "MOUNTAIN"
+    mountainDeep = "MOUNTAIN"
+    mountainFloor = "FLOOR"
+  }
+  forests = {
+    {
+      ratio = 0.99
+      density = 0.05
+      onType = "GRASS"
+      trees = "vegetationLow"
+    }
+    {
+      ratio = 0.99
+      density = 0.1
+      onType = "HILL"
+      trees = "vegetationHigh"
+    }
+  }
+  wildlife = {
+    count = { 4 6 }
+    all = {
+      1 "BOAR"
+	  1 "DEER"
+	  1 "FOX"
+    }
+  }
+  darkKeeperEnemies = {
+	{ id = "CENTAUR_TOWN" count = { 6 7 } }
+  }
+  whiteKeeperEnemies = {
+	{ id = "CENTAUR_TOWN" count = { 6 7 } }
   }
 }
 

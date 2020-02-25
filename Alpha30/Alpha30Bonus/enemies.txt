@@ -1499,44 +1499,54 @@
   }
   "CENTAURS"
   {
-    settlement = {
-      type = Builtin FOREST
-      tribe = HUMAN
-      inhabitants = {
-	    leader = {{ "CENTAUR_KING" }}
-        fighters = {
-          count = {10 15}
+  biomes = { "CENTAUR_PALACE" } 
+  settlement = {
+    type = MapLayoutId "castle48"
+    tribe = HUMAN
+    inhabitants = {
+	  leader = {{ "CENTAUR_KING" }}
+      fighters = {
+          count = {40 55}
           all = {
-            1 "CENTAUR_ARCHER"
-            1 "CENTAUR_FARMER"
-            1 "CENTAUR_HUNTER"
-            1 "CENTAUR_CHILD"
+            1 "CENTAUR_PRIESTESS"
             1 "CENTAUR_KNIGHT"
+			1 "CENTAUR_ARCHER"
 		 }
 	   }
      }
-      race = "centaurs"
-      buildingId = "WOOD"
+  race = "centaurs"
+  buildingId = "CITY_BRICK"
+  furniture = { "palace_furniture" }
+  outsideFeatures = "castleOutside"
+  }
+  config = {
+    immigrantInterval = 300
+    maxPopulation = 26
+    ghostProb = 0.1
+    spawnGhosts = 6
     }
-    config = {
-      immigrantInterval = 200
-      maxPopulation = 20
+    behaviour = {
+      minPopulation = 12
+      minTeamSize = 10
+      triggers = {
+        RoomTrigger "THRONE" 0.0003
+        RoomTrigger "IMPALED_HEAD" 0.0001
+        SelfVictims
+        NumConquered 3
+        StolenItems
+        FinishOff
+        Proximity
+    }
+    attackBehaviour = KillLeader
+    ransom = 0.9 300
     }
     immigrants = {
       {
-        ids = {  "CENTAUR_ARCHER" "CENTAUR_FARMER" "CENTAUR_HUNTER" "CENTAUR_CHILD" "CENTAUR_KING" "CENTAUR_KNIGHT" }
+        ids = {  "CENTAUR_ARCHER" "CENTAUR_PRIESTESS" "CENTAUR_KNIGHT" }
         traits = {FIGHTER}
         frequency = 1
-      }
-	}
-    behaviour = {
-      minPopulation = 1
-      minTeamSize = 5
-      triggers = {
-        SelfVictims
-      }
-      attackBehaviour = KillMembers 15
-	}
+	  }
+    }
   }
   "AMAZONS"
   {

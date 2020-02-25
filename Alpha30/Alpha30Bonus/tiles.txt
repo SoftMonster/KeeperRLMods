@@ -29,12 +29,13 @@
   { "castle_d2" "." ColorId LIGHT_GRAY }
   { "castle_d3" ">" ColorId LIGHT_GRAY }
   { "castle_d4" "#" ColorId LIGHT_GRAY }
-  { "centar_archer" "p" ColorId BROWN }
-  { "centar_child" "p" ColorId BROWN }
-  { "centar_farmer" "t" ColorId BROWN }
-  { "centar_hunter" "p" ColorId BROWN }
-  { "centar_king" "p" ColorId YELLOW }
-  { "centar_knight" "p" ColorId YELLOW }
+  { "centaur_archer" "p" ColorId BROWN }
+  { "centaur_child" "p" ColorId BROWN }
+  { "centaur_farmer" "t" ColorId BROWN }
+  { "centaur_hunter" "p" ColorId BROWN }
+  { "centaur_king" "p" ColorId YELLOW }
+  { "centaur_knight" "p" ColorId YELLOW }
+  { "centaur_priestess" "p" ColorId DARK_GRAY }
   { "cow_demon" "u" ColorId RED }
   { "dark_fairy" "h" ColorId BLACK }
   { "dark_goblin" "o" ColorId BLACK }

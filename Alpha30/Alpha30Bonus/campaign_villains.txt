@@ -4,7 +4,7 @@ EVIL_KEEPER modify append {
    {{ "king" } "KING" "The King" MAIN}
    {{ "ancient_reddragon" } "DRAGONS" "Greater dragon nest" MAIN }
    {{ "amazon_queen" } "AMAZONS" "Amazons" MAIN }
-   {{ "centar_king" } "CENTAURS" "Centaurs" MAIN }
+   {{ "centaur_king" } "CENTAURS" "Centaurs" MAIN }
    {{ "armored_cow_demon" } "COW_DEMONS" "cow demons" MAIN }
    {{ "hell_portal" } "HELL_PORTAL" "Hell portal" MAIN }
    {{ "fairy_queen" } "TOWER_OF_ILLUSIA" "Tower of Illusia" MAIN }
@@ -63,7 +63,7 @@ EVIL_ADVENTURER modify append {
 	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" MAIN}
     {{ "hell_portal" } "HELL_PORTAL" "Hell portal" MAIN }
     {{ "amazon_queen" } "AMAZONS" "Amazons" MAIN }
-    {{ "centar_king" } "CENTAURS" "Centaurs" MAIN }
+    {{ "centaur_king" } "CENTAURS" "Centaurs" MAIN }
     {{ "armored_cow_demon" } "COW_DEMONS" "cow demons" MAIN }
     {{ "elf_lord" } "ELVES" "Elves" MAIN }
     {{ "dwarf_baron" } "DWARVES" "Dwarves" MAIN }

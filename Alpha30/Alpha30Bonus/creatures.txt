@@ -727,7 +727,7 @@
 		
  "CENTAUR_ARCHER"
     {
-      viewId = { "centar_archer" }
+      viewId = { "centaur_archer" }
       attr = {
         DAMAGE 30
         DEFENSE 36  
@@ -774,7 +774,7 @@
     }
  "CENTAUR_FARMER" inherit "CENTAUR_ARCHER"
     {
-      viewId = { "centar_farmer" }
+      viewId = { "centaur_farmer" }
       attr = {
         DAMAGE 14
         DEFENSE 14   
@@ -803,21 +803,18 @@
     }
  "CENTAUR_HUNTER" inherit "CENTAUR_ARCHER"
     {
-      viewId = { "centar_hunter" }
+      viewId = { "centaur_hunter" }
       attr = {
         DAMAGE 18
         DEFENSE 18 
-        SPELL_DAMAGE 28 
         RANGED_DAMAGE 13 
       }
       gender = FEMALE
       maxLevelIncrease = {
         MELEE 2
-        SPELL 2
         ARCHERY 5
       }
       spells = {
-        "healing"
         "advanced healing"
       }
       name = {
@@ -829,6 +826,7 @@
       chatReactionHostile = "\"Die!\""
       inventory = {
         { Simple "Bow"}
+		{ Simple "LeatherArmor"}
         { Amulet RANGED_RESISTANCE 1 1 0.05}
         { Amulet AMBUSH_SKILL 1 1 0.05}
         { Amulet DISARM_TRAPS_SKILL 1 1 0.05}
@@ -837,9 +835,55 @@
         { Amulet SWIMMING_SKILL 1 1 0.05}
       }
     }
+ "CENTAUR_PRIESTESS" inherit "CENTAUR_ARCHER"
+    {
+      viewId = { "centaur_priestess" }
+      attr = {
+        DAMAGE 18
+        DEFENSE 26 
+        SPELL_DAMAGE 36 
+      }
+      gender = FEMALE
+      maxLevelIncrease = {
+        MELEE 2
+        SPELL 4
+      }
+      permanentEffects = {
+        SPEED 1
+		TELEPATHY 1
+        HATE_GREENSKINS 1
+	  }
+      spells = {
+        "expert healing"
+		"group healing"
+		"advanced magic missile"
+		"advanced magic blast"
+		"advanced cure poison"
+		"cure blindness"
+      }
+	  skills = {
+		"SHAMANISM" 0.4
+	  }
+      name = {
+        name = "centaur priestess"
+        pluralName = "Centaurs"
+    	firstNameGen = "FIRST_FEMALE"
+      }
+      chatReactionFriendly = "\"talks about centaur religion\""
+      chatReactionHostile = "\"Die!\""
+      inventory = {
+        { type = Simple "IronStaff" prefixChance = 0.3}
+		{ type = Simple "Robe" prefixChance = 1.0 }
+        { Amulet RANGED_RESISTANCE 1 1 0.8}
+        { Ring ELF_VISION 1 1 0.2}
+        { Ring NIGHT_VISION 1 1 0.4}
+		{ Ring DEF_BONUS 1 1 0.8}
+        { Amulet REGENERATION 1 1 0.4}
+      }
+    }
  "CENTAUR_CHILD" inherit "CENTAUR_ARCHER"
     {
-      viewId = { "centar_child" }
+      viewId = { "centaur_child" }
       attr = {
         DAMAGE 8
         DEFENSE 8   
@@ -862,7 +906,7 @@
     }
  "CENTAUR_KING" inherit "CENTAUR_ARCHER"
     {
-      viewId = { "centar_king" }
+      viewId = { "centaur_king" }
       attr = {
         DAMAGE 43
         DEFENSE 36   
@@ -897,7 +941,7 @@
     }
  "CENTAUR_KNIGHT" inherit "CENTAUR_ARCHER"
     {
-      viewId = { "centar_knight" }
+      viewId = { "centaur_knight" }
       attr = {
         DAMAGE 38
         DEFENSE 38   
@@ -5736,6 +5780,10 @@
 }
 "DWARF_FIGHTER_TRIBE" inherit "DWARF_FIGHTER"
 {
+      attr = {
+        DAMAGE 28
+        DEFENSE 28 
+	  }
       inventory = {
         { type = Simple "LongSpear" prefixChance = 0.1 }
         { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.3 }
@@ -5750,6 +5798,10 @@
 }
 "DWARF_WARRIOR_TRIBE" inherit "DWARF_WARRIOR"
 {
+      attr = {
+        DAMAGE 30
+        DEFENSE 30 
+	  }
       inventory = {
         { type = Simple "WarHammer", alternative = Simple "Axe" prefixChance = 0.2 }
         { countMin = 1 countMax = 3 type = Potion Heal FLESH chance = 0.5 }
@@ -5764,13 +5816,17 @@
 }
 "ELITE_DWARF_WARRIOR_TRIBE" inherit "ELITE_DWARF_WARRIOR"
 {
+      attr = {
+        DAMAGE 32
+        DEFENSE 32
+	  }
       inventory = {
-        { type = Simple "Axe", alternative = Simple "AdaAxe" prefixChance = 0.2 }
+        { type = Simple "AdaAxe", alternative = Simple "AdaMace" prefixChance = 0.2 }
         { Potion Heal FLESH 1 2 }
-        { type = Simple "ChainArmor" prefixChance = 0.3 }
-        { type = Simple "IronBoots" prefixChance = 0.1 }
-        { type = Simple "IronHelm" prefixChance = 0.1 }
-        { type = Simple "IronGloves" prefixChance = 0.1 }
+        { type = Simple "AdaArmor" prefixChance = 0.3 }
+        { type = Simple "AdaBoots" prefixChance = 0.1 }
+        { type = Simple "AdaHelm" prefixChance = 0.1 }
+        { type = Simple "AdaGloves" prefixChance = 0.1 }
         { Simple "IronShield" }
         { type = Simple "Torch" chance = 0.1 }
         { Simple "GoldPiece" 5 20 }
