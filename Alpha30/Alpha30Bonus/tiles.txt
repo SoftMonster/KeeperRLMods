@@ -94,6 +94,10 @@
   { "zombiedragon" "z" ColorId GRAY }
   { "troll_champion_female" "O" ColorId LIGHT_GRAY }
   { "locked_chest" "=" ColorId RED }
+  { "wildman" "w" ColorId ORANGE }
+  { "wildman_woman" "w" ColorId ORANGE}
+  { "wildman_queen" "W" ColorId LIGHT_GRAY }
+  { "crocodile" "c" ColorId GREEN }
 
 #Added by your boi; Acre June 2019
 

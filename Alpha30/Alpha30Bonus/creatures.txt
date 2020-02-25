@@ -1,10 +1,4 @@
-  "HYDRA" modify {
-      genderAlternatives = {
-      FEMALE { "hydra" ColorId YELLOW }
-    }
-  }
-
-  "ADVENTURER" modify {
+  "ADVENTURER" modify append {
     inventory = {
         { Simple "FirstAidKit" 2 4 }
         { Simple "SpyingCrystal" } #Modded
@@ -15,7 +9,7 @@
         { Simple "GoldPiece" 16 26 }
     }
     }
-  "BANDIT" modify {
+  "BANDIT" modify append {
       inventory = {
         { type = Simple "Sword", alternative = Simple "Axe"} #Modded
         { type = Potion Heal FLESH chance = 0.7 }
@@ -29,7 +23,7 @@
         { Simple "Rock" 3 10 0.1 }
       }
     }
-  "RAT_SOLDIER" modify {
+  "RAT_SOLDIER" modify append {
     inventory = {
         { type = Simple "Axe", alternative = Simple "Sword"} #Modded
         { type = Potion Heal FLESH chance = 0.7 }
@@ -44,14 +38,14 @@
         { Simple "Rock" 3 10 0.1 }
       }
     }
-  "RAT_LADY" modify {
+  "RAT_LADY" modify append {
 	  inventory = {
         { Simple "FirstAidKit" 1 1 0.1}
         { Potion Heal FLESH 1 4 0.2 }
         { Simple "Torch" 1 1 0.1 }
       }
     }
-  "RAT_KING" modify {
+  "RAT_KING" modify append {
       inventory = {
         { type = Simple "Sword", alternative = Simple "Axe"} #Modded
 		{ Simple "AdaArmor" 1 1 0.01 }
@@ -68,7 +62,7 @@
         { type = Simple "Bow" chance = 0.05 }
       }
     }
-  "WITCHMAN" modify {
+  "WITCHMAN" modify append {
     inventory = {
       { Simple "Sword"}
       { Simple "LeatherArmor"}
@@ -83,7 +77,7 @@
       { Ring RAGE 1 1 0.03}
     }
   }
-  "DEMON_DWELLER" modify {
+  "DEMON_DWELLER" modify append {
       permanentEffects = {
         FLYING 1
         MAGIC_RESISTANCE 1
@@ -100,7 +94,7 @@
       { Ring RAGE 1 1 0.03}
     }
   }
-  "DEMON_LORD" modify {
+  "DEMON_LORD" modify append {
      inventory = {
 		{ type = Simple "InfBattleAxe", alternative = Simple "InfWarHammer" prefixChance = 0.1 }
 		{ Simple "AdaArmor" 1 1 0.03 }
@@ -118,7 +112,7 @@
         { type = Glyph WEAPON JoinPrefixes { ItemAttrBonus DAMAGE 20 AttackerEffect Suicide DIE} chance = 0.2 }
       }
     }
-  "MINOTAUR" modify {
+  "MINOTAUR" modify append {
     inventory = {
 		{ type = Simple "VenBattleAxe", alternative = Simple "VenWarHammer" prefixChance = 0.1 }
 		{ Simple "AdaArmor" 1 1 0.03 }
@@ -134,30 +128,30 @@
         { type = Glyph WEAPON ItemAttrBonus DAMAGE 5 chance = 0.3 }
       }
     }
-  "GREEN_DRAGON" modify {
+  "GREEN_DRAGON" modify append {
       # Modded
       chatReactionFriendly = "\"Kos Haas\""
       chatReactionHostile = "\"Viidost Al Hi Joor\""
       deathDescription = "slain"
       courage = 1
     }
-  "RED_DRAGON" modify {
+  "RED_DRAGON" modify append {
       #Modding
       chatReactionFriendly = "\"Lingrah Laas Wah Hi\""
       chatReactionHostile = "\"Aal Yol Du Hi Joor!\""
       deathDescription = "slain"
       courage = 1 
     }
-  "KNIGHT_PLAYER" modify {
+  "KNIGHT_PLAYER" modify append {
       viewId = { "knight" Rgb 58 255 106 106 } #Modded
    }
   "JESTER_PLAYER" modify {
       viewId = { "jester" Rgb 58 255 106 106 } #Modded
     }
-  "ARCHER_PLAYER" modify {
+  "ARCHER_PLAYER" modify append {
     viewId = { "archer" Rgb 58 255 106 106 } #Modded
   }
-  "PRIEST_PLAYER" modify {
+  "PRIEST_PLAYER" modify append {
       viewId = { "priest" Rgb 255 0 0 255 } #Modded
   }
   "ROYAL_KNIGHT" inherit "KNIGHT" {
@@ -203,7 +197,7 @@
       name = "royal priest"
     }
   }
-  "PESEANT" modify {
+  "PESEANT" modify append {
 	  inventory = {
         { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
         { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
@@ -213,7 +207,7 @@
         { Simple "Rock" 3 10 0.1 }
       }
     }
-  "KNIGHT" modify {
+  "KNIGHT" modify append {
     inventory = {
       { Simple "Sword"}
       { Simple "ChainArmor"}
@@ -228,14 +222,14 @@
       { Ring RAGE 1 1 0.03}
     }
   }
-  "JESTER" modify {
+  "JESTER" modify append {
 	  inventory = {
         { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
         { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
         { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
       }
 	}
-  "DUKE" modify {
+  "DUKE" modify append {
     inventory = {
         { type = Simple "BattleAxe" prefixChance = 1 }
 		{ Simple "RingOfSubjection" } #Modded
@@ -247,7 +241,7 @@
         { Simple "GoldPiece" 140 200 }
     }
     }
-  "ARCHER" modify {
+  "ARCHER" modify append {
       inventory = {
         { Simple "Bow"}
         { Simple "Knife"}
@@ -264,7 +258,7 @@
         { Amulet SWIMMING_SKILL 1 1 0.05}
       }
     }
-  "WARRIOR" modify {
+  "WARRIOR" modify append {
       inventory = {
         { Simple "LeatherArmor"}
         { type = Simple "HeavyClub", alternative = Simple "Mace" }      
@@ -280,7 +274,7 @@
         { Ring RAGE 1 1 0.03}
       }
     }
-  "SHAMAN"  modify {
+  "SHAMAN"  modify append {
     inventory = {
       { Simple "LeatherArmor"}
       { Simple "Club"}
@@ -294,7 +288,7 @@
       { type = Glyph WEAPON ItemAttrBonus DAMAGE 3 chance = 0.3 }
     }
     }
-  "THIEF" modify {
+  "THIEF" modify append {
     inventory = {
       { Simple "LeatherArmor"}
       { Simple "Axe"}
@@ -309,7 +303,7 @@
       { Simple "Rock" 3 10 0.1 }
     }
   }
-  "THIEF_LEADER" modify {
+  "THIEF_LEADER" modify append {
       inventory = {
         { Simple "VenSword"}
         { Simple "GamblingRod"}
@@ -318,7 +312,7 @@
         { type = Simple "Bow" chance = 0.05 }
       }
     }
-  "CHILD" modify {
+  "CHILD" modify append {
 	  inventory = {
         { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
         { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
@@ -328,7 +322,7 @@
         { Simple "Rock" 3 10 0.1 }
       }
     }
-  "ZOMBIE" modify {
+  "ZOMBIE" modify append {
 	  inventory = {
         { type = Simple "WoodenShield" chance = 0.2 }
         { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
@@ -337,14 +331,14 @@
         { Simple "Rock" 3 10 0.1 }
 	  }
     }
-  "SKELETON" modify {
+  "SKELETON" modify append {
       inventory = { # Modded
         { type = Simple "Bow" chance = 0.3 }
         { Simple "Knife" }
         { type = Simple "WoodenShield" chance = 0.01 }
       }
     }
-  "VAMPIRE_LORD" modify {
+  "VAMPIRE_LORD" modify append {
       skills = {
         "LABORATORY" 1.0 #Modded
       }
@@ -363,7 +357,7 @@
 		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
       }
     }
-  "MUMMY" modify {
+  "MUMMY" modify append {
       inventory = {
         { type = Simple "Club" chance = 0.05 }
         { type = Simple "WoodenShield" chance = 0.05 }
@@ -373,7 +367,7 @@
         { Simple "Rock" 3 10 0.1 }
 	  }
     }
-  "ORC" modify {
+  "ORC" modify append {
       inventory = {
         { Simple "Club"}
         { Simple "LeatherArmor"}
@@ -386,7 +380,7 @@
         { Simple "Torch" 1 1 0.1 }
       }
     }
-  "HARPY" modify {
+  "HARPY" modify append {
       inventory = {
         { Simple "Bow"}
         { Amulet RANGED_RESISTANCE 1 1 0.05}
@@ -397,7 +391,7 @@
         { Amulet SWIMMING_SKILL 1 1 0.05}
       }
     }
-  "KOBOLD" modify {
+  "KOBOLD" modify append {
     inventory = {
         { type = Simple "Spear", alternative = Simple "LongSpear" } #Modded
         { type = Simple "WoodenShield" chance = 0.2 }
@@ -409,7 +403,7 @@
         { Simple "Torch" 1 1 0.1 }
     }
 	}
- "GNOME" modify {
+ "GNOME" modify append {
       viewId = { "gnome" }
       attr = {
         DAMAGE 12
@@ -433,7 +427,7 @@
         firstNameGen = "DWARF"
     }
     }
-  "GNOME_CHIEF" modify {
+  "GNOME_CHIEF" modify append {
     inventory = {
         { Simple "Sword" }
 		{ Simple "BoneOfWizardry" } #Modded
@@ -447,14 +441,14 @@
 		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
       }
     }
-  "GOBLIN" modify {
+  "GOBLIN" modify append {
     inventory = {
         { Simple "Club"}
         { type = Simple "LeatherBoots" chance = 0.3 }
         { Simple "Torch" 1 1 0.1 }
       }
     }
-  "OGRE" modify {
+  "OGRE" modify append {
       inventory = {
         { type = Simple "HeavyClub", alternative = Simple "Mace" } #Modded
         { Simple "DefenseAmulet" 1 1 0.03}
@@ -464,7 +458,7 @@
         { Ring RAGE 1 1 0.03}
       }
     }
-  "DWARF" modify {
+  "DWARF" modify append {
       inventory = {
         { type = Simple "BattleAxe", alternative = Simple "WarHammer" }
         { Simple "ChainArmor"}
@@ -480,7 +474,7 @@
         { Ring RAGE 1 1 0.03}
       }
     }
-  "DWARF_BARON" modify {
+  "DWARF_BARON" modify append {
     inventory = {
         { type = Simple "VenAxe", alternative = Simple "VenMace" prefixChance = 1 }
         { Potion Heal FLESH 2 3 }
@@ -494,7 +488,7 @@
         { type = Simple "DwarvenBeer" chance = 0.1 } #Modded
     }
   }
-  "LIZARDMAN" modify {
+  "LIZARDMAN" modify append {
     inventory = {
       { Simple "LeatherArmor"}
       { Simple "GoldPiece" 2 4 }
@@ -505,7 +499,7 @@
       { Ring RAGE 1 1 0.03}
     }
   }
-"LIZARDLORD" modify {
+"LIZARDLORD" modify append {
     inventory = {
 	    { Simple "SpearOfLizardmen" } #Modded
         { Simple "LeatherArmor"}
@@ -513,14 +507,14 @@
         { Simple "GoldPiece" 50 90 }
       }
     }
-  "ELF" modify {
+  "ELF" modify append {
 	  inventory = {
         { Simple "FirstAidKit" 1 1 0.1}
         { Potion Heal FLESH 1 4 0.2 }
         { Simple "Torch" 1 1 0.1 }
 	  }
     }
-  "ELF_ARCHER" modify {
+  "ELF_ARCHER" modify append {
       inventory = {
         { Simple "ElvenSword"}
         { Simple "LeatherArmor"}
@@ -534,7 +528,7 @@
         { Amulet SWIMMING_SKILL 1 1 0.05}
       }
     }
-  "ELF_LORD" modify {
+  "ELF_LORD" modify append {
       inventory = {
 		  { type = Simple "ElvenSword" prefixChance = 1 }
 		  { Simple "LeatherArmor"}
@@ -557,7 +551,7 @@
 		  { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
       }
     }
-  "DARK_ELF_LORD" modify {
+  "DARK_ELF_LORD" modify append {
       inventory = {
 		  { type = Simple "ElvenSword" prefixChance = 1 }
 		  { Simple "AdaBoots" 1 1 0.03 }
@@ -580,7 +574,7 @@
 		  { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
       }
     }
-  "DRIAD" modify {
+  "DRIAD" modify append {
       inventory = {
         { Simple "Bow"}
         { Amulet RANGED_RESISTANCE 1 1 0.05}
@@ -591,7 +585,7 @@
         { Amulet SWIMMING_SKILL 1 1 0.05}
       }
     }
-  "WEREWOLF" modify {
+  "WEREWOLF" modify append {
 	  inventory = {
         { Simple "DefenseAmulet" 1 1 0.03}
         { Potion Lasting MELEE_RESISTANCE 1 3 0.03}
@@ -600,7 +594,7 @@
         { Ring RAGE 1 1 0.03}
       }
     }
-  "ELEMENTALIST" modify {
+  "ELEMENTALIST" modify append {
       spellSchools = { "fire" }               #Modded
       spells = { "healing" "summon element" } #Modded
       gender = FEMALE
@@ -610,12 +604,12 @@
         MAGIC_RESISTANCE 1
       }
   }
-  "DEATH" modify {
+  "DEATH" modify append {
 	inventory = {
 	    { Simple "RobesOfHell"} #Modded
     }
   }
-  "ABOMINATION" modify {
+  "ABOMINATION" modify append {
       inventory = {
         { Simple "WarHammer" }
         { Simple "ChainArmor" }
@@ -938,7 +932,29 @@
 #---------------------------------------------------------
 #Amazon faction
 #---------------------------------------------------------
-
+"AMAZON_PESEANT"
+  {
+    viewId = { "peasant" }
+    attr = {
+      DAMAGE 14
+      DEFENSE 12
+    }
+    body = {
+      type = Humanoid LARGE
+    }
+    chatReactionFriendly = "talks about amazon women"
+    chatReactionHostile = "\"Heeelp!\""
+    permanentEffects = {
+      CROPS_SKILL 1
+    }
+    skills = {
+      "DIGGING" 0.4
+    }
+    name = {
+      name = "peasant"
+    }
+    hatedByEffect = HATE_HUMANS
+  }
     "AMAZON"
     {
       viewId = { "amazon" }
@@ -1096,6 +1112,9 @@
         DISARM_TRAPS_SKILL 1
         REGENERATION 1
       }
+      skills = { 
+		"SHAMANISM" 0.5
+	  }
       name = {
         name = "amazon elder"
         pluralName = "amazons"
@@ -1420,6 +1439,9 @@
 		"bear"
 		"boar"
       }
+      skills = { 
+		"SHAMANISM" 0.5
+	  }
       name = {
         name = "nature fairy"
         pluralName = "fairies"
@@ -2805,6 +2827,32 @@
       }
       chatReactionFriendly = "\"puuurrrr...\""
       chatReactionHostile = "\"roars angrily at you\""
+    }
+    "CROCODILE"
+    {
+      viewId = { "crocodile" }
+      attr = {
+        DAMAGE 22
+        DEFENSE 23   
+      }
+      body = {
+        type = FourLegged LARGE
+        material = FLESH
+        weight = 100
+        intrinsicAttacks = {
+          HEAD {{{ Intrinsic { "bite_attack" } "fangs" 12 { attackType = BITE attackMsg = BITE } }}}
+        }
+      }
+      permanentEffects = {
+        AMBUSH_SKILL 1
+		SWIMMING_SKILL 1
+      }
+      cantEquip = true
+      name = {
+        name = "crocodile"
+      }
+      chatReactionFriendly = "\"it says nothing, crocodiles can't talk\""
+      chatReactionHostile = "\"looks like it'll bite you.\""
     }
     "WARRIOR_HERO"
     {
@@ -6059,9 +6107,117 @@
         { type = Simple "IronGloves" prefixChance = 0.4 }
 		{ type = Simple "ChainArmor" prefixChance = 0.4 }
 		{ Simple "DwarvenBeer" 4 6 }
-
+	}
   }
-}
+"WILDMAN"
+  {
+    viewId = { "wildman" }
+    attr = {
+      DAMAGE 22
+      DEFENSE 22
+	  RANGED_DAMAGE 10
+    }
+    body = {
+      type = Humanoid LARGE
+    }
+    chatReactionFriendly = "speaks gibberish"
+    chatReactionHostile = "makes angry wildman noises"
+	courage = 1
+    name = {
+      name = "wildman"
+      firstNameGen = "ORC"
+	}
+    skills = {
+      "DIGGING" 0.6
+    }
+    maxLevelIncrease = {
+      MELEE 3
+    }
+    hatedByEffect = HATE_HUMANS
+    inventory = {
+      { Simple "HeavyClub"}
+	  { type = Simple "Bow" chance = 0.4}
+      { type = Simple "LeatherArmor" chance = 0.7}
+	  { type = Simple "LeatherBoots" chance = 0.6}
+	  { Ring DAM_BONUS 1 1 0.03}
+      { Ring DEF_BONUS 1 1 0.03}
+    }
+  }
+"WILDMAN_WOMAN"
+  {
+    viewId = { "wildman_woman" }
+	gender = FEMALE
+    attr = {
+      DAMAGE 18
+      DEFENSE 22
+	  RANGED_DAMAGE 18
+    }
+    body = {
+      type = Humanoid LARGE
+    }
+    chatReactionFriendly = "speaks gibberish"
+    chatReactionHostile = "makes angry wildwoman noises"
+	courage = 0
+	name = {
+      name = "wildwoman"
+      firstNameGen = "ORC_FEMALE"
+	}
+    skills = {
+      "DIGGING" 0.6
+    }
+    maxLevelIncrease = {
+	  ARCHERY 3
+    }
+    hatedByEffect = HATE_HUMANS
+    inventory = {
+      { type = Simple "HeavyClub" chance = 0.5}
+	  { Simple "Bow"}
+      { type = Simple "LeatherArmor" chance = 0.6}
+	  { type = Simple "LeatherBoots" chance = 0.6}
+	  { Ring RANGED_RESISTANCE 1 1 0.03}
+      { Ring DEF_BONUS 1 1 0.03}
+	}
+  }
+"WILDMAN_QUEEN"
+  {
+    viewId = { "wildman_queen" }
+	gender = FEMALE
+    attr = {
+      DAMAGE 18
+      DEFENSE 22
+	  SPELL_DAMAGE 24
+    }
+    body = {
+      type = Humanoid LARGE
+    }
+    chatReactionFriendly = "speaks gibberish"
+    chatReactionHostile = "makes angry wildwoman noises"
+	courage = 0
+	name = {
+      name = "wildman queen"
+      firstNameGen = "ORC_FEMALE"
+	}
+    skills = {
+      "DIGGING" 0.4
+	  "SHAMANISM" 1.0
+    }
+    maxLevelIncrease = {
+	  SPELL 3
+    }
+    hatedByEffect = HATE_HUMANS
+	spells = {
+      "advanced rapid magic missile"
+      "group healing"
+	  "advanced cure poison"
+	}
+    inventory = {
+      { type = Simple "IronStaff" prefixChance = 1.0}
+      { type = Simple "LeatherArmor" prefixChance = 0.1}
+	  { Simple "LeatherBoots"}
+	  { Ring MAGIC_RESISTANCE 1 1 1}
+      { Ring DEF_BONUS 1 1 1}
+	}
+  }
 
   #Fairy
   

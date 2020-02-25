@@ -662,6 +662,130 @@
 ########
 # Modded
 ########
+  "CENTAUR_TOWN"
+  {
+    discoverable = false
+    settlement = {
+    type = Builtin VILLAGE
+    tribe = HUMAN
+    inhabitants = {
+      fighters = {
+        count = {6 9}
+        all = { 
+		  2 "CENTAUR_HUNTER" 
+		  1 "CENTAUR_FARMER"
+          }
+		}
+        civilians = {
+          count = {1 4}
+          all = {
+            1 "CENTAUR_CHILD"
+		}
+      }
+    }
+    buildingId = "WOOD"
+	stockpiles = {{ "gold" 50 "TREASURE_CHEST" }}
+    furniture = { "roomFurniture" }
+	cropsDistance = 12
+    outsideFeatures = "villageOutside"
+    }
+  }
+  "AMAZON_TOWN"
+  {
+    discoverable = false
+    settlement = {
+    type = Builtin VILLAGE
+    tribe = HUMAN
+    inhabitants = {
+      fighters = {
+        count = {3 6}
+        all = { 
+		  1 "AMAZON" 
+          }
+		}
+        civilians = {
+          count = {1 5}
+          all = {
+            1 "AMAZON_PESEANT"
+		}
+      }
+    }
+    buildingId = "WOOD"
+	stockpiles = {{ "gold" 50 "TREASURE_CHEST" }}
+    furniture = { "roomFurniture" }
+    cropsDistance = 12
+    outsideFeatures = "villageOutside"
+    }
+  }
+"WILDMEN_CAVE"
+{
+  settlement = {
+    type = Builtin MINETOWN
+    tribe = HOSTILE
+    inhabitants = {
+	  leader = { { "WILDMAN_QUEEN" } }
+      fighters = {
+        count = {8 14}
+        all = { 1 "WILDMAN" 1 "WILDMAN_WOMAN" }
+      }
+    }
+    race = "wildmen"
+    buildingId = "DUNGEON"
+    stockpiles = {{ "goodMushrooms" 20 }}
+    outsideFeatures = "dungeonOutside"
+    furniture = { "roomFurniture" }
+    surroundWithResources = 6    
+  }
+  behaviour = {
+    minPopulation = 0
+    minTeamSize = 1
+    triggers = {SelfVictims StolenItems }
+    attackBehaviour = KillLeader
+    ransom = 0.5 80
+  }
+}
+"GOBLIN_CAVE"
+{
+  settlement = {
+    type = Builtin MINETOWN
+    tribe = BANDIT
+    inhabitants = {
+	  leader = { { "GOBLIN_WARRIOR" } }
+      fighters = {
+        count = {8 14}
+        all = { 1 "GOBLIN_MATRON" 4 "GOBLIN_PLAYER" }
+      }
+    }
+    race = "cave goblins"
+    buildingId = "DUNGEON"
+    stockpiles = {{ "goodMushrooms" 20 }}
+    outsideFeatures = "dungeonOutside"
+    furniture = { "roomFurniture" }
+    surroundWithResources = 6    
+  }
+  behaviour = {
+    minPopulation = 0
+    minTeamSize = 1
+    triggers = {SelfVictims StolenItems }
+    attackBehaviour = KillLeader
+    ransom = 0.5 80
+  }
+}
+"CROC_LAKE"
+{
+  settlement = {
+    type = Builtin SWAMP
+	tribe = WILDLIFE
+    inhabitants = {
+      fighters = {
+        count = {2 6}
+        all = { 1 "CROCODILE" }
+      }
+	}
+    race = "crocodiles"
+    buildingId = "DUNGEON"
+  }
+}
   "ADOXIE_DUNGEON"
   {
     settlement = {
@@ -1608,11 +1732,10 @@
         }
       }
       race = "ratmen"
-        buildingId = "MUD"
+        buildingId = "WOOD"
         stockpiles = {
           { "gold" 20 "TREASURE_CHEST" }
         }
-      cropsDistance = 16
         furniture = { "roomFurniture" }
 	}
   }
@@ -1791,7 +1914,7 @@
 		}
       locationName = "the Guard"
       race = "ratmen"
-      buildingId = "MUD"
+      buildingId = "WOOD"
       stockpiles = {{ "gold" 50 "TREASURE_CHEST" }}
       outsideFeatures = "villageOutside"
     }
