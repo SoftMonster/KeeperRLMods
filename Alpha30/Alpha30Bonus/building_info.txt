@@ -10,6 +10,16 @@
 	  upStairs = "ELEMENTALIST_STAIRS_UP"
 	  downStairs = "ELEMENTALIST_STAIRS_DOWN"
     }
+  "WOOD_CITY_CASTLE"
+  {
+  	  wall = "WOOD_WALL"
+      floorInside = "FLOOR_WOOD2_COSMETIC"
+      prettyFloor = "FLOOR_WOOD1_COSMETIC"
+	  door = { "IRON_DOOR" 1.0 }
+      gate = { "IRON_GATE" 1.0 }
+	  water = { WATER }
+	  bridge = "BRIDGE"
+  }
   "BARRICADES"
     {
       wall = "TREE_WALL"

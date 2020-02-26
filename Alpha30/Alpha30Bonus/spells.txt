@@ -854,6 +854,14 @@
     cooldown = 60
     sound = SPELL_BLAST
   }
+"knockdown"
+ {
+   symbol = "X"
+   range = 1
+   effect = Lasting COLLAPSED
+   cooldown = 30
+   sound = BLUNT_DAMAGE
+ }
 #------------------------------
 #Barbarian Skills Feb 2020
 #------------------------------

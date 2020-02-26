@@ -72,6 +72,7 @@
   { "ogre_female" "o" ColorId GREEN }
   { "orc_brute_lady" "0" ColorId BLUE }
   { "orc_female" "o" ColorId GREEN }
+  { "orc_primarch" "O" ColorId GREEN }
   { "orc_lady" "o" ColorId GREEN }
   { "paladin" "p" ColorId YELLOW }
   { "possessed_book" "#" ColorId RED }

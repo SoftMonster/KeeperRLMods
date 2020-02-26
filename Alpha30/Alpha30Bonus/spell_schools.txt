@@ -33,10 +33,11 @@
   "fighter" modify MELEE {
     #Modded multiple entries
     "shove" 2
-    "battle cry" 4
-    "block" 5
-    "swap positions" 6
-    "weapon dodge" 7
+    "battle cry" 3
+    "block" 4
+    "swap positions" 5
+    "weapon dodge" 6
+	"knockdown" 7
   }
 
 ################

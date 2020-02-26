@@ -2652,12 +2652,186 @@
       chatReactionFriendly = "\"complains about ogre males\""
       chatReactionHostile = "\"Die!\""
 	}
-	"OGRE_CHAMPION"
+	"ORC_PRIMARCH_TRIBE"
 	{
-	  viewId = { "ogre_champion" }
+	  viewId = { "orc_primarch" }
+      hatedByEffect = HATE_GREENSKINS
+      attr = {
+        DAMAGE 54
+        DEFENSE 40 
+	}
+	  body = {
+        type = Humanoid LARGE
+        weight = 160
+	}
+	  spellSchools = { "fighter" }
+      spells = {
+        "arm strike"
+		"wild swing"
+		"break through"
+		"air render"
+		"jump"
+		"throw sand"
+	}
+      name = {
+        name = "orc primarch"
+        firstNameGen = "ORC"
+	}
+      skills = {
+        "WORKSHOP" 0.8
+        "FORGE" 0.8
+		"MULTI_WEAPON" 0.75
+    }
+      maxLevelIncrease = {
+        MELEE 3
+	}
+      chatReactionFriendly = "\"talks about inner-tribal relations\""
+      chatReactionHostile = "\"Die!\""
+      inventory = {
+        { type = Simple "InfBattleAxe" prefixChance = 0.2 }
+		{ type = Simple "AdaBattleAxe" prefixChance = 0.2 }
+		{ type = Simple "InfArmor" prefixChance = 0.2 }
+		{ Simple "IronGloves"}
+		{ Simple "IronBoots"}
+		{ type = Potion Heal FLESH countMin = 2 countMax = 4 }
+      }
+	}
+	"ORC_CAPTAIN_TRIBE"
+	{
+	  viewId = { "orc_captain" }
       hatedByEffect = HATE_GREENSKINS
       attr = {
         DAMAGE 28
+        DEFENSE 24 
+	}
+	  body = {
+        type = Humanoid LARGE
+	}
+	  spellSchools = { "fighter" }
+      spells = {
+	    "shove"
+		"battle cry"
+		"knockdown"
+		"jump"
+	}
+      name = {
+        name = "orc captain"
+        firstNameGen = "ORC"
+	}
+      skills = {
+        "WORKSHOP" 0.6
+        "FORGE" 0.6
+		"MULTI_WEAPON" 0.55
+    }
+      maxLevelIncrease = {
+        MELEE 4
+	}
+      chatReactionFriendly = "\"talks about training underlings\""
+      chatReactionHostile = "\"Die!\""
+      inventory = {
+        { type = Simple "BattleAxe" prefixChance = 0.05 chance = 0.5 }
+		{ type = Simple "Axe" prefixChance = 0.05 chance = 0.5 }
+		{ type = Simple "ChainArmor" prefixChance = 0.05 }
+		{ type = Simple "IronHelm" prefixChance = 0.05 chance = 0.75 }
+		{ type = Simple "IronGloves" prefixChance = 0.05 chance = 0.75 }
+		{ type = Simple "IronBoots" prefixChance = 0.05 chance = 0.75 }
+		{ type = Potion Heal FLESH countMin = 2 countMax = 4 }
+		{ type = Potion Lasting BLIND chance = 0.4 }
+      }
+	}
+	"ORC_TRIBE"
+	{
+	  viewId = { "orc" }
+      genderAlternatives = {
+        FEMALE { "orc_female" }
+	}
+      hatedByEffect = HATE_GREENSKINS
+      attr = {
+        DAMAGE 24
+        DEFENSE 20 
+	}
+	  body = {
+        type = Humanoid LARGE
+	}
+	  spellSchools = { "fighter" }
+      spells = {
+	    "shove"
+		"battle cry"
+	}
+      name = {
+        name = "orc"
+        firstNameGen = "ORC"
+	}
+      skills = {
+        "WORKSHOP" 0.3
+        "FORGE" 0.3
+		"MULTI_WEAPON" 0.45
+    }
+      maxLevelIncrease = {
+        MELEE 4
+	}
+      chatReactionFriendly = "\"talks about fighting\""
+      chatReactionHostile = "\"Die!\""
+      inventory = {
+        { type = Simple "Mace" prefixChance = 0.05 chance = 0.5 }
+		{ type = Simple "Sword" prefixChance = 0.05 chance = 0.5 }
+		{ type = Simple "ChainArmor" prefixChance = 0.05 }
+		{ type = Simple "LeatherHelm" prefixChance = 0.05 chance = 0.75 }
+		{ type = Simple "IronGloves" prefixChance = 0.05 chance = 0.75 }
+		{ type = Simple "LeatherBoots" prefixChance = 0.05 chance = 0.75 }
+		{ type = Potion Heal FLESH countMin = 0 countMax = 2 }
+		{ type = Potion Lasting BLIND chance = 0.1 }
+      }
+	}
+	"OGRE_CHAMPION_TRIBE"
+	{
+	  viewId = { "ogre_champion" }
+      genderAlternatives = {
+        FEMALE { "ogre_champion_female" }
+	}
+      hatedByEffect = HATE_GREENSKINS
+      attr = {
+        DAMAGE 38
+        DEFENSE 34 
+	}
+	  body = {
+        type = Humanoid LARGE
+        weight = 160
+	}
+      permanentEffects = {
+        MAGIC_VULNERABILITY 1
+	}
+      name = {
+        name = "ogre champion"
+        firstNameGen = "ORC"
+	}
+      skills = {
+        "WORKSHOP" 0.5
+        "FORGE" 0.5
+    }
+      maxLevelIncrease = {
+        MELEE 9
+	}
+      chatReactionFriendly = "\"talks about fighting\""
+      chatReactionHostile = "\"Die!\""
+      inventory = {
+        { Simple "BattleAxe"}
+		{ Simple "ChainArmor"}
+		{ Simple "IronHelm"}
+		{ Simple "IronGloves"}
+		{ Simple "IronBoots"}
+		{ type = Potion Heal FLESH countMin = 1 countMax = 3 }
+      }
+	}
+	"OGRE_TRIBE"
+	{
+	  viewId = { "ogre" }
+      genderAlternatives = {
+        FEMALE { "ogre_female" }
+	}
+      hatedByEffect = HATE_GREENSKINS
+      attr = {
+        DAMAGE 32
         DEFENSE 28 
 	}
 	  body = {
@@ -2676,28 +2850,56 @@
         "FORGE" 0.5
     }
       maxLevelIncrease = {
-        MELEE 12
+        MELEE 9
 	}
       chatReactionFriendly = "\"talks about fighting\""
       chatReactionHostile = "\"Die!\""
       inventory = {
-        { Simple "BattleAxe"}
-		{ Simple "ChainArmor"}
-		{ Simple "IronHelm"}
-		{ Simple "IronGloves"}
-		{ Simple "IronBoots"}
-		{ type = Potion Heal FLESH countMin = 1 countMax = 3 }
+        { type = Simple "HeavyClub" prefixChance = 0.05 }
+		{ type = Simple "ChainArmor" prefixChance = 0.05 }
+		{ type = Simple "LeatherHelm" prefixChance = 0.05 chance = 0.75 }
+		{ type = Simple "LeatherGloves" prefixChance = 0.05 chance = 0.75 }
+		{ type = Simple "IronBoots" prefixChance = 0.05 chance = 0.75 }
+		{ type = Potion Heal FLESH countMin = 0 countMax = 2 }
       }
 	}
-    "OGRE_CHAMPION_FEMALE" inherit "OGRE_CHAMPION"
-    {
-      viewId = { "ogre_champion_female" }
-      gender = FEMALE
-      name = {
-        name = "ogre"
-        firstNameGen = "ORC_FEMALE"
-	  }
+"ORC_HEALER_TRIBE"
+  {
+    viewId = { "orc_shaman" ColorId GREEN }
+    attr = {
+      DAMAGE 16
+      DEFENSE 12
+      SPELL_DAMAGE 26 
     }
+    body = {
+      type = Humanoid LARGE
+    }
+    skills = {
+      "LABORATORY" 0.7
+    }
+    chatReactionFriendly = "talks about gross wounds"
+    chatReactionHostile = "\"Die!\""
+    maxLevelIncrease = {
+      MELEE 4
+      SPELL 7
+    }
+    spellSchools = { "healer" }
+	spells = {
+	  "advanced healing"
+	  "group healing"
+	  "magic missile"
+	}
+    name = {
+      name = "orc healer"
+      firstNameGen = "ORC"
+    }
+    hatedByEffect = HATE_GREENSKINS
+    inventory = {
+      { Simple "IronStaff"}
+      { Simple "LeatherArmor"}
+	  { Simple "LeatherBoots"}
+    }
+  }
     "ORC_FEMALE" inherit "ORC"
     {
       viewId = { "orc_female" }

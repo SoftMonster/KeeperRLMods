@@ -286,9 +286,9 @@
     hillRatio = 0.08
     hill = "HILL"
     grass = "GRASS"
-    mountain = "CASTLE_WALL"
-    mountainDeep = "CASTLE_WALL"
-    mountainFloor = "FLOOR_STONE1_COSMETIC"
+    mountain = "MOUNTAIN"
+    mountainDeep = "MOUNTAIN2"
+    mountainFloor = "FLOOR"
   }
   forests = {
     {
@@ -325,6 +325,58 @@
     { id = "CITY_BARRACKS" count = { 1 2 } }
     { id = "CITY_GROUP" count = { 5 7 } }
 	{ id = "CITY_GROUP_SHOP" count = { 2 4 } }
+  }
+}
+"ORC_CLAN"
+{
+  lakes = {
+    size = {5 15}
+    count = {0}
+  }
+  overrideWaterType = "GRASS"
+  sandType = "GRASS"
+  items = "magicShrooms"
+  itemCount = { 18 24 }
+  mountains = {
+    lowlandRatio = 0.80
+    hillRatio = 0.12
+    hill = "HILL"
+    grass = "GRASS"
+    mountain = "MOUNTAIN"
+    mountainDeep = "MOUNTAIN2"
+    mountainFloor = "FLOOR_STONE1_COSMETIC"
+  }
+  forests = {
+    {
+      ratio = 0.90
+      density = 0.05
+      onType = "GRASS"
+      trees = "vegetationLow"
+    }
+    {
+      ratio = 0.99
+      density = 0.2
+      onType = "HILL"
+      trees = "vegetationLow"
+    }
+  }
+  wildlife = {
+    count = { 10 16 }
+    all = {
+      1 "BOAR"
+	  1 "DEER"
+	  1 "RAVEN"
+    }
+  }
+  darkKeeperEnemies = {
+    { id = "ORC_MINOR" count = { 2 } }
+    { id = "ORC_CITY_SHOP" count = { 3 4 } }
+    { id = "ORC_CITY_GROUP" count = { 4 5 } }
+  }
+  whiteKeeperEnemies = {
+    { id = "ORC_MINOR" count = { 2 } }
+    { id = "ORC_CITY_SHOP" count = { 3 4 } }
+    { id = "ORC_CITY_GROUP" count = { 4 5 } }
   }
 }
 "PALACE"

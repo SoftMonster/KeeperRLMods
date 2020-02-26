@@ -309,6 +309,16 @@
     name = "floor"
     viewId = { "stone_floor5" }
    }
+  "FLOOR_WOOD1_COSMETIC" inherit "MUD"
+  {
+    name = "floor"
+    viewId = { "wood_floor2" }
+   }
+  "FLOOR_WOOD2_COSMETIC" inherit "MUD"
+  {
+    name = "floor"
+    viewId = { "wood_floor4" }
+   }
   "ELVEN_RUG"
   {
     name = "elven rug of concealent"

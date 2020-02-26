@@ -38,6 +38,7 @@ LAWFUL_KEEPER modify append {
     {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
     {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" MAIN}
+	{{ "orc_primarch" } "ORC_MAIN" "Orc Clan" MAIN}
 
 
 #Modded lesser villains
@@ -48,6 +49,7 @@ LAWFUL_KEEPER modify append {
 
 #Modded lawful ally
     {{ "king" } "KING" "The King" ALLY}
+   {{ "centaur_king" } "CENTAURS" "Centaurs" ALLY }
 	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" ALLY}
     {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
@@ -97,6 +99,7 @@ EVIL_ADVENTURER modify append {
     {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
+	{{ "orc_primarch" } "ORC_MAIN" "Greenskin Clan" ALLY}
 }
 
 # Villains for lawful adventurers
@@ -108,6 +111,7 @@ LAWFUL_ADVENTURER modify append {
     {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
     {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" MAIN}
+	{{ "orc_primarch" } "ORC_MAIN" "Greenskin Clan" MAIN}
 
 #Modded
     {{ "vulturemutation" } "VULTURE_ABOMINATIONS" "Abominations" LESSER }
@@ -117,6 +121,7 @@ LAWFUL_ADVENTURER modify append {
 
     {{ "king" } "KING" "The King" ALLY}
 	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" ALLY}
+    {{ "centaur_king" } "CENTAURS" "Centaurs" ALLY }
     {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded

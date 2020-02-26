@@ -239,71 +239,6 @@
       lootItem = {TechBook "master sorcery"}
     }
   }
-"DWARF_MARKET"
-{
-  settlement = {
-    type = Builtin VILLAGE
-    tribe = DWARF
-    inhabitants = {
-      leader = { { "DWARF_BARON" } }
-      fighters = {
-        count = {18 26}
-        all = {
-          1 "DWARF_FIGHTER_TRIBE"
-		  1 "DWARF_WARRIOR_TRIBE"
-		  1 "ELITE_DWARF_WARRIOR_TRIBE"
-		  }
-        }
-      civilians = {
-        count = {42 52}
-        all = {
-		  1 "DWARF_BLACKSMITH"
-          5 "PLAYER_DWARF_FEMALE"
-          5 "PLAYER_DWARF_FEMALE2"
-          5 "PLAYER_DWARF_FEMALE3"
-		  5 "DWARF_WORKER_TRIBE"
-		}
-	  }
-    }
-    locationName = "Dwarven Market"
-    race = "dwarves"
-    buildingId = "DUNGEON"
-    stockpiles = {{ "gold" 2000 "TREASURE_CHEST"} {"minerals" 120 } {"minerals" 120 } {"minerals" 120 } {"minerals" 120 } {"minerals" 120 } {"minerals" 120 }}
-    shopItems = { "dwarfShop" "dwarfShop" "dwarfShop" "armory" "chest" "jewellery" "breweryPotions" "scribeScrolls" "iron" "villageShop" "villageShop" "minerals" }
-    outsideFeatures = "dungeonOutside"
-    furniture = { "roomFurniture" }
-  }
-}
-"DWARF_MINE"
-{
-  settlement = {
-    type = Builtin ANT_NEST
-    tribe = DWARF
-    inhabitants = {
-      leader = { { "ELITE_DWARF_WARRIOR_TRIBE" } }
-      fighters = {
-        count = {18 28}
-        all = {
-		  1 "DWARF_WARRIOR_TRIBE"
-		  1 "ELITE_DWARF_WARRIOR_TRIBE"
-		  6 "DWARF_WORKER_TRIBE"
-		  }
-        }
-      civilians = {
-        count = {4 8}
-        all = {
-		  1 "DWARF_WORKER_TRIBE"
-		}
-	  }
-    }
-    locationName = "Dwarven Mines"
-    race = "dwarves"
-    buildingId = "DUNGEON"
-    shopItems = { "dwarfminerals" "dwarfminerals" "dwarfminerals" "minerals" "minerals"  "corpse" "corpse" }
-    outsideFeatures = "dungeonOutside"
-    furniture = { "roomFurniture" }
-  }
-}
   "ELEMENTALIST_ENTRY" modify {
     settlement = {
     type = Builtin TOWER
@@ -662,6 +597,71 @@
 ########
 # Modded
 ########
+"DWARF_MARKET"
+{
+  settlement = {
+    type = Builtin VILLAGE
+    tribe = DWARF
+    inhabitants = {
+      leader = { { "DWARF_BARON" } }
+      fighters = {
+        count = {18 26}
+        all = {
+          1 "DWARF_FIGHTER_TRIBE"
+		  1 "DWARF_WARRIOR_TRIBE"
+		  1 "ELITE_DWARF_WARRIOR_TRIBE"
+		  }
+        }
+      civilians = {
+        count = {42 52}
+        all = {
+		  1 "DWARF_BLACKSMITH"
+          5 "PLAYER_DWARF_FEMALE"
+          5 "PLAYER_DWARF_FEMALE2"
+          5 "PLAYER_DWARF_FEMALE3"
+		  5 "DWARF_WORKER_TRIBE"
+		}
+	  }
+    }
+    locationName = "Dwarven Market"
+    race = "dwarves"
+    buildingId = "DUNGEON"
+    stockpiles = {{ "gold" 2000 "TREASURE_CHEST"} {"minerals" 120 } {"minerals" 120 } {"minerals" 120 } {"minerals" 120 } {"minerals" 120 } {"minerals" 120 }}
+    shopItems = { "dwarfShop" "dwarfShop" "dwarfShop" "armory" "chest" "jewellery" "breweryPotions" "scribeScrolls" "iron" "villageShop" "villageShop" "minerals" }
+    outsideFeatures = "dungeonOutside"
+    furniture = { "roomFurniture" }
+  }
+}
+"DWARF_MINE"
+{
+  settlement = {
+    type = Builtin ANT_NEST
+    tribe = DWARF
+    inhabitants = {
+      leader = { { "ELITE_DWARF_WARRIOR_TRIBE" } }
+      fighters = {
+        count = {18 28}
+        all = {
+		  1 "DWARF_WARRIOR_TRIBE"
+		  1 "ELITE_DWARF_WARRIOR_TRIBE"
+		  6 "DWARF_WORKER_TRIBE"
+		  }
+        }
+      civilians = {
+        count = {4 8}
+        all = {
+		  1 "DWARF_WORKER_TRIBE"
+		}
+	  }
+    }
+    locationName = "Dwarven Mines"
+    race = "dwarves"
+    buildingId = "DUNGEON"
+    shopItems = { "dwarfminerals" "dwarfminerals" "dwarfminerals" "minerals" "minerals"  "corpse" "corpse" }
+    outsideFeatures = "dungeonOutside"
+    furniture = { "roomFurniture" }
+  }
+}
   "CENTAUR_TOWN"
   {
     discoverable = false
@@ -1461,6 +1461,110 @@
 		}
 	  }
 	}
+  }
+"ORC_MAIN" {
+  biomes = { "ORC_CLAN"} 
+  settlement = {
+    type = MapLayoutId "castle32"
+    tribe = GREENSKIN
+    inhabitants = {
+      leader = { { "ORC_PRIMARCH_TRIBE" } }
+      fighters = {
+        count = {22 37}
+        all = {
+          3 "OGRE_CHAMPION_TRIBE"
+		  2 "ORC_CAPTAIN_TRIBE"
+		  1 "ORC_HEALER_TRIBE"
+          1 "OGRE_TRIBE"
+          1 "ORC_TRIBE"
+        }
+      }
+      civilians = {
+        count = {12 18}
+        all = {
+          6 "GOBLIN_PLAYER"
+		  1 "RAT"
+        }
+      }
+    }
+    locationNameGen = "TOWN"
+    race = "orcs"
+    stockpiles = {{ "gold" 200 "TREASURE_CHEST" } }
+    buildingId = "CITY_BRICK"
+    shopItems = { "villageShop" }
+    furniture = { "castleFurniture" }
+    outsideFeatures = "castleOutside"
+  }
+}
+"ORC_MINOR" {
+  settlement = {
+    type = MapLayoutId "castle1"
+    tribe = GREENSKIN
+    inhabitants = {
+      leader = { { "ORC_PRIMARCH_TRIBE" } }
+      fighters = {
+        count = {12 19}
+        all = {
+          3 "OGRE_CHAMPION_TRIBE"
+		  2 "ORC_CAPTAIN_TRIBE"
+		  1 "ORC_HEALER_TRIBE"
+          1 "OGRE_TRIBE"
+          1 "ORC_TRIBE"
+        }
+      }
+      civilians = {
+        count = {8 12}
+        all = {
+          6 "GOBLIN_PLAYER"
+		  1 "RAT"
+        }
+      }
+    }
+    race = "orcs"
+    stockpiles = {{ "gold" 100 "TREASURE_CHEST" } }
+    buildingId = "WOOD_CITY_CASTLE"
+    shopItems = { "villageShop" }
+    furniture = { "castleFurniture" }
+    outsideFeatures = "castleOutside"
+  }
+}
+  "ORC_CITY_SHOP"
+  {
+    discoverable = false
+    settlement = {
+    type = Builtin VILLAGE
+    tribe = GREENSKIN
+    inhabitants = {
+      leader = { { "ORC_CAPTAIN_TRIBE" } }
+      fighters = {
+        count = {10 16}
+        all = { 4 "ORC_TRIBE" 1 "ORC_HEALER_TRIBE" 2 "OGRE_TRIBE" }
+      }
+    }
+    buildingId = "WOOD"
+    furniture = { "roomFurniture" }
+	shopItems = { "iron" }
+    outsideFeatures = "villageOutside"
+    }
+  }
+  "ORC_CITY_GROUP"
+  {
+    discoverable = false
+    settlement = {
+    type = Builtin VILLAGE
+    tribe = GREENSKIN
+    inhabitants = {
+      leader = { { "ORC_CAPTAIN_TRIBE" } }
+      fighters = {
+        count = {10 16}
+        all = { 4 "ORC_TRIBE" 1 "ORC_HEALER_TRIBE" 2 "OGRE_TRIBE" }
+      }
+    }
+    buildingId = "WOOD"
+    furniture = { "roomFurniture" }
+    stockpiles = {{ "gold" 40 "TREASURE_CHEST" } }
+    outsideFeatures = "villageOutside"
+    }
   }
   "HELL_DUNGEON1"
   {
