@@ -1,7 +1,13 @@
+  "HYDRA" modify append {
+      genderAlternatives = {
+      FEMALE { "hydra" ColorId YELLOW }
+    }
+  }
+
   "ADVENTURER" modify append {
     inventory = {
         { Simple "FirstAidKit" 2 4 }
-        { Simple "SpyingCrystal" } #Modded
+        { Simple "SpyingCrystal" }
         { Simple "Sword"}
         { Simple "LeatherGloves"}
         { Simple "LeatherArmor"}
@@ -10,29 +16,39 @@
     }
     }
   "BANDIT" modify append {
+      skills = append { "MULTI_WEAPON" 0.65 }
       inventory = {
-        { type = Simple "Sword", alternative = Simple "Axe"} #Modded
+        { type = Simple "Sword" chance = 0.5 }
+		{ type = Simple "Axe" chance = 0.5 }
         { type = Potion Heal FLESH chance = 0.7 }
         { type = Simple "Torch" chance = 0.3 }
         { type = Simple "Bow" chance = 0.05 }
         { type = Simple "WoodenShield" chance = 0.2 }
-        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
         { Simple "FirstAidKit" 1 1 0.1}
         { Simple "Rock" 3 10 0.1 }
       }
     }
   "RAT_SOLDIER" modify append {
-    inventory = {
-        { type = Simple "Axe", alternative = Simple "Sword"} #Modded
+      skills = append { "MULTI_WEAPON" 0.65 }
+      inventory = {
+        { type = Simple "Sword" chance = 0.5 }
+		{ type = Simple "Axe" chance = 0.5 }
         { type = Potion Heal FLESH chance = 0.7 }
         { type = Simple "Torch" chance = 0.3 }
         { type = Simple "Bow" chance = 0.05 }
         { type = Simple "WoodenShield" chance = 0.2 }
-        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
         { Simple "FirstAidKit" 1 1 0.1}
         { Simple "Torch" 1 1 0.1 }
         { Simple "Rock" 3 10 0.1 }
@@ -46,14 +62,18 @@
       }
     }
   "RAT_KING" modify append {
+      skills = append { "MULTI_WEAPON" 0.65 }
       inventory = {
-        { type = Simple "Sword", alternative = Simple "Axe"} #Modded
+        { type = Simple "Sword" chance = 0.5 }
+		{ type = Simple "Axe" chance = 0.5 }
 		{ Simple "AdaArmor" 1 1 0.01 }
 		{ Simple "AdaBoots" 1 1 0.01 }
 		{ Simple "AdaGloves" 1 1 0.1 }
 		{ Simple "AdaHelm" 1 1 0.1 }
-		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.01 }
-		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
+		{ type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
 		{ Potion Permanent SPEED 1 1 0.01 }
 		{ Potion RegrowBodyPart 1 1 1 0.01 }
 		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.01 }
@@ -95,14 +115,18 @@
     }
   }
   "DEMON_LORD" modify append {
-     inventory = {
-		{ type = Simple "InfBattleAxe", alternative = Simple "InfWarHammer" prefixChance = 0.1 }
+      skills = append { "MULTI_WEAPON" 0.65 }
+      inventory = {
+        { type = Simple "InfBattleAxe" chance = 0.5 prefixChance = 0.1 }
+		{ type = Simple "InfWarHammer" chance = 0.5 prefixChance = 0.1 }
 		{ Simple "AdaArmor" 1 1 0.03 }
 		{ Simple "AdaBoots" 1 1 0.03 }
 		{ Simple "AdaGloves" 1 1 0.03 }
 		{ Simple "AdaHelm" 1 1 0.03 }
-		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
-		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		{ type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
+		{ type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
 		{ Potion Permanent SPEED 1 1 0.03 }
 		{ Potion RegrowBodyPart 1 1 1 0.03 }
 		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
@@ -114,13 +138,15 @@
     }
   "MINOTAUR" modify append {
     inventory = {
-		{ type = Simple "VenBattleAxe", alternative = Simple "VenWarHammer" prefixChance = 0.1 }
+		{ type = Simple "VenBattleAxe" prefixChance = 0.1 }
 		{ Simple "AdaArmor" 1 1 0.03 }
 		{ Simple "AdaBoots" 1 1 0.03 }
 		{ Simple "AdaGloves" 1 1 0.03 }
 		{ Simple "AdaHelm" 1 1 0.03 }
-		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
-		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+		{ type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
+		{ type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
 		{ Potion Permanent SPEED 1 1 0.03 }
 		{ Potion RegrowBodyPart 1 1 1 0.03 }
 		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
@@ -154,53 +180,14 @@
   "PRIEST_PLAYER" modify append {
       viewId = { "priest" Rgb 255 0 0 255 } #Modded
   }
-  "ROYAL_KNIGHT" inherit "KNIGHT" {
-    viewId = { "knight" ColorId PURPLE } #Modded
-    inventory = {
-      { Simple "Sword"}
-      { Simple "ChainArmor"}
-      { Simple "LeatherBoots"}
-    }
-    attr = {
-      DAMAGE 45
-      DEFENSE 35
-    }
-    name = {
-      name = "royal knight"
-    }
-   }
-  "ROYAL_ARCHER" inherit "ARCHER" {
-      viewId = { "archer" ColorId PURPLE } #Modded
-      attr = {
-      DAMAGE 22
-      DEFENSE 32
-      RANGED_DAMAGE 40
-    }
-    name = {
-      name = "royal archer"
-    }
-    inventory = {
-        { Simple "Bow"}
-        { Simple "Knife"}
-        { Simple "LeatherArmor"}
-        { Simple "LeatherBoots"}
-    }
-  }
-  "ROYAL_PRIEST" inherit "PRIEST" {
-    viewId = { "priest" ColorId PURPLE } #Modded
-    attr = {
-      DAMAGE 15
-      DEFENSE 30
-      SPELL_DAMAGE 40
-    }
-    name = {
-      name = "royal priest"
-    }
-  }
   "PESEANT" modify append {
 	  inventory = {
-        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
         { Simple "FirstAidKit" 1 1 0.1}
         { Potion Heal FLESH 1 4 0.2 }
         { Simple "Torch" 1 1 0.1 }
@@ -224,9 +211,12 @@
   }
   "JESTER" modify append {
 	  inventory = {
-        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
       }
 	}
   "DUKE" modify append {
@@ -259,9 +249,11 @@
       }
     }
   "WARRIOR" modify append {
+      skills = append { "MULTI_WEAPON" 0.65 }
       inventory = {
+        { type = Simple "HeavyClub" chance = 0.5 }      
+        { type = Simple "Mace" chance = 0.5 }      
         { Simple "LeatherArmor"}
-        { type = Simple "HeavyClub", alternative = Simple "Mace" }      
         { Simple "WoodenShield" }
         { Simple "LeatherHelm" } 
         { Simple "LeatherBoots" }
@@ -294,9 +286,12 @@
       { Simple "Axe"}
       { Simple "GoldPiece" 2 5 }
       { type = Simple "WoodenShield" chance = 0.1 }
-      { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
-      { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
-      { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+	  { type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+	  { type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+	  { type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+	  { type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+	  { type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+	  { type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
       { Simple "FirstAidKit" 1 1 0.1}
       { Potion Heal FLESH 1 4 0.2 }
       { Simple "Torch" 1 1 0.1 }
@@ -314,8 +309,10 @@
     }
   "CHILD" modify append {
 	  inventory = {
-        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
         { Simple "FirstAidKit" 1 1 0.1}
         { Potion Heal FLESH 1 4 0.2 }
         { Simple "Torch" 1 1 0.1 }
@@ -325,9 +322,12 @@
   "ZOMBIE" modify append {
 	  inventory = {
         { type = Simple "WoodenShield" chance = 0.2 }
-        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
         { Simple "Rock" 3 10 0.1 }
 	  }
     }
@@ -340,18 +340,22 @@
     }
   "VAMPIRE_LORD" modify append {
       skills = {
-        "LABORATORY" 1.0 #Modded
-      }
+        "LABORATORY" 1.0
+		"MULTI_WEAPON" 0.65
+      }	  
       inventory = {
-        { Simple "Robe"}
-        { Simple "StaffOfBleeding" } #Modded
+        { type = Simple "StaffOfBleeding" chance = 0.5 }
+        { type = Simple "VampiricSword" chance = 0.5 }
         { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
+        { Simple "Robe"}
         { Simple "AdaArmor" 1 1 0.03 }
         { Simple "AdaBoots" 1 1 0.03 }
         { Simple "AdaGloves" 1 1 0.03 }
 		{ Simple "AdaHelm" 1 1 0.03 }
-		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
-		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+  		{ type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
+		{ type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
 		{ Potion Permanent SPEED 1 1 0.03 }
 		{ Potion RegrowBodyPart 1 1 1 0.03 }
 		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
@@ -361,9 +365,12 @@
       inventory = {
         { type = Simple "Club" chance = 0.05 }
         { type = Simple "WoodenShield" chance = 0.05 }
-        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
         { Simple "Rock" 3 10 0.1 }
 	  }
     }
@@ -372,9 +379,12 @@
         { Simple "Club"}
         { Simple "LeatherArmor"}
         { type = Simple "WoodenShield" chance = 0.2 }
-        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronBoots", alternative = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
         { Simple "FirstAidKit" 1 1 0.1}
         { Potion Heal FLESH 1 4 0.2 }
         { Simple "Torch" 1 1 0.1 }
@@ -392,12 +402,17 @@
       }
     }
   "KOBOLD" modify append {
-    inventory = {
-        { type = Simple "Spear", alternative = Simple "LongSpear" } #Modded
+      skills = append { "MULTI_WEAPON" 0.65 }
+      inventory = {
+        { type = Simple "Spear" chance = 0.5}
+        { type = Simple "LongSpear" chance = 0.5 }
         { type = Simple "WoodenShield" chance = 0.2 }
-        { type = Simple "IronHelm" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
         { Simple "FirstAidKit" 1 1 0.1}
         { Potion Heal FLESH 1 4 0.2 }
         { Simple "Torch" 1 1 0.1 }
@@ -434,8 +449,10 @@
         { Simple "AdaBoots" 1 1 0.03 }
         { Simple "AdaGloves" 1 1 0.03 }
 		{ Simple "AdaHelm" 1 1 0.03 }
-		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
-		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+  		{ type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
+		{ type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
 		{ Potion Permanent SPEED 1 1 0.03 }
 		{ Potion RegrowBodyPart 1 1 1 0.03 }
 		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
@@ -450,7 +467,7 @@
     }
   "OGRE" modify append {
       inventory = {
-        { type = Simple "HeavyClub", alternative = Simple "Mace" } #Modded
+        { type = Simple "HeavyClub" }
         { Simple "DefenseAmulet" 1 1 0.03}
         { Potion Lasting MELEE_RESISTANCE 1 3 0.03}
         { Ring DAM_BONUS 1 1 0.03}
@@ -460,7 +477,7 @@
     }
   "DWARF" modify append {
       inventory = {
-        { type = Simple "BattleAxe", alternative = Simple "WarHammer" }
+        { type = Simple "BattleAxe" }
         { Simple "ChainArmor"}
         { type = Simple "IronHelm" chance = 0.5 }
         { type = Simple "IronBoots" chance = 0.3 }
@@ -476,7 +493,7 @@
     }
   "DWARF_BARON" modify append {
     inventory = {
-        { type = Simple "VenAxe", alternative = Simple "VenMace" prefixChance = 1 }
+        { type = Simple "VenAxe" prefixChance = 1 }
         { Potion Heal FLESH 2 3 }
         { type = Simple "AdaArmor" prefixChance = 1 } #Modded
         { Simple "AdaBoots" } #Modded
@@ -538,8 +555,10 @@
 		  { Simple "InfBoots" 1 1 0.03 }
 		  { Simple "AdaGloves" 1 1 0.03 }
 		  { Simple "AdaHelm" 1 1 0.03 }
-		  { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
-		  { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+    	  { type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
+		  { type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
+		  { type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
+		  { type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
 		  { Potion Permanent SPEED 1 1 0.03 }
 		  { Potion RegrowBodyPart 1 1 1 0.03 }
 		  { Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
@@ -557,8 +576,10 @@
 		  { Simple "AdaBoots" 1 1 0.03 }
 		  { Simple "InfGloves" 1 1 0.03 }
 		  { Simple "AdaHelm" 1 1 0.03 }
-		  { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
-		  { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+  		  { type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
+		  { type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
+		  { type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
+		  { type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
 		  { Potion Permanent SPEED 1 1 0.03 }
 		  { Potion RegrowBodyPart 1 1 1 0.03 }
 		  { Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
@@ -632,7 +653,7 @@
   attr = { DEFENSE 10 }
   body = { type = Humanoid MEDIUM }
   inventory = {
-    { type = Simple "IronStaff", alternative = Simple "WoodenStaff" prefixChance = 0.03 }
+    { type = Simple "IronStaff" prefixChance = 0.03 }
     { Potion Lasting MAGIC_VULNERABILITY 1 4 0.01}
     { Potion Lasting MELEE_VULNERABILITY 1 4 0.01}
     { Potion Lasting PEACEFULNESS 1 4 0.01}
@@ -721,6 +742,52 @@
       viewIdUpgrades = {{ "keeper_f2"  Rgb 106 106 255 106 } { "keeper_f3"  Rgb 106 106 255 106 } { "keeper_f4"  Rgb 106 106 255 106 }}
     }
 
+#---------------------------------------------------------
+#The KING
+#---------------------------------------------------------
+  "ROYAL_KNIGHT" inherit "KNIGHT" {
+    viewId = { "knight" ColorId PURPLE } #Modded
+    inventory = {
+      { Simple "Sword"}
+      { Simple "ChainArmor"}
+      { Simple "LeatherBoots"}
+    }
+    attr = {
+      DAMAGE 45
+      DEFENSE 35
+    }
+    name = {
+      name = "royal knight"
+    }
+   }
+  "ROYAL_ARCHER" inherit "ARCHER" {
+      viewId = { "archer" ColorId PURPLE } #Modded
+      attr = {
+      DAMAGE 22
+      DEFENSE 32
+      RANGED_DAMAGE 40
+    }
+    name = {
+      name = "royal archer"
+    }
+    inventory = {
+        { Simple "Bow"}
+        { Simple "Knife"}
+        { Simple "LeatherArmor"}
+        { Simple "LeatherBoots"}
+    }
+  }
+  "ROYAL_PRIEST" inherit "PRIEST" {
+    viewId = { "priest" ColorId PURPLE } #Modded
+    attr = {
+      DAMAGE 15
+      DEFENSE 30
+      SPELL_DAMAGE 40
+    }
+    name = {
+      name = "royal priest"
+    }
+  }
 #---------------------------------------------------------
 #Centaur faction
 #---------------------------------------------------------
@@ -930,8 +997,10 @@
         { Simple "AdaGloves" }
 		{ Simple "AdaBoots" 1 1 0.03 }
 		{ Simple "AdaHelm" 1 1 0.03 }
-		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
-		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+  		{ type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
+		{ type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
 		{ Potion Permanent SPEED 1 1 0.03 }
 		{ Potion RegrowBodyPart 1 1 1 0.03 }
 		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
@@ -1216,8 +1285,10 @@
 		{ type = Simple "AdaBoots" prefixChance = 0.05 }
         { type = Simple "AdaGloves" prefixChance = 0.05 }
 	    { type = Simple "AdaHelm" prefixChance = 0.05 }
-	    { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 }
-	    { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 }
+  		{ type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
+		{ type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
 	    { Potion Permanent SPEED 1 1 0.4 }
 	    { Potion RegrowBodyPart 1 1 1 0.4 }
       }
@@ -1578,8 +1649,10 @@
         { Simple "AdaGloves" 1 1 0.03 }
 	    { Simple "AdaHelm" 1 1 0.03 }
 		{ Simple "IlluRing" }
-	    { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
-	    { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+  		{ type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
+		{ type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
 	    { Potion Permanent SPEED 1 1 0.03 }
 	    { Potion RegrowBodyPart 1 1 1 0.03 }
 	    { Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
@@ -2039,8 +2112,10 @@
 		  { Simple "AdaBoots" 1 1 0.1 }
 		  { Simple "AdaGloves" 1 1 0.1 }
 		  { Simple "InfHelm" 1 1 0.1 }
-		  { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.05 }
-		  { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.05 }
+  		{ type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
+		{ type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
 		  { Potion Permanent SPEED 1 1 0.05 }
 		  { Potion RegrowBodyPart 1 1 1 0.05 }
 		  { Scroll Permanent DARKNESS_SOURCE 1 1 0.05 }
@@ -2154,9 +2229,12 @@
       chatReactionHostile = "makes angry rat noises"
 	  inventory = {
 		{ type = Simple "WoodenShield" chance = 0.2 }
-		{ type = Simple "IronHelm", alternative = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.1}
-		{ type = Simple "LeatherBoots", alternative = Simple "IronBoots" prefixChance = 0.02 chance = 0.1}
-		{ type = Simple "LeatherGloves", alternative = Simple "IronGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
 	  }
     }
     "RAT_GENERAL" inherit "RAT_MAN"
@@ -2178,8 +2256,12 @@
 	  }
       chatReactionFriendly = "complains about surface dwellers"
       chatReactionHostile = "makes angry rat noises"
+      skills = { "MULTI_WEAPON" 0.65 }
       inventory = {
-        { type = Simple "BattleAxe", alternative = Simple "WarHammer" }
+        { type = Simple "Sword" chance = 0.5 }
+		{ type = Simple "Axe" chance = 0.5 }
+        { type = Simple "BattleAxe" chance = 0.5 }
+        { type = Simple "WarHammer" chance = 0.5 }
         { Simple "ChainArmor"}
         { type = Simple "IronHelm" chance = 0.5 }
         { type = Simple "IronBoots" chance = 0.3 }
@@ -2521,9 +2603,12 @@
       inventory = {
         { Simple "Spear"}
 		{ type = Simple "WoodenShield" chance = 0.2 }
-		{ type = Simple "IronHelm", alternative = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.1}
-		{ type = Simple "LeatherBoots", alternative = Simple "IronBoots" prefixChance = 0.02 chance = 0.1}
-		{ type = Simple "LeatherGloves", alternative = Simple "IronGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
       }
     }
     "MUSHROOM_MAN"
@@ -2566,6 +2651,52 @@
       }
       chatReactionFriendly = "\"complains about ogre males\""
       chatReactionHostile = "\"Die!\""
+	}
+	"OGRE_CHAMPION"
+	{
+	  viewId = { "ogre_champion" }
+      hatedByEffect = HATE_GREENSKINS
+      attr = {
+        DAMAGE 28
+        DEFENSE 28 
+	}
+	  body = {
+        type = Humanoid LARGE
+        weight = 160
+	}
+      permanentEffects = {
+        MAGIC_VULNERABILITY 1
+	}
+      name = {
+        name = "ogre"
+        firstNameGen = "ORC"
+	}
+      skills = {
+        "WORKSHOP" 0.5
+        "FORGE" 0.5
+    }
+      maxLevelIncrease = {
+        MELEE 12
+	}
+      chatReactionFriendly = "\"talks about fighting\""
+      chatReactionHostile = "\"Die!\""
+      inventory = {
+        { Simple "BattleAxe"}
+		{ Simple "ChainArmor"}
+		{ Simple "IronHelm"}
+		{ Simple "IronGloves"}
+		{ Simple "IronBoots"}
+		{ type = Potion Heal FLESH countMin = 1 countMax = 3 }
+      }
+	}
+    "OGRE_CHAMPION_FEMALE" inherit "OGRE_CHAMPION"
+    {
+      viewId = { "ogre_champion_female" }
+      gender = FEMALE
+      name = {
+        name = "ogre"
+        firstNameGen = "ORC_FEMALE"
+	  }
     }
     "ORC_FEMALE" inherit "ORC"
     {
@@ -3433,8 +3564,10 @@
 		  { Simple "AdaBoots" 1 1 0.03 }
 		  { Simple "VenGloves" 1 1 0.03 }
 		  { Simple "AdaHelm" 1 1 0.03 }
-		  { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
-		  { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+  		  { type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
+		  { type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
+		  { type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
+		  { type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
 		  { Potion Permanent SPEED 1 1 0.03 }
 		  { Potion RegrowBodyPart 1 1 1 0.03 }
 		  { Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
@@ -3668,7 +3801,7 @@
       }
       hatedByEffect = HATE_GREENSKINS
       inventory = {
-        { type = Simple "IronStaff", alternative = Simple "Sword" }
+        { type = Simple "IronStaff" }
         { Simple "LeatherBoots" }
         { type = Simple "LeatherArmor" prefixChance = 0.4 }
         { type = Simple "LeatherGloves" chance = 0.4 }
@@ -4014,7 +4147,7 @@
       }
       hatedByEffect = HATE_GREENSKINS
       inventory = {
-        { type = Simple "Sword", alternative = Simple "WarHammer" prefixChance = 0.05 }
+        { type = Simple "Sword" prefixChance = 0.05 }
         { Simple "WoodenShield" }
         { Simple "ChainArmor" }
         { Simple "IronBoots" }
@@ -4839,9 +4972,12 @@
       inventory = {
         { Simple "Sword" }
         { Simple "WoodenShield" }
-        { type = Simple "IronHelm", alternative = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "LeatherBoots", alternative = Simple "IronBoots" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "LeatherGloves", alternative = Simple "IronGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
       }
     }
     "MILITIA"
@@ -4969,9 +5105,12 @@
       inventory = {
         { Simple "Axe" }
         { Simple "WoodenShield" }
-        { type = Simple "IronHelm", alternative = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "LeatherBoots", alternative = Simple "IronBoots" prefixChance = 0.02 chance = 0.1}
-        { type = Simple "LeatherGloves", alternative = Simple "IronGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
         { Simple "DefenseAmulet" 1 1 0.03}
         { Potion Lasting MELEE_RESISTANCE 1 3 0.03}
         { Ring DAM_BONUS 1 1 0.03}
@@ -5051,9 +5190,12 @@
 		REGENERATION 1
       }
 	  inventory = {
-		{ type = Simple "IronHelm", alternative = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.1}
-		{ type = Simple "LeatherBoots", alternative = Simple "IronBoots" prefixChance = 0.02 chance = 0.1}
-		{ type = Simple "LeatherGloves", alternative = Simple "IronGloves" prefixChance = 0.02 chance = 0.1}
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
       }
     }
    "DWARF_MONK"
@@ -5211,8 +5353,10 @@
        { Simple "AdaBoots" 1 1 0.03 }
        { Simple "AdaGloves" 1 1 0.03 }
 	   { Simple "AdaHelm" 1 1 0.03 }
-       { type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.03 }
-	   { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.03 }
+  		{ type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
+		{ type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
+		{ type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
 	   { Potion Permanent SPEED 1 1 0.03 }
 	   { Potion RegrowBodyPart 1 1 1 0.03 }
 	   { Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
@@ -5768,7 +5912,7 @@
 "DWARF_MILITIA_TRIBE" inherit "DWARF_MILITIA"
 {
       inventory = {
-        { type = Simple "Spear", alternative = Simple "Sword" prefixChance = 0.05 }
+        { type = Simple "Sword" prefixChance = 0.05 }
         { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.2 }
         { type = Simple "LeatherArmor" prefixChance = 0.05 }
         { Simple "LeatherBoots" }
@@ -5803,7 +5947,7 @@
         DEFENSE 30 
 	  }
       inventory = {
-        { type = Simple "WarHammer", alternative = Simple "Axe" prefixChance = 0.2 }
+        { type = Simple "WarHammer" prefixChance = 0.2 }
         { countMin = 1 countMax = 3 type = Potion Heal FLESH chance = 0.5 }
         { type = Simple "ChainArmor" prefixChance = 0.1 }
         { Simple "IronBoots" }
@@ -5821,7 +5965,7 @@
         DEFENSE 32
 	  }
       inventory = {
-        { type = Simple "AdaAxe", alternative = Simple "AdaMace" prefixChance = 0.2 }
+        { type = Simple "AdaAxe" prefixChance = 0.2 }
         { Potion Heal FLESH 1 2 }
         { type = Simple "AdaArmor" prefixChance = 0.3 }
         { type = Simple "AdaBoots" prefixChance = 0.1 }
@@ -5883,8 +6027,10 @@
        { type = Simple "InfBoots", alternative = Simple "AdaBoots" prefixChance = 0.8 }
        { type = Simple "InfGloves", alternative = Simple "AdaGloves" prefixChance = 0.7 }
 	   { type = Simple "InfHelm", alternative = Simple "AdaHelm" prefixChance = 0.65 chance = 0.8 }
-       { type = Scroll IncreaseAttr DAMAGE 2, alternative = Scroll IncreaseAttr DEFENSE 2 countMin = 1 countMax = 1 }
-	   { type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 }
+       { type = Scroll IncreaseAttr DAMAGE 2 countMin = 1 countMax = 1 chance = 0.5 }
+	   { type = Potion IncreaseAttr RANGED_DAMAGE 1 countMin = 1 countMax = 1  chance = 0.5 }
+       { type = Scroll IncreaseAttr DEFENSE 2 countMin = 1 countMax = 1  chance = 0.5 }
+	   { type = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1  chance = 0.5 }
 	   { Potion Permanent SPEED 1 1 1 }
 	   { Potion RegrowBodyPart 1 1 1 1 }
 	   { Scroll Permanent LIGHT_SOURCE 1 1 0.4 }
@@ -5996,8 +6142,10 @@
 		{ type = Simple "VenBoots" prefixChance = 0.8 }
 		{ type = Simple "AdaGloves" prefixChance = 0.8 }
 		{ type = Simple "AdaHelm" prefixChance = 0.8 }
-		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.5 }
-		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.5 }
+  		{ type = Potion IncreaseAttr DAMAGE 1, chance = 0.25 }
+		{ type = Potion IncreaseAttr DEFENSE 1 chance = 0.25 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.25 }
+		{ type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.25 }
 		{ Potion Permanent SPEED 1 1 0.5 }
 		{ Potion RegrowBodyPart 1 1 1 0.5 }
         { type = Potion Heal FLESH countMin = 2 countMax = 4 }
@@ -6045,8 +6193,10 @@
 		{ type = Simple "VenBoots" prefixChance = 0.8 }
 		{ type = Simple "AdaGloves" prefixChance = 0.8 }
 		{ type = Simple "AdaHelm" prefixChance = 0.8 }
-		{ type = Potion IncreaseAttr DAMAGE 1, alternative = Potion IncreaseAttr DEFENSE 1 countMin = 1 countMax = 1 chance = 0.5 }
-		{ type = Potion IncreaseAttr RANGED_DAMAGE 1, alternative = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1 chance = 0.5 }
+  		{ type = Potion IncreaseAttr DAMAGE 1, chance = 0.25 }
+		{ type = Potion IncreaseAttr DEFENSE 1 chance = 0.25 }
+		{ type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.25 }
+		{ type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.25 }
 		{ Potion Permanent SPEED 1 1 0.5 }
 		{ Potion RegrowBodyPart 1 1 1 0.5 }
         { type = Potion Heal FLESH countMin = 2 countMax = 4 }
@@ -6119,17 +6269,22 @@
       name = "bandit punk"
     }
     hatedByEffect = HATE_HUMANS
+    skills = { "MULTI_WEAPON" 0.65 }
     inventory = {
-        { type = Simple "Mace", alternative = Simple "Axe"}
+        { type = Simple "Mace" chance = 0.5 }
+		{ type = Simple "Axe" chance = 0.5 }
         { type = Potion Heal FLESH countMin = 1 countMax = 2 }
 		{ type = Potion Lasting BLIND chance = 0.2 }
         { type = Simple "Torch" chance = 0.7 }
         { type = Simple "Bow" chance = 0.6 }
-        { type = Simple "WoodenShield", alternative = Simple "IronShield" chance = 0.4 }
-        { type = Simple "LeatherHelm", alternative = Simple "IronHelm" prefixChance = 0.1 chance = 0.7}
-        { type = Simple "IronBoots", alternative = Simple "AdaBoots" prefixChance = 0.1 chance = 0.5}
-        { type = Simple "IronGloves", alternative = Simple "LeatherGloves" prefixChance = 0.1 chance = 0.1}
-		{ type = Simple "ChainArmor", alternative = Simple "LeatherArmor" prefixChance = 0.1 chance = 0.8}
+        { type = Simple "IronShield" chance = 0.4 }
+		{ type = Simple "IronHelm", prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "LeatherHelm" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronBoots" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "IronGloves" prefixChance = 0.02 chance = 0.04}
+		{ type = Simple "ChainArmor" prefixChance = 0.1 chance = 0.8}
         { Simple "FirstAidKit" 1 1 0.1}
 	}
   }

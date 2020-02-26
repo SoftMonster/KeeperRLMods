@@ -93,7 +93,8 @@
   { "young_greendragon" "d" ColorId GREEN }
   { "young_reddragon" "d" ColorId RED }
   { "zombiedragon" "z" ColorId GRAY }
-  { "ogre_champion_female" "O" ColorId LIGHT_GRAY }
+  { "ogre_champion_female" "o" ColorId LIGHT_GRAY }
+  { "ogre_champion" "o" ColorId LIGHT_GRAY }
   { "locked_chest" "=" ColorId RED }
   { "wildman" "w" ColorId ORANGE }
   { "wildman_woman" "w" ColorId ORANGE}
