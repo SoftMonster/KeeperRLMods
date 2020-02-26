@@ -137,10 +137,8 @@
       }
     }
   "MINOTAUR" modify append {
-      skills = append { "MULTI_WEAPON" 0.65 }
-      inventory = {
-        { type = Simple "VenWarHammer" prefixChance = 0.1 chance = 0.5 }
-		{ type = Simple "VenBattleAxe"  prefixChance = 0.1 chance = 0.5 }
+    inventory = {
+		{ type = Simple "VenBattleAxe" prefixChance = 0.1 }
 		{ Simple "AdaArmor" 1 1 0.03 }
 		{ Simple "AdaBoots" 1 1 0.03 }
 		{ Simple "AdaGloves" 1 1 0.03 }
@@ -478,10 +476,8 @@
       }
     }
   "DWARF" modify append {
-      skills = append { "MULTI_WEAPON" 0.65 }
       inventory = {
-        { type = Simple "BattleAxe" chance = 0.5 }
-        { type = Simple "WarHammer" chance = 0.5 }
+        { type = Simple "BattleAxe" }
         { Simple "ChainArmor"}
         { type = Simple "IronHelm" chance = 0.5 }
         { type = Simple "IronBoots" chance = 0.3 }
@@ -496,10 +492,8 @@
       }
     }
   "DWARF_BARON" modify append {
-      skills = append { "MULTI_WEAPON" 0.65 }
-      inventory = {
-        { type = Simple "VenAxe" prefixChance = 1 chance = 0.5 }
-        { type = Simple "VenMace" prefixChance = 1 chance = 0.5 }
+    inventory = {
+        { type = Simple "VenAxe" prefixChance = 1 }
         { Potion Heal FLESH 2 3 }
         { type = Simple "AdaArmor" prefixChance = 1 } #Modded
         { Simple "AdaBoots" } #Modded
@@ -5871,10 +5865,8 @@
 ###################################################################################	
 "DWARF_MILITIA_TRIBE" inherit "DWARF_MILITIA"
 {
-      skills = append { "MULTI_WEAPON" 0.65 }
       inventory = {
-        { type = Simple "Sword" prefixChance = 0.05 chance = 0.5 }
-        { type = Simple "Spear" prefixChance = 0.05 chance = 0.5 }
+        { type = Simple "Sword" prefixChance = 0.05 }
         { countMin = 1 countMax = 2 type = Potion Heal FLESH chance = 0.2 }
         { type = Simple "LeatherArmor" prefixChance = 0.05 }
         { Simple "LeatherBoots" }
@@ -5908,10 +5900,8 @@
         DAMAGE 30
         DEFENSE 30 
 	  }
-      skills = append { "MULTI_WEAPON" 0.65 }
       inventory = {
-        { type = Simple "WarHammer" prefixChance = 0.2 chance = 0.5 }
-        { type = Simple "Axe" prefixChance = 0.2 chance = 0.5 }
+        { type = Simple "WarHammer" prefixChance = 0.2 }
         { countMin = 1 countMax = 3 type = Potion Heal FLESH chance = 0.5 }
         { type = Simple "ChainArmor" prefixChance = 0.1 }
         { Simple "IronBoots" }
@@ -5928,10 +5918,8 @@
         DAMAGE 32
         DEFENSE 32
 	  }
-      skills = append { "MULTI_WEAPON" 0.65 }
       inventory = {
-        { type = Simple "AdaAxe" prefixChance = 0.2 chance = 0.5 }
-        { type = Simple "AdaMace" prefixChance = 0.2 chance = 0.5 }
+        { type = Simple "AdaAxe" prefixChance = 0.2 }
         { Potion Heal FLESH 1 2 }
         { type = Simple "AdaArmor" prefixChance = 0.3 }
         { type = Simple "AdaBoots" prefixChance = 0.1 }
@@ -5987,14 +5975,12 @@
         MELEE 4
 	  }
 	  spells = { "advanced healing" "area defense bonus" "area damage bonus" }
-      skills = append { "MULTI_WEAPON" 0.65 }
-      inventory = {
-       { type = Simple "AdaWarHammer" chance = 0.5 prefixChance = 1 }
-       { type = Simple "InfWarHammer" prefixChance = 1 chance = 0.5 }
-	   { type = Simple "InfArmor" prefixChance = 0.9 }
-       { type = Simple "InfBoots" prefixChance = 0.8 }
-       { type = Simple "InfGloves" prefixChance = 0.7 }
-	   { type = Simple "InfHelm" prefixChance = 0.65 chance = 0.8 }
+	  inventory = {
+       { type = Simple "InfWarHammer", alternative = Simple "AdaWarHammer" prefixChance = 1 }
+	   { type = Simple "InfArmor", alternative = Simple "AdaArmor" prefixChance = 0.9 }
+       { type = Simple "InfBoots", alternative = Simple "AdaBoots" prefixChance = 0.8 }
+       { type = Simple "InfGloves", alternative = Simple "AdaGloves" prefixChance = 0.7 }
+	   { type = Simple "InfHelm", alternative = Simple "AdaHelm" prefixChance = 0.65 chance = 0.8 }
        { type = Scroll IncreaseAttr DAMAGE 2 countMin = 1 countMax = 1 chance = 0.5 }
 	   { type = Potion IncreaseAttr RANGED_DAMAGE 1 countMin = 1 countMax = 1  chance = 0.5 }
        { type = Scroll IncreaseAttr DEFENSE 2 countMin = 1 countMax = 1  chance = 0.5 }
