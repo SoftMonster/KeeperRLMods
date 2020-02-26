@@ -1900,6 +1900,21 @@
       attackBehaviour = StealGold
 	}
   }
+  "SHADOW_TEMPLE"
+  {
+    settlement = {
+      type = Builtin TEMPLE
+      tribe = HOSTILE
+	  locationName = "the shadow king"
+      race = "shadow altar"
+      inhabitants = {
+          leader = { { "SKELETON_MAGE" } }
+      }
+      buildingId = "SHADOW_CITY_GRASS"
+      furniture = { "shadow_altar" }
+    }
+    discoverable = false
+  }
   "HELL_PORTAL"
   {
     biomes = { "VOLCANIC" }  

@@ -862,6 +862,13 @@
    cooldown = 30
    sound = BLUNT_DAMAGE
  }
+"rapid invisibility"
+ {
+   symbol = "🕵️"
+   effect = Lasting INVISIBLE
+   cooldown = 60
+   sound = SPELL_INVISIBILITY
+ }
 #------------------------------
 #Barbarian Skills Feb 2020
 #------------------------------

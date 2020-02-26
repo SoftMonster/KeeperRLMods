@@ -912,7 +912,18 @@
     canHideHere = true
     strength = 100
   }
-  
+  "SHADOW_ALTAR"
+  {
+    name = "shadow altar"
+    viewId = { "shadow_altar" }
+    tickType = Effect Chance 0.08 SummonEnemy "SHADE" { 1 } 500
+    blockMovement = true
+    canHideHere = true
+	lightEmission = 20.0
+    strength = 200
+	destroyFX = { DESTROY_FURNITURE Rgb 15 15 15 255 }
+	destroyedEffect = Chain { Message "The Altar releases a streak of dark energy!" Area 5 IncreaseAttr DAMAGE 2 SummonEnemy "SHADE" {4} none }
+  }
 "BLOOD_WELL"
 {
   name = "well of blood"

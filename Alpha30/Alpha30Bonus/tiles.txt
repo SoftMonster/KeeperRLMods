@@ -101,6 +101,7 @@
   { "wildman_woman" "w" ColorId ORANGE}
   { "wildman_queen" "W" ColorId LIGHT_GRAY }
   { "crocodile" "c" ColorId GREEN }
+  { "shade" "s" ColorId DARK_GRAY }
 
 #Added by your boi; Acre June 2019
 
@@ -249,6 +250,7 @@
   { "shadow_archer" "p" ColorId LIGHT_GRAY }
   { "shadow_priest" "p" ColorId LIGHT_GRAY }
   { viewId = "shadow_spirit_light" symbol = "@" color = ColorId LIGHT_BLUE animated = true }
+  { viewId = "shadow_altar" symbol = "⍦" color = ColorId LIGHT_BLUE isSymbolFont = true animated = true roundShadow = true }
   { viewId = "cursed_wall" symbol = "#" color = ColorId DARK_GRAY wallShadow = true wallConnections = true }
 
  #Volcano

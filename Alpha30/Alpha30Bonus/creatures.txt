@@ -5971,6 +5971,39 @@
         name = "disenchanter"
       }
     }
+  "SHADE"
+    {
+      viewId = { "shade" }
+      attr = {
+		DAMAGE 20
+        DEFENSE 15
+        SPELL_DAMAGE 20 
+	  }
+      body = {
+        type = NonHumanoid LARGE
+        material = SPIRIT
+        deathSound = SPELL_WORD_OF_POWER
+        intrinsicAttacks = {
+          TORSO {{{ Intrinsic { "bite_attack" } "fangs" 6 {
+              attackType = BITE
+              attackMsg = BITE
+              victimEffect = { 0.2 Lasting INSANITY}
+              attackerEffect = { Escape } } }}}
+        }
+	  }
+	  name = {
+        name = "shade"
+	  }
+      chatReactionFriendly = "\"it screeches in a horrid voice\""
+      chatReactionHostile = "\"it screeches in a horrid voice\""
+	  cantEquip = true
+      spells = { "rapid invisibility" }
+      courage = 100
+      permanentEffects = {
+		SPEED 1
+		TELEPATHY 1
+		}
+      }
 
 #------------------
 #Immigrant variants

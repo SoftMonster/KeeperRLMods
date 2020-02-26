@@ -321,15 +321,23 @@
     "CHEST" 1 
     }
   }
-"overgrownRuins"
-{
+  "overgrownRuins"
   {
+    {
     "CANIF_TREE" 2
     "BUSH" 1
 	"GROUND_TORCH" 2
 	"MUD" 30
     "LOCKED_CHEST" 1
 	"CHEST" 1
+    }
+  }
+"shadow_altar"
+  {
+    {
+    }
+    {
+    "SHADOW_ALTAR"
     }
   }
 }

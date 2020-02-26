@@ -10,6 +10,7 @@
     { id = "WILDMEN_CAVE" count = { 0 2 } }
 	{ id = "CENTAUR_TOWN" }
 	{ id = "AMAZON_TOWN" }
+	{ id = "SHADOW_TEMPLE" probability = 0.1 }
   }
   whiteKeeperEnemies = {
     { id = "COTTAGE_BANDITS" count = { 3 5 } }
@@ -19,6 +20,7 @@
     { id = "WILDMEN_CAVE" count = { 0 2 } }
 	{ id = "RAT_VILLAGE" }
 	{ id = "GOBLIN_CAVE" }
+	{ id = "SHADOW_TEMPLE" probability = 0.1 }
   }
   darkKeeperBaseEnemies = {
     { id = "TUTORIAL_VILLAGE" count = { 1 3 } }
@@ -48,6 +50,7 @@
     { id = "RUINS" probability = 0.5 }
     { id = "WILDMEN_CAVE" }
 	{ id = "AMAZON_TOWN" }
+	{ id = "SHADOW_TEMPLE" probability = 0.1 }
   }
   whiteKeeperEnemies = {
     { id = "WILDMEN_CAVE" }
@@ -57,6 +60,7 @@
     { id = "CORPSES" probability = 0.2 }
     { id = "WIZARD_TOWER" probability = 0.1 }
     { id = "RUINS" probability = 0.5 }
+	{ id = "SHADOW_TEMPLE" probability = 0.1 }
   }
   darkKeeperBaseEnemies = {
     { id = "WILDMEN_CAVE" }
@@ -87,6 +91,7 @@
     { id = "WILDMEN_CAVE" }
 	{ id = "CENTAUR_TOWN" }
 	{ id = "AMAZON_TOWN" }
+	{ id = "SHADOW_TEMPLE" probability = 0.1 }
   }
   whiteKeeperEnemies = {
     { id = "DARK_ELF_CAVE" count = { 0 3 } }
@@ -97,6 +102,7 @@
     { id = "WILDMEN_CAVE" count = { 0 3 } }
 	{ id = "RAT_VILLAGE" }
 	{ id = "GOBLIN_CAVE" count = { 0 3 } }
+	{ id = "SHADOW_TEMPLE" probability = 0.1 }
   }
   darkKeeperBaseEnemies = {
     { id = "WILDMEN_CAVE" count = { 2 3 } }
@@ -149,10 +155,12 @@
   darkKeeperEnemies = {
     { id = "DRAGON_NEWT_COTTAGE" count = { 3 4 } }
     { id = "HELL_KNIGHT_ISLAND" count = { 2 3 } }
+	{ id = "SHADOW_TEMPLE" probability = 0.5 }
   }
   whiteKeeperEnemies = {
     { id = "DRAGON_NEWT_COTTAGE" count = { 3 4 } }
     { id = "HELL_KNIGHT_ISLAND" count = { 2 3 } }
+	{ id = "SHADOW_TEMPLE" probability = 0.5 }
   }
 }
 
@@ -264,10 +272,12 @@
   darkKeeperEnemies = {
     { id = "RAT_VILLAGE" count = { 3 4 } }
 	{ id = "CROC_LAKE" count = { 1 3 } }
+	{ id = "SHADOW_TEMPLE" probability = 0.1 }
   }
   whiteKeeperEnemies = {
     { id = "RAT_VILLAGE" count = { 3 4 } }
 	{ id = "CROC_LAKE" count = { 1 3 } }
+	{ id = "SHADOW_TEMPLE" probability = 0.1 }
   }
 }
 
@@ -633,10 +643,12 @@
   darkKeeperEnemies = {
     { id = "CORPSES"count = {2} }
     { id = "RUINS" count = { 4 6 } }
+	{ id = "SHADOW_TEMPLE" count = { 0 2 }
   }
   whiteKeeperEnemies = {
     { id = "CORPSES"count = {2} }
     { id = "RUINS" count = { 4 6 } }
+	{ id = "SHADOW_TEMPLE" count = { 0 2 }
   }  
   keeperBiome = none
 }
