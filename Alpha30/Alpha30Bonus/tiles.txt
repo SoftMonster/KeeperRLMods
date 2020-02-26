@@ -43,8 +43,8 @@
   { "dark_orc" "o" ColorId BLACK }
   { "dark_orc_female" "o" ColorId BLACK }
   { "dark_orc_captain" "o" ColorId BLACK }
-  { "dark_troll_female" "O" ColorId BLACK }
-  { "dark_troll" "T" ColorId BLACK }
+  { "dark_ogre_female" "O" ColorId BLACK }
+  { "dark_ogre" "T" ColorId BLACK }
   { "demon_fairy" "h" ColorId RED }
   { "earth_fairy" "h" ColorId BROWN }
   { "electric_fairy" "h" ColorId YELLOW }
@@ -88,12 +88,12 @@
   { "spirit_dragon" "^" ColorId BLUE }
   { "sprite" "h" ColorId WHITE }
   { "squidholder" "S" ColorId PURPLE }
-  { "troll_female" "T" ColorId PURPLE }
+  { "ogre_female" "T" ColorId PURPLE }
   { "water_fairy" "h" ColorId PURPLE }
   { "young_greendragon" "d" ColorId GREEN }
   { "young_reddragon" "d" ColorId RED }
   { "zombiedragon" "z" ColorId GRAY }
-  { "troll_champion_female" "O" ColorId LIGHT_GRAY }
+  { "ogre_champion_female" "O" ColorId LIGHT_GRAY }
   { "locked_chest" "=" ColorId RED }
   { "wildman" "w" ColorId ORANGE }
   { "wildman_woman" "w" ColorId ORANGE}
