@@ -328,7 +328,7 @@
     "damage bonus" 11
     "breed hell" 12
   }
-    "barbarian" MELEE
+  "barbarian" MELEE
   {
 	"wild swing" 1
 	"curse of rage" 1
@@ -342,4 +342,32 @@
 	"martial strike" 8
 	"blood rage" 9
 	"decapitate" 10
+  }
+  "water" SPELL
+  {
+    "elemental tea" 1
+	"bolt of water" 3
+	"choking vapor" 5
+	"summon water elementals" 7
+	"acid blast" 9
+	"ice cone" 11
+	"water blast" 13
+  }
+  "earth" SPELL
+  {
+   "elemental tea" 1
+   "earth bolt" 2
+   "summon earth elementals" 4
+   "stone to mud" 6
+   "spit shards" 8
+   "earth blast" 10
+  }
+  "air" SPELL
+  {
+    "elemental tea" 1
+	"directed blast" 2
+    "summon air elementals" 4
+    "choking vapor" 5
+    "arrow shield" 7
+	"magic blast" 11
   }

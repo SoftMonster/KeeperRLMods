@@ -616,12 +616,12 @@
       }
     }
   "ELEMENTALIST" modify append {
-      spellSchools = { "fire" }               #Modded
-      spells = { "healing" "summon element" } #Modded
+      spellSchools = { "fire" "water" "earth" "air" }
+      spells = { "elemental tea" "summon air elementals" }
       gender = FEMALE
       permanentEffects = {
         FIRE_RESISTANT 1
-		COLD_RESISTANT 1                      #Modded
+		COLD_RESISTANT 1
         MAGIC_RESISTANCE 1
       }
   }
@@ -1334,7 +1334,6 @@
 #---------------------------------------------------------
 #Fairy faction
 #---------------------------------------------------------
-
 	
     "AIR_FAIRY" inherit "BASE_SPELL_CASTER_1"
     {
@@ -1359,11 +1358,10 @@
       }
 	  spellSchools = { "mage" }
       spells = {
-	    "healing"
-        "directed blast"
-        "fumes"
+	    "elemental tea"
+        "choking vapor"
 		"arrow shield"
-		"expert magic missile"
+		"magic blast"
 		"summon air elementals"
       }
       permanentEffects = {
@@ -1433,10 +1431,12 @@
       viewId = { "earth_fairy" }
 	  spellSchools = { "mage" }
       spells = {
-	    "healing"
+        "summon earth elementals"
+        "earth blast"
+        "elemental tea"
+        "spit shards"
         "stone to mud"
-        "stone golem"
-		"magic missile"
+        "stone golems"
       }
       skills = {
 	    "DIGGING" 1.0
@@ -1483,7 +1483,7 @@
         }
 	  }	  spellSchools = { "mage" }
       spells = {
-	  	"healing"
+	  	"elemental tea"
         "fireball"
     	"firewall"
       }
@@ -1570,10 +1570,12 @@
       viewId = { "water_fairy" }
 	  spellSchools = { "mage" }
       spells = {
-	      "healing"
-	      "magic missile"
-          "summon water elementals"
-      }
+        "elemental tea"
+	    "choking vapor"
+	    "summon water elementals"
+	    "ice cone"
+	    "acid blast"
+	  }
       skills = {
         "LABORATORY" 0.9
       }

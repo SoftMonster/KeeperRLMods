@@ -310,14 +310,6 @@
    cooldown = 100
    sound = SPELL_SUMMON_SPIRIT
  }
-"fumes"
- {
-   symbol = "☠"
-   range = 4
-   effect = EmitPoisonGas 4
-   cooldown = 50
-   sound = SPELL_AIR_BLAST
- }
 "poison spores"
  {
    symbol = "☠"
@@ -334,21 +326,6 @@
    cooldown = 125
    sound = SPELL_BLAST
  }  
-"spit shards"
- {
-   symbol = "!"
-   range = 7
-   effect = Lasting BLEEDING
-   cooldown = 10
-   sound = SPELL_BLAST
- }  
-"stone to mud"
- {
-   symbol = "🕳"
-   effect = DestroyWalls DIG
-   cooldown = 1000
-   sound = SPELL_AIR_BLAST
- } 
 "freezing vines"
  {
    symbol = "🙙"
@@ -512,13 +489,6 @@
    cooldown = 3000
    sound = SPELL_BLAST
  }
- "summon water elementals"
- {
-   symbol = "🕵"
-   effect = Summon "WATER_ELEMENTAL" { 3 4 } 100
-   cooldown = 200
-   sound = SPELL_SUMMON_SPIRIT
- }
  "summon air elementals"
  {
    symbol = "||"
@@ -575,14 +545,6 @@
    effect = Summon "SKELETON_MAGE" { 1 3 } 100
    cooldown = 70
    sound = SPELL_SUMMON_SPIRIT
- }
-"bolt of water"
- {
-   symbol = "->"
-   effect = Damage SPELL_DAMAGE SPELL
-   range = 7
-   cooldown = 16
-   sound = SPELL_BLAST
  }
 "disenchantment bolt" 
  {
@@ -968,3 +930,118 @@
   endOnly = true
   message = "jump" "jumps"
 }
+
+#-------------------------
+#Water spells
+#-------------------------
+
+"elemental tea"
+#Healing with a defense bonus but a longer cooldown.
+{
+  symbol = "❤️"
+  effect = Chain { Heal FLESH Lasting RESTED Lasting SATIATED } 
+  cooldown = 100
+  sound = SPELL_HEALING
+}
+
+"bolt of water"
+#Glorified magic missile
+ {
+   symbol = "->"
+   effect = Damage SPELL_DAMAGE SPELL
+   range = 7
+   cooldown = 40
+   sound = SPELL_BLAST
+ }
+
+"water blast"
+ {
+   symbol = "*>"
+   upgrade = "bolt of water"
+   effect = Chain { Damage SPELL_DAMAGE SPELL Blast }
+   range = 10
+   cooldown = 30
+   sound = SPELL_BLAST
+ }
+
+ "summon water elementals"
+ {
+   symbol = "🕵"
+   effect = Summon "WATER_ELEMENTAL" { 3 4 } 100
+   cooldown = 200
+   sound = SPELL_SUMMON_SPIRIT
+ }
+
+ "choking vapor"
+ {
+   symbol = "☠"
+   range = 10
+   effect = EmitPoisonGas 5
+   cooldown = 100
+   sound = SPELL_BLAST
+ }
+ 
+ "acid blast"
+ #More powerful acid bolt spell with a longer range but larger cooldown
+ {
+   upgrade = "water blast"
+   symbol = "~~"
+   effect = Chain { Damage SPELL_DAMAGE SPELL Blast Acid }
+   fx = ACID
+   range = 10
+   cooldown = 20
+ }
+
+#-------------------------
+#Earth spells
+#-------------------------
+#Elemental tea is taken from general spells
+#-------------------------
+
+ "summon earth elementals"
+ {
+   symbol = "🕵"
+   effect = Summon "EARTH_ELEMENTAL" { 3 4 } 100
+   cooldown = 200
+   sound = SPELL_SUMMON_SPIRIT
+ }
+
+ "earth bolt"
+ #More powerful acid bolt spell with a longer range but larger cooldown
+ {
+   symbol = "->"
+   effect = Chain { Damage SPELL_DAMAGE SPELL Chance 0.2 Lasting BLEEDING }
+   fx = ACID
+   range = 10
+   cooldown = 20
+ }
+ 
+ "earth blast"
+ #More powerful acid bolt spell with a longer range but larger cooldown
+ {
+   upgrade = "earth bolt"
+   symbol = "=>"
+   effect = Chain { Damage SPELL_DAMAGE SPELL Blast Chance 0.3 Lasting BLEEDING }
+   fx = ACID
+   range = 10
+   cooldown = 20
+ }
+ 
+ "spit shards"
+ {
+   #Guaranteed bleeding 3 times a day
+   symbol = "!"
+   range = 7
+   effect = Lasting BLEEDING
+   cooldown = 1000
+   sound = SPELL_BLAST
+ }
+ 
+ "stone to mud"
+ {
+   symbol = "🕳"
+   effect = DestroyWalls DIG
+   cooldown = 1000
+   sound = SPELL_AIR_BLAST
+ }
+
