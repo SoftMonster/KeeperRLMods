@@ -643,12 +643,12 @@
   darkKeeperEnemies = {
     { id = "CORPSES"count = {2} }
     { id = "RUINS" count = { 4 6 } }
-	{ id = "SHADOW_TEMPLE" count = { 0 2 }
+	{ id = "SHADOW_TEMPLE" count = { 0 2 } }
   }
   whiteKeeperEnemies = {
     { id = "CORPSES"count = {2} }
     { id = "RUINS" count = { 4 6 } }
-	{ id = "SHADOW_TEMPLE" count = { 0 2 }
+	{ id = "SHADOW_TEMPLE" count = { 0 2 } }
   }  
   keeperBiome = none
 }
