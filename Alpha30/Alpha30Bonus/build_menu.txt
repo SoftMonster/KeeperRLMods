@@ -447,5 +447,20 @@
     { Furniture {{ "ARCHERY_RANGE" } "WOOD" 12 }                   "Archery target"    "Training room"
         "Train your minions' archery skills here." 0 { TechId "archery" }}
   }
+  #Goblin Keeper
+  "goblin_magical_installations"
+  {
+    { Furniture {{ "EYEBALL" }              "WOOD"   30 }                   "Eyeball"           "Installations"
+        "Makes the area around it visible."}
+
+    { Furniture { types = { "MINION_STATUE" } cost = "GOLD" 50 limit = 60 } "Golden statue"     "Installations" ""}
+    { Furniture {{ "STONE_MINION_STATUE" }  "STONE"  250 }                  "Stone statue"      "Installations" ""}
+    { Furniture {{ "PORTAL" }               "STONE"  60 }                   "Portal"            "Installations"
+        "Opens a connection if another portal is present."}
+    { Furniture {{ "HEALING_TOTEM" }        "GOLD"   60 }                   "Healing totem"     "Installations"
+        "Heals minions close by."}
+#    { Furniture {{ "BLEEDING_TOTEM" }       "GOLD"   60 }                   "Bleeding totem"     "Installations"
+#        "Causes enemies close by to bleed."}
+  }
  
    

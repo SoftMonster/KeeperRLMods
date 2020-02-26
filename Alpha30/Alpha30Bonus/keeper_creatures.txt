@@ -213,7 +213,7 @@
     initialTech = { "iron working" "alchemy" "sorcery" "traps" }
     buildingGroups = {
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "pigsty"
-        "training" "crafting" "laboratory" "jeweller" "poetry" "prison" "orders" "installations" "magical_installations" "traps"
+        "training" "crafting" "laboratory" "jeweller" "poetry" "prison" "orders" "installations" "goblin_magical_installations" "traps"
     }
     workshopGroups = { "goblin" "traps" }
     description = "(Challenge) Breed an army of goblins and overrun the land with numbers!" #Modded
