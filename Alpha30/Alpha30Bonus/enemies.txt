@@ -1531,7 +1531,6 @@
 }
   "ORC_CITY_SHOP"
   {
-    discoverable = false
     settlement = {
     type = Builtin VILLAGE
     tribe = GREENSKIN
@@ -2243,7 +2242,6 @@
   }
   "SHADOW_GROUP_SHOP_BASE"
   {
-    discoverable = false
     settlement = {
     type = Builtin VILLAGE
     tribe = DARK_ELF #Evil alignment
@@ -2261,7 +2259,6 @@
   }
   "NEUTRAL_GROUP_SHOP_BASE"
   {
-    discoverable = false
     settlement = {
     type = Builtin VILLAGE
     tribe = GNOME #Neutral alignment
@@ -2278,7 +2275,7 @@
     }
   }
   
-  "CITY_GROUP_SHOP"  inherit "CITY_GROUP_SHOP_BASE" { discoverable = false settlement = append { shopItems = { "villageShop" } } }
+  "CITY_GROUP_SHOP"  inherit "CITY_GROUP_SHOP_BASE" { settlement = append { shopItems = { "villageShop" } } }
 
   "ROYAL_BLACKSMITH" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Blacksmith" shopItems = { "iron" } } }
   "ROYAL_SCRIBE" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Scribe" shopItems = { "scribeScrolls" } } }
