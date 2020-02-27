@@ -90,7 +90,7 @@
     "blood curse" 11
     "invisibility" 12
   }
-  "gnomeish" SPELL
+  "gnome lore" SPELL
   {
     "healing" 1
     "summon flies" 2
@@ -183,7 +183,7 @@
 	"expert magic missile" 6
 	"summon automaton army" 7
   }
-  "fairy queen" SPELL
+  "fairy lore" SPELL
   {
 	"expert healing" 1
 	"expert rapid magic missile" 2
@@ -200,7 +200,7 @@
 # spells_schools.txt - August 2019 by Righteous for goblins
 #----------------------------------------------------------
 
-  "chickenmancer" SPELL
+  "avian lore" SPELL
   {
     "summon chickens" 1
     "advanced healing" 2

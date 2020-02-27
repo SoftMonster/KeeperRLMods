@@ -427,7 +427,7 @@
       body = {
         type = Humanoid MEDIUM
       }
-      spellSchools = { "gnomeish" } #Modded
+      spellSchools = { "gnome lore" } #Modded
 		spells = { "repair automaton" }
       chatReactionFriendly = "talks about crafting"
       chatReactionHostile = "\"Die!\""
@@ -1616,7 +1616,7 @@
       maxLevelIncrease = {
         SPELL 16
       }
-	  spellSchools = { "fairy queen" }
+	  spellSchools = { "fairy lore" }
       spells = {
 		"expert healing"
 		"expert rapid magic missile"
@@ -3983,7 +3983,7 @@
       body = {
         type = Humanoid MEDIUM
       }
-	        spellSchools = { "chickenmancer" }
+	  spellSchools = { "avian lore" }
       spells = {
 		 "summon chickens" 
 		 "advanced healing" 
@@ -4555,7 +4555,7 @@
       body = {
         type = Humanoid MEDIUM
       }
-	  spellSchools = { "chickenmancer" }
+	  spellSchools = { "avian lore" }
 	  name = {
         name = "goblin chickenmancer"
         firstNameGen = "ORC"
@@ -5582,7 +5582,7 @@
       body = {
         type = Humanoid MEDIUM
       }
-      spellSchools = { "gnomeish" } #Modded
+      spellSchools = { "gnome lore" } #Modded
 		spells = { "repair automaton" }
       chatReactionFriendly = "talks about crafting"
       chatReactionHostile = "\"Die!\""
@@ -5607,7 +5607,7 @@
     body = {
       type = Humanoid MEDIUM
     }
-      spellSchools = { "gnomeish" } #Modded
+      spellSchools = { "gnome lore" } #Modded
 		spells = { "repair automaton" }
     chatReactionFriendly = "talks about digging"
     chatReactionHostile = "\"Die!\""
@@ -5666,7 +5666,7 @@
       body = {
         type = Humanoid MEDIUM
       }
-      spellSchools = { "gnomeish" } #Modded
+      spellSchools = { "gnome lore" } #Modded
       chatReactionFriendly = "talks about crafting"
       chatReactionHostile = "\"Die!\""
       skills = {
