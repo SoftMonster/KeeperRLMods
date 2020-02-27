@@ -284,9 +284,9 @@
   { viewId = "flower2" symbol = "," color = ColorId GREEN }
 
  #Swamp
-  { viewId = "swamp_grass" symbol = "." color = ColorId YELLOW canMirror = true extraBorders = { "swamp_hill" "water" "swamp_water" } }
+  { viewId = "swamp_grass" symbol = "." color = ColorId YELLOW canMirror = true extraBorders = { "swamp_hill" "water" "swamp_water" "mud" } }
   { viewId = "swamp_water" symbol = "~" color = ColorId LIGHT_BLUE waterSides = "swamp_water" animated = true spriteColor = Rgb 255 255 255 255 }
-  { viewId = "swamp_hill" symbol = "𝀢" color = ColorId DARK_GREEN isSymbolFont = true canMirror = true extraBorders = { "water" "swamp_water" "corrupted_hill" } }
+  { viewId = "swamp_hill" symbol = "𝀢" color = ColorId DARK_GREEN isSymbolFont = true canMirror = true extraBorders = { "water" "swamp_water" "corrupted_hill" "mud" } }
   { viewId = "swamp_tree1" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
   { viewId = "swamp_tree2" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
   { viewId = "swamp_bush1" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
@@ -294,6 +294,7 @@
   { viewId = "swamp_lily_pads2" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true wallShadow = true }
   { viewId = "swamp_water_reeds" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true wallShadow = true }
   { viewId = "swamp_grass_reeds" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true wallShadow = true }
+  { viewId = "dirt_wall" symbol = "#" color = ColorId LIGHT_BROWN wallConnections = true }
   { "zombie_altar" "T" ColorId PURPLE }
 
   #O'mally Bandits

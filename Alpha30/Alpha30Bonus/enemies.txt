@@ -773,6 +773,7 @@
 }
 "CROC_LAKE"
 {
+  discoverable = false
   settlement = {
     type = Builtin SWAMP
 	tribe = WILDLIFE
@@ -1846,7 +1847,7 @@
         }
       }
       race = "ratmen"
-        buildingId = "WOOD"
+        buildingId = "MUD"
         stockpiles = {
           { "gold" 20 "TREASURE_CHEST" }
         }
@@ -2043,7 +2044,7 @@
 		}
       locationName = "the Guard"
       race = "ratmen"
-      buildingId = "WOOD"
+      buildingId = "MUD"
       stockpiles = {{ "gold" 50 "TREASURE_CHEST" }}
       outsideFeatures = "villageOutside"
     }

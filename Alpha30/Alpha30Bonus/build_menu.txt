@@ -453,7 +453,7 @@
     { Furniture {{ "EYEBALL" }              "WOOD"   30 }                   "Eyeball"           "Installations"
         "Makes the area around it visible."}
 
-    { Furniture { types = { "MINION_STATUE" } cost = "GOLD" 50 limit = 60 } "Golden statue"     "Installations" ""}
+    { Furniture { types = { "MINION_STATUE" } cost = "GOLD" 50 limit = 50 } "Golden statue"     "Installations" ""}
     { Furniture {{ "STONE_MINION_STATUE" }  "STONE"  250 }                  "Stone statue"      "Installations" ""}
     { Furniture {{ "PORTAL" }               "STONE"  60 }                   "Portal"            "Installations"
         "Opens a connection if another portal is present."}

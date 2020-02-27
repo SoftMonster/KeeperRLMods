@@ -1,3 +1,10 @@
+"MUD" modify append
+  {
+    wall = "DIRT_WALL"
+    floorInside = "FLOOR_SWAMP1_COSMETIC"
+    water = {WATER}
+  }
+
 #Modded
   "ELEMENTALIST"
     {

@@ -304,6 +304,10 @@
     name = "floor"
     viewId = { "stone_floor1" }
    }
+  "FLOOR_SWAMP1_COSMETIC" inherit "MUD"
+  {
+    viewId = { "swamp_hill" }
+   }
   "FLOOR_STONE2_COSMETIC" inherit "MUD"
   {
     name = "floor"
@@ -790,6 +794,11 @@
   "FEY_WATER" inherit "WATER"
   {
     viewId = { "fey_water" }
+    freezeTo = "FEY_ICE"
+    fillPit = "FEY_WATER"
+	walkIntoFX = { WATER_SPLASH Rgb 142 83 209 255 }
+  }
+  "FEY_ICE" inherit "ICE" { meltInfo = { "FEY_WATER" }
   }
   "FEY_TREE31" inherit "CANIF_TREE" { viewId = { "fey_tree1" }}
   "FEY_TREE32" inherit "CANIF_TREE" { viewId = { "fey_tree1" ColorId LIGHT_BROWN }}
@@ -880,12 +889,37 @@
     viewLayer = TORCH1 }
   "SWAMP_REEDS" inherit "CANIF_TREE" { viewId = { "swamp_grass_reeds" ColorId GREEN }
     viewLayer = TORCH1 }
-  "SWAMP_LILY_PAD1" inherit "CANIF_TREE" { viewId = { "swamp_lily_pad1" ColorId GREEN }
-    viewLayer = TORCH1 }
-  "SWAMP_LILY_PADS2" inherit "CANIF_TREE" { viewId = { "swamp_lily_pads2" ColorId GREEN }
-    viewLayer = TORCH1 }
-  "SWAMP_WATER_REEDS" inherit "CANIF_TREE" { viewId = { "swamp_water_reeds" ColorId GREEN }
-    viewLayer = TORCH1 }
+
+  "SWAMP_LILY_PAD1" 
+  {
+    name = "lily pads"
+    viewId = { "swamp_lily_pad1" }
+    viewLayer = TORCH1 
+	bridge = true 
+	removeNonFriendly = true
+    removeWithCreaturePresent = false
+    canBuildOutsideOfTerritory = true
+  }
+  "SWAMP_LILY_PADS2" 
+  {
+    name = "lily pads"
+    viewId = { "swamp_lily_pads2" }
+    viewLayer = TORCH1 
+	bridge = true 
+	removeNonFriendly = true
+    removeWithCreaturePresent = false
+    canBuildOutsideOfTerritory = true
+  }
+  "SWAMP_WATER_REEDS" 
+  {
+    name = "reeds"
+    viewId = { "swamp_water_reeds" }
+    viewLayer = TORCH1 
+	bridge = true 
+	removeNonFriendly = true
+    removeWithCreaturePresent = false
+    canBuildOutsideOfTerritory = true
+  }
   "SWAMP_GRASS" inherit "GRASS"
   {
     viewId = { "swamp_grass" }
@@ -899,10 +933,31 @@
     name = "swamp water"
     viewId = { "swamp_water" }
     layer = GROUND
+    waterDepth = 1.5
+    entryType = Water
+    droppedItems = none
+    defaultBridge = "BRIDGE"
     summonedElement = "WATER_ELEMENTAL"
-    walkIntoFX = { WATER_SPLASH Rgb 82 148 255 255 }
+    freezeTo = "SWAMP_ICE"
+    fillPit = "SWAMP_WATER"
+    canSilentlyReplace = true
+    movementSet = {
+      traits = { FLY SWIM WADE }
+      forcibleTraits = { WALK }
+	}
+    walkIntoFX = { WATER_SPLASH Rgb 144 181 165 255 }
   }
-  
+  "SWAMP_ICE" inherit "ICE" { meltInfo = { "SWAMP_WATER" }
+  }
+  "DIRT_WALL"
+  {
+    name = "wall"
+    viewId = { "dirt_wall" }
+    blockMovement = true
+    blockVision = { NORMAL ELF }
+    wall = true
+    buildingSupport = true
+  }
   "ZOMBIE_SPAWNER"
   {
     name = "zombie spawner"
