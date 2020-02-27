@@ -616,6 +616,7 @@
       }
     }
   "ELEMENTALIST" modify append {
+      maxLevelIncrease = { SPELL 16 }
       spellSchools = { "elemental" }
       spells = { "elemental tea" "summon air elementals" }
       gender = FEMALE
