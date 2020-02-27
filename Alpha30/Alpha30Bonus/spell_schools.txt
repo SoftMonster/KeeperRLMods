@@ -87,7 +87,7 @@
     "summon element" 9
     "damage bonus" 10
     "panic" 11
-    "curse" 11
+    "blood curse" 11
     "invisibility" 12
   }
   "gnomeish" SPELL
@@ -141,7 +141,7 @@
    "mana curse" 4
    "summon skeleton mages" 5
    "summon skeleton warriors" 5
-   "curse" 6
+   "blood curse" 6
    "fire shield" 6
    "regrow body part" 7
   }

@@ -433,7 +433,7 @@
 		weaponInfo =  { attackType = SPELL attackMsg = WAVE meleeAttackAttr = SPELL_DAMAGE } 
 		maxUpgrades =  2 
 		equipedEffect = { BLEEDING REGENERATION }
-		equipedAbility = { "curse" }
+		equipedAbility = { "blood curse" }
 	}
 	"VampiricSword"
 	{

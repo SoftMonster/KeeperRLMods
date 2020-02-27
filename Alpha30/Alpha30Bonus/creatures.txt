@@ -1386,7 +1386,7 @@
 	  spellSchools = { "mage" }
       spells = {
 	    "healing"
-        "curse"
+        "blood curse"
         "spiders"
         "darkness"
 		"mana curse"

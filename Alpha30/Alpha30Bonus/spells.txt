@@ -318,7 +318,7 @@
    cooldown = 20
    sound = SPELL_AIR_BLAST
  }
-"curse"
+"blood curse"
  {
    symbol = "☛"
    range = 10
