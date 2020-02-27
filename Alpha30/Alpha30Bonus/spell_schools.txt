@@ -370,4 +370,31 @@
     "choking vapor" 5
     "arrow shield" 7
 	"magic blast" 11
+  }  
+  "elemental" SPELL {
+    #Selection of different spells from the elemental schools
+    "fire elemental" 1
+    "elemental tea" 1
+	"bolt of water" 2
+    "spit shards" 3
+    "fireball" 4
+    "stone to mud" 5
+    "choking vapor" 6
+	"acid blast" 7
+    "firewall" 8
+	"advanced fireball" 8
+	"advanced firewall" 9
+	"ice cone" 9
+    "arrow shield" 10
+	"expert fireball" 11
+	"water blast" 12
+	"advanced fireblast" 13
+    "summon air elementals" 14
+	"expert firewall" 15
   }
+  
+  
+  
+  
+  
+  

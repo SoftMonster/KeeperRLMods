@@ -939,7 +939,7 @@
 #Healing with a defense bonus but a longer cooldown.
 {
   symbol = "❤️"
-  effect = Chain { Heal FLESH Lasting RESTED Lasting SATIATED } 
+  effect = Description "Provides healing, rest, morale and neutrition." Chain {Lasting RESTED Lasting SATIATED Heal FLESH} 
   cooldown = 100
   sound = SPELL_HEALING
 }

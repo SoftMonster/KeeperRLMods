@@ -616,7 +616,7 @@
       }
     }
   "ELEMENTALIST" modify append {
-      spellSchools = { "fire" "water" "earth" "air" }
+      spellSchools = { "elemental" }
       spells = { "elemental tea" "summon air elementals" }
       gender = FEMALE
       permanentEffects = {
