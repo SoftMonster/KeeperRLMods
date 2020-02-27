@@ -25,6 +25,7 @@ EVIL_KEEPER modify append {
     {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded
+    {{ "dark_elf_empress" } "DARK_ELF_EMPIRE" "Dark Elf Empire" ALLY}
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" ALLY}
 }
 
@@ -38,6 +39,7 @@ LAWFUL_KEEPER modify append {
     {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
     {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" MAIN}
+    {{ "dark_elf_empress" } "DARK_ELF_EMPIRE" "Dark Elf Empire" MAIN}
 	{{ "orc_primarch" } "ORC_MAIN" "Orc Clan" MAIN}
 
 
@@ -49,7 +51,7 @@ LAWFUL_KEEPER modify append {
 
 #Modded lawful ally
     {{ "king" } "KING" "The King" ALLY}
-   {{ "centaur_king" } "CENTAURS" "Centaurs" ALLY }
+    {{ "centaur_king" } "CENTAURS" "Centaurs" ALLY }
 	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" ALLY}
     {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
@@ -94,6 +96,7 @@ EVIL_ADVENTURER modify append {
     {{ "ocean_portal" } "OCEAN_PORTAL" "Ocean Portal" LESSER }
 
     {{ "dark_elf_lord" } "DARK_ELVES_ALLY" "Dark elves" ALLY }
+    {{ "dark_elf_empress" } "DARK_ELF_EMPIRE" "Dark Elf Empire" ALLY}
     {{ "gnome_boss" } "GNOMES" "Gnomes" ALLY }
     {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
@@ -111,6 +114,7 @@ LAWFUL_ADVENTURER modify append {
     {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
     {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
     {{ "shadow_king" } "SHADOW_KING" "The Shadow King" MAIN}
+    {{ "dark_elf_empress" } "DARK_ELF_EMPIRE" "Dark Elf Empire" MAIN}
 	{{ "orc_primarch" } "ORC_MAIN" "Greenskin Clan" MAIN}
 
 #Modded

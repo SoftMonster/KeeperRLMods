@@ -739,7 +739,49 @@
   whiteKeeperEnemies = {
   }
 }
+"DARK_ELF_MOUNTAIN"
+{
+  lakes = {
+    size = { 2 }
+    count = { 0 }
+  }
+  overrideWaterType = "HILL"
+  sandType = "HILL"
+  items = "magicShrooms"
+  itemCount = { 0 }
+  mountains = {
+    lowlandRatio = 0.65
+    hillRatio = 0.04
+    hill = "MOUNTAIN"
+    grass = "HILL"
+    mountain = "MOUNTAIN"
+    mountainDeep = "MOUNTAIN2"
+    mountainFloor = "FLOOR"
+  }
+  forests = {
+    {
+      ratio = 0.90
+      density = 0.08
+      onType = "HILL"
+      trees = "vegetationDwarf"
+    }
+  }
+  wildlife = {
+    count = { 10 }
+    all = {
+		1 "RAT"
+		2 "BOAR"
+		1 "CAVE_BEAR"
+    }
+  }
+  darkKeeperEnemies = {
+    { id = "DARK_ELF_CAVE" count = { 2 3 } }
+  }
 
+  whiteKeeperEnemies = {
+    { id = "DARK_ELF_CAVE" count = { 2 3 } }
+  }
+}
 "HERB_GRASSLAND" inherit "GRASSLAND"
 {
   forests = {

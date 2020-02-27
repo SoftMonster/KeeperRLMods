@@ -168,10 +168,9 @@
       locationNameGen = "TOWN"
       race = "dwarves"
       buildingId = "CITY_DWARF"
-      stockpiles = {{ "gold" 1000 "TREASURE_CHEST"} {"minerals" 1200 }}
+      stockpiles = {{ "gold" 200 "TREASURE_CHEST"} {"minerals" 600 }}
       shopItems = { "dwarfShop" }
       outsideFeatures = "dungeonOutside"
-      surroundWithResources = 5
       furniture = { "dwarvenRoomFurniture" } #Modded
 	 }
     levelConnection = {
@@ -1081,6 +1080,38 @@
         { MainEnemy 60 40 MINETOWN }
 	  }
 	}
+  }
+  "DARK_ELF_EMPIRE" {
+    biomes = { "DARK_ELF_MOUNTAIN" }
+    settlement = {
+    type = MapLayoutId "mountain48"
+      tribe = DARK_ELF
+      inhabitants = {
+        leader = { { "DARK_ELF_EMPRESS" } }
+        fighters = {
+          count = {38 46}
+          all = {
+		    6 "DARK_ELF_WARRIOR"
+            12 "DARK_ELF_WITCHBLADE"
+			8 "DARK_ELF_ARCHER"
+			4 "DARK_ELF_LORD"
+          }
+        }
+        civilians = {
+          count = {20 28}
+          all = {
+			1 "DARK_ELF"
+          }
+        }
+      }
+      locationNameGen = "TOWN"
+      race = "dark elves"
+      buildingId = "CITY_DWARF"
+      stockpiles = {{ "gold" 200 "TREASURE_CHEST"} {"minerals" 600 }}
+      shopItems = { "dwarfShop" }
+      outsideFeatures = "dungeonOutside"
+      furniture = { "roomFurniture" }
+	 }
   }
   "GOBLIN_KING"
   {
