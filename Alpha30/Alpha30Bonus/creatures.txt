@@ -34,6 +34,24 @@
         { Simple "Rock" 3 10 0.1 }
       }
     }
+"IMP" modify append
+  {
+    skills = {
+      "DIGGING" 0.6
+    }
+  }
+"PESEANT" modify append
+  {
+    skills = {
+      "DIGGING" 0.6
+	}
+  }
+"PESEANT_PRISONER" modify append
+  {
+    skills = {
+      "DIGGING" 0.6
+    }
+  }
   "RAT_SOLDIER" modify append {
       skills = append { "MULTI_WEAPON" 0.65 }
       inventory = {
@@ -6693,136 +6711,11 @@
       name = "bunny"
     }
   }
-"DARK_ELF_WITCHBLADE"
-  {
-    viewId = { "dark_elf_witchblade" }
-    attr = {
-      DAMAGE 42
-      DEFENSE 28
-      SPELL_DAMAGE 12 
-    }
-    body = {
-      type = Humanoid MEDIUM
-    }
-    chatReactionFriendly = "curses all dwarves"
-    chatReactionHostile = "\"Die!\""
-    permanentEffects = {
-      MAGIC_RESISTANCE 1
-      NIGHT_VISION 1
-    }
-    spells = { "healing" }
-    maxLevelIncrease = {
-      MELEE 3
-      SPELL 3
-    }
-    name = {
-      name = "dark elf witchblade"
-    }
-    hatedByEffect = HATE_ELVES
-    inventory = {
-      { type = Simple "ElvenSword" prefixChance = 0.1}
-      { type = Simple "InfArmor" prefixChance = 0.05}
-	  { type = Simple "IronHelm" prefixChance = 0.05}
-	  { type = Simple "LeatherBoots" prefixChance = 0.05}
-	  { Simple "IronShield" }
-      { Simple "GoldPiece" 12 16 }
-	  { Potion Lasting SPEED 1 2 0.6}
-      { Potion Lasting MELEE_RESISTANCE 1 3 0.1}
-      { Ring DAM_BONUS 1 1 0.1}
-      { Ring DEF_BONUS 1 1 0.1}
-      { Ring RAGE 1 1 0.1}
-    }
-  }
-"DARK_ELF_ARCHER"
-  {
-    viewId = { "dark_elf_archer" }
-    attr = {
-      DAMAGE 20
-      DEFENSE 26
-	  RANGED_DAMAGE 32
-      SPELL_DAMAGE 12 
-    }
-    body = {
-      type = Humanoid MEDIUM
-    }
-    chatReactionFriendly = "curses all dwarves"
-    chatReactionHostile = "\"Die!\""
-    permanentEffects = {
-      MAGIC_RESISTANCE 1
-      NIGHT_VISION 1
-    }
-    spells = { "healing" }
-    maxLevelIncrease = {
-      MELEE 2
-	  ARCHERY 3
-      SPELL 3
-    }
-    name = {
-      name = "dark elf archer"
-    }
-    hatedByEffect = HATE_ELVES
-    inventory = {
-	  { type = Simple "Bow" prefixChance = 0.1}
-      { type = Simple "ElvenSword" prefixChance = 0.1}
-      { type = Simple "ChainArmor" prefixChance = 0.05}
-	  { type = Simple "LeatherGloves" prefixChance = 0.05}
-	  { type = Simple "LeatherBoots" prefixChance = 0.05}
-      { Simple "GoldPiece" 12 16 }
-	  { Potion Lasting SPEED 1 2 0.75}
-	  { Potion Lasting RANGED_RESISTANCE 1 2 0.2}
-	  { Amulet ELF_VISION 1 1 0.3}
-	  { Ring DEF_BONUS 1 1 0.1}
-    }
-  }
-"DARK_ELF_EMPRESS"
-  {
-    viewId = { "dark_elf_empress" }
-	gender = FEMALE
-    attr = {
-      DAMAGE 32
-      DEFENSE 38
-	  RANGED_DAMAGE 32
-      SPELL_DAMAGE 52 
-    }
-    body = {
-      type = Humanoid MEDIUM
-    }
-    chatReactionFriendly = "curses all dwarves"
-    chatReactionHostile = "\"Die!\""
-    permanentEffects = {
-      MAGIC_RESISTANCE 1
-      NIGHT_VISION 1
-    }
-    spells = { "expert fireball" "expert firewall" "expert fireblast" "expert healing" "group healing" "area haste" "area defense bonus" "area damage bonus" "magic blast" }
-    name = {
-      name = "dark elf empress"
-    }
-    hatedByEffect = HATE_ELVES
-    inventory = {
-      { type = Simple "GoldenStaff" prefixChance = 1 }
-      { type = Simple "InfArmor" prefixChance = 1 }
-	  { type = Simple "AdaBoots" prefixChance = 1 }
-      { type = Simple "ElvenBow" prefixChance = 1 }
-      { Simple "GoldPiece" 120 180 }
-      { Scroll Escape 2 2 }
-	  { Amulet REGENERATION }
-	  { Ring ELF_VISION }
-	  { Ring POISON_RESISTANT }
-      { type = Glyph WEAPON JoinPrefixes { ItemAttrBonus DAMAGE 15 LastingEffect INSANITY} chance = 0.3 }
-      { type = Glyph ARMOR LastingEffect NIGHT_VISION chance = 0.6 }
-      { type = Glyph ARMOR LastingEffect ELF_VISION chance = 0.3 }
-      { type = Glyph ARMOR LastingEffect REGENERATION chance = 0.3 }
-	  { type = Glyph ARMOR LastingEffect MELEE_RESISTANCE chance = 0.3 }
-	  { type = Glyph ARMOR LastingEffect MAGIC_RESISTANCE chance = 0.6 }
-      { type = Glyph ARMOR LastingEffect DARKNESS_SOURCE chance = 0.3 }
-      { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
-	  { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
-    }
-  }
 
 ##########################
 #Ideas for Future modding#
 ##########################
+# The King
 # Druids
 # Magi
 # Tritons
