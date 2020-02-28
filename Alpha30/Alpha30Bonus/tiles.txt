@@ -105,6 +105,7 @@
   { "wildman_queen" "W" ColorId LIGHT_GRAY }
   { "crocodile" "c" ColorId GREEN }
   { "shade" "s" ColorId DARK_GRAY }
+  { "wolf_warrior" "@" ColorId DARK_GRAY }
 
 #Added by your boi; Acre June 2019
 

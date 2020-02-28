@@ -2722,8 +2722,8 @@
 	  viewId = { "orc_captain" }
       hatedByEffect = HATE_GREENSKINS
       attr = {
-        DAMAGE 28
-        DEFENSE 24 
+        DAMAGE 38
+        DEFENSE 28 
 	}
 	  body = {
         type = Humanoid LARGE
@@ -2972,6 +2972,44 @@
       chatReactionHostile = "\"Flips its pages angrily\""
       deathDescription = "destroyed"
     }
+"WOLF_WARRIOR"
+  {
+    viewId = { "wolf_warrior" }
+    attr = {
+      DAMAGE 39
+      DEFENSE 29 
+	  SPELL_DAMAGE 30
+    }
+    body = {
+      type = Humanoid LARGE
+    }
+      spells = {
+        "invisibility" "healing" "wolves" "haste"
+	}
+    maxLevelIncrease = {
+      MELEE 5
+    }
+    skills = {
+      "WORKSHOP" 0.6
+	  "FORGE" 0.4
+	  "SHAMANISM" 0.5
+    }
+    chatReactionFriendly = "curses all dungeons"
+    chatReactionHostile = "\"Die!\""
+    name = {
+      name = "wolf warrior"
+    }
+    hatedByEffect = HATE_HUMANS
+    inventory = {
+      { type = Simple "LeatherArmor" prefixChance = 1 }
+	  { type = Simple "LeatherGloves" prefixChance = 0.65 }
+	  { type = Simple "LeatherBoots" prefixChance = 0.65 }
+	  { type = Simple "IronHelm" chance = 0.5 prefixChance = 0.05 }
+      { type = Simple "WarHammer" prefixChance = 0.1 }
+      { Simple "GoldPiece" 18 22 }
+	  { Potion Heal FLESH 0 3 }
+    }
+  }
     "SCREE_BIRD"
     {
       viewId = { "scree_bird" }

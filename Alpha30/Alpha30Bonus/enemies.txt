@@ -1,40 +1,150 @@
-  "RED_DRAGON" modify {
+  "RED_DRAGON" modify append {
     biomes = { "VOLCANIC" }  
     settlement = append {
       buildingId = "VOLCANIC_BRICK"
       tribe = BANDIT
 	}
   }
-  "UNICORN_HERD" modify {
+  "UNICORN_HERD" modify append {
     biomes = { "HERB_GRASSLAND" }  
   }
-  "DRIADS" modify {
+  "DRIADS" modify append {
     biomes = { "HERB_GRASSLAND" }  
   }
-  "ORC_VILLAGE" modify {
+  "ORC_VILLAGE" modify append {
+	biomes = { "ORC_VILLAGE"} 
     settlement = {
-      type = Builtin VILLAGE
+      type = MapLayoutId "village32"
       tribe = GREENSKIN
       inhabitants = {
+	      leader = { { "ORC_CAPTAIN_TRIBE" } }
           fighters = {
-            count = {12 16}
+            count = {42 56}
             all = {
-              1 "ORC"
-              1 "ORC_FEMALE" #Modded
-              1 "OGRE"
-              1 "OGRE_FEMALE" #Modded
-              1 "HOBGOBLIN" #Modded
-            }
+			  4 "ORC_CAPTAIN_TRIBE"
+			  7 "ORC_HEALER_TRIBE"
+              10 "ORC_TRIBE"
+              6 "OGRE_TRIBE"
+              2 "HOBGOBLIN" #Modded
+		  }
+        }
+        civilians = {
+          count = {16 20}
+          all = {
+			1 "GOBLIN_PLAYER"
           }
-	  }
+        }
+      }
       locationNameGen = "TOWN"
       race = "greenskins"
-      buildingId = "BRICK"
+      buildingId = "WOOD_CITY_CASTLE"
       furniture = { "roomFurniture" }
       outsideFeatures = "villageOutside"
-	}
   }
-  "DEMON_DEN" modify {
+  config = {
+    immigrantInterval = 150
+    maxPopulation = 56
+    ghostProb = 0.1
+    spawnGhosts = 6
+  }
+  behaviour = {
+    minPopulation = 12
+    minTeamSize = 6
+    triggers = {
+      RoomTrigger "THRONE" 0.0003
+      RoomTrigger "IMPALED_HEAD" 0.0001
+      SelfVictims
+      NumConquered 4
+      StolenItems
+      FinishOff
+      Proximity
+    }
+    attackBehaviour = KillLeader
+    ransom = 0.8 100
+  }
+  immigrants = {
+    {
+      ids = {"ORC_TRIBE"}
+      traits = {FIGHTER}
+      frequency = 1
+    }
+	{
+      ids = {"ORC_HEALER_TRIBE"}
+      traits = {FIGHTER}
+      frequency = 0.75
+    }
+	{
+      ids = {"OGRE_TRIBE"}
+      traits = {FIGHTER}
+      frequency = 0.45
+    }
+  }
+}
+"WARRIORS" modify append
+{
+  biomes = { "WARRIOR_TOWN"}
+  settlement = {
+    type = MapLayoutId "castle32"
+    tribe = HUMAN
+    inhabitants = {
+      leader = { { "SHAMAN" } }
+      fighters = {
+        count = {32 44}
+        all = { 
+		  8 "WARRIOR" 
+		  6 "SHAMAN"
+		  4 "WOLF_WARRIOR"
+		}
+      }
+    }
+    locationNameGen = "TOWN"
+    race = "humans"
+    buildingId = "WOOD_CITY_CASTLE"
+    stockpiles = {{ "gold" 160 "TREASURE_CHEST" }}
+    lootItem = {TechBook "beast mutation"}
+    furniture = { "roomFurniture" }
+    outsideFeatures = "castleOutside"
+  }
+  config = {
+    immigrantInterval = 150
+    maxPopulation = 44
+    ghostProb = 0.1
+    spawnGhosts = 6
+  }
+  behaviour = {
+    minPopulation = 12
+    minTeamSize = 6
+    triggers = {
+      RoomTrigger "THRONE" 0.0003
+      RoomTrigger "IMPALED_HEAD" 0.0001
+      SelfVictims
+      NumConquered 4
+      StolenItems
+      FinishOff
+      Proximity
+    }
+    attackBehaviour = KillLeader
+    ransom = 0.8 140
+  }
+  immigrants = {
+    {
+      ids = {"WARRIOR"}
+      traits = {FIGHTER}
+      frequency = 1
+    }
+	{
+      ids = {"SHAMAN"}
+      traits = {FIGHTER}
+      frequency = 0.75
+    }
+	{
+      ids = {"WOLF_WARRIOR"}
+      traits = {FIGHTER}
+      frequency = 0.45
+    }
+  }
+}
+  "DEMON_DEN" modify append {
     settlement = {
     type = Builtin VILLAGE
       buildingId = "TAINTED" #Modded
@@ -52,7 +162,7 @@
       outsideFeatures = "dungeonOutside"
     }
   }
-  "VILLAGE" modify {
+  "VILLAGE" modify append {
     settlement = {
     type = Builtin VILLAGE
       tribe = HUMAN
@@ -86,7 +196,7 @@
       furniture = { "roomFurniture" }
     }
   }
-"KNIGHTS" modify {
+"KNIGHTS" modify append {
   biomes = { "CITY"} 
   settlement = {
     type = Builtin CASTLE
@@ -123,7 +233,7 @@
     outsideFeatures = "castleOutside"
   }
 }
-  "MINOTAUR"  modify {
+  "MINOTAUR"  modify append {
     settlement = {
     type = Builtin CAVE
       tribe = MONSTER
@@ -209,7 +319,7 @@
 	  }
     }
   }
-  "ELVES" modify {
+  "ELVES" modify append {
     biomes = { "FOREST" } #Modded
     settlement = {
       type = Builtin CASTLE #Modded
@@ -238,7 +348,7 @@
       lootItem = {TechBook "master sorcery"}
     }
   }
-  "ELEMENTALIST_ENTRY" modify {
+  "ELEMENTALIST_ENTRY" modify append {
     settlement = {
     type = Builtin TOWER
       tribe = HUMAN
@@ -252,7 +362,7 @@
     }
     discoverable = false
   }
-  "ELEMENTALIST_FLOOR" modify {
+  "ELEMENTALIST_FLOOR" modify append {
     settlement = {
       inhabitants = {
         fighters = {
@@ -271,7 +381,7 @@
     }
     discoverable = false
   }
-  "ELEMENTALIST" modify {
+  "ELEMENTALIST" modify append {
     settlement = {
     type = Builtin TOWER
       inhabitants = {
@@ -282,7 +392,7 @@
       furniture = { "roomFurniture" }
     }
   }
-  "MAIN_DUNGEON_ENTRY" modify {
+  "MAIN_DUNGEON_ENTRY" modify append {
     settlement = {
     type = Builtin CAVE
       tribe = BANDIT
@@ -296,7 +406,7 @@
     }
   }
 
-  "NO_AGGRO_BANDITS" modify {
+  "NO_AGGRO_BANDITS" modify append {
     settlement = {
     type = Builtin CAVE
       inhabitants = {
@@ -311,7 +421,7 @@
       buildingId = "DUNGEON"
     }
   }
-  "DUNGEON1" modify {
+  "DUNGEON1" modify append {
     settlement = {
       type = Builtin MINETOWN
       tribe = MONSTER
@@ -351,7 +461,7 @@
     }
   }
 
-  "SHELOB" modify { #Modded
+  "SHELOB" modify append { #Modded
     biomes = { "SPIDER_MOUNTAIN" }
     settlement = {
       type = Builtin VILLAGE
@@ -381,7 +491,7 @@
     }
     createOnBones = 0.6 { "DWARF_CAVE" "KOBOLD_CAVE" "OGRE_CAVE" "HARPY_CAVE" "OGRE_CAVE" "HARPY_CAVE"} #Modded
   }
-  "CEMETERY" modify { #Modded
+  "CEMETERY" modify append { #Modded
     biomes = { "HAUNTED_GRASSLAND" }
     settlement = {
     type = Builtin CEMETERY
@@ -410,7 +520,7 @@
       }
     }
   }
-  "CEMETERY_ENTRY" modify {
+  "CEMETERY_ENTRY" modify append {
     settlement = {
     type = Builtin CEMETERY
       inhabitants = {
@@ -429,7 +539,7 @@
     }
     discoverable = false
   }
-  "RUINS" modify {
+  "RUINS" modify append {
     settlement = {
     type = Builtin COTTAGE
       tribe = MONSTER
@@ -458,7 +568,7 @@
       }
     }
   }
-  "HUMAN_COTTAGE" modify {
+  "HUMAN_COTTAGE" modify append {
     settlement = {
     type = Builtin COTTAGE
       tribe = HUMAN
@@ -488,7 +598,7 @@
       guardianInfo = "MILITIA" 0.2 1 3 #Modded
     }
   }
-  "LIZARDMEN_COTTAGE" modify {
+  "LIZARDMEN_COTTAGE" modify append {
     settlement = {
     type = Builtin FORREST_COTTAGE
       tribe = BANDIT #Modded
@@ -504,7 +614,7 @@
     }
     createOnBones = 1.0 { "ELVEN_COTTAGE" }
   }
-  "DWARF_CAVE" modify { #Modded
+  "DWARF_CAVE" modify append { #Modded
     settlement = {
     type = Builtin SMALL_MINETOWN
       tribe = DWARF
@@ -543,7 +653,7 @@
       ransom = 0.5 80
     }
   }
-  "RAT_CAVE" modify {
+  "RAT_CAVE" modify append {
     settlement = {
     type = Builtin VAULT
       inhabitants = {
@@ -562,7 +672,7 @@
     }
     discoverable = false
   }
-  "RAT_PEOPLE_CAVE" modify {
+  "RAT_PEOPLE_CAVE" modify append {
     settlement = {
     type = Builtin VAULT
       buildingId = "DUNGEON"
@@ -596,6 +706,82 @@
 ########
 # Modded
 ########
+"WARRIOR_CASTLE"
+{
+  settlement = {
+    type = Builtin CASTLE2
+    tribe = HUMAN
+    inhabitants = {
+      leader = { { "SHAMAN" } }
+      fighters = {
+        count = {7 10}
+        all = { 1 "WARRIOR" }
+      }
+    }
+    locationNameGen = "TOWN"
+    race = "humans"
+    buildingId = "WOOD_CASTLE"
+    stockpiles = {{ "gold" 160 "TREASURE_CHEST" }}
+    lootItem = {TechBook "beast mutation"}
+    furniture = { "roomFurniture" }
+    outsideFeatures = "castleOutside"
+  }
+  config = {
+    immigrantInterval = 300
+    maxPopulation = 10
+    ghostProb = 0.1
+    spawnGhosts = 6
+  }
+  behaviour = {
+    minPopulation = 3
+    minTeamSize = 5
+    triggers = {
+      RoomTrigger "THRONE" 0.0003
+      RoomTrigger "IMPALED_HEAD" 0.0001
+      SelfVictims
+      NumConquered 2
+      StolenItems
+      FinishOff
+      Proximity
+    }
+    attackBehaviour = KillLeader
+    ransom = 0.8 140
+  }
+  immigrants = {
+    {
+      ids = {"WARRIOR"}
+      traits = {FIGHTER}
+      frequency = 1
+    }
+  }
+}
+  "WARRIOR_VILLAGE" {
+    settlement = {
+    type = Builtin VILLAGE
+      tribe = HUMAN
+      inhabitants = {
+        leader = { { "SHAMAN" } }
+        fighters = {
+          count = {8 12}
+          all = {
+			4 "WARRIOR"
+			1 "WOLF"
+          }
+        }
+        civilians = {
+          count = {4 8}
+          all = {
+            1 "PESEANT"
+            1 "CHILD"
+          }
+        }
+      }
+      locationNameGen = "TOWN"
+      race = "humans"
+      buildingId = "WOOD"
+      furniture = { "roomFurniture" }
+    }
+  }
 "DWARF_MARKET"
 {
   settlement = {
@@ -2228,7 +2414,7 @@
     shopItems = { "armory" }
     }
   }
-  "CITY_BARRACKS" inherit "WARRIORS"
+  "CITY_BARRACKS" inherit "WARRIOR_CASTLE"
   {
   discoverable = false
   settlement = append {
