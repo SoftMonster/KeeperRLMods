@@ -37,9 +37,6 @@
   { "centaur_knight" "p" ColorId YELLOW }
   { "centaur_priestess" "p" ColorId DARK_GRAY }
   { "cow_demon" "u" ColorId RED }
-  { "dark_elf_witchblade" "@" ColorId GRAY }
-  { "dark_elf_empress" "@" ColorId LIGHT_GRAY }
-  { "dark_elf_archer" "@" ColorId GRAY }
   { "dark_fairy" "h" ColorId BLACK }
   { "dark_goblin" "o" ColorId BLACK }
   { "dark_hobgoblin" "o" ColorId BLACK }
@@ -289,7 +286,7 @@
  #Swamp
   { viewId = "swamp_grass" symbol = "." color = ColorId YELLOW canMirror = true extraBorders = { "swamp_hill" "water" "swamp_water" "mud" } }
   { viewId = "swamp_water" symbol = "~" color = ColorId LIGHT_BLUE waterSides = "swamp_water" animated = true spriteColor = Rgb 255 255 255 255 }
-  { viewId = "swamp_hill" symbol = "𝀢" color = ColorId DARK_GREEN isSymbolFont = true canMirror = true extraBorders = { "water" "swamp_water" "corrupted_hill" "mud" } }
+  { viewId = "swamp_hill" symbol = "𝀢" color = ColorId DARK_GREEN isSymbolFont = true canMirror = true extraBorders = { "water" "swamp_water" "corrupted_hill" "mud" "grass" "hill" } }
   { viewId = "swamp_tree1" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
   { viewId = "swamp_tree2" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
   { viewId = "swamp_bush1" symbol = "♣" color = ColorId DARK_GREEN isSymbolFont = true roundShadow = true }
