@@ -6308,8 +6308,8 @@
   "DWARF_QUEEN_TRIBE" inherit "DWARF_QUEEN"
     {
       attr = {
-        DAMAGE 36
-        DEFENSE 34 
+        DAMAGE 40
+        DEFENSE 38 
       }
 	  maxLevelIncrease = {
         MELEE 4
@@ -6325,12 +6325,39 @@
 	   { type = Potion IncreaseAttr RANGED_DAMAGE 1 countMin = 1 countMax = 1  chance = 0.5 }
        { type = Scroll IncreaseAttr DEFENSE 2 countMin = 1 countMax = 1  chance = 0.5 }
 	   { type = Potion IncreaseAttr SPELL_DAMAGE 1 countMin = 1 countMax = 1  chance = 0.5 }
+	   { type = Glyph ARMOR LastingEffect MELEE_RESISTANCE chance = 0.1 }
+	   { type = Glyph ARMOR LastingEffect REGENERATION chance = 0.05 }
+	   { type = Glyph WEAPON ItemAttrBonus DAMAGE 4 chance = 0.3 }
+       { Simple "GoldPiece" 65 88 }
 	   { Potion Permanent SPEED 1 1 1 }
 	   { Potion RegrowBodyPart 1 1 1 1 }
 	   { Scroll Permanent LIGHT_SOURCE 1 1 0.4 }
-       { Potion Heal FLESH 2 3 1}
+       { Potion Heal FLESH 2 3 }
       }
  	}
+	"DWARF_BARON_TRIBE" inherit "DWARF_BARON"
+	{
+      attr = {
+        DAMAGE 36
+        DEFENSE 36
+	  }
+      inventory = {
+        { type = Simple "InfBattleAxe" prefixChance = 0.6 }
+        { type = Simple "AdaArmor" prefixChance = 0.6 }
+        { type = Simple "AdaBoots" prefixChance = 0.4 }
+        { type = Simple "InfHelm" prefixChance = 0.4 }
+        { type = Simple "AdaGloves" prefixChance = 0.4 }
+		{ Ring MELEE_RESISTANCE 1 1 0.2 }
+		{ Amulet REGENERATION 1 1 0.4 }
+        { type = Simple "Torch" chance = 0.1 }
+        { Simple "GoldPiece" 25 28 }
+        { countMin = 1 countMax = 2 type = Simple "DwarvenBeer" chance = 0.3 }
+	    { type = Glyph ARMOR LastingEffect MELEE_RESISTANCE chance = 0.1 }
+	    { type = Glyph ARMOR LastingEffect REGENERATION chance = 0.05 }
+	    { type = Glyph WEAPON ItemAttrBonus DAMAGE 4 chance = 0.3 }
+		{ Potion Heal FLESH 1 2 }
+      }
+	}
   "GUILDMASTER"
     {
       name = {
@@ -6747,6 +6774,92 @@
     petReaction = "twitches"
     name = {
       name = "bunny"
+    }
+  }
+"ELF_SOLDIER"
+  {
+    viewId = { "elf_soldier" }
+    attr = {
+      DAMAGE 38
+      DEFENSE 26
+      RANGED_DAMAGE 30 
+    }
+    body = {
+      type = Humanoid MEDIUM
+    }
+    chatReactionFriendly = "curses all dwarves"
+    chatReactionHostile = "\"Die!\""
+    permanentEffects = {
+      MAGIC_RESISTANCE 1
+      ELF_VISION 1
+    }
+    spells = { "healing" }
+    maxLevelIncrease = {
+	  MELEE 2
+      ARCHERY 3
+    }
+    name = {
+      name = "elven soldier"
+    }
+    hatedByEffect = HATE_ELVES
+    inventory = {
+      { type = Simple "ElvenSword" prefixChance = 0.1 }
+      { type = Simple "ChainArmor" prefixChance = 0.1 }
+	  { type = Simple "IronHelm" prefixChance = 0.1 chance = 0.5 }
+	  { type = Simple "IronBoots" prefixChance = 0.1 chance = 0.75 }
+      { type = Simple "ElvenBow" prefixChance = 0.4 }
+      { Simple "GoldPiece" 8 12 }
+	  { Potion Lasting SPEED 1 3 }
+	  { Potion Heal FLESH 0 2 }
+    }
+  }
+"ELF_KING"
+  {
+    viewId = { "elf_king" }
+    attr = {
+      DAMAGE 32
+      DEFENSE 32
+      SPELL_DAMAGE 32
+      RANGED_DAMAGE 35 
+    }
+    body = {
+      type = Humanoid MEDIUM
+    }
+    chatReactionFriendly = "curses all dwarves"
+    chatReactionHostile = "\"Die!\""
+    permanentEffects = {
+      MAGIC_RESISTANCE 1
+      ELF_VISION 1
+	}
+    spells = { "expert healing" "haste" "area defense bonus" "area damage bonus" "magic blast" "haste other" "group healing" "expert magic missile" }
+    maxLevelIncrease = {
+      SPELL 4
+      MELEE 4
+	  ARCHERY 4
+    }
+	skills = { "MULTI_WEAPON" 0.75 }
+    name = {
+      name = "elf king"
+    }
+    hatedByEffect = HATE_ELVES
+    inventory = {
+      { type = Simple "GoldenStaff" prefixChance = 0.75 countMin = 2 countMax = 2}
+      { type = Simple "AdaArmor" prefixChance = 1 }
+	  { type = Simple "AdaHelm" prefixChance = 1 }
+	  { type = Simple "AdaBoots" prefixChance = 1 }
+	  { type = Simple "AdaGloves" prefixChance = 1 chance = 0.8 }
+      { type = Simple "ElvenBow" prefixChance = 1 }
+      { Simple "GoldPiece" 120 180 }
+      { Scroll Escape 1 3 }
+	  { Potion Heal FLESH 2 3 }
+      { type = Glyph WEAPON JoinPrefixes { ItemAttrBonus DAMAGE 15 LastingEffect INSANITY} chance = 0.6 }
+      { type = Glyph ARMOR LastingEffect NIGHT_VISION chance = 0.4 }
+      { type = Glyph ARMOR LastingEffect ELF_VISION chance = 0.6 }
+      { type = Glyph ARMOR LastingEffect REGENERATION chance = 0.4 }
+	  { type = Glyph ARMOR ItemAttrBonus DEFENSE 4 chance = 0.3 }
+      { type = Glyph WEAPON LastingEffect DARKNESS_SOURCE chance = 0.6 }
+      { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.6 }
+      { type = Glyph WEAPON ItemAttrBonus DAMAGE 4 chance = 0.6 }
     }
   }
 "DARK_ELF_WITCHBLADE"

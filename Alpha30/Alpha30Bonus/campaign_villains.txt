@@ -11,7 +11,8 @@ EVIL_KEEPER modify append {
    {{ "necromancer" } "UNDEAD_SETTLEMENT" "Necromancer abode" MAIN }
    {{ "goblin_king" } "GOBLIN_KING" "Goblin King" MAIN }
    {{ "unknown_monster" ColorId RED } "ADOXIE_DUNGEON" "Unknown" MAIN }
-   {{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" MAIN}
+   {{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" MAIN }
+   {{ "elf_king" } "ELF_KINGDOM" "Elf Kingdom" MAIN }
 
 #Lesser villains
    {{ "gorgon" } "GORGON_CULT" "Cult of Gorgon" LESSER }
@@ -53,6 +54,7 @@ LAWFUL_KEEPER modify append {
     {{ "king" } "KING" "The King" ALLY}
     {{ "centaur_king" } "CENTAURS" "Centaurs" ALLY }
 	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" ALLY}
+	{{ "elf_king" } "ELF_KINGDOM" "Elf Kingdom" ALLY }
     {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded
@@ -64,7 +66,8 @@ EVIL_ADVENTURER modify append {
 #Extra modded villains
 
     {{ "king" } "KING" "The King" MAIN}
-	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" MAIN}
+	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" MAIN }
+    {{ "elf_king" } "ELF_KINGDOM" "Elf Kingdom" MAIN }
     {{ "hell_portal" } "HELL_PORTAL" "Hell portal" MAIN }
     {{ "amazon_queen" } "AMAZONS" "Amazons" MAIN }
     {{ "centaur_king" } "CENTAURS" "Centaurs" MAIN }
@@ -126,6 +129,7 @@ LAWFUL_ADVENTURER modify append {
     {{ "king" } "KING" "The King" ALLY}
 	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" ALLY}
     {{ "centaur_king" } "CENTAURS" "Centaurs" ALLY }
+    {{ "elf_king" } "ELF_KINGDOM" "Elf Kingdom" ALLY }
     {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded

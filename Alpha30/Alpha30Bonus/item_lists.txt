@@ -587,6 +587,26 @@
 # Modded
 ##########
 
+  "elfShop" {
+    items = {
+      {{Simple "ElvenSword"} 5}
+      {{Simple "Sword"} 3}
+      {{Simple "ChainArmor"} 2}
+      {{Simple "IronHelm"} 2}
+      {{Simple "LeatherArmor"} 3}
+      {{Simple "LeatherHelm"} 3}
+      {{Simple "LeatherBoots"} 3}
+      {{Simple "LeatherGloves"} 3}
+	  {{Simple "IronBoots"} 2}
+      {{Simple "IronBoots"} 2}
+      {{Simple "Bow"} 3}
+    }
+    unique = {
+      {Simple "ElvenBow"} { 1 2 }
+    }
+	prefixChance = 0.15
+  }
+
   "magicShrooms"
   {
     items = {

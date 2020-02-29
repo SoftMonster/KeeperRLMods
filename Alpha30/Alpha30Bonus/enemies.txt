@@ -107,12 +107,12 @@
   }
   config = {
     immigrantInterval = 150
-    maxPopulation = 44
+    maxPopulation = 48
     ghostProb = 0.1
     spawnGhosts = 6
   }
   behaviour = {
-    minPopulation = 12
+    minPopulation = 28
     minTeamSize = 6
     triggers = {
       RoomTrigger "THRONE" 0.0003
@@ -139,6 +139,245 @@
     }
 	{
       ids = {"WOLF_WARRIOR"}
+      traits = {FIGHTER}
+      frequency = 0.45
+    }
+  }
+}
+
+"ELF_KINGDOM"
+{
+  biomes = { "ELF_FOREST"}
+  settlement = {
+    type = MapLayoutId "village32"
+    inhabitants = {
+      leader = { { "ELF_KING" } }
+      fighters = {
+        count = {46 52}
+        all = { 6 "ELF_ARCHER" 2 "ELF_LORD" 8 "ELF_SOLDIER" }
+      }
+      civilians = {
+        count = {20 26},
+        all = {
+          3 "ELF"
+          2 "ELF_CHILD"
+          1 "HORSE"
+        }
+      }
+    }
+    locationNameGen = "TOWN"
+    tribe = ELF
+    race = "elves"
+    stockpiles = {{ "gold" 180 "TREASURE_CHEST"}}
+    buildingId = "WOOD"
+    lootItem = {TechBook "master sorcery" }
+    furniture = { "roomFurniture" }
+  }
+  config = {
+    immigrantInterval = 200
+    maxPopulation = 58
+    ghostProb = 0.1
+    spawnGhosts = 4
+  }
+  behaviour = {
+    minPopulation = 32
+    minTeamSize = 6
+    triggers = {
+      RoomTrigger "THRONE" 0.0003
+      RoomTrigger "IMPALED_HEAD" 0.0001
+      SelfVictims
+      NumConquered 8
+      StolenItems
+      FinishOff
+      Proximity
+    }
+    attackBehaviour = KillLeader
+    ransom = 0.8 220
+  }
+  immigrants = {
+    {
+      ids = {"ELF_ARCHER"}
+      traits = {FIGHTER}
+      frequency = 0.8
+    }
+    {
+      ids = {"ELF_SOLDIER"}
+      traits = {FIGHTER}
+      frequency = 1
+    }
+  }
+}
+"ELF_VILLAGE"
+{
+  settlement = {
+    type = Builtin FORREST_VILLAGE
+    inhabitants = {
+      leader = { { "ELF_LORD" } }
+      fighters = {
+        count = {9 12}
+        all = { 4 "ELF_ARCHER" 1 "ELF_SOLDIER" }
+      }
+      civilians = {
+        count = {6 9},
+        all = {
+          1 "ELF"
+          1 "ELF_CHILD"
+          1 "HORSE"
+        }
+      }
+    }
+    locationNameGen = "TOWN"
+    tribe = ELF
+    race = "elves"
+    stockpiles = {{ "gold" 80 "TREASURE_CHEST"}}
+    buildingId = "WOOD"
+    furniture = { "roomFurniture" }
+  }
+  config = {
+    immigrantInterval = 200
+    maxPopulation = 18
+    ghostProb = 0.1
+    spawnGhosts = 4
+  }
+  behaviour = {
+    minPopulation = 4
+    minTeamSize = 4
+    triggers = {StolenItems}
+    attackBehaviour = KillLeader
+  }
+  immigrants = {
+    {
+      ids = {"ELF_ARCHER"}
+      traits = {FIGHTER}
+      frequency = 1
+    }
+  }
+}
+"ELF_VILLAGE_SHOP"
+{
+  settlement = {
+    type = Builtin FORREST_VILLAGE
+    inhabitants = {
+      leader = { { "ELF_LORD" } }
+      fighters = {
+        count = {9 12}
+        all = { 4 "ELF_ARCHER" 1 "ELF_SOLDIER" }
+      }
+      civilians = {
+        count = {6 9},
+        all = {
+          1 "ELF"
+          1 "ELF_CHILD"
+          1 "HORSE"
+        }
+      }
+    }
+    locationNameGen = "TOWN"
+    tribe = ELF
+    race = "elves"
+    stockpiles = {{ "gold" 100 "TREASURE_CHEST"}}
+    buildingId = "WOOD"
+    shopItems = { "elfShop" }
+    furniture = { "roomFurniture" }
+  }
+  config = {
+    immigrantInterval = 200
+    maxPopulation = 18
+    ghostProb = 0.1
+    spawnGhosts = 4
+  }
+  behaviour = {
+    minPopulation = 4
+    minTeamSize = 4
+    triggers = {StolenItems}
+    attackBehaviour = KillLeader
+  }
+  immigrants = {
+    {
+      ids = {"ELF_ARCHER"}
+      traits = {FIGHTER}
+      frequency = 1
+    }
+  }
+}
+"DWARVES" modify append
+{
+  biomes = { "DWARF_MOUNTAIN_SMALL"}
+  settlement = {
+    type = MapLayoutId "mountain48"
+    tribe = DWARF
+    inhabitants = {
+      leader = { { "DWARF_BARON_TRIBE" } }
+      fighters = {
+        count = {38 46}
+        all = {
+		  8 "ELITE_DWARF_WARRIOR_TRIBE"
+          10 "DWARF_WARRIOR_TRIBE"
+		  6 "DWARF_FIGHTER_TRIBE"
+		  4 "DWARF_MONK_TRIBE"
+        }
+      }
+      civilians = {
+        count = {18 26}
+        all = {
+          6 "PLAYER_DWARF_FEMALE"
+          6 "PLAYER_DWARF_FEMALE2"
+          6 "PLAYER_DWARF_FEMALE3"
+          1 "RAT"
+        }
+        uniques = { "DWARF_BLACKSMITH" }
+      }
+    }
+    locationNameGen = "TOWN"
+    race = "dwarves"
+    buildingId = "CITY_DWARF"
+    stockpiles = {{ "gold" 200 "TREASURE_CHEST"} {"minerals" 120 }}
+    shopItems = { "dwarfShop" }
+    outsideFeatures = "dungeonOutside"
+    surroundWithResources = 12
+    furniture = { "roomFurniture" }
+	 }
+    levelConnection = {
+      topLevel = MainEnemy 
+      levels = {
+        {ExtraEnemy { "DWARF_MARKET_SMALL" { 1 } } 35 35 BLACK_MARKET }
+		{ExtraEnemy { "DWARF_MINE" { 1 } } 80 80 DUNGEON }
+	   }
+     }
+  config = {
+    immigrantInterval = 200
+    maxPopulation = 46
+    ghostProb = 0.1
+    spawnGhosts = 4
+  }
+  behaviour = {
+    minPopulation = 30
+    minTeamSize = 8
+    triggers = {
+      RoomTrigger "THRONE" 0.0003
+      RoomTrigger "IMPALED_HEAD" 0.0001
+      SelfVictims
+      NumConquered 5
+      StolenItems
+      FinishOff
+      Proximity
+    }
+    attackBehaviour = KillMembers 3
+    ransom = 0.8 280
+  }
+  immigrants = {
+    {
+      ids = {"DWARF_WARRIOR_TRIBE"}
+      traits = {FIGHTER}
+      frequency = 1
+    }
+    {
+      ids = {"ELITE_DWARF_WARRIOR_TRIBE"}
+      traits = {FIGHTER}
+      frequency = 0.75
+    }
+    {
+      ids = {"DWARF_MONK_TRIBE"}
       traits = {FIGHTER}
       frequency = 0.45
     }
@@ -254,14 +493,13 @@
       inhabitants = {
         leader = { { "DWARF_QUEEN_TRIBE" } }
         fighters = {
-          count = {44 56}
+          count = {54 66}
           all = {
-		    1 "DWARF_MILITIA_TRIBE"
-            2 "DWARF_FIGHTER_TRIBE"
-			3 "DWARF_WARRIOR_TRIBE"
-			3 "ELITE_DWARF_WARRIOR_TRIBE"
-			1 "DWARF_MONK_TRIBE"
-			1 "DWARF_BARON"
+            4 "DWARF_FIGHTER_TRIBE"
+			8 "DWARF_WARRIOR_TRIBE"
+			10 "ELITE_DWARF_WARRIOR_TRIBE"
+			6 "DWARF_MONK_TRIBE"
+			1 "DWARF_BARON_TRIBE"
           }
         }
         civilians = {
@@ -291,25 +529,25 @@
 	   }
      }
     config = {
-      immigrantInterval = 500
-      maxPopulation = 15
+      immigrantInterval = 200
+      maxPopulation = 66
       ghostProb = 0.1
       spawnGhosts = 4
      }
     behaviour = {
-      minPopulation = 3
-      minTeamSize = 4
+      minPopulation = 36
+      minTeamSize = 8
       triggers = {
         RoomTrigger "THRONE" 0.0003
         RoomTrigger "IMPALED_HEAD" 0.0001
         SelfVictims
-        NumConquered 3
+        NumConquered 8
         StolenItems
         FinishOff
         Proximity
       }
-      attackBehaviour = KillMembers 3
-      ransom = 0.8 320
+      attackBehaviour = KillMembers 16
+      ransom = 0.8 420
     }
     immigrants = {
       {
@@ -326,14 +564,14 @@
       inhabitants = {
         leader = { { "ELF_LORD" } }
         fighters = {
-          count = {6 9}
-          all = { 1 "ELF_ARCHER" }
+          count = {14 20}
+          all = { 1 "ELF_ARCHER" 2 "ELF_SOLDIER" }
         }
         civilians = {
           count = {6 9},
           all = {
-            1 "ELF"
-            1 "ELF_CHILD"
+            3 "ELF"
+            2 "ELF_CHILD"
             1 "HORSE"
           }
         }
@@ -343,9 +581,9 @@
       locationNameGen = "TOWN"
       tribe = ELF
       race = "elves"
-      stockpiles = {{ "gold" 100 "TREASURE_CHEST"}}
+      stockpiles = {{ "gold" 120 "TREASURE_CHEST"}}
       buildingId = "WOOD"
-      lootItem = {TechBook "master sorcery"}
+      lootItem = {TechBook "advanced sorcery"}
     }
   }
   "ELEMENTALIST_ENTRY" modify append {
@@ -808,11 +1046,44 @@
 		}
 	  }
     }
-    locationName = "Dwarven Market"
+    locationName = "the Dwarven Market"
     race = "dwarves"
     buildingId = "DUNGEON"
-    stockpiles = {{ "gold" 2000 "TREASURE_CHEST"} {"minerals" 120 } {"minerals" 120 } {"minerals" 120 } {"minerals" 120 } {"minerals" 120 } {"minerals" 120 }}
     shopItems = { "dwarfShop" "dwarfShop" "dwarfShop" "armory" "chest" "jewellery" "breweryPotions" "scribeScrolls" "iron" "villageShop" "villageShop" "minerals" }
+    outsideFeatures = "dungeonOutside"
+    furniture = { "roomFurniture" }
+  }
+}
+"DWARF_MARKET_SMALL"
+{
+  settlement = {
+    type = Builtin VILLAGE
+    tribe = DWARF
+    inhabitants = {
+      leader = { { "DWARF_BARON" } }
+      fighters = {
+        count = {12 18}
+        all = {
+          2 "DWARF_FIGHTER_TRIBE"
+		  4 "DWARF_WARRIOR_TRIBE"
+		  1 "ELITE_DWARF_WARRIOR_TRIBE"
+		  }
+        }
+      civilians = {
+        count = {22 32}
+        all = {
+		  1 "DWARF_BLACKSMITH"
+          5 "PLAYER_DWARF_FEMALE"
+          5 "PLAYER_DWARF_FEMALE2"
+          5 "PLAYER_DWARF_FEMALE3"
+		  5 "DWARF_WORKER_TRIBE"
+		}
+	  }
+    }
+    locationName = "the Dwarven Market"
+    race = "dwarves"
+    buildingId = "DUNGEON"
+    shopItems = { "dwarfShop" "armory" "jewellery" "breweryPotions" "iron" "villageShop" }
     outsideFeatures = "dungeonOutside"
     furniture = { "roomFurniture" }
   }
@@ -839,7 +1110,7 @@
 		}
 	  }
     }
-    locationName = "Dwarven Mines"
+    locationName = "the Dwarven Mines"
     race = "dwarves"
     buildingId = "DUNGEON"
     shopItems = { "dwarfminerals" "dwarfminerals" "dwarfminerals" "minerals" "minerals"  "corpse" "corpse" }
@@ -1290,7 +1561,7 @@
           }
         }
       }
-      locationNameGen = "TOWN"
+      locationName = "the Dark Elf Empire"
       race = "dark elves"
       buildingId = "CITY_DWARF"
       stockpiles = {{ "gold" 200 "TREASURE_CHEST"} {"minerals" 600 }}
@@ -1523,7 +1794,7 @@
         }
       }
     }
-    race = "Tower Guardians"
+    race = "Fairy Tower Guardians"
     stockpiles = {{ "gold" 340 "TREASURE_CHEST" }}
     buildingId = "FAIRY_BRICK"
     furniture = { "palace_furniture" }
@@ -1618,6 +1889,7 @@
   settlement = {
     type = MapLayoutId "fairy_tower_top"
     tribe = ELF
+    locationName = "Goddess Illusia's Tower"
     inhabitants = {
       leader = { { "FAIRY_QUEEN" } }
       fighters = {
@@ -1635,7 +1907,7 @@
 		}
 	  }
     }
-	race = "Tower of Illusia"
+	race = "Fairies"
     buildingId = "FAIRY_BRICK"
     furniture = { "palace_furniture" }
   }
