@@ -1113,6 +1113,7 @@
         "FORGE" 0.4
 		"DIGGING" 0.6
       }
+	  courage = 20
       permanentEffects = {
         FAST_TRAINING 1
         ELF_VISION 1
@@ -1128,7 +1129,6 @@
       }
       chatReactionFriendly = "\"talks about her god's many blessings\""
       chatReactionHostile = "\"Die, fiend!\""
-      courage = -1
       inventory = {
         { Simple "Sword"}
 		{ Simple "LeatherArmor"}
