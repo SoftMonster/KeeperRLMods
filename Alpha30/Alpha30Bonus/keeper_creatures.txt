@@ -271,7 +271,7 @@
 		"dragon taming" "demonic alliance"
 	}
     buildingGroups = {
-        "sandbox"
+        "sandbox" "throne"
     }
     workshopGroups = { "sandbox" }
     description = "Play a sandbox game where you can build and do whatever you like in a creative mode."

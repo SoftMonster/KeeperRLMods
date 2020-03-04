@@ -770,30 +770,6 @@
           }
         }
         {
-          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true
-          consumeIds = true    
-          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
-       }
-        {
-          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true
-          consumeIds = true    
-          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
-       }
-        {
-          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
-          traits = { FIGHTER }
-          spawnLocation = FurnitureType "FORGE"
-          noAuto = true
-          consumeIds = true    
-          requirements = { {  1.0 CostInfo "IRON" 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
-        }
-        {
           ids = { "DWARF_MILITIA" }
           frequency = 0.5
           traits = { FIGHTER WORKER }
@@ -868,10 +844,10 @@
           ids = { "PLAYER_DWARF_FEMALE" "PLAYER_DWARF_FEMALE2" "PLAYER_DWARF_FEMALE3" }
           traits = { NO_LIMIT INCREASE_POPULATION NO_EQUIPMENT }
           requirements = {
-            { 1.0 CostInfo "GOLD" 40 }
+            { 1.0 CostInfo "GOLD" 50 }
 		  }
           specialTraits = {
-            { 0.4 { LastingEffect COPULATION_SKILL }}
+            { 0.25 { LastingEffect COPULATION_SKILL }}
           }
         }
     	{
