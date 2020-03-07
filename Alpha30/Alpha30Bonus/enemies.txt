@@ -3030,7 +3030,7 @@
       buildingId = "SANDSTONE_WALL_DWARVEN"
     }
     levelConnection = {
-      topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY"}
+      topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY_EXPERT"}
       levels = {
         { ExtraEnemy { "BOTTOMLESS50" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS51" { 1 2 } } 60 40 DUNGEON }
@@ -3098,7 +3098,7 @@
       buildingId = "SANDSTONE_WALL_DWARVEN"
     }
     levelConnection = {
-      topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY"}
+      topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY_ADVANCED"}
       levels = {
         { ExtraEnemy { "BOTTOMLESS21" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS22" { 1 2 } } 60 40 DUNGEON }
@@ -3149,8 +3149,19 @@
           all = { 1 "AUTOMATON" }
         }
       }
-      buildingId = "DUNGEON"
+      buildingId = "MUD"
     }
+  }
+  "BOTTOMLESS_ENTRY_ADVANCED" inherit "BOTTOMLESS_ENTRY" {
+    settlement = append {
+      buildingId = "CITY_BRICK"
+	}
+  }
+	
+  "BOTTOMLESS_ENTRY_EXPERT" inherit "BOTTOMLESS_ENTRY" {
+    settlement = append {
+      buildingId = "ZOMBIE"
+	}
   }
 
 ####################################################################
