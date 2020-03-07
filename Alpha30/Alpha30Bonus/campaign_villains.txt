@@ -55,6 +55,7 @@ LAWFUL_KEEPER modify append {
     {{ "centaur_king" } "CENTAURS" "Centaurs" ALLY }
 	{{ "dwarf_queen" } "DWARF_KINGDOM" "Dwarf Queen" ALLY}
 	{{ "elf_king" } "ELF_KINGDOM" "Elf Kingdom" ALLY }
+    {{ "gnome_boss" } "GNOMES" "Gnomes" ALLY}
     {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon and Town" ALLY} #Modded
     {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon and Town" ALLY} #Modded
