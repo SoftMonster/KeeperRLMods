@@ -2755,7 +2755,7 @@
 		leader = { { "GNOME_CHIEF" } } 
 	    fighters = {
 			count = { 10 11 }
-			all = { 1 "AUTOMATON" }
+			all = { 1 "STONE_GOLEM" }
 	  }
 	}
     buildingId = "DUNGEON"  
@@ -3146,7 +3146,7 @@
         leader = { { "GNOME_CHIEF" } }
         fighters = {
           count = { 5 6}
-          all = { 1 "AUTOMATON" }
+          all = { 1 "STONE_GOLEM" }
         }
       }
       buildingId = "MUD"
