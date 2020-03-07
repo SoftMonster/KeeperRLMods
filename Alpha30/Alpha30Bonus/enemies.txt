@@ -1243,7 +1243,7 @@
     buildingId = "DUNGEON"
   }
 }
-  "ADOXIE_DUNGEON"
+  "AXEDIO_DUNGEON"
   {
     settlement = {
       type = Builtin CAVE
@@ -1259,20 +1259,20 @@
           all = { 1 "SPIDER_FOOD" }
         }
       }
-      locationName = "abode of Adoxie"
-      race = "adoxie"
+      locationName = "abode of axedio"
+      race = "axedio"
       furniture = { "adoxie" }
       buildingId = "BRICK"
     }
     createOnBones = 0.5 { "MAIN_DUNGEON" }
     levelConnection = {
-      topLevel = ExtraEnemy {"ADOXIE_SURFACE_BANDITS"}
+      topLevel = ExtraEnemy {"AXEDIO_SURFACE_BANDITS"}
       levels = {
-        { ExtraEnemy { "ADOXIE_BANDITS" { 1 } } 30 30 DUNGEON }
-        { ExtraEnemy { "ADOXIE_LIZARDMEN" { 1 } } 70 70 DUNGEON }
-        { ExtraEnemy { "ADOXIE_CYCLOPS" { 1 } } 20 20 DUNGEON }
-        { ExtraEnemy { "ADOXIE_DWARVES" { 1 } } 300 90 MAZE }
-        { ExtraEnemy { "ADOXIE_DEMONS" { 1 } } 50 50 MAZE }
+        { ExtraEnemy { "AXEDIO_BANDITS" { 1 } } 30 30 DUNGEON }
+        { ExtraEnemy { "AXEDIO_LIZARDMEN" { 1 } } 70 70 DUNGEON }
+        { ExtraEnemy { "AXEDIO_CYCLOPS" { 1 } } 20 20 DUNGEON }
+        { ExtraEnemy { "AXEDIO_DWARVES" { 1 } } 300 90 MAZE }
+        { ExtraEnemy { "AXEDIO_DEMONS" { 1 } } 50 50 MAZE }
         { MainEnemy 30 30 MINETOWN }
         { ExtraEnemy { "DEATH_2" { 1 } } 40 30 BASIC "The Dark Abode" true }
         { ExtraEnemy { "DUNGEON1" { 1 } } 40 30 DUNGEON }
@@ -1292,7 +1292,7 @@
   }
 }
   
-  "ADOXIE_DWARVES" inherit "DWARVES"
+  "AXEDIO_DWARVES" inherit "DWARVES"
   {
     settlement = {
       type = Builtin MINETOWN
@@ -1316,13 +1316,13 @@
           }
         }
       }
-      locationName = "Adoxie"
+      locationName = "Axedio"
       race = "dark dwarves"
       buildingId = "SANDSTONE_WALL_DWARVEN"
       furniture = { "emptyChests" }
     }
   }
-  "ADOXIE_SURFACE_BANDITS" inherit "NO_AGGRO_BANDITS"
+  "AXEDIO_SURFACE_BANDITS" inherit "NO_AGGRO_BANDITS"
   {
     settlement = {
       type = Builtin CAVE
@@ -1339,7 +1339,7 @@
     }
     discoverable = false
   }
-  "ADOXIE_BANDITS" inherit "NO_AGGRO_BANDITS"
+  "AXEDIO_BANDITS" inherit "NO_AGGRO_BANDITS"
   {
     settlement = {
       type = Builtin CAVE
@@ -1356,11 +1356,11 @@
       tribe = BANDIT
       race = "bandits"
       buildingId = "BRICK"
-      locationName = "Adoxie"
+      locationName = "Axedio"
       furniture = { "roomFurniture" }
     }
   }
-  "ADOXIE_CYCLOPS" inherit "CYCLOPS"
+  "AXEDIO_CYCLOPS" inherit "CYCLOPS"
   {
     settlement = {
       type = Builtin CAVE
@@ -1369,12 +1369,12 @@
       }
       race = "cyclops"
       tribe = HOSTILE
-      locationName = "Adoxie"
+      locationName = "Axedio"
       buildingId = "WOOD_CASTLE"
       furniture = { "roomFurniture" }
     }
   }
-  "ADOXIE_DEMONS"
+  "AXEDIO_DEMONS"
   {
     settlement = {
       type = Builtin VILLAGE
@@ -1387,12 +1387,12 @@
           all = { 1 "DEMON_DWELLER" }
         }
       }
-      locationName = "Adoxie"
+      locationName = "Axedio"
       race = "demons"
       furniture = { "demonic" }
 	}
   }
-  "ADOXIE_LIZARDMEN" inherit "LIZARDMEN"
+  "AXEDIO_LIZARDMEN" inherit "LIZARDMEN"
   {
     settlement = {
       type = Builtin VILLAGE
@@ -1404,7 +1404,7 @@
           all = { 1 "LIZARDMAN" }
         }
       }
-      locationName = "Adoxie"
+      locationName = "Axedio"
       race = "lizardmen"
       buildingId = "MUD"
       furniture = { "roomFurniture" }

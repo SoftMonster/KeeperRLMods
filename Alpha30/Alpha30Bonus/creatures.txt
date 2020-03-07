@@ -3706,6 +3706,7 @@
       courage = 1
     }
    "ADOXIE_HEAD_PLAYER" inherit "ADOXIE_HEAD" {
+    gender = FEMALE
     permanentEffects = {
       MAGIC_RESISTANCE 1
       MELEE_RESISTANCE 1
@@ -3728,6 +3729,70 @@
             victimEffect = {0.3 Lasting POISON} } }}}
       }
 	}
+  }
+   "AXEDIO_HEAD_PLAYER" inherit "ADOXIE_HEAD" {
+    gender = MALE
+    viewId = { "axedio_head" }
+      name = {
+        name = "Unholy god"
+        pluralName = "Axedios"
+      }
+    permanentEffects = {
+      MAGIC_RESISTANCE 1
+      MELEE_RESISTANCE 1
+      RANGED_RESISTANCE 1
+      SLEEP_RESISTANT 1
+      FIRE_RESISTANT 1
+      FLYING 1
+    }
+    spells = {
+      "axedio left hand"
+      "axedio right hand"
+      "axedio left foot"
+      "axedio right foot"
+    }
+    body = {
+      type = NonHumanoid HUGE
+      bodyParts = {
+        BACK 1
+        HEAD 1
+        TORSO 1
+      }
+      intrinsicAttacks = {
+        HEAD {{{ Intrinsic { "bite_attack" } "fangs" 8 {
+            attackType = BITE
+            attackMsg = BITE
+            victimEffect = {0.3 Lasting POISON} } }}}
+      }
+	}
+  }
+  "AXEDIO_FOOT_LEFT" inherit "ADOXIE_FOOT_LEFT" {
+    viewId = { "axedio_foot_left" }
+      name = {
+        name = "Axedios left foot"
+        pluralName = "eyes"
+      }
+  }
+  "AXEDIO_FOOT_RIGHT" inherit "ADOXIE_FOOT_RIGHT" {
+    viewId = { "axedio_foot_right" }
+      name = {
+        name = "Axedio's right foot"
+        pluralName = "right feet"
+      }
+  }
+  "AXEDIO_HAND_LEFT" inherit "ADOXIE_LEFT_HAND" {
+    viewId = { "axedio_hand_left" }
+      name = {
+        name = "Axedio's left hand"
+        pluralName = "left hands"
+      }
+  }
+  "AXEDIO_HAND_RIGHT" inherit "ADOXIE_HAND_RIGHT" {
+    viewId = { "axedio_hand_right" }
+      name = {
+        name = "Axedio"
+        pluralName = "right_hands"
+      }
   }
 
   #Dark greenskins

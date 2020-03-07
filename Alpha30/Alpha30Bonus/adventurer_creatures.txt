@@ -1,5 +1,5 @@
-"2_adoxie_head"
-{ "ADOXIE_HEAD_PLAYER" }								EVIL               "(Easy) Wipe the floor with mortals as Adoxie the Dark One."
+"2_axedio_head"
+{ "AXEDIO_HEAD_PLAYER" "ADOXIE_HEAD_PLAYER" }		    EVIL               "(Easy) Wipe the floor with mortals as one of the twin Gods. Axedio the Terrible, or Adoxie the Dark One."
 "3_cleric_hero"
 { "CLERIC_HERO" "CLERIC_HERO" }							LAWFUL             "(Easy) Be a cleric hero."
 "4_warrior_adventurer"

@@ -247,6 +247,11 @@
 
   { "barbarian" "@" ColorId YELLOW }
   { "barbarian_female" "@" ColorId YELLOW }
+  { "axedio_head" "@" ColorId PURPLE }
+  { "axedio_foot_left" "@" ColorId PURPLE }
+  { "axedio_foot_right" "@" ColorId PURPLE }
+  { "axedio_hand_left" "@" ColorId PURPLE }
+  { "axedio_hand_right" "@" ColorId PURPLE }
   
  #King
   { "king" "@" ColorId PURPLE }

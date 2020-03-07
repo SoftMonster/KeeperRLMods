@@ -517,6 +517,35 @@
    cooldown = 50
    sound = SPELL_SUMMON_SPIRIT
  }
+"axedio right hand"
+{
+  symbol = "-."
+  effect = Summon "AXEDIO_HAND_RIGHT" { 1 } 50
+  cooldown = 50
+  sound = SPELL_SUMMON_SPIRIT
+}
+"axedio left hand"
+{
+  symbol = ".-"
+  effect = Summon "AXEDIO_HAND_LEFT" { 1 } 50
+  cooldown = 50
+  sound = SPELL_SUMMON_SPIRIT
+}
+"axedio left foot"
+{
+  symbol = "_|"
+  effect = Summon "AXEDIO_FOOT_LEFT" { 1 } 50
+  cooldown = 50
+  sound = SPELL_SUMMON_SPIRIT
+}
+"axedio right foot"
+{
+  symbol = "|_"
+  effect = Summon "AXEDIO_FOOT_RIGHT" { 1 } 50
+  cooldown = 50
+  sound = SPELL_SUMMON_SPIRIT
+}
+
 "eye servant"
  {
    symbol = "👁️"
