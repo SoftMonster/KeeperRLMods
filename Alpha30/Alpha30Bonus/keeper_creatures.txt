@@ -4,7 +4,7 @@
 "1_dark_mage" modify {
     creatureId = { "KEEPER_MAGE" "KEEPER_MAGE_F" }
     tribeAlignment = EVIL
-    immigrantGroups = {"imps" "dark_keeper" "dark_keeper_modded" } #Modded#
+    immigrantGroups = {"imps" "dark_keeper" "dark_keeper_modded" "neutral_allies" "dark_allies_extended" } #Modded#
 #Modded#
     technology = append {
         "simplistic animations" "magic contraptions" "dragon taming" "demonic alliance"
@@ -26,7 +26,7 @@
     #Modded
     creatureId = { "KEEPER_MAGE_EASY" "KEEPER_MAGE_F_EASY" }
     tribeAlignment = EVIL
-    immigrantGroups = {"dark_keeper_easy_mode"}
+    immigrantGroups = {"dark_keeper_easy_mode" "neutral_allies" "dark_allies_extended" }
     technology = {
          "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
         "pig breeding" "iron working" "simplistic animations"
@@ -47,7 +47,7 @@
   {
     creatureId = { "KEEPER_MAGE_HARD" "KEEPER_MAGE_F_HARD" }
     tribeAlignment = EVIL
-    immigrantGroups = {"dark_keeper_hard_mode"}
+    immigrantGroups = {"dark_keeper_hard_mode" "neutral_allies" "dark_allies_extended" }
     technology = {
         "alchemy" "advanced alchemy" "alchemical conversion" "humanoid mutation" "beast mutation"
         "pig breeding" "iron working" "simplistic animations" "magic contraptions" "jewellery"
@@ -66,7 +66,7 @@
 "2_dark_knight" modify {
     creatureId = { "KEEPER_KNIGHT" "KEEPER_KNIGHT_F" }
     tribeAlignment = EVIL
-    immigrantGroups = {"peseant_prisoners" "imps" "dark_keeper" "dark_knight_modded"}
+    immigrantGroups = {"peseant_prisoners" "imps" "dark_keeper" "dark_knight_modded" "neutral_allies" "dark_allies_extended" }
 #Modded
     technology = append {
         "simplistic animations" "magic contraptions" "magic paper production" "advanced inscription" "master inscription"
@@ -83,7 +83,7 @@
 "3_white_knight" modify {
     creatureId = { "KEEPER_KNIGHT_WHITE" "KEEPER_KNIGHT_WHITE_F" }
     tribeAlignment = LAWFUL
-    immigrantGroups = {"peseants" "white_keeper" "white_keeper_modded"}
+    immigrantGroups = {"peseants" "white_keeper" "white_keeper_modded" "neutral_allies" "white_allies_extended" }
 #Modded
     technology = append {
 		"simplistic animations" "magic contraptions" "legendary heroes" "royal jewellery" "unicorn taming"
@@ -102,7 +102,7 @@
 "4_gnomes" modify {
   creatureId = { "GNOME" }
   tribeAlignment = LAWFUL
-  immigrantGroups = {"gnomes"}
+  immigrantGroups = { "gnomes" "neutral_allies" "white_allies_extended" }
   technology = {
       "traps" #"advanced traps" "master traps" "gnomish magic"
       "automatons" "advanced automatons" #"master automatons"
@@ -134,7 +134,7 @@
   {
     creatureId = { "ELEMENTALIST" }
     tribeAlignment = LAWFUL
-    immigrantGroups = {"elementals"}
+    immigrantGroups = {"elementals" "neutral_allies" "white_allies_basic" "white_allies_extended" }
     technology = {
         "alchemy" "iron working" "advanced alchemy" "elite alchemy" "alchemical conversion"
 		"sorcery" "advanced sorcery" "master sorcery"
@@ -156,7 +156,7 @@
   {
     creatureId = { "VAMPIRE_LORD" }
     tribeAlignment = EVIL
-    immigrantGroups = {"necromancer"}
+    immigrantGroups = {"necromancer" "neutral_allies" "dark_allies_extended" "dark_allies_basic" }
     technology = {
         "regrow limbs" "pig breeding" "iron working" "simplistic animations"
 		"two-handed weapons" "sorcery"
@@ -185,7 +185,7 @@
   {
     creatureId = { "DWARF_QUEEN" }
     tribeAlignment = LAWFUL
-    immigrantGroups = {"dwarven"}
+    immigrantGroups = {"dwarven" "neutral_allies" "white_allies_basic" "white_allies_extended" }
     technology = {
         "alchemy" "advanced alchemy" "alchemical conversion" "pig breeding" "iron working" "simplistic animations"
         "magic contraptions" "jewellery" "two-handed weapons" "traps" "redemption" "basic nobility" "dwarven monks"
@@ -203,7 +203,7 @@
   {
     creatureId = { "GOBLIN_KING_PLAYER" }
     tribeAlignment = EVIL
-    immigrantGroups = {"goblin"}
+    immigrantGroups = {"goblin" "neutral_allies" "dark_allies_extended" "dark_allies_basic" }
     technology = {
         "alchemy" "alchemical conversion" "pig breeding" "iron working" "jewellery" 
 		"two-handed weapons" "traps" "archery" "sorcery" "advanced sorcery" "magical weapons" 

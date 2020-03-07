@@ -484,17 +484,17 @@
             { 1.0 { LastingEffect ENTERTAINER }}
           }
         }
-        {
-      ids = { "DWARF_BLACKSMITH" }
-      traits = { FIGHTER }
-      requirements = {
-        { 0.0 RecruitmentInfo { "DWARVES" } 0 FIGHTER }
-        { 1.0 CostInfo "GOLD" 100 }
+      {
+        ids = { "DWARF_BLACKSMITH" "DWARF_WARRIOR" }
+        traits = { FIGHTER }
+        requirements = {
+          { 0.0 RecruitmentInfo { "DWARVES" "DWARF_KINGDOM" } 0 FIGHTER }
+          { 1.0 CostInfo "GOLD" 100 }
+        }
+        specialTraits = {
+         { 1.0 { WorkshopType "FORGE" }}
+        }
       }
-      specialTraits = {
-       { 1.0 { WorkshopType "FORGE" }}
-      }
-    }
     {
       ids = { "GALEAM" }
       traits = { FIGHTER }
@@ -546,6 +546,142 @@
 }
 
     #Modded immigrants
+
+    "neutral_allies"
+	{
+        {
+          ids = { "STONE_GOLEM" }
+          traits = { FIGHTER }
+		  stripEquipment = false
+          requirements = {
+            { 0.0 RecruitmentInfo { "GNOMES" "BEGINNERS_DUNGEON" "ADVANCED_DUNGEON" "EXPERT_DUNGEON" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 12 }
+          }
+        }
+	}
+
+    "dark_allies_basic"
+	{
+        {
+          ids = { "DARK_ELF_WARRIOR" }
+          traits = { FIGHTER }
+		  stripEquipment = false
+          specialTraits = {
+             { 1.0 { AttrBonus DAMAGE 3 }}
+          }
+          requirements = {
+            { 0.0 RecruitmentInfo { "DARK_ELVES_ALLY" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 20 }
+          }
+        }
+        {
+          ids = { "ORC_FEMALE" "ORC" }
+          traits = { FIGHTER }
+		  stripEquipment = false
+          specialTraits = {
+             { 1.0 { AttrBonus DAMAGE 3 }}
+          }
+          requirements = {
+            { 0.0 RecruitmentInfo { "ORC_VILLAGE" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 5 }
+          }
+        }
+        {
+          ids = { "HARPY" }
+          traits = { FIGHTER }
+		  stripEquipment = false
+          specialTraits = {
+             { 1.0 { AttrBonus RANGED_DAMAGE 3 }}
+          }
+          requirements = {
+            { 0.0 RecruitmentInfo { "HARPY_CAVE" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 5 }
+          }
+        }
+        {
+          ids = { "OGRE_FEMALE" "OGRE" }
+          traits = { FIGHTER }
+		  stripEquipment = false
+          specialTraits = {
+             { 1.0 { AttrBonus DAMAGE 3 }}
+          }
+          requirements = {
+            { 0.0 RecruitmentInfo { "OGRE_CAVE" "ORC_VILLAGE" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 12 }
+          }
+        }
+	}
+    "dark_allies_extended"
+	{
+        {
+          ids = { "DARK_ELF_ARCHER" }
+          traits = { FIGHTER }
+          requirements = {
+            { 0.0 RecruitmentInfo {"DARK_ELF_EMPIRE"} 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 50 }
+          }
+        }
+        {
+          ids = { "SHADOW_KNIGHT" "SHADOW_PRIEST" "SHADOW_ARCHER" }
+          traits = { FIGHTER }
+          requirements = {
+            { 0.0 RecruitmentInfo { "SHADOW_KING" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 500 }
+          }
+        }
+	}
+
+    "white_allies_basic"
+	{
+      {
+        ids = { "TEUTON" }
+        traits = { FIGHTER }
+        requirements = {
+          { 0.0 RecruitmentInfo { "TEUTONS" } 3 FIGHTER }
+          { 1.0 CostInfo "GOLD" 150 }
+        }
+      }
+      {
+        ids = { "DWARF_BLACKSMITH" "DWARF_WARRIOR" }
+        traits = { FIGHTER }
+        requirements = {
+          { 0.0 RecruitmentInfo { "DWARVES" "DWARF_KINGDOM" } 0 FIGHTER }
+          { 1.0 CostInfo "GOLD" 100 }
+        }
+        specialTraits = {
+         { 1.0 { WorkshopType "FORGE" }}
+        }
+      }
+	}
+
+    "white_allies_extended"
+	{
+		{
+		  ids = { "ROYAL_KNIGHT" "ROYAL_PRIEST" "ROYAL_ARCHER" }
+		  traits = { FIGHTER }
+		  requirements = {
+			{ 0.0 RecruitmentInfo { "KING" } 3 FIGHTER }
+			{ 1.0 CostInfo "GOLD" 500 }
+		  }
+		}
+		{
+		  ids = { "CENTAUR_ARCHER" }
+		  traits = { FIGHTER }
+		  requirements = {
+			{ 0.0 RecruitmentInfo { "CENTAURS" } 3 FIGHTER }
+			{ 1.0 CostInfo "GOLD" 200 }
+		  }
+		}
+		{
+		  ids = { "ELF_ARCHER" }
+		  traits = { FIGHTER }
+		  requirements = {
+			{ 0.0 RecruitmentInfo { "ELF_KINGDOM" } 3 FIGHTER }
+			{ 1.0 CostInfo "GOLD" 500 }
+		  }
+		}
+	}
+	
     "elementals"
     {
         {
