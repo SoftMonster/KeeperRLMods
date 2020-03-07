@@ -178,14 +178,32 @@
       chatReactionHostile = "\"Viidost Al Hi Joor\""
       deathDescription = "slain"
       courage = 1
+      genderAlternatives = {
+        FEMALE { "red_dragon" ColorId LIGHT_GREEN }
+	}
+    permanentEffects = {
+      POISON_RESISTANT 1
+      RANGED_VULNERABILITY 1
+      MELEE_RESISTANCE 1
+      MAGIC_RESISTANCE 1
     }
+  }
   "RED_DRAGON" modify append {
       #Modding
       chatReactionFriendly = "\"Lingrah Laas Wah Hi\""
       chatReactionHostile = "\"Aal Yol Du Hi Joor!\""
       deathDescription = "slain"
       courage = 1 
+      genderAlternatives = {
+        FEMALE { "red_dragon" ColorId LIGHT_RED }
+	}
+    permanentEffects = {
+      FIRE_RESISTANT 1
+      RANGED_VULNERABILITY 1
+      MELEE_RESISTANCE 1
+      MAGIC_RESISTANCE 1
     }
+  }
   "KNIGHT_PLAYER" modify append {
       viewId = { "knight" Rgb 58 255 106 106 } #Modded
    }
@@ -1777,7 +1795,10 @@
       }
       chatReactionFriendly = "\"Pah viidost aal kos qahnaaraan, nuz ni dov piraak kinzon jot\""
       chatReactionHostile = "\"Dinok Bo Fah Hi!\""
-    }
+      genderAlternatives = {
+        FEMALE { "ancient_reddragon" ColorId LIGHT_GREEN }
+	}
+  }
   "ANCIENT_RED_DRAGON" inherit "RED_DRAGON"
     {
       viewId = { "ancient_reddragon" }
@@ -1792,7 +1813,10 @@
       }
       chatReactionFriendly = "\"Yol Lost Nid Grah-Zeymahzin... Nii Ag Pah\""
       chatReactionHostile = "\"Ag Joor!\""
-    }
+      genderAlternatives = {
+        FEMALE { "ancient_reddragon" ColorId LIGHT_RED }
+	  }
+	}
   "YOUNG_RED_DRAGON" inherit "RED_DRAGON"
     {
       viewId = { "young_reddragon" }
@@ -1810,7 +1834,10 @@
       inventory = {
         { Simple "GoldPiece" 40 70 }
       }
-    }
+      genderAlternatives = {
+        FEMALE { "young_reddragon" ColorId LIGHT_RED }
+	  }
+	}
   "YOUNG_GREEN_DRAGON" inherit "GREEN_DRAGON"
     {
       viewId = { "young_greendragon" }
@@ -1828,7 +1855,10 @@
       inventory = {
         { Simple "GoldPiece" 40 70 }
       }
-    }
+      genderAlternatives = {
+        FEMALE { "young_greendragon" ColorId LIGHT_GREEN }
+      }
+	}
  "ZOMBIE_DRAGON"
     {
       viewId = { "zombiedragon" }
@@ -1925,6 +1955,9 @@
  "RED_DRAGONNEWT"
     {
       viewId = { "red_dragonewt" }
+      genderAlternatives = {
+        FEMALE { "red_dragonewt" ColorId LIGHT_RED }
+	  }
       attr = {
         DAMAGE 18
         DEFENSE 18 
@@ -1978,6 +2011,9 @@
  "GREEN_DRAGONEWT" inherit "RED_DRAGONNEWT"
     {
       viewId = { "green_dragonewt" }
+      genderAlternatives = {
+        FEMALE { "red_dragonewt" ColorId LIGHT_GREEN }
+	  }
       body = {
         type = Humanoid LARGE
         material = FLESH
