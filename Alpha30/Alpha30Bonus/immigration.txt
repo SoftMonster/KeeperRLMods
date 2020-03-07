@@ -622,7 +622,23 @@
           }
         }
         {
-          ids = { "SHADOW_KNIGHT" "SHADOW_PRIEST" "SHADOW_ARCHER" }
+          ids = { "SHADOW_KNIGHT" }
+          traits = { FIGHTER }
+          requirements = {
+            { 0.0 RecruitmentInfo { "SHADOW_KING" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 500 }
+          }
+        }
+        {
+          ids = { "SHADOW_PRIEST" }
+          traits = { FIGHTER }
+          requirements = {
+            { 0.0 RecruitmentInfo { "SHADOW_KING" } 3 FIGHTER }
+            { 1.0 CostInfo "GOLD" 500 }
+          }
+        }
+        {
+          ids = { "SHADOW_ARCHER" }
           traits = { FIGHTER }
           requirements = {
             { 0.0 RecruitmentInfo { "SHADOW_KING" } 3 FIGHTER }
@@ -642,7 +658,18 @@
         }
       }
       {
-        ids = { "DWARF_BLACKSMITH" "DWARF_WARRIOR" }
+        ids = { "DWARF_BLACKSMITH" }
+        traits = { FIGHTER }
+        requirements = {
+          { 0.0 RecruitmentInfo { "DWARVES" "DWARF_KINGDOM" } 0 FIGHTER }
+          { 1.0 CostInfo "GOLD" 100 }
+        }
+        specialTraits = {
+         { 1.0 { WorkshopType "FORGE" }}
+        }
+      }
+      {
+        ids = { "DWARF_WARRIOR" }
         traits = { FIGHTER }
         requirements = {
           { 0.0 RecruitmentInfo { "DWARVES" "DWARF_KINGDOM" } 0 FIGHTER }
@@ -657,7 +684,23 @@
     "white_allies_extended"
 	{
 		{
-		  ids = { "ROYAL_KNIGHT" "ROYAL_PRIEST" "ROYAL_ARCHER" }
+		  ids = { "ROYAL_KNIGHT" }
+		  traits = { FIGHTER }
+		  requirements = {
+			{ 0.0 RecruitmentInfo { "KING" } 3 FIGHTER }
+			{ 1.0 CostInfo "GOLD" 500 }
+		  }
+		}
+		{
+		  ids = { "ROYAL_PRIEST" }
+		  traits = { FIGHTER }
+		  requirements = {
+			{ 0.0 RecruitmentInfo { "KING" } 3 FIGHTER }
+			{ 1.0 CostInfo "GOLD" 500 }
+		  }
+		}
+		{
+		  ids = { "ROYAL_ARCHER" }
 		  traits = { FIGHTER }
 		  requirements = {
 			{ 0.0 RecruitmentInfo { "KING" } 3 FIGHTER }
@@ -677,7 +720,7 @@
 		  traits = { FIGHTER }
 		  requirements = {
 			{ 0.0 RecruitmentInfo { "ELF_KINGDOM" } 3 FIGHTER }
-			{ 1.0 CostInfo "GOLD" 500 }
+			{ 1.0 CostInfo "GOLD" 150 }
 		  }
 		}
 	}
