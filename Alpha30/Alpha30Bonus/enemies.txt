@@ -3,7 +3,7 @@
     settlement = append {
       buildingId = "VOLCANIC_BRICK"
       tribe = BANDIT
-	}
+    }
   }
   "UNICORN_HERD" modify append {
     biomes = { "HERB_GRASSLAND" }  
@@ -12,26 +12,26 @@
     biomes = { "HERB_GRASSLAND" }  
   }
   "ORC_VILLAGE" modify append {
-	biomes = { "ORC_VILLAGE"} 
+    biomes = { "ORC_VILLAGE"} 
     settlement = {
       type = MapLayoutId "village32"
       tribe = GREENSKIN
       inhabitants = {
-	      leader = { { "ORC_CAPTAIN_TRIBE" } }
+          leader = { { "ORC_CAPTAIN_TRIBE" } }
           fighters = {
             count = {42 56}
             all = {
-			  4 "ORC_CAPTAIN_TRIBE"
-			  7 "ORC_HEALER_TRIBE"
+              4 "ORC_CAPTAIN_TRIBE"
+              7 "ORC_HEALER_TRIBE"
               10 "ORC_TRIBE"
               6 "OGRE_TRIBE"
               2 "HOBGOBLIN" #Modded
-		  }
+          }
         }
         civilians = {
           count = {16 20}
           all = {
-			1 "GOBLIN_PLAYER"
+            1 "GOBLIN_PLAYER"
           }
         }
       }
@@ -52,12 +52,11 @@
     minTeamSize = 6
     triggers = {
       RoomTrigger "THRONE" 0.0003
-      RoomTrigger "IMPALED_HEAD" 0.0001
       SelfVictims
-      NumConquered 4
       StolenItems
       FinishOff
-      Proximity
+      EnemyPopulation 18
+      NumConquered 6
     }
     attackBehaviour = KillLeader
     ransom = 0.8 100
@@ -68,12 +67,12 @@
       traits = {FIGHTER}
       frequency = 1
     }
-	{
+    {
       ids = {"ORC_HEALER_TRIBE"}
       traits = {FIGHTER}
       frequency = 0.75
     }
-	{
+    {
       ids = {"OGRE_TRIBE"}
       traits = {FIGHTER}
       frequency = 0.45
@@ -91,10 +90,10 @@
       fighters = {
         count = {32 44}
         all = { 
-		  8 "WARRIOR" 
-		  6 "SHAMAN"
-		  4 "WOLF_WARRIOR"
-		}
+          8 "WARRIOR" 
+          6 "SHAMAN"
+          4 "WOLF_WARRIOR"
+        }
       }
     }
     locationNameGen = "TOWN"
@@ -118,10 +117,10 @@
       RoomTrigger "THRONE" 0.0003
       RoomTrigger "IMPALED_HEAD" 0.0001
       SelfVictims
-      NumConquered 4
       StolenItems
       FinishOff
-      Proximity
+      EnemyPopulation 35
+      NumConquered 12
     }
     attackBehaviour = KillLeader
     ransom = 0.8 140
@@ -132,12 +131,12 @@
       traits = {FIGHTER}
       frequency = 1
     }
-	{
+    {
       ids = {"SHAMAN"}
       traits = {FIGHTER}
       frequency = 0.75
     }
-	{
+    {
       ids = {"WOLF_WARRIOR"}
       traits = {FIGHTER}
       frequency = 0.45
@@ -186,10 +185,10 @@
       RoomTrigger "THRONE" 0.0003
       RoomTrigger "IMPALED_HEAD" 0.0001
       SelfVictims
-      NumConquered 8
       StolenItems
       FinishOff
-      Proximity
+      EnemyPopulation 48
+      NumConquered 16
     }
     attackBehaviour = KillLeader
     ransom = 0.8 220
@@ -311,10 +310,10 @@
       fighters = {
         count = {38 46}
         all = {
-		  8 "ELITE_DWARF_WARRIOR_TRIBE"
+          8 "ELITE_DWARF_WARRIOR_TRIBE"
           10 "DWARF_WARRIOR_TRIBE"
-		  6 "DWARF_FIGHTER_TRIBE"
-		  4 "DWARF_MONK_TRIBE"
+          6 "DWARF_FIGHTER_TRIBE"
+          4 "DWARF_MONK_TRIBE"
         }
       }
       civilians = {
@@ -336,13 +335,13 @@
     outsideFeatures = "dungeonOutside"
     surroundWithResources = 12
     furniture = { "roomFurniture" }
-	 }
+     }
     levelConnection = {
       topLevel = MainEnemy 
       levels = {
         {ExtraEnemy { "DWARF_MARKET_SMALL" { 1 } } 35 35 BLACK_MARKET }
-		{ExtraEnemy { "DWARF_MINE" { 1 } } 80 80 DUNGEON }
-	   }
+        {ExtraEnemy { "DWARF_MINE" { 1 } } 80 80 DUNGEON }
+       }
      }
   config = {
     immigrantInterval = 200
@@ -357,10 +356,10 @@
       RoomTrigger "THRONE" 0.0003
       RoomTrigger "IMPALED_HEAD" 0.0001
       SelfVictims
-      NumConquered 5
       StolenItems
       FinishOff
-      Proximity
+      EnemyPopulation 40
+      NumConquered 14
     }
     attackBehaviour = KillMembers 3
     ransom = 0.8 280
@@ -496,10 +495,10 @@
           count = {54 66}
           all = {
             4 "DWARF_FIGHTER_TRIBE"
-			8 "DWARF_WARRIOR_TRIBE"
-			10 "ELITE_DWARF_WARRIOR_TRIBE"
-			6 "DWARF_MONK_TRIBE"
-			1 "DWARF_BARON_TRIBE"
+            8 "DWARF_WARRIOR_TRIBE"
+            10 "ELITE_DWARF_WARRIOR_TRIBE"
+            6 "DWARF_MONK_TRIBE"
+            1 "DWARF_BARON_TRIBE"
           }
         }
         civilians = {
@@ -508,7 +507,7 @@
             3 "PLAYER_DWARF_FEMALE"
             3 "PLAYER_DWARF_FEMALE2"
             3 "PLAYER_DWARF_FEMALE3"
-			4 "DWARF_WORKER_TRIBE"
+            4 "DWARF_WORKER_TRIBE"
             1 "RAT"
           }
         }
@@ -520,13 +519,13 @@
       shopItems = { "dwarfShop" }
       outsideFeatures = "dungeonOutside"
       furniture = { "dwarvenRoomFurniture" } #Modded
-	 }
+     }
     levelConnection = {
       topLevel = MainEnemy 
       levels = {
         {ExtraEnemy { "DWARF_MARKET" { 1 } } 50 50 BLACK_MARKET }
-		{ExtraEnemy { "DWARF_MINE" { 1 } } 80 80 DUNGEON }
-	   }
+        {ExtraEnemy { "DWARF_MINE" { 1 } } 80 80 DUNGEON }
+       }
      }
     config = {
       immigrantInterval = 200
@@ -541,10 +540,10 @@
         RoomTrigger "THRONE" 0.0003
         RoomTrigger "IMPALED_HEAD" 0.0001
         SelfVictims
-        NumConquered 8
         StolenItems
         FinishOff
-        Proximity
+        EnemyPopulation 60
+        NumConquered 20
       }
       attackBehaviour = KillMembers 16
       ransom = 0.8 420
@@ -554,7 +553,7 @@
         ids = { "DWARF_MILITIA_TRIBE" "DWARF_FIGHTER_TRIBE" "DWARF_WARRIOR_TRIBE" "ELITE_DWARF_WARRIOR_TRIBE" "DWARF_MONK_TRIBE"} #Modded
         traits = {FIGHTER}
         frequency = 1
-	  }
+      }
     }
   }
   "ELVES" modify append {
@@ -709,7 +708,7 @@
         fighters = {
           count = {4 5}
           all = {
-		    1 "ARACHNE"
+            1 "ARACHNE"
             1 "SPECIAL_BMGN"
           }
         }
@@ -859,21 +858,21 @@
       inhabitants = {
         fighters = {
           count = {2 5}
-          all = { 		    
-			2 "DWARF_MILITIA_TRIBE"
+          all = {           
+            2 "DWARF_MILITIA_TRIBE"
             3 "DWARF_FIGHTER_TRIBE"
-			3 "DWARF_WARRIOR_TRIBE"
-			2 "ELITE_DWARF_WARRIOR_TRIBE"
-			1 "DWARF_MONK_TRIBE" 
-		  }
+            3 "DWARF_WARRIOR_TRIBE"
+            2 "ELITE_DWARF_WARRIOR_TRIBE"
+            1 "DWARF_MONK_TRIBE" 
+          }
         }
         civilians = {
           count = {2 5}
           all = { 
-			1 "PLAYER_DWARF_FEMALE"
-			1 "PLAYER_DWARF_FEMALE2"
-			1 "PLAYER_DWARF_FEMALE3"
-		  }
+            1 "PLAYER_DWARF_FEMALE"
+            1 "PLAYER_DWARF_FEMALE2"
+            1 "PLAYER_DWARF_FEMALE3"
+          }
         }
       }
       race = "dwarves"
@@ -899,7 +898,7 @@
           count = {10 11} 
           all = {
             25 "RAT"       #Modded
-			1  "BLACK_RAT" #Modded
+            1  "BLACK_RAT" #Modded
           }
         }
       }
@@ -977,10 +976,10 @@
       RoomTrigger "THRONE" 0.0003
       RoomTrigger "IMPALED_HEAD" 0.0001
       SelfVictims
-      NumConquered 2
       StolenItems
       FinishOff
-      Proximity
+      EnemyPopulation 11
+      NumConquered 4
     }
     attackBehaviour = KillLeader
     ransom = 0.8 140
@@ -1002,8 +1001,8 @@
         fighters = {
           count = {8 12}
           all = {
-			4 "WARRIOR"
-			1 "WOLF"
+            4 "WARRIOR"
+            1 "WOLF"
           }
         }
         civilians = {
@@ -1031,20 +1030,20 @@
         count = {18 26}
         all = {
           1 "DWARF_FIGHTER_TRIBE"
-		  1 "DWARF_WARRIOR_TRIBE"
-		  1 "ELITE_DWARF_WARRIOR_TRIBE"
-		  }
+          1 "DWARF_WARRIOR_TRIBE"
+          1 "ELITE_DWARF_WARRIOR_TRIBE"
+          }
         }
       civilians = {
         count = {42 52}
         all = {
-		  1 "DWARF_BLACKSMITH"
+          1 "DWARF_BLACKSMITH"
           5 "PLAYER_DWARF_FEMALE"
           5 "PLAYER_DWARF_FEMALE2"
           5 "PLAYER_DWARF_FEMALE3"
-		  5 "DWARF_WORKER_TRIBE"
-		}
-	  }
+          5 "DWARF_WORKER_TRIBE"
+        }
+      }
     }
     locationName = "the Dwarven Market"
     race = "dwarves"
@@ -1065,20 +1064,20 @@
         count = {12 18}
         all = {
           2 "DWARF_FIGHTER_TRIBE"
-		  4 "DWARF_WARRIOR_TRIBE"
-		  1 "ELITE_DWARF_WARRIOR_TRIBE"
-		  }
+          4 "DWARF_WARRIOR_TRIBE"
+          1 "ELITE_DWARF_WARRIOR_TRIBE"
+          }
         }
       civilians = {
         count = {22 32}
         all = {
-		  1 "DWARF_BLACKSMITH"
+          1 "DWARF_BLACKSMITH"
           5 "PLAYER_DWARF_FEMALE"
           5 "PLAYER_DWARF_FEMALE2"
           5 "PLAYER_DWARF_FEMALE3"
-		  5 "DWARF_WORKER_TRIBE"
-		}
-	  }
+          5 "DWARF_WORKER_TRIBE"
+        }
+      }
     }
     locationName = "the Dwarven Market"
     race = "dwarves"
@@ -1098,17 +1097,17 @@
       fighters = {
         count = {18 28}
         all = {
-		  1 "DWARF_WARRIOR_TRIBE"
-		  1 "ELITE_DWARF_WARRIOR_TRIBE"
-		  6 "DWARF_WORKER_TRIBE"
-		  }
+          1 "DWARF_WARRIOR_TRIBE"
+          1 "ELITE_DWARF_WARRIOR_TRIBE"
+          6 "DWARF_WORKER_TRIBE"
+          }
         }
       civilians = {
         count = {4 8}
         all = {
-		  1 "DWARF_WORKER_TRIBE"
-		}
-	  }
+          1 "DWARF_WORKER_TRIBE"
+        }
+      }
     }
     locationName = "the Dwarven Mines"
     race = "dwarves"
@@ -1128,21 +1127,21 @@
       fighters = {
         count = {6 9}
         all = { 
-		  2 "CENTAUR_HUNTER" 
-		  1 "CENTAUR_FARMER"
+          2 "CENTAUR_HUNTER" 
+          1 "CENTAUR_FARMER"
           }
-		}
+        }
         civilians = {
           count = {1 4}
           all = {
             1 "CENTAUR_CHILD"
-		}
+        }
       }
     }
     buildingId = "WOOD"
-	stockpiles = {{ "gold" 50 "TREASURE_CHEST" }}
+    stockpiles = {{ "gold" 50 "TREASURE_CHEST" }}
     furniture = { "roomFurniture" }
-	cropsDistance = 12
+    cropsDistance = 12
     outsideFeatures = "villageOutside"
     }
   }
@@ -1156,18 +1155,18 @@
       fighters = {
         count = {3 6}
         all = { 
-		  1 "AMAZON" 
+          1 "AMAZON" 
           }
-		}
+        }
         civilians = {
           count = {1 5}
           all = {
             1 "AMAZON_PESEANT"
-		}
+        }
       }
     }
     buildingId = "WOOD"
-	stockpiles = {{ "gold" 50 "TREASURE_CHEST" }}
+    stockpiles = {{ "gold" 50 "TREASURE_CHEST" }}
     furniture = { "roomFurniture" }
     cropsDistance = 12
     outsideFeatures = "villageOutside"
@@ -1179,7 +1178,7 @@
     type = Builtin MINETOWN
     tribe = HOSTILE
     inhabitants = {
-	  leader = { { "WILDMAN_QUEEN" } }
+      leader = { { "WILDMAN_QUEEN" } }
       fighters = {
         count = {8 14}
         all = { 1 "WILDMAN" 1 "WILDMAN_WOMAN" }
@@ -1206,7 +1205,7 @@
     type = Builtin MINETOWN
     tribe = BANDIT
     inhabitants = {
-	  leader = { { "GOBLIN_WARRIOR" } }
+      leader = { { "GOBLIN_WARRIOR" } }
       fighters = {
         count = {8 14}
         all = { 1 "GOBLIN_MATRON" 4 "GOBLIN_PLAYER" }
@@ -1232,13 +1231,13 @@
   discoverable = false
   settlement = {
     type = Builtin SWAMP
-	tribe = WILDLIFE
+    tribe = WILDLIFE
     inhabitants = {
       fighters = {
         count = {2 6}
         all = { 1 "CROCODILE" }
       }
-	}
+    }
     race = "crocodiles"
     buildingId = "DUNGEON"
   }
@@ -1390,7 +1389,7 @@
       locationName = "Axedio"
       race = "demons"
       furniture = { "demonic" }
-	}
+    }
   }
   "AXEDIO_LIZARDMEN" inherit "LIZARDMEN"
   {
@@ -1422,10 +1421,10 @@
         fighters = {
           count = {1 2}
           all = {
-		    1 "COW"
-		  }
-		}
-	  }
+            1 "COW"
+          }
+        }
+      }
     }
     discoverable = false
   }
@@ -1439,23 +1438,23 @@
       locationName = "Dungeon Level Defenses"
       furniture = { "roomFurniture" }
       inhabitants = {
-	    leader = {{ "COW_DEMON" }}
+        leader = {{ "COW_DEMON" }}
         fighters = {
           count = {12 15}
           all = {
-		    3 "COW_DEMON"
-			1 "MINOTAUR"
+            3 "COW_DEMON"
+            1 "MINOTAUR"
           }
         }
         civilians = {
           count = {4 5}
           all = {
             10 "COW"
-			 1 "RAT"
-		  }
-		}
-	  }
-	}
+             1 "RAT"
+          }
+        }
+      }
+    }
   }
   "COW_DUNGEON2"
   {
@@ -1467,24 +1466,24 @@
       buildingId = "DUNGEON"
       furniture = { "roomFurniture" }
       inhabitants = {
-	    leader = {{ "COW_DEMON" }}
+        leader = {{ "COW_DEMON" }}
         fighters = {
           count = {15 18}
           all = {
-		    30 "COW_DEMON"
-			10 "MINOTAUR"
-			5 "DEMON_LORD"
+            30 "COW_DEMON"
+            10 "MINOTAUR"
+            5 "DEMON_LORD"
           }
         }
         civilians = {
           count = {6 8}
           all = {
             10 "COW"
-			 1 "RAT"
-		  }
-		}
-	  }
-	}
+             1 "RAT"
+          }
+        }
+      }
+    }
   }
   "COW_DEMONS"
   {
@@ -1495,20 +1494,20 @@
       locationName = "Last Stand"
       buildingId = "DUNGEON"
       inhabitants = {
-	    leader = {{ "ARMORED_COW_DEMON" }}
+        leader = {{ "ARMORED_COW_DEMON" }}
         fighters = {
           count = {12 15}
           all = {
-		    3 "COW_DEMON"
-			1 "MINOTAUR"
-		  }
-		}
+            3 "COW_DEMON"
+            1 "MINOTAUR"
+          }
+        }
         civilians = {
           count = {4 5}
           all = {
             10 "COW"
-			 1 "RAT"
-		  }
+             1 "RAT"
+          }
         }
       }
     }
@@ -1535,8 +1534,8 @@
         { ExtraEnemy { "COW_DUNGEON1" { 2 4 } } 60 40 DUNGEON }
         { ExtraEnemy { "COW_DUNGEON2" { 1 2 } } 70 50 DUNGEON }
         { MainEnemy 60 40 MINETOWN }
-	  }
-	}
+      }
+    }
   }
   "DARK_ELF_EMPIRE" {
     biomes = { "DARK_ELF_MOUNTAIN" }
@@ -1548,16 +1547,16 @@
         fighters = {
           count = {38 46}
           all = {
-		    6 "DARK_ELF_WARRIOR"
+            6 "DARK_ELF_WARRIOR"
             12 "DARK_ELF_WITCHBLADE"
-			8 "DARK_ELF_ARCHER"
-			4 "DARK_ELF_LORD"
+            8 "DARK_ELF_ARCHER"
+            4 "DARK_ELF_LORD"
           }
         }
         civilians = {
           count = {20 28}
           all = {
-			1 "DARK_ELF"
+            1 "DARK_ELF"
           }
         }
       }
@@ -1568,7 +1567,7 @@
       shopItems = { "dwarfShop" }
       outsideFeatures = "dungeonOutside"
       furniture = { "roomFurniture" }
-	 }
+     }
   }
   "GOBLIN_KING"
   {
@@ -1580,22 +1579,22 @@
         fighters = {
           count = {16 32}
           all = {
-			2 "GOBLIN_CHICKENMANCER"
-			2 "GOBLIN_BRUTE"
-			3 "GOBLIN_ARCHER"
-			1 "GOBLIN_HIGH_PRIEST"
-			2 "GOBLIN_KABOOMER"
-			2 "GOBLIN_PRIEST"
-			2 "GOBLIN_WIZARD"
-			3 "GOBLIN_WARRIOR"
+            2 "GOBLIN_CHICKENMANCER"
+            2 "GOBLIN_BRUTE"
+            3 "GOBLIN_ARCHER"
+            1 "GOBLIN_HIGH_PRIEST"
+            2 "GOBLIN_KABOOMER"
+            2 "GOBLIN_PRIEST"
+            2 "GOBLIN_WIZARD"
+            3 "GOBLIN_WARRIOR"
           }
         }
         civilians = {
           count = {6 9}
           all = {
             1 "GOBLIN_PLAYER"
-		  }
-		}
+          }
+        }
       }
       locationNameGen = "TOWN"
       race = "goblins"
@@ -1611,8 +1610,8 @@
         { ExtraEnemy { "GOBLIN_DUNGEON2" { 1 } } 70 50 DUNGEON }
         { ExtraEnemy { "GOBLIN_DUNGEON3" { 1 } } 80 60 DUNGEON }
         { MainEnemy 60 40 DUNGEON }
-	  }
-	}
+      }
+    }
   }
   "GOBLIN_ENTRY"
   {
@@ -1624,13 +1623,13 @@
         fighters = {
           count = {16 24}
           all = {
-			2 "GOBLIN_CHICKENMANCER"
-			2 "GOBLIN_BRUTE"
-			3 "GOBLIN_ARCHER"
-			2 "GOBLIN_KABOOMER"
-			2 "GOBLIN_PRIEST"
-			2 "GOBLIN_WIZARD"
-			3 "GOBLIN_WARRIOR"
+            2 "GOBLIN_CHICKENMANCER"
+            2 "GOBLIN_BRUTE"
+            3 "GOBLIN_ARCHER"
+            2 "GOBLIN_KABOOMER"
+            2 "GOBLIN_PRIEST"
+            2 "GOBLIN_WIZARD"
+            3 "GOBLIN_WARRIOR"
           }
         }
         civilians = {
@@ -1665,18 +1664,18 @@
     immigrants = {
       {
         ids = {
-			"GOBLIN_CHICKENMANCER"
-			"GOBLIN_BRUTE"
-			"GOBLIN_ARCHER"
-			"GOBLIN_KABOOMER"
-			"GOBLIN_PRIEST"
-			"GOBLIN_WIZARD"
-			"GOBLIN_WARRIOR"
+            "GOBLIN_CHICKENMANCER"
+            "GOBLIN_BRUTE"
+            "GOBLIN_ARCHER"
+            "GOBLIN_KABOOMER"
+            "GOBLIN_PRIEST"
+            "GOBLIN_WIZARD"
+            "GOBLIN_WARRIOR"
         }
         traits = {FIGHTER}
         frequency = 1
-	  }
-	}
+      }
+    }
   }
     "GOBLIN_DUNGEON1"
   {
@@ -1693,20 +1692,20 @@
         fighters = {
           count = {24 30}
           all = {
-			20 "GOBLIN_CHICKENMANCER"
-			30 "GOBLIN_BRUTE"
-			35 "GOBLIN_ARCHER"
-			20 "GOBLIN_KABOOMER"
-			25 "GOBLIN_PRIEST"
-			20 "GOBLIN_WIZARD"
-			35 "GOBLIN_WARRIOR"
-			50 "GOBLIN_PLAYER"
+            20 "GOBLIN_CHICKENMANCER"
+            30 "GOBLIN_BRUTE"
+            35 "GOBLIN_ARCHER"
+            20 "GOBLIN_KABOOMER"
+            25 "GOBLIN_PRIEST"
+            20 "GOBLIN_WIZARD"
+            35 "GOBLIN_WARRIOR"
+            50 "GOBLIN_PLAYER"
             4  "RAT"
-			1  "BLACK_RAT"
-			}
-		  }
-		}
-	  }
+            1  "BLACK_RAT"
+            }
+          }
+        }
+      }
     }
     "GOBLIN_DUNGEON2"
   {
@@ -1723,20 +1722,20 @@
         fighters = {
           count = {30 36}
           all = {
-			10 "GOBLIN_CHICKENMANCER"
-			30 "GOBLIN_BRUTE"
-			20 "GOBLIN_ARCHER"
-			20 "GOBLIN_KABOOMER"
-			30 "GOBLIN_PRIEST"
-			35 "GOBLIN_WIZARD"
-			25 "GOBLIN_WARRIOR"
-			30 "GOBLIN_PLAYER"
+            10 "GOBLIN_CHICKENMANCER"
+            30 "GOBLIN_BRUTE"
+            20 "GOBLIN_ARCHER"
+            20 "GOBLIN_KABOOMER"
+            30 "GOBLIN_PRIEST"
+            35 "GOBLIN_WIZARD"
+            25 "GOBLIN_WARRIOR"
+            30 "GOBLIN_PLAYER"
             4  "RAT"
-			1  "BLACK_RAT"
-			}
-		  }
-		}
-	  }
+            1  "BLACK_RAT"
+            }
+          }
+        }
+      }
     }
     "GOBLIN_DUNGEON3"
     {
@@ -1753,26 +1752,26 @@
         fighters = {
           count = {36 42}
           all = {
-			30 "GOBLIN_CHICKENMANCER"
-			20 "GOBLIN_BRUTE"
-			40 "GOBLIN_ARCHER"
-			18 "GOBLIN_HIGH_PRIEST"
-			30 "GOBLIN_KABOOMER"
-			20 "GOBLIN_PRIEST"
-			25 "GOBLIN_WIZARD"
-			35 "ELITE_GOBLIN_GUARD"
-			20 "GOBLIN_PLAYER"
+            30 "GOBLIN_CHICKENMANCER"
+            20 "GOBLIN_BRUTE"
+            40 "GOBLIN_ARCHER"
+            18 "GOBLIN_HIGH_PRIEST"
+            30 "GOBLIN_KABOOMER"
+            20 "GOBLIN_PRIEST"
+            25 "GOBLIN_WIZARD"
+            35 "ELITE_GOBLIN_GUARD"
+            20 "GOBLIN_PLAYER"
             4  "RAT"
-			1  "BLACK_RAT"
-			}
-		  }
-		}
-	  }
+            1  "BLACK_RAT"
+            }
+          }
+        }
+      }
     }
-	"FAIRY_TOWER_ENTRY"
-	{
-	settlement = {
-	  type = MapLayoutId "fairy_tower_entry"
+    "FAIRY_TOWER_ENTRY"
+    {
+    settlement = {
+      type = MapLayoutId "fairy_tower_entry"
       tribe = ELF
       locationName = "Goddess Illusia's Tower"
       inhabitants = {
@@ -1799,7 +1798,7 @@
     buildingId = "FAIRY_BRICK"
     furniture = { "palace_furniture" }
     outsideFeatures = "castleOutside"
-	  }
+      }
   behaviour = {
     minPopulation = 1
     minTeamSize = 1
@@ -1813,7 +1812,7 @@
             1 "DARK_FAIRY"
             1 "EARTH_FAIRY"
             1 "ELECTRIC_FAIRY"
-			1 "FIRE_FAIRY"
+            1 "FIRE_FAIRY"
             1 "MAGIC_FAIRY"
             1 "NATURE_FAIRY"
             1 "LIGHT_FAIRY"
@@ -1822,25 +1821,25 @@
             1 "WATER_ELEMENTAL"
             1 "FIRE_ELEMENTAL"
             1 "EARTH_ELEMENTAL"
-		  }
-		}
-	  }
-	}
-	"FAIRY_TOWER_FLOOR"
-	{
-	settlement = {
+          }
+        }
+      }
+    }
+    "FAIRY_TOWER_FLOOR"
+    {
+    settlement = {
     type = MapLayoutId "fairy_tower_floor"
     tribe = ELF
     locationName = "Goddess Illusia's Tower"
-	inhabitants = {
-	  fighters = {
+    inhabitants = {
+      fighters = {
         count = {8 12}
         all = {
             1 "AIR_FAIRY"
             1 "DARK_FAIRY"
             1 "EARTH_FAIRY"
             1 "ELECTRIC_FAIRY"
-			1 "FIRE_FAIRY"
+            1 "FIRE_FAIRY"
             1 "MAGIC_FAIRY"
             1 "NATURE_FAIRY"
             1 "LIGHT_FAIRY"
@@ -1849,14 +1848,14 @@
             1 "WATER_ELEMENTAL"
             1 "FIRE_ELEMENTAL"
             1 "EARTH_ELEMENTAL"
-		}
-	  }
+        }
+      }
     }
     race = "Tower Inhabitants"
     buildingId = "FAIRY_BRICK"
     furniture = { "palace_furniture" }
     outsideFeatures = "castleOutside"
-	}
+    }
   behaviour = {
     minPopulation = 1
     minTeamSize = 1
@@ -1870,7 +1869,7 @@
             1 "DARK_FAIRY"
             1 "EARTH_FAIRY"
             1 "ELECTRIC_FAIRY"
-			1 "FIRE_FAIRY"
+            1 "FIRE_FAIRY"
             1 "MAGIC_FAIRY"
             1 "NATURE_FAIRY"
             1 "LIGHT_FAIRY"
@@ -1879,8 +1878,8 @@
             1 "WATER_ELEMENTAL"
             1 "FIRE_ELEMENTAL"
             1 "EARTH_ELEMENTAL"
-	  }
-	}
+      }
+    }
   }
 }
 "TOWER_OF_ILLUSIA"
@@ -1899,15 +1898,15 @@
             1 "DARK_FAIRY"
             1 "EARTH_FAIRY"
             1 "ELECTRIC_FAIRY"
-			1 "FIRE_FAIRY"
+            1 "FIRE_FAIRY"
             3 "MAGIC_FAIRY"
             1 "NATURE_FAIRY"
             1 "LIGHT_FAIRY"
             1 "WATER_FAIRY"
-		}
-	  }
+        }
+      }
     }
-	race = "Fairies"
+    race = "Fairies"
     buildingId = "FAIRY_BRICK"
     furniture = { "palace_furniture" }
   }
@@ -1919,7 +1918,7 @@
     topLevel = ExtraEnemy { "FAIRY_TOWER_ENTRY" }
     levels = {
       { ExtraEnemy { "FAIRY_TOWER_FLOOR" { 8 12 } } 24 24 BASIC }
-	  { MainEnemy 18 18 TOWER }
+      { MainEnemy 18 18 TOWER }
     }
   }
   behaviour = {
@@ -1929,8 +1928,8 @@
       SelfVictims
       RoomTrigger "THRONE" 0.0003
       RoomTrigger "IMPALED_HEAD" 0.0001
-      NumConquered 3
-      Proximity
+      EnemyPopulation 50
+      NumConquered 17
     }
     attackBehaviour = CampAndSpawn {
       count = {12 18}
@@ -1939,7 +1938,7 @@
             1 "DARK_FAIRY"
             1 "EARTH_FAIRY"
             1 "ELECTRIC_FAIRY"
-			1 "FIRE_FAIRY"
+            1 "FIRE_FAIRY"
             1 "MAGIC_FAIRY"
             1 "NATURE_FAIRY"
             1 "LIGHT_FAIRY"
@@ -1948,9 +1947,9 @@
             1 "WATER_ELEMENTAL"
             1 "FIRE_ELEMENTAL"
             1 "EARTH_ELEMENTAL"
-		}
-	  }
-	}
+        }
+      }
+    }
   }
 "ORC_MAIN" {
   biomes = { "ORC_CLAN"} 
@@ -1963,8 +1962,8 @@
         count = {22 37}
         all = {
           3 "OGRE_CHAMPION_TRIBE"
-		  2 "ORC_CAPTAIN_TRIBE"
-		  1 "ORC_HEALER_TRIBE"
+          2 "ORC_CAPTAIN_TRIBE"
+          1 "ORC_HEALER_TRIBE"
           1 "OGRE_TRIBE"
           1 "ORC_TRIBE"
         }
@@ -1973,7 +1972,7 @@
         count = {12 18}
         all = {
           6 "GOBLIN_PLAYER"
-		  1 "RAT"
+          1 "RAT"
         }
       }
     }
@@ -1996,8 +1995,8 @@
         count = {12 19}
         all = {
           3 "OGRE_CHAMPION_TRIBE"
-		  2 "ORC_CAPTAIN_TRIBE"
-		  1 "ORC_HEALER_TRIBE"
+          2 "ORC_CAPTAIN_TRIBE"
+          1 "ORC_HEALER_TRIBE"
           1 "OGRE_TRIBE"
           1 "ORC_TRIBE"
         }
@@ -2006,7 +2005,7 @@
         count = {8 12}
         all = {
           6 "GOBLIN_PLAYER"
-		  1 "RAT"
+          1 "RAT"
         }
       }
     }
@@ -2032,7 +2031,7 @@
     }
     buildingId = "WOOD"
     furniture = { "roomFurniture" }
-	shopItems = { "iron" }
+    shopItems = { "iron" }
     outsideFeatures = "villageOutside"
     }
   }
@@ -2069,8 +2068,8 @@
             14 "HELL_KNIGHT_BRUTE"
             10 "HELL_KNIGHT_LORD"
             12 "HELL_KNIGHT_SWORDMASTER"
-		  }
-		}
+          }
+        }
         civilians = {
           count = {2 5}
           all = { 1 "HELL_PORTAL" }
@@ -2088,7 +2087,7 @@
       triggers = {SelfVictims StolenItems MiningInProximity}
       attackBehaviour = KillLeader
       ransom = 0.5 80
-	}
+    }
   }
   "CENTAURS"
   {
@@ -2097,15 +2096,15 @@
     type = MapLayoutId "castle48"
     tribe = HUMAN
     inhabitants = {
-	  leader = {{ "CENTAUR_KING" }}
+      leader = {{ "CENTAUR_KING" }}
       fighters = {
           count = {40 55}
           all = {
             1 "CENTAUR_PRIESTESS"
             1 "CENTAUR_KNIGHT"
-			1 "CENTAUR_ARCHER"
-		 }
-	   }
+            1 "CENTAUR_ARCHER"
+         }
+       }
      }
   race = "centaurs"
   buildingId = "CITY_BRICK"
@@ -2125,10 +2124,10 @@
         RoomTrigger "THRONE" 0.0003
         RoomTrigger "IMPALED_HEAD" 0.0001
         SelfVictims
-        NumConquered 3
         StolenItems
         FinishOff
-        Proximity
+        EnemyPopulation 45
+        NumConquered 15
     }
     attackBehaviour = KillLeader
     ransom = 0.9 300
@@ -2138,7 +2137,7 @@
         ids = {  "CENTAUR_ARCHER" "CENTAUR_PRIESTESS" "CENTAUR_KNIGHT" }
         traits = {FIGHTER}
         frequency = 1
-	  }
+      }
     }
   }
   "AMAZONS"
@@ -2146,7 +2145,7 @@
     settlement = {
       type = Builtin VILLAGE
       inhabitants = {
-	    leader = {{  "AMAZON_QUEEN" }}
+        leader = {{  "AMAZON_QUEEN" }}
         fighters = {
           count = {10 15}
           all = {
@@ -2177,10 +2176,10 @@
       minPopulation = 5
       minTeamSize = 4
       triggers = {
-        EnemyPopulation 25
+        EnemyPopulation 15
       }
       attackBehaviour = KillLeader
-	}
+    }
   }
   "VULTURE_ABOMINATIONS"
   {
@@ -2192,11 +2191,11 @@
         fighters = {
           count = {25 30}
           all = {
-		    6 "VULTURE_ABOMINATION"
+            6 "VULTURE_ABOMINATION"
             1 "EYE_SERVANT"
           }
         }
-	  }
+      }
       race = "abominations"
       buildingId = "DUNGEON"
     }
@@ -2220,8 +2219,8 @@
       topLevel = MainEnemy
       levels = {
         { ExtraEnemy { "IMPRISONED_FAIRY" { 1 } } 28 16 MINETOWN }
-	  }
-	}
+      }
+    }
   }
   "IMPRISONED_FAIRY"
   {
@@ -2247,7 +2246,7 @@
             1 "WATER_ELEMENTAL"
           }
         }
-	  }
+      }
       tribe = MONSTER
       race = "ocean spirits"
       buildingId = "OCEAN_CAVE"
@@ -2261,8 +2260,8 @@
         ids = {"WATER_ELEMENTAL"}
         traits = {FIGHTER}
         frequency = 3
-	  }
-	}
+      }
+    }
   }
   "UNDEAD_SETTLEMENT"
   {
@@ -2308,8 +2307,8 @@
         ids = {"ZOMBIE"}
         traits = {FIGHTER}
         frequency = 1
-	  }
-	}
+      }
+    }
   }
   "RAT_VILLAGE"
   {
@@ -2321,16 +2320,16 @@
           count = {2 5}
           all = {
             2 "RAT_SOLDIER"
-			1 "RAT_ARCHER"
+            1 "RAT_ARCHER"
           }
         }
         civilians = {
           count = {4 8}
           all = {
-			13 "RAT_MAN"
-			14 "RAT_LADY"
+            13 "RAT_MAN"
+            14 "RAT_LADY"
             11 "RAT"
-			1  "BLACK_RAT"
+            1  "BLACK_RAT"
           }
         }
       }
@@ -2340,7 +2339,7 @@
           { "gold" 20 "TREASURE_CHEST" }
         }
         furniture = { "roomFurniture" }
-	}
+    }
   }
   "DRAGONS"
   {
@@ -2348,9 +2347,9 @@
     settlement = {
       type = Builtin CASTLE
       tribe = BANDIT
-	  race = "dragons"
-	  buildingId = "VOLCANIC_BRICK"
-	  furniture = { "randomTerrain" }
+      race = "dragons"
+      buildingId = "VOLCANIC_BRICK"
+      furniture = { "randomTerrain" }
       stockpiles = { { "minerals" 1 "BACKGROUND_RUBBLE" } }
       shopItems = { "jewellery" }
       inhabitants = {
@@ -2359,13 +2358,13 @@
           count = {10 15}
           all = {
             1 "ANCIENT_GREEN_DRAGON"
-		    1 "GREEN_DRAGON"
-		    1 "RED_DRAGON"
-		    2 "YOUNG_GREEN_DRAGON"
-		    2 "YOUNG_RED_DRAGON"
-		    6 "GREEN_DRAGONEWT"
-		    6 "RED_DRAGONNEWT"
-		  }
+            1 "GREEN_DRAGON"
+            1 "RED_DRAGON"
+            2 "YOUNG_GREEN_DRAGON"
+            2 "YOUNG_RED_DRAGON"
+            6 "GREEN_DRAGONEWT"
+            6 "RED_DRAGONNEWT"
+          }
         }
       }
     }
@@ -2384,17 +2383,17 @@
       minPopulation = 5
       minTeamSize = 4
       triggers = {
-		Gold 2000
+        Gold 2000
       }
       attackBehaviour = StealGold
-	}
+    }
   }
   "SHADOW_TEMPLE"
   {
     settlement = {
       type = Builtin TEMPLE
       tribe = HOSTILE
-	  locationName = "the shadow king"
+      locationName = "the shadow king"
       race = "shadow altar"
       inhabitants = {
           leader = { { "SKELETON_MAGE" } }
@@ -2428,8 +2427,8 @@
         traits = {FIGHTER}
         frequency = 20
         spawnLocation = InsideTerritory
-	  }
-	}
+      }
+    }
   }
   "LION_PRIDE"
   {
@@ -2478,19 +2477,19 @@
         fighters = {
           count = {18 24}
           all = {
-		    3 "RAT_SOLDIER"
-		    6 "RAT_GENERAL"
-		    2 "RAT_ARCHER"
-		  }
-		}
+            3 "RAT_SOLDIER"
+            6 "RAT_GENERAL"
+            2 "RAT_ARCHER"
+          }
+        }
         civilians = {
           count = {4 8}
           all = {
-			6 "RAT_LADY"
+            6 "RAT_LADY"
             1 "RAT"
-			}
-		}
-	}
+            }
+        }
+    }
       locationNameGen = "TOWN"
       race = "Royal Rat Family"
       buildingId = "MUD"
@@ -2502,8 +2501,8 @@
       levels = {
         { ExtraEnemy { "RATMEN_DUNGEON" { 3 4 } } 100 100 DUNGEON }
         { MainEnemy 80 80 MINETOWN }
-		  }
-	  }
+          }
+      }
   }
   "RATMEN_ENTRY"
   {
@@ -2515,21 +2514,21 @@
         fighters = {
           count = {10 15}
           all = {
-		    5 "RAT_SOLDIER"
-		    1 "RAT_GENERAL"
-		    3 "RAT_ARCHER"
-		  }
-		}
+            5 "RAT_SOLDIER"
+            1 "RAT_GENERAL"
+            3 "RAT_ARCHER"
+          }
+        }
         civilians = {
           count = {2 4}
           all = {
-			13 "RAT_MAN"
-			14 "RAT_LADY"
+            13 "RAT_MAN"
+            14 "RAT_LADY"
             11 "RAT"
-			1  "BLACK_RAT"
-			}
-		  }
-		}
+            1  "BLACK_RAT"
+            }
+          }
+        }
       locationName = "the Guard"
       race = "ratmen"
       buildingId = "MUD"
@@ -2545,8 +2544,8 @@
         ids = { "RAT_SOLDIER" "RAT_GENERAL" "RAT_ARCHER" }
         traits = { FIGHTER }
         frequency = 1
-	  }
-	}
+      }
+    }
   }
   "RATMEN_DUNGEON"
   {
@@ -2558,20 +2557,20 @@
       buildingId = "DUNGEON"
       furniture = { "roomFurniture" }
       inhabitants = {
-	    leader = {{ "RAT_GENERAL" }}
+        leader = {{ "RAT_GENERAL" }}
         fighters = {
           count = {15 20}
           all = {
-		    5 "RAT_SOLDIER"
-		    1 "RAT_GENERAL"
-		    3 "RAT_ARCHER"
+            5 "RAT_SOLDIER"
+            1 "RAT_GENERAL"
+            3 "RAT_ARCHER"
           }
         }
         civilians = {
           count = {5 10}
           all = {
-			3 "RAT_MAN"
-			4 "RAT_LADY"
+            3 "RAT_MAN"
+            4 "RAT_LADY"
             1 "RAT"
           }
         }
@@ -2584,7 +2583,7 @@
       type = Builtin FORREST_COTTAGE
       tribe = MONSTER
       inhabitants = {
-	    leader = {{ "GORGON" }}
+        leader = {{ "GORGON" }}
         fighters = {
           count = {10 15}
           all = {
@@ -2602,7 +2601,7 @@
       minPopulation = 5
       minTeamSize = 5
       triggers = {
-        EnemyPopulation 30
+        EnemyPopulation 15
       }
       attackBehaviour = CampAndSpawn {
         count = {1 2}
@@ -2650,7 +2649,7 @@
   "HELL_KNIGHT_ISLAND" inherit "DRAGON_NEWT_COTTAGE"
   {
   settlement = append {
-	buildingId = "VOLCANIC_ISLAND"
+    buildingId = "VOLCANIC_ISLAND"
     type = Builtin MINETOWN
     outsideFeatures = "fireproof_chests"
     inhabitants = {
@@ -2735,12 +2734,12 @@
     type = Builtin VILLAGE
     tribe = DARK_ELF #Evil alignment
     inhabitants = { 
-		leader = { { "SHADOW_KNIGHT" } } 
-	    fighters = {
-			count = {7 10}
-			all = { 1 "SHADOW_SPIRIT" }
-	  }
-	}
+        leader = { { "SHADOW_KNIGHT" } } 
+        fighters = {
+            count = {7 10}
+            all = { 1 "SHADOW_SPIRIT" }
+      }
+    }
     buildingId = "SHADOW_CITY_GRASS"  
     furniture = { "palace_furniture" }
     outsideFeatures = "villageOutside"
@@ -2752,12 +2751,12 @@
     type = Builtin VILLAGE
     tribe = GNOME #Neutral alignment
     inhabitants = { 
-		leader = { { "GNOME_CHIEF" } } 
-	    fighters = {
-			count = { 10 11 }
-			all = { 1 "STONE_GOLEM" }
-	  }
-	}
+        leader = { { "GNOME_CHIEF" } } 
+        fighters = {
+            count = { 10 11 }
+            all = { 1 "STONE_GOLEM" }
+      }
+    }
     buildingId = "DUNGEON"  
     furniture = { "palace_furniture" }
     outsideFeatures = "villageOutside"
@@ -2801,7 +2800,7 @@
           10 "ROYAL_PRIEST"
           30 "ROYAL_KNIGHT"
           20 "ROYAL_ARCHER"
-		  2 "DUKE"
+          2 "DUKE"
         }
       }
     }
@@ -2825,10 +2824,10 @@
       RoomTrigger "THRONE" 0.0003
       RoomTrigger "IMPALED_HEAD" 0.0001
       SelfVictims
-      NumConquered 3
       StolenItems
       FinishOff
-      Proximity
+      EnemyPopulation 70
+      NumConquered 25
     }
     attackBehaviour = KillLeader
     ransom = 0.9 400
@@ -2891,7 +2890,7 @@
           10 "SHADOW_PRIEST"
           30 "SHADOW_KNIGHT"
           20 "SHADOW_ARCHER"
-		  2 "SHADOW_DUKE"
+          2 "SHADOW_DUKE"
         }
       }
     }
@@ -2949,8 +2948,9 @@
       SelfVictims
       StolenItems
       FinishOff
-      Proximity
-	  Gold 400
+      EnemyPopulation 60
+      NumConquered 20
+      Gold 1000
     }
     attackBehaviour = StealGold
     ransom = 0.9 340
@@ -3155,13 +3155,13 @@
   "BOTTOMLESS_ENTRY_ADVANCED" inherit "BOTTOMLESS_ENTRY" {
     settlement = append {
       buildingId = "CITY_BRICK"
-	}
+    }
   }
-	
+    
   "BOTTOMLESS_ENTRY_EXPERT" inherit "BOTTOMLESS_ENTRY" {
     settlement = append {
       buildingId = "ZOMBIE"
-	}
+    }
   }
 
 ####################################################################
@@ -3179,70 +3179,70 @@
       tribe = MONSTER
       locationName = "dungeon level"
       race = "dwellers"
-	  buildingId = "MUD"
+      buildingId = "MUD"
       furniture = { "bottomlessdungeon" }
-	  inhabitants = {
+      inhabitants = {
         leader = {{
            "RAT_KING"
            "THIEF_LEADER"
            "GNOME_CHIEF"
-		   "BANDIT_LEADER"
+           "BANDIT_LEADER"
         }}
         fighters = {
           count = {7 11}
           all = {
-			1 "BANDIT"
-			1 "RAT_SOLDIER"
-			1 "RAT_LADY"
-			1 "PESEANT"
-			1 "NOMAD"
-			1 "CHILD"
-			1 "ESKIMO_CHILD"
-			1 "NOMAD_CHILD"
-			1 "JESTER"
-			1 "THIEF"
-			1 "ZOMBIE"
-			1 "MUMMY"
-			1 "ORC"
-			1 "KOBOLD"
-			1 "GOBLIN"
-			1 "ELF"
-			1 "ELF_CHILD"
-			1 "DARK_ELF"
-			1 "DARK_ELF_CHILD"
-			1 "CENTAUR_FARMER"
-			1 "CENTAUR_CHILD"
-			1 "RAT_MAN"
-			1 "HOBGOBLIN"
-			1 "DARK_GOBLIN"
-			1 "DARK_HOBGOBLIN"
-			1 "MILITIA"
-			1 "DWARF_MILITIA"
-			1 "DWARF_WORKER"
+            1 "BANDIT"
+            1 "RAT_SOLDIER"
+            1 "RAT_LADY"
+            1 "PESEANT"
+            1 "NOMAD"
+            1 "CHILD"
+            1 "ESKIMO_CHILD"
+            1 "NOMAD_CHILD"
+            1 "JESTER"
+            1 "THIEF"
+            1 "ZOMBIE"
+            1 "MUMMY"
+            1 "ORC"
+            1 "KOBOLD"
+            1 "GOBLIN"
+            1 "ELF"
+            1 "ELF_CHILD"
+            1 "DARK_ELF"
+            1 "DARK_ELF_CHILD"
+            1 "CENTAUR_FARMER"
+            1 "CENTAUR_CHILD"
+            1 "RAT_MAN"
+            1 "HOBGOBLIN"
+            1 "DARK_GOBLIN"
+            1 "DARK_HOBGOBLIN"
+            1 "MILITIA"
+            1 "DWARF_MILITIA"
+            1 "DWARF_WORKER"
           }
-		}
+        }
         civilians = {
           count = {3 6}
           all = {
-			1 "ANT_WORKER"
-			1 "BAT"
-			1 "BOAR"
-			1 "CAMEL"
-			1 "CAVE_BEAR"
-			1 "CHICKEN"
-			1 "CLAY_GOLEM"
-			1 "COW"
-			1 "DEER"
-			1 "DOG"
-			1 "DONKEY"
-			1 "FLY"
-			1 "FOX"
-			1 "GOAT"
-			1 "HORSE"
-			1 "IMP"
-			1 "JACKAL"
-			1 "PIG"
-			1 "RAT"
+            1 "ANT_WORKER"
+            1 "BAT"
+            1 "BOAR"
+            1 "CAMEL"
+            1 "CAVE_BEAR"
+            1 "CHICKEN"
+            1 "CLAY_GOLEM"
+            1 "COW"
+            1 "DEER"
+            1 "DOG"
+            1 "DONKEY"
+            1 "FLY"
+            1 "FOX"
+            1 "GOAT"
+            1 "HORSE"
+            1 "IMP"
+            1 "JACKAL"
+            1 "PIG"
+            1 "RAT"
           }
         }
       }
@@ -3255,96 +3255,96 @@
       tribe = MONSTER
       locationName = "dungeon level"
       race = "dwellers"
-	  buildingId = "WOOD_CASTLE"
+      buildingId = "WOOD_CASTLE"
       furniture = { "bottomlessdungeon" }
-	  inhabitants = {
+      inhabitants = {
         leader = {{
            "SOFT_MONSTER"
            "VAMPIRE_LORD"
            "DWARF_BARON"
            "LIZARDLORD"
            "ELF_LORD"
-		   "DARK_ELF_LORD"
-		   "CENTAUR_KING"
-		   "LION_QUEEN"
-		   "DWARF_QUEEN"
-		   "GOBLIN_KING"
-		}}
+           "DARK_ELF_LORD"
+           "CENTAUR_KING"
+           "LION_QUEEN"
+           "DWARF_QUEEN"
+           "GOBLIN_KING"
+        }}
         fighters = {
           count = {7 11}
           all = {
-			1 "ARCHER"
-			1 "SKELETON"
-			1 "HARPY"
-			1 "ELF_ARCHER"
-			1 "DRIAD"
-			1 "CENTAUR_ARCHER"
-			1 "AMAZON_ARCHER"
-			1 "RAT_ARCHER"
-			1 "GOBLIN_ARCHER"
-			1 "CENTAUR_HUNTER"
-			1 "ADVENTURER"
-			1 "WITCHMAN"
-			1 "DEMON_DWELLER"
-			1 "KNIGHT"
-			1 "WARRIOR"
-			1 "OGRE"
-			1 "DWARF"
-			1 "DWARF_FEMALE"
-			1 "LIZARDMAN"
-			1 "DARK_ELF_WARRIOR"
-			1 "WEREWOLF"
-			1 "ABOMINATION"
-			1 "CENTAUR_KNIGHT"
-			1 "AMAZON"
-			1 "AMAZON_CHAMPION"
-			1 "AMAZON_WAR_MAIDEN"
-			1 "RED_DRAGONNEWT"
-			1 "GREEN_DRAGONEWT"
-			1 "HELL_KNIGHT"
-			1 "HELL_KNIGHT_BRUTE"
-			1 "HELL_KNIGHT_SWORDMASTER"
-			1 "RAT_GENERAL"
-			1 "ARACHNE"
-			1 "COW_DEMON"
-			1 "ARMORED_COW_DEMON"
-			1 "BANSHEE"
-			1 "GIANT"
-			1 "MUSHROOM_MAN"
-			1 "OGRE_FEMALE"
-			1 "SHARD_SPITTER"
-			1 "SQUIDHOLDER"
-			1 "WARRIOR_HERO"
-			1 "THIEF_HERO"
-			1 "DARK_ORC"
-			1 "DARK_ORC_FEMALE"
-			1 "DARK_OGRE"
-			1 "DARK_OGRE_FEMALE"
-			1 "ELITE_GOBLIN_GUARD"
-			1 "GOBLIN_BRUTE"
-			1 "GOBLIN_KABOOMER"
-			1 "GOBLIN_MATRON"
-			1 "GOBLIN_WARRIOR"
-			1 "COMBAT_SUCCUBUS"
-			1 "SKELETON_WARRIOR"
-			1 "DWARF_FIGHTER"
-			1 "DWARF_WARRIOR"
-	        1 "ELITE_DWARF_WARRIOR"
-	        1 "ANT_SOLDIER"
-	        1 "AIR_ELEMENTAL"
-	        1 "EARTH_ELEMENTAL"
-	        1 "ENT"
-	        1 "FIRE_ELEMENTAL"
-	        1 "FIRE_SPHERE"
-	        1 "EYE_SERVANT"
-	        1 "IRON_GOLEM"
-	        1 "HEALING_TOTEM"
-	        1 "LAVA_GOLEM"
-	        1 "LOST_SOUL"
-	        1 "STONE_GOLEM"
-	        1 "SNAKE"
-	        1 "SPIDER"
-		  }
+            1 "ARCHER"
+            1 "SKELETON"
+            1 "HARPY"
+            1 "ELF_ARCHER"
+            1 "DRIAD"
+            1 "CENTAUR_ARCHER"
+            1 "AMAZON_ARCHER"
+            1 "RAT_ARCHER"
+            1 "GOBLIN_ARCHER"
+            1 "CENTAUR_HUNTER"
+            1 "ADVENTURER"
+            1 "WITCHMAN"
+            1 "DEMON_DWELLER"
+            1 "KNIGHT"
+            1 "WARRIOR"
+            1 "OGRE"
+            1 "DWARF"
+            1 "DWARF_FEMALE"
+            1 "LIZARDMAN"
+            1 "DARK_ELF_WARRIOR"
+            1 "WEREWOLF"
+            1 "ABOMINATION"
+            1 "CENTAUR_KNIGHT"
+            1 "AMAZON"
+            1 "AMAZON_CHAMPION"
+            1 "AMAZON_WAR_MAIDEN"
+            1 "RED_DRAGONNEWT"
+            1 "GREEN_DRAGONEWT"
+            1 "HELL_KNIGHT"
+            1 "HELL_KNIGHT_BRUTE"
+            1 "HELL_KNIGHT_SWORDMASTER"
+            1 "RAT_GENERAL"
+            1 "ARACHNE"
+            1 "COW_DEMON"
+            1 "ARMORED_COW_DEMON"
+            1 "BANSHEE"
+            1 "GIANT"
+            1 "MUSHROOM_MAN"
+            1 "OGRE_FEMALE"
+            1 "SHARD_SPITTER"
+            1 "SQUIDHOLDER"
+            1 "WARRIOR_HERO"
+            1 "THIEF_HERO"
+            1 "DARK_ORC"
+            1 "DARK_ORC_FEMALE"
+            1 "DARK_OGRE"
+            1 "DARK_OGRE_FEMALE"
+            1 "ELITE_GOBLIN_GUARD"
+            1 "GOBLIN_BRUTE"
+            1 "GOBLIN_KABOOMER"
+            1 "GOBLIN_MATRON"
+            1 "GOBLIN_WARRIOR"
+            1 "COMBAT_SUCCUBUS"
+            1 "SKELETON_WARRIOR"
+            1 "DWARF_FIGHTER"
+            1 "DWARF_WARRIOR"
+            1 "ELITE_DWARF_WARRIOR"
+            1 "ANT_SOLDIER"
+            1 "AIR_ELEMENTAL"
+            1 "EARTH_ELEMENTAL"
+            1 "ENT"
+            1 "FIRE_ELEMENTAL"
+            1 "FIRE_SPHERE"
+            1 "EYE_SERVANT"
+            1 "IRON_GOLEM"
+            1 "HEALING_TOTEM"
+            1 "LAVA_GOLEM"
+            1 "LOST_SOUL"
+            1 "STONE_GOLEM"
+            1 "SNAKE"
+            1 "SPIDER"
+          }
         }
       }
     }
@@ -3356,69 +3356,69 @@
       tribe = MONSTER
       locationName = "dungeon level"
       race = "dwellers"
-	  buildingId = "BRICK"
+      buildingId = "BRICK"
       furniture = { "bottomlessdungeon" }
-	  inhabitants = {
+      inhabitants = {
         leader = {{
            "VAMPIRE_LORD"
            "DWARF_BARON"
            "LIZARDLORD"
            "ELF_LORD"
-		   "DARK_ELF_LORD"
-		   "CENTAUR_KING"
-		   "LION_QUEEN"
-		   "DWARF_QUEEN"
+           "DARK_ELF_LORD"
+           "CENTAUR_KING"
+           "LION_QUEEN"
+           "DWARF_QUEEN"
            "DEMON_LORD"
            "DJINN"
            "CYCLOPS"
            "DUKE"
            "MINOTAUR"
-		   "AMAZON_QUEEN"
-		   "HELL_KNIGHT_LORD"
+           "AMAZON_QUEEN"
+           "HELL_KNIGHT_LORD"
         }}
         fighters = {
           count = {6 10}
           all = {
-			1 "SUCCUBUS"
-			1 "WITCH"
-			1 "PRIEST"
-			1 "SHAMAN"
-			1 "SORCERER"
-			1 "VAMPIRE"
-			1 "ORC_MAGE"
-			1 "ORC_HEALER"
-			1 "GNOME"
-			1 "ELEMENTALIST"
-			1 "ANGEL"
-			1 "ADOXIE_PRIEST"
-			1 "AMAZON_ELDER"
-			1 "AIR_FAIRY"
-			1 "DARK_FAIRY"
-			1 "DEMON_FAIRY"
-			1 "EARTH_FAIRY"
-			1 "ELECTRIC_FAIRY"
-			1 "FIRE_FAIRY"
-			1 "LIGHT_FAIRY"
-			1 "MAGIC_FAIRY"
-			1 "NATURE_FAIRY"
-			1 "WATER_FAIRY"
-			1 "GORGON"
-			1 "CLERIC_HERO"
-			1 "WIZARD_HERO"
-			1 "WIZARD_ADVENTURER"
-			1 "GOBLIN_CHICKENMANCER"
-			1 "GOBLIN_HIGH_PRIEST"
-			1 "GOBLIN_LEPRECHAUN"
-			1 "DWARF_MONK"
-			1 "NECROMANCER"
-			1 "GOBLIN_PRIEST"
-			1 "GOBLIN_WIZARD"
-			1 "SKELETON_MAGE"
-			1 "ANT_QUEEN"
-			1 "AUTOMATON"
-			1 "GREEN_DRAGON"
-			1 "RED_DRAGON"
-			1 "HYDRA"
+            1 "SUCCUBUS"
+            1 "WITCH"
+            1 "PRIEST"
+            1 "SHAMAN"
+            1 "SORCERER"
+            1 "VAMPIRE"
+            1 "ORC_MAGE"
+            1 "ORC_HEALER"
+            1 "GNOME"
+            1 "ELEMENTALIST"
+            1 "ANGEL"
+            1 "ADOXIE_PRIEST"
+            1 "AMAZON_ELDER"
+            1 "AIR_FAIRY"
+            1 "DARK_FAIRY"
+            1 "DEMON_FAIRY"
+            1 "EARTH_FAIRY"
+            1 "ELECTRIC_FAIRY"
+            1 "FIRE_FAIRY"
+            1 "LIGHT_FAIRY"
+            1 "MAGIC_FAIRY"
+            1 "NATURE_FAIRY"
+            1 "WATER_FAIRY"
+            1 "GORGON"
+            1 "CLERIC_HERO"
+            1 "WIZARD_HERO"
+            1 "WIZARD_ADVENTURER"
+            1 "GOBLIN_CHICKENMANCER"
+            1 "GOBLIN_HIGH_PRIEST"
+            1 "GOBLIN_LEPRECHAUN"
+            1 "DWARF_MONK"
+            1 "NECROMANCER"
+            1 "GOBLIN_PRIEST"
+            1 "GOBLIN_WIZARD"
+            1 "SKELETON_MAGE"
+            1 "ANT_QUEEN"
+            1 "AUTOMATON"
+            1 "GREEN_DRAGON"
+            1 "RED_DRAGON"
+            1 "HYDRA"
           }
         }
       }
@@ -3432,9 +3432,9 @@
       tribe = MONSTER
       locationName = "dungeon level"
       race = "dwellers"
-	  buildingId = "RUINS"
+      buildingId = "RUINS"
       furniture = { "bottomlessdungeon" }
-	  inhabitants = {
+      inhabitants = {
         fighters = {
           count = {4 5}
           all = {
@@ -3443,16 +3443,16 @@
            1 "DWARF_BARON"
            1 "LIZARDLORD"
            1 "ELF_LORD"
-		   1 "DARK_ELF_LORD"
-		   1 "CENTAUR_KING"
-		   1 "LION_QUEEN"
-		   1 "DWARF_QUEEN"
+           1 "DARK_ELF_LORD"
+           1 "CENTAUR_KING"
+           1 "LION_QUEEN"
+           1 "DWARF_QUEEN"
            1 "DJINN"
            1 "CYCLOPS"
            1 "DUKE"
            1 "MINOTAUR"
-		   1 "AMAZON_QUEEN"
-		   1 "HELL_KNIGHT_LORD"
+           1 "AMAZON_QUEEN"
+           1 "HELL_KNIGHT_LORD"
           }
         }
       }
@@ -3473,10 +3473,10 @@
   "BOTTOMLESS_TYPE_3c" inherit "BOTTOMLESS_TYPE_3"
      { settlement = append { buildingId = "TAINTED" inhabitants = append { fighters = append { count = {3 7}}}}}
       
-	  
+      
   #Define 100 levels of dungeons with increasing difficulty based on the base classes available.
   #This ensures that there is a continuous stream of enemies available getting gradually harder.  
-	  
+      
   "BOTTOMLESS1" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 1 } } } } }
   "BOTTOMLESS2" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 3 } } } } }
   "BOTTOMLESS3" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 5 } } } } }
