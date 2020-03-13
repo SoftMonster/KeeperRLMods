@@ -252,7 +252,10 @@
   { "axedio_foot_right" "@" ColorId PURPLE }
   { "axedio_hand_left" "@" ColorId PURPLE }
   { "axedio_hand_right" "@" ColorId PURPLE }
-  
+  { "assassin" "@" ColorId GRAY }
+  { "assassin_female" "@" ColorId GRAY }
+  { viewId = "shuriken" symbol = "✫" color = ColorId GRAY isSymbolFont = true }
+
  #King
   { "king" "@" ColorId PURPLE }
   { "shadow_king" "@" ColorId LIGHT_GRAY }

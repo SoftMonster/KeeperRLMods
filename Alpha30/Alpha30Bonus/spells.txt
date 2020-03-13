@@ -587,14 +587,14 @@
  {
    symbol = "🐔"
    effect = Summon "GIANT_CHICKEN" { 4 7 } 100
-   cooldown = 30
+   cooldown = 40
    sound = SPELL_SUMMON_SPIRIT
  }
 "summon chickens"
  {
    symbol = ".."
    effect = Summon "BATTLE_CHICKEN" { 4 7 } 100
-   cooldown = 10
+   cooldown = 20
    sound = SPELL_SUMMON_SPIRIT
  }
 "summon goblin kaboomers"
@@ -916,7 +916,7 @@
    effect = ChooseRandom { Lasting BLIND FixedDamage DAMAGE 1 CUT }
    cooldown = 10
    sound = SHOOT_BOW
-   message = "throw sand!" "throws sand!"
+   message = "throws sand!" "throws sand!"
  }
 "decapitate"
  {
@@ -945,7 +945,7 @@
 "curse of rage"
  {
    symbol = "😈"
-   effect = Chain { IncreaseAttr DAMAGE 1 IncreaseAttr DEFENSE -1 }
+   effect = Description "increases your damage stat by 1, but also lowers your defense by 1" Chain { IncreaseAttr DAMAGE 1 IncreaseAttr DEFENSE -1 }
    targetSelf = true
    cooldown = 500
    sound = SPELL_WORD_OF_POWER
@@ -959,7 +959,329 @@
   endOnly = true
   message = "jump" "jumps"
 }
-
+#------------------------------
+#Assassin Skills Mar 2020
+#------------------------------
+"vitals strike" 
+ {
+   symbol = "🗡"
+   range = 1
+   effect = Description "has a chance to deal high damage, moderate damage, low damage, or cause blindness" ChooseRandom { Lasting BLIND FixedDamage DAMAGE 20 STAB FixedDamage DAMAGE 60 STAB FixedDamage DAMAGE 180 STAB }
+   cooldown = 80
+   sound = BLADE_DAMAGE
+   message = "go for vitals!" "goes for vitals!"
+ }
+"advanced vitals strike" 
+ {
+   symbol = "🗡"
+   upgrade = "vitals strike"
+   range = 1
+   effect = Description "has a chance to deal insane damage, moderately high damage, or cause blindness" ChooseRandom { Lasting BLIND FixedDamage DAMAGE 80 STAB FixedDamage DAMAGE 200 STAB }
+   cooldown = 70
+   sound = BLADE_DAMAGE
+   message = "go for vitals!" "goes for vitals!"
+ }
+"expert vitals strike" 
+ {
+   symbol = "🗡"
+   upgrade = "advanced vitals strike"
+   range = 1
+   effect = Description "has a chance to deal insane damage, high damage, or cause blindness" ChooseRandom { Lasting BLIND FixedDamage DAMAGE 100 STAB FixedDamage DAMAGE 250 STAB }
+   cooldown = 60
+   sound = BLADE_DAMAGE
+   message = "go for vitals!" "goes for vitals!"
+ }
+"assassinate" 
+ {
+   symbol = "🗡"
+   range = 1
+   effect = Description "causes massive damage to a single target" FixedDamage DAMAGE 350 CUT 
+   cooldown = 200
+   sound = BLADE_DAMAGE
+   message = "go for vitals!" "goes for vitals!"
+ }
+"curse of risks"
+ {
+   symbol = "😈"
+   effect = Description "Can either increase a random stat by 1 or decrease defense by 3 or 5" ChooseRandom { IncreaseAttr DAMAGE 1 IncreaseAttr SPELL_DAMAGE 1 IncreaseAttr RANGED_DAMAGE 1 IncreaseAttr DEFENSE 1 IncreaseAttr DEFENSE -3 IncreaseAttr DEFENSE -5 }
+   targetSelf = true
+   cooldown = 500
+   sound = SPELL_WORD_OF_POWER
+ }
+ "shadow step"
+ {
+   symbol = "⇢"
+   effect = Chain { Jump Deception }
+   range = 6
+   cooldown = 10
+   sound = SPELL_DECEPTION
+   endOnly = true
+   message = "step through shadows" "steps through shadows"
+ }
+ "escape slash"
+ {
+   symbol = "✈️☽"
+   effect = Chain { Damage DAMAGE CUT Escape }
+   range = 1
+   cooldown = 4
+   sound = BLADE_DAMAGE
+   message = "use magic in an attack" "uses magic in an attack"
+ }
+ "smoke bomb"
+ {
+   symbol = "✈️💥"
+   effect = Chain { CircularBlast Lasting INVISIBLE Escape }
+   cooldown = 100
+   sound = SPELL_DECEPTION
+   message = "throw a smoke bomb" "throws a smoke bomb"
+ }
+"substitute"
+ {
+   symbol = "⇅"
+   effect = Chain { SwapPosition Deception }
+   range = 8
+   cooldown = 30
+   endOnly = true
+   message = "use an ability" "uses an ability"
+ }
+ "double strike"
+ {
+   symbol = "☽☽"
+   effect = Chain { Damage DAMAGE CUT Damage DAMAGE STAB }
+   range = 1
+   cooldown = 8
+   sound = BLADE_DAMAGE
+   message = "hit twice" "hits twice"
+ }
+ "armor strike"
+ {
+   symbol = "💥🛡"
+   effect = Chain { Damage DAMAGE CUT Enhance ARMOR -1 }
+   range = 1
+   cooldown = 4
+   sound = BLUNT_DAMAGE
+   message = "damage an armor piece" "damages an armor piece"
+ }
+ "weapon strike"
+ {
+   symbol = "💥⚔"
+   effect = Chain { Damage DAMAGE CUT Enhance WEAPON -1 }
+   range = 1
+   cooldown = 4
+   sound = BLUNT_DAMAGE
+   message = "damage a weapon" "damages a weapon"
+ }
+ "triple strike"
+ {
+   symbol = "☽☽☽"
+   upgrade = "double strike"
+   effect = Chain { Damage DAMAGE CUT Damage DAMAGE STAB Damage DAMAGE CUT }
+   range = 1
+   cooldown = 8
+   sound = BLADE_DAMAGE
+   message = "hit three times" "hits three times"
+ }
+ "throwing star"
+ {
+   symbol = "✫"
+   effect = Damage RANGED_DAMAGE STAB
+   range = 6
+   cooldown = 0
+   endOnly = true
+   sound = SHOOT_BOW
+   projectileViewId = {"shuriken"}
+   message = "throw a star" "throws a star"
+ }
+ "advanced throwing star"
+ {
+   symbol = "✫"
+   upgrade = "throwing star"
+   effect = Damage RANGED_DAMAGE STAB
+   range = 8
+   cooldown = 0
+   endOnly = true
+   sound = SHOOT_BOW
+   message = "throw a star" "throws a star"
+ }
+ "expert throwing star"
+ {
+   symbol = "✫"
+   upgrade = "advanced throwing star"
+   effect = Damage RANGED_DAMAGE STAB
+   range = 10
+   cooldown = 0
+   endOnly = true
+   sound = SHOOT_BOW
+   projectileViewId = {"shuriken"}
+   message = "throw a star" "throws a star"
+ }
+ "master throwing star"
+ {
+   symbol = "✫"
+   upgrade = "expert throwing star"
+   effect = Damage RANGED_DAMAGE STAB
+   range = 12
+   cooldown = 0
+   endOnly = true
+   sound = SHOOT_BOW
+   projectileViewId = {"shuriken"}
+   message = "throw a star" "throws a star"
+ }
+ "poison star"
+ {
+   symbol = "✦"
+   effect = Chain { Damage RANGED_DAMAGE STAB Lasting POISON }
+   range = 6
+   cooldown = 1
+   endOnly = true
+   sound = SHOOT_BOW
+   projectileViewId = {"shuriken"}
+   message = "throw a poison star" "throws a poison star"
+ }
+ "advanced poison star"
+ {
+   symbol = "✦"
+   upgrade = "poison star"
+   effect = Chain { Damage RANGED_DAMAGE STAB Lasting POISON }
+   range = 8
+   cooldown = 1
+   endOnly = true
+   sound = SHOOT_BOW
+   projectileViewId = {"shuriken"}
+   message = "throw a poison star" "throws a poison star"
+ }
+ "bleeding star"
+ {
+   symbol = "✷"
+   effect = Chain { Damage RANGED_DAMAGE STAB Lasting BLEEDING }
+   range = 6
+   cooldown = 1
+   endOnly = true
+   sound = SHOOT_BOW
+   projectileViewId = {"shuriken"}
+   message = "throw a bleeding star" "throws a bleeding star"
+ }
+ "advanced bleeding star"
+ {
+   symbol = "✷"
+   upgrade = "bleeding star"
+   effect = Chain { Damage RANGED_DAMAGE STAB Lasting BLEEDING }
+   range = 8
+   cooldown = 1
+   endOnly = true
+   sound = SHOOT_BOW
+   projectileViewId = {"shuriken"}
+   message = "throw a bleeding star" "throws a bleeding star"
+ }
+ "escape star"
+ {
+   symbol = "✲"
+   effect = Chain { Damage RANGED_DAMAGE STAB Escape Lasting SPEED }
+   range = 8
+   cooldown = 1
+   endOnly = true
+   sound = SHOOT_BOW
+   projectileViewId = {"shuriken"}
+   message = "throw an escape star" "throws an escape star"
+ }
+  "double star"
+ {
+   symbol = "✫✫"
+   effect = Chain { Damage RANGED_DAMAGE STAB Damage RANGED_DAMAGE STAB }
+   range = 8
+   cooldown = 2
+   endOnly = true
+   sound = SHOOT_BOW
+   projectileViewId = {"shuriken"}
+   message = "throw stars" "throws stars"
+ }
+  "triple star"
+ {
+   symbol = "✫✫✫"
+   upgrade = "double star"
+   effect = Chain { Damage RANGED_DAMAGE STAB Damage RANGED_DAMAGE STAB Damage RANGED_DAMAGE STAB }
+   range = 8
+   cooldown = 2
+   endOnly = true
+   sound = SHOOT_BOW
+   projectileViewId = {"shuriken"}
+   message = "throw stars" "throws stars"
+ }
+ "summon shades"
+ {
+   symbol = "🕵"
+   effect = Summon "SHADE" { 3 4 } 100
+   cooldown = 200
+   sound = SPELL_SUMMON_SPIRIT
+ }
+"shadow bolt"
+  {
+    symbol = "⥇"
+    effect = Chain { Damage SPELL_DAMAGE SPELL Escape Lasting INSANITY }
+    range = 8
+    cooldown = 10
+	endOnly = true
+    sound = SPELL_BLAST
+  }
+"advanced shadow bolt"
+  {
+    symbol = "⥇"
+	upgrade = "shadow bolt"
+    effect = Chain { Damage SPELL_DAMAGE SPELL Escape Lasting INSANITY }
+    range = 9
+    cooldown = 8
+	endOnly = true
+    sound = SPELL_BLAST
+  }
+"expert shadow bolt"
+  {
+    symbol = "⥇"
+	upgrade = "advanced shadow bolt"
+    effect = Chain { Damage SPELL_DAMAGE SPELL Escape Lasting INSANITY }
+    range = 10
+    cooldown = 6
+	endOnly = true
+    sound = SPELL_BLAST
+  }
+ "summon shadow clones"
+  {
+    symbol = "🕵"
+    effect = Summon "SHADOW_CLONE" { 3 4 } 100
+    cooldown = 200
+    sound = SPELL_SUMMON_SPIRIT
+  }
+ "summon shadow clone army"
+  {
+    symbol = "🕵"
+    effect = Summon "SHADOW_CLONE" { 12 16 } 500
+    cooldown = 1000
+    sound = SPELL_SUMMON_SPIRIT
+  }
+ "web wall"
+  {
+    symbol = "🕸"
+    effect =  CustomArea PlaceFurniture "WEB_TRAP" { 0 -1 0 0 0 1 }
+    endOnly = true
+    range = 4
+    cooldown = 30
+    sound = none
+  }
+"vanish"
+  {
+    symbol = "🕵️"
+    effect = Chain { Lasting INVISIBLE Teleport }
+    range = 8
+    cooldown = 100
+	endOnly = true
+    sound = SPELL_TELEPORT
+  }
+"split spirit"
+  {
+    symbol = "👤👤"
+    effect = Chain { IncreaseAttr DAMAGE -4 IncreaseAttr SPELL_DAMAGE -4 IncreaseAttr RANGED_DAMAGE -4 IncreaseAttr DEFENSE -4 Summon "ASSASSIN_SPIRIT_CLONE" { 1 } 0 }
+    cooldown = 500
+    sound = SPELL_WORD_OF_POWER
+  }
 #-------------------------
 #Water spells
 #-------------------------
@@ -1073,4 +1395,3 @@
    cooldown = 1000
    sound = SPELL_AIR_BLAST
  }
-

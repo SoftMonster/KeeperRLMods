@@ -173,7 +173,10 @@
       }
     }
   "GREEN_DRAGON" modify append {
-      # Modded
+    attr = {
+      DAMAGE 55
+      DEFENSE 52
+    }
       chatReactionFriendly = "\"Kos Haas\""
       chatReactionHostile = "\"Viidost Al Hi Joor\""
       deathDescription = "slain"
@@ -189,7 +192,10 @@
     }
   }
   "RED_DRAGON" modify append {
-      #Modding
+    attr = {
+      DAMAGE 55
+      DEFENSE 52
+    }
       chatReactionFriendly = "\"Lingrah Laas Wah Hi\""
       chatReactionHostile = "\"Aal Yol Du Hi Joor!\""
       deathDescription = "slain"
@@ -1785,8 +1791,8 @@
     {
       viewId = { "ancient_greendragon" }
       attr = {
-        DAMAGE 65
-        DEFENSE 55
+        DAMAGE 75
+        DEFENSE 60
       }
       name = {
         name = "ancient green dragon"
@@ -1803,8 +1809,8 @@
     {
       viewId = { "ancient_reddragon" }
       attr = {
-        DAMAGE 65
-        DEFENSE 52
+        DAMAGE 75
+        DEFENSE 60
       }
       name = {
         name = "ancient red dragon"
@@ -1822,7 +1828,7 @@
       viewId = { "young_reddragon" }
       attr = {
         DAMAGE 35
-        DEFENSE 22
+        DEFENSE 35
       }
       name = {
         name = "young red dragon"
@@ -1843,7 +1849,7 @@
       viewId = { "young_greendragon" }
       attr = {
         DAMAGE 35
-        DEFENSE 22
+        DEFENSE 35
       }
       name = {
         name = "young green dragon"
@@ -1863,8 +1869,8 @@
     {
       viewId = { "zombiedragon" }
       attr = {
-        DAMAGE 35
-        DEFENSE 35   
+        DAMAGE 45
+        DEFENSE 45   
       }
       body = {
         type = FourLegged HUGE
@@ -5174,7 +5180,7 @@
        }
 	}
 #-------------------------------------
-#New adventurer calsses Februrary 2020
+#New adventurer classes Februrary 2020
 #-------------------------------------
   "BARBARIAN"
     {
@@ -5215,11 +5221,113 @@
       viewId = { "barbarian_female" }
       gender = FEMALE
       name = {
-        name = "warrior"
+        name = "barbarian"
         firstNameGen = "FIRST_FEMALE"
         fullTitle = true
       }
 	}
+  "ASSASSIN"
+    {
+      viewId = { "assassin" }
+      attr = {
+        DAMAGE 30
+        DEFENSE 15
+		RANGED_DAMAGE 20
+		SPELL_DAMAGE 20
+      }
+      body = {
+        type = Humanoid LARGE
+      }
+      name = {
+        name = "assassin"
+        firstNameGen = "FIRST_MALE"
+        fullTitle = true
+      }
+      maxLevelIncrease = {
+        MELEE 12
+		ARCHERY 12
+		SPELL 12
+      }
+      hatedByEffect = HATE_HUMANS
+      spellSchools = { "assassination" "assassin magic" "assassin star arts" }
+	   spells = {
+		 "rapid invisibility"
+	  }
+      inventory = {
+        { countMin = 2 countMax = 4 type = Potion Heal FLESH }
+        { Simple "Dagger"}
+		{ Simple "LeatherArmor"}
+		{ Simple "LeatherGloves"}
+        { Simple "LeatherBoots"}
+        { Simple "GoldPiece" 26 36 }
+      }
+    }
+  "ASSASSIN_FEMALE" inherit "ASSASSIN"
+    {
+      viewId = { "assassin_female" }
+      gender = FEMALE
+      name = {
+        name = "assassin"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+	}
+  "SHADOW_CLONE"
+    {
+      viewId = { "assassin" }
+      genderAlternatives = {
+      FEMALE { "assassin_female" }
+	}
+	  courage = 1
+      attr = {
+        DAMAGE 40
+        DEFENSE 28
+		RANGED_DAMAGE 40
+		SPELL_DAMAGE 40
+      }
+      body = {
+        type = Humanoid LARGE
+		material = SPIRIT
+      }
+      name = {
+        name = "shadow clone"
+      }
+      hatedByEffect = HATE_HUMANS
+	   spells = {
+		 "invisibility"
+		 "advanced throwing star"
+		 "shadow step"
+	  }
+    }
+  "ASSASSIN_SPIRIT_CLONE"
+    {
+      viewId = { "assassin" }
+      genderAlternatives = {
+      FEMALE { "assassin_female" }
+	}
+	  courage = 1
+      attr = {
+        DAMAGE 52
+        DEFENSE 36
+		RANGED_DAMAGE 52
+		SPELL_DAMAGE 52
+      }
+      body = {
+        type = Humanoid LARGE
+		material = SPIRIT
+      }
+      name = {
+        name = "shadow clone"
+      }
+      hatedByEffect = HATE_HUMANS
+	   spells = {
+		 "invisibility"
+		 "expert throwing star"
+		 "shadow step"
+		 "vanish"
+		 "expert vitals strike"
+	  }
+    }
 #------------------------
 #Ungrouped Misc Units
 #------------------------

@@ -343,6 +343,57 @@
     "blood rage" 9
     "decapitate" 10
   }
+  "assassin magic" SPELL
+  {
+  "healing" 1
+  "escape" 2
+  "curse of risks" 2
+  "shadow bolt" 3
+  "summon shades" 4
+  "summon shadow clones" 5
+  "advanced shadow bolt" 6
+  "web wall" 7
+  "vanish" 8
+  "expert shadow bolt" 9
+  "split spirit" 10
+  "summon shadow clone army" 11
+  "rapid invisibility" 12
+  }
+  "assassination" MELEE
+  {
+  "vitals strike" 1
+  "escape slash" 2
+  "curse of risks" 2
+  "shadow step" 3
+  "smoke bomb" 4
+  "advanced vitals strike" 5
+  "substitute" 6
+  "arm strike" 7
+  "leg strike" 7
+  "double strike" 8
+  "armor strike" 9
+  "weapon strike" 9
+  "expert vitals strike" 10
+  "assassinate" 11
+  "triple strike" 12
+  }
+  "assassin star arts" ARCHERY
+  {
+  "throwing star" 1
+  "arrow shield" 2
+  "curse of risks" 2
+  "poison star" 3
+  "bleeding star" 3
+  "advanced throwing star" 4
+  "double star" 5
+  "advanced poison star" 6
+  "advanced bleeding star" 6
+  "expert throwing star" 7
+  "escape star" 8
+  "master throwing star" 9
+  "triple star" 10
+  }
+
   "water" SPELL
   {
     "elemental tea" 1

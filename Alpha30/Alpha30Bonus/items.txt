@@ -462,6 +462,20 @@
         victimEffect = { 1.0 Chain { Lasting POISON Lasting BLEEDING } } }
 		equipedEffect = { POISON_RESISTANT }	
 	}
+	"Dagger"
+	{
+		viewId = { "knife" }
+		name = "Dagger"
+		weight = 1
+		price = 65
+		itemClass = WEAPON
+		equipmentSlot = WEAPON
+		modifiers = { DAMAGE 7 }
+		weaponInfo = { 
+		attackType = STAB
+        victimEffect = { 0.4 Lasting BLEEDING }
+	  }
+	}
 #Staff of dungeon master for creative mode. Cannot be wished for.
 #Musn't be given to anything in creature inventory that can be wished for.
 #	"StaffOfDungeonMaster"
