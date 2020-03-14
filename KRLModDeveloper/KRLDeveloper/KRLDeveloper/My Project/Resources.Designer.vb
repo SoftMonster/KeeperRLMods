@@ -131,18 +131,18 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to [[File:¬ViewId¬.png|100px|link=]] &apos;&apos;¬Comment¬
+        '''  Looks up a localized string similar to [[File:¬ViewId¬.png|100px|link=]]
         '''
         '''= Base Stats =
-        '''*Gender:¬Gender¬
-        '''*Race:¬Race¬
+        '''*Gender:¬gender¬
+        '''*Alignment:¬hatedByEffect¬
         '''*Body:¬Body¬
-        '''*Attributes:¬Attributes¬
+        '''*Attributes:¬attr¬
         '''*Skills:¬Skills¬
-        '''*Trining:¬Training¬
-        '''*Spell Schools:¬Spell Schools¬
+        '''*Training Ability:¬MaxLevelIncrease¬
+        '''*Spell Schools:¬SpellSchools¬
         '''*Spells: ¬Spells¬
-        '''*Permanent Effects:¬Permanent Effects¬
+        '''*Permanent Effects:¬permanentEffects¬
         '''
         '''[[Category: Creatures]]
         '''.
@@ -150,6 +150,40 @@ Namespace My.Resources
         Friend ReadOnly Property WikiCreatureTemplate() As String
             Get
                 Return ResourceManager.GetString("WikiCreatureTemplate", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to type = Builtin |
+        '''SMALL_VILLAGE|Small village
+        '''tribe = HUMAN|Tribal Loyalty:Humanity
+        '''tribe = |Tribal Loyalty:
+        ''' = |: .
+        '''</summary>
+        Friend ReadOnly Property WikiEnemiesReplacements() As String
+            Get
+                Return ResourceManager.GetString("WikiEnemiesReplacements", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to = Stats =
+        '''*Settlement:¬settlement¬
+        '''*Configuration:¬config¬
+        '''*Immigration:¬immigrants¬
+        '''*AI:¬behaviour¬
+        '''*Notable discovery:¬discoverable¬
+        '''*Supplanted enemies:¬createOnBones¬
+        '''*Z-level connections:¬levelConnection¬
+        '''*Biomes:¬biomes¬
+        '''*Other enemy:¬otherEnemy¬
+        '''
+        '''[[Category: Tribes]]
+        '''.
+        '''</summary>
+        Friend ReadOnly Property WikiEnemiesTemplate() As String
+            Get
+                Return ResourceManager.GetString("WikiEnemiesTemplate", resourceCulture)
             End Get
         End Property
     End Module

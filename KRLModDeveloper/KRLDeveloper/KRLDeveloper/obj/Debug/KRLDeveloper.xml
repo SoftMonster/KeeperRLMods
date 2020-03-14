@@ -66,20 +66,46 @@ freedom to share and change it.  By contrast, the GNU General Public
 </member>
 <member name="P:KRLDeveloperNS.My.Resources.Resources.WikiCreatureTemplate">
 <summary>
-  Looks up a localized string similar to [[File:¬ViewId¬.png|100px|link=]] &apos;&apos;¬Comment¬
+  Looks up a localized string similar to [[File:¬ViewId¬.png|100px|link=]]
 
 = Base Stats =
-*Gender:¬Gender¬
-*Race:¬Race¬
+*Gender:¬gender¬
+*Alignment:¬hatedByEffect¬
 *Body:¬Body¬
-*Attributes:¬Attributes¬
+*Attributes:¬attr¬
 *Skills:¬Skills¬
-*Trining:¬Training¬
-*Spell Schools:¬Spell Schools¬
+*Training Ability:¬MaxLevelIncrease¬
+*Spell Schools:¬SpellSchools¬
 *Spells: ¬Spells¬
-*Permanent Effects:¬Permanent Effects¬
+*Permanent Effects:¬permanentEffects¬
 
 [[Category: Creatures]]
+.
+</summary>
+</member>
+<member name="P:KRLDeveloperNS.My.Resources.Resources.WikiEnemiesReplacements">
+<summary>
+  Looks up a localized string similar to type = Builtin |
+SMALL_VILLAGE|Small village
+tribe = HUMAN|Tribal Loyalty:Humanity
+tribe = |Tribal Loyalty:
+ = |: .
+</summary>
+</member>
+<member name="P:KRLDeveloperNS.My.Resources.Resources.WikiEnemiesTemplate">
+<summary>
+  Looks up a localized string similar to = Stats =
+*Settlement:¬settlement¬
+*Configuration:¬config¬
+*Immigration:¬immigrants¬
+*AI:¬behaviour¬
+*Notable discovery:¬discoverable¬
+*Supplanted enemies:¬createOnBones¬
+*Z-level connections:¬levelConnection¬
+*Biomes:¬biomes¬
+*Other enemy:¬otherEnemy¬
+
+[[Category: Tribes]]
 .
 </summary>
 </member>

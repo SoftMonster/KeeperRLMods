@@ -69,13 +69,13 @@
         gridData10.FileName = VanillaFolder + "\resources.txt"
         gridData10.lineBreak = "counts ="
         gridData10.Load()
-        dgvResources.DataSource = gridData10.DisplayData
+        dgvEnemies.DataSource = gridData10.DisplayData
 
         Dim gridData11 As New clsCreaturePopulator
         gridData11.FileName = VanillaFolder + "\enemies.txt"
         gridData11.lineBreak = """"
         gridData11.Load()
-        dgvResources.DataSource = gridData11.DisplayData
+        dgvEnemies.DataSource = gridData11.DisplayData
     End Sub
 
     Private Sub Sizeme() Handles Me.Resize
@@ -145,4 +145,54 @@
         Return Replace(text, removal, "",, CompareMethod.Text)
     End Function
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim row As DataGridViewRow = dgvEnemies.CurrentRow
+        If row Is Nothing Then Exit Sub
+        Dim txt As String = My.Resources.WikiEnemiesTemplate
+        Dim final As String = txt
+        Dim tribe As String = ""
+        For n = 1 To txt.Split("¬").Count - 1 Step 2
+            Dim section As String = txt.Split("¬")(n)
+            Dim value As String = ""
+            For Each column As DataGridViewColumn In dgvEnemies.Columns
+                If column.Name.ToUpper = section.ToUpper Then
+                    value = row.Cells(column.Name).Value.ToString
+                    Exit For
+                End If
+            Next
+            If value = "" Then
+                final = RemoveLine(final, "¬" + section + "¬")
+            Else
+                final = Replace(final, "¬" + section + "¬", value.Trim)
+            End If
+        Next
+        final = Replace(Replace(final, "{", ""), "}", "")
+        final = Replace(final, vbCrLf + "*", "*")
+        final = Replace(final, "*", vbCrLf + "*")
+        final = Replace(final, """", "")
+        Dim reps As String = My.Resources.WikiEnemiesReplacements
+        For n = 0 To reps.Split(vbCrLf).Count - 1
+            Dim FindReplace As String = reps.Split(vbLf)(n)
+            Dim find As String = Split(FindReplace, "|")(0)
+            Dim replce As String = Split(FindReplace, "|")(1)
+            final = final.Replace(find, replce)
+        Next n
+        final = final.Replace("*", vbCrLf + "*")
+        final = final.Replace(vbCrLf + " :", ":")
+        TextViewer.RichTextBox1.Text = final
+        TextViewer.ShowDialog()
+        If MsgBox("Copy to clipboard and launch editor on wiki?", vbYesNo) = vbNo Then
+            Exit Sub
+        End If
+        Dim link As String = "http://keeperrl.com/wiki/index.php?title=¬tribe¬&action=edit"
+        For Each word As String In tribe.Split("_")
+            If word.Length > 0 Then
+                Dim capitalWord As String = word.Substring(0, 1).ToUpper + word.Substring(1, word.Length - 1)
+                tribe = tribe.Replace(word, capitalWord)
+            End If
+        Next
+        Clipboard.SetText(TextViewer.RichTextBox1.Text)
+        tribe = InputBox("Enter wiki entry for this tribe", "Edit wiki entry", tribe)
+        Shell("Explorer """ + Replace(link, "¬tribe¬", tribe) + """")
+    End Sub
 End Class

@@ -258,7 +258,13 @@
     <None Include="Resources\COPYING.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\WikiEnemiesTemplate.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\WikiCreatureTemplate.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WikiEnemiesReplacements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

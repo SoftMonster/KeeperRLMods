@@ -43,7 +43,9 @@ Partial Class frmVanillaViewer
         Me.tbZLevels = New System.Windows.Forms.TabPage()
         Me.dgvZLevels = New System.Windows.Forms.DataGridView()
         Me.tbEnemies = New System.Windows.Forms.TabPage()
-        Me.dgvResources = New System.Windows.Forms.DataGridView()
+        Me.SplitContainer2 = New System.Windows.Forms.SplitContainer()
+        Me.dgvEnemies = New System.Windows.Forms.DataGridView()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.tbEditors.SuspendLayout()
         Me.tbCreatures.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -67,7 +69,11 @@ Partial Class frmVanillaViewer
         Me.tbZLevels.SuspendLayout()
         CType(Me.dgvZLevels, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.tbEnemies.SuspendLayout()
-        CType(Me.dgvResources, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer2.Panel1.SuspendLayout()
+        Me.SplitContainer2.Panel2.SuspendLayout()
+        Me.SplitContainer2.SuspendLayout()
+        CType(Me.dgvEnemies, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'tbEditors
@@ -307,7 +313,7 @@ Partial Class frmVanillaViewer
         '
         'tbEnemies
         '
-        Me.tbEnemies.Controls.Add(Me.dgvResources)
+        Me.tbEnemies.Controls.Add(Me.SplitContainer2)
         Me.tbEnemies.Location = New System.Drawing.Point(4, 25)
         Me.tbEnemies.Margin = New System.Windows.Forms.Padding(4)
         Me.tbEnemies.Name = "tbEnemies"
@@ -316,16 +322,43 @@ Partial Class frmVanillaViewer
         Me.tbEnemies.Text = "Enemies"
         Me.tbEnemies.UseVisualStyleBackColor = True
         '
-        'dgvResources
+        'SplitContainer2
         '
-        Me.dgvResources.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvResources.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvResources.Location = New System.Drawing.Point(0, 0)
-        Me.dgvResources.Margin = New System.Windows.Forms.Padding(4)
-        Me.dgvResources.Name = "dgvResources"
-        Me.dgvResources.RowHeadersWidth = 51
-        Me.dgvResources.Size = New System.Drawing.Size(1059, 525)
-        Me.dgvResources.TabIndex = 2
+        Me.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainer2.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer2.Name = "SplitContainer2"
+        Me.SplitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal
+        '
+        'SplitContainer2.Panel1
+        '
+        Me.SplitContainer2.Panel1.Controls.Add(Me.dgvEnemies)
+        '
+        'SplitContainer2.Panel2
+        '
+        Me.SplitContainer2.Panel2.Controls.Add(Me.Button2)
+        Me.SplitContainer2.Size = New System.Drawing.Size(1059, 525)
+        Me.SplitContainer2.SplitterDistance = 460
+        Me.SplitContainer2.TabIndex = 0
+        '
+        'dgvEnemies
+        '
+        Me.dgvEnemies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvEnemies.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvEnemies.Location = New System.Drawing.Point(0, 0)
+        Me.dgvEnemies.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvEnemies.Name = "dgvEnemies"
+        Me.dgvEnemies.RowHeadersWidth = 51
+        Me.dgvEnemies.Size = New System.Drawing.Size(1059, 460)
+        Me.dgvEnemies.TabIndex = 3
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(927, 18)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(124, 23)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Wiki Suggestion"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'frmVanillaViewer
         '
@@ -359,7 +392,11 @@ Partial Class frmVanillaViewer
         Me.tbZLevels.ResumeLayout(False)
         CType(Me.dgvZLevels, System.ComponentModel.ISupportInitialize).EndInit()
         Me.tbEnemies.ResumeLayout(False)
-        CType(Me.dgvResources, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer2.Panel1.ResumeLayout(False)
+        Me.SplitContainer2.Panel2.ResumeLayout(False)
+        CType(Me.SplitContainer2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer2.ResumeLayout(False)
+        CType(Me.dgvEnemies, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -382,8 +419,10 @@ Partial Class frmVanillaViewer
     Friend WithEvents dgvBuildMenu As DataGridView
     Friend WithEvents DgvCampaignVillains As DataGridView
     Friend WithEvents dgvZLevels As DataGridView
-    Friend WithEvents dgvResources As DataGridView
     Friend WithEvents SplitContainer1 As SplitContainer
     Friend WithEvents dgvCreatures As DataGridView
     Friend WithEvents Button1 As Button
+    Friend WithEvents SplitContainer2 As SplitContainer
+    Friend WithEvents dgvEnemies As DataGridView
+    Friend WithEvents Button2 As Button
 End Class
