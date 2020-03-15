@@ -357,7 +357,7 @@
   "expert shadow bolt" 9
   "split spirit" 10
   "summon shadow clone army" 11
-  "rapid invisibility" 12
+  "advanced rapid invisibility" 12
   }
   "assassination" MELEE
   {

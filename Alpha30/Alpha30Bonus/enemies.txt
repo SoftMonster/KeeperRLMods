@@ -21,11 +21,17 @@
           fighters = {
             count = {42 56}
             all = {
-              4 "ORC_CAPTAIN_TRIBE"
-              7 "ORC_HEALER_TRIBE"
-              10 "ORC_TRIBE"
-              6 "OGRE_TRIBE"
-              2 "HOBGOBLIN" #Modded
+              40 "ORC_CAPTAIN_TRIBE"
+              70 "ORC_HEALER_TRIBE"
+              100 "ORC_TRIBE"
+              60 "OGRE_TRIBE"
+              20 "HOBGOBLIN"
+			   5 "BARBARIAN_ADVENTURER_NPC_MELEE1"
+			   5 "BARBARIAN_ADVENTURER_NPC_MELEE1_F"
+			   3 "BARBARIAN_ADVENTURER_NPC_MELEE2"
+			   3 "BARBARIAN_ADVENTURER_NPC_MELEE2_F"
+			   3 "ASSASSIN_ADVENTURER_NPC_MELEE1"
+			   3 "ASSASSIN_ADVENTURER_NPC_MELEE1_F"
           }
         }
         civilians = {
@@ -90,9 +96,15 @@
       fighters = {
         count = {32 44}
         all = { 
-          8 "WARRIOR" 
-          6 "SHAMAN"
-          4 "WOLF_WARRIOR"
+          80 "WARRIOR" 
+          60 "SHAMAN"
+          40 "WOLF_WARRIOR"
+		   5 "BARBARIAN_ADVENTURER_NPC_MELEE1"
+		   5 "BARBARIAN_ADVENTURER_NPC_MELEE1_F"
+		   3 "BARBARIAN_ADVENTURER_NPC_MELEE2"
+		   3 "BARBARIAN_ADVENTURER_NPC_MELEE2_F"
+		   1 "BARBARIAN_ADVENTURER_NPC_MELEE3"
+		   1 "BARBARIAN_ADVENTURER_NPC_MELEE3_F"
         }
       }
     }
@@ -153,7 +165,19 @@
       leader = { { "ELF_KING" } }
       fighters = {
         count = {46 52}
-        all = { 6 "ELF_ARCHER" 2 "ELF_LORD" 8 "ELF_SOLDIER" }
+        all = { 
+			60 "ELF_ARCHER" 
+			20 "ELF_LORD" 
+			80 "ELF_SOLDIER"
+			 5 "RANGER_ADVENTURER_NPC_ARCHER1"
+			 5 "RANGER_ADVENTURER_NPC_ARCHER1_F"
+			 3 "RANGER_ADVENTURER_NPC_ARCHER2"
+			 3 "RANGER_ADVENTURER_NPC_ARCHER2_F"
+			 5 "RANGER_ADVENTURER_NPC_MELEE1"
+			 5 "RANGER_ADVENTURER_NPC_MELEE1_F"
+			 3 "RANGER_ADVENTURER_NPC_MELEE2"
+			 3 "RANGER_ADVENTURER_NPC_MELEE2_F"
+		}
       }
       civilians = {
         count = {20 26},
@@ -233,6 +257,7 @@
     furniture = { "roomFurniture" }
   }
   config = {
+    guardianInfo = "ELF_SOLDIER" 0.4 3 5
     immigrantInterval = 200
     maxPopulation = 18
     ghostProb = 0.1
@@ -310,10 +335,20 @@
       fighters = {
         count = {38 46}
         all = {
-          8 "ELITE_DWARF_WARRIOR_TRIBE"
-          10 "DWARF_WARRIOR_TRIBE"
-          6 "DWARF_FIGHTER_TRIBE"
-          4 "DWARF_MONK_TRIBE"
+          80 "ELITE_DWARF_WARRIOR_TRIBE"
+          100 "DWARF_WARRIOR_TRIBE"
+          60 "DWARF_FIGHTER_TRIBE"
+          40 "DWARF_MONK_TRIBE"
+		   5 "ADVENTURER_NPC_SPELL1"
+		   5 "ADVENTURER_NPC_SPELL1_F"
+		   5 "ADVENTURER_NPC_MELEE1"
+		   5 "ADVENTURER_NPC_MELEE1_F"
+		   3 "ADVENTURER_NPC_MELEE2"
+		   3 "ADVENTURER_NPC_MELEE2_F"
+		   5 "WARRIOR_ADVENTURER_NPC_MELEE1"
+		   5 "WARRIOR_ADVENTURER_NPC_MELEE1_F"
+		   3 "WARRIOR_ADVENTURER_NPC_MELEE2"
+		   3 "WARRIOR_ADVENTURER_NPC_MELEE2_F"
         }
       }
       civilians = {
@@ -444,9 +479,17 @@
       fighters = {
         count = {12 17}
         all = {
-          1 "PRIEST"
-          3 "KNIGHT"
-          1 "ARCHER"
+          30 "PRIEST"
+          60 "KNIGHT"
+          30 "ARCHER"
+		   5 "ADVENTURER_NPC_MELEE1"
+		   5 "ADVENTURER_NPC_MELEE1_F"
+		   5 "WARRIOR_ADVENTURER_NPC_MELEE1"
+		   5 "WARRIOR_ADVENTURER_NPC_MELEE1_F"
+		   5 "MAGE_ADVENTURER_NPC_SPELL1"
+		   5 "MAGE_ADVENTURER_NPC_SPELL1_F"
+		   5 "RANGER_ADVENTURER_NPC_MELEE1"
+		   5 "RANGER_ADVENTURER_NPC_MELEE1_F"
         }
       }
       civilians = {
@@ -494,11 +537,19 @@
         fighters = {
           count = {54 66}
           all = {
-            4 "DWARF_FIGHTER_TRIBE"
-            8 "DWARF_WARRIOR_TRIBE"
-            10 "ELITE_DWARF_WARRIOR_TRIBE"
-            6 "DWARF_MONK_TRIBE"
-            1 "DWARF_BARON_TRIBE"
+           50 "DWARF_FIGHTER_TRIBE"
+           90 "DWARF_WARRIOR_TRIBE"
+           110 "ELITE_DWARF_WARRIOR_TRIBE"
+           70 "DWARF_MONK_TRIBE"
+           20 "DWARF_BARON_TRIBE"
+		   3 "ADVENTURER_NPC_MELEE2"
+		   3 "ADVENTURER_NPC_MELEE2_F"
+		   3 "WARRIOR_ADVENTURER_NPC_MELEE2"
+		   3 "WARRIOR_ADVENTURER_NPC_MELEE2_F"
+		   3 "BARBARIAN_ADVENTURER_NPC_MELEE2"
+		   3 "BARBARIAN_ADVENTURER_NPC_MELEE2_F"
+		   1 "BARBARIAN_ADVENTURER_NPC_MELEE3"
+		   1 "BARBARIAN_ADVENTURER_NPC_MELEE3_F"
           }
         }
         civilians = {
@@ -564,7 +615,12 @@
         leader = { { "ELF_LORD" } }
         fighters = {
           count = {14 20}
-          all = { 1 "ELF_ARCHER" 2 "ELF_SOLDIER" }
+          all = { 
+			20 "ELF_ARCHER" 
+			30 "ELF_SOLDIER" 
+			 3 "RANGER_ADVENTURER_NPC_ARCHER2"
+		     3 "RANGER_ADVENTURER_NPC_ARCHER2_F"
+		  }
         }
         civilians = {
           count = {6 9},
@@ -584,6 +640,9 @@
       buildingId = "WOOD"
       lootItem = {TechBook "advanced sorcery"}
     }
+	config = { 
+		guardianInfo = "ELF_SOLDIER" 0.2 12 16
+	}
   }
   "ELEMENTALIST_ENTRY" modify append {
     settlement = {
@@ -657,6 +716,9 @@
       race = "bandits"
       buildingId = "DUNGEON"
     }
+	config = { 
+		guardianInfo = "BANDIT_PUNK" 0.05 1 3
+	}
   }
   "DUNGEON1" modify append {
     settlement = {
@@ -889,6 +951,9 @@
       attackBehaviour = KillLeader
       ransom = 0.5 80
     }
+	config = { 
+		guardianInfo = "DWARF_WARRIOR_TRIBE" 0.1 2 4
+	}
   }
   "RAT_CAVE" modify append {
     settlement = {
@@ -964,7 +1029,8 @@
     outsideFeatures = "castleOutside"
   }
   config = {
-    immigrantInterval = 300
+	guardianInfo = "WOLF_WARRIOR" 0.4 3 8
+    immigrantInterval = 100
     maxPopulation = 10
     ghostProb = 0.1
     spawnGhosts = 6
@@ -989,9 +1055,9 @@
       ids = {"WARRIOR"}
       traits = {FIGHTER}
       frequency = 1
-    }
+	  }
+	}
   }
-}
   "WARRIOR_VILLAGE" {
     settlement = {
     type = Builtin VILLAGE
@@ -1018,6 +1084,9 @@
       buildingId = "WOOD"
       furniture = { "roomFurniture" }
     }
+	config = { 
+		guardianInfo = "WARRIOR" 0.2 12 16
+	}
   }
 "DWARF_MARKET"
 {
@@ -1029,9 +1098,17 @@
       fighters = {
         count = {18 26}
         all = {
-          1 "DWARF_FIGHTER_TRIBE"
-          1 "DWARF_WARRIOR_TRIBE"
-          1 "ELITE_DWARF_WARRIOR_TRIBE"
+          50 "DWARF_FIGHTER_TRIBE"
+          50 "DWARF_WARRIOR_TRIBE"
+          50 "ELITE_DWARF_WARRIOR_TRIBE"
+		   3 "ADVENTURER_NPC_MELEE2"
+		   3 "ADVENTURER_NPC_MELEE2_F"
+		   3 "WARRIOR_ADVENTURER_NPC_MELEE2"
+		   3 "WARRIOR_ADVENTURER_NPC_MELEE2_F"
+		   3 "BARBARIAN_ADVENTURER_NPC_MELEE2"
+		   3 "BARBARIAN_ADVENTURER_NPC_MELEE2_F"
+		   1 "BARBARIAN_ADVENTURER_NPC_MELEE3"
+		   1 "BARBARIAN_ADVENTURER_NPC_MELEE3_F"
           }
         }
       civilians = {
@@ -1063,9 +1140,17 @@
       fighters = {
         count = {12 18}
         all = {
-          2 "DWARF_FIGHTER_TRIBE"
-          4 "DWARF_WARRIOR_TRIBE"
-          1 "ELITE_DWARF_WARRIOR_TRIBE"
+          40 "DWARF_FIGHTER_TRIBE"
+          80 "DWARF_WARRIOR_TRIBE"
+          30 "ELITE_DWARF_WARRIOR_TRIBE"
+		  3 "ADVENTURER_NPC_MELEE2"
+		  3 "ADVENTURER_NPC_MELEE2_F"
+		  3 "WARRIOR_ADVENTURER_NPC_MELEE2"
+		  3 "WARRIOR_ADVENTURER_NPC_MELEE2_F"
+		  3 "BARBARIAN_ADVENTURER_NPC_MELEE2"
+		  3 "BARBARIAN_ADVENTURER_NPC_MELEE2_F"
+		  1 "BARBARIAN_ADVENTURER_NPC_MELEE3"
+		  1 "BARBARIAN_ADVENTURER_NPC_MELEE3_F"
           }
         }
       civilians = {
@@ -1144,6 +1229,9 @@
     cropsDistance = 12
     outsideFeatures = "villageOutside"
     }
+	config = { 
+		guardianInfo = "CENTAUR_KNIGHT" 0.05 1 4
+	}
   }
   "AMAZON_TOWN"
   {
@@ -1171,6 +1259,9 @@
     cropsDistance = 12
     outsideFeatures = "villageOutside"
     }
+	config = { 
+		guardianInfo = "AMAZON_WAR_MAIDEN" 0.05 1 4
+	}
   }
 "WILDMEN_CAVE"
 {
@@ -1547,10 +1638,22 @@
         fighters = {
           count = {38 46}
           all = {
-            6 "DARK_ELF_WARRIOR"
-            12 "DARK_ELF_WITCHBLADE"
-            8 "DARK_ELF_ARCHER"
-            4 "DARK_ELF_LORD"
+            60 "DARK_ELF_WARRIOR"
+            120 "DARK_ELF_WITCHBLADE"
+            80 "DARK_ELF_ARCHER"
+            40 "DARK_ELF_LORD"
+			 5 "ASSASSIN_ADVENTURER_NPC_ARCHER1"
+			 5 "ASSASSIN_ADVENTURER_NPC_ARCHER1_F"
+			 3 "ASSASSIN_ADVENTURER_NPC_ARCHER2"
+			 3 "ASSASSIN_ADVENTURER_NPC_ARCHER2_F"
+			 5 "ASSASSIN_ADVENTURER_NPC_MELEE1"
+			 5 "ASSASSIN_ADVENTURER_NPC_MELEE1_F"
+			 3 "ASSASSIN_ADVENTURER_NPC_MELEE2"
+			 3 "ASSASSIN_ADVENTURER_NPC_MELEE2_F"
+			 5 "ASSASSIN_ADVENTURER_NPC_SPELL1"
+			 5 "ASSASSIN_ADVENTURER_NPC_SPELL1_F"
+			 3 "ASSASSIN_ADVENTURER_NPC_SPELL2"
+			 3 "ASSASSIN_ADVENTURER_NPC_SPELL2_F"
           }
         }
         civilians = {
@@ -1961,11 +2064,17 @@
       fighters = {
         count = {22 37}
         all = {
-          3 "OGRE_CHAMPION_TRIBE"
-          2 "ORC_CAPTAIN_TRIBE"
-          1 "ORC_HEALER_TRIBE"
-          1 "OGRE_TRIBE"
-          1 "ORC_TRIBE"
+          60 "OGRE_CHAMPION_TRIBE"
+          50 "ORC_CAPTAIN_TRIBE"
+          40 "ORC_HEALER_TRIBE"
+          40 "OGRE_TRIBE"
+          40 "ORC_TRIBE"
+		   5 "BARBARIAN_ADVENTURER_NPC_MELEE1"
+		   5 "BARBARIAN_ADVENTURER_NPC_MELEE1_F"
+		   3 "BARBARIAN_ADVENTURER_NPC_MELEE2"
+		   3 "BARBARIAN_ADVENTURER_NPC_MELEE2_F"
+		   1 "BARBARIAN_ADVENTURER_NPC_MELEE3"
+		   1 "BARBARIAN_ADVENTURER_NPC_MELEE3_F"
         }
       }
       civilians = {
@@ -1994,11 +2103,15 @@
       fighters = {
         count = {12 19}
         all = {
-          3 "OGRE_CHAMPION_TRIBE"
-          2 "ORC_CAPTAIN_TRIBE"
-          1 "ORC_HEALER_TRIBE"
-          1 "OGRE_TRIBE"
-          1 "ORC_TRIBE"
+          60 "OGRE_CHAMPION_TRIBE"
+          50 "ORC_CAPTAIN_TRIBE"
+          40 "ORC_HEALER_TRIBE"
+          40 "OGRE_TRIBE"
+          40 "ORC_TRIBE"
+		   5 "BARBARIAN_ADVENTURER_NPC_MELEE1"
+		   5 "BARBARIAN_ADVENTURER_NPC_MELEE1_F"
+		   3 "BARBARIAN_ADVENTURER_NPC_MELEE2"
+		   3 "BARBARIAN_ADVENTURER_NPC_MELEE2_F"
         }
       }
       civilians = {
@@ -2034,6 +2147,9 @@
     shopItems = { "iron" }
     outsideFeatures = "villageOutside"
     }
+	config = { 
+		guardianInfo = "OGRE_CHAMPION_TRIBE" 0.4 4 8
+	}
   }
   "ORC_CITY_GROUP"
   {
@@ -2053,6 +2169,9 @@
     stockpiles = {{ "gold" 40 "TREASURE_CHEST" } }
     outsideFeatures = "villageOutside"
     }
+	config = { 
+		guardianInfo = "OGRE_CHAMPION_TRIBE" 0.2 2 6
+	}
   }
   "HELL_DUNGEON1"
   {
@@ -2692,6 +2811,9 @@
     buildingId = "CITY_BRICK"
     shopItems = { "armory" }
     }
+	config = { 
+		guardianInfo = "KNIGHT" 0.5 4 8
+	}
   }
   "CITY_GROUP"
   {
@@ -2710,6 +2832,9 @@
     furniture = { "roomFurniture" }
     outsideFeatures = "villageOutside"
     }
+	config = { 
+		guardianInfo = "KNIGHT" 0.5 4 8
+	}
   }
   "CITY_GROUP_SHOP_BASE"
   {
@@ -2727,6 +2852,9 @@
     furniture = { "palace_furniture" }
     outsideFeatures = "villageOutside"
     }
+	config = { 
+		guardianInfo = "KNIGHT" 0.5 6 10
+	}
   }
   "SHADOW_GROUP_SHOP_BASE"
   {
@@ -2744,6 +2872,9 @@
     furniture = { "palace_furniture" }
     outsideFeatures = "villageOutside"
     }
+	config = { 
+		guardianInfo = "SHADOW_SPIRIT" 1 12 16
+	}
   }
   "NEUTRAL_GROUP_SHOP_BASE"
   {
@@ -2797,10 +2928,30 @@
       fighters = {
         count = {55 62}
         all = {
-          10 "ROYAL_PRIEST"
-          30 "ROYAL_KNIGHT"
-          20 "ROYAL_ARCHER"
-          2 "DUKE"
+          60 "ROYAL_PRIEST"
+          80 "ROYAL_KNIGHT"
+          70 "ROYAL_ARCHER"
+          20 "DUKE"
+		   5 "ADVENTURER_NPC_SPELL1"
+		   5 "ADVENTURER_NPC_SPELL1_F"
+		   5 "ADVENTURER_NPC_MELEE1"
+		   5 "ADVENTURER_NPC_MELEE1_F"
+		   5 "ADVENTURER_NPC_ARCHER1"
+		   5 "ADVENTURER_NPC_ARCHER1_F"
+		   3 "ADVENTURER_NPC_MELEE2"
+		   3 "ADVENTURER_NPC_MELEE2_F"
+		   5 "WARRIOR_ADVENTURER_NPC_MELEE1"
+		   5 "WARRIOR_ADVENTURER_NPC_MELEE1_F"
+		   3 "WARRIOR_ADVENTURER_NPC_MELEE2"
+		   3 "WARRIOR_ADVENTURER_NPC_MELEE2_F"
+		   5 "MAGE_ADVENTURER_NPC_SPELL1"
+		   5 "MAGE_ADVENTURER_NPC_SPELL1_F"
+		   3 "MAGE_ADVENTURER_NPC_SPELL2"
+		   3 "MAGE_ADVENTURER_NPC_SPELL2_F"
+		   3 "RANGER_ADVENTURER_NPC_ARCHER2"
+		   3 "RANGER_ADVENTURER_NPC_ARCHER2_F"
+		   3 "RANGER_ADVENTURER_NPC_MELEE2"
+		   3 "RANGER_ADVENTURER_NPC_MELEE2_F"
         }
       }
     }
@@ -2812,7 +2963,7 @@
    outsideFeatures = "castleOutside"
   }
   config = {
-    immigrantInterval = 300
+    immigrantInterval = 80
     maxPopulation = 26
     ghostProb = 0.1
     spawnGhosts = 6
@@ -2826,8 +2977,8 @@
       SelfVictims
       StolenItems
       FinishOff
-      EnemyPopulation 70
-      NumConquered 25
+      EnemyPopulation 65
+      NumConquered 18
     }
     attackBehaviour = KillLeader
     ransom = 0.9 400
@@ -2887,10 +3038,22 @@
       fighters = {
         count = {55 62}
         all = {
-          10 "SHADOW_PRIEST"
-          30 "SHADOW_KNIGHT"
-          20 "SHADOW_ARCHER"
-          2 "SHADOW_DUKE"
+          50 "SHADOW_PRIEST"
+          70 "SHADOW_KNIGHT"
+          60 "SHADOW_ARCHER"
+          20 "SHADOW_DUKE"
+		   5 "ASSASSIN_ADVENTURER_NPC_ARCHER1"
+		   5 "ASSASSIN_ADVENTURER_NPC_ARCHER1_F"
+		   3 "ASSASSIN_ADVENTURER_NPC_ARCHER2"
+		   3 "ASSASSIN_ADVENTURER_NPC_ARCHER2_F"
+		   5 "ASSASSIN_ADVENTURER_NPC_MELEE1"
+		   5 "ASSASSIN_ADVENTURER_NPC_MELEE1_F"
+		   3 "ASSASSIN_ADVENTURER_NPC_MELEE2"
+		   3 "ASSASSIN_ADVENTURER_NPC_MELEE2_F"
+		   5 "ASSASSIN_ADVENTURER_NPC_SPELL1"
+		   5 "ASSASSIN_ADVENTURER_NPC_SPELL1_F"
+		   3 "ASSASSIN_ADVENTURER_NPC_SPELL2"
+		   3 "ASSASSIN_ADVENTURER_NPC_SPELL2_F"
         }
       }
     }
@@ -2936,7 +3099,7 @@
    outsideFeatures = "randomTerrain"
   }
   config = {
-    immigrantInterval = 300
+    immigrantInterval = 80
     maxPopulation = 66
     ghostProb = 0.1
     spawnGhosts = 6

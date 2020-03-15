@@ -2229,6 +2229,10 @@
         "magma bolt"
         "fire shield"
         "advanced fire elemental"
+		"spawn hell knights"
+		"spawn hell knight lord squad"
+		"spawn hell knight brute squad"
+		"spawn hell knight swordmaster squad"
       }
       body = {
         type = NonHumanoid HUGE
@@ -2254,8 +2258,8 @@
       name = {
         name = "hell portal"
       }
-      chatReactionFriendly = "\"You can feel an evil aura coming from the portal.\""
-      chatReactionHostile = "\"You can feel an evil aura coming from the portal.\""
+      chatReactionFriendly = "\"You can feel an evil aura surrounding the portal.\""
+      chatReactionHostile = "\"You can feel an evil aura surrounding the portal.\""
       deathDescription = "destroyed"
     }
 
@@ -5179,10 +5183,7 @@
         fullTitle = true
        }
 	}
-#-------------------------------------
-#New adventurer classes Februrary 2020
-#-------------------------------------
-  "BARBARIAN"
+  "BARBARIAN_ADVENTURER"
     {
       viewId = { "barbarian" }
       attr = {
@@ -5216,7 +5217,7 @@
         { Simple "GoldPiece" 16 26 }
       }
     }
-  "BARBARIAN_FEMALE" inherit "BARBARIAN"
+  "BARBARIAN_ADVENTURER_FEMALE" inherit "BARBARIAN_ADVENTURER"
     {
       viewId = { "barbarian_female" }
       gender = FEMALE
@@ -5226,7 +5227,7 @@
         fullTitle = true
       }
 	}
-  "ASSASSIN"
+  "ASSASSIN_ADVENTURER"
     {
       viewId = { "assassin" }
       attr = {
@@ -5248,7 +5249,6 @@
 		ARCHERY 12
 		SPELL 12
       }
-      hatedByEffect = HATE_HUMANS
       spellSchools = { "assassination" "assassin magic" "assassin star arts" }
 	   spells = {
 		 "rapid invisibility"
@@ -5262,7 +5262,7 @@
         { Simple "GoldPiece" 26 36 }
       }
     }
-  "ASSASSIN_FEMALE" inherit "ASSASSIN"
+  "ASSASSIN_ADVENTURER_FEMALE" inherit "ASSASSIN_ADVENTURER"
     {
       viewId = { "assassin_female" }
       gender = FEMALE
@@ -5292,7 +5292,6 @@
       name = {
         name = "shadow clone"
       }
-      hatedByEffect = HATE_HUMANS
 	   spells = {
 		 "invisibility"
 		 "advanced throwing star"
@@ -5319,7 +5318,6 @@
       name = {
         name = "shadow clone"
       }
-      hatedByEffect = HATE_HUMANS
 	   spells = {
 		 "invisibility"
 		 "expert throwing star"
@@ -5328,6 +5326,1103 @@
 		 "expert vitals strike"
 	  }
     }
+#--------------------------------
+# NPC Adventurers
+#--------------------------------
+
+"ADVENTURER_NPC_MELEE1" inherit "ADVENTURER"
+   {
+     attr = {
+       DAMAGE 35
+       DEFENSE 40
+	   SPELL_DAMAGE 8
+    }
+     maxLevelIncrease = {
+       MELEE 6
+       SPELL 12
+       ARCHERY 16
+	}
+	 spells = {
+		 "shove" 
+		 "battle cry" 
+		 "block" 
+		 "swap positions" 
+		 "weapon dodge" 
+		 "knockdown" 
+		 "directed blast" 
+		 "escape" 
+		 "magic missile" 
+		 "healing" 
+	 }
+     inventory = {
+        { Potion Heal FLESH 1 3 }
+        { Simple "SpyingCrystal" }
+        { type = Simple "Axe" prefixChance = 0.4 }
+		{ Simple "IronShield" }
+        { type = Simple "IronGloves" prefixChance = 0.4 }
+        { type = Simple "ChainArmor" prefixChance = 0.6 }
+        { type = Simple "IronHelm" prefixChance = 0.7 chance = 0.8 }
+		{ type = Simple "IronBoots" prefixChance = 0.2 }
+		{ Ring MAGIC_RESISTANCE 1 1 0.2}
+		{ Ring MELEE_RESISTANCE 1 1 0.2}
+        { Ring POISON_RESISTANT 1 1 0.2}
+        { Amulet REGENERATION 1 1 0.4}
+        { Simple "GoldPiece" 76 96 }
+	  }
+    }
+"ADVENTURER_NPC_MELEE1_F" inherit "ADVENTURER_NPC_MELEE1"
+  {
+    viewId = { "player_f" }
+    gender = FEMALE
+    name = {
+      name = "squire"
+      firstNameGen = "FIRST_FEMALE"
+      fullTitle = true
+     }
+   }
+"ADVENTURER_NPC_MELEE2" inherit "ADVENTURER"
+   {
+     attr = {
+       DAMAGE 47
+       DEFENSE 52
+	   SPELL_DAMAGE 8
+    }
+     maxLevelIncrease = {
+       MELEE 3
+       SPELL 12
+       ARCHERY 16
+	}
+	 spells = {
+		 "shove" 
+		 "battle cry" 
+		 "block" 
+		 "swap positions" 
+		 "weapon dodge" 
+		 "knockdown" 
+		 "directed blast" 
+		 "escape" 
+		 "magic missile" 
+		 "healing" 
+	 }
+	 courage = 10
+     inventory = {
+        { Potion Heal FLESH 3 8 }
+		{ Potion Lasting MELEE_VULNERABILITY 2 4 }
+        { Simple "SpyingCrystal" }
+        { type = Simple "AdaAxe" prefixChance = 0.6 }
+		{ Simple "AdaShield" }
+        { type = Simple "AdaGloves" prefixChance = 0.3 }
+        { type = Simple "AdaArmor" prefixChance = 0.5 }
+        { type = Simple "AdaHelm" prefixChance = 0.6 chance = 0.8 }
+		{ type = Simple "AdaBoots" prefixChance = 0.15 }
+		{ Ring MAGIC_RESISTANCE 1 1 0.4}
+		{ Ring MELEE_RESISTANCE 1 1 0.8}
+        { Ring POISON_RESISTANT 1 1 0.4}
+        { Amulet REGENERATION 1 1 1}
+        { Simple "GoldPiece" 124 164 }
+	  }
+    }
+"ADVENTURER_NPC_MELEE2_F" inherit "ADVENTURER_NPC_MELEE2"
+  {
+    viewId = { "player_f" }
+    gender = FEMALE
+    name = {
+      name = "squire"
+      firstNameGen = "FIRST_FEMALE"
+      fullTitle = true
+     }
+   }
+"ADVENTURER_NPC_ARCHER1" inherit "ADVENTURER"
+   {
+     attr = {
+       DAMAGE 27
+       DEFENSE 32
+	   RANGED_DAMAGE 16
+    }
+     maxLevelIncrease = {
+       MELEE 10
+       SPELL 14
+       ARCHERY 8
+	}
+	 spells = {
+		 "shove" 
+		 "battle cry" 
+		 "block" 
+		 "swap positions" 
+		 "weapon dodge" 
+		 "knockdown" 
+		 "directed blast" 
+		 "escape" 
+	 }
+     inventory = {
+        { Potion Heal FLESH 2 5 }
+		{ Potion Lasting RANGED_VULNERABILITY 2 3 }
+        { Simple "SpyingCrystal" }
+        { type = Simple "VenBattleAxe" prefixChance = 0.4 }
+		{ Simple "Bow" }
+        { type = Simple "IronGloves" prefixChance = 0.4 }
+        { type = Simple "VenArmor" prefixChance = 0.6 }
+        { type = Simple "IronHelm" prefixChance = 0.7 chance = 0.8 }
+		{ type = Simple "IronBoots" prefixChance = 0.2 }
+		{ Ring RANGED_RESISTANCE 1 1 0.4}
+		{ Ring MELEE_RESISTANCE 1 1 0.2}
+        { Ring POISON_RESISTANT 1 1 0.2}
+        { Amulet REGENERATION 1 1 0.4}
+        { Simple "GoldPiece" 76 96 }
+	  }
+    }
+"ADVENTURER_NPC_ARCHER1_F" inherit "ADVENTURER_NPC_ARCHER1"
+  {
+    viewId = { "player_f" }
+    gender = FEMALE
+    name = {
+      name = "squire"
+      firstNameGen = "FIRST_FEMALE"
+      fullTitle = true
+     }
+   }
+"ADVENTURER_NPC_SPELL1" inherit "ADVENTURER"
+   {
+     attr = {
+       DAMAGE 23
+       DEFENSE 28
+	   SPELL_DAMAGE 16
+    }
+     maxLevelIncrease = {
+       MELEE 12
+       SPELL 8
+       ARCHERY 16
+	}
+	 spells = {
+		 "shove" 
+		 "battle cry" 
+		 "block" 
+		 "directed blast"
+		 "escape"
+		 "healing"
+		 "teleport"
+		 "cure poison"
+		 "advanced magic missile"
+		 "haste"
+	 }
+	 courage = -1
+     inventory = {
+        { Potion Heal FLESH 1 3 }
+		{ Potion Lasting BLIND 1 3 0.6 }
+		{ Potion Lasting MAGIC_VULNERABILITY 2 4 }
+        { Simple "SpyingCrystal" }
+        { type = Simple "IronStaff" prefixChance = 0.75 }
+		{ Simple "IronShield" }
+        { type = Simple "IronGloves" prefixChance = 0.75 }
+        { type = Simple "ChainArmor" prefixChance = 0.85 }
+        { type = Simple "IronHelm" prefixChance = 0.85 }
+		{ type = Simple "IronBoots" prefixChance = 0.75 }
+		{ Ring MAGIC_RESISTANCE 1 1 0.4}
+		{ Ring MELEE_RESISTANCE 1 1 0.4}
+        { Ring POISON_RESISTANT 1 1 0.4}
+        { Amulet REGENERATION 1 1 0.6}
+        { Simple "GoldPiece" 76 96 }
+	  }
+    }
+"ADVENTURER_NPC_SPELL1_F" inherit "ADVENTURER_NPC_SPELL1"
+  {
+    viewId = { "player_f" }
+    gender = FEMALE
+    name = {
+      name = "squire"
+      firstNameGen = "FIRST_FEMALE"
+      fullTitle = true
+     }
+   }
+  "MAGE_ADVENTURER_NPC_SPELL1" inherit "MAGE_ADVENTURER"
+    {
+      attr = {
+        DAMAGE 25
+        DEFENSE 30
+		SPELL_DAMAGE 44
+	  }
+      maxLevelIncrease = {
+        MELEE 3
+        SPELL 12
+      }
+	   spells = {
+		 "escape"
+		 "deception"
+		 "snakes"
+		 "summon element"
+		 "area defense bonus"
+		 "area damage bonus"
+		 "healing totem"
+		 "advanced healing"
+		 "buff totem"
+		 "wolves"
+		 "bear"
+		 "boar"
+		 "expert magic missile"
+		 "resist magic"
+		 "arrow shield"
+		 "magic cancellation"
+		 "freezing vines"
+		 "stone to mud"
+		 "advanced mind bolt"
+		 "stone golems"
+		 "invisibility"
+		 "adamantine golem"
+		 "iron golems"
+	  }
+	  courage = -1
+      inventory = {
+        { Potion Heal FLESH 2 6 }
+		{ Potion Lasting BLIND 1 3 }
+		{ Potion Lasting MAGIC_VULNERABILITY 2 4 }
+		{ Potion Lasting POISON 2 5 }
+        { type = Simple "GoldenStaff" prefixChance = 0.4 }
+		{ type = Simple "IronShield" prefixChance = 0.4 }
+        { type = Simple "IronGloves" prefixChance = 0.2 }
+        { type = Simple "ChainArmor" prefixChance = 0.8 }
+        { type = Simple "InfHelm" prefixChance = 0.6 }
+        { type = Simple "VenBoots" prefixChance = 0.4 }
+		{ Ring MAGIC_RESISTANCE 1 1 1 }
+		{ Ring RANGED_RESISTANCE 1 1 0.4}
+        { Ring MELEE_RESISTANCE 1 1 0.4}
+        { Amulet REGENERATION 1 1 0.6}
+		{ Amulet ELF_VISION 1 1 0.6}
+        { Simple "GoldPiece" 76 96 }
+      }
+    }
+  "MAGE_ADVENTURER_NPC_SPELL1_F" inherit "MAGE_ADVENTURER_NPC_SPELL1"
+    {
+      viewId = { "mage_adventurer_female" }
+      gender = FEMALE
+      name = {
+        name = "mage"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+    }
+  "MAGE_ADVENTURER_NPC_SPELL2" inherit "MAGE_ADVENTURER"
+    {
+      attr = {
+        DAMAGE 31
+        DEFENSE 36
+		SPELL_DAMAGE 56
+	  }
+      maxLevelIncrease = {
+        SPELL 6
+      }
+	   spells = {
+		 "escape"
+		 "deception"
+		 "snakes"
+		 "summon element"
+		 "area defense bonus"
+		 "area damage bonus"
+		 "healing totem"
+		 "advanced healing"
+		 "buff totem"
+		 "wolves"
+		 "bear"
+		 "boar"
+		 "expert magic missile"
+		 "resist magic"
+		 "arrow shield"
+		 "magic cancellation"
+		 "freezing vines"
+		 "stone to mud"
+		 "advanced mind bolt"
+		 "stone golems"
+		 "invisibility"
+		 "iron golems"
+		 "telepathy"
+		 "elf vision"
+		 "summon spirit"
+		 "adamantine golems"
+	     "rapid magic missile"
+		 "pacify"
+		 "advanced invisibility"
+	  }
+	  courage = -1
+      inventory = {
+        { Potion Heal FLESH 4 12 }
+		{ Potion Lasting BLIND 1 3 }
+		{ Potion Lasting MAGIC_VULNERABILITY 2 4 }
+		{ Potion Lasting POISON 4 8 }
+		{ Potion Lasting INVISIBLE 2 4 }
+        { type = Simple "GoldenStaff" prefixChance = 0.6 }
+		{ type = Simple "VenShield" prefixChance = 0.6 }
+        { type = Simple "VenGloves" prefixChance = 0.4 }
+        { type = Simple "InfArmor" prefixChance = 1 }
+        { type = Simple "AdaHelm" prefixChance = 0.6 }
+        { type = Simple "AdaBoots" prefixChance = 0.4 }
+		{ Ring MAGIC_RESISTANCE 1 1 1 }
+        { Ring MELEE_RESISTANCE 1 1 1 }
+        { Amulet REGENERATION 1 1 0.6}
+		{ Amulet ELF_VISION 1 1 0.6}
+        { Simple "GoldPiece" 124 164 }
+      }
+    }
+  "MAGE_ADVENTURER_NPC_SPELL2_F" inherit "MAGE_ADVENTURER_NPC_SPELL2"
+    {
+      viewId = { "mage_adventurer_female" }
+      gender = FEMALE
+      name = {
+        name = "mage"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+    }
+  "RANGER_ADVENTURER_NPC_ARCHER1" inherit "RANGER_ADVENTURER"
+    {
+      attr = {
+        DAMAGE 23
+        DEFENSE 28
+		RANGED_DAMAGE 28
+      }
+      maxLevelIncrease = {
+        MELEE 8
+        ARCHERY 12
+      }
+	   spells = {
+		 "healing"
+		 "escape"
+		 "shove"
+		 "battle cry"
+		 "block"
+      }
+      inventory = {
+        { Potion Heal FLESH 2 4 }
+        { type = Simple "BattleAxe" prefixChance = 0.1 }
+        { Simple "Bow" }
+        { type = Simple "IronBoots" prefixChance = 0.2 }
+        { type = Simple "ChainArmor" prefixChance = 0.4 }
+        { type = Simple "IronHelm" prefixChance = 0.2 }
+		{ type = Simple "IronGloves" prefixChance = 0.2 }
+		{ Ring RANGED_RESISTANCE 1 1 0.6 }
+        { Ring MELEE_RESISTANCE 1 1 0.4 }
+        { Amulet NIGHT_VISION 1 1 0.4 }
+		{ Amulet REGENERATION 1 1 0.4 }
+        { Simple "GoldPiece" 76 96 }
+      }
+	}
+  "RANGER_ADVENTURER_NPC_ARCHER1_F" inherit "RANGER_ADVENTURER_NPC_ARCHER1"
+    {
+      viewId = { "ranger_adventurer_female" }
+      gender = FEMALE
+      name = {
+        name = "ranger"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+       }
+	}
+  "RANGER_ADVENTURER_NPC_ARCHER2" inherit "RANGER_ADVENTURER"
+    {
+      attr = {
+        DAMAGE 27
+        DEFENSE 32
+		RANGED_DAMAGE 36
+      }
+      maxLevelIncrease = {
+        MELEE 6
+        ARCHERY 8
+      }
+	   spells = {
+		 "healing"
+		 "escape"
+		 "shove"
+		 "battle cry"
+		 "block"
+		 "swap positions"
+		 "weapon dodge"
+      }
+      inventory = {
+        { Potion Heal FLESH 5 9 }
+        { type = Simple "AdaBattleAxe" prefixChance = 0.1 }
+        { type = Simple "ElvenBow" prefixChance = 0.4 }
+        { type = Simple "AdaBoots" prefixChance = 0.4 }
+        { type = Simple "AdaArmor" prefixChance = 0.6 }
+        { type = Simple "AdaHelm" prefixChance = 0.4 }
+		{ type = Simple "AdaGloves" prefixChance = 0.4 }
+		{ Ring RANGED_RESISTANCE 1 1 0.8 }
+        { Ring MELEE_RESISTANCE 1 1 0.6 }
+        { Amulet NIGHT_VISION 1 1 0.6 }
+		{ Amulet REGENERATION 1 1 0.4 }
+        { Simple "GoldPiece" 124 164 }
+      }
+	}
+  "RANGER_ADVENTURER_NPC_ARCHER2_F" inherit "RANGER_ADVENTURER_NPC_ARCHER2"
+    {
+      viewId = { "ranger_adventurer_female" }
+      gender = FEMALE
+      name = {
+        name = "ranger"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+       }
+	}
+  "RANGER_ADVENTURER_NPC_MELEE1" inherit "RANGER_ADVENTURER"
+    {
+      viewId = { "ranger_adventurer" }
+      attr = {
+        DAMAGE 35
+        DEFENSE 40
+		RANGED_DAMAGE 24
+      }
+      maxLevelIncrease = {
+        MELEE 2
+        ARCHERY 14
+      }
+	   spells = {
+		 "healing"
+		 "escape"
+		 "shove"
+		 "battle cry"
+		 "block"
+		 "swap positions"
+		 "weapon dodge"
+		 "knockdown"
+      }
+      inventory = {
+        { Potion Heal FLESH 2 4 }
+        { Simple "Sword"}
+        { type = Simple "Bow" prefixChance = 0.2 }
+        { Simple "IronBoots"}
+        { Simple "ChainArmor"}
+        { Simple "IronHelm"}
+		{ Simple "IronGloves"}
+		{ Ring RANGED_RESISTANCE 1 1 0.6 }
+        { Ring MELEE_RESISTANCE 1 1 0.4 }
+        { Amulet NIGHT_VISION 1 1 0.4 }
+		{ Amulet REGENERATION 1 1 0.4 }
+        { Simple "GoldPiece" 76 96 }
+      }
+	}
+  "RANGER_ADVENTURER_NPC_MELEE1_F" inherit "RANGER_ADVENTURER_NPC_MELEE1"
+    {
+      viewId = { "ranger_adventurer_female" }
+      gender = FEMALE
+      name = {
+        name = "ranger"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+       }
+	}
+  "RANGER_ADVENTURER_NPC_MELEE2" inherit "RANGER_ADVENTURER"
+    {
+      viewId = { "ranger_adventurer" }
+      attr = {
+        DAMAGE 39
+        DEFENSE 44
+		RANGED_DAMAGE 32
+      }
+      maxLevelIncrease = {
+        ARCHERY 10
+      }
+	   spells = {
+		 "healing"
+		 "escape"
+		 "shove"
+		 "battle cry"
+		 "block"
+		 "swap positions"
+		 "weapon dodge"
+		 "knockdown"
+      }
+      inventory = {
+        { Potion Heal FLESH 5 9 }
+        { Simple "BattleAxe"}
+        { type = Simple "ElvenBow" prefixChance = 0.4 }
+        { Simple "AdaBoots"}
+        { Simple "AdaArmor"}
+        { Simple "AdaHelm"}
+		{ Simple "AdaGloves"}
+		{ Ring RANGED_RESISTANCE 1 1 0.8 }
+        { Ring MELEE_RESISTANCE 1 1 0.4 }
+        { Amulet NIGHT_VISION 1 1 0.4 }
+		{ Amulet REGENERATION 1 1 0.4 }
+        { Simple "GoldPiece" 76 96 }
+      }
+	}
+  "RANGER_ADVENTURER_NPC_MELEE2_F" inherit "RANGER_ADVENTURER_NPC_MELEE2"
+    {
+      viewId = { "ranger_adventurer_female" }
+      gender = FEMALE
+      name = {
+        name = "ranger"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+       }
+	}
+  "WARRIOR_ADVENTURER_NPC_MELEE1" inherit "WARRIOR_ADVENTURER"
+    {
+      viewId = { "warrior_adventurer" }
+      attr = {
+        DAMAGE 40
+        DEFENSE 44
+		SPELL_DAMAGE 4
+      }
+      maxLevelIncrease = {
+        MELEE 8
+        SPELL 10
+      }
+	  spells = {
+		 "shove" 
+		 "battle cry" 
+		 "block"
+		 "swap positions"
+		 "weapon dodge"
+		 "knockdown"
+	     "healing"
+		 "escape" 
+	  }
+	  courage = 1
+      inventory = {
+        { Potion Heal FLESH 4 6 }
+        { type = Simple "VenAxe" prefixChance = 0.4 }
+        { type = Simple "AdaShield" prefixChance = 0.2 }
+        { type = Simple "IronGloves" prefixChance = 0.1 }
+		{ type = Simple "IronBoots" prefixChance = 0.2 }
+        { type = Simple "VenArmor" prefixChance = 0.4 }
+        { type = Simple "IronHelm" prefixChance = 0.3 }
+		{ Ring RANGED_RESISTANCE 1 1 0.4 }
+        { Ring MELEE_RESISTANCE 1 1 0.6 }
+        { Amulet REGENERATION 1 1 0.4 }
+        { Simple "GoldPiece" 86 106 }
+      }
+    }
+  "WARRIOR_ADVENTURER_NPC_MELEE1_F" inherit "WARRIOR_ADVENTURER_NPC_MELEE1"
+    {
+      viewId = { "warrior_adventurer_female" }
+      gender = FEMALE
+      name = {
+        name = "warrior"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+	}
+  "WARRIOR_ADVENTURER_NPC_MELEE2" inherit "WARRIOR_ADVENTURER"
+    {
+      viewId = { "warrior_adventurer" }
+      attr = {
+        DAMAGE 48
+        DEFENSE 52
+		SPELL_DAMAGE 8
+      }
+      maxLevelIncrease = {
+        MELEE 4
+        SPELL 8
+      }
+	  spells = {
+		 "shove" 
+		 "battle cry" 
+		 "block"
+		 "swap positions"
+		 "weapon dodge"
+		 "knockdown"
+	     "healing"
+		 "escape"
+		 "defense bonus"
+		 "damage bonus"
+		 "stone to mud"
+	  }
+	  courage = 1
+      inventory = {
+        { Potion Heal FLESH 7 16 }
+        { type = Simple "AdaBattleAxe" prefixChance = 0.6 }
+        { type = Simple "AdaGloves" prefixChance = 0.1 }
+		{ type = Simple "AdaBoots" prefixChance = 0.2 }
+        { type = Simple "AdaArmor" prefixChance = 0.4 }
+        { type = Simple "AdaHelm" prefixChance = 0.3 }
+		{ Ring RANGED_RESISTANCE 1 1 0.6 }
+		{ Ring MAGIC_RESISTANCE 1 1 0.6 }
+        { Ring MELEE_RESISTANCE 1 1 1 }
+        { Amulet REGENERATION 1 1 1 }
+        { Simple "GoldPiece" 124 184 }
+      }
+    }
+  "WARRIOR_ADVENTURER_NPC_MELEE2_F" inherit "WARRIOR_ADVENTURER_NPC_MELEE2"
+    {
+      viewId = { "warrior_adventurer_female" }
+      gender = FEMALE
+      name = {
+        name = "warrior"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+	}
+  "BARBARIAN_ADVENTURER_NPC_MELEE1" inherit "BARBARIAN_ADVENTURER"
+    {
+      attr = {
+        DAMAGE 42
+        DEFENSE 34 
+      }
+      maxLevelIncrease = {
+        MELEE 24
+      }
+      hatedByEffect = HATE_HUMANS
+      spellSchools = { "fighter" "barbarian" }
+	   spells = {
+		 "shove"
+		 "battle cry"
+		 "block"
+		 "swap positions"
+		 "weapon dodge"
+		 "knockdown"
+		 "wild swing"
+		 "throw sand"
+		 "heroic leap"
+		 "martial blast"
+		 "arm strike"
+		 "leg strike"
+		 "air render"
+		 "break through"
+		 "martial strike"
+	  }
+      inventory = {
+        { Potion Heal FLESH 5 8 }
+        { type = Simple "BattleAxe" prefixChance = 0.6 }
+		{ Simple "ChainArmor"}
+        { Simple "IronBoots"}
+		{ Simple "IronHelm"}
+		{ Simple "IronGloves"}
+		{ Ring MAGIC_RESISTANCE 1 1 0.4}
+		{ Ring RANGED_RESISTANCE 1 1 0.4}
+		{ Simple "DefenseAmulet" 1 1 0.4}
+        { Simple "GoldPiece" 76 96 }
+      }
+    }
+  "BARBARIAN_ADVENTURER_NPC_MELEE1_F" inherit "BARBARIAN_ADVENTURER_NPC_MELEE1"
+    {
+      viewId = { "barbarian_female" }
+      gender = FEMALE
+      name = {
+        name = "barbarian"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+	}
+  "BARBARIAN_ADVENTURER_NPC_MELEE2" inherit "BARBARIAN_ADVENTURER"
+    {
+      attr = {
+        DAMAGE 58
+        DEFENSE 50 
+      }
+      maxLevelIncrease = {
+        MELEE 16
+      }
+	   spells = {
+		 "shove"
+		 "battle cry"
+		 "block"
+		 "swap positions"
+		 "weapon dodge"
+		 "knockdown"
+		 "wild swing"
+		 "throw sand"
+		 "heroic leap"
+		 "martial blast"
+		 "arm strike"
+		 "leg strike"
+		 "air render"
+		 "break through"
+		 "martial strike"
+		 "blood rage"
+		 "decapitate"
+	  }
+      inventory = {
+        { Potion Heal FLESH 6 12 }
+        { type = Simple "InfBattleAxe" prefixChance = 0.8 }
+		{ type = Simple "AdaArmor" prefixChance = 0.2}
+        { type = Simple "AdaBoots" prefixChance = 0.2}
+		{ type = Simple "AdaHelm" prefixChance = 0.2}
+		{ type = Simple "AdaGloves" prefixChance = 0.2}
+		{ Ring MELEE_RESISTANCE 1 1 0.8}
+		{ Ring RANGED_RESISTANCE 1 1 0.8}
+		{ Simple "DefenseAmulet" 1 1 0.8}
+        { Simple "GoldPiece" 164 194 }
+      }
+    }
+  "BARBARIAN_ADVENTURER_NPC_MELEE2_F" inherit "BARBARIAN_ADVENTURER_NPC_MELEE2"
+    {
+      viewId = { "barbarian_female" }
+      gender = FEMALE
+      name = {
+        name = "barbarian"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+	}
+  "BARBARIAN_ADVENTURER_NPC_MELEE3" inherit "BARBARIAN_ADVENTURER"
+    {
+      attr = {
+        DAMAGE 74
+        DEFENSE 66 
+      }
+      maxLevelIncrease = {
+        MELEE 8
+      }
+	   spells = {
+		 "shove"
+		 "battle cry"
+		 "block"
+		 "swap positions"
+		 "weapon dodge"
+		 "knockdown"
+		 "wild swing"
+		 "throw sand"
+		 "heroic leap"
+		 "martial blast"
+		 "arm strike"
+		 "leg strike"
+		 "air render"
+		 "break through"
+		 "martial strike"
+		 "blood rage"
+		 "decapitate"
+	  }
+      inventory = {
+        { Potion Heal FLESH 8 16 }
+		{ Potion Lasting INVISIBLE 0 3 }
+        { type = Simple "AdaBattleAxe" prefixChance = 1 }
+		{ type = Simple "AdaArmor" prefixChance = 0.85 }
+        { type = Simple "AdaBoots" prefixChance = 0.85 }
+		{ type = Simple "AdaHelm" prefixChance = 0.85 }
+		{ type = Simple "AdaGloves" prefixChance = 0.85 }
+		{ Ring MELEE_RESISTANCE 1 1 1}
+		{ Ring RANGED_RESISTANCE 1 1 1}
+		{ Simple "DefenseAmulet" 1 1 1}
+        { Simple "GoldPiece" 262 392 }
+      }
+    }
+  "BARBARIAN_ADVENTURER_NPC_MELEE3_F" inherit "BARBARIAN_ADVENTURER_NPC_MELEE3"
+    {
+      viewId = { "barbarian_female" }
+      gender = FEMALE
+      name = {
+        name = "barbarian"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+	}
+  "ASSASSIN_ADVENTURER_NPC_MELEE1" inherit "ASSASSIN_ADVENTURER"
+    {
+      viewId = { "assassin" }
+      attr = {
+        DAMAGE 46
+        DEFENSE 31
+		RANGED_DAMAGE 24
+		SPELL_DAMAGE 24
+      }
+      maxLevelIncrease = {
+        MELEE 4
+		ARCHERY 10
+		SPELL 10
+      }
+	   spells = {
+		 "rapid invisibility"
+		 "escape slash"
+		 "shadow step"
+		 "smoke bomb"
+		 "advanced vitals strike"
+		 "substitute"
+		 "arm strike"
+		 "leg strike"
+		 "double strike"
+		 "throwing star"
+		 "arrow shield"
+		 "healing"
+		 "escape"
+	  }
+      inventory = {
+        { Potion Heal FLESH 2 4 }
+		{ Potion Lasting POISON 2 4 }
+        { Simple "VenAxe"}
+		{ type = Simple "LeatherArmor" prefixChance = 0.8 }
+		{ type = Simple "LeatherGloves" prefixChance = 0.6 }
+        { type = Simple "LeatherBoots" prefixChance = 0.6 }
+		{ type = Simple "LeatherHelm" prefixChance = 0.6 }
+        { Simple "GoldPiece" 96 116 }
+      }
+    }
+  "ASSASSIN_ADVENTURER_NPC_MELEE1_F" inherit "ASSASSIN_ADVENTURER_NPC_MELEE1"
+    {
+      viewId = { "assassin_female" }
+      gender = FEMALE
+      name = {
+        name = "assassin"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+	}
+  "ASSASSIN_ADVENTURER_NPC_MELEE2" inherit "ASSASSIN_ADVENTURER"
+    {
+      viewId = { "assassin" }
+      attr = {
+        DAMAGE 54
+        DEFENSE 39
+		RANGED_DAMAGE 28
+		SPELL_DAMAGE 28
+      }
+      maxLevelIncrease = {
+		ARCHERY 8
+		SPELL 8
+      }
+	   spells = {
+		 "rapid invisibility"
+		 "escape slash"
+		 "shadow step"
+		 "smoke bomb"
+		 "substitute"
+		 "arm strike"
+		 "leg strike"
+		 "armor strike"
+		 "weapon strike"
+		 "expert vitals strike"
+		 "assassinate"
+		 "triple strike"
+		 "poison star"
+		 "arrow shield"
+		 "bleeding star"
+		 "advanced throwing star"
+		 "healing"
+		 "escape"
+		 "shadow bolt"
+		 "summon shades"
+	  }
+      inventory = {
+        { Potion Heal FLESH 4 6 }
+		{ Potion Lasting POISON 4 6 }
+		{ Potion Lasting BLIND 2 4 }
+        { Simple "VenBattleAxe"}
+		{ type = Simple "ChainArmor" prefixChance = 0.8 }
+		{ type = Simple "VenGloves" prefixChance = 0.6 }
+        { type = Simple "IronBoots" prefixChance = 0.6 }
+		{ type = Simple "VenHelm" prefixChance = 0.6 }
+        { Simple "GoldPiece" 144 184 }
+      }
+    }
+  "ASSASSIN_ADVENTURER_NPC_MELEE2_F" inherit "ASSASSIN_ADVENTURER_NPC_MELEE2"
+    {
+      viewId = { "assassin_female" }
+      gender = FEMALE
+      name = {
+        name = "assassin"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+	}
+  "ASSASSIN_ADVENTURER_NPC_ARCHER1" inherit "ASSASSIN_ADVENTURER"
+    {
+      viewId = { "assassin" }
+      attr = {
+        DAMAGE 34
+        DEFENSE 19
+		RANGED_DAMAGE 36
+		SPELL_DAMAGE 24
+      }
+      maxLevelIncrease = {
+        MELEE 10
+		ARCHERY 4
+		SPELL 10
+      }
+	   spells = {
+		 "rapid invisibility"
+		 "arrow shield"
+		 "poison star"
+		 "bleeding star"
+		 "double star"
+		 "advanced poison star"
+		 "advanced bleeding star"
+		 "expert throwing star"
+		 "escape star"
+		 "vitals strike"
+		 "escape slash"
+		 "healing"
+		 "escape"
+	  }
+	  courage = -1
+      inventory = {
+        { Potion Heal FLESH 2 4 }
+        { Simple "Dagger"}
+		{ Simple "Bow"}
+		{ type = Simple "ChainArmor" prefixChance = 0.8 }
+		{ type = Simple "LeatherGloves" prefixChance = 0.6 }
+        { type = Simple "LeatherBoots" prefixChance = 0.6 }
+		{ type = Simple "LeatherHelm" prefixChance = 0.6 }
+        { Simple "GoldPiece" 96 116 }
+      }
+    }
+  "ASSASSIN_ADVENTURER_NPC_ARCHER1_F" inherit "ASSASSIN_ADVENTURER_NPC_ARCHER1"
+    {
+      viewId = { "assassin_female" }
+      gender = FEMALE
+      name = {
+        name = "assassin"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+	}
+  "ASSASSIN_ADVENTURER_NPC_ARCHER2" inherit "ASSASSIN_ADVENTURER"
+    {
+      viewId = { "assassin" }
+      attr = {
+        DAMAGE 38
+        DEFENSE 23
+		RANGED_DAMAGE 44
+		SPELL_DAMAGE 28
+      }
+      maxLevelIncrease = {
+        MELEE 8
+		SPELL 8
+      }
+	   spells = {
+		 "rapid invisibility"
+		 "arrow shield"
+		 "poison star"
+		 "bleeding star"
+		 "advanced poison star"
+		 "advanced bleeding star"
+		 "escape star"
+		 "master throwing star"
+		 "triple star"
+		 "vitals strike"
+		 "escape slash"
+		 "shadow step"
+		 "smoke bomb"
+		 "healing"
+		 "escape"
+		 "shadow bolt"
+		 "summon shades"
+	  }
+	  courage = -1
+      inventory = {
+        { Potion Heal FLESH 2 4 }
+		{ Potion Lasting INVISIBLE 2 4 }
+		{ Scroll Escape 0 3 }
+        { Simple "VenAxe" }
+		{ Simple "Crossbow"}
+		{ type = Simple "AdaArmor" prefixChance = 0.8 }
+		{ type = Simple "VenGloves" prefixChance = 0.6 }
+        { type = Simple "VenBoots" prefixChance = 0.6 }
+		{ type = Simple "IronHelm" prefixChance = 0.6 }
+        { Simple "GoldPiece" 144 184 }
+      }
+    }
+  "ASSASSIN_ADVENTURER_NPC_ARCHER2_F" inherit "ASSASSIN_ADVENTURER_NPC_ARCHER2"
+    {
+      viewId = { "assassin_female" }
+      gender = FEMALE
+      name = {
+        name = "assassin"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+	}
+  "ASSASSIN_ADVENTURER_NPC_SPELL1" inherit "ASSASSIN_ADVENTURER"
+    {
+      attr = {
+        DAMAGE 34
+        DEFENSE 19
+		RANGED_DAMAGE 24
+		SPELL_DAMAGE 36
+      }
+      maxLevelIncrease = {
+        MELEE 10
+		ARCHERY 10
+		SPELL 4
+      }
+	   spells = {
+		 "rapid invisibility"
+		 "healing"
+		 "escape"
+		 "summon shades"
+		 "summon shadow clones"
+		 "advanced shadow bolt"
+		 "web wall"
+		 "vanish"
+		 "vitals strike"
+		 "escape slash"
+		 "throwing star"
+		 "arrow shield"
+	  }
+      inventory = {
+        { Potion Heal FLESH 4 6 }
+		{ Potion Lasting BLIND 2 4 }
+		{ Potion Lasting INVISIBLE 2 4 }
+		{ Potion Lasting POISON 4 6 }
+        { Simple "IronStaff"}
+		{ type = Simple "ChainArmor" prefixChance = 0.8 }
+		{ type = Simple "LeatherGloves" prefixChance = 0.6 }
+        { type = Simple "LeatherBoots" prefixChance = 0.6 }
+		{ type = Simple "LeatherHelm" prefixChance = 0.6 }
+        { Simple "GoldPiece" 96 116 }
+      }
+    }
+  "ASSASSIN_ADVENTURER_NPC_SPELL1_F" inherit "ASSASSIN_ADVENTURER_NPC_SPELL1"
+    {
+      viewId = { "assassin_female" }
+      gender = FEMALE
+      name = {
+        name = "assassin"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+	}
+  "ASSASSIN_ADVENTURER_NPC_SPELL2" inherit "ASSASSIN_ADVENTURER"
+    {
+      attr = {
+        DAMAGE 38
+        DEFENSE 23
+		RANGED_DAMAGE 28
+		SPELL_DAMAGE 44
+      }
+      maxLevelIncrease = {
+        MELEE 8
+		ARCHERY 8
+      }
+	   spells = {
+		 "healing"
+		 "escape"
+		 "summon shades"
+		 "summon shadow clones"
+		 "web wall"
+		 "vanish"
+		 "expert shadow bolt"
+		 "split spirit"
+		 "summon shadow clone army"
+		 "advanced rapid invisibility"
+		 "vitals strike"
+		 "escape slash"
+		 "shadow step"
+		 "smoke bomb"
+		 "throwing star"
+		 "arrow shield"
+		 "poison star"
+		 "bleeding star"
+		 "advanced throwing star"
+	  }
+      inventory = {
+        { Potion Heal FLESH 4 6 }
+		{ Potion Lasting BLIND 2 4 }
+		{ Potion Lasting INVISIBLE 2 4 }
+		{ Potion Lasting POISON 4 6 }
+        { type = Simple "GoldenStaff" prefixChance = 0.2 }
+		{ type = Simple "AdaArmor" prefixChance = 0.8 }
+		{ type = Simple "VenGloves" prefixChance = 0.6 }
+        { type = Simple "VenBoots" prefixChance = 0.6 }
+		{ type = Simple "IronHelm" prefixChance = 0.6 }
+        { Simple "GoldPiece" 144 184 }
+      }
+    }
+  "ASSASSIN_ADVENTURER_NPC_SPELL2_F" inherit "ASSASSIN_ADVENTURER_NPC_SPELL2"
+    {
+      viewId = { "assassin_female" }
+      gender = FEMALE
+      name = {
+        name = "assassin"
+        firstNameGen = "FIRST_FEMALE"
+        fullTitle = true
+      }
+	}
 #------------------------
 #Ungrouped Misc Units
 #------------------------

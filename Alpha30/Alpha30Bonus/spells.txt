@@ -860,6 +860,42 @@
    cooldown = 60
    sound = SPELL_INVISIBILITY
  }
+"advanced rapid invisibility"
+ {
+   symbol = "🕵️"
+   upgrade = "rapid invisibility"  
+   effect = Lasting INVISIBLE
+   cooldown = 30
+   sound = SPELL_INVISIBILITY
+ }
+"spawn hell knights"
+  {
+   symbol = "🔥⚔"
+   effect = Summon "HELL_KNIGHT" { 3 5 } 0
+   cooldown = 100
+   sound = SPELL_SUMMON_SPIRIT
+  }
+"spawn hell knight lord squad"
+  {
+   symbol = "🔥⚔"
+   effect = Chain { Summon "HELL_KNIGHT_LORD" { 1 } 0 Summon "HELL_KNIGHT" { 5 7 } 0 }
+   cooldown = 400
+   sound = SPELL_SUMMON_SPIRIT
+  }
+"spawn hell knight brute squad"
+  {
+   symbol = "🔥⚔"
+   effect = Chain { Summon "HELL_KNIGHT_BRUTE" { 1 3 } 0 Summon "HELL_KNIGHT" { 3 5 } 0 }
+   cooldown = 350
+   sound = SPELL_SUMMON_SPIRIT
+  }
+"spawn hell knight swordmaster squad"
+  {
+   symbol = "🔥⚔"
+   effect = Chain { Summon "HELL_KNIGHT_SWORDMASTER" { 1 3 } 0 Summon "HELL_KNIGHT" { 3 5 } 0 }
+   cooldown = 350
+   sound = SPELL_SUMMON_SPIRIT
+  }
 #------------------------------
 #Barbarian Skills Feb 2020
 #------------------------------
@@ -1391,7 +1427,7 @@
  "stone to mud"
  {
    symbol = "🕳"
-   effect = DestroyWalls DIG
-   cooldown = 1000
+   effect = Area 2 DestroyWalls DIG
+   cooldown = 500
    sound = SPELL_AIR_BLAST
  }
