@@ -7776,7 +7776,8 @@
         { type = Potion Heal FLESH countMin = 2 countMax = 4 }
 		{ Ring MAGIC_RESISTANCE 1 1 0.8}
         { Ring POISON_RESISTANT 1 1 0.8}
-        { Amulet REGENERATION 1 1 1.0}
+        { Amulet REGENERATION 1 1 1 }
+		{ Simple "GoldPiece" 876 1296 }
 	}
   }
   "SHADOW_KING"
@@ -7828,6 +7829,7 @@
 		{ Ring MAGIC_RESISTANCE 1 1 0.8}
         { Ring POISON_RESISTANT 1 1 0.8}
         { Amulet REGENERATION 1 1 1.0}
+		{ Simple "GoldPiece" 876 1296 }
     }
   }
   "SHADOW_DUKE"
