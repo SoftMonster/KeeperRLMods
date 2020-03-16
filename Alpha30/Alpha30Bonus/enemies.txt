@@ -2568,7 +2568,6 @@
       immigrantInterval = 1000
       maxPopulation = 12
     }
-    createOnBones = 0.5 { "NO_AGGRO_BANDITS" }
     immigrants = { 
       {
         ids = { "LION" "LIONESS" }
