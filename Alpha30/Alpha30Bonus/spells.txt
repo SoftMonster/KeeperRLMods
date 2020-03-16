@@ -1125,7 +1125,6 @@
    cooldown = 0
    endOnly = true
    sound = SHOOT_BOW
-   projectileViewId = {"shuriken"}
    message = "throw a star" "throws a star"
  }
  "advanced throwing star"
@@ -1148,7 +1147,6 @@
    cooldown = 0
    endOnly = true
    sound = SHOOT_BOW
-   projectileViewId = {"shuriken"}
    message = "throw a star" "throws a star"
  }
  "master throwing star"
@@ -1160,7 +1158,6 @@
    cooldown = 0
    endOnly = true
    sound = SHOOT_BOW
-   projectileViewId = {"shuriken"}
    message = "throw a star" "throws a star"
  }
  "poison star"
@@ -1171,7 +1168,6 @@
    cooldown = 1
    endOnly = true
    sound = SHOOT_BOW
-   projectileViewId = {"shuriken"}
    message = "throw a poison star" "throws a poison star"
  }
  "advanced poison star"
@@ -1183,7 +1179,6 @@
    cooldown = 1
    endOnly = true
    sound = SHOOT_BOW
-   projectileViewId = {"shuriken"}
    message = "throw a poison star" "throws a poison star"
  }
  "bleeding star"
@@ -1194,7 +1189,6 @@
    cooldown = 1
    endOnly = true
    sound = SHOOT_BOW
-   projectileViewId = {"shuriken"}
    message = "throw a bleeding star" "throws a bleeding star"
  }
  "advanced bleeding star"
@@ -1206,7 +1200,6 @@
    cooldown = 1
    endOnly = true
    sound = SHOOT_BOW
-   projectileViewId = {"shuriken"}
    message = "throw a bleeding star" "throws a bleeding star"
  }
  "escape star"
@@ -1217,7 +1210,6 @@
    cooldown = 1
    endOnly = true
    sound = SHOOT_BOW
-   projectileViewId = {"shuriken"}
    message = "throw an escape star" "throws an escape star"
  }
   "double star"
@@ -1228,7 +1220,6 @@
    cooldown = 2
    endOnly = true
    sound = SHOOT_BOW
-   projectileViewId = {"shuriken"}
    message = "throw stars" "throws stars"
  }
   "triple star"
@@ -1240,7 +1231,6 @@
    cooldown = 2
    endOnly = true
    sound = SHOOT_BOW
-   projectileViewId = {"shuriken"}
    message = "throw stars" "throws stars"
  }
  "summon shades"
