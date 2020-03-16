@@ -7503,6 +7503,210 @@
 	  spells = { "breed horrors" }
       viewId = { "special_bmgn" ColorId LIGHT_BROWN }
     }
+#-------------------------------------------------------------------------------------------
+# Rat Men Keeper Player Faction - March 2020 RighteousSinner
+#-------------------------------------------------------------------------------------------
+  
+   "RAT_WORKER_PLAYER"
+    {
+      viewId = { "rat_worker" }
+      attr = {
+        DAMAGE 12
+        DEFENSE 14
+      }
+      body = {
+        type = Humanoid MEDIUM
+	    material = FLESH
+	    weight = 80
+      }
+      skills = {
+        "DIGGING" 0.7
+      }
+      permanentEffects = {
+        NIGHT_VISION 1
+        HATE_HUMANS 1
+		SWARMER 1
+      }
+      name = {
+        name = "rat person"
+      }
+      chatReactionFriendly = "complains about rat society"
+      chatReactionHostile = "makes angry rat noises"
+    }
+  "RAT_MAN_PLAYER"
+    {
+      viewId = { "rat_man" }
+      attr = {
+        DAMAGE 12
+        DEFENSE 14
+      }
+      body = {
+        type = Humanoid MEDIUM
+	    material = FLESH
+	    weight = 80
+      }
+      skills = {
+        "DIGGING" 0.7
+      }
+      permanentEffects = {
+        NIGHT_VISION 1
+        HATE_HUMANS 1
+		SWARMER 1
+      }
+      name = {
+        name = "rat person"
+      }
+      chatReactionFriendly = "complains about rat society"
+      chatReactionHostile = "makes angry rat noises"
+    }
+  "RAT_SOLDIER_PLAYER" inherit "RAT_MAN_PLAYER"
+	{
+    viewId = { "rat_soldier" }
+    attr = {
+      DAMAGE 14
+      DEFENSE 14
+    }
+    body = {
+      type = Humanoid MEDIUM
+    }
+    chatReactionFriendly = "talks about rat women"
+    chatReactionHostile = "makes angry rat noises"
+    maxLevelIncrease = {
+      MELEE 7
+    }
+    name = {
+      name = "rat soldier"
+	  firstNameGen = "DEMON"
+      }
+	}
+  "RAT_LADY_PLAYER" inherit "RAT_MAN_PLAYER"
+	{
+    viewId = { "rat_lady" }
+    gender = FEMALE
+    chatReactionFriendly = "talks about day-to-day rat life"
+    chatReactionHostile = "makes angry rat noises"
+    name = {
+      name = "rat woman"
+      }
+	}
+  "RAT_KING_PLAYER" 
+	{
+    viewId = { "rat_king" }
+    attr = {
+      DAMAGE 20
+      DEFENSE 18
+	  SPELL_DAMAGE 10
+    }
+    body = {
+      type = Humanoid MEDIUM
+    }
+    chatReactionFriendly = "talks about global rat superiority"
+    chatReactionHostile = "curses you out in royal rat tongue"
+    maxLevelIncrease = {
+      MELEE 7
+	  SPELL 7
+	}
+	  spellSchools = { "fighter" "rat mage" }
+      spells = {
+        "healing"
+	}
+      permanentEffects = {
+        NIGHT_VISION 1
+        HATE_HUMANS 1
+    }
+    name = {
+      name = "rat king"
+	}
+      inventory = {
+        { type = Simple "Sword" } #Modded
+		{ Simple "LeatherArmor" }
+		{ Simple "LeatherBoots" }
+      }
+	}
+  "RAT_GENERAL_PLAYER"
+    {
+      viewId = { "rat_general" }
+      attr = {
+        DAMAGE 18
+        DEFENSE 22
+      }
+      maxLevelIncrease = {
+        MELEE 10
+      }
+	  spellSchools = { "fighter" }
+      spells = {
+        "healing"
+      }
+      body = {
+        type = Humanoid MEDIUM
+	    material = FLESH
+	    weight = 80
+      }
+      permanentEffects = {
+        NIGHT_VISION 1
+        HATE_HUMANS 1
+      }
+      name = {
+        name = "rat general"
+	  }
+      chatReactionFriendly = "complains about surface dwellers"
+      chatReactionHostile = "makes angry rat noises"
+		skills = {
+			"MULTI_WEAPON" 0.75
+	  }
+    }
+  "RAT_GLADIATOR_PLAYER"
+    {
+      viewId = { "rat_gladiator" }
+      attr = {
+        DAMAGE 24
+        DEFENSE 14
+		RANGED_DAMAGE 10
+      }
+      maxLevelIncrease = {
+        MELEE 12
+      }
+	  spellSchools = { "fighter" }
+      spells = {
+        "healing"
+      }
+      body = {
+        type = Humanoid MEDIUM
+	    material = FLESH
+	    weight = 80
+      }
+      permanentEffects = {
+        NIGHT_VISION 1
+        HATE_HUMANS 1
+      }
+      name = {
+        name = "rat gladiator"
+	  }
+      chatReactionFriendly = "talks about combat"
+      chatReactionHostile = "makes angry rat noises"
+		skills = {
+			"MULTI_WEAPON" 0.75
+	  }
+	}
+  "RAT_ARCHER_PLAYER" inherit "RAT_MAN_PLAYER"
+    {
+      viewId = { "rat_bowman" }
+      attr = {
+        DAMAGE 11
+        DEFENSE 11
+        RANGED_DAMAGE 18
+      }
+      maxLevelIncrease = {
+        MELEE 2
+        ARCHERY 7
+      }
+      name = {
+        name = "rat archer"
+      }
+      chatReactionFriendly = "complains about it being too dark underground to shoot things"
+      chatReactionHostile = "makes angry rat noises"
+	  }
+
 
 ###################################################################################	
 #Monster variations for regular tribes (different inventory/some skill variation)

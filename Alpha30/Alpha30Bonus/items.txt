@@ -493,7 +493,22 @@
 #		equipedEffect = { SPEED POISON_RESISTANT FIRE_RESISTANT MELEE_RESISTANCE RANGED_RESISTANCE MAGIC_RESISTANCE }
 #        wishedCount = { 0 } #Will crash the game. Stops it being wished for.
 #	}
-
+  "Net"
+    {
+      viewId = { "net" }
+      name = "net"
+      itemClass = RANGED_WEAPON
+      equipmentSlot = RANGED_WEAPON
+      rangedWeapon = RANGED_DAMAGE "arrow" {"net30"} 4
+	  weaponInfo = {
+		victimEffect = { 1.0 Lasting TIED_UP }
+	  }
+      weight = 1
+      modifiers = {
+        RANGED_DAMAGE 5
+      }
+      price = 20
+    }
 #--------------
 #Resources
 #--------------
