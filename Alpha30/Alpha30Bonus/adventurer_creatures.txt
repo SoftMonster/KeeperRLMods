@@ -23,7 +23,7 @@
 "13_cyclops"
 { "CYCLOPS" }                                           EVIL               "(Challenge) Slaughter the world as a lone cyclops."
 "14_thief_hero"
-{ "THIEF_HERO" "THIEF_HERO" }                           LAWFUL             "(Challenge) Play as an archer assassin. Travel light, rely on stealth and arrows."
+{ "THIEF_HERO" "THIEF_HERO" }                           LAWFUL             "(Challenge) Play as an archer assassin. Travel light, rely on stealth and arrows. Note: You won't get to carry much inventory with this character."
 "15_wizard_advemnturer"
 { "WIZARD_ADVENTURER" }                                 LAWFUL             "(Challenge) Wizard hero class. Train magic powers."
 "16_spider_adventurer"

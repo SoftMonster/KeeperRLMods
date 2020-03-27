@@ -378,4 +378,4 @@
   
    #Misc
   { "dungeon_entrance_color" ">" ColorId WHITE }
-   
+  { "assassin_archer" "@" ColorId GRAY }

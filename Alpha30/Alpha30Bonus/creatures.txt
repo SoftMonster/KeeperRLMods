@@ -3376,7 +3376,7 @@
   }
   "THIEF_HERO"
     {
-      viewId = { "bandit" }
+      viewId = { "assassin_archer" }
       name = {
         name = "Archer Assassin"
         firstNameGen = "FIRST_FEMALE"
