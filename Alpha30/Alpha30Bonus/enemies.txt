@@ -2823,7 +2823,7 @@
     inhabitants = {
       leader = { { "KNIGHT" } }
       fighters = {
-        count = {7 10}
+        count = {2 3}
         all = { 1 "PESEANT" }
       }
     }
@@ -2843,7 +2843,7 @@
     inhabitants = {
       leader = { { "KNIGHT" } }
       fighters = {
-        count = {7 10}
+        count = {2 3}
         all = { 1 "PESEANT" }
       }
     }
@@ -2863,7 +2863,7 @@
     inhabitants = { 
         leader = { { "SHADOW_KNIGHT" } } 
         fighters = {
-            count = {7 10}
+            count = {2 3}
             all = { 1 "SHADOW_SPIRIT" }
       }
     }
@@ -2883,7 +2883,7 @@
     inhabitants = { 
         leader = { { "GNOME_CHIEF" } } 
         fighters = {
-            count = { 10 11 }
+            count = { 2 3 }
             all = { 1 "STONE_GOLEM" }
       }
     }

@@ -523,14 +523,7 @@
       trees = "vegetationHigh"
     }
   }
-  wildlife = {
-    count = { 4 6 }
-    all = {
-      1 "BOAR"
-	  1 "DEER"
-	  1 "FOX"
-    }
-  }
+  wildlife = { count = { 0 } all = { } }
   darkKeeperEnemies = {
 	{ id = "ROYAL_BLACKSMITH" count = { 1 } }
 	{ id = "ROYAL_TRAPSMITH" count = { 1 } }
@@ -632,7 +625,7 @@
     }
   }
   wildlife = {
-    count = { 20 }
+    count = { 5 }
     all = {
       2 "BAT"
       1 "BLACK_RAT"
@@ -676,12 +669,7 @@
     mountainDeep = "MOUNTAIN2"
     mountainFloor = "FLOOR"
   }
-  wildlife = {
-    count = { 20 }
-    all = {
-      2 "DEER"
-    }
-  }
+ wildlife = { count = { 0 } all = { } }
  darkKeeperEnemies = {
 	{ id = "NEUTRAL_BLACKSMITH" count = { 1 } }
 	{ id = "NEUTRAL_TRAPSMITH" count = { 1 } }
