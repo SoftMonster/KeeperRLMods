@@ -640,7 +640,7 @@
       buildingId = "WOOD"
       lootItem = {TechBook "advanced sorcery"}
     }
-	config = { 
+	config = append { 
 		guardianInfo = "ELF_SOLDIER" 0.2 12 16
 	}
   }
@@ -716,7 +716,7 @@
       race = "bandits"
       buildingId = "DUNGEON"
     }
-	config = { 
+	config = append { 
 		guardianInfo = "BANDIT_PUNK" 0.05 1 3
 	}
   }
@@ -893,7 +893,7 @@
       buildingId = "WOOD"
       furniture = { "roomFurniture" }
     }
-    config = {
+    config = append {
       guardianInfo = "MILITIA" 0.2 1 3 #Modded
     }
   }
@@ -951,7 +951,7 @@
       attackBehaviour = KillLeader
       ransom = 0.5 80
     }
-	config = { 
+	config = append { 
 		guardianInfo = "DWARF_WARRIOR_TRIBE" 0.1 2 4
 	}
   }
