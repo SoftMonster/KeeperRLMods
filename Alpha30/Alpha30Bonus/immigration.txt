@@ -1064,7 +1064,7 @@
     "necromancer"
     {
         {
-          ids = { "SKELETON" "SKELETON" "SKELETON" "SKELETON" "SKELETON" }
+          ids = { "SKELETON_PLAYER" "SKELETON_PLAYER" "SKELETON_PLAYER" "SKELETON_PLAYER" "SKELETON_PLAYER" }
           traits = { WORKER FIGHTER NO_LIMIT }
           spawnLocation = NearLeader
 		  consumeIds = true
@@ -1178,7 +1178,7 @@
           }
         }
         {
-          ids = { "SKELETON" }
+          ids = { "SKELETON_PLAYER" }
           traits = { WORKER FIGHTER }
           frequency = 0.2
           spawnLocation = FurnitureType "GRAVE"
@@ -1189,7 +1189,7 @@
           }
         }
         {
-          ids = { "SKELETON" }
+          ids = { "SKELETON_PLAYER" }
           traits = { WORKER FIGHTER }
           frequency = 0.75
           groupSize = {4 9}

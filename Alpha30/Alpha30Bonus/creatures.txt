@@ -8487,6 +8487,9 @@
 	  { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
     }
   }
+  
+  #Workers that need the digging skill.
+  "SKELETON_PLAYER" inherit "SKELETON" { skills = { "DIGGING" 1.0 } }
 
 ##########################
 #Ideas for Future modding#
