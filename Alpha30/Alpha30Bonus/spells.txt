@@ -1074,8 +1074,8 @@
 "substitute"
  {
    symbol = "⇅"
-   effect = Chain { SwapPosition Deception }
-   range = 8
+   effect = Chain { Deception SwapPosition Deception }
+   range = 1
    cooldown = 30
    endOnly = true
    message = "use an ability" "uses an ability"
