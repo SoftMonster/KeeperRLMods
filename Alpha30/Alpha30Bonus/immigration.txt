@@ -2822,7 +2822,7 @@
           traits = { WORKER FIGHTER }
           keybinding = CREATE_IMP
 		  groupSize = {2 5}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           initialRecruitment = 1
         }
@@ -2880,7 +2880,7 @@
           ids = { "GOBLIN_ARCHER_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {2 3}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           spawnLocation = Pregnancy
           requirements = {
@@ -2908,7 +2908,7 @@
           ids = { "GOBLIN_BRUTE_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {2 4}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           spawnLocation = Pregnancy
           requirements = {
@@ -2936,7 +2936,7 @@
           ids = { "GOBLIN_CHICKENMANCER_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {2 5}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           spawnLocation = Pregnancy
           requirements = {
@@ -2964,7 +2964,7 @@
           ids = { "GOBLIN_PRIEST_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {3 6}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           spawnLocation = Pregnancy
           requirements = {
@@ -2992,7 +2992,7 @@
           ids = { "GOBLIN_WARRIOR_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" "GOBLIN_WIZARD_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {5 6}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           spawnLocation = Pregnancy
           requirements = {
@@ -3020,7 +3020,7 @@
           ids = { "GOBLIN_WIZARD_PLAYER" "ELITE_GOBLIN_GUARD_PLAYER" "GOBLIN_ARCHER_PLAYER" "GOBLIN_BRUTE_PLAYER" "GOBLIN_CHICKENMANCER_PLAYER" "GOBLIN_PRIEST_PLAYER" "GOBLIN_WARRIOR_PLAYER" }
           traits = { FIGHTER }
 		  groupSize = {6 8}
-          autoTeam = false
+          autoTeam = true
           noAuto = true
           spawnLocation = Pregnancy
           requirements = {
@@ -3075,6 +3075,7 @@
           traits = { FIGHTER NO_LIMIT }
           frequency = 0.2
           groupSize = {5 6}
+		  autoTeam = true
           requirements = {
             { 1.0 CostInfo "GOLD" 6 } 
           }
