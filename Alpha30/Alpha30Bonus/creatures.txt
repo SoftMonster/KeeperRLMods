@@ -386,21 +386,10 @@
 		"MULTI_WEAPON" 0.65
       }	  
       inventory = {
-        { type = Simple "StaffOfBleeding" chance = 0.5 }
-        { type = Simple "VampiricSword" chance = 0.5 }
+        { type = Simple "StaffOfBleeding" }
+        { type = Simple "VampiricSword" }
         { type = Glyph WEAPON ItemAttrBonus SPELL_DAMAGE 4 chance = 0.3 }
         { Simple "Robe"}
-        { Simple "AdaArmor" 1 1 0.03 }
-        { Simple "AdaBoots" 1 1 0.03 }
-        { Simple "AdaGloves" 1 1 0.03 }
-		{ Simple "AdaHelm" 1 1 0.03 }
-  		{ type = Potion IncreaseAttr DAMAGE 1, chance = 0.01 }
-		{ type = Potion IncreaseAttr DEFENSE 1 chance = 0.01 }
-		{ type = Potion IncreaseAttr RANGED_DAMAGE 1 chance = 0.01 }
-		{ type = Potion IncreaseAttr SPELL_DAMAGE 1 chance = 0.01 }
-		{ Potion Permanent SPEED 1 1 0.03 }
-		{ Potion RegrowBodyPart 1 1 1 0.03 }
-		{ Scroll Permanent DARKNESS_SOURCE 1 1 0.03 }
       }
     }
   "MUMMY" modify append {
