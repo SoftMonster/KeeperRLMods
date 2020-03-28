@@ -6940,6 +6940,7 @@
         "WORKSHOP" 0.6
         "FORGE" 0.6
         "JEWELER" 0.6
+		"DIGGING" 1.0
       }
       name = {
         name = "gnome"
@@ -8488,7 +8489,7 @@
     }
   }
   
-  #Workers that need the digging skill.
+  #Worker that need the digging skill.
   "SKELETON_PLAYER" inherit "SKELETON" { skills = { "DIGGING" 1.0 } }
 
 ##########################
