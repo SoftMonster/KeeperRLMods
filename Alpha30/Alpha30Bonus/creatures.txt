@@ -16,7 +16,7 @@
     }
     }
   "BANDIT" modify append {
-      skills = append { "MULTI_WEAPON" 0.65 }
+      skills = append { "MULTI_WEAPON" 0.25 }
       inventory = {
         { type = Simple "Sword" chance = 0.5 }
 		{ type = Simple "Axe" chance = 0.5 }
@@ -53,7 +53,7 @@
     }
   }
   "RAT_SOLDIER" modify append {
-      skills = append { "MULTI_WEAPON" 0.65 }
+      skills = append { "MULTI_WEAPON" 0.25 }
       inventory = {
         { type = Simple "Sword" chance = 0.5 }
 		{ type = Simple "Axe" chance = 0.5 }
@@ -291,7 +291,7 @@
       }
     }
   "WARRIOR" modify append {
-      skills = append { "MULTI_WEAPON" 0.65 }
+      skills = append { "MULTI_WEAPON" 0.35 }
       inventory = {
         { type = Simple "HeavyClub" chance = 0.5 }      
         { type = Simple "Mace" chance = 0.5 }      
@@ -433,7 +433,7 @@
       }
     }
   "KOBOLD" modify append {
-      skills = append { "MULTI_WEAPON" 0.65 }
+      skills = append { "MULTI_WEAPON" 0.25 }
       inventory = {
         { type = Simple "Spear" chance = 0.5}
         { type = Simple "LongSpear" chance = 0.5 }
@@ -2821,7 +2821,7 @@
       skills = {
         "WORKSHOP" 0.3
         "FORGE" 0.3
-		"MULTI_WEAPON" 0.45
+		"MULTI_WEAPON" 0.35
     }
       maxLevelIncrease = {
         MELEE 4
@@ -8090,7 +8090,7 @@
       name = "bandit punk"
     }
     hatedByEffect = HATE_HUMANS
-    skills = { "MULTI_WEAPON" 0.65 }
+    skills = { "MULTI_WEAPON" 0.45 }
     inventory = {
         { type = Simple "Mace" chance = 0.5 }
 		{ type = Simple "Axe" chance = 0.5 }
