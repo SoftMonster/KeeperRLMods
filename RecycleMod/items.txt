@@ -1,0 +1,21 @@
+"WarHammer" modify      { ingredientType = "20 iron" }
+"BattleAxe" modify      { ingredientType = "20 iron" }
+"IronStaff" modify      { ingredientType = "20 iron" }
+"ChainArmor" modify     { ingredientType = "20 iron" }
+"IronBoots" modify      { ingredientType = "10 iron" }
+"IronShield" modify     { ingredientType = "10 iron" }
+"Sword" modify          { ingredientType = "10 iron" }
+"IronHelm" modify       { ingredientType = "5 iron" }
+"IronGloves" modify     { ingredientType = "1 iron" }
+"GoldenStaff" modify    { ingredientType = "20 gold" }
+"AdaWarHammer" modify   { ingredientType = "20 ada" }
+"AdaBattleAxe" modify   { ingredientType = "20 ada" }
+"AdaArmor" modify       { ingredientType = "20 ada" }
+"AdaBoots" modify       { ingredientType = "10 ada" }
+"AdaShield" modify      { ingredientType = "10 ada" }
+"AdaSword" modify       { ingredientType = "10 ada" }
+"AdaHelm" modify        { ingredientType = "5 ada" }
+"AdaGloves" modify      { ingredientType = "1 ada" }
+
+
+
