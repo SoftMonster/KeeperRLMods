@@ -8,7 +8,6 @@
 #Modded#
     technology = append {
         "simplistic animations" "magic contraptions" "dragon taming" "demonic alliance"
-		"magic paper production" "advanced inscription" "master inscription"
     }
     initialTech = { "sorcery" }
 #Modded#
@@ -16,7 +15,7 @@
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
         "training" "crafting" "laboratory" "jeweller" "poetry" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
-    workshopGroups = { "basic" "scrolls" "traps" "techBooks" } #Modded
+    workshopGroups = { "basic" "traps" "techBooks" } #Modded
     description = "(Challenge) Build and manage your dream dungeon, defend against raids, and attack!" #Modded
 # Special traits example, all traits are added
 #   specialTraits = { LastingEffect SPEED ExtraTraining MELEE 5 }
@@ -32,14 +31,13 @@
         "pig breeding" "iron working" "simplistic animations"
 		"magic contraptions" "jewellery" "two-handed weapons" "traps" "archery" "sorcery"
         "advanced sorcery" "magical weapons" "master sorcery" "demonology" "dragon taming" "demonic alliance"
-		"magic paper production" "advanced inscription" "master inscription"
     }
     initialTech = { "sorcery" }
     buildingGroups = {
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
         "training" "crafting" "laboratory" "jeweller" "poetry" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
-    workshopGroups = { "basic" "scrolls" "traps" "techBooks"}
+    workshopGroups = { "basic" "traps" "techBooks"}
     description = "(Easy) Play in easy mode and get a big bonus on all immigrants. But you have to wear a silly green robe."
   }
 #Modded
@@ -53,14 +51,13 @@
         "pig breeding" "iron working" "simplistic animations" "magic contraptions" "jewellery"
 		"two-handed weapons" "traps" "archery" "sorcery"
         "advanced sorcery" "magical weapons" "master sorcery" "demonology" "dragon taming" "demonic alliance" "absorbtion"
-        "magic paper production" "advanced inscription" "master inscription"
     }
     initialTech = { "sorcery" }
     buildingGroups = {
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
         "training" "crafting" "laboratory" "jeweller" "poetry" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
-    workshopGroups = { "basic" "scrolls" "traps" "techBooks" }
+    workshopGroups = { "basic" "traps" "techBooks" }
     description = "(Hard) Play in hard mode and test your skills to the limit for experienced players. You get to wear a cool purple robe."
   }
 "2_dark_knight" modify {
@@ -69,7 +66,7 @@
     immigrantGroups = {"peseant_prisoners" "imps" "dark_keeper" "dark_knight_modded" "neutral_allies" "dark_allies_extended" }
 #Modded
     technology = append {
-        "simplistic animations" "magic contraptions" "magic paper production" "advanced inscription" "master inscription"
+        "simplistic animations" "magic contraptions"
     }
     initialTech = { "iron working" }
     buildingGroups = {
@@ -77,7 +74,7 @@
         "training" "crafting" "laboratory" "jeweller" "poetry" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
 #Modded
-    workshopGroups = { "basic" "scrolls" "traps" "techBooks" }
+    workshopGroups = { "basic" "traps" "techBooks" }
     description = "(Challenge) The dark knight keeper is better at melee combat but worse at spell casting."
   }
 "3_white_knight" modify {
@@ -87,7 +84,6 @@
 #Modded
     technology = append {
 		"simplistic animations" "magic contraptions" "legendary heroes" "royal jewellery" "unicorn taming"
-        "magic paper production" "advanced inscription" "master inscription"
     }
     initialTech = { "archery" }
 #Modded
@@ -109,8 +105,7 @@
       "pig breeding" "iron working" "alchemy" "advanced alchemy" 
 	  "alchemical conversion" "jewellery" "gnomish jewellery"
 	  "gnomish alchemy" "sorcery" "advanced sorcery" "master sorcery" 
-	  "archery" "gnome wizards" "magic paper production" 
-	  "advanced inscription" "master inscription"
+	  "archery" "gnome wizards"
   }
   initialTech = { "automatons" "sorcery" "archery"}
   baseNameGen = "TOWN"
@@ -118,7 +113,7 @@
 	  "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "pigsty"
       "archery" "crafting" "laboratory" "jeweller" "poetry" "prison" "orders" "installations" "magical_installations" "traps"
   }
-  workshopGroups = { "traps" "gnomes" "scrolls" }
+  workshopGroups = { "traps" "gnomes" }
   description = "Manage a tribe of gnomes and see the world through the eyes of a magicrafter"
   noLeader = true
   specialTraits = {
@@ -249,7 +244,7 @@
 #    buildingGroups = {
 #        "guildmaster" "floors" "orders"
 #    }
-#    workshopGroups = { "basic" "scrolls" }
+#    workshopGroups = { "basic" }
 #    description = "Manage an adventurer guild and defeat evil."
 #  }
 
