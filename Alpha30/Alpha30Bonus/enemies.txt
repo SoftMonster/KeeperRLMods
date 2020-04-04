@@ -724,7 +724,7 @@
     settlement = {
       type = Builtin MINETOWN
       tribe = MONSTER
-      locationName = "dungeon level" #Modded
+      locationName = "royal dungeon level" #Modded
       race = "dwellers"              #Modded
       buildingId = "DUNGEON"
       furniture = { "roomFurniture" }
@@ -1125,7 +1125,7 @@
     locationName = "the Dwarven Market"
     race = "dwarves"
     buildingId = "DUNGEON"
-    shopItems = { "dwarfShop" "dwarfShop" "dwarfShop" "armory" "chest" "jewellery" "breweryPotions" "scribeScrolls" "iron" "villageShop" "villageShop" "minerals" }
+    shopItems = { "dwarfShop" "dwarfShop" "dwarfShop" "armory" "chest" "royalJewellery" "royalBreweryPotions" "royalScribeScrolls" "royalIron" "villageShop" "villageShop" "minerals" }
     outsideFeatures = "dungeonOutside"
     furniture = { "roomFurniture" }
   }
@@ -1167,7 +1167,7 @@
     locationName = "the Dwarven Market"
     race = "dwarves"
     buildingId = "DUNGEON"
-    shopItems = { "dwarfShop" "armory" "jewellery" "breweryPotions" "iron" "villageShop" }
+    shopItems = { "dwarfShop" "armory" "royalJewellery" "royalBreweryPotions" "royalIron" "villageShop" }
     outsideFeatures = "dungeonOutside"
     furniture = { "roomFurniture" }
   }
@@ -2144,7 +2144,7 @@
     }
     buildingId = "WOOD"
     furniture = { "roomFurniture" }
-    shopItems = { "iron" }
+    shopItems = { "royalIron" }
     outsideFeatures = "villageOutside"
     }
 	config = { 
@@ -2470,7 +2470,7 @@
       buildingId = "VOLCANIC_BRICK"
       furniture = { "randomTerrain" }
       stockpiles = { { "minerals" 1 "BACKGROUND_RUBBLE" } }
-      shopItems = { "jewellery" }
+      shopItems = { "royalJewellery" }
       inhabitants = {
         leader = { { "ANCIENT_RED_DRAGON" } }
         fighters = {
@@ -2875,48 +2875,24 @@
 		guardianInfo = "SHADOW_SPIRIT" 1 12 16
 	}
   }
-  "NEUTRAL_GROUP_SHOP_BASE"
-  {
-    settlement = {
-    type = Builtin VILLAGE
-    tribe = GNOME #Neutral alignment
-    inhabitants = { 
-        leader = { { "GNOME_CHIEF" } } 
-        fighters = {
-            count = { 2 3 }
-            all = { 1 "STONE_GOLEM" }
-      }
-    }
-    buildingId = "DUNGEON"  
-    furniture = { "palace_furniture" }
-    outsideFeatures = "villageOutside"
-    }
-  }
   
   "CITY_GROUP_SHOP"  inherit "CITY_GROUP_SHOP_BASE" { settlement = append { shopItems = { "villageShop" } } }
 
-  "ROYAL_BLACKSMITH" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Blacksmith" shopItems = { "iron" } } }
-  "ROYAL_SCRIBE" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Scribe" shopItems = { "scribeScrolls" } } }
-  "ROYAL_TANNER" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Tanner" shopItems = { "leather" } } }
-  "ROYAL_BREWER" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Brewer" shopItems = { "breweryPotions" } } }
+  "ROYAL_BLACKSMITH" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Blacksmith" shopItems = { "royalIron" } } }
+  "ROYAL_SCRIBE" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Scribe" shopItems = { "royalScribeScrolls" } } }
+  "ROYAL_TANNER" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Tanner" shopItems = { "royalLeather" } } }
+  "ROYAL_BREWER" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Brewer" shopItems = { "royalBreweryPotions" } } }
   "ROYAL_JEWELLER" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Jeweller" shopItems = { "royalJewellery" } } }
-  "ROYAL_TRAPSMITH" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Trapsmith" shopItems = { "traps" } } }
+  "ROYAL_TRAPSMITH" inherit "CITY_GROUP_SHOP_BASE" { settlement = append { race = "Royal Trapsmith" shopItems = { "royalTraps" } } }
   
-  "SHADOW_BLACKSMITH" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Blacksmith" shopItems = { "iron" } } }
-  "SHADOW_SCRIBE" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Scribe" shopItems = { "scribeScrolls" } } }
-  "SHADOW_TANNER" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Tanner" shopItems = { "leather" } } }
-  "SHADOW_BREWER" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Brewer" shopItems = { "breweryPotions" } } }
+  "SHADOW_BLACKSMITH" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Blacksmith" shopItems = { "royalIron" } } }
+  "SHADOW_SCRIBE" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Scribe" shopItems = { "royalScribeScrolls" } } }
+  "SHADOW_TANNER" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Tanner" shopItems = { "royalLeather" } } }
+  "SHADOW_BREWER" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Brewer" shopItems = { "royalBreweryPotions" } } }
   "SHADOW_JEWELLER" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Jeweller" shopItems = { "royalJewellery" } } }
-  "SHADOW_TRAPSMITH" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Trapsmith" shopItems = { "traps" } } }
+  "SHADOW_TRAPSMITH" inherit "SHADOW_GROUP_SHOP_BASE" { settlement = append { race = "Shadow Trapsmith" shopItems = { "royalTraps" } } }
 
-  "NEUTRAL_BLACKSMITH" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Blacksmith" shopItems = { "iron" } } }
-  "NEUTRAL_SCRIBE" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Scribe" shopItems = { "scribeScrolls" } } }
-  "NEUTRAL_TANNER" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Tanner" shopItems = { "leather" } } }
-  "NEUTRAL_BREWER" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Brewer" shopItems = { "breweryPotions" } } }
-  "NEUTRAL_JEWELLER" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Jeweller" shopItems = { "royalJewellery" } } }
-  "NEUTRAL_TRAPSMITH" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Trapsmith" shopItems = { "traps" } } }
-
-  "KING"
+ "KING"
   {
   biomes = { "PALACE" }  
   settlement = {
@@ -2997,32 +2973,32 @@
   levelConnection = {
     topLevel = MainEnemy
     levels = {
-        { ExtraEnemy { "BOTTOMLESS1" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS4" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS8" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS12" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS16" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS20" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS24" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS28" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS32" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS36" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS40" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS44" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS48" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS52" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS56" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS60" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS64" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS68" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS72" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS76" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS80" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS84" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS88" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS92" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS96" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS99" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON1" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON4" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON8" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON12" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON16" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON20" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON24" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON28" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON32" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON36" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON40" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON44" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON48" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON52" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON56" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON60" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON64" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON68" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON72" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON76" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON80" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON84" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON88" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON92" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON96" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "ROYAL_DUNGEON99" { 1 2 } } 60 40 DUNGEON }
     }
   }
 }
@@ -3139,193 +3115,8 @@
 }
 
 ####################################################################
-#"Bottomless" Dungeons
+#"ROYAL_DUNGEON" Dungeons
 ####################################################################
-  "BEGINNERS_DUNGEON"
-  {
-    biomes = { "NEUTRAL_TOWN" }
-    settlement = {
-      type = Builtin MINETOWN
-      tribe = MONSTER
-      inhabitants = {
-        leader = { { "RED_DRAGON" } }
-      }
-      buildingId = "SANDSTONE_WALL_DWARVEN"
-    }
-    levelConnection = {
-      topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY"}
-      levels = {
-        { ExtraEnemy { "BOTTOMLESS1" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS2" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS3" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS4" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS5" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS6" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS7" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS8" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS9" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS10" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS11" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS12" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS13" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS14" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS15" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS16" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS17" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS18" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS19" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS20" { 1 2 } } 60 40 DUNGEON }
-        { MainEnemy 60 40 MINETOWN }
-      }
-    }
-  }
-
-  "EXPERT_DUNGEON"
-  {
-    biomes = { "NEUTRAL_TOWN" }
-    settlement = {
-      type = Builtin MINETOWN
-      tribe = MONSTER
-      inhabitants = {
-        leader = { { "DEATH" } }
-      }
-      buildingId = "SANDSTONE_WALL_DWARVEN"
-    }
-    levelConnection = {
-      topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY_EXPERT"}
-      levels = {
-        { ExtraEnemy { "BOTTOMLESS50" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS51" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS52" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS53" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS54" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS55" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS56" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS57" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS58" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS59" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS60" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS61" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS62" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS63" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS64" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS65" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS66" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS67" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS68" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS69" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS70" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS71" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS72" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS73" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS74" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS75" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS76" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS77" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS78" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS79" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS80" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS81" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS82" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS83" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS84" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS85" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS86" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS87" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS88" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS89" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS90" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS91" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS92" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS93" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS94" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS95" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS96" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS97" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS98" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS99" { 1 2 } } 60 40 DUNGEON }
-        { MainEnemy 60 40 MINETOWN }
-      }
-    }
-  }
-  "ADVANCED_DUNGEON"
-  {
-    biomes = { "NEUTRAL_TOWN" }
-    settlement = {
-      type = Builtin MINETOWN
-      tribe = MONSTER
-      inhabitants = {
-        leader = { { "GOBLIN_KING" } }
-      }
-      buildingId = "SANDSTONE_WALL_DWARVEN"
-    }
-    levelConnection = {
-      topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY_ADVANCED"}
-      levels = {
-        { ExtraEnemy { "BOTTOMLESS21" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS22" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS23" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS24" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS25" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS26" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS27" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS28" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS29" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS30" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS31" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS32" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS33" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS34" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS35" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS36" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS37" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS38" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS39" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS40" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS41" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS42" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS43" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS44" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS45" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS46" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS47" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS48" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS49" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS50" { 1 2 } } 60 40 DUNGEON }
-        { MainEnemy 60 40 MINETOWN }
-      }
-    }
-  }
-####################################################################
-# Entry to "bottomless" dungeons
-####################################################################
-  "BOTTOMLESS_ENTRY"
-  {
-    settlement = {
-      type = Builtin COTTAGE
-      tribe = GNOME #Gnomish alignment is neutral to both good and evil characters
-      inhabitants = {
-        leader = { { "GNOME_CHIEF" } }
-        fighters = {
-          count = { 5 6}
-          all = { 1 "STONE_GOLEM" }
-        }
-      }
-      buildingId = "MUD"
-    }
-  }
-  "BOTTOMLESS_ENTRY_ADVANCED" inherit "BOTTOMLESS_ENTRY" {
-    settlement = append {
-      buildingId = "CITY_BRICK"
-    }
-  }
-    
-  "BOTTOMLESS_ENTRY_EXPERT" inherit "BOTTOMLESS_ENTRY" {
-    settlement = append {
-      buildingId = "ZOMBIE"
-    }
-  }
-
 ####################################################################
 #Definition of dungeons level 1 to 100
 ####################################################################
@@ -3334,22 +3125,16 @@
 
   #Start with base classes for the different types of dungeon
 
-  "BOTTOMLESS_TYPE_1"
+  "ROYAL_DUNGEON_TYPE_1"
   {
     settlement = {
       type = Builtin MINETOWN
       tribe = MONSTER
-      locationName = "dungeon level"
+      locationName = "royal dungeon level"
       race = "dwellers"
       buildingId = "MUD"
-      furniture = { "bottomlessdungeon" }
+      furniture = { "royalDungeon" }
       inhabitants = {
-        leader = {{
-           "RAT_KING"
-           "THIEF_LEADER"
-           "GNOME_CHIEF"
-           "BANDIT_LEADER"
-        }}
         fighters = {
           count = {7 11}
           all = {
@@ -3381,6 +3166,10 @@
             1 "MILITIA"
             1 "DWARF_MILITIA"
             1 "DWARF_WORKER"
+            1 "RAT_KING"
+            1 "THIEF_LEADER"
+            1 "GNOME_CHIEF"
+            1 "BANDIT_LEADER"
           }
         }
         civilians = {
@@ -3410,28 +3199,16 @@
       }
     }
   }
-  "BOTTOMLESS_TYPE_2"
+  "ROYAL_DUNGEON_TYPE_2"
   {
     settlement = {
       type = Builtin MINETOWN
       tribe = MONSTER
-      locationName = "dungeon level"
+      locationName = "royal dungeon level"
       race = "dwellers"
       buildingId = "WOOD_CASTLE"
-      furniture = { "bottomlessdungeon" }
+      furniture = { "royalDungeon" }
       inhabitants = {
-        leader = {{
-           "SOFT_MONSTER"
-           "VAMPIRE_LORD"
-           "DWARF_BARON"
-           "LIZARDLORD"
-           "ELF_LORD"
-           "DARK_ELF_LORD"
-           "CENTAUR_KING"
-           "LION_QUEEN"
-           "DWARF_QUEEN"
-           "GOBLIN_KING"
-        }}
         fighters = {
           count = {7 11}
           all = {
@@ -3506,38 +3283,31 @@
             1 "STONE_GOLEM"
             1 "SNAKE"
             1 "SPIDER"
+            1 "SOFT_MONSTER"
+            1 "VAMPIRE_LORD"
+            1 "DWARF_BARON"
+            1 "LIZARDLORD"
+            1 "ELF_LORD"
+            1 "DARK_ELF_LORD"
+            1 "CENTAUR_KING"
+            1 "LION_QUEEN"
+            1 "DWARF_QUEEN"
+            1 "GOBLIN_KING"
           }
         }
       }
     }
   }
-  "BOTTOMLESS_TYPE_3"
+  "ROYAL_DUNGEON_TYPE_3"
   {
     settlement = {
       type = Builtin MINETOWN
       tribe = MONSTER
-      locationName = "dungeon level"
+      locationName = "royal dungeon level"
       race = "dwellers"
       buildingId = "BRICK"
-      furniture = { "bottomlessdungeon" }
+      furniture = { "royalDungeon" }
       inhabitants = {
-        leader = {{
-           "VAMPIRE_LORD"
-           "DWARF_BARON"
-           "LIZARDLORD"
-           "ELF_LORD"
-           "DARK_ELF_LORD"
-           "CENTAUR_KING"
-           "LION_QUEEN"
-           "DWARF_QUEEN"
-           "DEMON_LORD"
-           "DJINN"
-           "CYCLOPS"
-           "DUKE"
-           "MINOTAUR"
-           "AMAZON_QUEEN"
-           "HELL_KNIGHT_LORD"
-        }}
         fighters = {
           count = {6 10}
           all = {
@@ -3581,21 +3351,36 @@
             1 "GREEN_DRAGON"
             1 "RED_DRAGON"
             1 "HYDRA"
+            1 "VAMPIRE_LORD"
+            1 "DWARF_BARON"
+            1 "LIZARDLORD"
+            1 "ELF_LORD"
+            1 "DARK_ELF_LORD"
+            1 "CENTAUR_KING"
+            1 "LION_QUEEN"
+            1 "DWARF_QUEEN"
+            1 "DEMON_LORD"
+            1 "DJINN"
+            1 "CYCLOPS"
+            1 "DUKE"
+            1 "MINOTAUR"
+            1 "AMAZON_QUEEN"
+            1 "HELL_KNIGHT_LORD"
           }
         }
       }
     }
   }
 
-  "BOTTOMLESS_TYPE_4"
+  "ROYAL_DUNGEON_TYPE_4"
   {
     settlement = {
       type = Builtin MINETOWN
       tribe = MONSTER
-      locationName = "dungeon level"
+      locationName = "royal dungeon level"
       race = "dwellers"
       buildingId = "RUINS"
-      furniture = { "bottomlessdungeon" }
+      furniture = { "royalDungeon" }
       inhabitants = {
         fighters = {
           count = {4 5}
@@ -3623,129 +3408,48 @@
 
   #Split base class 2 into 2a and 2b
 
-  "BOTTOMLESS_TYPE_2a" inherit "BOTTOMLESS_TYPE_2" { settlement = append {buildingId = "RUINS"}}
-  "BOTTOMLESS_TYPE_2b" inherit "BOTTOMLESS_TYPE_2" { settlement = append {buildingId = "TAINTED"}}
+  "ROYAL_DUNGEON_TYPE_2a" inherit "ROYAL_DUNGEON_TYPE_2" { settlement = append {buildingId = "RUINS"}}
+  "ROYAL_DUNGEON_TYPE_2b" inherit "ROYAL_DUNGEON_TYPE_2" { settlement = append {buildingId = "TAINTED"}}
   
   #Split base class 3 into 3a, 3b and 3c
   
-  "BOTTOMLESS_TYPE_3a" inherit "BOTTOMLESS_TYPE_3"
+  "ROYAL_DUNGEON_TYPE_3a" inherit "ROYAL_DUNGEON_TYPE_3"
      { settlement = append { buildingId = "MINOTAUR" inhabitants = append { fighters = append { count = {5 9}}}}}
-  "BOTTOMLESS_TYPE_3b" inherit "BOTTOMLESS_TYPE_3"
+  "ROYAL_DUNGEON_TYPE_3b" inherit "ROYAL_DUNGEON_TYPE_3"
      { settlement = append { buildingId = "SANDSTONE_WALL" inhabitants = append { fighters = append { count = {4 8}}}}}
-  "BOTTOMLESS_TYPE_3c" inherit "BOTTOMLESS_TYPE_3"
+  "ROYAL_DUNGEON_TYPE_3c" inherit "ROYAL_DUNGEON_TYPE_3"
      { settlement = append { buildingId = "TAINTED" inhabitants = append { fighters = append { count = {3 7}}}}}
       
       
   #Define 100 levels of dungeons with increasing difficulty based on the base classes available.
   #This ensures that there is a continuous stream of enemies available getting gradually harder.  
       
-  "BOTTOMLESS1" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 1 } } } } }
-  "BOTTOMLESS2" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 3 } } } } }
-  "BOTTOMLESS3" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 5 } } } } }
-  "BOTTOMLESS4" inherit "BOTTOMLESS_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 7 } } } } }
-
-  "BOTTOMLESS5" inherit "BOTTOMLESS_TYPE_2" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 1 } } } } }  
-  "BOTTOMLESS6" inherit "BOTTOMLESS_TYPE_2" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 3 } } } } }
-  "BOTTOMLESS7" inherit "BOTTOMLESS_TYPE_2" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 5 } } } } }
-  "BOTTOMLESS8" inherit "BOTTOMLESS_TYPE_2" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 7 } } } } }
-
-  "BOTTOMLESS9" inherit "BOTTOMLESS_TYPE_2a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 10  } } } } }
-  "BOTTOMLESS10" inherit "BOTTOMLESS_TYPE_2a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 11 } } } } }
-  "BOTTOMLESS11" inherit "BOTTOMLESS_TYPE_2a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 12 } } } } }
-  "BOTTOMLESS12" inherit "BOTTOMLESS_TYPE_2a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 13 } } } } }
-  "BOTTOMLESS13" inherit "BOTTOMLESS_TYPE_2a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 14} } } } }
-  "BOTTOMLESS14" inherit "BOTTOMLESS_TYPE_2a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 15 } } } } }
-
-  "BOTTOMLESS15" inherit "BOTTOMLESS_TYPE_2b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 16 } } } } }
-  "BOTTOMLESS16" inherit "BOTTOMLESS_TYPE_2b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 17 } } } } }
-  "BOTTOMLESS17" inherit "BOTTOMLESS_TYPE_2b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 18 } } } } }
-  "BOTTOMLESS18" inherit "BOTTOMLESS_TYPE_2b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 19 } } } } }
-  "BOTTOMLESS19" inherit "BOTTOMLESS_TYPE_2b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 20 } } } } }
-
-  "BOTTOMLESS20" inherit "BOTTOMLESS_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 1 } } } } }
-  "BOTTOMLESS21" inherit "BOTTOMLESS_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 3 } } } } }
-  "BOTTOMLESS22" inherit "BOTTOMLESS_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 5 } } } } }
-  "BOTTOMLESS23" inherit "BOTTOMLESS_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 7 } } } } }
-  "BOTTOMLESS24" inherit "BOTTOMLESS_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 9 } } } } }
-  "BOTTOMLESS25" inherit "BOTTOMLESS_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 11 } } } } }
-
-  "BOTTOMLESS26" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 15 } } } } }
-  "BOTTOMLESS27" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 18 } } } } }
-  "BOTTOMLESS28" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 23 } } } } }
-  "BOTTOMLESS29" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 26 } } } } }
-  "BOTTOMLESS30" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 27 } } } } }
-  "BOTTOMLESS31" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 28 } } } } }
-  "BOTTOMLESS32" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 29 } } } } }
-  "BOTTOMLESS33" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 30 } } } } }
-  "BOTTOMLESS34" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 31 } } } } }
-  "BOTTOMLESS35" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 32 } } } } }
-  "BOTTOMLESS36" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 33 } } } } }
-  "BOTTOMLESS37" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 34 } } } } }
-  "BOTTOMLESS38" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 35 } } } } }
-  "BOTTOMLESS39" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 36 } } } } }
-  "BOTTOMLESS40" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 37 } } } } }
-  "BOTTOMLESS41" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 38 } } } } }
-  "BOTTOMLESS42" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 39 } } } } }
-  "BOTTOMLESS43" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 40 } } } } }
-  "BOTTOMLESS44" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 41 } } } } }
-  "BOTTOMLESS45" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 42 } } } } }
-  "BOTTOMLESS46" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 43 } } } } }
-  "BOTTOMLESS47" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 44 } } } } }
-  "BOTTOMLESS48" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 45 } } } } }
-  "BOTTOMLESS49" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 46 } } } } }
-  "BOTTOMLESS50" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 47 } } } } }
-
-  "BOTTOMLESS51" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 48 } } } } }
-  "BOTTOMLESS52" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 49 } } } } }
-  "BOTTOMLESS53" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 50 } } } } }
-  "BOTTOMLESS54" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 51 } } } } }
-  "BOTTOMLESS55" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 52 } } } } }
-  "BOTTOMLESS56" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 53 } } } } }
-  "BOTTOMLESS57" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 54 } } } } }
-  "BOTTOMLESS58" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 55 } } } } }
-  "BOTTOMLESS59" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 56 } } } } }
-  "BOTTOMLESS60" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 57 } } } } }
-  "BOTTOMLESS61" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 58 } } } } }
-  "BOTTOMLESS62" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 59 } } } } }
-  "BOTTOMLESS63" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 60 } } } } }
-  "BOTTOMLESS64" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 61 } } } } }
-
-  "BOTTOMLESS65" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 62 } } } } }
-  "BOTTOMLESS66" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 63 } } } } }
-  "BOTTOMLESS67" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 64 } } } } }
-  "BOTTOMLESS68" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 65 } } } } }
-  "BOTTOMLESS69" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 66 } } } } }
-  "BOTTOMLESS70" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 67 } } } } }
-  "BOTTOMLESS71" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 68 } } } } }
-  "BOTTOMLESS72" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 69 } } } } }
-  "BOTTOMLESS73" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 70 } } } } }
-  "BOTTOMLESS74" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 71 } } } } }
-  "BOTTOMLESS75" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 72 } } } } }
-  "BOTTOMLESS76" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 73 } } } } }
-  "BOTTOMLESS77" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 74 } } } } }
-  "BOTTOMLESS78" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 75 } } } } }
-  "BOTTOMLESS79" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 76 } } } } }
-  "BOTTOMLESS80" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 77 } } } } }
-  "BOTTOMLESS81" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 78 } } } } }
-  "BOTTOMLESS82" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 79 } } } } }
-  "BOTTOMLESS83" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 80 } } } } }
-  "BOTTOMLESS84" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 81 } } } } }
-  "BOTTOMLESS85" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 82 } } } } }
-  "BOTTOMLESS86" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 83 } } } } }
-  "BOTTOMLESS87" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 84 } } } } }
-  "BOTTOMLESS88" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 85 } } } } }
-  "BOTTOMLESS89" inherit "BOTTOMLESS_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 86 } } } } }
-
-  "BOTTOMLESS90" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 90 } } } } }
-  "BOTTOMLESS91" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 91 } } } } }
-  "BOTTOMLESS92" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 92 } } } } }
-  "BOTTOMLESS93" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 93 } } } } }
-  "BOTTOMLESS94" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 94 } } } } }
-  "BOTTOMLESS95" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 95 } } } } }
-  "BOTTOMLESS96" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 96 } } } } }
-  "BOTTOMLESS97" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 97 } } } } }
-  "BOTTOMLESS98" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 98 } } } } }
-  "BOTTOMLESS99" inherit "BOTTOMLESS_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 125 } } } } }
+  "ROYAL_DUNGEON1" inherit "ROYAL_DUNGEON_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 1 } } } } }
+  "ROYAL_DUNGEON4" inherit "ROYAL_DUNGEON_TYPE_1" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 7 } } } } }
+  "ROYAL_DUNGEON8" inherit "ROYAL_DUNGEON_TYPE_2" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 7 } } } } }
+  "ROYAL_DUNGEON12" inherit "ROYAL_DUNGEON_TYPE_2a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 13 } } } } }
+  "ROYAL_DUNGEON16" inherit "ROYAL_DUNGEON_TYPE_2b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 17 } } } } }
+  "ROYAL_DUNGEON20" inherit "ROYAL_DUNGEON_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 1 } } } } }
+  "ROYAL_DUNGEON24" inherit "ROYAL_DUNGEON_TYPE_3" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 9 } } } } }
+  "ROYAL_DUNGEON28" inherit "ROYAL_DUNGEON_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 23 } } } } }
+  "ROYAL_DUNGEON32" inherit "ROYAL_DUNGEON_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 29 } } } } }
+  "ROYAL_DUNGEON36" inherit "ROYAL_DUNGEON_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 33 } } } } }
+  "ROYAL_DUNGEON40" inherit "ROYAL_DUNGEON_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 37 } } } } }
+  "ROYAL_DUNGEON44" inherit "ROYAL_DUNGEON_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 41 } } } } }
+  "ROYAL_DUNGEON48" inherit "ROYAL_DUNGEON_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 45 } } } } }
+  "ROYAL_DUNGEON52" inherit "ROYAL_DUNGEON_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 49 } } } } }
+  "ROYAL_DUNGEON56" inherit "ROYAL_DUNGEON_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 53 } } } } }
+  "ROYAL_DUNGEON60" inherit "ROYAL_DUNGEON_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 57 } } } } }
+  "ROYAL_DUNGEON64" inherit "ROYAL_DUNGEON_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 61 } } } } }
+  "ROYAL_DUNGEON68" inherit "ROYAL_DUNGEON_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 65 } } } } }
+  "ROYAL_DUNGEON72" inherit "ROYAL_DUNGEON_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 69 } } } } }
+  "ROYAL_DUNGEON76" inherit "ROYAL_DUNGEON_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 73 } } } } }
+  "ROYAL_DUNGEON80" inherit "ROYAL_DUNGEON_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 77 } } } } }
+  "ROYAL_DUNGEON84" inherit "ROYAL_DUNGEON_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 81 } } } } }
+  "ROYAL_DUNGEON88" inherit "ROYAL_DUNGEON_TYPE_3c" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 85 } } } } }
+  "ROYAL_DUNGEON92" inherit "ROYAL_DUNGEON_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 92 } } } } }
+  "ROYAL_DUNGEON96" inherit "ROYAL_DUNGEON_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 96 } } } } }
+  "ROYAL_DUNGEON99" inherit "ROYAL_DUNGEON_TYPE_4" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 125 } } } } }
 ####################################################################
 
 ###########################

@@ -614,22 +614,6 @@
     }
   }
 #################
-  "jewellery"
-  {
-    items = {
-      {{Ring POISON_RESISTANT} 1}
-      {{Ring FIRE_RESISTANT} 1}
-      {{Simple "DefenseAmulet" } 1}
-      {{Amulet REGENERATION} 1}
-      {{Ring MELEE_RESISTANCE} 1}
-      {{Ring FLYING} 1}
-      {{Simple "GoldenStaff" } 1}
-      {{Amulet DISARM_TRAPS_SKILL} 1}
-      {{Amulet AMBUSH_SKILL} 1}
-      {{Ring SPEED} 1}
-      {{Ring NO_CARRY_LIMIT} 1}
-	}
-  }
   "royalJewellery"
   {
     items = {
@@ -651,7 +635,7 @@
 	}
   }
 #################
-  "traps"
+  "royalTraps"
   {
     items = {
       {{ Simple "FirstAidKit" } 10 }
@@ -665,7 +649,7 @@
 	}
   }
 #################
-  "breweryPotions"
+  "royalBreweryPotions"
   {
     items = {
       {{ Potion DestroyEquipment } 10 }
@@ -697,7 +681,7 @@
 	}
   }
 #################
-  "leather"
+  "royalLeather"
   {
     items = {
       {{Simple "LongSpear" } 10 }
@@ -720,7 +704,7 @@
 	}
   }
 #################
-  "scribeScrolls"
+  "royalScribeScrolls"
   {
     items = {
       {{ Scroll CircularBlast } 10 }
@@ -736,7 +720,7 @@
 	}
   }
 #################
-  "iron"
+  "royalIron"
   {
     items = {
       {{ Simple "AdaArmor" } 3 }
@@ -757,6 +741,7 @@
       {{ Simple "Mace" } 10 }
 	}
   }
+#################
   
   "goblinglyphs"
   {

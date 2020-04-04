@@ -554,7 +554,7 @@
           traits = { FIGHTER }
 		  stripEquipment = false
           requirements = {
-            { 0.0 RecruitmentInfo { "GNOMES" "BEGINNERS_DUNGEON" "ADVANCED_DUNGEON" "EXPERT_DUNGEON" } 3 FIGHTER }
+            { 0.0 RecruitmentInfo { "GNOMES" } 3 FIGHTER }
             { 1.0 CostInfo "GOLD" 12 }
           }
         }
