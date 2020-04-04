@@ -1,0 +1,2 @@
+ { "dungeon_entrance_color" ">" ColorId WHITE }
+ 

@@ -1,0 +1,35 @@
+EVIL_KEEPER modify append {
+ 
+#Main villains
+
+    {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon (optional) and Town" ALLY}
+    {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon (optional) and Town" ALLY}
+    {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon (optional) and Town" ALLY}
+}
+
+# Villains for lawful keepers
+LAWFUL_KEEPER modify append {
+
+    {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon (optional) and Town" ALLY} 
+    {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon (optional) and Town" ALLY} 
+    {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon (optional) and Town" ALLY} 
+}
+
+# Villains for evil adventurers
+EVIL_ADVENTURER modify append {
+
+#Extra modded villains
+
+    {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon (optional) and Town" ALLY} 
+    {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon (optional) and Town" ALLY} 
+    {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon (optional) and Town" ALLY} 
+}
+
+# Villains for lawful adventurers
+LAWFUL_ADVENTURER modify append {
+
+
+    {{ "dungeon_entrance_color" ColorId GREEN } "BEGINNERS_DUNGEON" "Starter Dungeon (optional) and Town" ALLY} 
+    {{ "dungeon_entrance_color" ColorId ORANGE } "ADVANCED_DUNGEON" "Advanced Dungeon (optional) and Town" ALLY} 
+    {{ "dungeon_entrance_color" ColorId RED } "EXPERT_DUNGEON" "End Game Dungeon (optional) and Town" ALLY} 
+}
