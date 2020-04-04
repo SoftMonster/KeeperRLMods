@@ -1,11 +1,19 @@
 "2_dark_knight" modify {
     buildingGroups = append { "furnace" }
+    workshopGroups = append { "furnace" }
 }
 
 "1_dark_mage" modify {
     buildingGroups = append { "furnace" }
+    workshopGroups = append { "furnace" }
 }
 
 "3_white_knight" modify {
     buildingGroups = append { "furnace" }
+    workshopGroups = append { "furnace" }
+  }
+
+"4_gnomes" modify {
+    buildingGroups = append { "furnace" }
+    workshopGroups = append { "furnace" }
   }
