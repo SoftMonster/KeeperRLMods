@@ -1,15 +1,16 @@
   "GRAIN"
   {
     name = "plot of wheat"
-    viewId = { "grass" }
+    viewId = { "farm_plot" ColorId LIGHT_BROWN }
     tickType = Effect Chance 0.001 Chain { DestroyWalls BASH PlaceFurniture "CROPS" }
     strength = 1
     layer = FLOOR
+    canBuildOutsideOfTerritory = true
   }
   "MUSHROOM_FARM"
   {
     name = "mushroom plot"
-    viewId = { "grass" }
+    viewId = { "farm_plot" ColorId DARK_BROWN }
     tickType = Effect Chance 0.001 Chain {
 	  DestroyWalls BASH
       ChooseRandom {	  
@@ -21,17 +22,19 @@
 	}
     strength = 1
     layer = FLOOR
+    canBuildOutsideOfTerritory = true
   }
   "TREE_FARM"
   {
     name = "sapling plot"
-    viewId = { "grass" }
+    viewId = { "farm_plot" ColorId DARK_GREEN }
     tickType = Effect Chance 0.001 Chain {
 	  DestroyWalls BASH
-	  PlaceFurniture "CANIF_TREE"
+	  PlaceFurniture "CANIF_TREE_FARMED"
     }	   
     strength = 1
     layer = FLOOR
+    canBuildOutsideOfTerritory = true
   }
  "CROPS" modify
  {
@@ -41,4 +44,10 @@
      DropItems {Simple "Food" } {1}
    }
    strength2 = { 1 DIG }
+ }
+
+ "CANIF_TREE_FARMED" inherit "CANIF_TREE"
+ {
+   destroyedRemains = none
+   strength2 = { 70 DIG }
  }
