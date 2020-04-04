@@ -1,3 +1,0 @@
-  "furnace" {
-     { Furniture {{ "FURNACE" } "IRON" 20 } "Furnace" "Recycling" "Recycles metal weapons and armour." 0 { TechId "iron working" }}
-}
