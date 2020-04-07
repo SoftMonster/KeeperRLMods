@@ -28,11 +28,7 @@
   {
     name = "sapling plot"
     viewId = { "farm_plot" ColorId DARK_GREEN }
-    tickType = Effect Chance 0.001 Chain {
-	  DestroyWalls BASH
-	  PlaceFurniture "CANIF_TREE_FARMED"
-    }	   
-    strength = 1
+    tickType = Effect Chance 0.001 PlaceFurniture "CANIF_TREE_FARMED"
     layer = FLOOR
     canBuildOutsideOfTerritory = true
   }

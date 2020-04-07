@@ -1,3 +1,4 @@
+#Note: putting dark mage before knight makes the menu come up twice. Leave it here.
 "2_dark_knight" modify {
     buildingGroups = append { "furnace" }
     workshopGroups = append { "furnace" }
@@ -13,7 +14,7 @@
     workshopGroups = append { "furnace" }
   }
 
-"4_gnomes" modify {
+"0_gnomes" modify {
     buildingGroups = append { "furnace" }
     workshopGroups = append { "furnace" }
   }

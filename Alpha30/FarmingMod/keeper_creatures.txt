@@ -2,6 +2,7 @@
     buildingGroups = append { "farming" }
 }
 
+#Note: putting dark mage before knight makes the menu come up twice. Leave it here.
 "1_dark_mage" modify {
     buildingGroups = append { "farming" }
 }
@@ -10,6 +11,7 @@
     buildingGroups = append { "farming" }
   }
 
-"4_gnomes" modify {
+"0_gnomes" modify {
     buildingGroups = append { "farming" }
   }
+
