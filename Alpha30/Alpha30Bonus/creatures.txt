@@ -5233,6 +5233,11 @@
         firstNameGen = "FIRST_MALE"
         fullTitle = true
       }
+      permanentEffects = {
+        AMBUSH_SKILL 1
+        SWIMMING_SKILL 1
+        DISARM_TRAPS_SKILL 1
+      }
       maxLevelIncrease = {
         MELEE 12
 		ARCHERY 12

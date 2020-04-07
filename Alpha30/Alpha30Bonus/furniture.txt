@@ -716,19 +716,24 @@
     	  DropItems {Simple "GoldPiece"} {15 25}
 		  SummonEnemy "RAT" {3 4} none
       }
-      ChooseRandom {
-        Message "The chest breaks open easily."
-        Message "The chest resists and then suddenly breaks open."
-        Message "The chest cracks along the top."
-      }
-      ChooseRandom {
-        Chain { Message "A blue gas leaks from the chest." Lasting HALLU }
-        Chain { Message "The chest catches fire as you trigger the trap." Fire }
-        Chain { Message "A frost bolt hits you!" Ice }
-        Chain { Message "An acid ball splashes you!" Acid }
-        Chain { Message "You are stabbed by a needle!" Lasting POISON }
-        Chain { Message "A small device slits you open!" Lasting BLEEDING }
-        Chain { Message "Something makes you cough!" Lasting PLAGUE }
+	  FirstSuccessful {
+	    FilterLasting DISARM_TRAPS_SKILL Message "You disarm a trap on the chest using your disarming skills."
+		Chain {  
+          ChooseRandom {
+            Message "The chest breaks open easily."
+            Message "The chest resists and then suddenly breaks open."
+            Message "The chest cracks along the top."
+          }
+          ChooseRandom {
+            Chain { Message "A blue gas leaks from the chest." Lasting HALLU }
+            Chain { Message "The chest catches fire as you trigger the trap." Fire }
+            Chain { Message "A frost bolt hits you!" Ice }
+            Chain { Message "An acid ball splashes you!" Acid }
+            Chain { Message "You are stabbed by a needle!" Lasting POISON }
+            Chain { Message "A small device slits you open!" Lasting BLEEDING }
+            Chain { Message "Something makes you cough!" Lasting PLAGUE }
+		  }
+		}
       } 
       DestroyWalls BASH
 	}
