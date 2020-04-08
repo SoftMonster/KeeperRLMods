@@ -1421,3 +1421,26 @@
    cooldown = 500
    sound = SPELL_AIR_BLAST
  }
+ "place castle"
+ {
+   symbol = "O"
+   cooldown = 1
+   effect = Chain {                                 #X -Y
+	        CustomArea PlaceFurniture "CASTLE_A1" { -2 -3 } 
+	        CustomArea PlaceFurniture "CASTLE_A2" { -1 -3 }
+	        CustomArea PlaceFurniture "CASTLE_A3" {  0 -3 }
+  	        CustomArea PlaceFurniture "CASTLE_A4" {  1 -3 }
+	        CustomArea PlaceFurniture "CASTLE_B1" { -2 -2 } 
+	        CustomArea PlaceFurniture "CASTLE_B2" { -1 -2 }
+	        CustomArea PlaceFurniture "CASTLE_B3" {  0 -2 }
+	        CustomArea PlaceFurniture "CASTLE_B4" {  1 -2 }
+	        CustomArea PlaceFurniture "CASTLE_C1" { -2 -1 } 
+	        CustomArea PlaceFurniture "CASTLE_C2" { -1 -1 }
+	        CustomArea PlaceFurniture "CASTLE_C3" {  0 -1 }
+	        CustomArea PlaceFurniture "CASTLE_C4" {  1 -1 }
+	        CustomArea PlaceFurniture "CASTLE_D1" { -2  0 } 
+	        CustomArea PlaceFurniture "CASTLE_D2" { -1  0 }
+	        CustomArea PlaceFurniture "CASTLE_D3" {  0  0 }
+	        CustomArea PlaceFurniture "CASTLE_D4" {  1  0 }
+	      }
+ }

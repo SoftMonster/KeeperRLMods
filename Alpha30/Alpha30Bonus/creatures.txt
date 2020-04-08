@@ -3553,6 +3553,7 @@
       name = {
         name = "dungeon master"
       }
+	  spells = { "place castle" }
    }
   "EYE_SERVANT"
    {

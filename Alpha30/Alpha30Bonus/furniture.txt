@@ -277,23 +277,23 @@
     itemDrop = {{{{Simple "WoodPlank"} 1 { 10 15 }}}}
     tryDestroyFX = { WOOD_SPLINTERS }
   }
-
-  "CASTLE_A1" { name = "castle" viewId = { "castle_a1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_A2" { name = "castle" viewId = { "castle_a2" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_A3" { name = "castle" viewId = { "castle_a3" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_A4" { name = "castle" viewId = { "castle_a4" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_B1" { name = "castle" viewId = { "castle_b1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_B2" { name = "castle" viewId = { "castle_b2" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_B3" { name = "castle" viewId = { "castle_b3" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_B4" { name = "castle" viewId = { "castle_b4" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_C1" { name = "castle" viewId = { "castle_c1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_C2" { name = "castle" viewId = { "castle_c2" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_C3" { name = "castle" viewId = { "castle_c3" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_C4" { name = "castle" viewId = { "castle_c4" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_D1" { name = "castle" viewId = { "castle_d1" } blockMovement = true blockVision = { NORMAL ELF } canBuildOutsideOfTerritory = true }
-  "CASTLE_D2" { name = "dungeon entrance" viewId = { "castle_d2" } canBuildOutsideOfTerritory = true }
-  "CASTLE_D3" { name = "dungeon entrance" viewId = { "castle_d3" } onBuilt = DOWN_STAIRS usageType = BuiltinUsageId STAIRS canBuildOutsideOfTerritory = true }
-  "CASTLE_D4" { name = "castle" viewId = { "castle_d4" } blockMovement = true blockVision = { NORMAL ELF } wall = true canBuildOutsideOfTerritory = true }
+  
+  "CASTLE_A1" { name = "castle" viewId = { "castle_a1" } blockMovement = true  }
+  "CASTLE_A2" { name = "castle" viewId = { "castle_a2" } blockMovement = true }
+  "CASTLE_A3" { name = "castle" viewId = { "castle_a3" } blockMovement = true }
+  "CASTLE_A4" { name = "castle" viewId = { "castle_a4" } blockMovement = true }
+  "CASTLE_B1" { name = "castle" viewId = { "castle_b1" } blockMovement = true }
+  "CASTLE_B2" { name = "castle" viewId = { "castle_b2" } blockMovement = true }
+  "CASTLE_B3" { name = "castle" viewId = { "castle_b3" } blockMovement = true }
+  "CASTLE_B4" { name = "castle" viewId = { "castle_b4" } blockMovement = true }
+  "CASTLE_C1" { name = "castle" viewId = { "castle_c1" } blockMovement = true }
+  "CASTLE_C2" { name = "castle" viewId = { "castle_c2" } blockMovement = true }
+  "CASTLE_C3" { name = "castle" viewId = { "castle_c3" } blockMovement = true }
+  "CASTLE_C4" { name = "castle" viewId = { "castle_c4" } blockMovement = true }
+  "CASTLE_D1" { name = "castle" viewId = { "castle_d1" } blockMovement = true }
+  "CASTLE_D2" { name = "dungeon entrance" viewId = { "castle_d2" } }
+  "CASTLE_D3" { name = "dungeon entrance" viewId = { "castle_d3" } onBuilt = DOWN_STAIRS usageType = BuiltinUsageId STAIRS }
+  "CASTLE_D4" { name = "castle" viewId = { "castle_d4" } blockMovement = true }
   
   "LAVA_ROCK" inherit "MUD"
   {
