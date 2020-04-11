@@ -32,13 +32,14 @@ Partial Class KRLDeveloper
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(613, 169)
+        Me.Button1.Location = New System.Drawing.Point(497, 169)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(126, 23)
+        Me.Button1.Size = New System.Drawing.Size(116, 32)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "New Item"
         Me.Button1.UseVisualStyleBackColor = True
@@ -57,7 +58,7 @@ Partial Class KRLDeveloper
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(610, 22)
         Me.TextBox2.TabIndex = 2
-        Me.TextBox2.Text = "C:\KeeperRLMods\Alpha29\Alpha29Bonus\"
+        Me.TextBox2.Text = "C:\KeeperRLMods\Alpha30\Alpha30Bonus\"
         '
         'Label1
         '
@@ -79,27 +80,27 @@ Partial Class KRLDeveloper
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(469, 169)
+        Me.Button2.Location = New System.Drawing.Point(366, 169)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(138, 23)
+        Me.Button2.Size = New System.Drawing.Size(125, 32)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "Creature Wizard"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(345, 169)
+        Me.Button3.Location = New System.Drawing.Point(242, 169)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(118, 23)
+        Me.Button3.Size = New System.Drawing.Size(118, 33)
         Me.Button3.TabIndex = 6
         Me.Button3.Text = "Vanilla Viewer"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(242, 169)
+        Me.Button4.Location = New System.Drawing.Point(129, 168)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(97, 23)
+        Me.Button4.Size = New System.Drawing.Size(107, 33)
         Me.Button4.TabIndex = 7
         Me.Button4.Text = "Sprites"
         Me.Button4.UseVisualStyleBackColor = True
@@ -123,11 +124,21 @@ Partial Class KRLDeveloper
         Me.Button5.Text = "View License"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(619, 169)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(120, 32)
+        Me.Button6.TabIndex = 10
+        Me.Button6.Text = "A30 Port helper"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'KRLDeveloper
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(752, 204)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button4)
@@ -155,4 +166,5 @@ Partial Class KRLDeveloper
     Friend WithEvents Button4 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
 End Class

@@ -166,4 +166,9 @@ Public Class KRLDeveloper
         TextViewer.RichTextBox1.Text = My.Resources.COPYING
         TextViewer.ShowDialog()
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        frmA30PortHelper.ShowDialog()
+    End Sub
+
 End Class

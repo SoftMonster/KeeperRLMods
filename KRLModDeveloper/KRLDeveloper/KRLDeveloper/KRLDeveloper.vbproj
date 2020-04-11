@@ -79,6 +79,12 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DisplayName.vb" />
+    <Compile Include="frmA30PortHelper.Designer.vb">
+      <DependentUpon>frmA30PortHelper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmA30PortHelper.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmEffect.Designer.vb">
       <DependentUpon>frmEffect.vb</DependentUpon>
     </Compile>
@@ -188,6 +194,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmA30PortHelper.resx">
+      <DependentUpon>frmA30PortHelper.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEffect.resx">
       <DependentUpon>frmEffect.vb</DependentUpon>
     </EmbeddedResource>
