@@ -25,6 +25,28 @@
 #####################
 #Extra modded Keepers
 #####################
+"gnome_wizards"
+  {
+    creatureId = { "GNOME_CHIEF" }
+    tribeAlignment = EVIL
+    immigrantGroups = {"gnome_wizards"}
+    technology = {
+        "alchemy" "advanced alchemy" "alchemical conversion" "traps"
+        "pig breeding" "iron working" "simplistic animations"
+		"magic contraptions" "jewellery" "gnomish jewellery" "gnomish alchemy"
+		"sorcery" "advanced sorcery" "master sorcery" "archery" "gnome wizards"
+    }
+    initialTech = { "sorcery" "archery" }
+    buildingGroups = {
+        "structure" "doors" "floors" "storage" "library" "throne" "beds" "pigsty"
+        "archery" "crafting" "prison" "orders" "installations" "magical_installations" "traps"
+    }
+    workshopGroups = { "gnomish" }
+    description = "(Challenge) Manage a tribe of gnome wizards."
+    specialTraits = {
+      ExtraTraining ARCHERY 8
+	}
+   }
 "1a_dark_mage_easy"
 {
     #Modded

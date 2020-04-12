@@ -766,11 +766,48 @@
         { ids = { "AIR_ELEMENTAL" }   traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "GOLD" 80}   { 0.0 TechId "elite forest magic"   }}}
     }
     
-    "gnome_wizards" {
-	{
+    "gnome_wizards"
+    {
+        {
+          ids = { "IMP" }
+          traits = { WORKER NO_LIMIT NO_EQUIPMENT }
+          spawnLocation = NearLeader
+          keybinding = CREATE_IMP
+          sound = CREATE_IMP 2
+          noAuto = true
+          initialRecruitment = 4
+          requirements = {
+            { 1 ExponentialCost "GOLD" 30 5 4 }
+          }
+        }  
+        {
+          ids = { "GHOST_ARMOUR" "GHOST_ARMOUR" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+        }
+        {
+          ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+        }
+        {
+          ids = { "GIANT_ROBOT" "GIANT_ROBOT" }
+          traits = { FIGHTER }
+          spawnLocation = FurnitureType "FORGE"
+          noAuto = true
+          consumeIds = true    
+          requirements = { {  1.0 CostInfo "IRON" 100}  { 0.0 TechId "magic contraptions"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}}}
+        }
+        {
           ids = { "GNOME_PLAYER" }
-          traits = { FIGHTER LEADER}
-          frequency = 0.15
+          traits = { FIGHTER }
+          frequency = 0.45
           specialTraits = {
             { 0.05 { WorkshopType "WORKSHOP" }}
             { 0.05 { WorkshopType "FORGE" }}
@@ -790,8 +827,8 @@
 		}
 		{
           ids = { "GNOME_CROSSBOWMAN_PLAYER" }
-          traits = { FIGHTER LEADER }
-          frequency = 0.2
+          traits = { FIGHTER }
+          frequency = 0.5
           requirements = {
             { 0.0 MinTurnRequirement 1000 }
             { 0.2 AttractionInfo 1 {FurnitureType "ARCHERY_RANGE"}}
@@ -810,8 +847,8 @@
         }
 		{
           ids = { "GNOME_FIRE_MAGE_PLAYER" "GNOME_MAGE_PLAYER" }
-          traits = { FIGHTER LEADER }
-          frequency = 0.15
+          traits = { FIGHTER }
+          frequency = 0.45
           requirements = {
             { 0.2 AttractionInfo 1 {FurnitureType "BOOKCASE_IRON"}}
             { 0.0 TechId "advanced sorcery" }}
@@ -832,8 +869,8 @@
         }
 		{
           ids = { "GNOME_MAGE_PLAYER" }
-          traits = { FIGHTER LEADER }
-          frequency = 0.15
+          traits = { FIGHTER }
+          frequency = 0.35
           requirements = {
             { 0.2 AttractionInfo 1 {FurnitureType "BOOKCASE_WOOD"}}
             { 0.0 TechId "sorcery" }}
@@ -855,7 +892,7 @@
         }
         {
           ids = { "GNOME_FIRE_WIZARD_PLAYER" "GNOME_FIRE_WIZARD_PLAYER" }
-          traits = { FIGHTER LEADER }
+          traits = { FIGHTER }
           frequency = 0.65
 		  consumeIds = true
           requirements = {
@@ -864,11 +901,21 @@
         }
         {
           ids = { "GNOME_WIZARD_PLAYER" "GNOME_WIZARD_PLAYER" }
-          traits = { FIGHTER LEADER }
+          traits = { FIGHTER }
           frequency = 0.65
 		  consumeIds = true
           requirements = {
             { 0.0 TechId "gnome wizards" }
+          }
+        }
+        {
+          ids = { "MUSHROOM_MAN" }
+          traits = { FIGHTER }
+          frequency = 0.2
+		  consumeIds = true
+          initialRecruitment = 1
+          requirements = {
+            { 0.0 TechId "alchemical conversion" }
           }
         }
     }
