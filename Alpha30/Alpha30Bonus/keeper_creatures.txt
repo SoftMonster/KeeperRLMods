@@ -20,21 +20,6 @@
     workshopGroups = append { "white knights workshop" }
     description = "(Hard) Be on the side of the good!"
   }
-"0_gnomes" modify {
-  immigrantGroups = { "gnomes" "neutral_allies" "white_allies_extended" }
-  technology = {
-      "traps" #"advanced traps" "master traps" "gnomish magic"
-      "automatons" "advanced automatons" #"master automatons"
-      "pig breeding" "iron working" "alchemy" "advanced alchemy" 
-	  "alchemical conversion" "jewellery" "gnomish jewellery"
-	  "gnomish alchemy" "sorcery" "advanced sorcery" "master sorcery" 
-	  "archery" "gnome wizards"
-  }
-  workshopGroups = { "traps" "gnomes" }
-  description = "Manage a tribe of gnomes and see the world through the eyes of a magicrafter"
-  noLeader = true
-  specialTraits = { ExtraTraining ARCHERY 8 }
-}
 
 
 #####################

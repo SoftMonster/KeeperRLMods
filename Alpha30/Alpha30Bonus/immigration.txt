@@ -766,14 +766,7 @@
         { ids = { "AIR_ELEMENTAL" }   traits = { FIGHTER } spawnLocation = NearLeader noAuto = true requirements = { {  1.0 CostInfo "GOLD" 80}   { 0.0 TechId "elite forest magic"   }}}
     }
     
-    "gnomes" modify {
-    {
-      ids = { "GNOME" }
-      traits = { LEADER WORKER NO_LIMIT }
-      invisible = true
-      initialRecruitment = 4
-      spawnLocation = NearLeader
-    }
+    "gnome_wizards" {
 	{
           ids = { "GNOME_PLAYER" }
           traits = { FIGHTER LEADER}
