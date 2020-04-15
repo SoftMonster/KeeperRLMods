@@ -104,7 +104,7 @@
   {
     upgrade = "haste other"
     symbol = "🏃"
-    effect = Name "area haste" Chain { Message "Time is altered." Area 2 Filter ALLY Lasting SPEED }
+    effect = Name "area haste" Chain { Message "Time is altered." Area 2 Filter Not Enemy Lasting SPEED }
     cooldown = 110
     sound = SPELL_SPEED_SELF
   }
@@ -121,7 +121,7 @@
   {
     upgrade = "defend other"
     symbol = "🛡"
-    effect = Name "area defense bonus" Chain { Message "Spirit of Endurance invoked." Area 2 Filter ALLY Lasting DEF_BONUS }
+    effect = Name "area defense bonus" Chain { Message "Spirit of Endurance invoked." Area 2 Filter Not Enemy Lasting DEF_BONUS }
     cooldown = 70
     sound = SPELL_DEX_BONUS
   }
@@ -144,7 +144,7 @@
 "area damage bonus"
   {
     symbol = "💪"
-    effect = Name "area damage bonus" Chain { Message "Powers of violence called." Area 2 Filter ALLY Lasting DAM_BONUS }
+    effect = Name "area damage bonus" Chain { Message "Powers of violence called." Area 2 Filter Not Enemy Lasting DAM_BONUS }
     cooldown = 70
     sound = SPELL_STR_BONUS
   }
@@ -243,7 +243,7 @@
 "explosion"
   {
     symbol = "🔥💣"
-    effect = Name "explosion" Chain { Area 12 Filter ENEMY Fire Area 12 Filter ENEMY Blast Area 12 Filter ENEMY Damage SPELL_DAMAGE SPELL 
+    effect = Name "explosion" Chain { Area 12 Filter Enemy Fire Area 12 Filter Enemy Blast Area 12 Filter Enemy Damage SPELL_DAMAGE SPELL 
     CustomArea PlaceFurniture "FIRE_WALL" { 0 -12 0 -10 0 -8 0 -6 0 -4 0 -2 0 2 0 4 0 6 0 8 0 10 0 12 2 -10 2 -8 2 -6 2 -4 2 -2 2 0 2 2 2 4 2 6 2 8 2 10 4 8 4 6 4 4 4 2 4 0 4 -2 4 -4 4 -6 4 -8 
     6 6 6 4 6 2 6 0 6 -2 6 -4 6 -6 8 4 8 2 8 0 8 -2 8 -4 10 2 10 0 10 -2 12 0 -2 -10 -2 -8 -2 -6 -2 -4 -2 -2 -2 0 -2 2 -2 4 -2 6 -2 8 -2 10 -4 -8 -4 -6 -4 -4 -4 -2 -4 0 -4 2 -4 2 -4 4 -4 6 -4 8
     -6 6 -6 4 -6 2 -6 0 -6 -2 -6 -4 -6 -6 -8 4 -8 2 -8 0 -8 2 -8 4 -10 2 -10 0 -10 -2 -12 0} }
@@ -401,7 +401,7 @@
  {
    upgrade = "fire shield"
    symbol = "❂"
-   effect = Name "area fire shield" Chain { Message "Fire charm summoned." Area 3 Filter ALLY Lasting FIRE_RESISTANT }
+   effect = Name "area fire shield" Chain { Message "Fire charm summoned." Area 3 Filter Not Enemy Lasting FIRE_RESISTANT }
    cooldown = 80
    sound = SPELL_INVISIBILITY
  }
@@ -641,14 +641,14 @@
   "goblin damage buff"
  {
     symbol = "💪"
-    effect = Name "goblin damage buff" Chain { Message "Goblin violence cast." Area 2 Filter ALLY Lasting DAM_BONUS }
+    effect = Name "goblin damage buff" Chain { Message "Goblin violence cast." Area 2 Filter Not Enemy Lasting DAM_BONUS }
     cooldown = 10
     sound = SPELL_STR_BONUS
  }
   "goblin defense buff"
  {
     symbol = "🛡"
-    effect = Name "goblin defense buff" Chain { Message "Goblin skin charm." Area 2 Filter ALLY Lasting DEF_BONUS }
+    effect = Name "goblin defense buff" Chain { Message "Goblin skin charm." Area 2 Filter Not Enemy Lasting DEF_BONUS }
     cooldown = 10
     sound = SPELL_DEX_BONUS
  }
@@ -669,21 +669,21 @@
   "fae time twisting"
  {
     symbol = "🏃"
-    effect = Name "fae time twisting" Chain { Message "Time is commanded." Area 6 Filter ALLY Lasting SPEED Area 6 Filter ENEMY Lasting SLOWED }
+    effect = Name "fae time twisting" Chain { Message "Time is commanded." Area 6 Filter Not Enemy Lasting SPEED Area 6 Filter Enemy Lasting SLOWED }
     cooldown = 80
     sound = SPELL_SPEED_SELF
   }
   "fae melee boost"
   {
     symbol = "🛡"
-    effect = Name "fae melee boost" Chain { Message "Fae Spirit of Endurance invoked." Area 3 Filter ALLY Lasting DEF_BONUS Area 3 Filter ALLY Lasting DAM_BONUS }
+    effect = Name "fae melee boost" Chain { Message "Fae Spirit of Endurance invoked." Area 3 Filter Not Enemy Lasting DEF_BONUS Area 3 Filter Not Enemy Lasting DAM_BONUS }
     cooldown = 30
     sound = SPELL_DEX_BONUS
   }
   "fae illusion"
   {
     symbol = "🎭"
-    effect = Name "fae illusion" Chain { Message "Magic concealment." Area 3 Filter ALLY Lasting INVISIBLE Area 1 Filter ALLY Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 }
+    effect = Name "fae illusion" Chain { Message "Magic concealment." Area 3 Filter Not Enemy Lasting INVISIBLE Area 1 Filter Not Enemy Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 }
     cooldown = 30
     sound = SPELL_TELEPORT
   }

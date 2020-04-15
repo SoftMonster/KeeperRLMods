@@ -136,7 +136,7 @@
   "CASTLE_C4" { name = "castle" viewId = { "castle_c4" } blockMovement = true }
   "CASTLE_D1" { name = "castle" viewId = { "castle_d1" } blockMovement = true }
   "CASTLE_D2" { name = "dungeon entrance" viewId = { "castle_d2" } }
-  "CASTLE_D3" { name = "dungeon entrance" viewId = { "castle_d3" } onBuilt = DOWN_STAIRS usageType = BuiltinUsageId STAIRS }
+  "CASTLE_D3" { name = "dungeon entrance" viewId = { "castle_d3" } onBuilt = DOWN_STAIRS usageType = UsageEffect "use" Stairs }
   "CASTLE_D4" { name = "castle" viewId = { "castle_d4" } blockMovement = true }
   
   "LAVA_ROCK" inherit "MUD"
@@ -561,7 +561,7 @@
 		  SummonEnemy "RAT" {3 4} none
       }
 	  FirstSuccessful {
-	    FilterLasting DISARM_TRAPS_SKILL Message "You disarm a trap on the chest using your disarming skills."
+	    Filter LastingEffect DISARM_TRAPS_SKILL Message "You disarm a trap on the chest using your disarming skills."
 		Chain {  
           ChooseRandom {
             Message "The chest breaks open easily."
