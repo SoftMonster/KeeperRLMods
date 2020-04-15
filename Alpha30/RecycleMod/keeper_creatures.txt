@@ -14,7 +14,7 @@
     workshopGroups = append { "furnace" }
   }
 
-"0_gnomes" modify {
+"4_gnomes" modify {
     buildingGroups = append { "furnace" }
     workshopGroups = append { "furnace" }
   }
