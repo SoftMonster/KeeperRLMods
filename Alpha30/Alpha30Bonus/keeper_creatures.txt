@@ -25,7 +25,7 @@
 #####################
 #Extra modded Keepers
 #####################
-"gnome_wizards"
+"3a_gnome_wizards"
   {
     creatureId = { "GNOME_CHIEF" }
     tribeAlignment = EVIL
@@ -87,7 +87,7 @@
     workshopGroups = { "basic" "traps" "techBooks" }
     description = "(Hard) Play in hard mode and test your skills to the limit for experienced players. You get to wear a cool purple robe."
   }
-"BonusDev_elementalist" 
+"5_BonusDev_elementalist" 
   {
     creatureId = { "ELEMENTALIST" }
     tribeAlignment = LAWFUL
@@ -109,7 +109,7 @@
     workshopGroups = {"elements"}
     description = "(Challenge) Summon an army from your raw resources that can take over the map."
   }
-"BonusDev_vampire_lord"  
+"4_BonusDev_vampire_lord"  
   {
     creatureId = { "VAMPIRE_LORD" }
     tribeAlignment = EVIL
@@ -138,7 +138,7 @@
       AttrBonus DEFENSE 5
     }
   }
-"BonusDev_dwarf_queen"
+"6_BonusDev_dwarf_queen"
   {
     creatureId = { "DWARF_QUEEN" }
     tribeAlignment = LAWFUL
@@ -156,7 +156,7 @@
     workshopGroups = {"dwarven"}
     description = "(Hard) Play a tribe of dwarves and maximise melee combat."
   }
-"BonusDev_goblin_king"
+"7_BonusDev_goblin_king"
   {
     creatureId = { "GOBLIN_KING_PLAYER" }
     tribeAlignment = EVIL
@@ -192,6 +192,8 @@
 #	  "NOTE: SPIDER KEEPER IS JUST A MAXED ADVENTURER
 #	   ========================================="
 #  }
+
+#"8_BonusDev_adventurer_guild"
 #  {
 #    creatureId = { "GUILDMASTER" "GUILDMASTER_F"}
 #    tribeAlignment = LAWFUL
@@ -210,7 +212,7 @@
 #    description = "Manage an adventurer guild and defeat evil."
 #  }
 
-"BonusDev_dungeon_master"
+"9_BonusDev_dungeon_master"
   {
     creatureId = { "DUNGEON_MASTER" }
     tribeAlignment = EVIL
