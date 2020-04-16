@@ -212,7 +212,11 @@
   {
    name = "tar pit"
    viewId = { "tar_pit" }
-   entryType = Trap { Lasting SLOWED }
+   entryType = Trap { Name "tar" FirstSuccessful {  #Effect name is used when disarming the trap.
+	                     Filter LastingEffect FLYING CreatureMessage "fly above the tar pit" "flies above the tar pit"
+					     Lasting SLOWED
+					   }
+					 }
    warning = true
    constructMessage = SET_UP
   }
@@ -221,7 +225,11 @@
   {
     name = "floor_spikes trap"
     viewId = { "floor_spikes_trap" }
-    entryType = Trap { Lasting BLEEDING}
+    entryType = Trap { Name "floor spike" FirstSuccessful { #Effect name is used when disarming the trap.
+	                     Filter LastingEffect FLYING CreatureMessage "fly above the spikes" "flies above the spikes"
+					     Lasting BLEEDING
+					   }
+					 }
     warning = true
     constructMessage = SET_UP
   }

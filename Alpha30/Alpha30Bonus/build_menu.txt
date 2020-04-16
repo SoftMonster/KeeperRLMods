@@ -5,7 +5,7 @@
   "guildmaster" #Mod
   {
 
-    { Dig "Dig or cut tree"   "Structure" }
+    { CutTree "Order Cut tree"   "Structure" }
 
     { Furniture {{ "WOOD_WALL_GM" }                  "WOOD" 5 }       "Wooden building"   "Structure"
       "Outdoor building. Tiles covered by the roof are considered territory and can be built on." }
@@ -193,10 +193,8 @@
   #Sandbox
   "sandbox"
   {
-    { ImmediateDig                                               "Immediate Dig"   "Structure"  
-      "" i {} true DIG_OR_CUT_TREES}
-    { Dig                                                        "Order dig or cut tree"   "Structure"  
-      "" d {} true DIG_OR_CUT_TREES}
+    { ImmediateDig "Immediate Dig"   "Structure" }
+    { CutTree  "Order cut trees"   "Structure" }
     { Furniture {{ "MOUNTAIN" }                   "STONE" 0 }      "Soft rock"         "Structure" }
     { Furniture {{ "MOUNTAIN2" }                  "STONE" 0 }     "Hard rock"         "Structure" }
     { Furniture {{ "DUNGEON_WALL" "DUNGEON_WALL2" } "STONE" 0}       "Reinforce wall"    "Structure"
