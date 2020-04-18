@@ -448,30 +448,6 @@
         { Simple "Torch" 1 1 0.1 }
     }
 	}
- "GNOME" modify append {
-      viewId = { "gnome" }
-      attr = {
-        DAMAGE 12
-        DEFENSE 13 
-      }
-      body = {
-        type = Humanoid MEDIUM
-      }
-      spellSchools = { "gnome lore" } #Modded
-		spells = { "repair automaton" }
-      chatReactionFriendly = "talks about crafting"
-      chatReactionHostile = "\"Die!\""
-      skills = {
-        "LABORATORY" 0.3
-        "WORKSHOP" 0.6
-        "FORGE" 0.6
-        "JEWELER" 0.6
-      }
-      name = {
-        name = "gnome"
-        firstNameGen = "DWARF"
-    }
-    }
   "GNOME_CHIEF" modify append {
     inventory = {
         { Simple "Sword" }
@@ -6937,7 +6913,6 @@
         type = Humanoid MEDIUM
       }
       spellSchools = { "gnome lore" } #Modded
-		spells = { "repair automaton" }
       chatReactionFriendly = "talks about crafting"
       chatReactionHostile = "\"Die!\""
       skills = {
@@ -6962,8 +6937,7 @@
     body = {
       type = Humanoid MEDIUM
     }
-      spellSchools = { "gnome lore" } #Modded
-		spells = { "repair automaton" }
+    spellSchools = { "gnome lore" } #Modded
     chatReactionFriendly = "talks about digging"
     chatReactionHostile = "\"Die!\""
     skills = {

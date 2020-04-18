@@ -11,7 +11,7 @@
     buildingGroups = append { "farming" }
   }
 
-"4_gnomes" modify {
+"0_gnomes" modify {
     buildingGroups = append { "farming" }
   }
 
