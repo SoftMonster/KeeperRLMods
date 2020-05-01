@@ -5,4 +5,4 @@
 
 "3_white_knight" modify { workshopGroups = append { "scrolls" } technology = append { "magic inscription" } }
 
-"0_gnomes" modify { workshopGroups = append { "scrolls" } technology = append { "magic inscription" } }
+"4_gnomes" modify { workshopGroups = append { "scrolls" } technology = append { "magic inscription" } }
