@@ -1,8 +1,10 @@
-  "NEUTRAL_GROUP_SHOP_BASE"
+  "HALFLING_BLACKSMITH"
   {
     settlement = {
     type = Builtin VILLAGE
     tribe = GNOME #Neutral alignment
+	race = "Halfling Blacksmith"
+	shopItems = { "iron" }
     inhabitants = { 
         leader = { { "GNOME_CHIEF" } } 
         fighters = {
@@ -15,20 +17,68 @@
     outsideFeatures = "villageOutside"
     }
   }
-  
-  "NEUTRAL_BLACKSMITH" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Blacksmith" shopItems = { "iron" } } }
-  "NEUTRAL_SCRIBE" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Scribe" shopItems = { "scribeScrolls" } } }
-  "NEUTRAL_TANNER" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Tanner" shopItems = { "leather" } } }
-  "NEUTRAL_BREWER" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Brewer" shopItems = { "breweryPotions" } } }
-  "NEUTRAL_JEWELLER" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Jeweller" shopItems = { "jewellery" } } }
-  "NEUTRAL_TRAPSMITH" inherit "NEUTRAL_GROUP_SHOP_BASE" { settlement = append { race = "Town Trapsmith" shopItems = { "traps" } } }
+  "HALFLING_SCRIBE" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Scribe" shopItems = { "scribeScrolls" } } }
+  "HALFLING_TANNER" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Tanner" shopItems = { "leather" } } }
+  "HALFLING_BREWER" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Brewer" shopItems = { "breweryPotions" } } }
+  "HALFLING_JEWELLER" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Jeweller" shopItems = { "jewellery" } } }
+  "HALFLING_TRAPSMITH" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Trapsmith" shopItems = { "traps" } } }
+
+  "GREMLIN_BLACKSMITH"
+  {
+    settlement = {
+    type = Builtin VILLAGE
+    tribe = GNOME #Neutral alignment
+	race = "Gremlin Blacksmith"
+	shopItems = { "iron" }
+    inhabitants = { 
+        leader = { { "GNOME_CHIEF" } } 
+        fighters = {
+            count = { 2 3 }
+            all = { 1 "STONE_GOLEM" }
+      }
+    }
+    buildingId = "DUNGEON"  
+    furniture = { "roomFurniture" }
+    outsideFeatures = "villageOutside"
+    }
+  }
+  "GREMLIN_SCRIBE" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Scribe" shopItems = { "scribeScrolls" } } }
+  "GREMLIN_TANNER" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Tanner" shopItems = { "leather" } } }
+  "GREMLIN_BREWER" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Brewer" shopItems = { "breweryPotions" } } }
+  "GREMLIN_JEWELLER" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Jeweller" shopItems = { "jewellery" } } }
+  "GREMLIN_TRAPSMITH" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Trapsmith" shopItems = { "traps" } } }
+
+  "DRUID_BLACKSMITH"
+  {
+    settlement = {
+    type = Builtin VILLAGE
+    tribe = GNOME #Neutral alignment
+	race = "Druid Blacksmith"
+	shopItems = { "iron" }
+    inhabitants = { 
+        leader = { { "GNOME_CHIEF" } } 
+        fighters = {
+            count = { 2 3 }
+            all = { 1 "STONE_GOLEM" }
+      }
+    }
+    buildingId = "DUNGEON"  
+    furniture = { "roomFurniture" }
+    outsideFeatures = "villageOutside"
+    }
+  }  
+  "DRUID_SCRIBE" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Scribe" shopItems = { "scribeScrolls" } } }
+  "DRUID_TANNER" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Tanner" shopItems = { "leather" } } }
+  "DRUID_BREWER" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Brewer" shopItems = { "breweryPotions" } } }
+  "DRUID_JEWELLER" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Jeweller" shopItems = { "jewellery" } } }
+  "DRUID_TRAPSMITH" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Trapsmith" shopItems = { "traps" } } }
 
 ####################################################################
 #"Bottomless" Dungeons
 ####################################################################
-  "BEGINNERS_DUNGEON"
+  "HALFLING_TOWN"
   {
-    biomes = { "NEUTRAL_TOWN" }
+    biomes = { "HALFLING_TOWN" }
     settlement = {
       type = Builtin MINETOWN
       tribe = MONSTER
@@ -68,9 +118,9 @@
       }
     }
   }
-  "ADVANCED_DUNGEON"
+  "GREMLIN_TOWN"
   {
-    biomes = { "NEUTRAL_TOWN" }
+    biomes = { "GREMLIN_TOWN" }
     settlement = {
       type = Builtin MINETOWN
       tribe = MONSTER
@@ -120,9 +170,9 @@
       }
     }
   }
-  "EXPERT_DUNGEON"
+  "DRUID_CAMP"
   {
-    biomes = { "NEUTRAL_TOWN" }
+    biomes = { "DRUID_CAMP" }
     settlement = {
       type = Builtin MINETOWN
       tribe = MONSTER

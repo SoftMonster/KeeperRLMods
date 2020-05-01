@@ -1,2 +1,4 @@
  { "dungeon_entrance_color" ">" ColorId WHITE }
- 
+ { "druid" "p" ColorId GREEN }
+ { "gremlin" "h" ColorId GREEN }
+ { "halfling" "h" ColorId BROWN }

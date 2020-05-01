@@ -1,4 +1,4 @@
-"NEUTRAL_TOWN"
+"HALFLING_TOWN"
 {
   lakes = {
     size = {5 15}
@@ -19,19 +19,58 @@
   }
  wildlife = { count = { 0 } all = { } }
  darkKeeperEnemies = {
-	{ id = "NEUTRAL_BLACKSMITH" count = { 1 } }
-	{ id = "NEUTRAL_TRAPSMITH" count = { 1 } }
-	{ id = "NEUTRAL_SCRIBE" count = { 1 } }
-	{ id = "NEUTRAL_TANNER" count = { 1 } }
-	{ id = "NEUTRAL_BREWER" count = { 1 } }
-	{ id = "NEUTRAL_JEWELLER" count = { 1 } }
+	{ id = "HALFLING_BLACKSMITH" count = { 1 } }
+	{ id = "HALFLING_TRAPSMITH" count = { 1 } }
+	{ id = "HALFLING_SCRIBE" count = { 1 } }
+	{ id = "HALFLING_TANNER" count = { 1 } }
+	{ id = "HALFLING_BREWER" count = { 1 } }
+	{ id = "HALFLING_JEWELLER" count = { 1 } }
   }
   whiteKeeperEnemies = {
-	{ id = "NEUTRAL_BLACKSMITH" count = { 1 } }
-	{ id = "NEUTRAL_TRAPSMITH" count = { 1 } }
-	{ id = "NEUTRAL_SCRIBE" count = { 1 } }
-	{ id = "NEUTRAL_TANNER" count = { 1 } }
-	{ id = "NEUTRAL_BREWER" count = { 1 } }
-	{ id = "NEUTRAL_JEWELLER" count = { 1 } }
+	{ id = "HALFLING_BLACKSMITH" count = { 1 } }
+	{ id = "HALFLING_TRAPSMITH" count = { 1 } }
+	{ id = "HALFLING_SCRIBE" count = { 1 } }
+	{ id = "HALFLING_TANNER" count = { 1 } }
+	{ id = "HALFLING_BREWER" count = { 1 } }
+	{ id = "HALFLING_JEWELLER" count = { 1 } }
+  }
+}
+
+"GREMLIN_TOWN" inherit "HALFLING_TOWN" {
+ darkKeeperEnemies = {
+	{ id = "GREMLIN_BLACKSMITH" count = { 1 } }
+	{ id = "GREMLIN_TRAPSMITH" count = { 1 } }
+	{ id = "GREMLIN_SCRIBE" count = { 1 } }
+	{ id = "GREMLIN_TANNER" count = { 1 } }
+	{ id = "GREMLIN_BREWER" count = { 1 } }
+	{ id = "GREMLIN_JEWELLER" count = { 1 } }
+  }
+  whiteKeeperEnemies = {
+	{ id = "GREMLIN_BLACKSMITH" count = { 1 } }
+	{ id = "GREMLIN_TRAPSMITH" count = { 1 } }
+	{ id = "GREMLIN_SCRIBE" count = { 1 } }
+	{ id = "GREMLIN_TANNER" count = { 1 } }
+	{ id = "GREMLIN_BREWER" count = { 1 } }
+	{ id = "GREMLIN_JEWELLER" count = { 1 } }
+  }
+}
+
+"DRUID_CAMP" inherit "HALFLING_TOWN"
+{
+ darkKeeperEnemies = {
+	{ id = "DRUID_BLACKSMITH" count = { 1 } }
+	{ id = "DRUID_TRAPSMITH" count = { 1 } }
+	{ id = "DRUID_SCRIBE" count = { 1 } }
+	{ id = "DRUID_TANNER" count = { 1 } }
+	{ id = "DRUID_BREWER" count = { 1 } }
+	{ id = "DRUID_JEWELLER" count = { 1 } }
+  }
+  whiteKeeperEnemies = {
+	{ id = "DRUID_BLACKSMITH" count = { 1 } }
+	{ id = "DRUID_TRAPSMITH" count = { 1 } }
+	{ id = "DRUID_SCRIBE" count = { 1 } }
+	{ id = "DRUID_TANNER" count = { 1 } }
+	{ id = "DRUID_BREWER" count = { 1 } }
+	{ id = "DRUID_JEWELLER" count = { 1 } }
   }
 }
