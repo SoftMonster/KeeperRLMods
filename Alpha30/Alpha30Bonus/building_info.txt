@@ -14,8 +14,8 @@
       prettyFloor = "FLOOR_CARPET1"
       door = { "IRON_DOOR" 1.0 }
       gate = { "IRON_GATE" 1.0 }
-	  upStairs = "ELEMENTALIST_STAIRS_UP"
-	  downStairs = "ELEMENTALIST_STAIRS_DOWN"
+	  upStairs = { "ELEMENTALIST_STAIRS_UP" }
+	  downStairs = { "ELEMENTALIST_STAIRS_DOWN" }
     }
   "WOOD_CITY_CASTLE"
   {
@@ -43,8 +43,8 @@
       #prettyFloor = "FLOOR_TAINTED1"
 
       door = { "IRON_DOOR" 1.0 }
-	  upStairs = "TAINTED_STAIRS_UP"
-	  downStairs = "TAINTED_STAIRS_DOWN"
+	  upStairs = { "TAINTED_STAIRS_UP" }
+	  downStairs = { "TAINTED_STAIRS_DOWN" }
     }
   "SANDSTONE_WALL_DWARVEN"
     {
@@ -58,7 +58,7 @@
       floorOutside = "FLOOR"
       door = { "WOOD_DOOR" 1.0 }
       gate = { "WOOD_GATE" 1.0 }
-      downStairs = "DUNGEON_ENTRY"
+      downStairs = { "DUNGEON_ENTRY" }
     }
   "MINOTAUR"
     {
@@ -68,7 +68,7 @@
       prettyFloor = "FLOOR_CARPET1"
       door = { "FIRE_TRAP" 1.0 }
       gate = { "FIRE_TRAP" 1.0 }
-	  upStairs = "TAINTED_STAIRS_UP"
+	  upStairs = { "TAINTED_STAIRS_UP" }
     }
   "OCEAN_CAVE"
     {
@@ -100,8 +100,8 @@
       prettyFloor = "FLOOR_ZOMBIE_CARPET1"
 	  door = { "IRON_DOOR" 1.0 }
       gate = { "IRON_GATE" 1.0 }
-	  upStairs = "TAINTED_STAIRS_UP"
-	  downStairs = "TAINTED_STAIRS_DOWN"
+	  upStairs = { "TAINTED_STAIRS_UP" }
+	  downStairs = { "TAINTED_STAIRS_DOWN" }
 	  water = { LAVA }
 	  bridge = "STONE_BRIDGE"
   }
@@ -139,6 +139,6 @@
     {
       wall = "ZOMBIE_WALL"
       door = { "IRON_DOOR" 1.0 }
-	  upStairs = "TAINTED_STAIRS_UP"
-	  downStairs = "TAINTED_STAIRS_DOWN"
+	  upStairs = { "TAINTED_STAIRS_UP" }
+	  downStairs = { "TAINTED_STAIRS_DOWN" }
     }

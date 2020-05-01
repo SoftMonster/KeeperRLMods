@@ -113,7 +113,7 @@
     {{Amulet NIGHT_VISION}                 10       "GOLD" 20}
     {{Amulet ELF_VISION}                   10       "GOLD" 20}
     {{Amulet WARNING}                      10       "GOLD" 30}
-    {{Simple "DefenseAmulet"}                       10       "GOLD" 40}
+    {{Simple "DefenseAmulet"}              10       "GOLD" 40}
     {{Amulet REGENERATION}                 10       "GOLD" 60}
 }
 }
