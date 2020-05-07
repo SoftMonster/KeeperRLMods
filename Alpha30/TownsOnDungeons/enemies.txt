@@ -80,19 +80,19 @@
   {
     biomes = { "HALFLING_TOWN" }
     settlement = {
-      type = Builtin MINETOWN
-      tribe = MONSTER
+      type = Builtin VILLAGE
+      tribe = GNOME #Gnomish alignment is neutral to both good and evil characters
       inhabitants = {
+        leader = { { "GNOME_CHIEF" } }
         fighters = {
-		  baseLevelIncrease = { MELEE 30 }
-          count = { 3 }
-          all = { 1 "CYCLOPS" }
+          count = { 5 6}
+          all = { 1 "STONE_GOLEM" }
         }
-     }
-     buildingId = "MUD"
+      }
+      buildingId = "MUD"
     }
     levelConnection = {
-      topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY"}
+      topLevel = MainEnemy
       levels = {
         { ExtraEnemy { "BOTTOMLESS1" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS2" { 1 2 } } 60 40 DUNGEON }
@@ -114,7 +114,7 @@
         { ExtraEnemy { "BOTTOMLESS18" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS19" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS20" { 1 2 } } 60 40 DUNGEON }
-        { MainEnemy 60 40 MINETOWN }
+        { ExtraEnemy { "HALFLING_DUNGEON_BOSS" { 1 2 } } 60 40 DUNGEON }
       }
     }
   }
@@ -122,19 +122,19 @@
   {
     biomes = { "GREMLIN_TOWN" }
     settlement = {
-      type = Builtin MINETOWN
-      tribe = MONSTER
+      type = Builtin VILLAGE
+      tribe = GNOME #Gnomish alignment is neutral to both good and evil characters
       inhabitants = {
+        leader = { { "GNOME_CHIEF" } }
         fighters = {
-		  baseLevelIncrease = { MELEE 60 }
-          count = { 3 }
-          all = { 1 "HYDRA" }
+          count = { 5 6}
+          all = { 1 "STONE_GOLEM" }
         }
       }
-      buildingId = "BRICK"
+      buildingId = "MUD"
     }
     levelConnection = {
-      topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY_ADVANCED"}
+      topLevel = MainEnemy
       levels = {
         { ExtraEnemy { "BOTTOMLESS21" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS22" { 1 2 } } 60 40 DUNGEON }
@@ -166,7 +166,7 @@
         { ExtraEnemy { "BOTTOMLESS48" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS49" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS50" { 1 2 } } 60 40 DUNGEON }
-        { MainEnemy 60 40 MINETOWN }
+        { ExtraEnemy { "GREMLIN_DUNGEON_BOSS" { 1 2 } } 60 40 DUNGEON }
       }
     }
   }
@@ -174,20 +174,19 @@
   {
     biomes = { "DRUID_CAMP" }
     settlement = {
-      type = Builtin MINETOWN
-      tribe = MONSTER
+      type = Builtin VILLAGE
+      tribe = GNOME #Gnomish alignment is neutral to both good and evil characters
       inhabitants = {
+        leader = { { "GNOME_CHIEF" } }
         fighters = {
-		  baseLevelIncrease = { MELEE 100 }
-          count = { 3 }
-          all = { 1 "GREEN_DRAGON" }
+          count = { 5 6}
+          all = { 1 "STONE_GOLEM" }
         }
-
       }
-      buildingId = "RUINS"
+      buildingId = "MUD"
     }
     levelConnection = {
-      topLevel = ExtraEnemy {"BOTTOMLESS_ENTRY_EXPERT"}
+      topLevel = MainEnemy
       levels = {
         { ExtraEnemy { "BOTTOMLESS50" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS51" { 1 2 } } 60 40 DUNGEON }
@@ -239,37 +238,56 @@
         { ExtraEnemy { "BOTTOMLESS97" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS98" { 1 2 } } 60 40 DUNGEON }
         { ExtraEnemy { "BOTTOMLESS99" { 1 2 } } 60 40 DUNGEON }
-        { MainEnemy 60 40 MINETOWN }
+        { ExtraEnemy { "DRUID_DUNGEON_BOSS" { 1 2 } } 60 40 DUNGEON }
       }
     }
   }
 ####################################################################
-# Entry to "bottomless" dungeons
+# "bottomless" dungeon bosses
 ####################################################################
-  "BOTTOMLESS_ENTRY"
+  "HALFLING_DUNGEON_BOSS"
   {
     settlement = {
-      type = Builtin COTTAGE
-      tribe = GNOME #Gnomish alignment is neutral to both good and evil characters
+      type = Builtin MINETOWN
+      tribe = MONSTER
       inhabitants = {
-        leader = { { "GNOME_CHIEF" } }
         fighters = {
-          count = { 5 6}
-          all = { 1 "STONE_GOLEM" }
+		  baseLevelIncrease = { MELEE 30 }
+          count = { 3 }
+          all = { 1 "CYCLOPS" }
         }
-      }
-      buildingId = "MUD"
+     }
+     buildingId = "MUD"
     }
   }
-  "BOTTOMLESS_ENTRY_ADVANCED" inherit "BOTTOMLESS_ENTRY" {
-    settlement = append {
+  
+  "GREMLIN_DUNGEON_BOSS"  {
+    settlement = {
+      type = Builtin MINETOWN
+      tribe = MONSTER
+      inhabitants = {
+        fighters = {
+		  baseLevelIncrease = { MELEE 60 }
+          count = { 3 }
+          all = { 1 "HYDRA" }
+        }
+      }
       buildingId = "BRICK"
     }
   }
-    
-  "BOTTOMLESS_ENTRY_EXPERT" inherit "BOTTOMLESS_ENTRY" {
-    settlement = append {
-      buildingId = "SANDSTONE_WALL"
+  
+  "DRUID_DUNGEON_BOSS" {
+    settlement = {
+      type = Builtin MINETOWN
+      tribe = MONSTER
+      inhabitants = {
+        fighters = {
+		  baseLevelIncrease = { MELEE 100 }
+          count = { 3 }
+          all = { 1 "GREEN_DRAGON" }
+        }
+      }
+      buildingId = "RUINS"
     }
   }
 
