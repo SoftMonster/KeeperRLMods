@@ -6,10 +6,10 @@
 	race = "Halfling Blacksmith"
 	shopItems = { "iron" }
     inhabitants = { 
-        leader = { { "GNOME_CHIEF" } } 
+        leader = { { "HALFLING_CHIEF" } } 
         fighters = {
             count = { 2 3 }
-            all = { 1 "STONE_GOLEM" }
+            all = { 1 "HALFLING" }
       }
     }
     buildingId = "DUNGEON"  
@@ -31,10 +31,10 @@
 	race = "Gremlin Blacksmith"
 	shopItems = { "iron" }
     inhabitants = { 
-        leader = { { "GNOME_CHIEF" } } 
+        leader = { { "GREMLIN_CHIEF" } } 
         fighters = {
             count = { 2 3 }
-            all = { 1 "STONE_GOLEM" }
+            all = { 1 "GREMLIN" }
       }
     }
     buildingId = "DUNGEON"  
@@ -56,10 +56,10 @@
 	race = "Druid Blacksmith"
 	shopItems = { "iron" }
     inhabitants = { 
-        leader = { { "GNOME_CHIEF" } } 
+        leader = { { "DRUID_CHIEF" } } 
         fighters = {
             count = { 2 3 }
-            all = { 1 "STONE_GOLEM" }
+            all = { 1 "DRUID" }
       }
     }
     buildingId = "DUNGEON"  

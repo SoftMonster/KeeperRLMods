@@ -1,6 +1,6 @@
  "HALFLING"
     {
-      viewId = { "halfling" }
+      viewId = { "child" }
       attr = {
         DAMAGE 10
         DEFENSE 15  
@@ -29,10 +29,18 @@
       chatReactionFriendly = "\"Time to eat.\""
       chatReactionHostile = "\"Leave me alone!\""
     }
-
+ "HALFLING_CHIEF" inherit "HALFLING"
+   {
+      viewId = { "child" }
+      name = {
+        name = "halfling chief"
+        firstNameGen = "FIRST_MALE"
+      }
+   }
+ 
  "GREMLIN"
     {
-      viewId = { "gremlin" }
+      viewId = { "goblin" }
       attr = {
         DAMAGE 20
         DEFENSE 30   
@@ -59,9 +67,17 @@
       chatReactionFriendly = "\"Grrrerk!\""
       chatReactionHostile = "\"Graaaaaaa!\""
     }
+ "GREMLIN_CHIEF" inherit "GREMLIN"
+   {
+      viewId = { "goblin" }
+      name = {
+        name = "gremlin chief"
+        firstNameGen = "DEMON"
+      }
+   }
  "DRUID"
     {
-      viewId = { "druid" }
+      viewId = { "priest" }
       attr = {
         DAMAGE 20
         DEFENSE 35 
@@ -94,3 +110,11 @@
       chatReactionFriendly = "\"The woods are life.\""
       chatReactionHostile = "\"The woods are death.\""
     }
+  "DRUID_CHIEF" inherit "DRUID"
+   {
+      viewId = { "priest" }
+      name = {
+        name = "druid chief"
+        firstNameGen = "FIRST_MALE"
+      }
+   }
