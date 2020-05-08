@@ -6653,7 +6653,7 @@
         { Ring RAGE 1 1 0.03}
       }
     }
-  "DWARF_FIGHTER" inherit "DWARF_MILITIA"
+  "DWARF_TOUGH" inherit "DWARF_MILITIA"
     {
       viewId = { "dwarf_fighter" }
       attr = {
@@ -7693,7 +7693,7 @@
         { type = Simple "DwarvenBeer" chance = 0.1 }
       }
 }
-"DWARF_FIGHTER_TRIBE" inherit "DWARF_FIGHTER"
+"DWARF_FIGHTER_TRIBE" inherit "DWARF_TOUGH"
 {
       attr = {
         DAMAGE 28

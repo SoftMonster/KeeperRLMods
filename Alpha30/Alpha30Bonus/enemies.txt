@@ -3266,7 +3266,7 @@
             1 "GOBLIN_WARRIOR"
             1 "COMBAT_SUCCUBUS"
             1 "SKELETON_WARRIOR"
-            1 "DWARF_FIGHTER"
+            1 "DWARF_TOUGH"
             1 "DWARF_WARRIOR"
             1 "ELITE_DWARF_WARRIOR"
             1 "ANT_SOLDIER"

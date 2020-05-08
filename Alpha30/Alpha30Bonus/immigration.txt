@@ -944,7 +944,7 @@
 		  }
         }
         {
-          ids = { "DWARF_FIGHTER" }
+          ids = { "DWARF_TOUGH" }
           frequency = 0.5
           traits = { FIGHTER }
           requirements = { {0.0 TechId "basic nobility"} {0.0 NegateRequirement TechId "advanced nobility"} }		  
@@ -1025,7 +1025,7 @@
           }
         }
         {
-          ids = { "ELITE_DWARF_WARRIOR" "DWARF_WARRIOR" "DWARF_FIGHTER" "DWARF_MILITIA" }
+          ids = { "ELITE_DWARF_WARRIOR" "DWARF_WARRIOR" "DWARF_TOUGH" "DWARF_MILITIA" }
           traits = { FIGHTER WORKER }
           spawnLocation = Pregnancy
           requirements = {

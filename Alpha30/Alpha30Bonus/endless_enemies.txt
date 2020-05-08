@@ -18,6 +18,7 @@
 
 
 #Modded additions after turn 100000
+"basic" modify append {
   {
     {
       all = { 1 "DEMON_DWELLER" }
@@ -295,3 +296,4 @@
     { 100000 500000 }
     100
   }
+}
