@@ -111,7 +111,7 @@
 
   }
 
-  "traps" modify {
+  "traps" modify append {
   		
     #Modded Traps        
     { Trap "FLOOR_SPIKES_TRAP"    "Floor Spikes trap" "Traps"
