@@ -14,7 +14,7 @@
   "ORC_VILLAGE" modify append {
     biomes = { "ORC_VILLAGE"} 
     settlement = {
-      type = MapLayoutId "village32"
+      type = MapLayout { "village32" }
       tribe = GREENSKIN
       inhabitants = {
           leader = { { "ORC_CAPTAIN_TRIBE" } }
@@ -89,7 +89,7 @@
 {
   biomes = { "WARRIOR_TOWN"}
   settlement = {
-    type = MapLayoutId "castle32"
+    type = MapLayout { "castle32" }
     tribe = HUMAN
     inhabitants = {
       leader = { { "SHAMAN" } }
@@ -160,7 +160,7 @@
 {
   biomes = { "ELF_FOREST"}
   settlement = {
-    type = MapLayoutId "village32"
+    type = MapLayout { "village32" }
     inhabitants = {
       leader = { { "ELF_KING" } }
       fighters = {
@@ -328,7 +328,7 @@
 {
   biomes = { "DWARF_MOUNTAIN_SMALL"}
   settlement = {
-    type = MapLayoutId "mountain48"
+    type = MapLayout { "mountain48" }
     tribe = DWARF
     inhabitants = {
       leader = { { "DWARF_BARON_TRIBE" } }
@@ -530,7 +530,7 @@
   "DWARF_KINGDOM" {
     biomes = { "DWARF_MOUNTAIN" }
     settlement = {
-    type = MapLayoutId "mountain64"
+    type = MapLayout { "mountain64" }
       tribe = DWARF
       inhabitants = {
         leader = { { "DWARF_QUEEN_TRIBE" } }
@@ -1364,21 +1364,22 @@
         { ExtraEnemy { "AXEDIO_DWARVES" { 1 } } 300 90 MAZE }
         { ExtraEnemy { "AXEDIO_DEMONS" { 1 } } 50 50 MAZE }
         { MainEnemy 30 30 MINETOWN }
-        { ExtraEnemy { "DEATH_2" { 1 } } 40 30 BASIC "The Dark Abode" true }
-        { ExtraEnemy { "DUNGEON1" { 1 } } 40 30 DUNGEON }
+        { ExtraEnemy { "AXEDIO_REWARD" { 1 } } 10 10 DUNGEON }
       }
     }
   }
   
-"DEATH_2" inherit "DEATH"
+"AXEDIO_REWARD"
 {
   settlement = {
-    type = MapLayoutId "death"
+    type = Builtin MINETOWN
     tribe = MONSTER
     buildingId = "BLACK"
     inhabitants = {
       leader = {{ "SPECIAL_HLBN" "SPECIAL_HLBW" "SPECIAL_HLGN" "SPECIAL_HLGW" }}
     }
+    locationName = "Axedio's cellar"
+    race = "prisoners"
   }
 }
   
@@ -1386,7 +1387,7 @@
   {
     settlement = {
       type = Builtin MINETOWN
-      tribe = MONSTER
+      tribe = DARK_KEEPER
       inhabitants = {
         leader = { { "DWARF_BARON" } }
         fighters = {
@@ -1631,7 +1632,7 @@
   "DARK_ELF_EMPIRE" {
     biomes = { "DARK_ELF_MOUNTAIN" }
     settlement = {
-    type = MapLayoutId "mountain48"
+    type = MapLayout { "mountain48" }
       tribe = DARK_ELF
       inhabitants = {
         leader = { { "DARK_ELF_EMPRESS" } }
@@ -1874,7 +1875,7 @@
     "FAIRY_TOWER_ENTRY"
     {
     settlement = {
-      type = MapLayoutId "fairy_tower_entry"
+      type = MapLayout { "fairy_tower_entry" }
       tribe = ELF
       locationName = "Goddess Illusia's Tower"
       inhabitants = {
@@ -1931,7 +1932,7 @@
     "FAIRY_TOWER_FLOOR"
     {
     settlement = {
-    type = MapLayoutId "fairy_tower_floor"
+    type = MapLayout { "fairy_tower_floor" }
     tribe = ELF
     locationName = "Goddess Illusia's Tower"
     inhabitants = {
@@ -1989,7 +1990,7 @@
 {
   biomes = { "ENCHANTED_FOREST" }
   settlement = {
-    type = MapLayoutId "fairy_tower_top"
+    type = MapLayout { "fairy_tower_top" }
     tribe = ELF
     locationName = "Goddess Illusia's Tower"
     inhabitants = {
@@ -2057,7 +2058,7 @@
 "ORC_MAIN" {
   biomes = { "ORC_CLAN"} 
   settlement = {
-    type = MapLayoutId "castle32"
+    type = MapLayout { "castle32" }
     tribe = GREENSKIN
     inhabitants = {
       leader = { { "ORC_PRIMARCH_TRIBE" } }
@@ -2096,7 +2097,7 @@
 }
 "ORC_MINOR" {
   settlement = {
-    type = MapLayoutId "castle1"
+    type = MapLayout { "castle1" }
     tribe = GREENSKIN
     inhabitants = {
       leader = { { "ORC_PRIMARCH_TRIBE" } }
@@ -2212,7 +2213,7 @@
   {
   biomes = { "CENTAUR_PALACE" } 
   settlement = {
-    type = MapLayoutId "castle48"
+    type = MapLayout { "castle48" }
     tribe = HUMAN
     inhabitants = {
       leader = {{ "CENTAUR_KING" }}
@@ -2897,7 +2898,7 @@
   biomes = { "PALACE" }  
   settlement = {
     tribe = HUMAN
-    type = MapLayoutId "castle64"
+    type = MapLayout { "castle64" }
     inhabitants = {
       leader = { { "KING" } }
       fighters = {
@@ -3056,7 +3057,7 @@
   biomes = { "CITY_RUINS" }  
   settlement = {
     tribe = BANDIT
-    type = MapLayoutId "ruins70"
+    type = MapLayout { "ruins70" }
     inhabitants = {
       leader = { { "BANDIT_OMALLY" } }
       fighters = {

@@ -632,11 +632,6 @@
         MAGIC_RESISTANCE 1
       }
   }
-  "DEATH" modify append {
-	inventory = {
-	    { Simple "RobesOfHell"} #Modded
-    }
-  }
   "ABOMINATION" modify append {
       inventory = {
         { Simple "WarHammer" }
