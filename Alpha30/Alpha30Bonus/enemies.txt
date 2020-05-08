@@ -1363,7 +1363,7 @@
         { ExtraEnemy { "AXEDIO_DWARVES" { 1 } } 300 90 MAZE }
         { ExtraEnemy { "AXEDIO_DEMONS" { 1 } } 50 50 MAZE }
         { MainEnemy 30 30 MINETOWN }
-        { ExtraEnemy { "AXEDIO_REWARD" { 1 } } 10 10 DUNGEON }
+        { ExtraEnemy { "AXEDIO_REWARD" { 1 } } 30 30 DUNGEON }
       }
     }
   }
