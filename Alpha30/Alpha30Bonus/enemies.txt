@@ -1354,7 +1354,6 @@
       furniture = { "adoxie" }
       buildingId = "BRICK"
     }
-    createOnBones = 0.5 { "MAIN_DUNGEON" }
     levelConnection = {
       topLevel = ExtraEnemy {"AXEDIO_SURFACE_BANDITS"}
       levels = {
