@@ -642,6 +642,8 @@
     }
 	config = append { 
 		guardianInfo = "ELF_SOLDIER" 0.2 12 16
+        immigrantInterval = 100
+        maxPopulation = 10
 	}
   }
   "ELEMENTALIST_ENTRY" modify append {
@@ -718,6 +720,8 @@
     }
 	config = append { 
 		guardianInfo = "BANDIT_PUNK" 0.05 1 3
+        immigrantInterval = 100
+        maxPopulation = 10
 	}
   }
   "DUNGEON1" modify append {
@@ -787,6 +791,8 @@
     }
     config = {
      leaderAsFighter = true
+     immigrantInterval = 1000
+     maxPopulation = 10
     }
     createOnBones = 0.6 { "DWARF_CAVE" "KOBOLD_CAVE" "OGRE_CAVE" "HARPY_CAVE" "OGRE_CAVE" "HARPY_CAVE"} #Modded
   }
@@ -895,6 +901,8 @@
     }
     config = append {
       guardianInfo = "MILITIA" 0.2 1 3 #Modded
+      immigrantInterval = 1000
+      maxPopulation = 5
     }
   }
   "LIZARDMEN_COTTAGE" modify append {
@@ -953,6 +961,8 @@
     }
 	config = append { 
 		guardianInfo = "DWARF_WARRIOR_TRIBE" 0.1 2 4
+        immigrantInterval = 1000
+        maxPopulation = 5
 	}
   }
   "RAT_CAVE" modify append {
@@ -1030,8 +1040,8 @@
   }
   config = {
 	guardianInfo = "WOLF_WARRIOR" 0.4 3 8
-    immigrantInterval = 100
-    maxPopulation = 10
+     immigrantInterval = 1000
+     maxPopulation = 10
     ghostProb = 0.1
     spawnGhosts = 6
   }
@@ -1086,6 +1096,8 @@
     }
 	config = { 
 		guardianInfo = "WARRIOR" 0.2 12 16
+        immigrantInterval = 1000
+        maxPopulation = 12
 	}
   }
 "DWARF_MARKET"
@@ -1231,6 +1243,8 @@
     }
 	config = { 
 		guardianInfo = "CENTAUR_KNIGHT" 0.05 1 4
+        immigrantInterval = 1000
+        maxPopulation = 10
 	}
   }
   "AMAZON_TOWN"
@@ -1261,6 +1275,8 @@
     }
 	config = { 
 		guardianInfo = "AMAZON_WAR_MAIDEN" 0.05 1 4
+        immigrantInterval = 1000
+        maxPopulation = 7
 	}
   }
 "WILDMEN_CAVE"
@@ -2015,6 +2031,8 @@
   }
   config = {
     leaderAsFighter = true
+     immigrantInterval = 1000
+     maxPopulation = 10
   }
   levelConnection = {
     direction = UP
@@ -2149,6 +2167,8 @@
     }
 	config = { 
 		guardianInfo = "OGRE_CHAMPION_TRIBE" 0.4 4 8
+        immigrantInterval = 1000
+        maxPopulation = 20
 	}
   }
   "ORC_CITY_GROUP"
@@ -2171,6 +2191,8 @@
     }
 	config = { 
 		guardianInfo = "OGRE_CHAMPION_TRIBE" 0.2 2 6
+        immigrantInterval = 1000
+        maxPopulation = 20
 	}
   }
   "HELL_DUNGEON1"
@@ -2749,6 +2771,8 @@
   discoverable = false
   config = {
     guardianInfo = "RED_DRAGONNEWT_WILDLIFE" 0.003 1 2
+    immigrantInterval = 1000
+    maxPopulation = 3
   }
   settlement = append {
     buildingId = "VOLCANIC_BRICK"
@@ -2812,6 +2836,8 @@
     }
 	config = { 
 		guardianInfo = "KNIGHT" 0.5 4 8
+        immigrantInterval = 1000
+        maxPopulation = 10
 	}
   }
   "CITY_GROUP"
@@ -2833,6 +2859,8 @@
     }
 	config = { 
 		guardianInfo = "KNIGHT" 0.5 4 8
+        immigrantInterval = 1000
+        maxPopulation = 5
 	}
   }
   "CITY_GROUP_SHOP_BASE"
@@ -2853,6 +2881,8 @@
     }
 	config = { 
 		guardianInfo = "KNIGHT" 0.5 6 10
+        immigrantInterval = 1000
+        maxPopulation = 3
 	}
   }
   "SHADOW_GROUP_SHOP_BASE"
@@ -2873,6 +2903,8 @@
     }
 	config = { 
 		guardianInfo = "SHADOW_SPIRIT" 1 12 16
+        immigrantInterval = 1000
+        maxPopulation = 4
 	}
   }
   
@@ -3074,7 +3106,7 @@
    outsideFeatures = "randomTerrain"
   }
   config = {
-    immigrantInterval = 80
+    immigrantInterval = 1000
     maxPopulation = 66
     ghostProb = 0.1
     spawnGhosts = 6
