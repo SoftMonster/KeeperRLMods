@@ -24,7 +24,7 @@
         "STONE"        {4 8} 6 4
         "IRON_ORE"     {4 8} 5 3
         "GOLD_ORE"     {3 5} 4 3
-		"VENORACK_ORE" {2 3} 4 3
+		"VENORACK_ORE" {1 2} 4 3
     }
     minDepth = 3
   }
@@ -39,8 +39,8 @@
   { # Modded
     counts = {
         "IRON_ORE"         {3 6} 5 5
-        "INFERNITE_ORE"    {2 4} 5 4
-		"VENORACK_ORE"     {0 1} 5 4
+        "INFERNITE_ORE"    {1 2} 5 4
+		"VENORACK_ORE"     {1 2} 5 4
     }
     minDepth = 5
   }
