@@ -5,19 +5,19 @@
     immigrantGroups = append {"dark_knight_modded" "neutral_allies" "dark_allies_extended" }
     technology = append { "simplistic animations" "magic contraptions" }
     initialTech = { "iron working" }
-    workshopGroups = append { "techBooks" }
+    workshopGroups = append { "basic_Bonus_Mod" "traps_Bonus_Mod"  "techBooks" }
     description = "(Challenge) The dark knight keeper is better at melee combat but worse at spell casting."
   }
 #Dark mages come after dark knights as sometimes bits of the GUI get duplicated the other way round.
 "1_dark_mage" modify {
     immigrantGroups = append {"dark_keeper_modded" "neutral_allies" "dark_allies_extended" }
     technology = append { "simplistic animations" "magic contraptions" "dragon taming" "demonic alliance" }
-    workshopGroups = append { "techBooks" }
+    workshopGroups = append { "basic_Bonus_Mod" "traps_Bonus_Mod" "techBooks" }
   }
 "3_white_knight" modify {
     immigrantGroups = append { "white_keeper_modded" "neutral_allies" "white_allies_extended" }
     technology = append { "simplistic animations" "magic contraptions" "legendary heroes" "royal jewellery" "unicorn taming" }
-    workshopGroups = append { "white knights workshop" }
+    workshopGroups = append { "white knights workshop" "basic_Bonus_Mod" "traps_Bonus_Mod" }
     description = "(Hard) Be on the side of the good!"
   }
 
@@ -64,7 +64,7 @@
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
         "training" "crafting" "laboratory" "jeweller" "poetry" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
-    workshopGroups = { "basic" "traps" "techBooks"}
+    workshopGroups = { "basic" "traps" "basic_Bonus_Mod" "traps_Bonus_Mod"  "techBooks"  }
     description = "(Easy) Play in easy mode and get a big bonus on all immigrants. But you have to wear a silly green robe."
   }
 #Modded
@@ -84,7 +84,7 @@
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "beast_cage" "pigsty" "coffins"
         "training" "crafting" "laboratory" "jeweller" "poetry" "demon_shrine" "prison" "orders" "installations" "magical_installations" "traps"
     }
-    workshopGroups = { "basic" "traps" "techBooks" }
+    workshopGroups = { "basic" "traps" "basic_Bonus_Mod" "traps_Bonus_Mod" "techBooks" }
     description = "(Hard) Play in hard mode and test your skills to the limit for experienced players. You get to wear a cool purple robe."
   }
 "5_BonusDev_elementalist" 
@@ -172,7 +172,7 @@
         "structure" "doors" "floors" "storage" "zones" "library" "throne" "beds" "pigsty"
         "training" "crafting" "laboratory" "jeweller" "poetry" "prison" "orders" "installations" "goblin_magical_installations" "traps"
     }
-    workshopGroups = { "goblin" "traps" }
+    workshopGroups = { "goblin" "traps" "traps_Bonus_Mod" }
     description = "(Challenge) Breed an army of goblins and overrun the land with numbers!" #Modded
   }
 #  {
