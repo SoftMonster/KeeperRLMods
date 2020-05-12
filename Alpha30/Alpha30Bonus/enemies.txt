@@ -1714,8 +1714,8 @@
             1 "GOBLIN_PLAYER"
           }
         }
-      }
-      locationNameGen = "TOWN"
+     }
+      locationName = "the Green King's dungeon"
       race = "goblins"
       stockpiles = {{ "magicShrooms" 20 "CHEST" }}
       buildingId = "TAINTED"
@@ -1758,7 +1758,7 @@
           }
         }
       }
-      locationNameGen = "TOWN"
+      locationName = "the overground defenses"
       race = "goblins"
       stockpiles = {{ "magicShrooms" 20 "CHEST" }}
       buildingId = "MUD"
@@ -1801,7 +1801,7 @@
     settlement = {
       type = Builtin MINETOWN
       tribe = BANDIT
-      locationNameGen = "TOWN"
+      locationName = "Level One"
       race = "goblins"
       stockpiles = {{ "chest" 6 } { "minerals" 60 } { "goblinglyphs" 2 } } 
       buildingId = "DUNGEON"
@@ -1831,7 +1831,7 @@
     settlement = {
       type = Builtin MINETOWN
       tribe = BANDIT
-      locationNameGen = "TOWN"
+      locationName = "Level Two"
       race = "goblins"
       stockpiles = {{ "chest" 6 } { "minerals" 80 } { "goblinglyphs" 4 } } 
       buildingId = "DUNGEON"
@@ -1861,7 +1861,7 @@
     settlement = {
       type = Builtin MINETOWN
       tribe = BANDIT
-      locationNameGen = "TOWN"
+      locationName = "Level Three"
       race = "goblins"
       stockpiles =  {{ "chest" 6 } { "minerals" 100 } { "goblinglyphs" 6 } } 
       buildingId = "DUNGEON"
