@@ -578,8 +578,8 @@
   "BOTTOMLESS47" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 44 } } } } }
   "BOTTOMLESS48" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 45 } } } } }
   "BOTTOMLESS49" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 46 } } } } }
-  "BOTTOMLESS50" inherit "BOTTOMLESS_TYPE_3a" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 47 } } } } }
-
+  
+  "BOTTOMLESS50" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 47 } } } } }
   "BOTTOMLESS51" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 48 } } } } }
   "BOTTOMLESS52" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 49 } } } } }
   "BOTTOMLESS53" inherit "BOTTOMLESS_TYPE_3b" { settlement = append { inhabitants = append { fighters = append { baseLevelIncrease = { MELEE 50 } } } } }
