@@ -1796,7 +1796,7 @@
       }
     }
   }
-    "GOBLIN_DUNGEON1"
+   "GOBLIN_DUNGEON1"
   {
     settlement = {
       type = Builtin MINETOWN
@@ -1825,8 +1825,16 @@
           }
         }
       }
-    }
-    "GOBLIN_DUNGEON2"
+    behaviour = {
+      minPopulation = 1
+      minTeamSize = 1
+      triggers = {
+        SelfVictims
+      }
+      attackBehaviour = KillMembers 100
+	}
+  }
+  "GOBLIN_DUNGEON2"
   {
     settlement = {
       type = Builtin MINETOWN
@@ -1855,7 +1863,15 @@
           }
         }
       }
-    }
+      behaviour = {
+        minPopulation = 1
+        minTeamSize = 1
+        triggers = {
+          SelfVictims
+        }
+        attackBehaviour = KillMembers 100
+      }
+	}
     "GOBLIN_DUNGEON3"
     {
     settlement = {
@@ -1886,6 +1902,14 @@
           }
         }
       }
+      behaviour = {
+        minPopulation = 1
+        minTeamSize = 1
+        triggers = {
+          SelfVictims
+        }
+        attackBehaviour = KillMembers 100
+	  }
     }
     "FAIRY_TOWER_ENTRY"
     {
