@@ -1,6 +1,9 @@
  "HALFLING"
     {
-      viewId = { "child" }
+      viewId = { "halfling" }
+      genderAlternatives = {
+		FEMALE { "halfling_female" }
+		}
       attr = {
         DAMAGE 10
         DEFENSE 15  
@@ -31,7 +34,7 @@
     }
  "HALFLING_CHIEF" inherit "HALFLING"
    {
-      viewId = { "child" }
+      viewId = { "halfling_chief" }
       name = {
         name = "halfling chief"
         firstNameGen = "FIRST_MALE"
@@ -40,7 +43,7 @@
  
  "GREMLIN"
     {
-      viewId = { "goblin" }
+      viewId = { "gremlin" }
       attr = {
         DAMAGE 20
         DEFENSE 30   
@@ -69,7 +72,7 @@
     }
  "GREMLIN_CHIEF" inherit "GREMLIN"
    {
-      viewId = { "goblin" }
+      viewId = { "gremlin_chief" }
       name = {
         name = "gremlin chief"
         firstNameGen = "DEMON"
@@ -77,7 +80,7 @@
    }
  "DRUID"
     {
-      viewId = { "priest" }
+      viewId = { "druid" }
       attr = {
         DAMAGE 20
         DEFENSE 35 
@@ -112,7 +115,7 @@
     }
   "DRUID_CHIEF" inherit "DRUID"
    {
-      viewId = { "priest" }
+      viewId = { "druid_chief" }
       name = {
         name = "druid chief"
         firstNameGen = "FIRST_MALE"

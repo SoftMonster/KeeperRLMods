@@ -2,17 +2,17 @@ EVIL_KEEPER modify append {
  
 #Main villains
 
-    {{ "dungeon_entrance_color" ColorId GREEN } "HALFLING_TOWN" "Starter Dungeon (optional) and Halfling Town" ALLY}
-    {{ "dungeon_entrance_color" ColorId ORANGE } "GREMLIN_TOWN" "Advanced Dungeon (optional) and Gremlin Town" ALLY}
-    {{ "dungeon_entrance_color" ColorId RED } "DRUID_CAMP" "End Game Dungeon (optional) and Druid Camp" ALLY}
+    {{ "easy_dungeon" } "HALFLING_TOWN" "Starter Dungeon (optional) and Halfling Town" ALLY}
+    {{ "medium_dungeon" } "GREMLIN_TOWN" "Advanced Dungeon (optional) and Gremlin Town" ALLY}
+    {{ "hard_dungeon" } "DRUID_CAMP" "End Game Dungeon (optional) and Druid Camp" ALLY}
 }
 
 # Villains for lawful keepers
 LAWFUL_KEEPER modify append {
 
-    {{ "dungeon_entrance_color" ColorId GREEN } "HALFLING_TOWN" "Starter Dungeon (optional) and Halfling Town" ALLY}
-    {{ "dungeon_entrance_color" ColorId ORANGE } "GREMLIN_TOWN" "Advanced Dungeon (optional) and Gremlin Town" ALLY}
-    {{ "dungeon_entrance_color" ColorId RED } "DRUID_CAMP" "End Game Dungeon (optional) and Druid Camp" ALLY}
+    {{ "easy_dungeon" } "HALFLING_TOWN" "Starter Dungeon (optional) and Halfling Town" ALLY}
+    {{ "medium_dungeon" } "GREMLIN_TOWN" "Advanced Dungeon (optional) and Gremlin Town" ALLY}
+    {{ "hard_dungeon" } "DRUID_CAMP" "End Game Dungeon (optional) and Druid Camp" ALLY}
 }
 
 # Villains for evil adventurers
@@ -20,15 +20,15 @@ EVIL_ADVENTURER modify append {
 
 #Extra modded villains
 
-    {{ "dungeon_entrance_color" ColorId GREEN } "HALFLING_TOWN" "Starter Dungeon (optional) and Halfling Town" ALLY}
-    {{ "dungeon_entrance_color" ColorId ORANGE } "GREMLIN_TOWN" "Advanced Dungeon (optional) and Gremlin Town" ALLY}
-    {{ "dungeon_entrance_color" ColorId RED } "DRUID_CAMP" "End Game Dungeon (optional) and Druid Camp" ALLY}
+    {{ "easy_dungeon" } "HALFLING_TOWN" "Starter Dungeon (optional) and Halfling Town" ALLY}
+    {{ "medium_dungeon" } "GREMLIN_TOWN" "Advanced Dungeon (optional) and Gremlin Town" ALLY}
+    {{ "hard_dungeon" } "DRUID_CAMP" "End Game Dungeon (optional) and Druid Camp" ALLY}
 }
 
 # Villains for lawful adventurers
 LAWFUL_ADVENTURER modify append {
 
-    {{ "dungeon_entrance_color" ColorId GREEN } "HALFLING_TOWN" "Starter Dungeon (optional) and Halfling Town" ALLY}
-    {{ "dungeon_entrance_color" ColorId ORANGE } "GREMLIN_TOWN" "Advanced Dungeon (optional) and Gremlin Town" ALLY}
-    {{ "dungeon_entrance_color" ColorId RED } "DRUID_CAMP" "End Game Dungeon (optional) and Druid Camp" ALLY}
+    {{ "easy_dungeon" } "HALFLING_TOWN" "Starter Dungeon (optional) and Halfling Town" ALLY}
+    {{ "medium_dungeon" } "GREMLIN_TOWN" "Advanced Dungeon (optional) and Gremlin Town" ALLY}
+    {{ "hard_dungeon" } "DRUID_CAMP" "End Game Dungeon (optional) and Druid Camp" ALLY}
 }
