@@ -39,6 +39,7 @@ Partial Class frmSprites
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnLast = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -193,12 +194,22 @@ Partial Class frmSprites
         Me.btnLast.Text = "Back"
         Me.btnLast.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(396, 171)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(72, 24)
+        Me.Button2.TabIndex = 18
+        Me.Button2.Text = "Invis"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'frmSprites
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1133, 540)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnLast)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
@@ -240,4 +251,5 @@ Partial Class frmSprites
     Friend WithEvents Label4 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents btnLast As Button
+    Friend WithEvents Button2 As Button
 End Class

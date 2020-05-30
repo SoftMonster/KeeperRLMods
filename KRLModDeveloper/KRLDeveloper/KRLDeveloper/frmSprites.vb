@@ -232,4 +232,26 @@ Public Class frmSprites
         tmpbmp.Dispose()
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Try
+            If MsgBox("Replace White with transparent?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+                Dim clone As Bitmap = bmp.Clone
+                clone.MakeTransparent(Color.White)
+                PictureBox1.BackgroundImage = clone
+                Dim fil As String = getFile()
+                File.Delete(fil)
+                clone.Save(fil, Imaging.ImageFormat.Png)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Function getFile() As String
+        Dim dlg As New SaveFileDialog
+        dlg.FileName = Label1.Text
+        dlg.ShowDialog()
+        Return dlg.FileName
+    End Function
+
 End Class
