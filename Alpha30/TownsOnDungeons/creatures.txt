@@ -31,6 +31,8 @@
       }
       chatReactionFriendly = "\"Time to eat.\""
       chatReactionHostile = "\"Leave me alone!\""
+      inventory = { { Simple "sling" } }
+
     }
  "HALFLING_CHIEF" inherit "HALFLING"
    {
@@ -98,8 +100,6 @@
       spells = {
         "healing"
         "magic missile"
-        "summon element"
-        "defense bonus"
         "haste"
       }
       permanentEffects = {
@@ -110,6 +110,7 @@
         name = "druid"
         firstNameGen = "FIRST_MALE"
       }
+	  inventory = { { Simple "WoodenStaff" } }
       chatReactionFriendly = "\"The woods are life.\""
       chatReactionHostile = "\"The woods are death.\""
     }

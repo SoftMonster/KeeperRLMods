@@ -8,3 +8,4 @@
  { "halfling" "h" ColorId BROWN }
  { "halfling_female" "h" ColorId BROWN }
  { "halfling_chief" "h" ColorId BROWN }
+ { "sling" ")" ColorId BROWN }
