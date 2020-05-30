@@ -1,0 +1,14 @@
+"MUD_EASY" inherit "MUD"
+  {
+  	downStairs = { "DUNGEON_EASY" }
+  }
+
+"BRICK_MEDIUM" inherit "BRICK"
+  {
+	downStairs = { "DUNGEON_MEDIUM" }
+  }
+
+"RUINS_HARD" inherit "RUINS"
+  {
+	downStairs = { "DUNGEON_HARD" }
+  }

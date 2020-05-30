@@ -89,7 +89,7 @@
           all = { 1 "STONE_GOLEM" }
         }
       }
-      buildingId = "MUD"
+      buildingId = "MUD_EASY"
     }
     levelConnection = {
       topLevel = MainEnemy
@@ -131,7 +131,7 @@
           all = { 1 "STONE_GOLEM" }
         }
       }
-      buildingId = "MUD"
+      buildingId = "BRICK_MEDIUM"
     }
     levelConnection = {
       topLevel = MainEnemy
@@ -183,7 +183,7 @@
           all = { 1 "STONE_GOLEM" }
         }
       }
-      buildingId = "MUD"
+      buildingId = "RUINS_HARD"
     }
     levelConnection = {
       topLevel = MainEnemy
