@@ -8469,10 +8469,7 @@
 ##########################
 #Ideas for Future modding#
 ##########################
-# Druids
-# Magi
 # Tritons
-# Halflings
 # Bone Golem
 # Blacksmith
 # Elf blademaster(s)
@@ -8487,7 +8484,6 @@
 # Satyr
 # Fauns,
 # Tyrannosaur
-# Yeti
 # Mermen 
 # Red scorpion
 # Eagle
@@ -8499,6 +8495,5 @@
 # Ghast
 # Sea monster
 # Wall monster
-# Shade
 # Poltergeist
 #########################
