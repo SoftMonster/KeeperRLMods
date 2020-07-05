@@ -80,7 +80,7 @@
   {
     biomes = { "HALFLING_TOWN" }
     settlement = {
-      type = Builtin VILLAGE
+      type = MapLayout { "arena24" }
       tribe = GNOME #Gnomish alignment is neutral to both good and evil characters
       inhabitants = {
         leader = { { "GNOME_CHIEF" } }
@@ -90,6 +90,7 @@
         }
       }
       buildingId = "MUD_EASY"
+      furniture = { "arena_services1" }
     }
     levelConnection = {
       topLevel = MainEnemy
@@ -122,7 +123,7 @@
   {
     biomes = { "GREMLIN_TOWN" }
     settlement = {
-      type = Builtin VILLAGE
+      type = MapLayout { "arena24" }
       tribe = GNOME #Gnomish alignment is neutral to both good and evil characters
       inhabitants = {
         leader = { { "GNOME_CHIEF" } }
@@ -132,6 +133,7 @@
         }
       }
       buildingId = "BRICK_MEDIUM"
+      furniture = { "arena_services2" }
     }
     levelConnection = {
       topLevel = MainEnemy
@@ -174,7 +176,7 @@
   {
     biomes = { "DRUID_CAMP" }
     settlement = {
-      type = Builtin VILLAGE
+      type = MapLayout { "arena24" }
       tribe = GNOME #Gnomish alignment is neutral to both good and evil characters
       inhabitants = {
         leader = { { "GNOME_CHIEF" } }
@@ -184,7 +186,8 @@
         }
       }
       buildingId = "RUINS_HARD"
-    }
+      furniture = { "arena_services3" }
+	  }
     levelConnection = {
       topLevel = MainEnemy
       levels = {
