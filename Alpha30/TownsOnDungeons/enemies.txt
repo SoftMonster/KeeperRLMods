@@ -454,7 +454,7 @@
             3 "ELF_LORD"
             3 "DARK_ELF_LORD"
             3 "DEMON_LORD"
-            1 "DJINN"
+            3 "DJINN"
             3 "CYCLOPS"
             3 "DUKE"
             3 "MINOTAUR"
