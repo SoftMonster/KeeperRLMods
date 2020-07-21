@@ -39,6 +39,36 @@ freedom to share and change it.  By contrast, the GNU General Public
  [rest of string was truncated]&quot;;.
 </summary>
 </member>
+<member name="P:KRLDeveloperNS.My.Resources.Resources.effect_type">
+<summary>
+  Looks up a localized string similar to #pragma once
+
+#include &quot;util.h&quot;
+#include &quot;effect.h&quot;
+#include &quot;creature_id.h&quot;
+#include &quot;furniture_type.h&quot;
+#include &quot;destroy_action.h&quot;
+#include &quot;intrinsic_attack.h&quot;
+#include &quot;spell_id.h&quot;
+#include &quot;sound.h&quot;
+#include &quot;color.h&quot;
+#include &quot;fx_info.h&quot;
+#include &quot;workshop_type.h&quot;
+#include &quot;creature_predicate.h&quot;
+
+#define SIMPLE_EFFECT(Name) \
+  struct Name { \
+    SERIALIZE_EMPTY()\
+  }
+
+namespace Effects {
+SIMPLE_EFFECT(Escape);
+SIMPLE_EFFECT(Teleport);
+SIMPLE_EFFECT(Jump);
+struct Heal {
+  He [rest of string was truncated]&quot;;.
+</summary>
+</member>
 <member name="P:KRLDeveloperNS.My.Resources.Resources.monster_generator_instructions">
 <summary>
   Looks up a localized resource of type System.Byte[].
@@ -87,14 +117,29 @@ freedom to share and change it.  By contrast, the GNU General Public
 <summary>
   Looks up a localized string similar to type = Builtin |
 SMALL_VILLAGE|Small village
-tribe = HUMAN|Tribal Loyalty:Humanity
-tribe = |Tribal Loyalty:
- = |: .
+tribe = HUMAN|*Tribal Loyalty: Humanity
+tribe = |*Tribal Loyalty:
+MINETOWN|Mine Town
+TOWN|Town
+MONSTER|None
+race =|*Race:
+inhabitants|*Inhabitants
+DUNGEON|Dungeon
+locationNameGen = TOWN |*Location Named as: TOWN 
+outsideFeatures|*Outside features
+dungeonOutside|Dungeon surroundings
+roomFurniture|Standard Furniture
+buildingId|*Building Style
+furniture|Furniture
+maxPopulation =|*Max Population:
+CAVE|Cave
+= |:
+&lt;Stats&gt;|= Stats =.
 </summary>
 </member>
 <member name="P:KRLDeveloperNS.My.Resources.Resources.WikiEnemiesTemplate">
 <summary>
-  Looks up a localized string similar to = Stats =
+  Looks up a localized string similar to &lt;Stats&gt;
 *Settlement:¬settlement¬
 *Configuration:¬config¬
 *Immigration:¬immigrants¬

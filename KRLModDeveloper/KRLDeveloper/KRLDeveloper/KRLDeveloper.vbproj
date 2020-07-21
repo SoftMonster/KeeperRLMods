@@ -275,5 +275,8 @@
   <ItemGroup>
     <None Include="Resources\WikiEnemiesReplacements.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\effect_type.h" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

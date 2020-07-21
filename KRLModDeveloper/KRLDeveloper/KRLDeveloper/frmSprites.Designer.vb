@@ -50,7 +50,7 @@ Partial Class frmSprites
         Me.PictureBox1.Location = New System.Drawing.Point(69, 143)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(320, 295)
+        Me.PictureBox1.Size = New System.Drawing.Size(106, 87)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
