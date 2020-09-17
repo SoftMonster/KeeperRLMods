@@ -2,7 +2,7 @@
   "PESEANTS"
   {
     settlement = {
-      type = Builtin SWAMP
+      type = Builtin SWAMP "DUNGEON"
       inhabitants = {
         leader = { { "PESEANT" } }
         civilians = {
@@ -14,7 +14,6 @@
       }
       race = "pathetic humans"
       tribe = MONSTER
-      buildingId = "DUNGEON"
     }
   }
 

@@ -13,7 +13,7 @@
       uses = 2
       usedUpMsg = true
       displayUses = true
-      effect = Chain { Enhance ARMOR 3 Enhance ARMOR -3 Enhance ARMOR 2 Enhance ARMOR -2 Enhance ARMOR -1 Enhance ARMOR 1 }
+      effect = { Enhance ARMOR 3 Enhance ARMOR -3 Enhance ARMOR 2 Enhance ARMOR -2 Enhance ARMOR -1 Enhance ARMOR 1 }
     }
 
   "Fireblade"
@@ -31,9 +31,9 @@
       weaponInfo = {
         attackType = STAB
         attackMsg = THRUST
-        victimEffect = { 1.0 Chain {Fire Enhance ARMOR -1} }
+        victimEffect = { 1.0 {Fire Enhance ARMOR -1} }
         attackerEffect = {
-          Chain {
+          {
             Lasting FIRE_RESISTANT
             Lasting DAM_BONUS
             Lasting LIGHT_SOURCE
@@ -102,7 +102,7 @@
       description = "Permanently increases your attack by 1, but makes you insane and halucinate for a while in exchange."
       uses = 1
       price = 100
-      effect = Chain { IncreaseAttr DAMAGE 1 Lasting INSANITY Lasting HALLU }
+      effect = { IncreaseAttr DAMAGE 1 Lasting INSANITY Lasting HALLU }
     }
   "LongSpear"
     {
@@ -225,7 +225,7 @@
       applySound = DYING_PIG
       applyTime = 1
       uses = 1
-      effect = Chain {
+      effect = {
         Lasting SATIATED
         Chance 0.1 Enhance ARMOR 1
         Chance 0.1 Enhance WEAPON -1
@@ -295,7 +295,7 @@
     {
       viewId = { "berry4" }
       name = "smelly herb"
-      effect = Chain {
+      effect = {
         Heal FLESH
         Heal SPIRIT
         RemoveLasting POISON
@@ -311,7 +311,7 @@
     {
       viewId = { "leaf1" }
       name = "leaf of herb"
-      effect = Chain {
+      effect = {
         Heal FLESH
         Heal SPIRIT
 		Lasting SPEED
@@ -459,7 +459,7 @@
 		modifiers = { DAMAGE 9 }
 		weaponInfo = { 
 		attackType = STAB
-        victimEffect = { 1.0 Chain { Lasting POISON Lasting BLEEDING } } }
+        victimEffect = { 1.0 { Lasting POISON Lasting BLEEDING } } }
 		equipedEffect = { POISON_RESISTANT }	
 	}
 	"Dagger"

@@ -2,11 +2,11 @@
 {
   "WORKSHOP"
   {
-    {{Scroll RemoveLasting POISON 100 }                                             2 "GOLD"     2   "magic inscription"}
-    {{Scroll RemoveLasting BLIND  100}                                              3 "GOLD"     3   "magic inscription"}
-    {{Scroll Escape 100}                                                            5 "GOLD"     5   "magic inscription"}
-    {{Scroll Name "heal spirit" Area 2 Filter Not Enemy Heal SPIRIT }                            	12 "GOLD"    12   "magic inscription"}
-    {{Scroll Summon "FLY" {3 7} 100}                                               15 "GOLD"    15   "magic inscription"}
+    {{Scroll RemoveLasting POISON }                                                 2 "GOLD"     2   "magic inscription"}
+    {{Scroll RemoveLasting BLIND  }                                                 3 "GOLD"     3   "magic inscription"}
+    {{Scroll Escape }                                                               5 "GOLD"     5   "magic inscription"}
+    {{Scroll Name "heal spirit" Area 2 Filter Not Enemy Heal SPIRIT }              12 "GOLD"    12   "magic inscription"}
+    {{Scroll Summon "FLY" {3 7} 100 }                                              15 "GOLD"    15   "magic inscription"}
     {{Scroll Deception }                                                           20 "GOLD"    20   "magic inscription"}
     {{Scroll CircularBlast }                                                       20 "GOLD"    20   "magic inscription"}
     {{Scroll SummonElement }                                                       25 "GOLD"    25   "magic inscription"}

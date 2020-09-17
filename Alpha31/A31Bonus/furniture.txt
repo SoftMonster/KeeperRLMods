@@ -71,7 +71,7 @@
   blockVision = { NORMAL ELF }
   wall = true
   clearFogOfWar = true
-  itemDrop = {{{{Simple "InfOre"} 1 { 16 28 }}}}
+  itemDrop = {{{{"InfOre"} 1 { 16 28 }}}}
   strength2 = {
     500 BOULDER
     500 DIG
@@ -89,7 +89,7 @@
   blockVision = { NORMAL ELF }
   wall = true
   clearFogOfWar = true
-  itemDrop = {{{{Simple "VenOre"} 1 { 16 28 }}}}
+  itemDrop = {{{{"VenOre"} 1 { 16 28 }}}}
   strength2 = {
     500 BOULDER
     500 DIG
@@ -118,7 +118,7 @@
     }
     blockMovement = true
     fire = 30
-    itemDrop = {{{{Simple "WoodPlank"} 1 { 10 15 }}}}
+    itemDrop = {{{{"WoodPlank"} 1 { 10 15 }}}}
     tryDestroyFX = { WOOD_SPLINTERS }
   }
   
@@ -294,7 +294,7 @@
     viewId = { "web_trap" }
     strength = 1
     blockingEnemies = true
-    destroyedEffect =  Chain { SummonEnemy "SPIDER" {1} none PlaceFurniture "BROKEN_WEB" }
+    destroyedEffect = { SummonEnemy "SPIDER" {1} none PlaceFurniture "BROKEN_WEB" }
   }
   "BIG_SPIDER_WEB"
   {
@@ -302,7 +302,7 @@
     viewId = { "web_trap" }
     strength = 1
     blockingEnemies = true
-    destroyedEffect =  Chain { SummonEnemy "SHELOB" {1} none PlaceFurniture "CHEST" }
+    destroyedEffect =  { SummonEnemy "SHELOB" {1} none PlaceFurniture "CHEST" }
   }
   "BACKGROUND_RUBBLE"
   {
@@ -562,28 +562,28 @@
     canHideHere = true
     strength = 1
     destroyedRemains = "TREASURE_CHEST"
-    usageType = UsageEffect "open" Chain {
+    usageType = UsageEffect "open"  {
       ChooseRandom {
-    	  DropItems {Simple "GoldPiece"} {15 25}
-    	  DropItems {Simple "GoldPiece"} {15 25}
+    	  DropItems {"GoldPiece"} {15 25}
+    	  DropItems {"GoldPiece"} {15 25}
 		  SummonEnemy "RAT" {3 4} none
       }
 	  FirstSuccessful {
 	    Filter LastingEffect DISARM_TRAPS_SKILL Message "You disarm a trap on the chest using your disarming skills."
-		Chain {  
+		 {  
           ChooseRandom {
             Message "The chest breaks open easily."
             Message "The chest resists and then suddenly breaks open."
             Message "The chest cracks along the top."
           }
           ChooseRandom {
-            Chain { Message "A blue gas leaks from the chest." Lasting HALLU }
-            Chain { Message "The chest catches fire as you trigger the trap." Fire }
-            Chain { Message "A frost bolt hits you!" Ice }
-            Chain { Message "An acid ball splashes you!" Acid }
-            Chain { Message "You are stabbed by a needle!" Lasting POISON }
-            Chain { Message "A small device slits you open!" Lasting BLEEDING }
-            Chain { Message "Something makes you cough!" Lasting PLAGUE }
+             { Message "A blue gas leaks from the chest." Lasting HALLU }
+             { Message "The chest catches fire as you trigger the trap." Fire }
+             { Message "A frost bolt hits you!" Ice }
+             { Message "An acid ball splashes you!" Acid }
+             { Message "You are stabbed by a needle!" Lasting POISON }
+             { Message "A small device slits you open!" Lasting BLEEDING }
+             { Message "Something makes you cough!" Lasting PLAGUE }
 		  }
 		}
       } 
@@ -724,16 +724,16 @@
     viewId = { "herb1" }
     strength2 = { 10 DIG }
     fire = 100
-    itemDrop = {{{{Simple "Berry1"} 1 { 1 }}}}
+    itemDrop = {{{{"Berry1"} 1 { 1 }}}}
     usageType = UsageEffect "dig" DestroyWalls DIG	
   }
 
-  "HERB_2" inherit "HERB_1" { viewId = { "herb2" } itemDrop = {{{{Simple "Berry2"} 1 { 1 }}}}}
-  "HERB_3" inherit "HERB_1" { viewId = { "herb3" } itemDrop = {{{{Simple "Berry3"} 1 { 1 }}}}}
-  "HERB_4" inherit "HERB_1" { viewId = { "herb4" } itemDrop = {{{{Simple "Berry4"} 1 { 1 }}}}}
-  "HERB_5" inherit "HERB_1" { viewId = { "herb5" } itemDrop = {{{{Simple "Leaf1"} 1 { 1 }}}}}
-  "HERB_6" inherit "HERB_1" { viewId = { "herb6" } itemDrop = {{{{Simple "Flower1"} 1 { 1 }}}}}
-  "HERB_7" inherit "HERB_1" { viewId = { "herb7" } itemDrop = {{{{Simple "Flower2"} 1 { 1 }}}}}
+  "HERB_2" inherit "HERB_1" { viewId = { "herb2" } itemDrop = {{{{"Berry2"} 1 { 1 }}}}}
+  "HERB_3" inherit "HERB_1" { viewId = { "herb3" } itemDrop = {{{{"Berry3"} 1 { 1 }}}}}
+  "HERB_4" inherit "HERB_1" { viewId = { "herb4" } itemDrop = {{{{"Berry4"} 1 { 1 }}}}}
+  "HERB_5" inherit "HERB_1" { viewId = { "herb5" } itemDrop = {{{{"Leaf1"} 1 { 1 }}}}}
+  "HERB_6" inherit "HERB_1" { viewId = { "herb6" } itemDrop = {{{{"Flower1"} 1 { 1 }}}}}
+  "HERB_7" inherit "HERB_1" { viewId = { "herb7" } itemDrop = {{{{"Flower2"} 1 { 1 }}}}}
 
   
   
@@ -834,7 +834,7 @@
 	lightEmission = 20.0
     strength = 200
 	destroyFX = { DESTROY_FURNITURE Rgb 15 15 15 255 }
-	destroyedEffect = Chain { Message "The Altar releases a streak of dark energy!" Area 5 IncreaseAttr DAMAGE 2 SummonEnemy "SHADE" {4} none }
+	destroyedEffect = { Message "The Altar releases a streak of dark energy!" Area 5 IncreaseAttr DAMAGE 2 SummonEnemy "SHADE" {4} none }
   }
 "BLOOD_WELL"
 {
@@ -843,7 +843,7 @@
   canHideHere = true
   luxury = 0.7
   usageType = UsageEffect "drink from"
-      Chain {
+      {
         CreatureMessage "take a sip" "takes a sip"
 		RegrowBodyPart 1
       }

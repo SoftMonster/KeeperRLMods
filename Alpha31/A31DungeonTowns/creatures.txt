@@ -31,7 +31,7 @@
       }
       chatReactionFriendly = "\"Time to eat.\""
       chatReactionHostile = "\"Leave me alone!\""
-      inventory = { { Simple "sling" } }
+      inventory = { { "sling" } }
 
     }
  "HALFLING_CHIEF" inherit "HALFLING"
@@ -110,7 +110,7 @@
         name = "druid"
         firstNameGen = "FIRST_MALE"
       }
-	  inventory = { { Simple "WoodenStaff" } }
+	  inventory = { { "WoodenStaff" } }
       chatReactionFriendly = "\"The woods are life.\""
       chatReactionHostile = "\"The woods are death.\""
     }

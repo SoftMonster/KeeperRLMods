@@ -1,10 +1,10 @@
   "HALFLING_BLACKSMITH"
   {
     settlement = {
-    type = Builtin VILLAGE
+    type = Builtin VILLAGE "DUNGEON" 
     tribe = GNOME #Neutral alignment
 	race = "Halfling Blacksmith"
-	shopItems = { "iron" }
+	shopItems = { {8 16} "iron" }
     inhabitants = { 
         leader = { { "HALFLING_CHIEF" } } 
         fighters = {
@@ -12,24 +12,23 @@
             all = { 1 "HALFLING" }
       }
     }
-    buildingId = "DUNGEON"  
-    furniture = { "roomFurniture" }
+    furniture = "roomFurniture"
     outsideFeatures = "villageOutside"
     }
   }
-  "HALFLING_SCRIBE" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Scribe" shopItems = { "scribeScrolls" } } }
-  "HALFLING_TANNER" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Tanner" shopItems = { "leather" } } }
-  "HALFLING_BREWER" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Brewer" shopItems = { "breweryPotions" } } }
-  "HALFLING_JEWELLER" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Jeweller" shopItems = { "jewellery" } } }
-  "HALFLING_TRAPSMITH" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Trapsmith" shopItems = { "traps" } } }
+  "HALFLING_SCRIBE" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Scribe" shopItems = { { 20 } "scribeScrolls" } } }
+  "HALFLING_TANNER" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Tanner" shopItems = { { 30 } "leather" } } }
+  "HALFLING_BREWER" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Brewer" shopItems = { { 20 } "breweryPotions" } } }
+  "HALFLING_JEWELLER" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Jeweller" shopItems = { {10 } "jewellery" } } }
+  "HALFLING_TRAPSMITH" inherit "HALFLING_BLACKSMITH" { settlement = append { race = "Halfling Trapsmith" shopItems = { { 20 }"traps" } } }
 
   "GREMLIN_BLACKSMITH"
   {
     settlement = {
-    type = Builtin VILLAGE
+    type = Builtin VILLAGE "DUNGEON"
     tribe = GNOME #Neutral alignment
 	race = "Gremlin Blacksmith"
-	shopItems = { "iron" }
+	shopItems = { { 8 16 } "iron" }
     inhabitants = { 
         leader = { { "GREMLIN_CHIEF" } } 
         fighters = {
@@ -37,24 +36,23 @@
             all = { 1 "GREMLIN" }
       }
     }
-    buildingId = "DUNGEON"  
-    furniture = { "roomFurniture" }
+    furniture = "roomFurniture"
     outsideFeatures = "villageOutside"
     }
   }
-  "GREMLIN_SCRIBE" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Scribe" shopItems = { "scribeScrolls" } } }
-  "GREMLIN_TANNER" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Tanner" shopItems = { "leather" } } }
-  "GREMLIN_BREWER" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Brewer" shopItems = { "breweryPotions" } } }
-  "GREMLIN_JEWELLER" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Jeweller" shopItems = { "jewellery" } } }
-  "GREMLIN_TRAPSMITH" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Trapsmith" shopItems = { "traps" } } }
+  "GREMLIN_SCRIBE" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Scribe" shopItems = { {20} "scribeScrolls" } } }
+  "GREMLIN_TANNER" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Tanner" shopItems = { {30} "leather" } } }
+  "GREMLIN_BREWER" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Brewer" shopItems = { {20} "breweryPotions" } } }
+  "GREMLIN_JEWELLER" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Jeweller" shopItems = { {10} "jewellery" } } }
+  "GREMLIN_TRAPSMITH" inherit "GREMLIN_BLACKSMITH" { settlement = append { race = "Gremlin Trapsmith" shopItems = { {20} "traps" } } }
 
   "DRUID_BLACKSMITH"
   {
     settlement = {
-    type = Builtin VILLAGE
+    type = Builtin VILLAGE "DUNGEON"
     tribe = GNOME #Neutral alignment
 	race = "Druid Blacksmith"
-	shopItems = { "iron" }
+	shopItems = { { 8 16 } "iron" }
     inhabitants = { 
         leader = { { "DRUID_CHIEF" } } 
         fighters = {
@@ -62,16 +60,15 @@
             all = { 1 "DRUID" }
       }
     }
-    buildingId = "DUNGEON"  
-    furniture = { "roomFurniture" }
+    furniture = "roomFurniture"
     outsideFeatures = "villageOutside"
     }
   }  
-  "DRUID_SCRIBE" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Scribe" shopItems = { "scribeScrolls" } } }
-  "DRUID_TANNER" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Tanner" shopItems = { "leather" } } }
-  "DRUID_BREWER" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Brewer" shopItems = { "breweryPotions" } } }
-  "DRUID_JEWELLER" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Jeweller" shopItems = { "jewellery" } } }
-  "DRUID_TRAPSMITH" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Trapsmith" shopItems = { "traps" } } }
+  "DRUID_SCRIBE" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Scribe" shopItems = { {20} "scribeScrolls" } } }
+  "DRUID_TANNER" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Tanner" shopItems = { {30} "leather" } } }
+  "DRUID_BREWER" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Brewer" shopItems = { {20} "breweryPotions" } } }
+  "DRUID_JEWELLER" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Jeweller" shopItems = { {10} "jewellery" } } }
+  "DRUID_TRAPSMITH" inherit "DRUID_BLACKSMITH" { settlement = append { race = "Druid Trapsmith" shopItems = { {20} "traps" } } }
 
 ####################################################################
 #"Bottomless" Dungeons
@@ -80,7 +77,7 @@
   {
     biomes = { "HALFLING_TOWN" }
     settlement = {
-      type = MapLayout { "arena24" }
+      type = Predefined { "arena24" "MUD_EASY" }
       tribe = GNOME #Gnomish alignment is neutral to both good and evil characters
       inhabitants = {
         leader = { { "GNOME_CHIEF" } }
@@ -89,33 +86,32 @@
           all = { 1 "STONE_GOLEM" }
         }
       }
-      buildingId = "MUD_EASY"
-      furniture = { "arena_services1" }
+      furniture = "arena_services1"
     }
     levelConnection = {
       topLevel = MainEnemy
       levels = {
-        { ExtraEnemy { "BOTTOMLESS1" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS2" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS3" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS4" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS5" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS6" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS7" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS8" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS9" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS10" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS11" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS12" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS13" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS14" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS15" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS16" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS17" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS18" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS19" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS20" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "HALFLING_DUNGEON_BOSS" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS1" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS2" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS3" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS4" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS5" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS6" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS7" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS8" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS9" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS10" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS11" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS12" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS13" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS14" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS15" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS16" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS17" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS18" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS19" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS20" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "HALFLING_DUNGEON_BOSS" { 1 2 } } { 60 40 } DUNGEON }
       }
     }
   }
@@ -123,7 +119,7 @@
   {
     biomes = { "GREMLIN_TOWN" }
     settlement = {
-      type = MapLayout { "arena24" }
+      type = Predefined { "arena24" "BRICK_MEDIUM" }
       tribe = GNOME #Gnomish alignment is neutral to both good and evil characters
       inhabitants = {
         leader = { { "GNOME_CHIEF" } }
@@ -132,43 +128,42 @@
           all = { 1 "STONE_GOLEM" }
         }
       }
-      buildingId = "BRICK_MEDIUM"
-      furniture = { "arena_services2" }
+      furniture = "arena_services2"
     }
     levelConnection = {
       topLevel = MainEnemy
       levels = {
-        { ExtraEnemy { "BOTTOMLESS21" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS22" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS23" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS24" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS25" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS26" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS27" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS28" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS29" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS30" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS31" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS32" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS33" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS34" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS35" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS36" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS37" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS38" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS39" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS40" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS41" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS42" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS43" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS44" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS45" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS46" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS47" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS48" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS49" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS50" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "GREMLIN_DUNGEON_BOSS" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS21" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS22" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS23" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS24" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS25" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS26" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS27" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS28" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS29" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS30" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS31" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS32" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS33" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS34" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS35" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS36" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS37" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS38" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS39" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS40" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS41" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS42" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS43" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS44" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS45" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS46" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS47" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS48" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS49" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS50" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "GREMLIN_DUNGEON_BOSS" { 1 2 } } { 60 40 } DUNGEON }
       }
     }
   }
@@ -176,7 +171,7 @@
   {
     biomes = { "DRUID_CAMP" }
     settlement = {
-      type = MapLayout { "arena24" }
+      type = Predefined { "arena24" "RUINS_HARD" }
       tribe = GNOME #Gnomish alignment is neutral to both good and evil characters
       inhabitants = {
         leader = { { "GNOME_CHIEF" } }
@@ -185,63 +180,62 @@
           all = { 1 "STONE_GOLEM" }
         }
       }
-      buildingId = "RUINS_HARD"
-      furniture = { "arena_services3" }
+      furniture = "arena_services3"
 	  }
     levelConnection = {
       topLevel = MainEnemy
       levels = {
-        { ExtraEnemy { "BOTTOMLESS50" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS51" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS52" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS53" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS54" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS55" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS56" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS57" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS58" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS59" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS60" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS61" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS62" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS63" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS64" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS65" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS66" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS67" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS68" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS69" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS70" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS71" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS72" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS73" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS74" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS75" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS76" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS77" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS78" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS79" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS80" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS81" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS82" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS83" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS84" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS85" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS86" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS87" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS88" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS89" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS90" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS91" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS92" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS93" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS94" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS95" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS96" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS97" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS98" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "BOTTOMLESS99" { 1 2 } } 60 40 DUNGEON }
-        { ExtraEnemy { "DRUID_DUNGEON_BOSS" { 1 2 } } 60 40 DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS50" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS51" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS52" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS53" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS54" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS55" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS56" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS57" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS58" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS59" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS60" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS61" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS62" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS63" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS64" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS65" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS66" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS67" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS68" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS69" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS70" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS71" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS72" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS73" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS74" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS75" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS76" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS77" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS78" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS79" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS80" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS81" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS82" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS83" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS84" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS85" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS86" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS87" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS88" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS89" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS90" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS91" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS92" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS93" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS94" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS95" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS96" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS97" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS98" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "BOTTOMLESS99" { 1 2 } } { 60 40 } DUNGEON }
+        { ExtraEnemy { "DRUID_DUNGEON_BOSS" { 1 2 } } { 60 40 } DUNGEON }
       }
     }
   }
@@ -251,7 +245,7 @@
   "HALFLING_DUNGEON_BOSS"
   {
     settlement = {
-      type = Builtin MINETOWN
+      type = Builtin MINETOWN "MUD"
       tribe = MONSTER
       inhabitants = {
         fighters = {
@@ -260,13 +254,12 @@
           all = { 1 "CYCLOPS" }
         }
      }
-     buildingId = "MUD"
     }
   }
   
   "GREMLIN_DUNGEON_BOSS"  {
     settlement = {
-      type = Builtin MINETOWN
+      type = Builtin MINETOWN "BRICK"
       tribe = MONSTER
       inhabitants = {
         fighters = {
@@ -275,13 +268,12 @@
           all = { 1 "HYDRA" }
         }
       }
-      buildingId = "BRICK"
     }
   }
   
   "DRUID_DUNGEON_BOSS" {
     settlement = {
-      type = Builtin MINETOWN
+      type = Builtin MINETOWN "RUINS"
       tribe = MONSTER
       inhabitants = {
         fighters = {
@@ -290,7 +282,6 @@
           all = { 1 "GREEN_DRAGON" }
         }
       }
-      buildingId = "RUINS"
     }
   }
 
@@ -305,12 +296,11 @@
   "BOTTOMLESS_TYPE_1"
   {
     settlement = {
-      type = Builtin MINETOWN
+      type = Builtin MINETOWN "MUD"
       tribe = MONSTER
       locationName = "dungeon level"
       race = "dwellers"
-      buildingId = "MUD"
-      furniture = { "roomFurniture" }
+      furniture = "roomFurniture"
       inhabitants = {
         fighters = {
           count = {7 11}
@@ -369,12 +359,11 @@
   "BOTTOMLESS_TYPE_2"
   {
     settlement = {
-      type = Builtin MINETOWN
+      type = Builtin MINETOWN "WOOD_CASTLE"
       tribe = MONSTER
       locationName = "dungeon level"
       race = "dwellers"
-      buildingId = "WOOD_CASTLE"
-      furniture = { "roomFurniture" }
+      furniture = "roomFurniture"
       inhabitants = {
         fighters = {
           count = {7 11}
@@ -421,12 +410,11 @@
   "BOTTOMLESS_TYPE_3"
   {
     settlement = {
-      type = Builtin MINETOWN
+      type = Builtin MINETOWN "BRICK"
       tribe = MONSTER
       locationName = "dungeon level"
       race = "dwellers"
-      buildingId = "BRICK"
-      furniture = { "roomFurniture" }
+      furniture = "roomFurniture"
       inhabitants = {
         fighters = {
           count = {6 10}
@@ -467,12 +455,11 @@
   "BOTTOMLESS_TYPE_4"
   {
     settlement = {
-      type = Builtin MINETOWN
+      type = Builtin MINETOWN "RUINS"
       tribe = MONSTER
       locationName = "dungeon level"
       race = "dwellers"
-      buildingId = "RUINS"
-      furniture = { "roomFurniture" }
+      furniture = "roomFurniture"
       inhabitants = {
         fighters = {
           count = {4 5}
@@ -511,17 +498,17 @@
 
   #Split base class 2 into 2a and 2b
 
-  "BOTTOMLESS_TYPE_2a" inherit "BOTTOMLESS_TYPE_2" { settlement = append {buildingId = "RUINS"}}
-  "BOTTOMLESS_TYPE_2b" inherit "BOTTOMLESS_TYPE_2" { settlement = append {buildingId = "GLACIER"}}
+  "BOTTOMLESS_TYPE_2a" inherit "BOTTOMLESS_TYPE_2" { settlement = append {type = Builtin MINETOWN "RUINS"}}
+  "BOTTOMLESS_TYPE_2b" inherit "BOTTOMLESS_TYPE_2" { settlement = append {type = Builtin MINETOWN "GLACIER"}}
   
   #Split base class 3 into 3a, 3b and 3c
   
   "BOTTOMLESS_TYPE_3a" inherit "BOTTOMLESS_TYPE_3"
-     { settlement = append { buildingId = "BRICK" inhabitants = append { fighters = append { count = {5 9}}}}}
+     { settlement = append { type = Builtin MINETOWN "BRICK" inhabitants = append { fighters = append { count = {5 9}}}}}
   "BOTTOMLESS_TYPE_3b" inherit "BOTTOMLESS_TYPE_3"
-     { settlement = append { buildingId = "SANDSTONE_WALL" inhabitants = append { fighters = append { count = {4 8}}}}}
+     { settlement = append { type = Builtin MINETOWN "SANDSTONE_WALL" inhabitants = append { fighters = append { count = {4 8}}}}}
   "BOTTOMLESS_TYPE_3c" inherit "BOTTOMLESS_TYPE_3"
-     { settlement = append { buildingId = "DUNGEON" inhabitants = append { fighters = append { count = {3 7}}}}}
+     { settlement = append { type = Builtin MINETOWN "DUNGEON" inhabitants = append { fighters = append { count = {3 7}}}}}
       
       
   #Define 100 levels of dungeons with increasing difficulty based on the base classes available.

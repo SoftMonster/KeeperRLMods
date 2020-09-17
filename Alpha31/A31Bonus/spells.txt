@@ -28,7 +28,7 @@
   {
 	upgrade = "directed blast"
     symbol = "💨"
-    effect = Name "magic blast" Chain { Damage SPELL_DAMAGE SPELL Blast }
+    effect = Name "magic blast" { Damage SPELL_DAMAGE SPELL Blast }
     range = 6
     endOnly = true
     cooldown = 20
@@ -38,7 +38,7 @@
   {
     upgrade = "magic blast"
     symbol = "💨"
-    effect = Name "advanced magic blast" Chain { Damage SPELL_DAMAGE SPELL Blast }
+    effect = Name "advanced magic blast" { Damage SPELL_DAMAGE SPELL Blast }
     range = 8
     endOnly = true
     cooldown = 16
@@ -48,7 +48,7 @@
   {
     upgrade = "advanced magic blast"
     symbol = "💨"
-    effect = Name "expert magic blast" Chain { Damage SPELL_DAMAGE SPELL Blast }
+    effect = Name "expert magic blast" { Damage SPELL_DAMAGE SPELL Blast }
     range = 10
     endOnly = true
     cooldown = 12
@@ -85,7 +85,7 @@
 "repair"
   {
     symbol = "🔧"
-    effect = Name "repair" Chain { RegrowBodyPart 1 Lasting SPEED }
+    effect = Name "repair" { RegrowBodyPart 1 Lasting SPEED }
     range = 1
     targetSelf = true
     cooldown = 30
@@ -104,7 +104,7 @@
   {
     upgrade = "haste other"
     symbol = "🏃"
-    effect = Name "area haste" Chain { Message "Time is altered." Area 2 Filter Not Enemy Lasting SPEED }
+    effect = Name "area haste" { Message "Time is altered." Area 2 Filter Not Enemy Lasting SPEED }
     cooldown = 110
     sound = SPELL_SPEED_SELF
   }
@@ -121,7 +121,7 @@
   {
     upgrade = "defend other"
     symbol = "🛡"
-    effect = Name "area defense bonus" Chain { Message "Spirit of Endurance invoked." Area 2 Filter Not Enemy Lasting DEF_BONUS }
+    effect = Name "area defense bonus" { Message "Spirit of Endurance invoked." Area 2 Filter Not Enemy Lasting DEF_BONUS }
     cooldown = 70
     sound = SPELL_DEX_BONUS
   }
@@ -144,7 +144,7 @@
 "area damage bonus"
   {
     symbol = "💪"
-    effect = Name "area damage bonus" Chain { Message "Powers of violence called." Area 2 Filter Not Enemy Lasting DAM_BONUS }
+    effect = Name "area damage bonus" { Message "Powers of violence called." Area 2 Filter Not Enemy Lasting DAM_BONUS }
     cooldown = 70
     sound = SPELL_STR_BONUS
   }
@@ -165,7 +165,7 @@
 "magma bolt"
   {
    symbol = "{🔥}"
-   effect = Name "magma bolt" Chain { Fire Blast }
+   effect = Name "magma bolt" { Fire Blast }
    fx = FIREBALL
    range = 6
    cooldown = 8
@@ -214,7 +214,7 @@
 "fireblast"
   {
     symbol = "🔥💥"
-    effect = Name "fireblast" Chain { Fire CircularBlast Blast }
+    effect = Name "fireblast" { Fire CircularBlast Blast }
     fx = FIREBALL
     range = 8
     cooldown = 30
@@ -224,7 +224,7 @@
   {
     upgrade = "fireblast"
     symbol = "🔥💥"
-    effect = Name "advanced fireblast" Chain { Fire CircularBlast Blast }
+    effect = Name "advanced fireblast" { Fire CircularBlast Blast }
     fx = FIREBALL
     range = 10
     cooldown = 25
@@ -234,7 +234,7 @@
   {
     upgrade = "advanced fireblast"
     symbol = "🔥💥"
-    effect = Name "expert fireblast" Chain { Fire CircularBlast Blast }
+    effect = Name "expert fireblast" { Fire CircularBlast Blast }
     fx = FIREBALL
     range = 12
     cooldown = 20
@@ -243,7 +243,7 @@
 "explosion"
   {
     symbol = "🔥💣"
-    effect = Name "explosion" Chain { Area 12 Filter Enemy Fire Area 12 Filter Enemy Blast Area 12 Filter Enemy Damage SPELL_DAMAGE SPELL 
+    effect = Name "explosion" { Area 12 Filter Enemy Fire Area 12 Filter Enemy Blast Area 12 Filter Enemy Damage SPELL_DAMAGE SPELL 
     CustomArea PlaceFurniture "FIRE_WALL" { 0 -12 0 -10 0 -8 0 -6 0 -4 0 -2 0 2 0 4 0 6 0 8 0 10 0 12 2 -10 2 -8 2 -6 2 -4 2 -2 2 0 2 2 2 4 2 6 2 8 2 10 4 8 4 6 4 4 4 2 4 0 4 -2 4 -4 4 -6 4 -8 
     6 6 6 4 6 2 6 0 6 -2 6 -4 6 -6 8 4 8 2 8 0 8 -2 8 -4 10 2 10 0 10 -2 12 0 -2 -10 -2 -8 -2 -6 -2 -4 -2 -2 -2 0 -2 2 -2 4 -2 6 -2 8 -2 10 -4 -8 -4 -6 -4 -4 -4 -2 -4 0 -4 2 -4 2 -4 4 -4 6 -4 8
     -6 6 -6 4 -6 2 -6 0 -6 -2 -6 -4 -6 -6 -8 4 -8 2 -8 0 -8 2 -8 4 -10 2 -10 0 -10 -2 -12 0} }
@@ -330,7 +330,7 @@
  {
    symbol = "🙙"
    range = 10
-   effect = Name "freezing vines" Chain { Message "Freezing vines burst from the ground."  Lasting FROZEN }
+   effect = Name "freezing vines" { Message "Freezing vines burst from the ground."  Lasting FROZEN }
    cooldown = 70
    sound = SPELL_STR_BONUS
  }
@@ -401,7 +401,7 @@
  {
    upgrade = "fire shield"
    symbol = "❂"
-   effect = Name "area fire shield" Chain { Message "Fire charm summoned." Area 3 Filter Not Enemy Lasting FIRE_RESISTANT }
+   effect = Name "area fire shield" { Message "Fire charm summoned." Area 3 Filter Not Enemy Lasting FIRE_RESISTANT }
    cooldown = 80
    sound = SPELL_INVISIBILITY
  }
@@ -641,14 +641,14 @@
   "goblin damage buff"
  {
     symbol = "💪"
-    effect = Name "goblin damage buff" Chain { Message "Goblin violence cast." Area 2 Filter Not Enemy Lasting DAM_BONUS }
+    effect = Name "goblin damage buff" { Message "Goblin violence cast." Area 2 Filter Not Enemy Lasting DAM_BONUS }
     cooldown = 10
     sound = SPELL_STR_BONUS
  }
   "goblin defense buff"
  {
     symbol = "🛡"
-    effect = Name "goblin defense buff" Chain { Message "Goblin skin charm." Area 2 Filter Not Enemy Lasting DEF_BONUS }
+    effect = Name "goblin defense buff" { Message "Goblin skin charm." Area 2 Filter Not Enemy Lasting DEF_BONUS }
     cooldown = 10
     sound = SPELL_DEX_BONUS
  }
@@ -669,28 +669,28 @@
   "fae time twisting"
  {
     symbol = "🏃"
-    effect = Name "fae time twisting" Chain { Message "Time is commanded." Area 6 Filter Not Enemy Lasting SPEED Area 6 Filter Enemy Lasting SLOWED }
+    effect = Name "fae time twisting" { Message "Time is commanded." Area 6 Filter Not Enemy Lasting SPEED Area 6 Filter Enemy Lasting SLOWED }
     cooldown = 80
     sound = SPELL_SPEED_SELF
   }
   "fae melee boost"
   {
     symbol = "🛡"
-    effect = Name "fae melee boost" Chain { Message "Fae Spirit of Endurance invoked." Area 3 Filter Not Enemy Lasting DEF_BONUS Area 3 Filter Not Enemy Lasting DAM_BONUS }
+    effect = Name "fae melee boost" { Message "Fae Spirit of Endurance invoked." Area 3 Filter Not Enemy Lasting DEF_BONUS Area 3 Filter Not Enemy Lasting DAM_BONUS }
     cooldown = 30
     sound = SPELL_DEX_BONUS
   }
   "fae illusion"
   {
     symbol = "🎭"
-    effect = Name "fae illusion" Chain { Message "Magic concealment." Area 3 Filter Not Enemy Lasting INVISIBLE Area 1 Filter Not Enemy Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 }
+    effect = Name "fae illusion" { Message "Magic concealment." Area 3 Filter Not Enemy Lasting INVISIBLE Area 1 Filter Not Enemy Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 }
     cooldown = 30
     sound = SPELL_TELEPORT
   }
   "fae escape"
   {
     symbol ="✈️"
-    effect = Name "fae escape" Chain { Message "Fae escape." Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 Lasting INVISIBLE Escape }
+    effect = Name "fae escape" { Message "Fae escape." Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 Lasting INVISIBLE Escape }
     cooldown = 30
     sound = SPELL_TELEPORT
   }
@@ -698,7 +698,7 @@
   {
     symbol = "🌀"
     range = 12
-    effect = Name "fae teleport" Chain { Message "Magic is commanded." Teleport Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 Lasting INVISIBLE }
+    effect = Name "fae teleport" { Message "Magic is commanded." Teleport Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 Lasting INVISIBLE }
     cooldown = 30
 	endOnly = true
     sound = SPELL_DECEPTION
@@ -706,14 +706,14 @@
   "fae deception"
   {
     symbol = "🎭"
-    effect = Name "fae deception" Chain { Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 }
+    effect = Name "fae deception" { Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 }
     cooldown = 5
     sound = SPELL_INVISIBILITY
   }
 "summon fae army"
   {
    symbol = "!!"
-   effect = Name "summon fae army" Chain { Summon "AIR_FAIRY" { 2 3 } 100 Summon "DARK_FAIRY" { 2 3 } 100 Summon "EARTH_FAIRY" { 2 3 } 100 Summon "ELECTRIC_FAIRY" { 2 3 } 100 Summon "LIGHT_FAIRY" { 2 3 } 100 Summon "MAGIC_FAIRY" { 2 3 } 100 Summon "NATURE_FAIRY" { 2 3 } 100 Summon "WATER_FAIRY" { 2 3 } 100 }
+   effect = Name "summon fae army" { Summon "AIR_FAIRY" { 2 3 } 100 Summon "DARK_FAIRY" { 2 3 } 100 Summon "EARTH_FAIRY" { 2 3 } 100 Summon "ELECTRIC_FAIRY" { 2 3 } 100 Summon "LIGHT_FAIRY" { 2 3 } 100 Summon "MAGIC_FAIRY" { 2 3 } 100 Summon "NATURE_FAIRY" { 2 3 } 100 Summon "WATER_FAIRY" { 2 3 } 100 }
    cooldown = 200
    sound = SPELL_SUMMON_SPIRIT
   }
@@ -745,7 +745,7 @@
   "hatch eggs"
   {
     symbol = "::"
-    effect = Name "hatch eggs" Chain {
+    effect = Name "hatch eggs" {
 		Summon "SPIDER" {3} 100
 		Summon "GREEN_SPIDER" {1} 100
 		Summon "RED_SPIDER" {1} 100
@@ -756,7 +756,7 @@
   {
     upgrade = "hatch eggs"
     symbol = ";;"
-    effect = Name "breed dark spawn" Chain {
+    effect = Name "breed dark spawn" {
 		Summon "SPIDER" {3} 100
 		Summon "GREEN_SPIDER" {1} 100
 		Summon "RED_SPIDER" {1} 100
@@ -769,7 +769,7 @@
   {
     upgrade = "breed dark spawn"
     symbol = ",,"
-    effect = Name "breed horrors" Chain {
+    effect = Name "breed horrors" {
 		Summon "SPIDER" {1} 100
 		Summon "GREEN_SPIDER" {1} 100
 		Summon "RED_SPIDER" {1} 100
@@ -785,7 +785,7 @@
   {
     upgrade = "breed horrors"    
     symbol = "**"
-    effect = Name "breed hell" Chain {
+    effect = Name "breed hell" {
 		Summon "SPIDER" {1} 100
 		Summon "GREEN_SPIDER" {1} 100
 		Summon "RED_SPIDER" {1} 100
@@ -815,7 +815,7 @@
 "summon rats"
   {
    symbol = "🐭"
-   effect = Name "summon rats" Chain { Summon "RAT" { 3 6 } 100 Summon "BLACK_RAT" { 0 2 } 100 }
+   effect = Name "summon rats" { Summon "RAT" { 3 6 } 100 Summon "BLACK_RAT" { 0 2 } 100 }
    cooldown = 40
    sound = SPELL_SUMMON_SPIRIT
   }
@@ -830,7 +830,7 @@
 "flaming strike"
   {
     symbol = "🔥☽"
-    effect = Name "flaming strike" Chain { Fire Damage DAMAGE CUT }
+    effect = Name "flaming strike" { Fire Damage DAMAGE CUT }
     fx = FIREBALL
     range = 3
     cooldown = 14
@@ -839,7 +839,7 @@
 "blowback"
   {
     symbol = "🔥💥"
-    effect = Name "blowback" Chain { Fire CircularBlast }
+    effect = Name "blowback" { Fire CircularBlast }
     fx = FIREBALL
     cooldown = 60
     sound = SPELL_BLAST
@@ -877,21 +877,21 @@
 "spawn hell knight lord squad"
   {
    symbol = "🔥⚔"
-   effect = Name "spawn hell knight lord squad" Chain { Summon "HELL_KNIGHT_LORD" { 1 } 0 Summon "HELL_KNIGHT" { 5 7 } 0 }
+   effect = Name "spawn hell knight lord squad" { Summon "HELL_KNIGHT_LORD" { 1 } 0 Summon "HELL_KNIGHT" { 5 7 } 0 }
    cooldown = 400
    sound = SPELL_SUMMON_SPIRIT
   }
 "spawn hell knight brute squad"
   {
    symbol = "🔥⚔"
-   effect = Name "spawn hell knight brute squad" Chain { Summon "HELL_KNIGHT_BRUTE" { 1 3 } 0 Summon "HELL_KNIGHT" { 3 5 } 0 }
+   effect = Name "spawn hell knight brute squad" { Summon "HELL_KNIGHT_BRUTE" { 1 3 } 0 Summon "HELL_KNIGHT" { 3 5 } 0 }
    cooldown = 350
    sound = SPELL_SUMMON_SPIRIT
   }
 "spawn hell knight swordmaster squad"
   {
    symbol = "🔥⚔"
-   effect = Name "spawn hell knight swordmaster squad" Chain { Summon "HELL_KNIGHT_SWORDMASTER" { 1 3 } 0 Summon "HELL_KNIGHT" { 3 5 } 0 }
+   effect = Name "spawn hell knight swordmaster squad" { Summon "HELL_KNIGHT_SWORDMASTER" { 1 3 } 0 Summon "HELL_KNIGHT" { 3 5 } 0 }
    cooldown = 350
    sound = SPELL_SUMMON_SPIRIT
   }
@@ -901,21 +901,21 @@
 "wild swing"
   {
     symbol = "🌀💥"
-    effect = Name "wild swing" Chain { Area 1 Damage DAMAGE CUT CircularBlast }
+    effect = Name "wild swing" { Area 1 Damage DAMAGE CUT CircularBlast }
     cooldown = 2
     sound = BLADE_DAMAGE
   }
 "blood rage"
   {
     symbol = "💪"
-    effect = Name "blood rage" Chain { Lasting RAGE Lasting SPEED Lasting INSANITY }
+    effect = Name "blood rage" { Lasting RAGE Lasting SPEED Lasting INSANITY }
     cooldown = 90
     sound = SPELL_STR_BONUS
   }
 "air render"
   {
     symbol = "☽"
-    effect = Name "air render" Chain { Damage DAMAGE CUT }
+    effect = Name "air render" { Damage DAMAGE CUT }
 	range = 3
     cooldown = 12
 	endOnly = true
@@ -924,14 +924,14 @@
 "martial blast"
   {
     symbol = "💥"
-    effect = Name "martial blast" Chain { Area 2 Blast }
+    effect = Name "martial blast" { Area 2 Blast }
     cooldown = 2
     sound = SPELL_AIR_BLAST
   }
 "martial strike"
   {
     symbol = "💥"
-    effect = Name "martial strike" Chain { Damage DAMAGE CUT Blast }
+    effect = Name "martial strike" { Damage DAMAGE CUT Blast }
 	range = 4
     cooldown = 20
     sound = BLUNT_DAMAGE
@@ -939,7 +939,7 @@
 "break through"
   {
     symbol = "💥➭"
-    effect = Name "break through" Chain { Damage DAMAGE CUT DestroyWalls DIG }
+    effect = Name "break through" { Damage DAMAGE CUT DestroyWalls DIG }
 	range = 1
     cooldown = 5
     sound = BLUNT_DAMAGE
@@ -957,7 +957,7 @@
  {
    symbol = "👱"
    range = 1
-   effect = Name "decapitate" Chain { LoseBodyPart HEAD Lasting BLEEDING }
+   effect = Name "decapitate" { LoseBodyPart HEAD Lasting BLEEDING }
    cooldown = 200
    sound = BLADE_DAMAGE
  }
@@ -965,7 +965,7 @@
  {
    symbol = "👞"
    range = 1
-   effect = Name "leg strike" Chain { LoseBodyPart LEG Lasting BLEEDING }
+   effect = Name "leg strike" { LoseBodyPart LEG Lasting BLEEDING }
    cooldown = 50
    sound = BLADE_DAMAGE
  }
@@ -973,14 +973,14 @@
  {
    symbol = "✋"
    range = 1
-   effect = Name "arm strike" Chain { LoseBodyPart ARM Lasting BLEEDING }
+   effect = Name "arm strike" { LoseBodyPart ARM Lasting BLEEDING }
    cooldown = 50
    sound = BLADE_DAMAGE
  }
 "curse of rage"
  {
    symbol = "😈"
-   effect = Name "curse of rage" Description "increases your damage stat by 1, but also lowers your defense by 1" Chain { IncreaseAttr DAMAGE 1 IncreaseAttr DEFENSE -1 }
+   effect = Name "curse of rage" Description "increases your damage stat by 1, but also lowers your defense by 1" { IncreaseAttr DAMAGE 1 IncreaseAttr DEFENSE -1 }
    targetSelf = true
    cooldown = 500
    sound = SPELL_WORD_OF_POWER
@@ -988,7 +988,7 @@
 "heroic leap"
 {
   symbol = "↷"
-  effect = Name "heroic leap" Chain { Jump CircularBlast }
+  effect = Name "heroic leap" { Jump CircularBlast }
   range = 3
   cooldown = 10
   endOnly = true
@@ -1046,7 +1046,7 @@
  "shadow step"
  {
    symbol = "⇢"
-   effect = Name "shadow step" Chain { Jump Deception }
+   effect = Name "shadow step" { Jump Deception }
    range = 6
    cooldown = 10
    sound = SPELL_DECEPTION
@@ -1056,7 +1056,7 @@
  "escape slash"
  {
    symbol ="✈️☽"
-   effect = Name "escape slash" Chain { Damage DAMAGE CUT Escape }
+   effect = Name "escape slash" { Damage DAMAGE CUT Escape }
    range = 1
    cooldown = 4
    sound = BLADE_DAMAGE
@@ -1065,7 +1065,7 @@
  "smoke bomb"
  {
    symbol = "✈️💥"
-   effect = Name "smoke bomb" Chain { CircularBlast Lasting INVISIBLE Escape }
+   effect = Name "smoke bomb" { CircularBlast Lasting INVISIBLE Escape }
    cooldown = 100
    sound = SPELL_DECEPTION
    message = "throw a smoke bomb" "throws a smoke bomb"
@@ -1073,7 +1073,7 @@
 "substitute"
  {
    symbol = "⇅"
-   effect = Name "substitute" Chain { Deception SwapPosition Deception }
+   effect = Name "substitute" { Deception SwapPosition Deception }
    range = 1
    cooldown = 30
    endOnly = true
@@ -1082,7 +1082,7 @@
  "double strike"
  {
    symbol = "☽☽"
-   effect = Name "double strike" Chain { Damage DAMAGE CUT Damage DAMAGE STAB }
+   effect = Name "double strike" { Damage DAMAGE CUT Damage DAMAGE STAB }
    range = 1
    cooldown = 8
    sound = BLADE_DAMAGE
@@ -1091,7 +1091,7 @@
  "armor strike"
  {
    symbol = "💥🛡"
-   effect = Name "armor strike" Chain { Damage DAMAGE CUT Enhance ARMOR -1 }
+   effect = Name "armor strike" { Damage DAMAGE CUT Enhance ARMOR -1 }
    range = 1
    cooldown = 4
    sound = BLUNT_DAMAGE
@@ -1100,7 +1100,7 @@
  "weapon strike"
  {
    symbol = "💥⚔"
-   effect = Name "weapon strike" Chain { Damage DAMAGE CUT Enhance WEAPON -1 }
+   effect = Name "weapon strike" { Damage DAMAGE CUT Enhance WEAPON -1 }
    range = 1
    cooldown = 4
    sound = BLUNT_DAMAGE
@@ -1110,7 +1110,7 @@
  {
    symbol = "☽☽☽"
    upgrade = "double strike"
-   effect = Name "triple strike" Chain { Damage DAMAGE CUT Damage DAMAGE STAB Damage DAMAGE CUT }
+   effect = Name "triple strike" { Damage DAMAGE CUT Damage DAMAGE STAB Damage DAMAGE CUT }
    range = 1
    cooldown = 8
    sound = BLADE_DAMAGE
@@ -1162,7 +1162,7 @@
  "poison star"
  {
    symbol = "✦"
-   effect = Name "poison star" Chain { Damage RANGED_DAMAGE STAB Lasting POISON }
+   effect = Name "poison star" { Damage RANGED_DAMAGE STAB Lasting POISON }
    range = 6
    cooldown = 1
    endOnly = true
@@ -1173,7 +1173,7 @@
  {
    symbol = "✦"
    upgrade = "poison star"
-   effect = Name "advanced poison star" Chain { Damage RANGED_DAMAGE STAB Lasting POISON }
+   effect = Name "advanced poison star" { Damage RANGED_DAMAGE STAB Lasting POISON }
    range = 8
    cooldown = 1
    endOnly = true
@@ -1183,7 +1183,7 @@
  "bleeding star"
  {
    symbol = "✷"
-   effect = Name "bleeding star" Chain { Damage RANGED_DAMAGE STAB Lasting BLEEDING }
+   effect = Name "bleeding star" { Damage RANGED_DAMAGE STAB Lasting BLEEDING }
    range = 6
    cooldown = 1
    endOnly = true
@@ -1194,7 +1194,7 @@
  {
    symbol = "✷"
    upgrade = "bleeding star"
-   effect = Name "advanced bleeding star" Chain { Damage RANGED_DAMAGE STAB Lasting BLEEDING }
+   effect = Name "advanced bleeding star" { Damage RANGED_DAMAGE STAB Lasting BLEEDING }
    range = 8
    cooldown = 1
    endOnly = true
@@ -1204,7 +1204,7 @@
  "escape star"
  {
    symbol = "✲"
-   effect = Name "escape star" Chain { Damage RANGED_DAMAGE STAB Escape Lasting SPEED }
+   effect = Name "escape star" { Damage RANGED_DAMAGE STAB Escape Lasting SPEED }
    range = 8
    cooldown = 1
    endOnly = true
@@ -1214,7 +1214,7 @@
   "double star"
  {
    symbol = "✫✫"
-   effect = Name "double star" Chain { Damage RANGED_DAMAGE STAB Damage RANGED_DAMAGE STAB }
+   effect = Name "double star" { Damage RANGED_DAMAGE STAB Damage RANGED_DAMAGE STAB }
    range = 8
    cooldown = 2
    endOnly = true
@@ -1225,7 +1225,7 @@
  {
    symbol = "✫✫✫"
    upgrade = "double star"
-   effect = Name "triple star" Chain { Damage RANGED_DAMAGE STAB Damage RANGED_DAMAGE STAB Damage RANGED_DAMAGE STAB }
+   effect = Name "triple star" { Damage RANGED_DAMAGE STAB Damage RANGED_DAMAGE STAB Damage RANGED_DAMAGE STAB }
    range = 8
    cooldown = 2
    endOnly = true
@@ -1242,7 +1242,7 @@
 "shadow bolt"
   {
     symbol = "⥇"
-    effect = Name "shadow bolt" Chain { Damage SPELL_DAMAGE SPELL Escape Lasting INSANITY }
+    effect = Name "shadow bolt" { Damage SPELL_DAMAGE SPELL Escape Lasting INSANITY }
     range = 8
     cooldown = 10
 	endOnly = true
@@ -1252,7 +1252,7 @@
   {
     symbol = "⥇"
 	upgrade = "shadow bolt"
-    effect = Name "advanced shadow bolt" Chain { Damage SPELL_DAMAGE SPELL Escape Lasting INSANITY }
+    effect = Name "advanced shadow bolt" { Damage SPELL_DAMAGE SPELL Escape Lasting INSANITY }
     range = 9
     cooldown = 8
 	endOnly = true
@@ -1262,7 +1262,7 @@
   {
     symbol = "⥇"
 	upgrade = "advanced shadow bolt"
-    effect = Name "expert shadow bolt" Chain { Damage SPELL_DAMAGE SPELL Escape Lasting INSANITY }
+    effect = Name "expert shadow bolt" { Damage SPELL_DAMAGE SPELL Escape Lasting INSANITY }
     range = 10
     cooldown = 6
 	endOnly = true
@@ -1294,7 +1294,7 @@
 "vanish"
   {
     symbol = "🕵️"
-    effect = Name "vanish" Chain { Lasting INVISIBLE Teleport }
+    effect = Name "vanish" { Lasting INVISIBLE Teleport }
     range = 8
     cooldown = 100
 	endOnly = true
@@ -1303,7 +1303,7 @@
 "split spirit"
   {
     symbol = "👤👤"
-    effect = Name "split spirit" Chain { IncreaseAttr DAMAGE -4 IncreaseAttr SPELL_DAMAGE -4 IncreaseAttr RANGED_DAMAGE -4 IncreaseAttr DEFENSE -4 Summon "ASSASSIN_SPIRIT_CLONE" { 1 } 0 }
+    effect = Name "split spirit" { IncreaseAttr DAMAGE -4 IncreaseAttr SPELL_DAMAGE -4 IncreaseAttr RANGED_DAMAGE -4 IncreaseAttr DEFENSE -4 Summon "ASSASSIN_SPIRIT_CLONE" { 1 } 0 }
     cooldown = 500
     sound = SPELL_WORD_OF_POWER
   }
@@ -1314,7 +1314,7 @@
 #Healing with a defense bonus but a longer cooldown.
 {
   symbol = "❤️"
-  effect = Name "elemental tea" Description "Provides healing, rest, morale and neutrition." Chain {Lasting RESTED Lasting SATIATED Heal FLESH} 
+  effect = Name "elemental tea" Description "Provides healing, rest, morale and neutrition." {Lasting RESTED Lasting SATIATED Heal FLESH} 
   cooldown = 100
   sound = SPELL_HEALING
 }
@@ -1331,7 +1331,7 @@
  {
    symbol = "*>"
    upgrade = "bolt of water"
-   effect = Name "water blast" Chain { Damage SPELL_DAMAGE SPELL Blast }
+   effect = Name "water blast" { Damage SPELL_DAMAGE SPELL Blast }
    range = 10
    cooldown = 30
    sound = SPELL_BLAST
@@ -1357,7 +1357,7 @@
  {
    upgrade = "water blast"
    symbol = "~~"
-   effect = Name "acid blast" Chain { Damage SPELL_DAMAGE SPELL Blast Acid }
+   effect = Name "acid blast" { Damage SPELL_DAMAGE SPELL Blast Acid }
    fx = ACID
    range = 10
    cooldown = 20
@@ -1378,7 +1378,7 @@
  #More powerful acid bolt spell with a longer range but larger cooldown
  {
    symbol = "->"
-   effect = Name "earth bolt" Chain { Damage SPELL_DAMAGE SPELL Chance 0.2 Lasting BLEEDING }
+   effect = Name "earth bolt" { Damage SPELL_DAMAGE SPELL Chance 0.2 Lasting BLEEDING }
    fx = ACID
    range = 10
    cooldown = 20
@@ -1389,7 +1389,7 @@
  {
    upgrade = "earth bolt"
    symbol = "=>"
-   effect = Name "earth blast" Chain { Damage SPELL_DAMAGE SPELL Blast Chance 0.3 Lasting BLEEDING }
+   effect = Name "earth blast" { Damage SPELL_DAMAGE SPELL Blast Chance 0.3 Lasting BLEEDING }
    fx = ACID
    range = 10
    cooldown = 20
@@ -1418,7 +1418,7 @@
    cooldown = 1
    effect = Name "place castle"
         Description "Places a castle facing south."
-		Chain {                                     #X -Y
+		{                                     #X -Y
 	        CustomArea PlaceFurniture "CASTLE_A1" { -2 -3 } 
 	        CustomArea PlaceFurniture "CASTLE_A2" { -1 -3 }
 	        CustomArea PlaceFurniture "CASTLE_A3" {  0 -3 }

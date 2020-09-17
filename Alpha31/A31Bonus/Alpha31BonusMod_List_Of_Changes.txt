@@ -111,7 +111,7 @@ New units:
 - Elite Goblin Guard
 
 New Technologies (Dark keepers):
-- Simplistic animations - Use magic to make simple objects fight for you.
+- Simplistic animations - Use magic to make  objects fight for you.
 - Magic contraptions - Use magic to invent devices that fight for you.
 - Dragon taming - Summon a pet dragon through your dungeon portal (Dark mage keepers only). 
 - Demonic alliance - Summon a demon lord through your dungeon portal (Mage keepers only). 
