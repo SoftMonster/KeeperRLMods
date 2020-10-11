@@ -2176,9 +2176,9 @@
   }
   "CENTAURS"
   {
-  biomes = { "CENTAUR_PALACE" "CITY_BRICK" } 
+  biomes = { "CENTAUR_PALACE" } 
   settlement = {
-    type = Predefined { "castle48" }
+    type = Predefined { "castle48" "CITY_BRICK" } 
     tribe = HUMAN
     inhabitants = {
       leader = {{ "CENTAUR_KING" }}
