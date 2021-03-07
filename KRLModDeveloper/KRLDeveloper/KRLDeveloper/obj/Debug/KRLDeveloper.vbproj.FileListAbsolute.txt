@@ -22,3 +22,5 @@ C:\KeeperRLMods\KRLModDeveloper\KRLDeveloper\KRLDeveloper\obj\Debug\KRLDeveloper
 C:\KeeperRLMods\KRLModDeveloper\KRLDeveloper\KRLDeveloper\obj\Debug\KRLDeveloperNS.frmSprites.resources
 C:\KeeperRLMods\KRLModDeveloper\KRLDeveloper\KRLDeveloper\obj\Debug\KRLDeveloperNS.TextViewer.resources
 C:\KeeperRLMods\KRLModDeveloper\KRLDeveloper\KRLDeveloper\obj\Debug\KRLDeveloperNS.frmA30PortHelper.resources
+C:\KeeperRLMods\KRLModDeveloper\KRLDeveloper\KRLDeveloper\obj\Debug\KRLDeveloper.vbprojAssemblyReference.cache
+C:\KeeperRLMods\KRLModDeveloper\KRLDeveloper\KRLDeveloper\obj\Debug\KRLDeveloper.vbproj.CoreCompileInputs.cache
