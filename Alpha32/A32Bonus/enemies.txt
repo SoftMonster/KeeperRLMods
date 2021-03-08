@@ -1254,7 +1254,7 @@
     ransom = 0.5 80
   }
 }
-"GOBLIN_CAVE"
+"GOBLIN_CAVE" modify
 {
   settlement = {
     type = Builtin MINETOWN "DUNGEON"
@@ -3104,7 +3104,7 @@
             1 "MUMMY"
             1 "ORC"
             1 "KOBOLD"
-            1 "GOBLIN"
+            1 "GOBLIN_WARRIOR"
             1 "ELF"
             1 "ELF_CHILD"
             1 "DARK_ELF"

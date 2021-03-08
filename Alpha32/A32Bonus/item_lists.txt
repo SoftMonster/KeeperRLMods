@@ -188,7 +188,7 @@
       {{ Scroll Deception } 10 }
       {{ Scroll Enhance ARMOR 1 } 10 }
       {{ Scroll Enhance WEAPON 1 } 10 }
-      {{ Scroll Escape } 10 }
+      {{ Scroll Escape{} } 10 }
       {{ Scroll Lasting FIRE_RESISTANT  } 10 }
       {{ Scroll Summon "FIRE_ELEMENTAL" {1 2} 100} 10 }
       {{ Scroll Summon "FLY" {3 6} 100 } 10 }
@@ -345,7 +345,7 @@
       {{ Scroll Deception } 10 }
       {{ Scroll Enhance ARMOR 1 } 10 }
       {{ Scroll Enhance WEAPON 1 } 10 }
-      {{ Scroll Escape } 10 }
+      {{ Scroll Escape{} } 10 }
       {{ Scroll Lasting FIRE_RESISTANT  } 10 }
       {{ Scroll Summon "FIRE_ELEMENTAL" {1 2} 100} 10 }
       {{ Scroll Summon "FLY" {3 6} 100 } 10 }
@@ -522,7 +522,7 @@
       {{ Scroll Deception } 10 }
       {{ Scroll Enhance ARMOR 1 } 10 }
       {{ Scroll Enhance WEAPON 1 } 10 }
-      {{ Scroll Escape } 10 }
+      {{ Scroll Escape{} } 10 }
       {{ Scroll Lasting FIRE_RESISTANT  } 10 }
       {{ Scroll Summon "FIRE_ELEMENTAL" {1 2} 100} 10 }
       {{ Scroll Summon "FLY" {3 6} 100 } 10 }
@@ -711,7 +711,7 @@
       {{ Scroll Deception } 10 }
       {{ Scroll Enhance ARMOR 1 } 10 }
       {{ Scroll Enhance WEAPON 1 } 10 }
-      {{ Scroll Escape } 10 }
+      {{ Scroll Escape{} } 10 }
       {{ Scroll Lasting FIRE_RESISTANT  } 10 }
       {{ Scroll Summon "FIRE_ELEMENTAL" {1 2} 100} 10 }
       {{ Scroll Summon "FLY" {3 6} 100 } 10 }

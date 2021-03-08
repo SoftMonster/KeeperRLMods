@@ -43,6 +43,7 @@
     }
     workshopGroups = { "gnomish" }
     description = "(Challenge) Manage a tribe of gnome wizards."
+    zLevelGroups = { "basic" "evil" }
     specialTraits = {
       ExtraTraining ARCHERY 8
 	}
@@ -66,6 +67,7 @@
     }
     workshopGroups = { "basic" "traps" "basic_Bonus_Mod" "traps_Bonus_Mod"  "techBooks"  }
     description = "(Easy) Play in easy mode and get a big bonus on all immigrants. But you have to wear a silly green robe."
+    zLevelGroups = { "basic" "evil" }
   }
 #Modded
 "1b_dark_mage_hard"
@@ -86,6 +88,7 @@
     }
     workshopGroups = { "basic" "traps" "basic_Bonus_Mod" "traps_Bonus_Mod" "techBooks" }
     description = "(Hard) Play in hard mode and test your skills to the limit for experienced players. You get to wear a cool purple robe."
+    zLevelGroups = { "basic" "evil" }
   }
 "5_BonusDev_elementalist" 
   {
@@ -108,6 +111,7 @@
     }
     workshopGroups = {"elements"}
     description = "(Challenge) Summon an army from your raw resources that can take over the map."
+    zLevelGroups = { "basic" "lawful" }
   }
 "4_BonusDev_vampire_lord"  
   {
@@ -137,6 +141,7 @@
       AttrBonus RANGED_DAMAGE 5
       AttrBonus DEFENSE 5
     }
+    zLevelGroups = { "basic" "evil" }
   }
 "6_BonusDev_dwarf_queen"
   {
@@ -155,6 +160,7 @@
     }
     workshopGroups = {"dwarven"}
     description = "(Hard) Play a tribe of dwarves and maximise melee combat."
+    zLevelGroups = { "basic" "lawful" }
   }
 "7_BonusDev_goblin_king"
   {
@@ -174,6 +180,7 @@
     }
     workshopGroups = { "goblin" "traps" "traps_Bonus_Mod" }
     description = "(Challenge) Breed an army of goblins and overrun the land with numbers!" #Modded
+    zLevelGroups = { "basic" "evil" }
   }
 #  {
 #    creatureId = { "KEEPER_SPIDER" }
@@ -234,4 +241,5 @@
     }
     workshopGroups = { "sandbox" }
     description = "Play a sandbox game where you can build and do whatever you like in a creative mode."
+    zLevelGroups = { "basic" "evil" }
   }

@@ -166,7 +166,6 @@
   {
    symbol = "{🔥}"
    effect = Name "magma bolt" { Fire Blast }
-   fx = FIREBALL
    range = 6
    cooldown = 8
    sound = SPELL_FIRE_SPHERE_PET
@@ -196,7 +195,7 @@
     upgrade = "fireball"
     symbol = "🔥"
     effect = Name "advanced fireball" Fire
-    fx = FIREBALL
+    fx = {FIREBALL}
     range = 8
     cooldown = 20
     sound = SPELL_FIRE_SPHERE_PET
@@ -206,7 +205,7 @@
     upgrade = "advanced fireball"
     symbol = "🔥"
     effect = Name "expert fireball" Fire
-    fx = FIREBALL
+    fx = {FIREBALL}
     range = 12
     cooldown = 10
     sound = SPELL_FIRE_SPHERE_PET
@@ -215,7 +214,7 @@
   {
     symbol = "🔥💥"
     effect = Name "fireblast" { Fire CircularBlast Blast }
-    fx = FIREBALL
+    fx = {FIREBALL}
     range = 8
     cooldown = 30
     sound = SPELL_BLAST
@@ -225,7 +224,7 @@
     upgrade = "fireblast"
     symbol = "🔥💥"
     effect = Name "advanced fireblast" { Fire CircularBlast Blast }
-    fx = FIREBALL
+    fx = {FIREBALL}
     range = 10
     cooldown = 25
     sound = SPELL_BLAST
@@ -235,7 +234,7 @@
     upgrade = "advanced fireblast"
     symbol = "🔥💥"
     effect = Name "expert fireblast" { Fire CircularBlast Blast }
-    fx = FIREBALL
+    fx = {FIREBALL}
     range = 12
     cooldown = 20
     sound = SPELL_BLAST
@@ -247,7 +246,7 @@
     CustomArea PlaceFurniture "FIRE_WALL" {{ 0 -12 }{ 0 -10}{ 0 -8 }{0 -6}{ 0 -4 }{0 -2 }{0 2 }{0 4 }{0 6 }{0 8 }{0 10}{ 0 12 }{2 -10}{ 2 -8}{ 2 -6}{ 2 -4}{ 2 -2}{ 2 0}{ 2 2}{ 2 4}{ 2 6}{ 2 8}{ 2 10}{ 4 8}{ 4 6}{ 4 4}{ 4 2}{ 4 0}{ 4 -2}{ 4 -4}{ 4 -6}{ 4 -8}{ 
     6 6}{ 6 4}{ 6 2}{ 6 0}{ 6 -2}{ 6 -4}{ 6 -6}{ 8 4}{ 8 2}{ 8 0}{ 8 -2}{ 8 -4}{ 10 2}{ 10 0}{ 10 -2}{ 12 0}{ -2 -10}{ -2 -8}{ -2 -6}{ -2 -4}{ -2 -2}{ -2 0}{ -2 2}{ -2 4}{ -2 6}{ -2 8}{ -2 10}{ -4 -8}{ -4 -6}{ -4 -4}{ -4 -2}{ -4 0}{ -4 2}{ -4 2}{ -4 4}{ -4 6}{ -4 8}{
     -6 6}{ -6 4}{ -6 2}{ -6 0}{ -6 -2}{ -6 -4}{ -6 -6}{ -8 4}{ -8 2}{ -8 0}{ -8 2}{ -8 4}{ -10 2}{ -10 0 }{-10 -2}{ -12 0}} }
-    fx = FIREBALL
+    fx = {FIREBALL}
     cooldown = 1500
     sound = SPELL_BLAST
   }
@@ -620,7 +619,7 @@
 "summon goblin horde"
  { 
    symbol = "👺"
-   effect = Name "summon goblin horde" Summon "GOBLIN" { 12 16 } 100
+   effect = Name "summon goblin horde" Summon "GOBLIN_WORKER" { 12 16 } 100
    cooldown = 50
    sound = SPELL_SUMMON_SPIRIT
  }
@@ -690,7 +689,7 @@
   "fae escape"
   {
     symbol ="✈️"
-    effect = Name "fae escape" { Message "Fae escape." Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 Lasting INVISIBLE Escape }
+    effect = Name "fae escape" { Message "Fae escape." Deception Summon "FAIRY_QUEEN_ILLUSION" { 1 2 } 100 Lasting INVISIBLE Escape{} }
     cooldown = 30
     sound = SPELL_TELEPORT
   }
@@ -831,7 +830,7 @@
   {
     symbol = "🔥☽"
     effect = Name "flaming strike" { Fire Damage DAMAGE CUT }
-    fx = FIREBALL
+    fx = {FIREBALL}
     range = 3
     cooldown = 14
     sound = SPELL_FIRE_SPHERE_PET
@@ -840,7 +839,7 @@
   {
     symbol = "🔥💥"
     effect = Name "blowback" { Fire CircularBlast }
-    fx = FIREBALL
+    fx = {FIREBALL}
     cooldown = 60
     sound = SPELL_BLAST
   }
@@ -1056,7 +1055,7 @@
  "escape slash"
  {
    symbol ="✈️☽"
-   effect = Name "escape slash" { Damage DAMAGE CUT Escape }
+   effect = Name "escape slash" { Damage DAMAGE CUT Escape{} }
    range = 1
    cooldown = 4
    sound = BLADE_DAMAGE
@@ -1065,7 +1064,7 @@
  "smoke bomb"
  {
    symbol = "✈️💥"
-   effect = Name "smoke bomb" { CircularBlast Lasting INVISIBLE Escape }
+   effect = Name "smoke bomb" { CircularBlast Lasting INVISIBLE Escape{} }
    cooldown = 100
    sound = SPELL_DECEPTION
    message = "throw a smoke bomb" "throws a smoke bomb"
@@ -1204,7 +1203,7 @@
  "escape star"
  {
    symbol = "✲"
-   effect = Name "escape star" { Damage RANGED_DAMAGE STAB Escape Lasting SPEED }
+   effect = Name "escape star" { Damage RANGED_DAMAGE STAB Escape{} Lasting SPEED }
    range = 8
    cooldown = 1
    endOnly = true
@@ -1242,7 +1241,7 @@
 "shadow bolt"
   {
     symbol = "⥇"
-    effect = Name "shadow bolt" { Damage SPELL_DAMAGE SPELL Escape Lasting INSANITY }
+    effect = Name "shadow bolt" { Damage SPELL_DAMAGE SPELL Escape{} Lasting INSANITY }
     range = 8
     cooldown = 10
 	endOnly = true
@@ -1252,7 +1251,7 @@
   {
     symbol = "⥇"
 	upgrade = "shadow bolt"
-    effect = Name "advanced shadow bolt" { Damage SPELL_DAMAGE SPELL Escape Lasting INSANITY }
+    effect = Name "advanced shadow bolt" { Damage SPELL_DAMAGE SPELL Escape{} Lasting INSANITY }
     range = 9
     cooldown = 8
 	endOnly = true
@@ -1262,7 +1261,7 @@
   {
     symbol = "⥇"
 	upgrade = "advanced shadow bolt"
-    effect = Name "expert shadow bolt" { Damage SPELL_DAMAGE SPELL Escape Lasting INSANITY }
+    effect = Name "expert shadow bolt" { Damage SPELL_DAMAGE SPELL Escape{} Lasting INSANITY }
     range = 10
     cooldown = 6
 	endOnly = true
@@ -1358,7 +1357,7 @@
    upgrade = "water blast"
    symbol = "~~"
    effect = Name "acid blast" { Damage SPELL_DAMAGE SPELL Blast Acid }
-   fx = ACID
+   fx = {FLAMETHROWER ColorId YELLOW}
    range = 10
    cooldown = 20
  }
@@ -1379,7 +1378,7 @@
  {
    symbol = "->"
    effect = Name "earth bolt" { Damage SPELL_DAMAGE SPELL Chance 0.2 Lasting BLEEDING }
-   fx = ACID
+   fx = {FLAMETHROWER ColorId YELLOW}
    range = 10
    cooldown = 20
  }
@@ -1390,7 +1389,7 @@
    upgrade = "earth bolt"
    symbol = "=>"
    effect = Name "earth blast" { Damage SPELL_DAMAGE SPELL Blast Chance 0.3 Lasting BLEEDING }
-   fx = ACID
+   fx = {FLAMETHROWER ColorId YELLOW}
    range = 10
    cooldown = 20
  }

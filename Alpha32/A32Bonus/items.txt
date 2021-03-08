@@ -56,22 +56,6 @@
       }
       equipedAbility = { "invisibility" }
     }
-  "Crossbow"
-    {
-      viewId = { "crossbow_1" }
-      name = "crossbow"
-      itemClass = RANGED_WEAPON
-      equipmentSlot = RANGED_WEAPON
-      rangedWeapon = RANGED_DAMAGE "arrow" {"arrow"} 8
-      weaponInfo = {
-        twoHanded = true
-      }
-      weight = 1
-      modifiers = {
-        RANGED_DAMAGE 20
-      }
-      price = 60
-    }
   "InvisibilityRing"
     {
       viewId = { "ring_green" }
@@ -326,7 +310,7 @@
   "Flower2" inherit "Berry1"
     {
       viewId = { "flower2" }
-      effect = Escape 
+      effect = Escape{}
       name = "small flower"
     }
 	
@@ -499,10 +483,6 @@
       name = "net"
       itemClass = RANGED_WEAPON
       equipmentSlot = RANGED_WEAPON
-      rangedWeapon = RANGED_DAMAGE "arrow" {"net30"} 4
-	  weaponInfo = {
-		victimEffect = { 1.0 Lasting TIED_UP }
-	  }
       weight = 1
       modifiers = {
         RANGED_DAMAGE 5
@@ -650,7 +630,7 @@
 		2 SpellId "poison bolt"
 		1 JoinPrefixes {
 			ItemAttrBonus DAMAGE 6
-			VictimEffect 0.1 Escape
+			VictimEffect 0.1 Escape{}
 			}
         2 ItemAttrBonus DAMAGE 3
         2 ItemAttrBonus DEFENSE 3
@@ -932,7 +912,7 @@
 		4 LastingEffect RAGE
 		1 JoinPrefixes {
 			ItemAttrBonus DAMAGE 6
-			VictimEffect 0.1 Escape
+			VictimEffect 0.1 Escape{}
 			}
         2 ItemAttrBonus DAMAGE 3
         2 ItemAttrBonus DEFENSE 3

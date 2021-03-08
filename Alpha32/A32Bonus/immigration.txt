@@ -28,7 +28,7 @@
     "dark_keeper" modify {
     
         {
-          ids = { "GOBLIN" }
+          ids = { "GOBLIN_ARTIFICER" }
           traits = { FIGHTER NO_AUTO_EQUIPMENT }
           frequency = 0.7
           requirements = {
@@ -474,7 +474,7 @@
           }
         }
         {
-          ids = { "JESTER_PLAYER" }
+          ids = { "JESTER" }
           traits = { FIGHTER }
           frequency = 0.1
           requirements = {
@@ -1045,13 +1045,13 @@
         }
     }
     
-    "necromancer"
+    "necromancer" modify
     {
         {
           ids = { "SKELETON_PLAYER" "SKELETON_PLAYER" "SKELETON_PLAYER" "SKELETON_PLAYER" "SKELETON_PLAYER" }
           traits = { WORKER FIGHTER NO_LIMIT }
           spawnLocation = NearLeader
-		  consumeIds = true
+                 consumeIds = true
           noAuto = true
           initialRecruitment = 5
         }
@@ -1061,7 +1061,7 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }                                   
         }
         {
           ids = { "POSSESSED_SWORD" "POSSESSED_SWORD" }
@@ -1069,10 +1069,10 @@
           spawnLocation = FurnitureType "FORGE"
           noAuto = true
           consumeIds = true    
-          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} } 		                    
+          requirements = { {  1.0 CostInfo "IRON" 50}  { 0.0 TechId "simplistic animations"  } { 0.3 AttractionInfo 1 {FurnitureType "FORGE"}} }                                   
         }
-		{
-		  ids = { "NECROMANCER" }
+               {
+                 ids = { "NECROMANCER" }
           traits = { FIGHTER }
           frequency = 0.1
           spawnLocation = FurnitureType "GRAVE"
@@ -1088,8 +1088,8 @@
              { 0.02 { Lasting { HATE_HUMANS } }}
           }
         }
-	    {
-		  ids = { "SKELETON_MAGE" }
+           {
+                 ids = { "SKELETON_MAGE" }
           traits = { FIGHTER }
           frequency = 0.1
           spawnLocation = FurnitureType "GRAVE"
@@ -1105,8 +1105,8 @@
              { 0.02 { Lasting { HATE_HUMANS } }}
           }
         }
-		{
-		  ids = { "SKELETON_WARRIOR" }
+               {
+                 ids = { "SKELETON_WARRIOR" }
           traits = { FIGHTER }
           frequency = 0.08
           spawnLocation = FurnitureType "GRAVE"
@@ -1133,7 +1133,7 @@
           }
           specialTraits = {
              {1.0 { Lasting { DARKNESS_SOURCE } }}
-			 {1.0 { WorkshopType "WORKSHOP" }}
+                        {1.0 { WorkshopType "WORKSHOP" }}
           }
         }
         {
@@ -1154,7 +1154,7 @@
           traits = { WORKER FIGHTER }
           frequency = 0.2
           spawnLocation = FurnitureType "GRAVE"
-		  consumeIds = true
+                 consumeIds = true
           initialRecruitment = 1
           requirements = {
             { 0.0 TechId "zombie hoards" }
@@ -1190,7 +1190,7 @@
           traits = { WORKER FIGHTER }
           frequency = 0.2
           spawnLocation = FurnitureType "GRAVE"
-		  consumeIds = true
+                 consumeIds = true
           initialRecruitment = 1
           requirements = {
             { 0.0 TechId "skeleton hoards" }
@@ -1231,7 +1231,7 @@
           traits = { FIGHTER }
           frequency = 0.2
           spawnLocation = FurnitureType "GRAVE"
-		  consumeIds = true
+                 consumeIds = true
           initialRecruitment = 1
           requirements = {
             { 0.0 TechId "vampire hoards" }
@@ -1254,7 +1254,7 @@
           spawnLocation = FurnitureType "GRAVE"
           requirements = {
             { 1.0 AttractionInfo 1 {FurnitureType "TRAINING_WOOD"}}
-		  }
+                 }
           specialTraits = {
              { 0.3 { ExtraTraining MELEE 3}}
              { 0.3 { AttrBonus DAMAGE 3}}
@@ -1278,13 +1278,13 @@
           traits = { FIGHTER }
           frequency = 0.2
           spawnLocation = FurnitureType "GRAVE"
-		  consumeIds = true
+                 consumeIds = true
           initialRecruitment = 1
           requirements = {
             { 0.0 TechId "mummy hoards" }
             { 1.0 AttractionInfo 1 {FurnitureType "COFFIN3"}}
             { 1.0 CostInfo "CORPSE" 1}
-		  }
+                 }
           specialTraits = {
              { 0.3 { ExtraTraining MELEE 3}}
              { 0.3 { AttrBonus DAMAGE 3}}
@@ -1308,7 +1308,7 @@
           ids = { "BANSHEE" "BANSHEE" "BANSHEE" "BANSHEE"}
           traits = { FIGHTER }
           spawnLocation = NearLeader
-		  consumeIds = true
+                 consumeIds = true
           noAuto = true
           initialRecruitment = 4
           requirements = {
@@ -1318,7 +1318,7 @@
         {
           ids = { "SPECIAL_HLGN" }
           traits = { FIGHTER }
-		  consumeIds = true
+                 consumeIds = true
           initialRecruitment = 1
           spawnLocation = NearLeader
           requirements = {
@@ -1328,15 +1328,15 @@
           specialTraits = {
             { 1.0 { ExtraTraining MELEE 5}}
             { 1.0 { AttrBonus DAMAGE 7}}
-			{ 1.0 { Lasting { MELEE_RESISTANCE }}} 
+                       { 1.0 { Lasting { MELEE_RESISTANCE }}} 
             { 1.0 { Lasting { RAGE }}}
-            { 1.0 { Lasting { DEF_BONUS }}}			
+            { 1.0 { Lasting { DEF_BONUS }}}                    
           }
         }
         {
           ids = { "SPECIAL_HLGN" }
           traits = { FIGHTER }
-		  consumeIds = true
+                 consumeIds = true
           initialRecruitment = 1
           spawnLocation = NearLeader
           requirements = {
@@ -1346,13 +1346,13 @@
           specialTraits = {
             { 1.0 { ExtraTraining SPELL 5}}
             { 1.0 { AttrBonus SPELL_DAMAGE 5}}
-			{ 1.0 { Lasting { MAGIC_RESISTANCE }}} 
+                       { 1.0 { Lasting { MAGIC_RESISTANCE }}} 
           }
         }
         {
           ids = { "SPECIAL_HLGN" }
           traits = { FIGHTER }
-     	  consumeIds = true
+         consumeIds = true
           initialRecruitment = 1
           spawnLocation = NearLeader
           requirements = {
@@ -1380,13 +1380,14 @@
           specialTraits = {
             { 1.0 { Lasting { SLEEP_RESISTANT }}}
             { 1.0 { Lasting { FIRE_RESISTANT }}}
-			{ 1.0 { Lasting { POISON_RESISTANT }}} 
-			{ 1.0 { Lasting { MAGIC_RESISTANCE }}} 
-			{ 1.0 { Lasting { MELEE_RESISTANCE }}} 
-			{ 1.0 { Lasting { RANGED_RESISTANCE }}}
+                       { 1.0 { Lasting { POISON_RESISTANT }}} 
+                       { 1.0 { Lasting { MAGIC_RESISTANCE }}} 
+                       { 1.0 { Lasting { MELEE_RESISTANCE }}} 
+                       { 1.0 { Lasting { RANGED_RESISTANCE }}}
           }
         }
     }
+
     
     "dark_keeper_easy_mode"
     {
@@ -1406,7 +1407,7 @@
           }
         }
         {
-          ids = { "GOBLIN" }
+          ids = { "GOBLIN_ARTIFICER" }
           traits = { FIGHTER NO_AUTO_EQUIPMENT }
           frequency = 0.7
           requirements = {
@@ -1960,7 +1961,7 @@
           }
         }
         {
-          ids = { "GOBLIN" }
+          ids = { "GOBLIN_ARTIFICER" }
           traits = { FIGHTER NO_AUTO_EQUIPMENT }
           frequency = 0.7
           requirements = {
@@ -2508,11 +2509,11 @@
         { ids = { "BENGAL_TIGER" "ELEPHANT" "LION" "SCREE_BIRD" "LIONESS" "MUSHROOM_MAN" "SQUIDHOLDER" "SPRITE" "GARGOYLE" "COW_DEMON" "RAT_SOLDIER" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
         { ids = { "AIR_FAIRY" "DARK_FAIRY" "DEMON_FAIRY" "EARTH_FAIRY" "ELECTRIC_FAIRY" "FIRE_FAIRY" "MAGIC_FAIRY" "NATURE_FAIRY" "LIGHT_FAIRY" "WATER_FAIRY" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
         { ids = { "ANCIENT_GREEN_DRAGON" "ANCIENT_RED_DRAGON" "ZOMBIE_DRAGON" "SPIRIT_DRAGON" "RED_DRAGONNEWT" "GREEN_DRAGONEWT" "RED_DRAGON" "GREEN_DRAGON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
-        { ids = { "JESTER_PLAYER" "PESEANT" "MILITIA_PLAYER" "PRIEST" "KNIGHT" "AMAZON" "AMAZON_ARCHER" "AMAZON_CHAMPION" "AMAZON_ELDER" "AMAZON_QUEEN" "AMAZON_WAR_MAIDEN" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
+        { ids = { "JESTER" "PESEANT" "MILITIA_PLAYER" "PRIEST" "KNIGHT" "AMAZON" "AMAZON_ARCHER" "AMAZON_CHAMPION" "AMAZON_ELDER" "AMAZON_QUEEN" "AMAZON_WAR_MAIDEN" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
         { ids = { "GNOME" "GNOME_CHIEF" "DWARF" "DWARF_FEMALE" "DWARF_BARON" "KOBOLD" "BANDIT" "LIZARDMAN" "LIZARDLORD" "BANDIT_LEADER" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
         { ids = { "SPECIAL_BLBN" "SPECIAL_BLBW" "SPECIAL_BLGN" "SPECIAL_BLGW" "SPECIAL_BMBN" "SPECIAL_BMBW" "SPECIAL_BMGN" "SPECIAL_BMGW" "SPECIAL_HLBN" "SPECIAL_HLBW" "SPECIAL_HLGN" "SPECIAL_HLGW" "SPECIAL_HMBN" "SPECIAL_HMBW" "SPECIAL_HMGN" "SPECIAL_HMGW"  } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
         { ids = { "HYDRA" "MINOTAUR" "UNICORN" "CYCLOPS" "DEMON_DWELLER" "DEMON_LORD" "WITCH" "ADOXIE_HEAD" "ABOMINATION" "ARACHNE" "COW_DEMON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
-        { ids = { "ZOMBIE" "SKELETON" "NECROMANCER" "SKELETON_MAGE" "SKELETON_WARRIOR" "MUMMY" "VAMPIRE" "VAMPIRE_LORD" "SUCCUBUS" "DOPPLEGANGER" "LOST_SOUL" "SPIRIT" "GOBLIN" "ORC" "ORC_MAGE" "OGRE" "HARPY"}  traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
+        { ids = { "ZOMBIE" "SKELETON" "NECROMANCER" "SKELETON_MAGE" "SKELETON_WARRIOR" "MUMMY" "VAMPIRE" "VAMPIRE_LORD" "SUCCUBUS" "DOPPLEGANGER" "LOST_SOUL" "SPIRIT" "GOBLIN_ARTIFICER" "ORC" "ORC_MAGE" "OGRE" "HARPY"}  traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
         { ids = { "FIRE_ELEMENTAL" "WATER_ELEMENTAL" "ENT" "AIR_ELEMENTAL" "FIRE_SPHERE" "EARTH_ELEMENTAL" "IRON_GOLEM" "LAVA_GOLEM" "ADA_GOLEM" "GIANT_ROBOT" "AUTOMATON"} traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
         { ids = { "ELF" "ELF_ARCHER" "ELF_CHILD" "ELF_LORD" "DARK_ELF" "DARK_ELF_WARRIOR" "DARK_ELF_CHILD" "DARK_ELF_LORD" "DRIAD" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}
         { ids = { "HORSE" "COW" "PIG" "GOAT" "DONKEY" "JACKAL" "DEER" "BOAR" "FOX" "SNAKE" "SPIDER" "FLY" "RAT" "RAVEN" "BAT" "WOLF" "CAVE_BEAR" "WEREWOLF" } traits = { FIGHTER NO_LIMIT } spawnLocation = NearLeader noAuto = true requirements = {{ 1 ExponentialCost "GOLD" 0 0 1000 }}}

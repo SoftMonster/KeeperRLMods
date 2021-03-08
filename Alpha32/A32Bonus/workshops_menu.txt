@@ -25,18 +25,18 @@
       {item = {Potion IncreaseAttr DEFENSE 5} work = 20 cost = "GOLD" 100 requireIngredient = "cyclops_brain" }
       {item = {Potion Lasting PLAGUE} work = 5 cost = "GOLD" 10 requireIngredient = "zombie_brain" }
       {item = {Potion Permanent POISON_RESISTANT} work = 20 cost = "GOLD" 80 requireIngredient = "hydra_tongue" }
-	{{ "GoldPiece"}                           5        "IRON"  20      "alchemical conversion"       10}
-	{{ "GoldPiece"}                           5        "VEN"   16      "alchemical conversion"       10}
-	{{ "GoldPiece"}                           5        "INF"   8       "alchemical conversion"       10}
-    {{ "GoldPiece"}                           5        "ADA"   4       "alchemical conversion"       10}
-    {{ "GoldPiece"}                           5        "WOOD"  24      "alchemical conversion"       10}
-    {{ "GoldPiece"}                           5        "STONE" 24      "alchemical conversion"       10}
-    {{ "WoodPlank"}                           5        "GOLD"  6       "alchemical conversion"       10}
-    {{ "IronOre"}                             5        "GOLD"  6	     "alchemical conversion"       10}
-    {{ "VenOre"}                              5        "GOLD"  8	     "alchemical conversion"       10}
-	{{ "InfOre"}                              5        "GOLD"  24      "alchemical conversion"       10}
-    {{ "AdaOre"}                              5        "GOLD"  30      "alchemical conversion"       10}
-    {{ "Rock"}                                5        "GOLD"  6       "alchemical conversion"       10}
+	{{ "GoldPiece"}                           5        "IRON"  2      "alchemical conversion"}
+	{{ "GoldPiece"}                           5        "VEN"   2      "alchemical conversion"}
+	{{ "GoldPiece"}                           5        "INF"   1       "alchemical conversion"}
+    {{ "GoldPiece"}                           5        "ADA"   1       "alchemical conversion"}
+    {{ "GoldPiece"}                           5        "WOOD"  2      "alchemical conversion"}
+    {{ "GoldPiece"}                           5        "STONE" 2      "alchemical conversion"}
+    {{ "WoodPlank"}                           5        "GOLD"  1       "alchemical conversion"}
+    {{ "IronOre"}                             5        "GOLD"  1	     "alchemical conversion"}
+    {{ "VenOre"}                              5        "GOLD"  1	     "alchemical conversion"}
+	{{ "InfOre"}                              5        "GOLD"  2      "alchemical conversion"}
+    {{ "AdaOre"}                              5        "GOLD"  3      "alchemical conversion"}
+    {{ "Rock"}                                5        "GOLD"  1       "alchemical conversion"}
   }
 
   "JEWELER"
@@ -205,18 +205,18 @@
     {{Potion Lasting COLLAPSED}            8        "GOLD" 8       "elite alchemy"}
     {{Potion Lasting BLEEDING}             8        "GOLD" 8       "elite alchemy"}
     {{Potion Lasting INSANITY}             8        "GOLD" 8       "elite alchemy"}
-	{{ "GoldPiece"}                           5        "IRON"  20      "alchemical conversion"       10}
-	{{ "GoldPiece"}                           5        "VEN"   16      "alchemical conversion"       10}
-	{{ "GoldPiece"}                           5        "INF"   8       "alchemical conversion"       10}
-    {{ "GoldPiece"}                           5        "ADA"   4       "alchemical conversion"       10}
-    {{ "GoldPiece"}                           5        "WOOD"  24      "alchemical conversion"       10}
-    {{ "GoldPiece"}                           5        "STONE" 24      "alchemical conversion"       10}
-    {{ "WoodPlank"}                           5        "GOLD"  6       "alchemical conversion"       10}
-    {{ "IronOre"}                             5        "GOLD"  6	     "alchemical conversion"       10}
-    {{ "VenOre"}                              5        "GOLD"  8	     "alchemical conversion"       10}
-	{{ "InfOre"}                              5        "GOLD"  24      "alchemical conversion"       10}
-    {{ "AdaOre"}                              5        "GOLD"  30      "alchemical conversion"       10}
-    {{ "Rock"}                                5        "GOLD"  6       "alchemical conversion"       10}
+	{{ "GoldPiece"}                           5        "IRON"  2      "alchemical conversion" }
+	{{ "GoldPiece"}                           5        "VEN"   2      "alchemical conversion"}
+	{{ "GoldPiece"}                           5        "INF"   1       "alchemical conversion"}
+    {{ "GoldPiece"}                           5        "ADA"   1       "alchemical conversion"}
+    {{ "GoldPiece"}                           5        "WOOD"  2      "alchemical conversion"}
+    {{ "GoldPiece"}                           5        "STONE" 2      "alchemical conversion"}
+    {{ "WoodPlank"}                           5        "GOLD"  1       "alchemical conversion"}
+    {{ "IronOre"}                             5        "GOLD"  1	     "alchemical conversion"}
+    {{ "VenOre"}                              5        "GOLD"  1	     "alchemical conversion"}
+	{{ "InfOre"}                              5        "GOLD"  2      "alchemical conversion"}
+    {{ "AdaOre"}                              5        "GOLD"  3      "alchemical conversion"}
+    {{ "Rock"}                                5        "GOLD"  1       "alchemical conversion"}
 }
 
 }
@@ -316,18 +316,18 @@
 	{{Potion Permanent MELEE_RESISTANCE} 100        "GOLD" 800     "dwarven alchemy"}
     {{Potion Permanent DEF_BONUS}        100        "GOLD" 300     "dwarven alchemy"}
 	{{Potion IncreaseAttr DAMAGE 1}      100        "GOLD" 1200    "dwarven alchemy"}
-	{{ "GoldPiece"}                           5        "IRON"  20      "alchemical conversion"       10}
-	{{ "GoldPiece"}                           5        "VEN"   16      "alchemical conversion"       10}
-	{{ "GoldPiece"}                           5        "INF"   8       "alchemical conversion"       10}
-    {{ "GoldPiece"}                           5        "ADA"   4       "alchemical conversion"       10}
-    {{ "GoldPiece"}                           5        "WOOD"  24      "alchemical conversion"       10}
-    {{ "GoldPiece"}                           5        "STONE" 24      "alchemical conversion"       10}
-    {{ "WoodPlank"}                           5        "GOLD"  6       "alchemical conversion"       10}
-    {{ "IronOre"}                             5        "GOLD"  6	     "alchemical conversion"       10}
-    {{ "VenOre"}                              5        "GOLD"  8	     "alchemical conversion"       10}
-	{{ "InfOre"}                              5        "GOLD"  24      "alchemical conversion"       10}
-    {{ "AdaOre"}                              5        "GOLD"  30      "alchemical conversion"       10}
-    {{ "Rock"}                                5        "GOLD"  6       "alchemical conversion"       10}
+	{{ "GoldPiece"}                           5        "IRON"  2      "alchemical conversion"}
+	{{ "GoldPiece"}                           5        "VEN"   2      "alchemical conversion"}
+	{{ "GoldPiece"}                           5        "INF"   1       "alchemical conversion"}
+    {{ "GoldPiece"}                           5        "ADA"   1       "alchemical conversion"}
+    {{ "GoldPiece"}                           5        "WOOD"  2      "alchemical conversion"}
+    {{ "GoldPiece"}                           5        "STONE" 2      "alchemical conversion"}
+    {{ "WoodPlank"}                           5        "GOLD"  1       "alchemical conversion"}
+    {{ "IronOre"}                             5        "GOLD"  1	     "alchemical conversion"}
+    {{ "VenOre"}                              5        "GOLD"  1	     "alchemical conversion"}
+	{{ "InfOre"}                              5        "GOLD"  2      "alchemical conversion"}
+    {{ "AdaOre"}                              5        "GOLD"  3      "alchemical conversion"}
+    {{ "Rock"}                                5        "GOLD"  1       "alchemical conversion"}
 }
 
 # Jeweller
@@ -387,7 +387,7 @@
 # Workshop
 "WORKSHOP"
 {
-    {item = { "Club"}    work = 3 cost = "WOOD" 0    tech = none      batchSize = 1    tutorialHighlight = SCHEDULE_CLUB}
+    {item = { "Club"}    work = 3 cost = "WOOD" 0    tech = none    tutorialHighlight = SCHEDULE_CLUB}
     {{ "LeatherArmor"}          6        "WOOD" 0}
     {{ "LeatherHelm"}           1        "WOOD" 0}
     {{ "LeatherBoots"}          2        "WOOD" 0}
@@ -475,13 +475,13 @@
     {{Potion Lasting MELEE_VULNERABILITY}  1        "GOLD" 0      "advanced alchemy"}
     {{Potion Lasting MAGIC_VULNERABILITY}  1        "GOLD" 0      "advanced alchemy"}
     {{Potion Lasting INVISIBLE}            1        "GOLD" 0      "advanced alchemy"}
-    {{ "GoldPiece"}                  1        "WOOD" 0      "alchemical conversion"       1000}
-    {{ "WoodPlank"}                  1        "GOLD" 0      "alchemical conversion"       1000}
-    {{ "IronOre"}                    1        "GOLD" 0      "alchemical conversion"       1000}
-    {{ "AdaOre"}                     1        "GOLD" 0      "alchemical conversion"       1000}
-	{{ "VenOre"}                     1        "GOLD" 0      "alchemical conversion"       1000}
-	{{ "InfOre"}                     1        "GOLD" 0      "alchemical conversion"       1000}
-    {{ "Rock"}                       1        "GOLD" 0      "alchemical conversion"       1000}
+    {{ "GoldPiece"}                  1        "WOOD" 0      "alchemical conversion"}
+    {{ "WoodPlank"}                  1        "GOLD" 0      "alchemical conversion"}
+    {{ "IronOre"}                    1        "GOLD" 0      "alchemical conversion"}
+    {{ "AdaOre"}                     1        "GOLD" 0      "alchemical conversion"}
+	{{ "VenOre"}                     1        "GOLD" 0      "alchemical conversion"}
+	{{ "InfOre"}                     1        "GOLD" 0      "alchemical conversion"}
+    {{ "Rock"}                       1        "GOLD" 0      "alchemical conversion"}
       {item = {Potion IncreaseAttr DEFENSE 5} work = 20 cost = "GOLD" 100 requireIngredient = "cyclops_brain" }
       {item = {Potion Lasting PLAGUE} work = 5 cost = "GOLD" 10 requireIngredient = "zombie_brain" }
       {item = {Potion Permanent POISON_RESISTANT} work = 20 cost = "GOLD" 80 requireIngredient = "hydra_tongue" }
@@ -620,18 +620,18 @@
       {item = {Potion IncreaseAttr DEFENSE 5} work = 20 cost = "GOLD" 100 requireIngredient = "cyclops_brain" }
       {item = {Potion Lasting PLAGUE} work = 5 cost = "GOLD" 10 requireIngredient = "zombie_brain" }
       {item = {Potion Permanent POISON_RESISTANT} work = 20 cost = "GOLD" 80 requireIngredient = "hydra_tongue" }
-	{{ "GoldPiece"}                           5        "IRON"  20      "alchemical conversion"       10}
-	{{ "GoldPiece"}                           5        "VEN"   16      "alchemical conversion"       10}
-	{{ "GoldPiece"}                           5        "INF"   8       "alchemical conversion"       10}
-    {{ "GoldPiece"}                           5        "ADA"   4       "alchemical conversion"       10}
-    {{ "GoldPiece"}                           5        "WOOD"  24      "alchemical conversion"       10}
-    {{ "GoldPiece"}                           5        "STONE" 24      "alchemical conversion"       10}
-    {{ "WoodPlank"}                           5        "GOLD"  6       "alchemical conversion"       10}
-    {{ "IronOre"}                             5        "GOLD"  6	     "alchemical conversion"       10}
-    {{ "VenOre"}                              5        "GOLD"  8	     "alchemical conversion"       10}
-	{{ "InfOre"}                              5        "GOLD"  24      "alchemical conversion"       10}
-    {{ "AdaOre"}                              5        "GOLD"  30      "alchemical conversion"       10}
-    {{ "Rock"}                                5        "GOLD"  6       "alchemical conversion"       10}
+	{{ "GoldPiece"}                           5        "IRON"  2      "alchemical conversion"}
+	{{ "GoldPiece"}                           5        "VEN"   2      "alchemical conversion"}
+	{{ "GoldPiece"}                           5        "INF"   1       "alchemical conversion"}
+    {{ "GoldPiece"}                           5        "ADA"   1       "alchemical conversion"}
+    {{ "GoldPiece"}                           5        "WOOD"  2      "alchemical conversion"}
+    {{ "GoldPiece"}                           5        "STONE" 2      "alchemical conversion"}
+    {{ "WoodPlank"}                           5        "GOLD"  1       "alchemical conversion"}
+    {{ "IronOre"}                             5        "GOLD"  1	     "alchemical conversion"}
+    {{ "VenOre"}                              5        "GOLD"  1	     "alchemical conversion"}
+	{{ "InfOre"}                              5        "GOLD"  2      "alchemical conversion"}
+    {{ "AdaOre"}                              5        "GOLD"  3      "alchemical conversion"}
+    {{ "Rock"}                                5        "GOLD"  1       "alchemical conversion"}
 }
 
 # Jeweller

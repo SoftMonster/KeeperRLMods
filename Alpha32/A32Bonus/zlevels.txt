@@ -1,7 +1,7 @@
 # Here come levels for all keeper types
 # At every depth the game chooses a random level that's available
 
-ALL modify {
+"basic" modify {
 
   #Modded depth 1
   {
@@ -181,7 +181,7 @@ ALL modify {
 
 # White and dark keepers (modded)
 # Here come levels specific to white keepers
-LAWFUL modify {
+"lawful" modify {
   {
     type = FullZLevel {
       enemy = "DARK_ELF_CAVE"
@@ -203,7 +203,7 @@ LAWFUL modify {
 }
 
 # Here come levels specific to dark keepers
-EVIL modify {
+"evil" modify {
   {
     type = FullZLevel {
       enemy = "DWARF_CAVE"
