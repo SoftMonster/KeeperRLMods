@@ -7,7 +7,6 @@
       viewId = { "wooden_staff" }
       name = "armour gambling"
       weight = 0.5
-      itemClass = TOOL
       description = "Randomly channels defensive ability of worn armours into each other."
       applyTime = 5
       uses = 2
@@ -71,7 +70,6 @@
       viewId = { "crystal1" }
       name = "spying crystal"
       weight = 1
-      itemClass = TOOL
       applyTime = 1
       uses = 1
       price = 100
@@ -82,7 +80,6 @@
       viewId = { "dwarf_beer" }
       name = "dwarven beer"
       weight = 0.3
-      itemClass = TOOL
       description = "Permanently increases your attack by 1, but makes you insane and halucinate for a while in exchange."
       uses = 1
       price = 100
