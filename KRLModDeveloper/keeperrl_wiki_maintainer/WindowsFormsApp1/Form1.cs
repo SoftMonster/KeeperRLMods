@@ -87,6 +87,8 @@ namespace WindowsFormsApp1
 
         private string Capitalize(string Link)
         {
+            Link = Strings.Replace(Link, "Category:", "");
+            Link = Strings.Replace(Link, ":", "_");
             Link = Link.Trim();
             Link = Strings.Left(Link, 1).ToUpper() + Strings.Right(Link, Strings.Len(Link) - 1);
             Link = Strings.Replace(Link, " ", "_");
@@ -122,7 +124,7 @@ namespace WindowsFormsApp1
             }
             LoadValidLinks("C:\\keeperrl_wiki_suggestions\\", SuggestedLinks);
             LoadValidLinks("C:\\keeperrl_wiki\\", ValidLinks);
-            CapitalizeValidLinks();
+            //CapitalizeValidLinks();
             FixLinksDir("C:\\keeperrl_wiki\\");
             button2.Enabled = true;
         }
@@ -131,7 +133,8 @@ namespace WindowsFormsApp1
         {
             foreach (KeyValuePair<string,string> kvp in ValidLinks)
             {
-                string caps = Capitalize(kvp.Value);
+                string caps = Capitalize(Strings.Replace(kvp.Value,"C:\\",""));
+                caps = "C:\\"+caps;
                 System.IO.File.Copy(kvp.Value, caps + ".bak");
                 System.IO.File.Delete(kvp.Value);
                 System.IO.File.Copy(caps + ".bak",caps);
@@ -194,6 +197,7 @@ namespace WindowsFormsApp1
                     string newHeader = "title: " + Strings.Replace(nam, "_", " ") + "\r\npermalink: " + nam + "/\r\nlayout: wiki\r\n";
                     if (headerCount == 0)
                     {
+                        newHeader = "---\r\ntitle: " + Strings.Replace(nam, "_", " ") + "\r\npermalink: " + nam + "/\r\nlayout: wiki\r\n---\r\n";
                         text = newHeader + text;
                     }
                     else
@@ -414,10 +418,10 @@ namespace WindowsFormsApp1
                 string key = System.IO.Path.GetFileNameWithoutExtension(fil);
                 string nam = fil;
                 if (!dict.ContainsKey(key)) dict.Add(key, nam);
-                foreach (String subdir in System.IO.Directory.GetDirectories(dir))
-                {
-                    LoadValidLinks(subdir,dict);
-                }
+            }
+            foreach (String subdir in System.IO.Directory.GetDirectories(dir))
+            {
+                LoadValidLinks(subdir, dict);
             }
         }
 
@@ -535,6 +539,57 @@ namespace WindowsFormsApp1
                 }
                 System.IO.File.AppendAllText(gid, "\r\n");
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            button6.Enabled = false;
+            string text = System.IO.File.ReadAllText("C:\\keeperrl_wiki_dump\\wiki_dump.xml");
+            string pageName = "";
+            string pageText="";
+            bool pageTextOn = false;
+            string[] splitter = Strings.Split(text, "\r\n");
+            //Need to loop each line and identify pages and write the Text to each page (overwriting previous writes, chronological order)
+            int i = 0;
+            while (i<splitter.Length)
+            {
+                string line = splitter[i];
+                if (line.Contains("<title>"))
+                {
+                    pageName = Strings.Split(line, "<title>")[1];
+                    pageName = Strings.Split(pageName, "</title>")[0];
+                }
+                if (line.Contains("<text"))
+                {
+                    pageTextOn = true;
+                }
+                if (pageTextOn)
+                {
+                    pageText = pageText + line + "\r\n";
+                }
+                if (line.Contains("</text>") && pageText!="")
+                {
+                    pageTextOn = false;
+                    pageText = Strings.Split(pageText, "<text")[1];
+                    pageText = Strings.Split(pageText, "</text>")[0];
+                    string pageDelete = Strings.Split(pageText, ">")[0];
+                    pageText = Strings.Replace(pageText, pageDelete + ">", "");
+                    pageName = Capitalize(pageName);
+                    string proposedDir = "C:\\keeperrl_wiki\\Old_Wiki\\" + "Old_" + pageName;
+                    File.WriteAllText("C:\\keeperrl_wiki\\Old_Wiki\\Old_" + pageName + ".md", pageText);
+                    if (!Directory.Exists(proposedDir)) Directory.CreateDirectory(proposedDir);
+                    int j = 0;
+                    while (File.Exists(proposedDir+ "\\" + pageName + "_" + j.ToString() + ".txt"))
+                    {
+                        j++;
+                    }
+                    File.WriteAllText(proposedDir + "\\" + pageName + "_" + j.ToString() + ".txt", pageText);
+                    pageText = "";
+                }
+                i++;
+            }
+            StandardizeHeaders("C:\\keeperrl_wiki\\", "");
+            button6.Enabled = true;
         }
     }
 }
